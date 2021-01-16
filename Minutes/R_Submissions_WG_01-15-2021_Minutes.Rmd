@@ -28,7 +28,7 @@ Attendees included:
 
 ### Minutes 
 
-Joseph Rickert began the meeting by noting that he Submisisons working group now has a [GithHub Repo](https://github.com/RConsortium/rtrs-wg/pulls) which contains the minutes and video recording from the first meeting. 
+Joseph Rickert began the meeting by noting that he Submisisons working group now has a [GithHub Repo](https://github.com/RConsortium/submissions-wg) which contains the minutes and video recording from the first meeting. 
 JR asked if there are external groups that we should involve. Michael Stackhouse and Paul Schuette suggest linking up with PHUSE. JR asks for a recommendation from PHUSE, MS offers to investigate. 
 
 JR asked PS if he could elaborate on requirements from various government agencies. Paul recommends contacting Wendy Martinez of BLS, and leader of the Inter-Agency R Users Group.
