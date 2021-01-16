@@ -23,6 +23,7 @@ Attendees included:
 * Ning Leng - Genentech
 * Ojesh Upandhyay GSK
 * Phil Bowsher - RStudio
+* Eric Nantz
 
 
 ### Minutes 
