@@ -1,0 +1,103 @@
+---
+title: "R_Submissions_WG_01-15-2021_Minutes"
+author: "Joseph Rickert"
+date: "1/15/2021"
+output: html_document
+---
+The meeting was held on zoom at 9AM Pacific Time on Friday, January 15th. The minutes taken by Joseph Rickert
+
+### Attendees
+
+Attendees included:
+
+* Joseph Rickert - R Consortium
+* Paul Schuette - FDA
+* Yilong Zhang - Merck
+* Bob Engle - Biogen
+* Chris Kania - Biogen
+* Doug Kelkhoff - Genentech
+* James Black - Roche
+* Juliane Manitz - Emd Serono
+* Mike Stackhouse - Atorus Research
+* Nan Xiao - Merck
+* Ning Leng - Genentech
+* Ojesh Upandhyay GSK
+* Phil Bowsher - RStudio
+
+
+### Minutes 
+
+Joseph Rickert began the meeting by noting that he Submisisons working group now has a [GithHub Repo](https://github.com/RConsortium/rtrs-wg/pulls) which contains the minutes and video recording from the first meeting. 
+JR asked if there are external groups that we should involve. Michael Stackhouse and Paul Schuette suggest linking up with PHUSE. JR asks for a recommendation from PHUSE, MS offers to investigate. 
+
+JR asked PS if he could elaborate on requirements from various government agencies. Paul recommends contacting Wendy Martinez of BLS, and leader of the Inter-Agency R Users Group.
+
+PS also notes that declining budgets in various government agencies are forcing declining budgets and that consequently there is a renewed interest in open source. There is particular interest in establishing a stable R environment and the whole panoply of tools required.
+
+JR noted that although other federal agencies are not directly involved in setting requirements for R submissions they must have some say in setting general requirements and technology standards and asked PS if he could elaborate on the hierarchy of federal agencies involved. PS stated that the government has a federated model. Groups tend to do their own thing. The FDA has some standards that are not uniformly enforced. They are center specific. [CDER](https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/cder-offices-and-divisions) and [CBER](https://www.fda.gov/about-fda/fda-organization/center-biologics-evaluation-and-research-cber) are the two centers that are most closely linked. Require CDISC heading towards STDTM, ADaM and other data standards. [CDRH](https://www.fda.gov/about-fda/fda-organization/center-devices-and-radiological-health) has a more heterogeneous sponsor group and even gets some submissions in Excel.
+
+[CVM](https://www.fda.gov/about-fda/fda-organization/center-veterinary-medicine) is in between. Other centers like [CPT](https://www.fda.gov/tobacco-products/about-center-tobacco-products-ctp) don't much deal with clinical trials. Paul's presentation (from last time) focused on CDER and CBER and the portals and gateways that have been set up there. Even within the his center the Office of Biostatistics does not control the standards FDA submissions gateway uses. 
+
+There are two different types of standards: there are the standards of CDISC and PHUSE and then there are the standards of "What does one  have to do to actually submit through the electronics gateway".
+
+Eric Nantz asks if the group that is handling the gateway is also in CDER and CBER. PS replied that it is, but in a different office. (At 11:21 PS elaborates on which groups are involved.) The actual gateway is under the Office of Business Informatics which is in the Office of Strategic Programs. It is a Balkanized setup. Primary tool for clinicians in the Office of New Drugs is JMP clinical, script in Python, some code in SAS and R.
+
+Anything with inferential statistics falls to the [Office of Biostatistics](https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/office-biostatistics). Safety issues are mostly done elsewhere by clinicians.
+
+Project [PORTES](https://govtribe.com/opportunity/federal-contract-opportunity/fda-cder-portes-om-sas-drug-development-software-maintenance-fdacder161164460) has a provision for a submissions portal and also includes turning XPT data sets into S or R data sets. PS recommends getting [Ethan Chen](https://connellyworks.swoogo.com/healthit2020/speaker/97492/ethan-chen) involved, but in short term writing program that modifies scripts (e.g. from .lower case to .Upper case) would be faster approach.
+
+EN and PS note that the discussions last time (see the presentation by Yilong Zhang) made it clear that industry is already working on this approach and suggest that it may be worth pursuing.
+
+JR (22:29) suggested that we may want to pursue the idea of setting up a stable R environment. YZ says Merck is working on a package to assemble functions into a txt file, and stated that once they have a stable version they would be willing to discuss making it open source.
+
+JR suggests that going for a stable R environment would pull together several threads of work in progress, and asked if setting up a pilot server with an R environment configured similarly to an environment typically used for submissions would be helpful. PS said that he thought so and referenced (26:30) a project he and EN did a couple of years ago to stand up a stable snapshot.
+
+YZ argues for making a purely open source setup. YZ and EN suggest (48:30) that we could setup a repo with software to CDISC tables and synthetic data for a hypothetical submission and we could collaborate and show how it could scale to do a real submission.
+
+PS noted that a project he and Doug Kelkhoff worked on to use Docker had issues with mixing environment like Windows and Linux. PS noted that he is constrained to use a particular version of Windows 10. 
+
+PS likes the idea of having a common repo that includes a class of standard packages. Mike Stackhouse notes that the problem is to have the right structure, packages and package management. MS notes that there are several package management solutions available
+
+James Black asks Paul (33:00) how identical solutions have to be. There was some discussion about this. PS notes opinions vary between 100% identical and having results close enough so as not to change the decision. (e.g. p = 0.019 and p = 0.19 are clearly different, but there is a lot of gray area.) 
+
+EN notes it is possible to lock down what goes into a container that would minimize risk even OS differences, but states that getting things stable at the R package level is the bigger issue. (There seemed to be general agreement about this.) DK says locking downing the R environment using packrat or rn would give us a foothold. If this is successful we could reproduce the same environment in a container. 
+
+DK noted that many of difficulties he and PS had during previous FDA project had to do with mounting a file system and how data is accessed within the FDA. Suggests bundling packages with base environment.
+
+MS asked if part of project would be to show that the pilot gives same results in Windows and Linux. PS indicates that it would.
+
+JR notes that there is a consensus for a pilot, and states that even if pilot did not address everything it would be a good start, and asks those present to uses the repo to suggest ideas and contribute relevant documents.
+
+### Action Items
+JR takes action items to reach out to:   
+
+* PHUSE 
+* Wendy Martinez
+* Toma Drogen (ORA deals with field inspectors)
+
+
+### Next meeting
+All agree on 9AM Pacific Time February 5th.
+
+### Video Recording
+The video recording of the meeting is available [here](https://zoom.us/rec/play/XvcnNZODhDwFI37HHNK8_nmdZSYloRC5QlENWU98D488OPxrgWpiZ6YP4c8DWporbTxXGkQoKY-g7J0H.eOfxoPedBl0ksHAj?continueMode=true) The passcode is oM5YqkM
+
+### Note from Doug Kelkhoff
+In a private communication after the meeting Doug Kelkhoff contributed the following: 
+
+At today's meeting, Paul mentioned a pilot that he and I worked on to share docker containers. It would be great if I could share that code with you all. I reached out to the lead from the PHUSE working group to see if we can get that code uploaded somewhere where I can share it.
+
+A brief summary of what was done:
+
+* Delivery of a docker-compose build script, chosen for transparency and to adhere to plain-text restrictions of delivery content. It consisted of:  
+  +  base image based on rocker shiny+tidyverse image  
+  +  a small cohort of packages to install
+  + a mock analysis and companion shiny app
+  + data access (which ended up being the problematic piece of the puzzle)
+* We encountered a few data access woes:
+  + we first attempted to mount a data directory within the eCTD, which prompted for escalated administrator privileges on windows machines - not an acceptable solution
+  + the second attempt was to build the data into the container image, which we were unfortunately not able to fully test before Paul had to move on to other priorities.
+  
+Overall, I still have confidence that this method could work, but, as Paul mentioned, the "it works on my machine" method of trying to debug across platforms and administrated systems is both frustrating and time intensive. Remotely teasing apart docker-related issues from system administration restrictions without a clear picture of the systems constraints was quite a challenge.
+
+
