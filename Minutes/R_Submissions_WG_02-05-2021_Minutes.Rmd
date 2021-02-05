@@ -46,7 +46,9 @@ Next followed a discussion about the FDA computing environment, a discussion thr
 * Obtaining R packages is more of an issue. In theory, the FDA could use MRAN or some other repository which enables downloading specific versions of packages.
 
 The discussion turned to considering section 4.1.2.10 of the Study Data Technical Performance Guide:
-<img src="sec_4.1.2.10.png" height = "400" width="100%">
+
+
+<img src="sec_4.1.2.10.png" height = "250" width="100%">
 
 Yilong Zhang stated that his company has focused on the sentence: "The Specific Software utilized should be specified in the ADRG." 
 Mike Stackhouse explained that the PHUSE working group is is leading is also focused on interpreting this sentence.
