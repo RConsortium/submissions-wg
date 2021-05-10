@@ -1,0 +1,31 @@
+---
+title: "Letter_to_FDA"
+author: "Joseph Rickert"
+date: "5/10/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Director Ethan Chen 
+Division of Data Management Services and Solutions
+
+Dear Director Chen,
+
+I am writing to you at the recommendation of Paul Schuette on behalf of the [R Submissions Working Group](https://github.com/RConsortium/submissions-wg) which is organized under the R Consortium's$^{1}$. Our working group, primarily composed of representatives from several different pharmaceutical companies, is engaged in an effort to develop the software infrastructure necessary for companies to make regulatory submissions using the R programming language. We are part of a larger effort to facilitate the use of R in the regulatory process that includes the R Consortium working groups: the [R Validation Hub](https://www.pharmar.org/) and [R Tables for Regulatory Submissions](https://github.com/RConsortium/rtrs-wg), the PhUSE working group [Clinical Statistical Reporting in a Multilingual World](https://phuseaccount.sharepoint.com/sites/ClinicalStatisticalReportinginaMultilingualWorld/_layouts/15/Doc.aspx?sourcedoc={3334b95b-6ac7-4feb-bfe4-cb154dac4575}&action=edit&wd=target%282021%20Meeting%20Minutes.one%7Cbf68bb6a-f925-4411-b285-f79a4705c140%2FJanuary%2011th%7C3fe896ca-003e-44ea-b31e-d8d3877844bb%2F%29) and the independent Transcelerate [MSA framework](https://www.transceleratebiopharmainc.com/wp-content/uploads/2021/04/MoA-Initiative_MSAFramework_April-2021.pdf).
+
+We are presently working on a pilot submission to demonstrate that it is possible to make all R submissions in a manner that is consistent with the FDA's infrastructure and processes. Because this project is a multi-company, collaborative project being undertaken on behalf of the Pharmaceutical industry, we would like the R Consortium to register as the sponsor for the pilot submission.
+
+We appreciate that this would be somewhat out of the ordinary and would like your guidance in this effort. We would very much appreciate it if you, or someone from your office, could attend our next general meeting to discuss the feasibility of having the R Consortium as a sponsor. The meeting is scheduled for 12PM Eastern time on Thursday, June 4, 2021.
+
+Please let me know if this is possible.
+
+Sincerely,
+
+Joseph B. Rickert
+Chair, R Consortium Board of Directors
+
+$^{1}$ The [R Consortium](https://www.r-consortium.org/) is non-profit organization with the mission to support the R Language, the F Foundation and the R Community. 
+
