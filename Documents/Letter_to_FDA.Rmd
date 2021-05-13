@@ -1,7 +1,7 @@
 ---
-title: "Reviwed and Final drart: Letter to FDA"
+title: "Reviewed and Final: Letter to FDA"
 author: "Joseph Rickert"
-date: "5/12/2021"
+date: "5/13/2021"
 output: html_document
 ---
 
@@ -23,7 +23,7 @@ I am writing to you at the recommendation of Paul Schuette (CDER/OTS/OB) on beha
 
 We are presently working on a pilot submission to demonstrate that it is possible to make all R submissions in a manner that is consistent with the FDA's infrastructure and processes. Because this project is a multi-company, collaborative project being undertaken on behalf of the Pharmaceutical industry, we would like to explore the possibility of registering the R Consortium as a sponsor for the pilot submission. By registering a public and cross-pharma group as a sponsor, we hope to develop pilots in the open, without requiring an individual industry sponsor to manage a pilot submission.
 
-We appreciate that this would be somewhat out of the ordinary and would like your guidance in this effort. We would very much appreciate it if you, or someone from your office, could attend our next general meeting to discuss the feasibility of having the R Consortium as a sponsor. The meeting is scheduled for 12PM Eastern time on Thursday, June 4, 2021.
+We appreciate that this would be somewhat out of the ordinary and would like your guidance in this effort. We would very much appreciate it if you, or someone from your office, could attend our next general meeting to discuss the feasibility of having the R Consortium as a sponsor. The meeting is scheduled for 12PM Eastern time on Friday, June 4, 2021.
 
 Please let me know if this is possible.
 
