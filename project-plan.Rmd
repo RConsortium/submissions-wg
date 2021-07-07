@@ -1,0 +1,111 @@
+---
+title: "project-plan"
+output: html_document
+---
+
+## Project proposal and vision
+
+The proposal of the project can be found in `Documents/pilot_submission_proposal.Rmd`
+
+Our vision:
+
+- Make full R submission easy today
+  - by showing open examples of using current systems
+- Make full R submission easy tomorrow
+  - by influencing future decisions on system/process setup
+
+## General Project Milestone:
+
+This document only cover the first phase with a gold to submit a package with selected analysis. 
+
+There could be extended phase as below:
+
+- Phase 1: selected common ADaM domain and simple analysis
+  - pkglite (txt), simple analysis
+- Phase 2: extend to commonly used efficacy/safety analysis
+  - pkglite (txt), complicated analysis; analysis scripts as pkg
+- Phase 3: TA specific ADaM domain
+  - using `.r` as file extension in submission
+
+The milestone listed below is only for **Phase 1**. 
+
+- Set up R consortium account with FDA. 
+- Prepare submission program using `pkglite`
+  - baseline: Table 14-2.01, 
+  - primary analysis: Table 14-3.01, Table 14-3.02
+  - figure: Figure 14-1
+  - code: `https://github.com/atorus-research/CDISC_pilot_replication/blob/master/programs`
+
+> the output can be found in `submission-package/m5/53-clin-stud-rep/535-rep-effic-safety-stud/5351-stud-rep-contr/cdiscpilot01/cdiscpilot01.pdf`
+
+Note: 
+
+- the format of the table is not necessary to be exactly the same. 
+- we may consider to use different R packages, e.g. `gt`, `PharmaRTF`, `r2rtf`, etc 
+
+- Update PDF files with details in next section.
+  - ADRG
+  - ARM
+  - `define.xml` and `define.pdf` (if required)
+  
+- Update cover letter 
+  - Including a checklist of items to be reviewed by FDA.  
+
+## R consortium sponsor account
+
+- cost of filling from FDA
+
+## Expectation
+
+- cost of filling from FDA
+- reconstruct and load submitted R package(s) (non open sourced packages that submitted via eCTD)
+- load open sourced packages used in this submission
+- reproduce analysis results
+- share processes/steps that may be improved
+- written response from FDA (A reference but in different purpose https://www.fda.gov/media/99313/download)
+
+
+
+## File Prepration 
+
+<details>
+<summary>Click to see file structure</summary>
+
+```{r}
+fs::dir_tree("submission-package/")
+```
+
+</details>
+
+We copied all files in [CDISC pilot submission project](https://bitbucket.cdisc.org/projects/CED/repos/sdtm-adam-pilot-project/browse/updated-pilot-submission-package/900172)
+
+New program in R 
+
+Analysis Program: replace `.sas` file to R program with `pkglite`. 
+
+- `submission-package/m5/datasets/cdiscpilot01/analysis/adam/programs/`
+
+File needs to be updated: 
+
+- `submission-package/ndatoc.pdf`
+- `submission-package/m1/us/12-cov-let/cover.pdf`
+- `submission-package/m5/m5toc.pdf`
+- ADRG: `submission-package/m5/datasets/cdiscpilot01/analysis/adam/datasets/dataguide.pdf`
+- ARM: currently be added in `submission-package/m5/datasets/cdiscpilot01/analysis/adam/datasets/define.pdf`
+- define.xml: `submission-package/m5/datasets/cdiscpilot01/analysis/adam/datasets/define.xml`
+
+Files may be used directly:
+
+- `submission-package/m5/datasets/datatoc.pdf`
+- All files in `submission-package/m5/53-clin-stud-rep`
+  - Contain CSR and narratives. 
+- All files in `submission-package/m5/datasets/cdiscpilot01/tabulations`
+- All files in `submission-package/m5/datasets/cdiscpilot01/analysis/adam/datasets/*.xpt`
+
+## Check list:
+
+- Hyperlink in PDF and define.xml work properly. 
+- Confirm SDTM/ADaM data version 
+- Pass P21 check for all datasets 
+- Confirm `define.xml` work for both SDTM and ADaM data
+- Do we need `submission-package/m5/datasets/cdiscpilot01/tabulations/sdtm/define-v1-updated-html.xml`
