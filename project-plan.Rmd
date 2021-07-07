@@ -1,11 +1,11 @@
 ---
-title: "project-plan"
+title: "Project Plan of R Pilot Submission for eCTD Compliance"
 output: html_document
 ---
 
 ## Project proposal and vision
 
-The proposal of the project can be found in `Documents/pilot_submission_proposal.Rmd`
+The proposal of the project can be found in [here](https://htmlpreview.github.io/?https://github.com/RConsortium/submissions-wg/blob/main/Documents/pilot_submission_proposal.html)
 
 Our vision:
 
@@ -77,9 +77,11 @@ fs::dir_tree("submission-package/")
 
 </details>
 
-We copied all files in [CDISC pilot submission project](https://bitbucket.cdisc.org/projects/CED/repos/sdtm-adam-pilot-project/browse/updated-pilot-submission-package/900172)
+- Copied all files in [CDISC pilot submission project](https://bitbucket.cdisc.org/projects/CED/repos/sdtm-adam-pilot-project/browse/updated-pilot-submission-package/900172)
 
 New program in R 
+
+- ToDo
 
 Analysis Program: replace `.sas` file to R program with `pkglite`. 
 
