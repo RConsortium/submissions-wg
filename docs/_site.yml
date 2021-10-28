@@ -33,6 +33,8 @@ navbar:
           href: "minutes_2021-10-01.html"
     - text: "Links"
       menu:
+        - text: "GitHub Repository"
+          href: https://github.com/RConsortium/submissions-wg
         - text: "R Consortium Pilots Overview"
           href: https://rconsortium.github.io/r-submission-site
         - text: "R Submission Pilot 1 Repo"
