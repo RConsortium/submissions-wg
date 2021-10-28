@@ -1,7 +1,78 @@
 ---
-title: "Test Site"
+title: "Introduction"
 description: |
-  Welcome to the website. I hope you enjoy it!
+  Welcome to the **R Consortium "R Submissions"** Working Group which will be focused on IT and platform challenges that must be addressed in order to make "all R" regulatory submissions.
+  
+  The mission of the group partially overlaps with work underway in the R Validation Hub and RTRS working groups, and eventually these groups may see some consolidation. However, for now, we have the opportunity to set the agenda for this new area.
+
+author:
+  - name: Joseph Rickert
+    affiliation: R Consortium
+    affiliation_url: https://www.r-consortium.org
+  - name: Adrian Waddell
+    affiliation: Roche/Genentech
+  - name: Doug Kelkhoff
+    affiliation: Roche/Genentech
+  - name: Tadeusz Lewandowski
+    affiliation: Roche/Genentech
+  - name: Ning Leng
+    affiliation: Roche/Genentech
+  - name: Bon Engle
+    affiliation: Biogen
+  - name: Christopher Kania
+    affiliation: Biogen
+  - name: Juliane Manitz
+    affiliation: End Serono
+  - name: Lyn Taylor
+    affiliation: Phastar
+  - name: Mike Stackhouse
+    affiliation: Atorus
+  - name: Eli Miller
+    affiliation: Atorus
+  - name: Paule Schuette
+    affiliation: FDA
+  - name: Bryant Chen
+    affiliation: FDA
+  - name: Jiang Xu
+    affiliation: FDA
+  - name: Jizu Zhi
+    affiliation: FDA
+  - name: Kevin Snyder
+    affiliation: FDA
+  - name: Renping Zhang
+    affiliation: FDA
+  - name: Sascha Ahrweiler
+    affiliation: Bayer
+  - name: Sean Lopp
+    affiliation: RStudio
+  - name: Phil Bowsher
+    affiliation: RStudio
+  - name: Yilong Zhang
+    affiliation: Merck
+  - name: Keaven Anderson
+    affiliation: Merck
+  - name: Nan Xiao
+    affiliation: Merck
+  - name: Miriam Fossati
+    affiliation: Merck
+  - name: Paulo Bargo
+    affiliation: Janssen
+  - name: Heidi Curinckx
+    affiliation: Janssen
+  - name: Andy Nicholls
+    affiliation: GSK
+  - name: Ojesh Upandhyay
+    affiliation: GSK
+  - name: Ben Staub
+    affiliation: GSK
+  - name: Kevin Bolger
+    affiliation: Procogia
+  - name: Eric Nantz
+    affiliation: Eli Lilly
+  - name: Bella Feng
+    affiliation: EQRx
+  - name: Steven Hasendinckx
+    affiliation: Johnson & Johnson
 site: distill::distill_website
 ---
 
