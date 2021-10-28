@@ -1,0 +1,65 @@
+---
+title: "R Consortium R Submissions Working Group"
+params:
+  attendees:
+    - "Heather Crandall - FDA"
+    - "Bob Engle - Biogen"
+    - "Steven Hasendinckx - J&J"
+    - "Chris Kania - Biogen"
+    - "Doug Kelkhoff - Genentech"
+    - "Ning Leng - Genentech"
+    - "Nicholas Masel"
+    - "Eli Miller - Atorus"
+    - "Joseph Rickert - R Consortium"
+    - "Paul Schuette - FDA"
+    - "Jiang Xu - FDA"
+    - "Yilong Zhang - Merck"
+output: 
+  distill::distill_article:
+    css: css/custom.css
+---
+
+## Minutes of 2021-06-30 Meeting prepared by Joseph Rickert
+
+<details>
+  <summary>View Attendee List</summary>
+  <p>`r glue::glue_collapse(params$attendees, sep="<br>")`</p>
+</details>
+
+The meeting was recorded and the video is available at the link given below. 
+Joseph Rickert opened the meeting and suggested that the group pick up where we left off last time and discuss the feasibility of having the R Consortium sponsor the pilot trial. The group briefly considered whether it would be easier for a pharma company to sponsor the submission. However after a brief discussion, those presently decided that it would be far better for the R Consortium to be the sponsor, because it would make it clear that this is an industry effort and that all work would be carried out in the open. 
+
+There was consensus that Director Chen and his Office at the FDA were generally supportive of the effort and that there did not appear to be regulatory or other impediments with the RC being the sponsor. There is some uncertainty as to whether there would be a fee associated with the submission and how much that fee might be.
+
+There was a discussion about what should be included in first pilot submission and what the next steps should be. The members present concluded that the first pilot submission should be simple, but not trivial, that it should be something more than a "Hello World". All agreed that it would be optimal to plan the content of sequential submissions in order to make continuous progress with small steps in the beginning and perhaps more ambitious efforts as the project progressed.
+
+There was also some discussion about the form of the submission and the documentation that should be included. Paul Schuette suggested that the submission package should include a cover letter to set expectations. The letter should describe the submission at a high level, and describe how the objectives will be accomplished. The documentation for the submission package should include:
+* A cover letter
+* A detailed description of the submission package
+* Some suggestions how the FDA reviewers could evaluate the submission
+* A description of the kind of feedback that would be helpful
+* Perhaps a written response from the FDA describing their evaluation
+
+### Action Items
+
+The members present agreed to divide the work as follows.
+
+#### Sponsor Application
+
+Joe Rickert, Eli Miller and Doug Kelkhoff will look into identifying all of the steps in the application process and begin the process..
+
+#### Prepare the Submission Package
+
+Yilong Zhang volunteered to take the lead in designing and assembling the submission package. Those participating in this task will use the GitHub issues to communicate tasks. Yilong also offered to look into setting up a GitHub project.
+
+#### FDA Participation
+
+Paul agreed to see if his group could be the primary FDA contact.
+
+### Video Recording
+
+The video recording of the meeting is available [here](https://zoom.us/rec/share/u-mjqMhw-1SKYBIRM-xqrmGDWCQQBHxYqwhesCIe8Galpmzwup2QvKDmVBmXpvBI.Qb-Ez1OX75zdgoyF) Passcode: `ax2L&E71`
+
+### Next Meeting
+
+The next meeting will be held on Friday, August 6, 2021 at 9AM Pacific Time.

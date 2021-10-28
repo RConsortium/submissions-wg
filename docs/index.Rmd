@@ -1,0 +1,120 @@
+---
+title: "Introduction"
+description: |
+  Welcome to the **R Consortium "R Submissions"** Working Group which will be focused on IT and platform challenges that must be addressed in order to make "all R" regulatory submissions.
+  
+  The mission of the group partially overlaps with work underway in the R Validation Hub and RTRS working groups, and eventually these groups may see some consolidation. However, for now, we have the opportunity to set the agenda for this new area.
+  
+  You can view previous meeting minutes with links to recorded sessions in the navigation bar above. 
+
+author:
+  - name: Joseph Rickert
+    affiliation: R Consortium
+    affiliation_url: https://www.r-consortium.org
+  - name: Adrian Waddell
+    affiliation: Roche/Genentech
+    affiliation_url: https://www.gene.com/
+  - name: Doug Kelkhoff
+    affiliation: Roche/Genentech
+    affiliation_url: https://www.gene.com/
+  - name: Tadeusz Lewandowski
+    affiliation: Roche/Genentech
+    affiliation_url: https://www.gene.com/
+  - name: Ning Leng
+    affiliation: Roche/Genentech
+    affiliation_url: https://www.gene.com/
+  - name: Bon Engle
+    affiliation: Biogen
+    affiliation_url: https://www.biogen.com/en_us/home.html
+  - name: Christopher Kania
+    affiliation: Biogen
+    affiliation_url: https://www.biogen.com/en_us/home.html
+  - name: Juliane Manitz
+    affiliation: End Serono
+    affiliation_url: https://www.emdserono.com/us-en
+  - name: Lyn Taylor
+    affiliation: Phastar
+    affiliation_url: https://phastar.com/
+  - name: Mike Stackhouse
+    affiliation: Atorus
+    affiliation_url: https://www.atorusresearch.com/
+  - name: Eli Miller
+    affiliation: Atorus
+    affiliation_url: https://www.atorusresearch.com/
+  - name: Paule Schuette
+    affiliation: FDA
+    affiliation_url: https://www.fda.gov/
+  - name: Bryant Chen
+    affiliation: FDA
+    affiliation_url: https://www.fda.gov/
+  - name: Jiang Xu
+    affiliation: FDA
+    affiliation_url: https://www.fda.gov/
+  - name: Jizu Zhi
+    affiliation: FDA
+    affiliation_url: https://www.fda.gov/
+  - name: Kevin Snyder
+    affiliation: FDA
+    affiliation_url: https://www.fda.gov/
+  - name: Renping Zhang
+    affiliation: FDA
+    affiliation_url: https://www.fda.gov/
+  - name: Sascha Ahrweiler
+    affiliation: Bayer
+    affiliation_url: https://www.bayer.com/en/
+  - name: Sean Lopp
+    affiliation: RStudio
+    affiliation_url: https://www.rstudio.com/
+  - name: Phil Bowsher
+    affiliation: RStudio
+    affiliation_url: https://www.rstudio.com/
+  - name: Yilong Zhang
+    affiliation: Merck
+    affiliation_url: https://www.merck.com/
+  - name: Keaven Anderson
+    affiliation: Merck
+    affiliation_url: https://www.merck.com/
+  - name: Nan Xiao
+    affiliation: Merck
+    affiliation_url: https://www.merck.com/
+  - name: Miriam Fossati
+    affiliation: Merck
+    affiliation_url: https://www.merck.com/
+  - name: Paulo Bargo
+    affiliation: Janssen
+    affiliation_url: https://www.janssen.com/
+  - name: Heidi Curinckx
+    affiliation: Janssen
+    affiliation_url: https://www.janssen.com/
+  - name: Andy Nicholls
+    affiliation: GSK
+    affiliation_url: https://www.gsk.com/en-gb/home/
+  - name: Ojesh Upandhyay
+    affiliation: GSK
+    affiliation_url: https://www.gsk.com/en-gb/home/
+  - name: Ben Staub
+    affiliation: GSK
+    affiliation_url: https://www.gsk.com/en-gb/home/
+  - name: Kevin Bolger
+    affiliation: Procogia
+    affiliation_url: https://procogia.com/
+  - name: Eric Nantz
+    affiliation: Eli Lilly
+    affiliation_url: https://lilly.com
+  - name: Bella Feng
+    affiliation: EQRx
+    affiliation_url: https://www.eqrx.com/
+  - name: Steven Hasendinckx
+    affiliation: Johnson & Johnson
+    affiliation_url: https://www.jnj.com/
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+```
+

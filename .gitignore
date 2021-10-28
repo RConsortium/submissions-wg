@@ -3,3 +3,5 @@
 .RData
 .Ruserdata
 CDISC-pilot
+prototyping/*
+!prototyping/README.md

@@ -1,0 +1,50 @@
+---
+title: "R Consortium R Submissions Working Group"
+params:
+  attendees:
+    - "Joseph Rickert - R Consortium"
+    - "Adrian Waddell - Roche"
+    - "Doug Kelkhoff - Genentech"
+    - "Bob Engle - Biogen"
+    - "Juliane Manitz - Emd Serono"
+    - "Lyn Taylor - Phastar"
+    - "Mike Stackhouse - Atorus"
+    - "Paul Schuette - FDA"
+    - "Sascha Ahrweiler - Bayer"
+    - "Sean Lopp - RStudio"
+    - "Tadeusz Lewandowski - Roche"
+    - "Yilong Zhang - Merck"
+    - "Paulo Bargo - Janssen"
+    - "Andy Nicholls - GSK"
+    - "Keaven Anderson - Merck"
+    - "Kevin Bolger - Procogia"
+output: 
+  distill::distill_article:
+    css: css/custom.css
+---
+
+## Minutes of 12-07-2020 Meeting prepared by Joseph Rickert
+
+<details>
+  <summary>View Attendee List</summary>
+  <p>`r glue::glue_collapse(params$attendees, sep="<br>")`</p>
+</details>
+
+Joseph Rickert opened the meeting and provided a brief overview of  R Consortium Working Group concerned with Pharma related topics:
+
+* The R Validation Hub is working towards developing standards and tools for assessing the risk associated with working with R packages in regulatory environments
+* The RTRS Working Group is working for a standard for developing R packages that will be meet the 21 CFR Part 11 standard for constructing tables for clinical trials and FDA submissions
+* This new R Submissions working group will focus on IT and infrastructure issues
+
+Paul Schuette of the FDA then gave a brief overview of FDA Submissions Infrastructure. He described:
+
+* The Electronic Common Technical Document
+* The ECTD Technical Guide
+* ECTD M1 to M5 File Structure
+* The Study Data Resources Document
+* The Study Data Technical Conformance Guide
+* CDISC - Clinical Data Interchange Standards Consortium
+* STDM - Study Data Tabulation Model
+* ADaM - Analysis Data Model
+
+Adrian Waddell asked how flexible the FDA was willing to be on this infrastructure and whether it could be negotiated. Paul Schuette indicated that negotiation was possible. Thereafter, followed a robust discussion which was recorded and available at [this link](https://zoom.us/rec/share/d3SRLOn0bYxQhWWeo8ftoZb3uJC97bq3grdgtQ-MOyTToZb4JJoEWtBwQ25QnrPD.hp1xXVfAiYA1Twv4?startTime=1607105048000). The pass code is `yif%qn4p`.
