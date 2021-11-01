@@ -32,7 +32,7 @@ navbar:
         - text: "2021-10-01"
           href: "minutes_2021-10-01.html"
     - text: "Planned Pilots"
-      href: planned-pilots.html          
+      href: pilot-overall.html          
     - text: "Links"
       menu:
         - text: "GitHub Repository"
