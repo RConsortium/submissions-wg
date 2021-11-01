@@ -31,14 +31,14 @@ navbar:
           href: "minutes_2021-09-03.html"
         - text: "2021-10-01"
           href: "minutes_2021-10-01.html"
+    - text: "Planned Pilots"
+      href: planned-pilots.html          
     - text: "Links"
       menu:
         - text: "GitHub Repository"
           href: https://github.com/RConsortium/submissions-wg
-        - text: "R Consortium Pilots Overview"
-          href: https://rconsortium.github.io/r-submission-site
-        - text: "R Submission Pilot 1 Repo"
+        - text: "R Submission Pilot 1 Development Repo"
           href: https://github.com/RConsortium/submissions-pilot1
-        - text: "R Submission Pilot 1 Package"
+        - text: "R Submission Pilot 1 Submission Package to FDA"
           href: https://github.com/RConsortium/submissions-pilot1-to-fda
 output: distill::distill_article

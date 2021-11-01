@@ -1,0 +1,13 @@
+## Pilot 2 - advanced analyses
+
+**Goal**: Example R based submission contains advanced analyses, submission through the current FDA e-submission system and process (e.g. codes will be submitted as .txt files).
+
+**Key evaluation aspects**:
+
+- For Submitter
+  - Submission of proprietary R packages requires advanced computation
+  - Submit analysis codes as R package
+- For FDA Reviewer
+  - Reproduce analysis results by reconstructing submitted proprietary packages / retrieving open source packages and rerunning the analysis package
+
+**Timeline**: 2022 H1

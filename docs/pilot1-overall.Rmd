@@ -1,0 +1,35 @@
+
+## Pilot 1 - common analyses
+
+**Goal**: Example R based submission contains common analyses, submission through the current FDA e-submission system and process (e.g. codes will be submitted as .txt files).
+
+**Key evaluation aspects**: 
+  
+- For Submitter  
+  - Submission of proprietary R packages
+  - Preparation of R-based submission materials
+- For FDA Staff
+  - Reproduce analysis results by reconstructing submitted proprietary packages / retrieving open source packages
+
+**Data and analysis scope**:
+  
+- 4 TLFs 
+- Simulated data from CDISC Pilot
+
+
+**Success Criteria**:
+  
+- Submitter:
+  - Successfully submit via eCTD portal
+- FDA Reviewer:
+  - Reproduce analysis results
+
+
+**Timeline**: 2021 Dec
+
+**Links**:
+
+[R Submission Pilot 1 Development Repo](https://github.com/RConsortium/submissions-pilot1)
+
+
+ [R Submission Pilot 1 Submission Package to FDA](https://github.com/RConsortium/submissions-pilot1-to-fda)
