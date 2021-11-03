@@ -7,6 +7,8 @@ R Submissions Working Group
   focusing on improving practices of R-based 
   clinical trial regulatory submission.
   
+  [Website](https://rconsortium.github.io/submissions-wg/)
+  
 # Related repositories:
 
 
