@@ -26,12 +26,21 @@ author:
   - name: Ning Leng
     affiliation: Roche/Genentech
     affiliation_url: https://www.gene.com/
+  - name: Beverly Chin
+    affiliation: Roche/Genentech
+    affiliation_url: https://www.gene.com/
   - name: Bon Engle
     affiliation: Biogen
     affiliation_url: https://www.biogen.com/en_us/home.html
   - name: Christopher Kania
     affiliation: Biogen
     affiliation_url: https://www.biogen.com/en_us/home.html
+  - name: Nate Mockler
+    affiliation: Biogen
+    affiliation_url: https://www.biogen.com/en_us/home.html   
+  - name: Tim Powell
+    affiliation: Biogen
+    affiliation_url: https://www.biogen.com/en_us/home.html   
   - name: Juliane Manitz
     affiliation: EMD Serono
     affiliation_url: https://www.emdserono.com/us-en
