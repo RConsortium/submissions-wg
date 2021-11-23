@@ -26,6 +26,9 @@ author:
   - name: Ning Leng
     affiliation: Roche/Genentech
     affiliation_url: https://www.gene.com/
+  - name: Heng Wang
+    affiliation: Roche/Genentech
+    affiliation_url: https://www.gene.com/
   - name: Beverly Chin
     affiliation: Roche/Genentech
     affiliation_url: https://www.gene.com/
@@ -95,6 +98,9 @@ author:
   - name: Miriam Fossati
     affiliation: Merck
     affiliation_url: https://www.merck.com/
+  - name: Peikun Wu
+    affiliation: Merck
+    affiliation_url: https://www.merck.com/
   - name: Paulo Bargo
     affiliation: Janssen
     affiliation_url: https://www.janssen.com/
@@ -122,6 +128,15 @@ author:
   - name: Steven Hasendinckx
     affiliation: Johnson & Johnson
     affiliation_url: https://www.jnj.com/
+  - name: Heidi Curinckx
+    affiliation: Johnson & Johnson
+    affiliation_url: https://www.jnj.com/
+  - name: Renping Zhang
+    affiliation: Johnson & Johnson
+    affiliation_url: https://www.jnj.com/
+  - name: Hong Yan
+    affiliation: Regeneron
+    affiliation_url: https://www.https://www.regeneron.com/
 site: distill::distill_website
 ---
 
