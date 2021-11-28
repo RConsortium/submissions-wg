@@ -17,6 +17,11 @@ All of the site files are contained in the `docs` sub-directory. You can preview
 xfun::in_dir('docs/', rmarkdown::render_site())
 ```
 
+An easy way to preview the site (no matter if running in RStudio or another IDE) is to run the following function from the `servr` package:
+
+```r
+servr::httw("docs")
+```
 ## Creating Meeting Minutes
 
 Here is the workflow to create a meeting minutes page for the site:
