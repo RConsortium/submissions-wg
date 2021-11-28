@@ -85,26 +85,29 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>R Submissions Working Group: R Consortium R Submissions Working Group</title>
+  <title>R Submissions Working Group: About this site</title>
   
+  <meta property="description" itemprop="description" content="Some additional details about the website"/>
   
   
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="R Submissions Working Group: R Consortium R Submissions Working Group"/>
+  <meta property="og:title" content="R Submissions Working Group: About this site"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Some additional details about the website"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="R Submissions Working Group"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="R Submissions Working Group: R Consortium R Submissions Working Group"/>
+  <meta property="twitter:title" content="R Submissions Working Group: About this site"/>
+  <meta property="twitter:description" content="Some additional details about the website"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","params","output"]}},"value":[{"type":"character","attributes":{},"value":["R Consortium R Submissions Working Group"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["attendees"]}},"value":[{"type":"character","attributes":{},"value":["Heidi Curinckx","Bob Engle - BioGen","Miriam Fossati - Merck","Christopher Kania - Biogen","Doug Kelkhoff - Genentech","Ning Leng - Genentech","Joseph Rickert - R Consortium","Michael Rimler - GSK","Paul Schuette - FDA","Mike Stackhouse - Atorus","Ben Staub - GSK","Adrian Waddell - Roche","Heng Wang - Genentech","Peikun Wu - Merck","Nan Xiao - Merck","Jiang Xu - FDA","Renping Zhang - FDA","Yilong Zhang - Merck","Jizu Zhi - FDA"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["css"]}},"value":[{"type":"character","attributes":{},"value":["css/custom.css"]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["About this site"]},{"type":"character","attributes":{},"value":["Some additional details about the website"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2043,7 +2046,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_site_in_header-->
   <!--/radix_placeholder_site_in_header-->
 
-  <link rel="stylesheet" href="css/custom.css" type="text/css"/>
 
 </head>
 
@@ -2052,7 +2054,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"R Consortium R Submissions Working Group","authors":[]}
+{"title":"About this site","description":"Some additional details about the website","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2107,27 +2109,14 @@ Links
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>R Consortium R Submissions Working Group</h1>
+<h1>About this site</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p>Some additional details about the website</p>
 </div>
 
 
 <div class="d-article">
-<h2 id="minutes-of-2021-10-01-meeting-prepared-by-joseph-rickert">Minutes of 2021-10-01 Meeting prepared by Joseph Rickert</h2>
-<details>
-<summary>View Attendee List</summary>
-<p>
-Heidi Curinckx<br>Bob Engle - BioGen<br>Miriam Fossati - Merck<br>Christopher Kania - Biogen<br>Doug Kelkhoff - Genentech<br>Ning Leng - Genentech<br>Joseph Rickert - R Consortium<br>Michael Rimler - GSK<br>Paul Schuette - FDA<br>Mike Stackhouse - Atorus<br>Ben Staub - GSK<br>Adrian Waddell - Roche<br>Heng Wang - Genentech<br>Peikun Wu - Merck<br>Nan Xiao - Merck<br>Jiang Xu - FDA<br>Renping Zhang - FDA<br>Yilong Zhang - Merck<br>Jizu Zhi - FDA
-</p>
-</details>
-<p>Joseph Rickert brought the meeting to order and Ning Leng presented an up update on the status of the Pilot 1 project using the slide deck <code>Leng_Update_10-1-21.pptx</code> which is available in the <a href="https://github.com/RConsortium/submissions-wg/tree/main/Documents">Documents folder</a> of submissions-wg GitHub repository.</p>
-<p>Paul Schuette suggested that Ning revise the document to refer to “FDA staff” rather than “FDA Reviewer” which provides more latitude for getting FDA help. Paul also noted that although it might be possible it is not likely that the FDA could accomplish the task requested before the R/Pharma conference which begins on November 2. Those present agreed that it is not necessary to tie the completion of the FDA activities to R/Pharma.</p>
-<p>After Ning’s presentation there was a discussion about suggestions for amending the language to section 4.1.2.10 of the Study Data Technical Performance Guide. Doug Kelkhoff noted that in internal discussions within Genentech the idea was floated that, as written the document may already allow passing R code in tar balls through the FDA gateway. If this were indeed true it would greatly simply R submissions since tar balls are a common method of delivering R code. Jian Xu of the FDA suggest that the way to get an answer to this question is to submit the question to the email address provided on the FDA eCTD webpage: <a href="https://www.fda.gov/drugs/electronic-regulatory-submission-and-review/submit-ectd-or-standardized-data-sample-fda">Submit an eCTD or Standardized Data Sample to the FDA</a>. Joe and Doug took the <strong>action item</strong> to write up the question and submit it.</p>
-<p>The group then considered a proposal by Adrian to organize the several GitHub repositories and activities of the Submissions WG using the Teams features of GitHub. The group agreed that this would be a good idea but suggested waiting until after Pilot1 is completed. Adrian will set up a meeting with Joe and Ning to setup the structure.</p>
-<p>The video of today’s 10-1-21 meeting is available <a href="https://rstudio.zoom.us/rec/share/q3guNFXtWp5aKRYAMB1f7CkW2miueFj_uSBuKnvsAksQi9vYvy9IsEAgBgy5eNje.p4Qupsx4WuBHZgQM">here</a> passcode: &amp;1b4VEkR</p>
-<p>The next meeting of the WG will be at 9AM Pacific Time on Friday November 5, 2021.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
