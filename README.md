@@ -14,5 +14,5 @@ R Submissions Working Group
 
 [Development repo for R submission pilot 1](https://github.com/RConsortium/submissions-pilot1)
 
-[R submission pilot 1 - submission package (under development)](https://github.com/RConsortium/submissions-pilot1-to-fda)
+[R submission pilot 1 - Final eCTD submission package to FDA](https://github.com/RConsortium/submissions-pilot1-to-fda)
 

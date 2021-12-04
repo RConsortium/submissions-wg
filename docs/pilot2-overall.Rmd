@@ -1,6 +1,6 @@
 ## Pilot 2 - advanced analyses
 
-**Goal**: Example R based submission contains advanced analyses, submission through the current FDA e-submission system and process (e.g. codes will be submitted as .txt files).
+**Goal**: Example R based submission contains advanced analyses, submission through the current FDA e-submission system and process 
 
 **Key evaluation aspects**:
 

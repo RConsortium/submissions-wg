@@ -56,7 +56,7 @@ author:
   - name: Eli Miller
     affiliation: Atorus
     affiliation_url: https://www.atorusresearch.com/
-  - name: Paule Schuette
+  - name: Paul Schuette
     affiliation: FDA
     affiliation_url: https://www.fda.gov/
   - name: Ethan Chen
@@ -74,9 +74,12 @@ author:
   - name: Kevin Snyder
     affiliation: FDA
     affiliation_url: https://www.fda.gov/
-  - name: Renping Zhang
+  - name: Hye Soo Cho
     affiliation: FDA
     affiliation_url: https://www.fda.gov/
+  - name: Maria Matilde Kam
+    affiliation: FDA
+    affiliation_url: https://www.fda.gov/    
   - name: Sascha Ahrweiler
     affiliation: Bayer
     affiliation_url: https://www.bayer.com/en/
