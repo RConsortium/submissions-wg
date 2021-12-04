@@ -2,7 +2,6 @@
 
 ## Pilot 3 - alternative formats
 
-**Goal**: Example R based submission exploring alternative options than current FDA e-submission system and process (e.g. codes be submitted in .r format).
-
+**Goal**: Example R based submission exploring alternative options than current FDA e-submission system and process
 **Timeline**: TBD
   
