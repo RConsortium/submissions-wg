@@ -1,6 +1,7 @@
 ## Minutes from 2021-12-03 meeting of the Submissions Group
 Compiled by Joseph Rickert
 
+
 ## Attendees:
 * Phil Bowsher - RStudio
 * Hye Soo Cho - FDA
