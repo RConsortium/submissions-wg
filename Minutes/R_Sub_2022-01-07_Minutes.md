@@ -1,0 +1,88 @@
+## Minutes from 2022-01-07 meeting of the Submissions Group
+Compiled by Joseph Rickert
+
+
+## Attendees:
+* Phil Bowsher - RStudio 
+* Heidi Curinckx - Johnson & Johnson 
+* Steven Hassendinckx 
+* Graeme Hickey - BD 
+* Ellis Hughes 
+* Ning Leng - Genentech
+* Tadeusz Lewandowski - Roche 
+* Michael Mayer - RStudio 
+* Eric Nantz - Lilly 
+* Emily Nguyen - FDA 
+* Xin Qiu
+* Joseph Rickert - R Consortium 
+* Paul Schuette - FDA 
+* CG Wang  
+* Nan Xiao - Merck 
+* Jiang Xu - FDA 
+* Renping Zhang - FDA 
+* Yilong Zhang - Merck 
+
+
+## Minutes of 2022-01-07 Meeting prepared by Joseph Rickert
+
+The meeting was recorded and the [video](https://rstudio.zoom.us/rec/share/O1F_Ylokh-C1dKYqKNxARJiVoMHBZMjVld8UvUbl3rjN1dZ1KMW7xGgRCFNrl1E0.ipxH19MuL4UnB9Hn) is available with Passcode: g?xb.9fs
+
+
+Ning Leng began the meeting by providing a brief summary of recent submission. We received written feedback from the FDA which is available in the submissions repository [here](https://github.com/RConsortium/submissions-wg/blob/main/Documents/Summary_R_Pilot_Submission.pdf). There were a few findings with the pilot:
+
+* A mislableed treatment arm (This is a potential bug)
+* A rounding issue
+* Table fomatting
+
+NL noted that our execution team was not able to recreate the rounding issue, and asked PS is it would be possible to for us to look at the FDA code. This is possible, but needs to be cleared with management and may take a couple of weeks,
+
+Ning and the other members of the submission execution team are looking into these and hope to be able to submit a follow up to Pilot 1 in several weeks. Ning asked if the FDA would be willing to review the resubmission of Pilot 1. PS said that this would be fine.
+
+
+The discussion then moved to the contents of Pilot 2.
+PS noted that with submitting .R files we already met some of the goals we had been planning for Pilot 2.
+
+To begin the discussion JR asked: what kinds of things have been considered difficult to do in submissions in the past and what could we do that would be impressive from the FDA's point of view?
+
+PS suggested package versioning and archival issues
+
+NL suggested four topics that have come up in previous discussions.
+
+1. Package versioning
+2. Using Docker
+3. Alternative data formats to sas7bdat
+4. Shiny
+
+EN agreed that these were the top issues, and noted that using a container such as Docker would also solve the package versioning.
+
+PS remarked that doing anything with data formatting is unlikely at this time. Two recent pilots failed to come up with an alternative. This is "not the hill to die on" right now. It is probably an issue that is worthy of broader discussion with other groups such as ASA, DIA, or PHUSE. PS suggested looping in [Heather Crandall](Heather.Crandall@fda.hhs.gov) and OBI, [the Office of Business Informatics](https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/office-business-informatics-obi).
+
+PS also noted that Docker has made changes to licensing so that FDA is not able to play with local installations of Docker. EN said that he was aware of these issues and suggested alternatives such as [podman](https://podman.io/) which he believes to be the first candidate to investigate. PS stated that any container technology would have to be approved by IT. He also noted that the FDA is currently using an obsolete version of Docker, and that upgrading to a newer version would have to go through the FDA approval process. Also, the FDA security team will not let containers have access to the hard drive. The group concurred that since getting Docker approved would not be any easier than podman the group should explore this new technology. EN offered to take the lead on this and enter the task into the Kanban board.
+
+PS suggested that since we have just shown that we can get a package through the gateway, the next step might be to turn a shiny app into a package and pass it through the gateway. EN confirmed that this is indeed possible and noted that the [golem](https://cran.r-project.org/package=golem) package can do this and deploy the shiny app locally without having to go to a server.
+
+YZ noted that he has seen several [linkedin posts](https://www.linkedin.com/search/results/content/?keywords=shiny%20submissions&sid=aye&update=urn%3Ali%3Afs_updateV2%3A(urn%3Ali%3Aactivity%3A6879137760716886016%2CBLENDED_SEARCH_FEED%2CEMPTY%2CDEFAULT%2Cfalse)) about using Shiny for submissions and asked if that was happening in this group. PB stated that this Shiny submissions effort is being run by the R/Pharma group. They are planning to start holding monthly meeting, the first being at the end of January. R/Pharma wants to focus on the technical issues. 
+
+The group agreed that the path forward with Shiny as a package is much more straightforward than using containers, and suggested that we settle on Shiny for Pilot 2 and Containers for Pilot 3.
+
+The discussion then turned on which Shiny app we should select. TD suggested the teal package that Roche is working on and noted that Roche is planning to make this open source. The group agreed that the source code of any Shiny package submitted should be open source.
+
+At 30:03 into the video, TL demonstrated the teal package. After the demo, the group discussed the benefits of submitting a complicated package like teal which has several interesting features versus a simple app that meets the basic requirements. PS noted that ideally we would want to launch server from a local PC and not touch a server. To do otherwise would require the FDA to involve a special contractor and funding. The group decided to use a simple app and NL suggested wrapping the Pilot 1 modules into a Shiny app.
+
+At 46:15 into the video, TL demonstrates calling different packages from a Shiny app.
+
+EN agreed to open up a second repo for development of Pilot 2. We will keep use the same setup as Pilot 1 and have the kanban board on the main submissions repo point to the Pilot 2 repo.
+
+JR said that he would follow up with PHUSE about work they may be doing on the formatting issue.
+
+NL asked about [accumulus synergy](https://www.accumulus.org/), an FDA and cross industry looking at cloud solutions. Would there be a way to connect our container effort with accumulus? The group suggested searching for a contact.
+
+JR noted that before the next submission of Pilot 1 we must write to the FDA to reopen the gateway.
+
+
+The next meeting of the working group will be at 9AM Pacific Time Friday, February 4, 2022.
+
+
+
+
+
