@@ -22,11 +22,9 @@ Compiled by Joseph Rickert
 * Renping Zhang - FDA 
 * Yilong Zhang - Merck 
 
-
 ## Minutes of 2022-01-07 Meeting prepared by Joseph Rickert
 
 The meeting was recorded and the [video](https://rstudio.zoom.us/rec/share/O1F_Ylokh-C1dKYqKNxARJiVoMHBZMjVld8UvUbl3rjN1dZ1KMW7xGgRCFNrl1E0.ipxH19MuL4UnB9Hn) is available with Passcode: g?xb.9fs
-
 
 Ning Leng began the meeting by providing a brief summary of recent submission. We received written feedback from the FDA which is available in the submissions repository [here](https://github.com/RConsortium/submissions-wg/blob/main/Documents/Summary_R_Pilot_Submission.pdf). There were a few findings with the pilot:
 
@@ -37,7 +35,6 @@ Ning Leng began the meeting by providing a brief summary of recent submission. W
 NL noted that our execution team was not able to recreate the rounding issue, and asked PS is it would be possible to for us to look at the FDA code. This is possible, but needs to be cleared with management and may take a couple of weeks,
 
 Ning and the other members of the submission execution team are looking into these and hope to be able to submit a follow up to Pilot 1 in several weeks. Ning asked if the FDA would be willing to review the resubmission of Pilot 1. PS said that this would be fine.
-
 
 The discussion then moved to the contents of Pilot 2.
 PS noted that with submitting .R files we already met some of the goals we had been planning for Pilot 2.
