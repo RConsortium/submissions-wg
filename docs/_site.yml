@@ -33,6 +33,12 @@ navbar:
           href: "minutes_2021-10-01.html"
         - text: "2021-11-05"
           href: "minutes_2021-11-05.html"
+        - text: "2021-12-03"
+          href: "minutes_2021-12-03.html"
+        - text: "2022-01-07"
+          href: "minutes_2022-01-07.html"
+        - text: "2022-02-04"
+          href: "minutes_2022-02-04.html"
     - text: "Planned Pilots"
       href: pilot-overall.html          
     - text: "Links"
