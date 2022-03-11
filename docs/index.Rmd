@@ -98,6 +98,9 @@ author:
   - name: Nan Xiao
     affiliation: Merck
     affiliation_url: https://www.merck.com/
+  - name: Gregory Chen
+    affiliation: Merck
+    affiliation_url: https://www.merck.com/
   - name: Miriam Fossati
     affiliation: Merck
     affiliation_url: https://www.merck.com/
@@ -140,6 +143,9 @@ author:
   - name: Hong Yan
     affiliation: Regeneron
     affiliation_url: https://www.https://www.regeneron.com/
+  - name: Ari Siggaard Knoph
+    affliation: Novo Nordisk
+    affiliation_url: https://www.novonordisk.com/
 site: distill::distill_website
 ---
 

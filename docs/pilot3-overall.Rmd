@@ -2,6 +2,9 @@
 
 ## Pilot 3 - alternative formats
 
-**Goal**: Example R based submission exploring alternative options than current FDA e-submission system and process
+**Goal**: Example R based submission exploring alternative options than current FDA e-submission system and process (e.g. container)
 **Timeline**: TBD
   
+Developer team:     
+
+Eric Nantz (Eli Lilly)  

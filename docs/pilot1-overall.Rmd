@@ -25,14 +25,21 @@
   - Reproduce analysis results
 
 
-**Timeline**: Submitted 2021 Nov
+**Timeline**: 
+- Submitted 2021 Nov (v0.1.0)
+- FDA first response 2021 Nov
+- Resubmission 2022 Feb (v0.1.0)
+
 
 **Links**:
 
 [R Submission Pilot 1 Development Repo](https://github.com/RConsortium/submissions-pilot1)
 
 
- [R Submission Pilot 1 eCTD Submission Package to FDA](https://github.com/RConsortium/submissions-pilot1-to-fda)
+[R Submission Pilot 1 eCTD Submission Package to FDA](https://github.com/RConsortium/submissions-pilot1-to-fda)
+
+**Additional Activities**
+- explore pilot submissions to other HAs (Japan, China)
  
 **Key team members**:  
 
