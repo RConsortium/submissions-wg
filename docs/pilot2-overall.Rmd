@@ -1,13 +1,39 @@
-## Pilot 2 - advanced analyses
+## Pilot 2 - shiny submission
 
-**Goal**: Example R based submission contains advanced analyses, submission through the current FDA e-submission system and process 
+**Goal**: Example R based submission contains a shiny app, submission through the current FDA e-submission system and process 
 
 **Key evaluation aspects**:
 
 - For Submitter
-  - Submission of proprietary R packages requires advanced computation
-  - Submit analysis codes as R package
+  - Submission of an shiny app through the eCTD portal
+  - The shiny codes will be provided as a proprietary R package
 - For FDA Reviewer
-  - Reproduce analysis results by reconstructing submitted proprietary packages / retrieving open source packages and rerunning the analysis package
+  - Reproduce analysis results by deploying the shiny app on a FDA laptop/server 
 
 **Timeline**: 2022 H1
+
+**Data and analysis scope**:
+  
+- a shiny app that displays the 4 TLFs submitted in [pilot 1]((https://github.com/RConsortium/submissions-pilot1-to-fda)), with basic data set filtering functionalities. 
+- Simulated data from CDISC Pilot (the same data set as in pilot 1)
+
+**Links**:
+
+[R Submission Pilot 2 Development Repo](https://github.com/RConsortium/submissions-pilot2)
+
+
+[R Submission Pilot 2 eCTD Submission Package to FDA](https://github.com/RConsortium/submissions-pilot2-to-fda)
+
+
+**Key team members**: 
+Developer team:     
+
+Ning Leng, Heng Wang (Roche)  
+Mike Stakehouse, Eli Miller (Atorus)  
+Yilong Zhang, Gregery Chen (Merck)  
+Eric Nantz (Eli Lilly)
+
+
+FDA Staff:  
+Paul Schuette  
+Hye Soo Cho  

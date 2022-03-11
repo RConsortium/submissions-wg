@@ -2091,6 +2091,7 @@ Meeting Minutes
 </div>
 </div>
 <a href="pilot-overall.html">Planned Pilots</a>
+<a href="qna.html">Q &amp; A</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
 Links
@@ -2120,21 +2121,37 @@ Links
 
 
 <div class="d-article">
-<h2 id="pilot-2---advanced-analyses">Pilot 2 - advanced analyses</h2>
-<p><strong>Goal</strong>: Example R based submission contains advanced analyses, submission through the current FDA e-submission system and process</p>
+<h2 id="pilot-2---shiny-submission">Pilot 2 - shiny submission</h2>
+<p><strong>Goal</strong>: Example R based submission contains a shiny app, submission through the current FDA e-submission system and process</p>
 <p><strong>Key evaluation aspects</strong>:</p>
 <ul>
 <li>For Submitter
 <ul>
-<li>Submission of proprietary R packages requires advanced computation</li>
-<li>Submit analysis codes as R package</li>
+<li>Submission of an shiny app through the eCTD portal</li>
+<li>The shiny codes will be provided as a proprietary R package</li>
 </ul></li>
 <li>For FDA Reviewer
 <ul>
-<li>Reproduce analysis results by reconstructing submitted proprietary packages / retrieving open source packages and rerunning the analysis package</li>
+<li>Reproduce analysis results by deploying the shiny app on a FDA laptop/server</li>
 </ul></li>
 </ul>
 <p><strong>Timeline</strong>: 2022 H1</p>
+<p><strong>Data and analysis scope</strong>:</p>
+<ul>
+<li>a shiny app that displays the 4 TLFs submitted in <a href="(https://github.com/RConsortium/submissions-pilot1-to-fda)">pilot 1</a>, with basic data set filtering functionalities.</li>
+<li>Simulated data from CDISC Pilot (the same data set as in pilot 1)</li>
+</ul>
+<p><strong>Links</strong>:</p>
+<p><a href="https://github.com/RConsortium/submissions-pilot2">R Submission Pilot 2 Development Repo</a></p>
+<p><a href="https://github.com/RConsortium/submissions-pilot2-to-fda">R Submission Pilot 2 eCTD Submission Package to FDA</a></p>
+<p><strong>Key team members</strong>: Developer team:</p>
+<p>Ning Leng, Heng Wang (Roche)<br />
+Mike Stakehouse, Eli Miller (Atorus)<br />
+Yilong Zhang, Gregery Chen (Merck)<br />
+Eric Nantz (Eli Lilly)</p>
+<p>FDA Staff:<br />
+Paul Schuette<br />
+Hye Soo Cho</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

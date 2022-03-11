@@ -41,6 +41,8 @@ navbar:
           href: "minutes_2022-02-04.html"
     - text: "Planned Pilots"
       href: pilot-overall.html          
+    - text: "Q & A"
+      href: qna.html
     - text: "Links"
       menu:
         - text: "GitHub Repository"
