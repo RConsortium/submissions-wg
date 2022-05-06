@@ -39,6 +39,10 @@ navbar:
           href: "minutes_2022-01-07.html"
         - text: "2022-02-04"
           href: "minutes_2022-02-04.html"
+        - text: "2022-03-04"
+          href: "minutes_2022-03-04.html"
+        - text: "2022-04-01"
+          href: "minutes_2022-04-01.html"
     - text: "Planned Pilots"
       href: pilot-overall.html          
     - text: "Q & A"

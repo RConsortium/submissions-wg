@@ -2088,6 +2088,8 @@ Meeting Minutes
 <a href="minutes_2021-12-03.html">2021-12-03</a>
 <a href="minutes_2022-01-07.html">2022-01-07</a>
 <a href="minutes_2022-02-04.html">2022-02-04</a>
+<a href="minutes_2022-03-04.html">2022-03-04</a>
+<a href="minutes_2022-04-01.html">2022-04-01</a>
 </div>
 </div>
 <a href="pilot-overall.html">Planned Pilots</a>
@@ -2121,49 +2123,71 @@ Links
 
 
 <div class="d-article">
-<h2 id="about-r-based-regulatory-submission">About R based regulatory submission</h2>
+<h2 id="about-r-based-regulatory-submission">About R based regulatory
+submission</h2>
 <ol type="1">
 <li>How to submit readable code in R to submit to the FDA.</li>
 </ol>
 <ul>
-<li>Readable code can be submitted as .r files, according to the <a href="https://github.com/RConsortium/submissions-pilot1-to-fda">R consortium R submission working group pilot 1</a>.</li>
-<li>Analytical codes using functions in open-sourced or proprietary packages are considered readable, as long as the proprietary R packages are submitted in the way as mentioned below.</li>
+<li>Readable code can be submitted as .r files, according to the <a
+href="https://github.com/RConsortium/submissions-pilot1-to-fda">R
+consortium R submission working group pilot 1</a>.</li>
+<li>Analytical codes using functions in open-sourced or proprietary
+packages are considered readable, as long as the proprietary R packages
+are submitted in the way as mentioned below.</li>
 </ul>
 <ol start="2" type="1">
 <li>How to submit proprietary R packages to FDA.</li>
 </ol>
 <ul>
-<li><p>Proprietary packages cannot be submitted as a compressed file through the eCTD gateway.</p></li>
-<li><p>However, proprietary R packages can be converted to plain .txt file by <a href="https://merck.github.io/pkglite/">pkglite</a> then submitted through the eCTD gateway. FDA reviewers can use the same package to convert the txt file back to R package. An example can be found in the <a href="https://github.com/RConsortium/submissions-pilot1-to-fda">R consortium R submission working group pilot 1</a>.</p></li>
+<li><p>Proprietary packages cannot be submitted as a compressed file
+through the eCTD gateway.</p></li>
+<li><p>However, proprietary R packages can be converted to plain .txt
+file by <a href="https://merck.github.io/pkglite/">pkglite</a> then
+submitted through the eCTD gateway. FDA reviewers can use the same
+package to convert the txt file back to R package. An example can be
+found in the <a
+href="https://github.com/RConsortium/submissions-pilot1-to-fda">R
+consortium R submission working group pilot 1</a>.</p></li>
 </ul>
 <ol start="3" type="1">
 <li>What if open sourced R packages are used?</li>
 </ol>
 <ul>
 <li>No need to submit source code of open source packages.</li>
-<li>In adrg/programtoc, include package version, its dependency packages and their versions</li>
+<li>In adrg/programtoc, include package version, its dependency packages
+and their versions</li>
 <li>In analytical code, include appropriate library() calls.</li>
 </ul>
 <ol start="4" type="1">
 <li>If R is used, what is needed for the ADRG?</li>
 </ol>
 <ul>
-<li>If you use R it is recommended to have a section in the ADRG/programtoc that provides the FDA with:
+<li>If you use R it is recommended to have a section in the
+ADRG/programtoc that provides the FDA with:
 <ul>
 <li>R version</li>
 <li>Package dependencies and their versions</li>
-<li>Instructions to convert proprietary R package txt files back to the natural format (if proprietary R packages are submitted)</li>
+<li>Instructions to convert proprietary R package txt files back to the
+natural format (if proprietary R packages are submitted)</li>
 </ul></li>
 </ul>
-<h2 id="about-the-r-consortium-r-submission-working-group">About the R consortium R submission working group</h2>
+<h2 id="about-the-r-consortium-r-submission-working-group">About the R
+consortium R submission working group</h2>
 <ol type="1">
 <li>Who can join the working group? How can I get involved?</li>
 </ol>
 <ul>
-<li>anyone can join the working group. The working group meets monthly on Friday. If you are interested in joining the monthly meetings, please contact Joe Rickert at <a href="mailto:joseph.rickert@rstudio.com" class="email">joseph.rickert@rstudio.com</a>.</li>
-<li>You can also monitor our <a href="https://github.com/RConsortium/submissions-wg/issues">issue board</a>. Any contribution/feedback are more than welcome!</li>
+<li>anyone can join the working group. The working group meets monthly
+on Friday. If you are interested in joining the monthly meetings, please
+contact Joe Rickert at <a href="mailto:joseph.rickert@rstudio.com"
+class="email">joseph.rickert@rstudio.com</a>.</li>
+<li>You can also monitor our <a
+href="https://github.com/RConsortium/submissions-wg/issues">issue
+board</a>. Any contribution/feedback are more than welcome!</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2179,7 +2203,9 @@ Links
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
-<p>Part of the <a href="https://rconsortium.github.io/r-submission-site">R-based Clinical Trial Regulator Submission Working Group</a></p>
+<p>Part of the <a
+href="https://rconsortium.github.io/r-submission-site">R-based Clinical
+Trial Regulator Submission Working Group</a></p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
 

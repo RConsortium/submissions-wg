@@ -2089,6 +2089,8 @@ Meeting Minutes
 <a href="minutes_2021-12-03.html">2021-12-03</a>
 <a href="minutes_2022-01-07.html">2022-01-07</a>
 <a href="minutes_2022-02-04.html">2022-02-04</a>
+<a href="minutes_2022-03-04.html">2022-03-04</a>
+<a href="minutes_2022-04-01.html">2022-04-01</a>
 </div>
 </div>
 <a href="pilot-overall.html">Planned Pilots</a>
@@ -2122,35 +2124,127 @@ Links
 
 
 <div class="d-article">
-<h2 id="minutes-of-2021-01-15-meeting-prepared-by-joseph-rickert">Minutes of 2021-01-15 Meeting prepared by Joseph Rickert</h2>
+<h2
+id="minutes-of-2021-01-15-meeting-prepared-by-joseph-rickert">Minutes of
+2021-01-15 Meeting prepared by Joseph Rickert</h2>
 <details>
 <summary>
 View Attendee List
 </summary>
 <p>
-Joseph Rickert - R Consortium<br>Paul Schuette - FDA<br>Yilong Zhang - Merck<br>Bob Engle - Biogen<br>Chris Kania - Biogen<br>Doug Kelkhoff - Genentech<br>James Black - Roche<br>Juliane Manitz - Emd Serono<br>Mike Stackhouse - Atorus Research<br>Nan Xiao - Merck<br>Ning Leng - Genentech<br>Ojesh Upandhyay GSK<br>Phil Bowsher - RStudio<br>Eric Nantz - Eli Lilly
+Joseph Rickert - R Consortium<br>Paul Schuette - FDA<br>Yilong Zhang -
+Merck<br>Bob Engle - Biogen<br>Chris Kania - Biogen<br>Doug Kelkhoff -
+Genentech<br>James Black - Roche<br>Juliane Manitz - Emd Serono<br>Mike
+Stackhouse - Atorus Research<br>Nan Xiao - Merck<br>Ning Leng -
+Genentech<br>Ojesh Upandhyay GSK<br>Phil Bowsher - RStudio<br>Eric Nantz
+- Eli Lilly
 </p>
 </details>
-<p>Joseph Rickert began the meeting by noting that he Submisisons working group now has a <a href="https://github.com/RConsortium/submissions-wg">GithHub Repo</a> which contains the minutes and video recording from the first meeting. JR asked if there are external groups that we should involve. Michael Stackhouse and Paul Schuette suggest linking up with PHUSE. JR asks for a recommendation from PHUSE, MS offers to investigate.</p>
-<p>JR asked PS if he could elaborate on requirements from various government agencies. Paul recommends contacting Wendy Martinez of BLS, and leader of the Inter-Agency R Users Group.</p>
-<p>PS also notes that declining budgets in various government agencies are forcing declining budgets and that consequently there is a renewed interest in open source. There is particular interest in establishing a stable R environment and the whole panoply of tools required.</p>
-<p>JR noted that although other federal agencies are not directly involved in setting requirements for R submissions they must have some say in setting general requirements and technology standards and asked PS if he could elaborate on the hierarchy of federal agencies involved. PS stated that the government has a federated model. Groups tend to do their own thing. The FDA has some standards that are not uniformly enforced. They are center specific. <a href="https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/cder-offices-and-divisions">CDER</a> and <a href="https://www.fda.gov/about-fda/fda-organization/center-biologics-evaluation-and-research-cber">CBER</a> are the two centers that are most closely linked. Require CDISC heading towards STDTM, ADaM and other data standards. <a href="https://www.fda.gov/about-fda/fda-organization/center-devices-and-radiological-health">CDRH</a> has a more heterogeneous sponsor group and even gets some submissions in Excel.</p>
-<p><a href="https://www.fda.gov/about-fda/fda-organization/center-veterinary-medicine">CVM</a> is in between. Other centers like <a href="https://www.fda.gov/tobacco-products/about-center-tobacco-products-ctp">CPT</a> don’t much deal with clinical trials. Paul’s presentation (from last time) focused on CDER and CBER and the portals and gateways that have been set up there. Even within the his center the Office of Biostatistics does not control the standards FDA submissions gateway uses.</p>
-<p>There are two different types of standards: there are the standards of CDISC and PHUSE and then there are the standards of “What does one have to do to actually submit through the electronics gateway”.</p>
-<p>Eric Nantz asks if the group that is handling the gateway is also in CDER and CBER. PS replied that it is, but in a different office. (At 11:21 PS elaborates on which groups are involved.) The actual gateway is under the Office of Business Informatics which is in the Office of Strategic Programs. It is a Balkanized setup. Primary tool for clinicians in the Office of New Drugs is JMP clinical, script in Python, some code in SAS and R.</p>
-<p>Anything with inferential statistics falls to the <a href="https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/office-biostatistics">Office of Biostatistics</a>. Safety issues are mostly done elsewhere by clinicians.</p>
-<p>Project <a href="https://govtribe.com/opportunity/federal-contract-opportunity/fda-cder-portes-om-sas-drug-development-software-maintenance-fdacder161164460">PORTES</a> has a provision for a submissions portal and also includes turning XPT data sets into S or R data sets. PS recommends getting <a href="https://connellyworks.swoogo.com/healthit2020/speaker/97492/ethan-chen">Ethan Chen</a> involved, but in short term writing program that modifies scripts (e.g. from .lower case to .Upper case) would be faster approach.</p>
-<p>EN and PS note that the discussions last time (see the presentation by Yilong Zhang) made it clear that industry is already working on this approach and suggest that it may be worth pursuing.</p>
-<p>JR (22:29) suggested that we may want to pursue the idea of setting up a stable R environment. YZ says Merck is working on a package to assemble functions into a txt file, and stated that once they have a stable version they would be willing to discuss making it open source.</p>
-<p>JR suggests that going for a stable R environment would pull together several threads of work in progress, and asked if setting up a pilot server with an R environment configured similarly to an environment typically used for submissions would be helpful. PS said that he thought so and referenced (26:30) a project he and EN did a couple of years ago to stand up a stable snapshot.</p>
-<p>YZ argues for making a purely open source setup. YZ and EN suggest (48:30) that we could setup a repo with software to CDISC tables and synthetic data for a hypothetical submission and we could collaborate and show how it could scale to do a real submission.</p>
-<p>PS noted that a project he and Doug Kelkhoff worked on to use Docker had issues with mixing environment like Windows and Linux. PS noted that he is constrained to use a particular version of Windows 10.</p>
-<p>PS likes the idea of having a common repo that includes a class of standard packages. Mike Stackhouse notes that the problem is to have the right structure, packages and package management. MS notes that there are several package management solutions available</p>
-<p>James Black asks Paul (33:00) how identical solutions have to be. There was some discussion about this. PS notes opinions vary between 100% identical and having results close enough so as not to change the decision. (e.g. p = 0.019 and p = 0.19 are clearly different, but there is a lot of gray area.)</p>
-<p>EN notes it is possible to lock down what goes into a container that would minimize risk even OS differences, but states that getting things stable at the R package level is the bigger issue. (There seemed to be general agreement about this.) DK says locking downing the R environment using packrat or rn would give us a foothold. If this is successful we could reproduce the same environment in a container.</p>
-<p>DK noted that many of difficulties he and PS had during previous FDA project had to do with mounting a file system and how data is accessed within the FDA. Suggests bundling packages with base environment.</p>
-<p>MS asked if part of project would be to show that the pilot gives same results in Windows and Linux. PS indicates that it would.</p>
-<p>JR notes that there is a consensus for a pilot, and states that even if pilot did not address everything it would be a good start, and asks those present to uses the repo to suggest ideas and contribute relevant documents.</p>
+<p>Joseph Rickert began the meeting by noting that he Submisisons
+working group now has a <a
+href="https://github.com/RConsortium/submissions-wg">GithHub Repo</a>
+which contains the minutes and video recording from the first meeting.
+JR asked if there are external groups that we should involve. Michael
+Stackhouse and Paul Schuette suggest linking up with PHUSE. JR asks for
+a recommendation from PHUSE, MS offers to investigate.</p>
+<p>JR asked PS if he could elaborate on requirements from various
+government agencies. Paul recommends contacting Wendy Martinez of BLS,
+and leader of the Inter-Agency R Users Group.</p>
+<p>PS also notes that declining budgets in various government agencies
+are forcing declining budgets and that consequently there is a renewed
+interest in open source. There is particular interest in establishing a
+stable R environment and the whole panoply of tools required.</p>
+<p>JR noted that although other federal agencies are not directly
+involved in setting requirements for R submissions they must have some
+say in setting general requirements and technology standards and asked
+PS if he could elaborate on the hierarchy of federal agencies involved.
+PS stated that the government has a federated model. Groups tend to do
+their own thing. The FDA has some standards that are not uniformly
+enforced. They are center specific. <a
+href="https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/cder-offices-and-divisions">CDER</a>
+and <a
+href="https://www.fda.gov/about-fda/fda-organization/center-biologics-evaluation-and-research-cber">CBER</a>
+are the two centers that are most closely linked. Require CDISC heading
+towards STDTM, ADaM and other data standards. <a
+href="https://www.fda.gov/about-fda/fda-organization/center-devices-and-radiological-health">CDRH</a>
+has a more heterogeneous sponsor group and even gets some submissions in
+Excel.</p>
+<p><a
+href="https://www.fda.gov/about-fda/fda-organization/center-veterinary-medicine">CVM</a>
+is in between. Other centers like <a
+href="https://www.fda.gov/tobacco-products/about-center-tobacco-products-ctp">CPT</a>
+don’t much deal with clinical trials. Paul’s presentation (from last
+time) focused on CDER and CBER and the portals and gateways that have
+been set up there. Even within the his center the Office of
+Biostatistics does not control the standards FDA submissions gateway
+uses.</p>
+<p>There are two different types of standards: there are the standards
+of CDISC and PHUSE and then there are the standards of “What does one
+have to do to actually submit through the electronics gateway”.</p>
+<p>Eric Nantz asks if the group that is handling the gateway is also in
+CDER and CBER. PS replied that it is, but in a different office. (At
+11:21 PS elaborates on which groups are involved.) The actual gateway is
+under the Office of Business Informatics which is in the Office of
+Strategic Programs. It is a Balkanized setup. Primary tool for
+clinicians in the Office of New Drugs is JMP clinical, script in Python,
+some code in SAS and R.</p>
+<p>Anything with inferential statistics falls to the <a
+href="https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/office-biostatistics">Office
+of Biostatistics</a>. Safety issues are mostly done elsewhere by
+clinicians.</p>
+<p>Project <a
+href="https://govtribe.com/opportunity/federal-contract-opportunity/fda-cder-portes-om-sas-drug-development-software-maintenance-fdacder161164460">PORTES</a>
+has a provision for a submissions portal and also includes turning XPT
+data sets into S or R data sets. PS recommends getting <a
+href="https://connellyworks.swoogo.com/healthit2020/speaker/97492/ethan-chen">Ethan
+Chen</a> involved, but in short term writing program that modifies
+scripts (e.g. from .lower case to .Upper case) would be faster
+approach.</p>
+<p>EN and PS note that the discussions last time (see the presentation
+by Yilong Zhang) made it clear that industry is already working on this
+approach and suggest that it may be worth pursuing.</p>
+<p>JR (22:29) suggested that we may want to pursue the idea of setting
+up a stable R environment. YZ says Merck is working on a package to
+assemble functions into a txt file, and stated that once they have a
+stable version they would be willing to discuss making it open
+source.</p>
+<p>JR suggests that going for a stable R environment would pull together
+several threads of work in progress, and asked if setting up a pilot
+server with an R environment configured similarly to an environment
+typically used for submissions would be helpful. PS said that he thought
+so and referenced (26:30) a project he and EN did a couple of years ago
+to stand up a stable snapshot.</p>
+<p>YZ argues for making a purely open source setup. YZ and EN suggest
+(48:30) that we could setup a repo with software to CDISC tables and
+synthetic data for a hypothetical submission and we could collaborate
+and show how it could scale to do a real submission.</p>
+<p>PS noted that a project he and Doug Kelkhoff worked on to use Docker
+had issues with mixing environment like Windows and Linux. PS noted that
+he is constrained to use a particular version of Windows 10.</p>
+<p>PS likes the idea of having a common repo that includes a class of
+standard packages. Mike Stackhouse notes that the problem is to have the
+right structure, packages and package management. MS notes that there
+are several package management solutions available</p>
+<p>James Black asks Paul (33:00) how identical solutions have to be.
+There was some discussion about this. PS notes opinions vary between
+100% identical and having results close enough so as not to change the
+decision. (e.g. p = 0.019 and p = 0.19 are clearly different, but there
+is a lot of gray area.)</p>
+<p>EN notes it is possible to lock down what goes into a container that
+would minimize risk even OS differences, but states that getting things
+stable at the R package level is the bigger issue. (There seemed to be
+general agreement about this.) DK says locking downing the R environment
+using packrat or rn would give us a foothold. If this is successful we
+could reproduce the same environment in a container.</p>
+<p>DK noted that many of difficulties he and PS had during previous FDA
+project had to do with mounting a file system and how data is accessed
+within the FDA. Suggests bundling packages with base environment.</p>
+<p>MS asked if part of project would be to show that the pilot gives
+same results in Windows and Linux. PS indicates that it would.</p>
+<p>JR notes that there is a consensus for a pilot, and states that even
+if pilot did not address everything it would be a good start, and asks
+those present to uses the repo to suggest ideas and contribute relevant
+documents.</p>
 <h3 id="action-items">Action Items</h3>
 <p>JR takes action items to reach out to:</p>
 <ul>
@@ -2161,28 +2255,47 @@ Joseph Rickert - R Consortium<br>Paul Schuette - FDA<br>Yilong Zhang - Merck<br>
 <h3 id="next-meeting">Next meeting</h3>
 <p>All agree on 9AM Pacific Time February 5th.</p>
 <h3 id="video-recording">Video Recording</h3>
-<p>The video recording of the meeting is available <a href="https://zoom.us/rec/play/XvcnNZODhDwFI37HHNK8_nmdZSYloRC5QlENWU98D488OPxrgWpiZ6YP4c8DWporbTxXGkQoKY-g7J0H.eOfxoPedBl0ksHAj?continueMode=true">here</a> The passcode is <code>oM5YqkM</code></p>
+<p>The video recording of the meeting is available <a
+href="https://zoom.us/rec/play/XvcnNZODhDwFI37HHNK8_nmdZSYloRC5QlENWU98D488OPxrgWpiZ6YP4c8DWporbTxXGkQoKY-g7J0H.eOfxoPedBl0ksHAj?continueMode=true">here</a>
+The passcode is <code>oM5YqkM</code></p>
 <h3 id="note-from-doug-kelkhoff">Note from Doug Kelkhoff</h3>
-<p>In a private communication after the meeting Doug Kelkhoff contributed the following:</p>
-<p>At today’s meeting, Paul mentioned a pilot that he and I worked on to share docker containers. It would be great if I could share that code with you all. I reached out to the lead from the PHUSE working group to see if we can get that code uploaded somewhere where I can share it.</p>
+<p>In a private communication after the meeting Doug Kelkhoff
+contributed the following:</p>
+<p>At today’s meeting, Paul mentioned a pilot that he and I worked on to
+share docker containers. It would be great if I could share that code
+with you all. I reached out to the lead from the PHUSE working group to
+see if we can get that code uploaded somewhere where I can share it.</p>
 <p>A brief summary of what was done:</p>
 <ul>
-<li>Delivery of a docker-compose build script, chosen for transparency and to adhere to plain-text restrictions of delivery content. It consisted of:
+<li>Delivery of a docker-compose build script, chosen for transparency
+and to adhere to plain-text restrictions of delivery content. It
+consisted of:
 <ul>
 <li>base image based on rocker shiny+tidyverse image<br />
 </li>
 <li>a small cohort of packages to install</li>
 <li>a mock analysis and companion shiny app</li>
-<li>data access (which ended up being the problematic piece of the puzzle)</li>
+<li>data access (which ended up being the problematic piece of the
+puzzle)</li>
 </ul></li>
 <li>We encountered a few data access woes:
 <ul>
-<li>we first attempted to mount a data directory within the eCTD, which prompted for escalated administrator privileges on windows machines - not an acceptable solution</li>
-<li>the second attempt was to build the data into the container image, which we were unfortunately not able to fully test before Paul had to move on to other priorities.</li>
+<li>we first attempted to mount a data directory within the eCTD, which
+prompted for escalated administrator privileges on windows machines -
+not an acceptable solution</li>
+<li>the second attempt was to build the data into the container image,
+which we were unfortunately not able to fully test before Paul had to
+move on to other priorities.</li>
 </ul></li>
 </ul>
-<p>Overall, I still have confidence that this method could work, but, as Paul mentioned, the “it works on my machine” method of trying to debug across platforms and administrated systems is both frustrating and time intensive. Remotely teasing apart docker-related issues from system administration restrictions without a clear picture of the systems constraints was quite a challenge.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>Overall, I still have confidence that this method could work, but, as
+Paul mentioned, the “it works on my machine” method of trying to debug
+across platforms and administrated systems is both frustrating and time
+intensive. Remotely teasing apart docker-related issues from system
+administration restrictions without a clear picture of the systems
+constraints was quite a challenge.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2198,7 +2311,9 @@ Joseph Rickert - R Consortium<br>Paul Schuette - FDA<br>Yilong Zhang - Merck<br>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
-<p>Part of the <a href="https://rconsortium.github.io/r-submission-site">R-based Clinical Trial Regulator Submission Working Group</a></p>
+<p>Part of the <a
+href="https://rconsortium.github.io/r-submission-site">R-based Clinical
+Trial Regulator Submission Working Group</a></p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
 
