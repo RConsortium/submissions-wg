@@ -2089,6 +2089,8 @@ Meeting Minutes
 <a href="minutes_2021-12-03.html">2021-12-03</a>
 <a href="minutes_2022-01-07.html">2022-01-07</a>
 <a href="minutes_2022-02-04.html">2022-02-04</a>
+<a href="minutes_2022-03-04.html">2022-03-04</a>
+<a href="minutes_2022-04-01.html">2022-04-01</a>
 </div>
 </div>
 <a href="pilot-overall.html">Planned Pilots</a>
@@ -2122,46 +2124,114 @@ Links
 
 
 <div class="d-article">
-<h2 id="minutes-of-2021-12-03-meeting-prepared-by-joseph-rickert">Minutes of 2021-12-03 Meeting prepared by Joseph Rickert</h2>
+<h2
+id="minutes-of-2021-12-03-meeting-prepared-by-joseph-rickert">Minutes of
+2021-12-03 Meeting prepared by Joseph Rickert</h2>
 <details>
 <summary>
 View Attendee List
 </summary>
 <p>
-Phil Bowsher - RStudio<br>Hye Soo Cho - FDA<br>Heidi Curinckx - Johnson &amp; Johnson<br>Miriam Fossati - Merck<br>Ellis Hughes - GSK<br>Maria Matilde Kam - FDA<br>Emily Nguyen - FDA<br>Jiang Xu - FDA<br>Steven Hassendinckx<br>Ning Leng - Genentech<br>Joseph Rickert - R Consortium<br>Paul Schuette - FDA<br>Adrian Waddell - Roche<br>Nan Xiao - Merck<br>Hong Yaan - Regeneron<br>Renping Zhang - FDA<br>Yilong Zhang - Merck<br>Jizu Zhi - FDA
+Phil Bowsher - RStudio<br>Hye Soo Cho - FDA<br>Heidi Curinckx - Johnson
+&amp; Johnson<br>Miriam Fossati - Merck<br>Ellis Hughes - GSK<br>Maria
+Matilde Kam - FDA<br>Emily Nguyen - FDA<br>Jiang Xu - FDA<br>Steven
+Hassendinckx<br>Ning Leng - Genentech<br>Joseph Rickert - R
+Consortium<br>Paul Schuette - FDA<br>Adrian Waddell - Roche<br>Nan Xiao
+- Merck<br>Hong Yaan - Regeneron<br>Renping Zhang - FDA<br>Yilong Zhang
+- Merck<br>Jizu Zhi - FDA
 </p>
 </details>
-<p>The meeting was recorded and the video is available <a href="https://rstudio.zoom.us/rec/share/TPhUmx-9fsnaF8ZWkGqSXGgTqIZAuDy8Fvli182eRysycU5WPOse7kOzagdRU7Lh.acdswWFSSBr7m0K0">here</a> Passcode: 0tA$D+ev</p>
-<p><strong>JR</strong> Opened the meeting with the agenda to discuss the recent pilot submission through the FDA gateway and then discuss a request to have interested companies describe what they are currently doing with respect to FDA submissions in R.</p>
-<p><strong>YZ</strong> reported that the submission went through the gateway, thanked all who participated and was looking forward to receiving feedback from the FDA.</p>
-<p><strong>JR</strong> reported that there were still issues with employees from different companies using the RC portal. The current solution is to have people accessing the gateway on behalf of the RC use an R Consortium email address. <strong>JR</strong> wants to make sure that this is fine with the FDA.</p>
-<p>At <strong>6:37</strong> into the video <strong>PS</strong> begins providing FDA feedback on the submission.</p>
+<p>The meeting was recorded and the video is available <a
+href="https://rstudio.zoom.us/rec/share/TPhUmx-9fsnaF8ZWkGqSXGgTqIZAuDy8Fvli182eRysycU5WPOse7kOzagdRU7Lh.acdswWFSSBr7m0K0">here</a>
+Passcode: 0tA$D+ev</p>
+<p><strong>JR</strong> Opened the meeting with the agenda to discuss the
+recent pilot submission through the FDA gateway and then discuss a
+request to have interested companies describe what they are currently
+doing with respect to FDA submissions in R.</p>
+<p><strong>YZ</strong> reported that the submission went through the
+gateway, thanked all who participated and was looking forward to
+receiving feedback from the FDA.</p>
+<p><strong>JR</strong> reported that there were still issues with
+employees from different companies using the RC portal. The current
+solution is to have people accessing the gateway on behalf of the RC use
+an R Consortium email address. <strong>JR</strong> wants to make sure
+that this is fine with the FDA.</p>
+<p>At <strong>6:37</strong> into the video <strong>PS</strong> begins
+providing FDA feedback on the submission.</p>
 <p>The initial findings were:</p>
 <ul>
 <li>The submission was partially successful</li>
 <li>The were no problems with the .R extensions</li>
-<li>The FDA was unable to find the <code>Pilot1wrappers</code> package. However, the * * FDA analyst was able to generate tables</li>
-<li>The FDA thinks there may have been a switch in the high bit vs. bit settings and asked the WG to check this.</li>
-<li>The FDA analyst was able to retrieve the <code>pilot1wrappers</code> package from the Submission WG website, download the code and verify the results</li>
-<li>The FDA noted that including a dependency chart showing the 2nd and 3rd order dependencies would be very helpful. If this were and actual submission, at least one IR request would have been generated.</li>
+<li>The FDA was unable to find the <code>Pilot1wrappers</code> package.
+However, the * * FDA analyst was able to generate tables</li>
+<li>The FDA thinks there may have been a switch in the high bit vs. bit
+settings and asked the WG to check this.</li>
+<li>The FDA analyst was able to retrieve the <code>pilot1wrappers</code>
+package from the Submission WG website, download the code and verify the
+results</li>
+<li>The FDA noted that including a dependency chart showing the 2nd and
+3rd order dependencies would be very helpful. If this were and actual
+submission, at least one IR request would have been generated.</li>
 </ul>
-<p>On behalf of the WG, <strong>JR</strong> thanked the FDA team for making extra effort to retrieve the wrapper package and run the code.</p>
-<p>In the subsequent discussion it was determined that the FDA analysts overlooked the instructions, buried in the ADRG, to unpack the <code>pilot1wrappers</code> from the file r0plg.txt. Once this was clarified <strong>HC</strong>, the FDA analyst, was able to execute the command and unpack the <code>pilot1wrappers</code> package. <strong>HY</strong> noted that in her experience, submissions with R code tend to be <em>ad hoc</em>, and that it is common to include a README file. The WG took note and agreed that it would be a good idea to include a <code>README</code> file that highlights the key steps, maybe by referring to the ADRG.</p>
-<p>Next, followed a discussion about the requested dependency chart tree diagram. <strong>PS</strong> noted that the importance of dependencies depends on the setting. When running from a standard machine, FDA analysts are able to pull packages from the internet. However, when running from one of their scientific enclaves high performance computing environments they must port in the packages. To illustrate the problem with dependencies <em>HC</em> showed (See screen capture) the error messages generated by calling R packages previously installed on her machine, but which did not have the dependencies installed that are required to run the submission code.</p>
+<p>On behalf of the WG, <strong>JR</strong> thanked the FDA team for
+making extra effort to retrieve the wrapper package and run the
+code.</p>
+<p>In the subsequent discussion it was determined that the FDA analysts
+overlooked the instructions, buried in the ADRG, to unpack the
+<code>pilot1wrappers</code> from the file r0plg.txt. Once this was
+clarified <strong>HC</strong>, the FDA analyst, was able to execute the
+command and unpack the <code>pilot1wrappers</code> package.
+<strong>HY</strong> noted that in her experience, submissions with R
+code tend to be <em>ad hoc</em>, and that it is common to include a
+README file. The WG took note and agreed that it would be a good idea to
+include a <code>README</code> file that highlights the key steps, maybe
+by referring to the ADRG.</p>
+<p>Next, followed a discussion about the requested dependency chart tree
+diagram. <strong>PS</strong> noted that the importance of dependencies
+depends on the setting. When running from a standard machine, FDA
+analysts are able to pull packages from the internet. However, when
+running from one of their scientific enclaves high performance computing
+environments they must port in the packages. To illustrate the problem
+with dependencies <em>HC</em> showed (See screen capture) the error
+messages generated by calling R packages previously installed on her
+machine, but which did not have the dependencies installed that are
+required to run the submission code.</p>
 <p><img src="Errors.png" height = "400" width="600"></p>
-<p>The problem seems to be that every file in the submission needs the library calls. This problem needs to be addressed.</p>
-<p><strong>HC</strong> also identified a problem of not having write permissions. See the following screen capture.</p>
+<p>The problem seems to be that every file in the submission needs the
+library calls. This problem needs to be addressed.</p>
+<p><strong>HC</strong> also identified a problem of not having write
+permissions. See the following screen capture.</p>
 <p><img src="Errors2.png" height = "400" width="600"></p>
-<p>The temporary solution seems to be to copy the file into a temporary folder. This problem needs more thought.</p>
-<p>It was agreed that the WG should produce a document about establishing the proper environment. <strong>AW</strong> suggests that there are two possible actions: 1. Copying to a local folder might clear up most of the problems 2. If not, the WG should look into environment reproducibility</p>
-<p><strong>PS</strong> noted that the FDA does not need to run on a central server. This implies that we can assume FDA analysts running on their local environments for the near future.</p>
-<p><strong>PS</strong> suggested having a pre-submission meeting explaining everything that is necessary to get everything installed and working.</p>
-<p><strong>AW</strong> suggested that we set up the submission assuming that each file will be run from a fresh R session, and that perhaps we could run some tests to see if the environment is as is expected.</p>
-<p><strong>NL</strong> asked about writing a blog post about the pilot submission. The WG agreed to write up the post and have <strong>PS</strong> and <strong>HC</strong> review.</p>
-<p><strong>YL</strong> asked about redoing the submission. <strong>PS</strong> said indicated that is common practice.</p>
-<p><strong>NL</strong> said that she and <strong>HC</strong> would like to schedule a separate meeting early next year to discuss where the various participating companies are in the process of making R submissions. Please let <strong>NL</strong> know if you are interested in participating.</p>
-<p>The next meeting is set for 9:00 AM Pacific Time on Friday, January 7, 2022.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>The temporary solution seems to be to copy the file into a temporary
+folder. This problem needs more thought.</p>
+<p>It was agreed that the WG should produce a document about
+establishing the proper environment. <strong>AW</strong> suggests that
+there are two possible actions: 1. Copying to a local folder might clear
+up most of the problems 2. If not, the WG should look into environment
+reproducibility</p>
+<p><strong>PS</strong> noted that the FDA does not need to run on a
+central server. This implies that we can assume FDA analysts running on
+their local environments for the near future.</p>
+<p><strong>PS</strong> suggested having a pre-submission meeting
+explaining everything that is necessary to get everything installed and
+working.</p>
+<p><strong>AW</strong> suggested that we set up the submission assuming
+that each file will be run from a fresh R session, and that perhaps we
+could run some tests to see if the environment is as is expected.</p>
+<p><strong>NL</strong> asked about writing a blog post about the pilot
+submission. The WG agreed to write up the post and have
+<strong>PS</strong> and <strong>HC</strong> review.</p>
+<p><strong>YL</strong> asked about redoing the submission.
+<strong>PS</strong> said indicated that is common practice.</p>
+<p><strong>NL</strong> said that she and <strong>HC</strong> would like
+to schedule a separate meeting early next year to discuss where the
+various participating companies are in the process of making R
+submissions. Please let <strong>NL</strong> know if you are interested
+in participating.</p>
+<p>The next meeting is set for 9:00 AM Pacific Time on Friday, January
+7, 2022.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2177,7 +2247,9 @@ Phil Bowsher - RStudio<br>Hye Soo Cho - FDA<br>Heidi Curinckx - Johnson &amp; Jo
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
-<p>Part of the <a href="https://rconsortium.github.io/r-submission-site">R-based Clinical Trial Regulator Submission Working Group</a></p>
+<p>Part of the <a
+href="https://rconsortium.github.io/r-submission-site">R-based Clinical
+Trial Regulator Submission Working Group</a></p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
 
