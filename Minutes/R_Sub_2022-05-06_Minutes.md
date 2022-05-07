@@ -32,7 +32,6 @@ Compiled by Joseph Rickert
 * Renping Zhang - FDA
 * Jizu Zhi - FDA
 
-
 The meeting was recorded and the [video](https://rstudio.zoom.us/rec/share/p0Eq_hDyILo2lJfh6EVlsdVTSEqydWv_PXzL5vIbGsfQYrC1uzV8Ek8FmQUWU6OM.IdeQOjmtWjj74Ssn) is available with passcode: 5c1OZq=3
 
 Ning Leng provided a status update on the Pilot 2 Submission which will include a Shiny app and the Roche `tiel` software. This software is has not yet been open sourced so it appears to be on the critical path for making the submission. `tiel` is one of several packages that Roche and three other collaborating companies are preparing to open source. (These packages are described) in the minutes to the 5-5-2022 RTRS working group meeting that are available in the WG's GitHub directory directory) Tad Lewandowski of Roche will investigate the possibility of open-sourcing `tiel` before the other packages it appears that the time line for the release of the bundle of packages is greater than two months.
@@ -86,5 +85,5 @@ The audience asked Ryan if docker would be a better computing environment. Ryan 
 
 Ning noted that the she has updated the wiki page of the Pilot 2 repo with the minutes from that subgroup.
 
-The next meeting of the working group will be at 9AM Pacific Time on Friday, June 3, 2022.
+The next meeting of the working group will be at 9 AM Pacific Time on Friday, June 3, 2022.
 
