@@ -1,0 +1,79 @@
+## Minutes for R Submissions WG 2022-07-01
+Compiled by Joseph Rickert (JBR)
+
+### Attendees 
+
+* Gabriel Becker
+* Gregory Chen - MSD
+* Hye Soo Cho - FDA
+* Heidi Curinckx - J&J
+* Robert Devine - J&J 
+* Bob Engle - Biogen
+* Miriam Fossati - Merck
+* Steven Haesendonckx - J&J
+* Sean Healey - Pfizer
+* Ellis Hughes - GSK
+* Ning Leng - Roche
+* Eric Nantz - Lilly
+* Emily Nguyen - FDA
+* Sam Parmar -Lilly
+* Xin Qiu J&J
+* Joseph Rickert - R Consortium / RStudio
+* Neetu Sangari - Pfizer
+* Paul Schuette - FDA
+* Kui Shen
+* Phanikumar Tata - Syneos Health
+* Nan Xiao - Merck  
+* Renping Zhang
+* Jizu Zhi - FDA
+
+The meeting was recorded and the [video](https://rstudio.zoom.us/rec/share/VpeWWRWVQQXNHfydivqgmsJSzkx5IwDDJDlUc62H5ZZcPCUizGpWpoObtlvxeZb_.9u_B6VEfz0jLu9_e?startTime=1656691417000) with
+Passcode: NTz3r?uu
+
+Ning Leng provided an update on the Pilot 2 submission noting that Roche opensourced the [`teal`](https://github.com/insightsengineering/teal) package two weeks ago. Currently the team is testing the submission with `teal`, fixing some bugs identified in the last review, packaging the `Shiny` app into `golem` and working on the reviewer guidance documents. Ning expects that the submission team will be ready to release Pilot 2 for a wider review among the entire working group soon after that. The Pilot 2 `Shiny` app is available in the [submissions-pilot2](https://github.com/RConsortium/submissions-pilot2) repository and the minutes from this technical sub working group are available under the [Wiki](https://github.com/RConsortium/submissions-pilot2/wiki) tab.
+
+Eric Nantz has been developing the `Shiny` app in a Linux Docker container but will spin up a Windows container for testing. He and Ellis Hughes suggested that it may be possible to do some automated testing with GitHub actions and the [`shinytest2`](https://cran.r-project.org/web/packages/shinytest2/index.html) package.
+
+JBR Suggested that we have two stories to tell: the submission itself and the assembly of the submission and the workflows developed to support it. 
+
+Eric pointed out that Roche releasing the `teal` framework to open source is a big deal and a success story for the industry. Gabe Becker remarked that he believes that `teal` was a joint effort among several companies and the`Roche` intends to present it as such. Ning suggested contacting James Black and Tadeusz Lewandowski about Roche's communication plan for `teal`.
+
+Paul Schuette suggested checking with the FDA gateway team to make sure there are no issues and also suggested clarifying the intent of the `Shiny` app and asked if it is targeted towards a statistical reviewer or clinical reviewer?
+
+
+**Action items**
+
+* We need volunteers to test the Pilot 2 submission on multiple operating systems and see if they can deploy it.
+* Eric Nantz will spin up a Windows container to test the Submission and open an issue on the repository about testing. 
+* JBR will contact James Black and Tad Lewandowski about how Roche wants to tell the `teal` story and take the lead on preparing a blog post. He will open an issue on the repo for this.
+* Ning will reach out to the regulatory team to see if any preparations are required to use the FDA gateway.
+* Ning will communicate Paul's suggestions about clarifying the intention of the `Shiny` app to the documentation group.
+
+Next, JBR asked if there was any update on the effort to work with the Japanese or Chinese regulatory agencies. Ning mentioned that with respect to Japan, Roche is working with the Japanese non-profit organization [JPMA](https://www.jpma.or.jp/english/index.html). Two main discussion are:
+
+1. The Japanese regulatory agency is understaffed and will not be able to dedicate people to reproducing a submission. The effort may be limited to getting the submission through the Japan gateway.
+2. The scope and value of the Pilot.
+
+JBR if we should invite someone from the Japan team to visit our group. Ning suggested that this might be possible towards the end of the year.
+
+JBR asked Gregory Chen if he would give an update on his investigations with respect to HTA agencies. Greg reviewed the contents of a recent email on this subject that he sent to JBR. The relevant text of Greg's email is included as an Addendum below.
+
+Finally, there was a short discussion about what could be done to make progress on using containers. Paul noted that the FDA [NCTR](https://www.fda.gov/about-fda/office-chief-scientist/national-center-toxicological-research) has approved the limited use of ['podman'](https://podman.io/), and offered to check with his IT contacts about efforts within the FDA that may be relevant. Eric emphasized that we will need to be open minded in looking for solutions in this area.
+
+The next meeting of the submissions working group will be at 9AM Pacific Time on Friday, August 3, 2022.
+
+
+## Addendum - Greg Chen's email about HTA Submissions
+
+At Europe level, would be ideal to engage some influential institute in EUnetHTA: Interesting past work stream that we may partner can be the following, considering the nature of our work in R Consortium,
+
+JA2 WP5 – Applying the HTA Core Model for Rapid Assessment for national adaptation and reporting
+JA2 WP8 – Maintenance of HTA Core Model infrastructure to support shared production and sharing of HTA information
+The following partner would be good to engage. They either lead or play crucial role in the creation and maintain of HTA Core Model® Online
+THL, National Institute for Health and Welfare, Finland
+Finnish Coordinating Center for Health Technology Assessment (FinCCHTA)
+Finnish Medicines Agency
+DEFACTUM, Social & Health Services and Labour Market Corporate Quality, Denmark
+At country level, the following two countries would be ideal to engage, as they are both reference country for more than 40 other countries.
+Germany: G-BA and IQWiG. Note, G-BA is the final decision maker, IQWiG is commissioned by G-BA to make independent assessment and recommendation. Of course, both of them play important role also in the formulation of EUnetHTA. G-BA takes a bit more lead in some work streams.  
+UK: NICE
