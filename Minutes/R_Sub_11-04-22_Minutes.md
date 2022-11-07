@@ -28,7 +28,7 @@ Compiled by Joseph Rickert (JBR)
 * Yiwen
 
 
-The meeting was recorded. Search for R_Sub_11-04-22 on the [R Consortium YouTube Channel](https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg) 
+The [video](https://www.youtube.com/watch?v=LDVWXgDhzzo) is available on the [R Consortium YouTube Channel](https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg) 
 
 The meeting began with EN summarizing his understanding of the comments made by PS about his preliminary look at the Pilot 2 submission package.
 
