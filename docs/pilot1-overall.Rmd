@@ -26,9 +26,11 @@
 
 
 **Timeline**: 
-- Submitted 2021 Nov (v0.1.0)
-- FDA first response 2021 Nov
-- Resubmission 2022 Feb (v0.1.0)
+
+- 2021.11   Initial submission to FDA. 
+- 2022.12   Received FDA response 
+- 2022.02   Revised submission to FDA
+- 2022.03   Received final FDA response. 
 
 
 **Links**:
