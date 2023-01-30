@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R Submissions Working Group - Introduction</title>
+<title>R Submissions Working Group - R Submission Pilot 2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page">
+    <a class="nav-link" href="./index.html">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -156,16 +156,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#our-mission" id="toc-our-mission" class="nav-link active" data-scroll-target="#our-mission">Our Mission</a></li>
+  <li><a href="#pilot-2---shiny-submission" id="toc-pilot-2---shiny-submission" class="nav-link active" data-scroll-target="#pilot-2---shiny-submission">Pilot 2 - shiny submission</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/RConsortium/submissions-wg/edit/main/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/RConsortium/submissions-wg/edit/main/pilot2.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Introduction</h1>
+<h1 class="title">R Submission Pilot 2</h1>
 </div>
 
 
@@ -180,21 +180,39 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Welcome to the R Consortium R Submission Working Group!</p>
-<p>The R submission working group is a cross industry pharma working group focusing on improving practices of R-based clinical trial regulatory submissions.</p>
-<p>You can view previous meeting minutes with links to recorded sessions in the navigation bar above.</p>
-<section id="our-mission" class="level1">
-<h1>Our Mission</h1>
+<section id="pilot-2---shiny-submission" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-2---shiny-submission">Pilot 2 - shiny submission</h2>
+<p><strong>Goal</strong>: Example R based submission contains a shiny app, submission through the current FDA e-submission system and process</p>
+<p><strong>Key evaluation aspects</strong>:</p>
 <ul>
-<li>Easier R-based clinical trial regulatory submissions today
+<li>For Submitter
 <ul>
-<li>by showing open examples of using current submission portals</li>
+<li>Submission of an shiny app through the eCTD portal</li>
+<li>The shiny codes will be provided as a proprietary R package</li>
 </ul></li>
-<li>Easier R-based clinical trial regulatory submissions tomorrow
+<li>For FDA Reviewer
 <ul>
-<li>by collecting feedback and influencing future industry and agency decisions on system/process setup</li>
+<li>Reproduce analysis results by deploying the shiny app on a FDA laptop/server</li>
 </ul></li>
 </ul>
+<p><strong>Timeline</strong>: 2022 H1</p>
+<p><strong>Data and analysis scope</strong>:</p>
+<ul>
+<li>a shiny app that displays the 4 TLFs submitted in <a href="(https://github.com/RConsortium/submissions-pilot1-to-fda)">pilot 1</a>, with basic data set filtering functionalities.</li>
+<li>Simulated data from CDISC Pilot (the same data set as in pilot 1)</li>
+</ul>
+<p><strong>Links</strong>:</p>
+<p><a href="https://github.com/RConsortium/submissions-pilot2">R Submission Pilot 2 Development Repo</a></p>
+<p><a href="https://github.com/RConsortium/submissions-pilot2-to-fda">R Submission Pilot 2 eCTD Submission Package to FDA</a></p>
+<p><strong>Key team members</strong>:</p>
+<p>Developer team:<br>
+- Ning Leng, Heng Wang (Roche)<br>
+- Mike Stakehouse, Eli Miller (Atorus)<br>
+- Yilong Zhang, Gregery Chen (Merck)<br>
+- Eric Nantz (Eli Lilly)</p>
+<p>FDA Staff:<br>
+- Paul Schuette<br>
+- Hye Soo Cho</p>
 
 
 </section>

@@ -1,0 +1,106 @@
+---
+title: "Minutes Document Writer"
+format:
+  html:
+    toc: true
+    echo: false
+---
+
+```{r}
+#| output: false
+
+library(openxlsx2)
+library(dplyr)
+people_df <- read_xlsx("data/wg_attendees.xlsx", sheet = 1) |>
+  mutate(name2 = paste0(name, " (", affiliation, ")")) |>
+  arrange(name) |>
+  select(-affiliation_url)
+
+ojs_define(people_data = people_df)
+```
+
+# Instructions
+
+This interactive page creates a template Quarto document text for capturing meeting minutes associated with the Submissions working group. 
+
+## Date Selection
+
+Use the date input below to choose the date of the meeting. Click the calendar icon in the widget to launch the UI.
+
+```{ojs}
+viewof meeting_date = Inputs.date({
+  label: "Meeting Date",
+  value: "2023-02-01"
+})
+```
+
+```{ojs}
+
+meeting_year = (meeting_date.getFullYear()).toString()
+meeting_month = (meeting_date.getMonth() + 1).toString().padStart(2, "0")
+meeting_day = (meeting_date.getDate() + 1).toString().padStart(2, "0")
+
+meeting_array = [meeting_year, meeting_month, meeting_day]
+meeting_print = meeting_array.join("-")
+```
+
+
+
+## Attendee Selection
+
+Use the personnel table below to select the attendees present at the meeting by checking the box that appears once you hover your cursor above a name. The table is ordered alphabetically by first name as default, but you can sort by a different column by clicking the column name. 
+
+::: {.callout-warning}
+If an attendee is not listed in this table, please add their name, affiliation, and affiliation URL to the `wg_attendees.xlsx` spreadsheet located in the `data` subdirectory of this repository. After your edits to the spreadsheet are completed, re-build the Quarto site.
+:::
+
+```{ojs}
+data2 = transpose(people_data)
+```
+
+
+```{ojs}
+viewof people_selection = Inputs.table(data2, {
+  sort: "name",
+  multiple: true,
+  rows: 40,
+  required: false
+})
+```
+
+# Output
+
+## Setup
+
+In your local copy of this repository, create a sub-directory within the `minutes` directory to hold files associated with this meeting's minutes. Based on your selection above, create the following directory:
+
+```{ojs}
+meeting_print
+```
+
+Copy the text in the output below into a new Quarto document named `index.qmd`.
+
+```{ojs}
+silly = html`${Array.from(new Set(people_selection.map(c => c.name2)))
+.sort()
+.map(c => `- ${c}`)
+.join("\n")}`
+
+silly2 = html`<pre>---
+title: "Minutes ${meeting_print}"
+date: ${meeting_print}
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+${silly}:::
+
+## Add Minutes Here
+
+</pre>`
+```
+
+```{ojs}
+silly2
+```

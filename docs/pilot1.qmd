@@ -1,0 +1,64 @@
+---
+title: "R Submission Pilot 1"
+comments:
+  giscus:
+    repo: RConsortium/submissions-wg
+    repo-id: "MDEwOlJlcG9zaXRvcnkzMTk1MjUxNTI="
+---
+
+## Pilot 1 - Common Analyses
+
+**Goal**: Example R based submission contains common analyses, submission through the current FDA e-submission system and process.
+
+**Key evaluation aspects**: 
+  
+- For Submitter  
+  - Submission of proprietary R packages
+  - Preparation of R-based submission materials
+- For FDA Staff
+  - Reproduce analysis results by reconstructing submitted proprietary packages / retrieving open source packages
+
+**Data and analysis scope**:
+  
+- 4 TLFs 
+- Simulated data from CDISC Pilot
+
+
+**Success Criteria**:
+  
+- Submitter:
+  - Successfully submit via eCTD portal
+- FDA Reviewer:
+  - Reproduce analysis results
+
+
+**Timeline**: 
+- Submitted 2021 Nov (v0.1.0)
+- FDA first response 2021 Nov
+- Resubmission 2022 Feb (v0.1.0)
+
+
+**Links**:
+
+[R Submission Pilot 1 Development Repo](https://github.com/RConsortium/submissions-pilot1)
+
+
+[R Submission Pilot 1 eCTD Submission Package to FDA](https://github.com/RConsortium/submissions-pilot1-to-fda)
+
+**Additional Activities**
+- explore pilot submissions to other HAs (Japan, China)
+ 
+**Key team members**:  
+
+Developer team:     
+- Ning Leng, Heng Wang (Roche)  
+- Mike Stakehouse, Eli Miller (Atorus)  
+- Yilong Zhang, Peikun Wu (Merck)  
+
+Esub team:  
+- Beverly Chin (Roche)  
+- Tim Powell (Biogen)  
+
+FDA Staff:  
+- Paul Schuette  
+- Hye Soo Cho 

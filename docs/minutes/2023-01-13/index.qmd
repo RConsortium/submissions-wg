@@ -1,0 +1,66 @@
+---
+title: "Minutes 2023-01-13"
+date: 2023-01-13
+author: Eric Nantz
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Andrew Borgman (Bristol Myers Squibb)
+- Ben Straub (GSK)
+- Bob Engle (Biogen)
+- Doug Kelkhoff (Roche/Genentech)
+- Eric Nantz (Eli Lilly)
+- HyeSoo Cho (FDA)
+- Jizu Zhi (FDA)
+- Joel Laxamana (Roche/Genentech)
+- Kevin Kunzmann (Boehringer Ingelheim)
+- Luke Schantz (R Consortium)
+- Paul Schuette (FDA)
+- Phil Bowsher (Posit)
+- Ryan Johnson (Posit)
+- Sean Healey (Pfizer)
+- Stephanie Lussier (Moderna)
+- Steven Hasendinckx (Johnson & Johnson)
+- Tadeusz Lewandowski (Roche/Genentech)
+
+:::
+
+{{< video https://youtu.be/apmL_9HvbAo >}}
+
+### Pilot 2 Update
+
+* Paul Schuette confirms he was able to successfully run the Shiny application 
+* They encountered a few messages that they ignored, as the app still ran successfully
+* HyeSoo Cho followed the ADRG instructions and launched Shiny app, without major issues
+* She noticed minor issues around errors and warning messages. As part of her evaluation she  tried launching the app in different machines to compare results. She saw some inconsistency between the environments, and they will report specific findings by next month (February)
+
+### Pilot 3 Update
+
+* Proposal was sent in early December for comments and feedback <https://github.com/RConsortium/submissions-pilot3-adam/issues/37> 
+* Running into minor issues with using the same specifications and define settings as the original Pilot 1
+* They are not clear on the most up-to-date specifications to use for the AdAM creation, would like help from others
+* Thomas found a Phuse 2017 white paper on transport files for the next generation. This paper proposed new ways to convert the data before transfer
+* Additional ideas such as a proposal to use JSON format <https://wiki.cdisc.org/display/ODM2/Dataset-JSON> 
+* FDA is aware of the proposal, but it is not clear how far the  proposal has gone
+* Study Data Technical Conformance Guide details the latest specs and what is acceptable in the gateway <https://www.fda.gov/media/162867/download> 
+* Sponsors can use SAS version 8 of XPT if they choose, most sponsors are using version 5 from their experience
+* Other pilots have explored alternative formats, but have not been satisfactory in their opinion
+* It is common to convert the XPT format to a more consumable format. For instance as sas7bdat in SAS or R objects inside R.
+* Pilot 3 will adhere to the current specifications
+* Ben recommended consulting with Sam Hume as a collaborate to push the effort along
+* The ectd gateway would need updating to accommodate json formats. That would require discussions with the E-data team in the FDA
+
+### R Validation Hub intro to Repositories working group 
+
+* Doug Kelkhoff and Kevin Kunzmann led a an introduction to the mission and goals of the working group
+* Mission is to support a transparent cross-industry approach of maintaining a repo of R packages with evidence of their quality and assessment criteria
+* Repo structure may resemble pieces of CRAN, R Universe . Still in the early stages of finding what is needed before working on the technical solutions
+* Asks for regulatory input: Work with the team to understand how you want to observe quality. Paul mentioned that bigger issues that FDA are thinking about are from the IT perspective (making sure that packages don't compromise infrastructure). Example of haven running into buffer overflow issues. Typically those concerns are raised by security team colleagues. They are not aware of any independent effort to gauge the quality of an R package. Typically they point people to the R Validation Hub. While it is not doing independent replication of algorithms, it is a reasonable attempt in the right direction. Typically all pieces of software give you the "as-is" message and no implied guarantee of quality
+* Asks for industry input: Contribute by direct support, or by intermittent feedback as they prepare deliverables
+* High level of planned deliverables: List of quality criteria, mockup of the communication portal, and an example of a package server modelling a real-world workflow
+* Visit the repository to get involved <https://github.com/pharmaR/regulatory-r-repo-wg>
+* Ben asked about ways to consolidation various validation efforts heard from other sponsors. What existing tools are being implemented in this space?
+* Doug shared an article from the ASA Biopharmaceutical Report regarding the risk assessment of R packages: <https://www.pharmar.org/blog/2022/12/05/2022-12-05-asa-biopharmaceutical-report-fall-2022/>
+

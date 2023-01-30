@@ -1,0 +1,40 @@
+project:
+  type: website
+
+website:
+  title: "R Submissions Working Group"
+  site-url: https://rconsortium.github.io/submissions-wg
+  repo-url: https://github.com/RConsortium/submissions-wg
+  repo-actions: [edit, issue]
+    
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - minutes.qmd
+      - text: "Pilots"
+        menu: 
+          - pilot_background.qmd
+          - pilot1.qmd
+          - pilot2.qmd
+          - pilot3.qmd
+          - pilot4.qmd
+      - text: "Site Development"
+        menu:
+          - href: dev_background.qmd
+            text: Development Guide
+          - href: minutes_prep.qmd
+            text: Minutes Draft Gen
+            
+    right:
+      - icon: github
+        href: https://github.com/RConsortium/submissions-wg
+        aria-label: GitHub Site
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true

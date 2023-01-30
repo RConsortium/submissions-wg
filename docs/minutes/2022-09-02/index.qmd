@@ -1,0 +1,95 @@
+---
+title: "Minutes 2022-09-02"
+date: 09-02-2022
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Bob Engle (Biogen)
+- CG Wang
+- Dadong Zhang (Illumina)
+- Ellis Hughes (GSK)
+- Eric Nantz (Eli Lilly)
+- Gabriel Becker (Roche/Genentech)
+- Heidi Curinckx (Johnson & Johnson)
+- Helena Sviglin (FDA)
+- Henry Wang (Roche/Genentech)
+- Jizu Zhi (FDA)
+- Joseph Rickert (R Consortium)
+- Lei Zhao (Roche/Genentech)
+- Nan Xiao (Merck)
+- Ning Leng (Roche/Genentech)
+- Paul Schuette (FDA)
+- Renping Zhang (Johnson & Johnson)
+- Robert Devine (Johnson & Johnson)
+- Rupam Bhattacharyya (University of Michigan)
+- Ryan Johnson (Posit)
+- Saghir Bashir (Argenx)
+- Sam Parmar (Pfizer)
+- Sean Healey (Pfizer)
+- Thomas Neitmann (Roche/Genentech)
+
+:::
+
+The meeting was recorded and the [video](https://rstudio.zoom.us/rec/share/DMHSikDsLtJ67qT8a6ivbiKZOnTuSkW_1ynV2PiTTslmtNR2dZNxtKsm77UzXyKn.raWC6wXreCYmkC1g?startTime=1662134754000) is available.
+
+### EMA 
+
+JBR started the meeting by asking if thee was any news about the effort to submit to the European Health Authorities. Ning Leng replied that the European Medicines Agency announced a new [pilot project](https://www.ema.europa.eu/en/documents/other/information-about-raw-data-proof-concept-pilot-industry_en.pdf) where they will run a number of pilot studies over the next couple of years in which they will accept data and code. Ning said that her team discussed this with Chris Price of whose who said that the EMA would want to review real data. This appears to preclude the R Consortium from participating from this effort. However, the group agreed we would be happy to  help a sponsor company submit an R pilot.
+
+**Action Item** if there is sponsor company interested in submitting R code as part of an EMA pilot project, the RC Submissions WG would be happy to help an participate in a shared learning.
+
+### Pilot 2
+
+Ning Leng and Eric Nantz gave an update on the Pilot 2 project
+Eric is testing the Pilot 2 submission on Windows virtual machines using two version of R v4.1.2 and 4.2.0.
+
+Paul Schuette confirmed that the FDA team would prefer to keep the Pilot 2 deployment on a local machine and Eric said that the documentation is being written from that point of view.
+
+Eric needs the RC credit card to proceed with the shinyapps.io deployment.
+
+**Action Items**
+
+* Eric would like help testing the Pilot 2 Windows deployment. WG members please help with the testing process.
+
+* JBR will speak with Elisa Trevino to generate the credit card for the shinyapps.io setup.
+
+** Ning  will email the WG when the submission documents are ready for review. WG members please help with this review.
+
+**Target Date for Pilot 2**
+Ning and Eric agreed that Monday, September 26, 2022 is the target date for the Pilot 2 submission.
+
+
+### Japanese and Chinese Authorities
+Ning believes that the companies are interested in proceeding with pilot R submissions but the authorities are reticent because they do not have the resources to review pilots.
+
+JBR commented that it appears that our pilot approach is not appropriate for China and Japan and ask the group to think about alternatives for approaching these authorities.
+
+**Pilot 3**
+Eric said that he recently spoke [Martin Wimpress](https://www.linkedin.com/in/martinwimpress/?originalSubdomain=uk) and authority in this area who strongly recommends [podman](https://podman.io/) which is considered an open source, binary equivalent to docker.
+
+The group agreed that we should build a podman team that comprises representatives from at least two or three different companies as well as a representative from the FDA. Paul Schuette volunteered that he would ask his FDA management to assign someone to the team. T
+
+
+**Action Item**
+WG members please look within your companies to recruit people with the podman expertise for the Pilot 3 team. Paul noted that another FDA center has approval for podman and the it would take him a couple of months to obtain similar approval for his center. the WG would like to launch the container team at the October meeting.
+
+### Pilot 1 - adam
+Ning introduced Thomas Neitmann and Joel Laxamana who are creating a proposal to construct a submission that would use the R to generate ADaM data from the cdisc data used in Pilots 1 and 2. The project would make use of the [`admiral`](https://cran.r-project.org/package=admiral) R package.
+
+**Action Item** 
+JBR will ask the RC to create two repositories under the R Consortium organization on GitHub: **submissions-pilot1-adam-extension** and **submissions-pilot1-adam-extension-to-fda** . Ideally the former would be a fork of the submissions-pilot1 repo and the latter a fork of the submissions-pilot1-to-fda repo. 
+
+### Describe the Sturcture of Subgroups
+There was a request to describe the Submission WG subgroups sufficiently for newcomers to find their way around. The main website for the subgroups is https://rconsortium.github.io/submissions-wg
+
+JBR asked the subgroup leaders to list all of the individuals who participated in the various subgroups, even those who may now be inactive. 
+
+The group agreed that it would be appropriate to keep a record of everyone who helped with the working group in order to recognize their contributions.
+We
+
+**Action Item**
+Subgroup leaders should list participants, and write a couple of sentences about how newcomers can get involved.
+
+The next meeting of the submissions working group will be at 9AM Pacific Time on Friday, October 7, 2022.

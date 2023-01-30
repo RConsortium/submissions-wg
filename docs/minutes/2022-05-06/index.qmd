@@ -1,0 +1,86 @@
+---
+title: "Minutes 2022-05-06"
+date: 05-06-2022
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Bob Engle (Biogen)
+- Bryan Tegomoh (CDC Foundation)
+- Coline Zeballos (Roche/Genentech)
+- Estella Dong (Bayer)
+- Gregory Chen (MSD)
+- Hao Wang (FDA)
+- Heidi Curinckx (Johnson & Johnson)
+- Hong Yan (Regeneron)
+- Jiang Xu (FDA)
+- Jizu Zhi (FDA)
+- Joseph Rickert (R Consortium)
+- Michael Blanks (BeiGene)
+- Miriam Fossati (Merck)
+- Nan Xiao (Merck)
+- Ning Leng (Roche/Genentech)
+- Renping Zhang (Johnson & Johnson)
+- Robert Devine (Johnson & Johnson)
+- Ryan Johnson (Posit)
+- Shannon Lewis (BeiGene)
+- Steven Hasendinckx (Johnson & Johnson)
+- Tadeusz Lewandowski (Roche/Genentech)
+
+:::
+
+The meeting was recorded and the [video](https://rstudio.zoom.us/rec/share/p0Eq_hDyILo2lJfh6EVlsdVTSEqydWv_PXzL5vIbGsfQYrC1uzV8Ek8FmQUWU6OM.IdeQOjmtWjj74Ssn) is available with passcode: 5c1OZq=3
+
+Ning Leng provided a status update on the Pilot 2 Submission which will include a Shiny app and the Roche `teal` software. This software is has not yet been open sourced so it appears to be on the critical path for making the submission. `teal` is one of several packages that Roche and three other collaborating companies are preparing to open source. (These packages are described) in the minutes to the 5-5-2022 RTRS working group meeting that are available in the WG's GitHub directory directory) Tad Lewandowski of Roche will investigate the possibility of open-sourcing `tiel` before the other packages it appears that the time line for the release of the bundle of packages is greater than two months.
+
+The  Pilot 2 cover letter and deployed shiny app are ready for review [here](https://github.com/RConsortium/submissions-wg/issues/80) Your feedback would be greatly appreciated!
+
+In a month or so there will be another review round that will include the source code.
+
+Ning also reported that the team working on the submission to the Japanese regulatory agency is seeking the help of [JPMA](https://www.jpma.or.jp/english/index.html), The Japan Pharmaceutical Manufacturers Association. JBR said that, if it would be helpful , the R Consortium would be happy to contact the appropriate people from JPMA.
+
+Next, Gregory Chen described a potential new project: making submissions to Reimbursement Agencies in an [Health Technology Assessment](https://www.nlm.nih.gov/nichsr/hta101/ta10103.html) environment. These would be country specific efforts for example with [NICE](https://www.nice.org.uk/) in the U.K. or [IQWIG](https://www.iqwig.de/en/about-us/methods/results/hta-reports/) in Germany.
+
+It appears that submissions to NICE are mostly done in Excel. Tad reported that the Roche Global Pricing Strategy group which does HTA submissions has learned that IQWIG is interested in subgroup analyses.
+
+Tad also noted that in Europe, approval by the [EMA](https://www.ema.europa.eu/en), the European Medicines Agency does not mean that patients automatically get access to treatments. These must also be approved by the reimbursement agencies for the individual countries. This could take up to three years. In 2025, HTA approval process will change in Europe and IQWIG, which is a reference agency for 40 countries, will have the biggest impact on the new process.
+
+**Next steps** would be to 
+* Determine who is interested in participating
+* Developing contacts within the various HTA agencies
+* Select an agency for a pilot submission
+
+**ACTION** Those interested in participating in this effort, please express your interest in the Issues section of the website.
+
+
+Heidi Curinckx informed the group about a new J&J early adopter program to prepare hybrid submissions using both SAS and R. They would like to know if the FDA has any suggestions or advice. 
+
+Paul Schuette of the FDA itself frequently works with a "hybrid model" and that there should be nothing for the FDA to oppose. He advised:
+
+* Declare package versions up front
+* Specify the operating system you are using. Most FDA reviewers will use Windows
+* Work with your review division to let them know it is a hybrid submission. I reviewers are having trouble with both languages they can reach out to the group Paul works for. 
+
+In the past, hybrid submissions typically have used SAS for models and R for graphics. The FDA would like reviewers to be bilingual, put in reality people tend to specialize. 
+
+Hong Yan asked if the FDA has any problems with SAS IML code that calls into R to generate figures. Paul replied that the FDA is in the midst of a migration and hybrid calling is challenging on their server. He suggested that they flag and annotate this hybrid code with their reviewer.
+
+Ning asked if reviewers will use their preferred language, and not necessarily the language submitted. Paul replied that this is typically the case, reviewers are free to use their language of choice: R, SAS or in a few cases STATA. He also noted that it is not uncommon for reviewers using a language different from the submitted language to run into rounding differences.
+
+Estella Dong asked if a reviewer is not comfortable with a language do two or three reviewers work on a single study? Paul replied that this is not common. Typically only one reviewer is a assigned for a study and if they have trouble they can reach out to the FDA for Division of Analytics and Informatics for help.
+
+When asked if a pre review is recommended. Paul replied that this is up to the individual review division. To request a preview contact the RPM, the regulary project manager assigned for the particular review. Do not make direct contact with individuals on the review team. This process protects both the review staff and the company.
+
+When asked if there have been any submissions using R. Paul replied that there are no submissions out there done completely in R.
+
+Next, Ning provided a summary of the DIA/FDA Biostatistics Industry and Regulatory Forum that she and Coline Zeballos attended recently. The session name was *Yes you can use R for regulatory submissions* and was hosted by Elena Rantou from FDA, and Brenda Crowe from Eli Lilly.  There were two presentations and a panel discussion. Ryan Jung of the FDA shared his experience reviewing an R submission. He mentioned that R Markdown was helpful. He also recommended specifying details about packages used and that you should not assume that the FDA has the same computing environment as the sponsor. Coline presented on the Roche journey with using R.
+
+The audience asked Ryan if docker would be a better computing environment. Ryan replied that this question would be better explored in a working group environment.
+
+**Action:** Ning and Coline will ask Ryan to give his talk as part of the part of the R Adoption series.
+**Action:** It would be helpful if the group could suggest questions or panel topics for the webinar.
+
+Ning noted that the she has updated the wiki page of the Pilot 2 repo with the minutes from that subgroup.
+
+The next meeting of the working group will be at 9 AM Pacific Time on Friday, June 3, 2022.

@@ -1,0 +1,29 @@
+---
+title: "Minutes 2021-04-05"
+date: 04-05-2021
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- "Joseph Rickert - R Consortium"
+- "Paul Schuette - FDA"
+- "Yilong Zhang - Merck"
+- "Doug Kelkhoff - Genentech"
+- "Nan Xiao - Merck"
+- "Ning Leng - Genentech"
+- "Bob Engle - Biogen"
+- "Eric Nantz - Lilly"
+- "Phil Bowsher - RStudio"
+- "Sean Lopp - RStudio"
+:::
+
+Joe Rickert brought the meeting to order and reminded attendees about the action item from the previous meeting to consider the SDTCG_SoftwareProgram document and comment on changes to the language that the group would like the FDA to consider.
+
+Next, Yilong Zhang shared a proposal that Mike Stackhouse submitted to PHUSE outlining a pilot submission to the FDA prepared for PhUSE for consideration by the group. This document R_eCTD_pilot_submissions.docx. 
+
+For the remainder of the meeting the attendees examined the content of the document and discuss how the project should proceed. The prevailing sentiment was that the pilot submission should be an R Consortium Submissions working group project.
+
+The video recording for the meeting is available [here](https://zoom.us/rec/share/0uljlGZRgZGx9zZuRgloMOIH92qvtScRq1YtUZhxnC0GF2KxkMXsycDYykqHCIXl.pz5myyWa0kJ5JdnO) (Passcode: `=0yt$%V9`)
+
+It was agreed that the group would like to go back to meeting on Fridays. The next meeting is scheduled for Friday, May 7, 2021. Thereafter, the group will continue to meet on the first Friday of the month.

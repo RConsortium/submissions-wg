@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R Submissions Working Group - Introduction</title>
+<title>R Submissions Working Group - Q &amp; A</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page">
+    <a class="nav-link" href="./index.html">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -156,16 +156,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#our-mission" id="toc-our-mission" class="nav-link active" data-scroll-target="#our-mission">Our Mission</a></li>
+  <li><a href="#about-r-based-regulatory-submission" id="toc-about-r-based-regulatory-submission" class="nav-link active" data-scroll-target="#about-r-based-regulatory-submission">About R based regulatory submission</a></li>
+  <li><a href="#about-the-r-consortium-r-submission-working-group" id="toc-about-the-r-consortium-r-submission-working-group" class="nav-link" data-scroll-target="#about-the-r-consortium-r-submission-working-group">About the R consortium R submission working group</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/RConsortium/submissions-wg/edit/main/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/RConsortium/submissions-wg/edit/main/faq.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Introduction</h1>
+<h1 class="title">Q &amp; A</h1>
 </div>
 
 
@@ -180,20 +181,50 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Welcome to the R Consortium R Submission Working Group!</p>
-<p>The R submission working group is a cross industry pharma working group focusing on improving practices of R-based clinical trial regulatory submissions.</p>
-<p>You can view previous meeting minutes with links to recorded sessions in the navigation bar above.</p>
-<section id="our-mission" class="level1">
-<h1>Our Mission</h1>
+<section id="about-r-based-regulatory-submission" class="level2">
+<h2 class="anchored" data-anchor-id="about-r-based-regulatory-submission">About R based regulatory submission</h2>
+<ol type="1">
+<li>How to submit readable code in R to submit to the FDA?</li>
+</ol>
 <ul>
-<li>Easier R-based clinical trial regulatory submissions today
+<li>Readable code can be submitted as .r files, according to the <a href="https://github.com/RConsortium/submissions-pilot1-to-fda">R consortium R submission working group pilot 1</a>.</li>
+<li>Analytical codes using functions in open-sourced or proprietary packages are considered readable, as long as the proprietary R packages are submitted in the way as mentioned below.</li>
+</ul>
+<ol start="2" type="1">
+<li>How to submit proprietary R packages to FDA?</li>
+</ol>
 <ul>
-<li>by showing open examples of using current submission portals</li>
+<li><p>Proprietary packages cannot be submitted as a compressed file through the eCTD gateway.</p></li>
+<li><p>However, proprietary R packages can be converted to a plain <code>.txt</code> file by <a href="https://merck.github.io/pkglite/">pkglite</a> then submitted through the eCTD gateway. FDA reviewers can use the same package to convert the <code>.txt</code> file back to R package. An example can be found in the <a href="https://github.com/RConsortium/submissions-pilot1-to-fda">R consortium R submission working group pilot 1</a>.</p></li>
+</ul>
+<ol start="3" type="1">
+<li>What if open sourced R packages are used?</li>
+</ol>
+<ul>
+<li>No need to submit source code of open source packages.</li>
+<li>In adrg/programtoc, include package version, its dependency packages and their versions</li>
+<li>In analytical code, include appropriate <code>library()</code> calls.</li>
+</ul>
+<ol start="4" type="1">
+<li>If R is used, what is needed for the ADRG?</li>
+</ol>
+<ul>
+<li>If you use R it is recommended to have a section in the ADRG/programtoc that provides the FDA with:
+<ul>
+<li>R version</li>
+<li>Package dependencies and their versions</li>
+<li>Instructions to convert proprietary R package <code>.txt</code> files back to the natural format (if proprietary R packages are submitted)</li>
 </ul></li>
-<li>Easier R-based clinical trial regulatory submissions tomorrow
+</ul>
+</section>
+<section id="about-the-r-consortium-r-submission-working-group" class="level2">
+<h2 class="anchored" data-anchor-id="about-the-r-consortium-r-submission-working-group">About the R consortium R submission working group</h2>
+<ol type="1">
+<li>Who can join the working group? How can I get involved?</li>
+</ol>
 <ul>
-<li>by collecting feedback and influencing future industry and agency decisions on system/process setup</li>
-</ul></li>
+<li>anyone can join the working group. The working group meets monthly on Friday. If you are interested in joining the monthly meetings, please contact Joe Rickert at joseph.rickert@rstudio.com.</li>
+<li>You can also monitor our <a href="https://github.com/RConsortium/submissions-wg/issues">issue board</a>. Any contribution/feedback are more than welcome</li>
 </ul>
 
 

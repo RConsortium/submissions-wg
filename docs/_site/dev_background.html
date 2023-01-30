@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R Submissions Working Group - Introduction</title>
+<title>R Submissions Working Group - Site Development</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page">
+    <a class="nav-link" href="./index.html">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -156,16 +156,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#our-mission" id="toc-our-mission" class="nav-link active" data-scroll-target="#our-mission">Our Mission</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#development-setup" id="toc-development-setup" class="nav-link" data-scroll-target="#development-setup">Development Setup</a></li>
+  <li><a href="#site-organization" id="toc-site-organization" class="nav-link" data-scroll-target="#site-organization">Site Organization</a>
+  <ul class="collapse">
+  <li><a href="#pilots" id="toc-pilots" class="nav-link" data-scroll-target="#pilots">Pilots</a></li>
+  <li><a href="#working-group-minutes" id="toc-working-group-minutes" class="nav-link" data-scroll-target="#working-group-minutes">Working Group Minutes</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/RConsortium/submissions-wg/edit/main/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/RConsortium/submissions-wg/edit/main/dev_background.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Introduction</h1>
+<h1 class="title">Site Development</h1>
 </div>
 
 
@@ -180,23 +186,33 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Welcome to the R Consortium R Submission Working Group!</p>
-<p>The R submission working group is a cross industry pharma working group focusing on improving practices of R-based clinical trial regulatory submissions.</p>
-<p>You can view previous meeting minutes with links to recorded sessions in the navigation bar above.</p>
-<section id="our-mission" class="level1">
-<h1>Our Mission</h1>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>The Submissions working group website is built using the <a href="https://quarto.org/">Quarto</a> scientific and technical publishing system based in markdown format and compiled with Pandoc.</p>
+</section>
+<section id="development-setup" class="level2">
+<h2 class="anchored" data-anchor-id="development-setup">Development Setup</h2>
+<p>Ensure that you have Quarto version 1.2 or later installed on your development environment. More details on downloading and installing Quarto can be found in the <a href="https://quarto.org/docs/get-started/">Get Started</a> guide.</p>
+<p>A recent version of R (4.1.2 or later) is sufficient. Ensure that you have the following R packages installed:</p>
 <ul>
-<li>Easier R-based clinical trial regulatory submissions today
-<ul>
-<li>by showing open examples of using current submission portals</li>
-</ul></li>
-<li>Easier R-based clinical trial regulatory submissions tomorrow
-<ul>
-<li>by collecting feedback and influencing future industry and agency decisions on system/process setup</li>
-</ul></li>
+<li><a href="https://janmarvin.github.io/openxlsx2/"><code>{openxlsx2}</code></a></li>
+<li><a href="https://dplyr.tidyverse.org/index.html"><code>{dplyr}</code></a></li>
 </ul>
+<p>It is recommended to use the RStudio IDE (v2022.07 or later) as your development environment for building and rendering the web site. Refer to the <a href="https://quarto.org/docs/websites/">Creating a Website</a> guide details on the workflow.</p>
+</section>
+<section id="site-organization" class="level2">
+<h2 class="anchored" data-anchor-id="site-organization">Site Organization</h2>
+<p>Most of the site uses standard configurations outlined in the <a href="https://quarto.org/docs/websites/">websites guide</a>. Below are additional details for developing site content based on the type of material:</p>
+<section id="pilots" class="level3">
+<h3 class="anchored" data-anchor-id="pilots">Pilots</h3>
+<p>Each pilot conducted by this working group has its own dedicated page and associated quarto file named <code>pilotX.qmd</code> where <code>X</code> denotes the index of the pilot. High-level descriptions of all pilots is stored in <code>pilot_background.qmd</code>.</p>
+</section>
+<section id="working-group-minutes" class="level3">
+<h3 class="anchored" data-anchor-id="working-group-minutes">Working Group Minutes</h3>
+<p>The site uses the blog feature to create a custom listing for working group meeting minutes with all files stored in the <code>minutes</code> directory. Within the <code>minutes</code> directory, create a directory with the date of the working group meeting (for example <code>2023-01-23</code>) and within this directory, create a quarto document named <code>index.qmd</code>. Visit the <a href="./minutes_prep.html">Minutes Draft Gen</a> page for an interactive way of creating a new Quarto document file used for a future working group meeting minutes, including an easy way to assemble the attendees present at the meeting.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

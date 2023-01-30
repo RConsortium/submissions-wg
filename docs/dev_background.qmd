@@ -1,0 +1,30 @@
+---
+title: "Site Development"
+---
+
+## Overview 
+
+The Submissions working group website is built using the [Quarto](https://quarto.org/) scientific and technical publishing system based in markdown format and compiled with Pandoc. 
+
+## Development Setup
+
+Ensure that you have Quarto version 1.2 or later installed on your development environment. More details on downloading and installing Quarto can be found in the [Get Started](https://quarto.org/docs/get-started/) guide. 
+
+A recent version of R (4.1.2 or later) is sufficient. Ensure that you have the following R packages installed:
+
+* [`{openxlsx2}`](https://janmarvin.github.io/openxlsx2/)
+* [`{dplyr}`](https://dplyr.tidyverse.org/index.html)
+
+It is recommended to use the RStudio IDE (v2022.07 or later) as your development environment for building and rendering the web site. Refer to the [Creating a Website](https://quarto.org/docs/websites/) guide details on the workflow.
+
+## Site Organization
+
+Most of the site uses standard configurations outlined in the [websites guide](https://quarto.org/docs/websites/). Below are additional details for developing site content based on the type of material: 
+
+### Pilots
+
+Each pilot conducted by this working group has its own dedicated page and associated quarto file named `pilotX.qmd` where `X` denotes the index of the pilot. High-level descriptions of all pilots is stored in `pilot_background.qmd`.
+
+### Working Group Minutes
+
+The site uses the blog feature to create a custom listing for working group meeting minutes with all files stored in the `minutes` directory. Within the `minutes` directory, create a directory with the date of the working group meeting (for example `2023-01-23`) and within this directory, create a quarto document named `index.qmd`. Visit the [Minutes Draft Gen](minutes_prep.qmd) page for an interactive way of creating a new Quarto document file used for a future working group meeting minutes, including an easy way to assemble the attendees present at the meeting.

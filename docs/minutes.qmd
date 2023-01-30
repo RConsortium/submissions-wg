@@ -1,0 +1,9 @@
+---
+title: "Meeting Minutes"
+listing: 
+  contents: minutes # all Quarto docs in the `minutes` directory will be included on your listing page
+  type: table # or `default` or `table`; each type has its own set of yaml options to include
+  sort: "date desc" # can also sort on more than one field
+  feed: true
+  categories: true # allows you to sort posts by assigned categories 
+---
