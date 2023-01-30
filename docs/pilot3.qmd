@@ -1,0 +1,11 @@
+---
+title: "R Submission Pilot 3"
+---
+
+## Pilot 3 - Generation of ADaM data sets 
+
+**Goal**: Example R based submission contains ADaM data sets generated using R based on the content of the [Pilot 1](pilot1.qmd) submission.
+
+::: {.callout-warning}
+This page is under construction. More information is forthcoming!
+:::

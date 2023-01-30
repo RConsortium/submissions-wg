@@ -1,0 +1,11 @@
+---
+title: "R Submission Pilot 4"
+---
+
+## Pilot 4 - Alternative submission formats
+
+**Goal**: Utilized alternative methods of distributing a self-contained submission bundle with container technology.
+
+::: {.callout-warning}
+This page is under construction. More information is forthcoming!
+:::

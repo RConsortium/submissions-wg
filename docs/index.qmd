@@ -1,0 +1,16 @@
+---
+title: "Introduction"
+---
+
+Welcome to the R Consortium R Submission Working Group!
+
+The R submission working group is a cross industry pharma working group focusing on improving practices of R-based clinical trial regulatory submissions.
+
+You can view previous meeting minutes with links to recorded sessions in the navigation bar above. 
+
+# Our Mission
+
+- Easier R-based clinical trial regulatory submissions today
+  - by showing open examples of using current submission portals
+- Easier R-based clinical trial regulatory submissions tomorrow
+  - by collecting feedback and influencing future industry and agency decisions on system/process setup

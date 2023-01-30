@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Joseph Rickert">
+<meta name="dcterms.date" content="2022-06-04">
+
+<title>R Submissions Working Group - Minutes 2022-06-04</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">R Submissions Working Group</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../minutes.html">
+ <span class="menu-text">Meeting Minutes</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-pilots" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Pilots</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-pilots">    
+        <li>
+    <a class="dropdown-item" href="../../pilot_background.html">
+ <span class="dropdown-text">Background</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../pilot1.html">
+ <span class="dropdown-text">R Submission Pilot 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../pilot2.html">
+ <span class="dropdown-text">R Submission Pilot 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../pilot3.html">
+ <span class="dropdown-text">R Submission Pilot 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../pilot4.html">
+ <span class="dropdown-text">R Submission Pilot 4</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-site-development" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Site Development</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-site-development">    
+        <li>
+    <a class="dropdown-item" href="../../dev_background.html">
+ <span class="dropdown-text">Development Guide</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../minutes_prep.html">
+ <span class="dropdown-text">Minutes Draft Gen</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/RConsortium/submissions-wg"><i class="bi bi-github" role="img" aria-label="GitHub Site">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Minutes 2022-06-04</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Joseph Rickert </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 4, 2022</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#pilot-2-status" id="toc-pilot-2-status" class="nav-link active" data-scroll-target="#pilot-2-status">Pilot 2 Status</a></li>
+  <li><a href="#r-adowtion-series-webinar" id="toc-r-adowtion-series-webinar" class="nav-link" data-scroll-target="#r-adowtion-series-webinar">R Adowtion Series Webinar</a></li>
+  <li><a href="#pilot-3" id="toc-pilot-3" class="nav-link" data-scroll-target="#pilot-3">Pilot 3</a></li>
+  <li><a href="#japan-submission" id="toc-japan-submission" class="nav-link" data-scroll-target="#japan-submission">Japan Submission</a></li>
+  <li><a href="#china-submission" id="toc-china-submission" class="nav-link" data-scroll-target="#china-submission">China Submission</a></li>
+  <li><a href="#general-discussion" id="toc-general-discussion" class="nav-link" data-scroll-target="#general-discussion">General Discussion</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2022-06-04/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Bob Engle (Biogen)</li>
+<li>Ellis Hughes (GSK)</li>
+<li>Gabriel Becker (Roche/Genentech)</li>
+<li>Gregory Chen (MSD)</li>
+<li>Jizu Zhi (FDA)</li>
+<li>Joseph Rickert (R Consortium)</li>
+<li>Kui Schen (Bayer)</li>
+<li>Michael Blanks (BeiGene)</li>
+<li>Nan Xiao (Merck)</li>
+<li>Phanikumar Tata (Syneos Health)</li>
+<li>Phil Bowsher (Posit)</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Ryan Johnson (Posit)</li>
+<li>Sean Healey (Pfizer)</li>
+<li>Steven Hasendinckx (Johnson &amp; Johnson)</li>
+<li>Tadeusz Lewandowski (Roche/Genentech)</li>
+<li>Xin Qiu (Johnson &amp; Johnson)</li>
+</ul>
+</div>
+</div>
+</div>
+<p>Unfortunately, the video of the meeting is not available.</p>
+<p>JBR began the meeting with this agenda:</p>
+<ul>
+<li>Pilot 2 Status Update</li>
+<li>R Adoption Webinar</li>
+<li>Pilot 3 Status?</li>
+<li>Japan Submission Status?</li>
+<li>China Submission Status?</li>
+<li>Review project Board</li>
+<li>Open Discussion</li>
+</ul>
+<section id="pilot-2-status" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-2-status">Pilot 2 Status</h3>
+<p>The following status was provided in an email to JBR by Ning Leng</p>
+<ul>
+<li>The Pilot 2 team is addressing feedback from this working group</li>
+<li>The Roche “NEST” software, which includes the <code>teal</code> package, is scheduled to be open sourced in mid June.</li>
+<li>After <code>teal</code> open source: Pilot 2 team will package up the <code>shiny</code> app code using the <code>golem</code> package.</li>
+<li>Pilot 2 is on track for July Submission</li>
+</ul>
+<p>JBR asked the following questions:</p>
+<ul>
+<li>Will teal be put on CRAN?</li>
+<li>Is the gateway ready?</li>
+<li>Is the <a href="https://github.com/RConsortium/submissions-wg/issues/80">cover letter</a> for Pilot 2 fine?</li>
+</ul>
+<p>No one present was sure whether the <code>teal</code> package would be submitted to CRAN before the submission or whether the Pilot 2 submission would be made with this package on GitHub. Tad L. noted <code>teal</code> will have an Apache 2.0 license.</p>
+<p>Tad Lewandowski noted that the Pilot 2 execution team received several helpful comments on the <code>shiny</code> app. The team plans to keep the initial app as simple as possible and will consider the ideas proposed in the comments as extensions for the future. He also noted hat the Roche team has built additional <code>shiny</code> apps that have been made public and are available for use in future submissions that collectively form a “clinical studies results viewer”. These include:</p>
+<ul>
+<li><a href="https://genentech.shinyapps.io/teal_efficacy/">Efficacy</a></li>
+<li><a href="https://genentech.shinyapps.io/teal_exploratory/">Exploratory</a></li>
+<li><a href="https://genentech.shinyapps.io/teal_safety/">Safety</a></li>
+</ul>
+<p>The next meeting of the execution team will be on 6-16-2022</p>
+</section>
+<section id="r-adowtion-series-webinar" class="level3">
+<h3 class="anchored" data-anchor-id="r-adowtion-series-webinar">R Adowtion Series Webinar</h3>
+<p>The next R Consortium R Adoption series webinar will feature the work of the Submissions Working group The tentative agenda for the 2022 July R Adoption webinar is:</p>
+<ul>
+<li>Tentative date: July 14</li>
+<li>Meeting length: 1.5 hr</li>
+<li>Opening (5min) - Coline, R consortium/Roche</li>
+<li>Presentation: Achieving Regulatory Approval Using R (20min) Tae Hyun Jung, FDA</li>
+<li>Presentation: Review experience of the R consortium R submission pilot 1 (20min) Hye Soo Cho, FDA</li>
+<li>Panel discussion (45min)</li>
+<li>Moderator: Ning Leng, R consortium/Roche</li>
+<li>Panelists: Paul Schuette, Hye Soo Cho, and Tae Hyun Jung</li>
+</ul>
+</section>
+<section id="pilot-3" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-3">Pilot 3</h3>
+<p>JBR asked the group to begin thinking about Pilot 3. He noted that we had been thinking about using container technology in a submission, but the WG has not completed its investigation into container technology and the FDA does not appear to be ready for such a submission.</p>
+<p>Tad suggested that questions about the content of a Pilot 3 submission would be appropriate for the panel discussion of the upcoming webinar.</p>
+</section>
+<section id="japan-submission" class="level3">
+<h3 class="anchored" data-anchor-id="japan-submission">Japan Submission</h3>
+<p>Tad and his colleagues have had a paper accepted for the upcoming <a href="https://www.diaglobal.org/en/conference-listing/meetings/2022/10/19th-dia-japan-annual-meeting-2022">DIA Conference.</a></p>
+</section>
+<section id="china-submission" class="level3">
+<h3 class="anchored" data-anchor-id="china-submission">China Submission</h3>
+<p>No update.</p>
+</section>
+<section id="general-discussion" class="level3">
+<h3 class="anchored" data-anchor-id="general-discussion">General Discussion</h3>
+<p>The group then updated the project <a href="https://github.com/RConsortium/submissions-wg/projects/2">kanban board</a> moving the <code>shiny</code> documentation to the “In Progress” column.</p>
+<p>The discussion then turned towards considering the topic of HTA, <a href="https://www.nlm.nih.gov/nichsr/hta101/ta10103.html">Health Technology Assessment</a> submissions that was considered in our previous meeting. We are only at the beginning stages and need discuss which European agency we would like to target and what we could bring to the HTA process. As was noted at our previous meeting, <a href="https://www.nice.org.uk/">NICE</a> in the U.K. and <a href="https://www.iqwig.de/en/about-us/methods/results/hta-reports/">IQWIG</a> in Germany are the primary candidates.</p>
+<p><strong>Action</strong> HTA submissions will be a topic for the July Meeting. Tad Lewandowski will ask his colleague Christian Buehrer to speak about Roche’s efforts in this area.</p>
+<p>Gregory Chen noted that several members of the WG have expressed in interest in HTA submissions. He also suggested that it would be very helpful to involve experts in this area to assist us.</p>
+<p><strong>Action</strong> Gregory agreed to take the lead on compiling a list of experts whose participation could help the working group.</p>
+<p><strong>Action</strong> Once the list is available, JBR agreed to contact people on the list to seek their participation.</p>
+<p>The next meeting of the WG will be at 9AM Pacific Time, on Friday July 1, 2022.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<script src="https://giscus.app/client.js" data-repo="RConsortium/submissions-wg" data-repo-id="MDEwOlJlcG9zaXRvcnkzMTk1MjUxNTI=" data-category="General" data-category-id="MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyNTY3MTQx" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

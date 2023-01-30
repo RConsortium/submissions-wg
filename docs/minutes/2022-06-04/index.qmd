@@ -1,0 +1,110 @@
+---
+title: "Minutes 2022-06-04"
+date: 06-04-2022
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Bob Engle (Biogen)
+- Ellis Hughes (GSK)
+- Gabriel Becker (Roche/Genentech)
+- Gregory Chen (MSD)
+- Jizu Zhi (FDA)
+- Joseph Rickert (R Consortium)
+- Kui Schen (Bayer)
+- Michael Blanks (BeiGene)
+- Nan Xiao (Merck)
+- Phanikumar Tata (Syneos Health)
+- Phil Bowsher (Posit)
+- Robert Devine (Johnson & Johnson)
+- Ryan Johnson (Posit)
+- Sean Healey (Pfizer)
+- Steven Hasendinckx (Johnson & Johnson)
+- Tadeusz Lewandowski (Roche/Genentech)
+- Xin Qiu (Johnson & Johnson)
+
+:::
+
+Unfortunately, the video of the meeting is not available.
+
+JBR began the meeting with this agenda: 
+
+* Pilot 2 Status Update
+* R Adoption Webinar
+* Pilot 3 Status?
+* Japan Submission Status?
+* China Submission Status?
+* Review project Board
+* Open Discussion
+
+### Pilot 2 Status
+
+The following status was provided in an email to JBR by Ning Leng
+
+* The Pilot 2 team is addressing feedback from this working group
+* The Roche “NEST” software, which includes the `teal` package, is scheduled to be open sourced in mid June. 
+* After `teal` open source: Pilot 2 team will package up the `shiny` app code using the `golem` package.
+* Pilot 2 is on track for July Submission
+
+JBR asked the following questions:
+
+* Will teal be put on CRAN?
+* Is the gateway ready?
+* Is the [cover letter](https://github.com/RConsortium/submissions-wg/issues/80) for Pilot 2 fine? 
+
+No one present was sure whether the `teal` package would be submitted to CRAN before the submission or whether the Pilot 2 submission would be made with this package on GitHub. Tad L. noted `teal` will have an Apache 2.0 license.
+
+Tad Lewandowski noted that the Pilot 2 execution team received several helpful comments on the `shiny` app. The team plans to keep the initial app as simple as possible and will consider the ideas proposed in the comments as extensions for the future. He also noted hat the Roche team has built additional `shiny` apps that have been made public and are available for use in future submissions that collectively form a "clinical studies results viewer". These include:
+
+* [Efficacy](https://genentech.shinyapps.io/teal_efficacy/)
+* [Exploratory](https://genentech.shinyapps.io/teal_exploratory/)
+* [Safety](https://genentech.shinyapps.io/teal_safety/)
+
+
+The next meeting of the execution team will be on 6-16-2022
+
+### R Adowtion Series Webinar
+
+The next R Consortium R Adoption series webinar will feature the work of the Submissions Working group
+The tentative agenda for the 2022 July R Adoption webinar is:
+
+* Tentative date: July 14
+* Meeting length: 1.5 hr
+* Opening (5min) - Coline, R consortium/Roche
+* Presentation: Achieving Regulatory Approval Using R (20min) Tae Hyun Jung, FDA
+* Presentation: Review experience of the R consortium R submission pilot 1 (20min) Hye Soo Cho, FDA
+ * Panel discussion (45min)
+  * Moderator: Ning Leng, R consortium/Roche
+  * Panelists: Paul Schuette, Hye Soo Cho, and Tae Hyun Jung
+
+### Pilot 3
+JBR asked the group to begin thinking about Pilot 3. He noted that we had been thinking about using container technology in a submission, but the WG has not completed its investigation into container technology and the FDA does not appear to be ready for such a submission.
+
+Tad suggested that questions about the content of a Pilot 3 submission would be appropriate for the panel discussion of the upcoming webinar.
+
+### Japan Submission
+
+Tad and his colleagues have had a paper accepted for the upcoming [DIA Conference.](https://www.diaglobal.org/en/conference-listing/meetings/2022/10/19th-dia-japan-annual-meeting-2022) 
+
+### China Submission
+
+No update.
+
+
+
+### General Discussion 
+
+The group then updated the project [kanban board](https://github.com/RConsortium/submissions-wg/projects/2) moving the `shiny` documentation to the "In Progress" column.
+
+The discussion then turned towards considering the topic of HTA, [Health Technology Assessment](https://www.nlm.nih.gov/nichsr/hta101/ta10103.html) submissions that was considered in our previous meeting. We are only at the beginning stages and need discuss which European agency we would like to target and what we could bring to the HTA process. As was noted at our previous meeting, [NICE](https://www.nice.org.uk/) in the U.K. and  [IQWIG](https://www.iqwig.de/en/about-us/methods/results/hta-reports/) in Germany are the primary candidates.
+
+**Action** HTA submissions will be a topic for the July Meeting. Tad Lewandowski will ask his colleague Christian Buehrer to speak about Roche's efforts in this area.
+
+Gregory Chen noted that several members of the WG have expressed in interest in HTA submissions. He also suggested that it would be very helpful to involve experts in this area to assist us.
+
+**Action** Gregory agreed to take the lead on compiling a list of experts whose participation could help the working group.
+
+**Action** Once the list is available, JBR agreed to contact people on the list to seek their participation.
+
+The next meeting of the WG will be at 9AM Pacific Time, on Friday July 1, 2022.

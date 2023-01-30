@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Joseph Rickert">
+<meta name="dcterms.date" content="2021-01-15">
+
+<title>R Submissions Working Group - Minutes 2021-01-15</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">R Submissions Working Group</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../minutes.html">
+ <span class="menu-text">Meeting Minutes</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-pilots" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Pilots</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-pilots">    
+        <li>
+    <a class="dropdown-item" href="../../pilot_background.html">
+ <span class="dropdown-text">Background</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../pilot1.html">
+ <span class="dropdown-text">R Submission Pilot 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../pilot2.html">
+ <span class="dropdown-text">R Submission Pilot 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../pilot3.html">
+ <span class="dropdown-text">R Submission Pilot 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../pilot4.html">
+ <span class="dropdown-text">R Submission Pilot 4</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-site-development" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Site Development</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-site-development">    
+        <li>
+    <a class="dropdown-item" href="../../dev_background.html">
+ <span class="dropdown-text">Development Guide</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../minutes_prep.html">
+ <span class="dropdown-text">Minutes Draft Gen</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/RConsortium/submissions-wg"><i class="bi bi-github" role="img" aria-label="GitHub Site">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Minutes 2021-01-15</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Joseph Rickert </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 15, 2021</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#action-items" id="toc-action-items" class="nav-link active" data-scroll-target="#action-items">Action Items</a></li>
+  <li><a href="#next-meeting" id="toc-next-meeting" class="nav-link" data-scroll-target="#next-meeting">Next meeting</a></li>
+  <li><a href="#video-recording" id="toc-video-recording" class="nav-link" data-scroll-target="#video-recording">Video Recording</a></li>
+  <li><a href="#note-from-doug-kelkhoff" id="toc-note-from-doug-kelkhoff" class="nav-link" data-scroll-target="#note-from-doug-kelkhoff">Note from Doug Kelkhoff</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2021-01-15/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>“Joseph Rickert - R Consortium”</li>
+<li>“Paul Schuette - FDA”</li>
+<li>“Yilong Zhang - Merck”</li>
+<li>“Bob Engle - Biogen”</li>
+<li>“Chris Kania - Biogen”</li>
+<li>“Doug Kelkhoff - Genentech”</li>
+<li>“James Black - Roche”</li>
+<li>“Juliane Manitz - Emd Serono”</li>
+<li>“Mike Stackhouse - Atorus Research”</li>
+<li>“Nan Xiao - Merck”</li>
+<li>“Ning Leng - Genentech”</li>
+<li>“Ojesh Upandhyay GSK”</li>
+<li>“Phil Bowsher - RStudio”</li>
+<li>“Eric Nantz - Eli Lilly”</li>
+</ul>
+</div>
+</div>
+</div>
+<p>Joseph Rickert began the meeting by noting that the Submisisons working group now has a <a href="https://github.com/RConsortium/submissions-wg">GithHub Repo</a> which contains the minutes and video recording from the first meeting. JR asked if there are external groups that we should involve. Michael Stackhouse and Paul Schuette suggest linking up with PHUSE. JR asks for a recommendation from PHUSE, MS offers to investigate.</p>
+<p>JR asked PS if he could elaborate on requirements from various government agencies. Paul recommends contacting Wendy Martinez of BLS, and leader of the Inter-Agency R Users Group.</p>
+<p>PS also notes that declining budgets in various government agencies are forcing declining budgets and that consequently there is a renewed interest in open source. There is particular interest in establishing a stable R environment and the whole panoply of tools required.</p>
+<p>JR noted that although other federal agencies are not directly involved in setting requirements for R submissions they must have some say in setting general requirements and technology standards and asked PS if he could elaborate on the hierarchy of federal agencies involved. PS stated that the government has a federated model. Groups tend to do their own thing. The FDA has some standards that are not uniformly enforced. They are center specific. <a href="https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/cder-offices-and-divisions">CDER</a> and <a href="https://www.fda.gov/about-fda/fda-organization/center-biologics-evaluation-and-research-cber">CBER</a> are the two centers that are most closely linked. Require CDISC heading towards STDTM, ADaM and other data standards. <a href="https://www.fda.gov/about-fda/fda-organization/center-devices-and-radiological-health">CDRH</a> has a more heterogeneous sponsor group and even gets some submissions in Excel.</p>
+<p><a href="https://www.fda.gov/about-fda/fda-organization/center-veterinary-medicine">CVM</a> is in between. Other centers like <a href="https://www.fda.gov/tobacco-products/about-center-tobacco-products-ctp">CPT</a> don’t much deal with clinical trials. Paul’s presentation (from last time) focused on CDER and CBER and the portals and gateways that have been set up there. Even within the his center the Office of Biostatistics does not control the standards FDA submissions gateway uses.</p>
+<p>There are two different types of standards: there are the standards of CDISC and PHUSE and then there are the standards of “What does one have to do to actually submit through the electronics gateway”.</p>
+<p>Eric Nantz asks if the group that is handling the gateway is also in CDER and CBER. PS replied that it is, but in a different office. (At 11:21 PS elaborates on which groups are involved.) The actual gateway is under the Office of Business Informatics which is in the Office of Strategic Programs. It is a Balkanized setup. Primary tool for clinicians in the Office of New Drugs is JMP clinical, script in Python, some code in SAS and R.</p>
+<p>Anything with inferential statistics falls to the <a href="https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/office-biostatistics">Office of Biostatistics</a>. Safety issues are mostly done elsewhere by clinicians.</p>
+<p>Project <a href="https://govtribe.com/opportunity/federal-contract-opportunity/fda-cder-portes-om-sas-drug-development-software-maintenance-fdacder161164460">PORTES</a> has a provision for a submissions portal and also includes turning XPT data sets into S or R data sets. PS recommends getting <a href="https://connellyworks.swoogo.com/healthit2020/speaker/97492/ethan-chen">Ethan Chen</a> involved, but in short term writing program that modifies scripts (e.g.&nbsp;from .lower case to .Upper case) would be faster approach.</p>
+<p>EN and PS note that the discussions last time (see the presentation by Yilong Zhang) made it clear that industry is already working on this approach and suggest that it may be worth pursuing.</p>
+<p>JR (22:29) suggested that we may want to pursue the idea of setting up a stable R environment. YZ says Merck is working on a package to assemble functions into a txt file, and stated that once they have a stable version they would be willing to discuss making it open source.</p>
+<p>JR suggests that going for a stable R environment would pull together several threads of work in progress, and asked if setting up a pilot server with an R environment configured similarly to an environment typically used for submissions would be helpful. PS said that he thought so and referenced (26:30) a project he and EN did a couple of years ago to stand up a stable snapshot.</p>
+<p>YZ argues for making a purely open source setup. YZ and EN suggest (48:30) that we could setup a repo with software to CDISC tables and synthetic data for a hypothetical submission and we could collaborate and show how it could scale to do a real submission.</p>
+<p>PS noted that a project he and Doug Kelkhoff worked on to use Docker had issues with mixing environment like Windows and Linux. PS noted that he is constrained to use a particular version of Windows 10.</p>
+<p>PS likes the idea of having a common repo that includes a class of standard packages. Mike Stackhouse notes that the problem is to have the right structure, packages and package management. MS notes that there are several package management solutions available</p>
+<p>James Black asks Paul (33:00) how identical solutions have to be. There was some discussion about this. PS notes opinions vary between 100% identical and having results close enough so as not to change the decision. (e.g.&nbsp;p = 0.019 and p = 0.19 are clearly different, but there is a lot of gray area.)</p>
+<p>EN notes it is possible to lock down what goes into a container that would minimize risk even OS differences, but states that getting things stable at the R package level is the bigger issue. (There seemed to be general agreement about this.) DK says locking downing the R environment using packrat or rn would give us a foothold. If this is successful we could reproduce the same environment in a container.</p>
+<p>DK noted that many of difficulties he and PS had during previous FDA project had to do with mounting a file system and how data is accessed within the FDA. Suggests bundling packages with base environment.</p>
+<p>MS asked if part of project would be to show that the pilot gives same results in Windows and Linux. PS indicates that it would.</p>
+<p>JR notes that there is a consensus for a pilot, and states that even if pilot did not address everything it would be a good start, and asks those present to uses the repo to suggest ideas and contribute relevant documents.</p>
+<section id="action-items" class="level3">
+<h3 class="anchored" data-anchor-id="action-items">Action Items</h3>
+<p>JR takes action items to reach out to:</p>
+<ul>
+<li>PHUSE</li>
+<li>Wendy Martinez</li>
+<li>Toma Drogen (ORA deals with field inspectors)</li>
+</ul>
+</section>
+<section id="next-meeting" class="level3">
+<h3 class="anchored" data-anchor-id="next-meeting">Next meeting</h3>
+<p>All agree on 9AM Pacific Time February 5th.</p>
+</section>
+<section id="video-recording" class="level3">
+<h3 class="anchored" data-anchor-id="video-recording">Video Recording</h3>
+<p>The video recording of the meeting is available <a href="https://zoom.us/rec/play/XvcnNZODhDwFI37HHNK8_nmdZSYloRC5QlENWU98D488OPxrgWpiZ6YP4c8DWporbTxXGkQoKY-g7J0H.eOfxoPedBl0ksHAj?continueMode=true">here</a> The passcode is <code>oM5YqkM</code></p>
+</section>
+<section id="note-from-doug-kelkhoff" class="level3">
+<h3 class="anchored" data-anchor-id="note-from-doug-kelkhoff">Note from Doug Kelkhoff</h3>
+<p>In a private communication after the meeting Doug Kelkhoff contributed the following:</p>
+<p>At today’s meeting, Paul mentioned a pilot that he and I worked on to share docker containers. It would be great if I could share that code with you all. I reached out to the lead from the PHUSE working group to see if we can get that code uploaded somewhere where I can share it.</p>
+<p>A brief summary of what was done:</p>
+<ul>
+<li>Delivery of a docker-compose build script, chosen for transparency and to adhere to plain-text restrictions of delivery content. It consisted of:
+<ul>
+<li>base image based on rocker shiny+tidyverse image<br>
+</li>
+<li>a small cohort of packages to install</li>
+<li>a mock analysis and companion shiny app</li>
+<li>data access (which ended up being the problematic piece of the puzzle)</li>
+</ul></li>
+<li>We encountered a few data access woes:
+<ul>
+<li>we first attempted to mount a data directory within the eCTD, which prompted for escalated administrator privileges on windows machines - not an acceptable solution</li>
+<li>the second attempt was to build the data into the container image, which we were unfortunately not able to fully test before Paul had to move on to other priorities.</li>
+</ul></li>
+</ul>
+<p>Overall, I still have confidence that this method could work, but, as Paul mentioned, the “it works on my machine” method of trying to debug across platforms and administrated systems is both frustrating and time intensive. Remotely teasing apart docker-related issues from system administration restrictions without a clear picture of the systems constraints was quite a challenge.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<script src="https://giscus.app/client.js" data-repo="RConsortium/submissions-wg" data-repo-id="MDEwOlJlcG9zaXRvcnkzMTk1MjUxNTI=" data-category="General" data-category-id="MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyNTY3MTQx" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

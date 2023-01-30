@@ -1,0 +1,20 @@
+---
+title: "Background"
+---
+
+## Pilot principles: 
+
+Provide open examples of submitting R-based clinical trial data/analysis packages to FDA. 
+
+- All pilots will be submitted from R consortium (non-profit identity) to FDA. Simulated data will be used.
+- All data, codes and documents will be fully available to public. 
+- FDA Staff will be engaged to reproduce analysis results.
+- Submitter and FDA Staff will provide feedback on current process/system
+- Contributions from multiple companies/organizations are preferred. Avoid bias to any company/organization specific tools.
+
+You can view more details about each of the current pilots by visiting their dedicated pages below:
+
+- [Pilot 1](pilot1.qmd): Common analyses
+- [Pilot 2](pilot2.qmd): Shiny application submission
+- [Pilot 3](pilot3.qmd): ADaM datasets
+- [Pilot 4](pilot4.qmd): Alternative formats
