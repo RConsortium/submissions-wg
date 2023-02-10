@@ -1,6 +1,6 @@
 ---
 title: "Minutes 2023-02-03"
-date: 2023-02-03
+date: 2023-02-09
 ---
 
     ::: {.callout-tip collapse="true"}
@@ -69,7 +69,6 @@ The group noticed that not everyone is getting the submissions to the Submission
 ### New Submissions WG Website
 
 At 17:45 into the video Eric presents the new Quarto based website he has created for the WG. Eric has automated many of the task required to generate minutes and track members.
-
 
 **Action:**
 
