@@ -1,0 +1,111 @@
+---
+title: "Minutes 2023-02-03"
+date: 2023-02-03
+---
+
+    ::: {.callout-tip collapse="true"}
+    ## View Attendee List
+
+    - Eric Nantz (Eli Lilly)
+    - Heidi Curinckx (Johnson & Johnson)
+    - Jizu Zhi (FDA)
+    - Joel Laxamana (Roche/Genentech)
+    - Juliane Manitz (EMD Serono)
+    - Luke Schantz (R Consortium)
+    - Nan Xiao (Merck)
+    - Ning Leng (Roche/Genentech)
+    - Paul Schuette (FDA)
+    - Renping Zhang (Johnson & Johnson)
+    - Saghir Bashir (Argenx)
+    - Stephanie Lussier (Moderna)
+    - Yilong Zhang (Meta):::
+
+
+The meeting was recorded and the [video](https://zoom.us/rec/play/_r36eqGi8QfcrTyUn9Gq9dGJ3PrcVSImESyURrrHORDRgH3eZMl339Ay2v-_WgcYnoNv7l_OGv7dB7A.ceeNzouCunCUAi3I?continueMode=true&_x_zm_rtaid=Od0rcCEIQBqAiOnyBePFDQ.1675462941996.dacb4db0c1d380b6173ed3092354bc50&_x_zm_rhtaid=571) is available.
+
+### Pilot 2
+
+Eric Nantz provided a summary of the Pilot 2 submission status:
+
+-   As previously reported, Paul confirmed that he was able to open submission and run the code. 
+
+-   Paul also reported some minor differences from what was expected, received some warning messages and found some differences when running in different environments.
+
+-   Hye Soo sent an email saying that she expects to be able to complete her evaluation in time to present her finding at the March 3, 2023 meeting.
+
+-   Eric offered to work with Paul and the Hye Soo to resolve a
+
+### Pilot 3
+
+Nan Xiao summarized some of the topics discussed at the recent Pilot 2 meeting and pointed to some of the issues on GitHub. In particular, he highlighted the discussion about whether Pilot 2 should wrap the submission in an R package as was done in Pilot 1 and Pilot 2.
+
+-   Joel, a lead for the Pilot 3 group, joined the meeting and provided an update. (31:54 into the video)
+
+-   The group is making progress with data sets and tracking differences from those used in Pilot 1
+
+-   This month the team is focusing on finalizing data sets and generating output.
+
+-   The group has had some discussion about packing the submission
+
+-   The Submission WG members were in general agreement that Pilot 3 should conform to the standards set in Pilot 1 and Pilot 2 and use the package paradigm.
+
+### Pilot 4
+
+Eric briefly described the mission of this Pilot to make use of container technology, and noted that one goal is to make the use of containers easier for non experts.
+
+### Meeting invitation Issue
+
+The group noticed that not everyone is getting the submissions to the Submissions WG meeting.
+
+**Action:**
+
+-   Luke will relaunch the Submissions WG meeting and make sure that the Pilot 3 folks are also invited to the general submissions WG meeting
+
+-   JBR and Luke will work together to determine who should receive invitations.
+
+-   JBR wants to make sure that although inactive members will be removed from the current invitation list, we will keep a record of their participation and maintain a list of current and past WG members somewhere on the website.
+
+
+### New Submissions WG Website
+
+At 17:45 into the video Eric presents the new Quarto based website he has created for the WG. Eric has automated many of the task required to generate minutes and track members.
+
+
+**Action:**
+
+-   Joel will work with Eric to build out the Pilot 3 part of the site.
+
+-   Eric will select a time to provide a tutorial on using the website for JBR and Luke and record the session to share with others.
+
+### Discussion about Device Submissions
+
+-   JBR mentioned that in a recent conversation asked if this group Robert Gentleman would be interested in R based device submissions.
+
+-   Paul noted that there is already a group making device submissions.
+
+-   See the [video](https://www.niss.org/news/niss-merck-meet-discusses-open-source-software-pharma-april-21-2021) of the recent NISS-Merk meetup for some details. [Tarek Haddad](https://www.linkedin.com/in/tarek-haddad-07003a10/) and [Ted Lystig](https://www.linkedin.com/in/tedlystig/) could provide more information.
+
+-   [CDRH](https://www.fda.gov/about-fda/center-devices-and-radiological-health/cdrh-offices) does not have these same CDISC structure that [CDER](https://www.fda.gov/about-fda/fda-organization/center-drug-evaluation-and-research-cder) 
+and
+[CBER](https://www.fda.gov/about-fda/fda-organization/center-biologics-evaluation-and-research-cber) have.
+
+-   CDRH has different requirements and is more flexible than CDER and CBER. The restrictions imposed by the CDER gateway generally has to do with accommodating large data sets. In general, CDRH data sets are not so large.
+
+**Action:**
+
+* Paul offered to contact John Scott, Director of the CBER Biostats group, to see if his group has any interest in submissions.
+
+### Transcelerate
+
+- Paul noted that there was a recent FDA meeting with [Transcelerate](https://www.transceleratebiopharmainc.com/) in which Transcelerate proposed projects to which Paul responded that some of the proposed work is already being done by the Submission Working Group.
+
+- Paul also noted  the RC work is going well.
+
+- JBR asked if we should reach out to Transcelerate and Pau suggested Keaven Anderson of Merck
+
+- Paul offered to make introductions to the R Consortium if they are willing.
+
+- JBR noted that the RC is very willing to welcome Transcelerate into its efforts.
+
+**The next meeting will be at 9:00 AM Pacific Time on Friday, March 3, 2023.**
+
