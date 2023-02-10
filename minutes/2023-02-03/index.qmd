@@ -3,23 +3,24 @@ title: "Minutes 2023-02-03"
 date: 2023-02-09
 ---
 
-    ::: {.callout-tip collapse="true"}
-    ## View Attendee List
+::: {.callout-tip collapse="true"}
+## View Attendee List
 
-    - Eric Nantz (Eli Lilly)
-    - Heidi Curinckx (Johnson & Johnson)
-    - Jizu Zhi (FDA)
-    - Joel Laxamana (Roche/Genentech)
-    - Juliane Manitz (EMD Serono)
-    - Luke Schantz (R Consortium)
-    - Nan Xiao (Merck)
-    - Ning Leng (Roche/Genentech)
-    - Paul Schuette (FDA)
-    - Renping Zhang (Johnson & Johnson)
-    - Saghir Bashir (Argenx)
-    - Stephanie Lussier (Moderna)
-    - Yilong Zhang (Meta):::
+- Eric Nantz (Eli Lilly)
+- Heidi Curinckx (Johnson & Johnson)
+- Jizu Zhi (FDA)
+- Joel Laxamana (Roche/Genentech)
+- Juliane Manitz (EMD Serono)
+- Luke Schantz (R Consortium)
+- Nan Xiao (Merck)
+- Ning Leng (Roche/Genentech)
+- Paul Schuette (FDA)
+- Renping Zhang (Johnson & Johnson)
+- Saghir Bashir (Argenx)
+- Stephanie Lussier (Moderna)
+- Yilong Zhang (Meta)
 
+:::
 
 The meeting was recorded and the [video](https://zoom.us/rec/play/_r36eqGi8QfcrTyUn9Gq9dGJ3PrcVSImESyURrrHORDRgH3eZMl339Ay2v-_WgcYnoNv7l_OGv7dB7A.ceeNzouCunCUAi3I?continueMode=true&_x_zm_rtaid=Od0rcCEIQBqAiOnyBePFDQ.1675462941996.dacb4db0c1d380b6173ed3092354bc50&_x_zm_rhtaid=571) is available.
 
