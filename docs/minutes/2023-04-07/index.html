@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.242">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Joseph Rickert">
+<meta name="dcterms.date" content="2023-04-07">
+
+<title>R Submissions Working Group - Minutes 2023-04-07</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">R Submissions Working Group</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../minutes.html">
+ <span class="menu-text">Meeting Minutes</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-pilots" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Pilots</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-pilots">    
+        <li>
+    <a class="dropdown-item" href="../../pilot_background.html">
+ <span class="dropdown-text">Background</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../pilot1.html">
+ <span class="dropdown-text">R Submission Pilot 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../pilot2.html">
+ <span class="dropdown-text">R Submission Pilot 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../pilot3.html">
+ <span class="dropdown-text">R Submission Pilot 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../pilot4.html">
+ <span class="dropdown-text">R Submission Pilot 4</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-site-development" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Site Development</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-site-development">    
+        <li>
+    <a class="dropdown-item" href="../../dev_background.html">
+ <span class="dropdown-text">Development Guide</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../minutes_prep.html">
+ <span class="dropdown-text">Minutes Draft Gen</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/RConsortium/submissions-wg"><i class="bi bi-github" role="img" aria-label="GitHub Site">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Minutes 2023-04-07</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Joseph Rickert </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">April 7, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#attendee-list" id="toc-attendee-list" class="nav-link active" data-scroll-target="#attendee-list">Attendee List</a></li>
+  <li><a href="#pilot-2-update" id="toc-pilot-2-update" class="nav-link" data-scroll-target="#pilot-2-update">Pilot 2 Update</a></li>
+  <li><a href="#pilot-3-progress-update" id="toc-pilot-3-progress-update" class="nav-link" data-scroll-target="#pilot-3-progress-update">Pilot 3 Progress Update</a>
+  <ul class="collapse">
+  <li><a href="#current-project-workflow-discussion-as-seen-in-pilot-1" id="toc-current-project-workflow-discussion-as-seen-in-pilot-1" class="nav-link" data-scroll-target="#current-project-workflow-discussion-as-seen-in-pilot-1">Current Project workflow discussion as seen in Pilot 1:</a></li>
+  <li><a href="#post-meeting-notesactions-from-r-consortium-submissions-wg-07apr2023" id="toc-post-meeting-notesactions-from-r-consortium-submissions-wg-07apr2023" class="nav-link" data-scroll-target="#post-meeting-notesactions-from-r-consortium-submissions-wg-07apr2023">POST Meeting notes/actions from R Consortium Submissions WG (07Apr2023) :</a></li>
+  </ul></li>
+  <li><a href="#pilot-4" id="toc-pilot-4" class="nav-link" data-scroll-target="#pilot-4">Pilot 4</a></li>
+  <li><a href="#asa-webinar" id="toc-asa-webinar" class="nav-link" data-scroll-target="#asa-webinar">ASA Webinar</a>
+  <ul class="collapse">
+  <li><a href="#additional-conferences" id="toc-additional-conferences" class="nav-link" data-scroll-target="#additional-conferences">Additional Conferences</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/RConsortium/submissions-wg/edit/main/Minutes/2023-04-07/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="attendee-list" class="level2">
+<h2 class="anchored" data-anchor-id="attendee-list">Attendee List</h2>
+<pre><code>- Amanda Martin
+- Andrew Borgman (Bristol Myers Squibb)
+- Ben Straub (GSK)
+- Heidi Curinckx (Johnson &amp; Johnson)
+- HyeSoo Cho (FDA)
+- Joel Laxamana (Roche/Genentech)
+- Kui Schen (Bayer)
+- Lei Zhao (Roche/Genentech)
+- Nan Xiao (Merck)
+- Nate Mockler (Biogen)
+- Ning Leng (Roche/Genentech)
+- Paul Schuette (FDA)
+- Robert Devine (Johnson &amp; Johnson)
+- Saghir Bashir (Argenx)
+- Sam Parmar (Pfizer)
+- Sean Healey (Pfizer)</code></pre>
+</section>
+<section id="pilot-2-update" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-2-update">Pilot 2 Update</h2>
+<p>Eric Nantz provided the following update:</p>
+<ul>
+<li>He has solved the filtering bug and has verified the app is working correctly with additional testing.</li>
+<li>He is incorporating ADRG material into the intro guide</li>
+<li>Paul suggested adding a list of steps and has offered to discuss details offline.</li>
+<li>Ning will work with Bev to make sure we are good to go with the gateway</li>
+<li>The Pilot 2 re submission is set for 9AM on Friday, April 21, 2023. Joe will schedule the meeting (Bev, Eric, Hye Soo, Paul, Ning)</li>
+</ul>
+</section>
+<section id="pilot-3-progress-update" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-3-progress-update">Pilot 3 Progress Update</h2>
+<p>Joel Laxamana provided the following update.</p>
+<ul>
+<li>All 5 ADaMs now generated and in review.</li>
+<li>Per development steps, we have noted discrepancies or findings when comparing our Pilot 3 ADaMs with the original Pilot 1 ADaMs. You may see these noted in our Wiki here : https://github.com/RConsortium/submissions-pilot3-adam/wiki/QC-Findings .</li>
+<li>Minor updates are being made to clean up code, updating our variable labels appropriately and updating the ADaM specifications (define) to meet CDISC guidance as we go through our routine P21 checks.</li>
+<li>We are also currently developing our ADRG based off of the Pilot 3 specifications we are reading into P21. We plan to use the P21 ADRG as a base, then we will add in information similar to that of Pilot 1 for complete instructions prior to submission.</li>
+<li>As we finalize both the define and the ADaMs, we are also developing a batch run code to run all of our ADaM and TLF scripts, with that we are looking into implementing dependency recognition using a package called {targets} (e.g.&nbsp;before ADAE is run, checks latest ADSL code has been run first).<br>
+</li>
+<li>Additionally, we are rerunning all TFL scripts from Pilot 1 and re-sourcing the Pilot 3 data.</li>
+<li>Once the above is finalized, we will do a batch run, check against P21, then bring everything over into our eSubmission repo. We have made contact with Roche’s Regulatory function who will help support the preparation of our eSubmission in eCTD structure.</li>
+</ul>
+<section id="current-project-workflow-discussion-as-seen-in-pilot-1" class="level3">
+<h3 class="anchored" data-anchor-id="current-project-workflow-discussion-as-seen-in-pilot-1">Current Project workflow discussion as seen in Pilot 1:</h3>
+<ul>
+<li>Upon reviewing Pilot1’s work and the R4CSR guidance they have followed, we see the current flow suggests the use of 2 repos : 1)Project repo &amp; 2)Submission repo</li>
+<li>In the project repo, this includes the project analysis R scripts (ADaMs and TFLs) and R utility functions within the same package.</li>
+<li>14.2.2 programs</li>
+<li>Folder path: ectddemo/m5/datasets/ectddemo/analysis/adam/programs/.</li>
+<li>r0pkgs.txt: contains all internally developed proprietary R packages. Other .txt files: each contains R code for a specific analysis.</li>
+<li>They also suggest using .RMD files as the source analysis scripts, which are then converted to .R/.txt for submission.</li>
+<li>Then all .txt are brought over to the Submission repo to deliver to Regulatory for eCTD structure and formal submission to the FDA portal.</li>
+</ul>
+<p><strong>In Pilot 3 our project flow emulates more of the usual project work we would see in our companies.</strong></p>
+<ul>
+<li><p>For instance, our source code will just use plain .R instead of .RMD as source analysis code. Especially for ADaMs, it make more sense to just start in .R scripts.</p></li>
+<li><p>For the most part Pilot3 will follow the same submission process as Pilot1, but the minor difference will just be our project flow. I.E., Pilot 3 will separate the Utility functions from the Project analysis scripts into different repos. It makes more sense to treat the study specific utility functions as separate package, similar to how we call on other R packages from CRAN or other git repositories, where then the project analysis repo scripts will call on the aforementioned study specific utility functions package. This is still in line with the R4CSR guidance in section 14.3<br>
+</p></li>
+<li><p>Following this approach, makes it clear from a study perspective where the utility functions are being called from, where the project analysis scripts are stored and developed and where the submission will be. For illustration purposes we have this graphic (Thanks, Thomas Neitman!):</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="repos.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Proposed Pilot 3 Repo Setup</figcaption><p></p>
+</figure>
+</div></li>
+</ul>
+<p>Overall, to our Health Agencies, the single source of truth will of course come from our ‘Submission’ repo, where they may not need all of the details of the study project flow steps. We just wanted to be able to discern that R packages should be kept in their own packages and project analysis work should not be stored as a package.</p>
+</section>
+<section id="post-meeting-notesactions-from-r-consortium-submissions-wg-07apr2023" class="level3">
+<h3 class="anchored" data-anchor-id="post-meeting-notesactions-from-r-consortium-submissions-wg-07apr2023">POST Meeting notes/actions from R Consortium Submissions WG (07Apr2023) :</h3>
+<ol type="1">
+<li>Per Paul Schutter, Pilot 3 needs a link to the ‘FREE’ P21 version that the Pilot 3 team should be using. Paul to share link with Joel. We should also include SDTM in the P21 run, but just mention in the ADRG that we will not be updating or fixing the SDTMs due to any P21 issues to follow the same approach as Pilot 1. Though Pilot 3 is mainly focused on ADaMs, we do plan on fixing the P21 issues the best we can and noting discrepancies compared to the CDISCPILOT data.</li>
+<li>Need new repo from submission_wg to store the utility functions into. Joe R, could you help us with this?</li>
+<li>For the study project repo set-up, there are example template repos that can be followed. Pilot 3 team to look into this.</li>
+<li>Targeting mid-June 2023 to wrap-up submission.</li>
+<li>Link to all Pilot 3 members, for Eric to include in Submission WG webpage : https://rconsortium.github.io/submissions-pilot3-adam/main/</li>
+</ol>
+</section>
+</section>
+<section id="pilot-4" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-4">Pilot 4</h2>
+<p>Eric Nantz gave a brief update:</p>
+<ul>
+<li>Eric is starting to build a team and already has some volunteers</li>
+<li>The effort will focus on container technology</li>
+<li>Paul Schuette will reach out within the FDA to find an FDA participant for this group</li>
+<li>Paul noted that anything having to do with servers would necessarily involve the use of contractors and have to have a budget.</li>
+<li>There may be a way to have the container run on a laptop and thus avoid the complications caused by servers. *Ning Leng asked Paul if there are any other groups within the FDA that might be interested in pilots. Paul replied that the guidance he has received from management is to hold off on this for the time being.</li>
+</ul>
+</section>
+<section id="asa-webinar" class="level2">
+<h2 class="anchored" data-anchor-id="asa-webinar">ASA Webinar</h2>
+<p>JBR Informed the WG that the ASA New Jersey Chapter has contacted him about doing a webinar on the Submissions WG. The email below outlines a list of options.</p>
+<ul>
+<li>The WG was enthusiastic about doing a robust webinar with multiple talks sometime after the Pilot 2 submission in June.</li>
+<li>Paul said that he would like to participate and asked if other ASA members could attend. Paul noted that he has had requests to speak from pharma companies, but it is difficult for FDA speakers to speak to individual companies without committing to speak to all companies.</li>
+<li>The WG would like to co-brand the event as an <em>R Adoption Series Event</em></li>
+</ul>
+<section id="march-26-2023-email-from-sciling-ruan" class="level4">
+<h4 class="anchored" data-anchor-id="march-26-2023-email-from-sciling-ruan">March 26, 2023 email from Sciling Ruan</h4>
+<p>Hi Joe,</p>
+<p>It was very nice to speak to you last week and learned about what you do in the R-Submission working group. As discussed, we are very interested in collaborating with you to bring the topic of R-submission to our webinar. I also include our ASA NJ Chapter President Dirk Moore in the loop. Dirk is a faculty member in Rutgers University, and he will also help organize the webinar.</p>
+<p>I understand that you will need to discuss this collaboration within your working group. I would like to give more information in case it might be helpful.</p>
+<p>The webinar can have one presentation or multiple presentations with different perspectives. So I would be interested to know the tentative presentation titles and speakers.<br>
+The webinar can be set in any date and month. We are very flexible. Normally, to accommodate both east coast and west coast audience, we often recommend the time slot of 11:00-12:00 or till 1:00 EDT on a Friday.<br>
+We might invite another speaker from a pharma company on their experience with R-submission (if we could identify a good speaker). In that case, the webinar will be two hours with a panel discussion. Will this set up OK with you? Once I have some information to work with, we will follow up with a kickoff meeting including all potential speakers to work out the details. The webinar will use the WebEx platform in Rutgers University. It will be a free event to everyone.</p>
+<p>I look forward to hearing from you. If you need more information from me, please let me know.</p>
+<p>Best regards, Shiling Ruan</p>
+</section>
+<section id="additional-conferences" class="level3">
+<h3 class="anchored" data-anchor-id="additional-conferences">Additional Conferences</h3>
+<p>In general, the WG is keen about promoting their work after the submission of Pilot 2 and the group discussed possible opportunities for talks alter this year including the R / Pharma conference and possibly and FDA event. The group will discuss this at the next meeting.</p>
+<p>The next meeting of the WG will be at 9AM Pacific Time on Friday May 5, 2023.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<script src="https://giscus.app/client.js" data-repo="RConsortium/submissions-wg" data-repo-id="MDEwOlJlcG9zaXRvcnkzMTk1MjUxNTI=" data-category="General" data-category-id="MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyNTY3MTQx" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
