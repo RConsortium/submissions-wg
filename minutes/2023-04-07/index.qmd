@@ -2,27 +2,29 @@
 title: "Minutes 2023-04-07"
 date: 2023-04-07
 author: Joseph Rickert
-editor: visual
+
 ---
 
-## Attendee List
+::: {.callout-tip collapse="true"}
+## View Attendee List
 
-    - Amanda Martin
-    - Andrew Borgman (Bristol Myers Squibb)
-    - Ben Straub (GSK)
-    - Heidi Curinckx (Johnson & Johnson)
-    - HyeSoo Cho (FDA)
-    - Joel Laxamana (Roche/Genentech)
-    - Kui Schen (Bayer)
-    - Lei Zhao (Roche/Genentech)
-    - Nan Xiao (Merck)
-    - Nate Mockler (Biogen)
-    - Ning Leng (Roche/Genentech)
-    - Paul Schuette (FDA)
-    - Robert Devine (Johnson & Johnson)
-    - Saghir Bashir (Argenx)
-    - Sam Parmar (Pfizer)
-    - Sean Healey (Pfizer)
+- Amanda Martin
+- Andrew Borgman (Bristol Myers Squibb)
+- Ben Straub (GSK)
+- Heidi Curinckx (Johnson & Johnson)
+- HyeSoo Cho (FDA)
+- Joel Laxamana (Roche/Genentech)
+- Kui Schen (Bayer)
+- Lei Zhao (Roche/Genentech)
+- Nan Xiao (Merck)
+- Nate Mockler (Biogen)
+- Ning Leng (Roche/Genentech)
+- Paul Schuette (FDA)
+- Robert Devine (Johnson & Johnson)
+- Saghir Bashir (Argenx)
+- Sam Parmar (Pfizer)
+- Sean Healey (Pfizer)
+:::
 
 ## Pilot 2 Update
 

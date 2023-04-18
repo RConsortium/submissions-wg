@@ -22,10 +22,6 @@ date: 2023-03-03
 - Sean Healey (Pfizer)
 :::
 
-Minutes by Joseph B Rickert
-
-## Add Minutes Here
-
 The meeting was recorded and the [video](https://positpbc.zoom.us/rec/share/q2j9oskw1QXsUzjeI9NfdvBFYZcy6ml1aqCqGYRmtUC_NeH7RYUKePzyfj-e1OIS.y_DcC-vgNR4sVWjw) is available.
 
 Due to a problem with zoom permissions, the meeting started 15 minutes late. Apologize to everyone who was inconvenienced.
