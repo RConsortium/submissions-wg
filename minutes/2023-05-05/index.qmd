@@ -1,0 +1,86 @@
+---
+title: "Minutes 2023-05-05"
+date: 2023-05-05
+---
+
+::: {.callout-tip collapse="true"}   
+## View Attendee List
+
+- Andrew Borgman (Bristol Myers Squibb)
+- Ben Straub (GSK)
+- Brandon Suchon
+- Eric Nantz (Eli Lilly)
+- HyeSoo Cho (FDA)
+- Jizu Zhi (FDA)
+- Joel Laxamana (Roche/Genentech)
+- Joseph Rickert (R Consortium)
+- Kui Shen (Bayer)
+- Nan Xiao (Merck)
+- Nate Mockler (Biogen)
+- Paul Schuette (FDA)
+- Renping Zhang (Johnson & Johnson)
+- Robert Devine (Johnson & Johnson)
+- Saghir Bashir (Argenx)
+- Sam Parmar (Pfizer)
+- Sean Healey (Pfizer)
+:::
+
+## Add Minutes Here
+
+The meeting was recorded and the [video](https://zoom.us/rec/share/OZyp5N4QZCsl-D-8BMBzjuSubI0BYbISZTa6703egO97UUroboDFZVt4hjRudEY.1qe8A653kLrj7tfz?startTime=1683302886000) is available.
+
+Joseph Rickert brought the meeting to order.
+
+### Pilot 2
+* Hye Soo Cho of the FDA reported that her review of the Pilot 2 submission is going well and that she expects to be finished in June.
+* She is not sure how long it will take the FDA to produce a written response.
+
+
+### Pilot 3
+
+Joel Laxamana reported on Pilot 3 work.
+
+* The execution team isfocusing on documentation particularly in the ADRG.
+* The WG confirmed that Pilot 3 should follow the Pilot 2 approach and send the renv.lock file in the R package text.
+* There was a question about SDTM Versions. The WG confirmed that the Pilot 3 should use the same 1.4 STDM version as Pilots 1 and 2. See [Issue #104](https://github.com/RConsortium/submissions-pilot3-adam/issues/104).
+* QC Findings will go as Appendix to the ADRG.
+* The WG agreed that the second week in July would be a good target for Pilot 3 Submission.
+
+### Pilot 4
+
+Eric Nantz provided an update on Pilot 4 work.
+
+* Eric expects to have the first meeting of the execution team volunteers in the next few weeks.
+* Eric is taking a step back from committing to a container based approach in order to consider the possibility of using a self executing app in the browser using [WebAssembly](https://webassembly.org/).
+* George Stagg from Posit is providing some assistance.
+* The idea is that the R submission code would run in a browser on the local machine of an FDA analyst.
+* Paul Schuette indicated that this approach would likely be possible at the FDA.
+* Eric said that he would be happy to try and replicate the FDA web browser environment.
+* The group suggested that a Webinar for the R Adoption series and other venues would be valuable for promoting the project.
+* Paul speculated that this web browser technology might also be useful to FDA field inspectors.
+* Eric noted that a selection core of R packages is being identified to have them run run "out of the box".
+* If you would like to be part of the Pilot 4 team please contact Eric Nantz.
+* Paul noted that recent events where outside entities can re-litigate FDA approvals decades after the approval could make it even more necessary to be able to run analysis software many years after the submission.
+* JBR surmised that there may be interest in WG to explore long term archiving.
+
+
+### Other discussions
+
+* Nan Xiao brought attention to a [document](https://www.jpma.or.jp/information/evaluation/results/allotment/DS_202204_oss.html) describing the submission WG in Japan. It refers to a survey about open source that mentions the Pilot 1 Submissions. 
+* We are exploring the possibility of arranging for the authors of this document to participation in an R Adoption Series webinar.
+
+
+
+
+
+
+
+The next meeting of the Submissions WG will be on Friday, June 2, 2023 at 9AM Pacific Time.
+
+
+
+
+
+
+
+
