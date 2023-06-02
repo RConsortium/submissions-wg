@@ -1,0 +1,53 @@
+---
+title: "Minutes 2023-06-02"
+date: 2023-05-05
+---
+
+::: {.callout-tip collapse="true"}   
+## View Attendee List
+
+- Andrew Borgman (Bristol Myers Squibb)
+- Eric Nantz (Eli Lilly)
+- Heidi Curinckx (JnJ)
+- Jizu Zhi (FDA)
+- Joseph Rickert (R Consortium)
+- Kui Shen (Bayer)
+- Loan Robinson (Bayer)
+- Miriam Fossate (Merck)
+- Nan Xiao (Merck)
+- Nate Mockler (Biogen)
+- Paul Schuette (FDA)
+- Renping Zhang (Johnson & Johnson)
+- Shannon Lewis
+- Yilong Zhang
+
+:::
+
+## Minutes
+
+The meeting was recorded and the [video](https://zoom.us/rec/share/O_pRQJl9E9Wq5mesygYFA4KTfVAudRq1Y8YIW3VwCrsr6LpV-9Lg4nfD3TuJs1a6.ewHmJNFkhrTRByzx?startTime=1685721888000) is available.
+
+### Pilot 2
+
+JBR brought the meeting to order and Paul Schuette gave an account FDA analyst HyeSoo Cho's findings so far with respect to the Pilot 2 submission. Identified problems include:
+
+* Warning messages about packages being loaded from GitHub. (Packages should be loaded from CRAN or some other curated repository which archives packages.)
+* Footnotes and reference numbers that appeared in the previous Pilot 2 submission were missing from some tables.
+* Instead of remaining unchanged, some p-values were replaced with the text "non applicable" when filters were applied to the KM curve.
+* It is possible to create an empty data set with conflicting filters.
+
+Although all agreed that these were relatively minor problems, it was nevertheless agreed that we should ask Hye Soo to stop her review, while Eric Nantz fixes the problems. The end goal is to have Pilot 2 be as clean as possible to serve as a model for future work.
+
+The new schedule is to arrange for a new Pilot 2 Submission by the end of June. We will arrange for a new submission date when Eric is ready.
+
+### Pilot 3 
+
+* There was no Pilot 3 update
+* The additional work on Pilot 2 will cause the Pilot 3 submission to be pushed back to the end of July.
+
+### Pilot 4
+
+* Eric Nantz announced that the Pilot 4 kickoff meeting will happen next work
+* Engineers from Appsilon will join the Pilot 4 team. They are particularly interested in investigating the [WebAssembly](https://webassembly.org/) technology and have experience with containers.
+
+The next meeting of the Submissions WG will be at 9AM Pacific Time on Friday, July 7, 2023.
