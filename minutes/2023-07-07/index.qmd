@@ -1,0 +1,75 @@
+---
+title: "Minutes 2023-07-07"
+date: 2023-07-07
+---
+
+::: {.callout-tip collapse="true"}
+
+## View Attendee List
+
+- Eric Nantz (Eli Lilly)
+- HyeSoo Cho (FDA)
+- Jizu Zhi (FDA)
+- Joel Laxamana (Roche/Genentech)
+- Joseph Rickert (R Consortium)
+- Nan Xiao (Merck)
+- Ning Leng (Roche/Genentech)
+- Robert Devine (Johnson & Johnson)
+- Saghir Bashir (Argenx)
+- Yilong Zhang (Meta)
+
+:::
+
+## Add Minutes Here
+
+The meeting was recorded and the [video](https://zoom.us/rec/share/UWy0e4rQiG-Qa7LJL8NT6cLCrl0PgqZPr93VAVBZowYbCnqZ01C1hQDf1haXAdM_.n__f-SUm5BcNMzgm?startTime=1688745965000) is available.
+
+
+### Pilot 2
+
+Eric Nantz has made progress on addressing the issues identified with the Pilot 2 resubmission. Fixes include: 
+
+* User-friendly warnings when filters result in an empty data set
+* Consistent footer and header notes in the tables titles that match the Pilot 1 output
+
+The only outstanding issue that is still being worked on is the warning message that results from loading the `teal` package from GitHub because it is not yet on CRAN.
+
+The Pilot 2 resubmission is now scheduled for 9AM PST on Wednesday July 19, 2023.
+Note that shortly after the meeting the date was confirmed with Beverly Chin and HyeSoo Cho.
+
+**Action** 
+JBR to schedule a zoom meeting and invite:
+
+* HyeSoo Cho
+* Beverly Chin
+* Ning Leng
+* Eric Nantz 
+
+### Pilot 3
+
+Joel Laxamana provide the status update on Pilot 3.
+
+* The Pilot 3 team is developing the testing process and updating the ADRG to follow the process used in Pilots 1 and 2. 
+* Developing the testing process is taking longer than expected because they are attempting to develop a hybrid of the different process used in Pilot 1 and Pilot 2.
+* The group is now targeting the first or second week of August for the Pilot 3 submission.
+
+**Action:**
+
+* Joel will confer with Eric and Nan at a separate meeting.
+
+### Pilot 4
+
+Eric began the status update by thanking the team members from Appsilon who have set up a robust container environment for the Pilot.
+
+* Saghir has been able to get the container and app running in his environment
+* We must work with the FDA to determine the best method of transferring the container
+* Team members from Posit are working with the the WebAssembly
+* The major technical requirement is that the FDA reviewers will be able to run the [Podman](https://podman.io/) container environment
+* Right now, we believe that the WebAssembly, if it works as advertised, would be preferred by the FDA
+* It was noted that that FDA primarily works in a Windows environment
+
+**Action:** 
+
+* JBR to discuss FDA constraints and preferences with Paul Schuette.
+
+The next meeting of the working group will be at 9AM PST on Friday, August 4, 2023
