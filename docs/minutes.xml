@@ -106,6 +106,84 @@ View Attendee List
   <pubDate>Fri, 07 Jul 2023 04:00:00 GMT</pubDate>
 </item>
 <item>
+  <title>Minutes 2023-06-02</title>
+  <dc:creator>Joseph Rickert</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-06-02/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Andrew Borgman (Bristol Myers Squibb)</li>
+<li>Eric Nantz (Eli Lilly)</li>
+<li>Heidi Curinckx (JnJ)</li>
+<li>Jizu Zhi (FDA)</li>
+<li>Joseph Rickert (R Consortium)</li>
+<li>Kui Shen (Bayer)</li>
+<li>Loan Robinson (Bayer)</li>
+<li>Miriam Fossate (Merck)</li>
+<li>Nan Xiao (Merck)</li>
+<li>Nate Mockler (Biogen)</li>
+<li>Paul Schuette (FDA)</li>
+<li>Renping Zhang (Johnson &amp; Johnson)</li>
+<li>Shannon Lewis</li>
+<li>Yilong Zhang</li>
+</ul>
+</div>
+</div>
+</div>
+<section id="minutes" class="level2">
+<h2 class="anchored" data-anchor-id="minutes">Minutes</h2>
+<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/O_pRQJl9E9Wq5mesygYFA4KTfVAudRq1Y8YIW3VwCrsr6LpV-9Lg4nfD3TuJs1a6.ewHmJNFkhrTRByzx?startTime=1685721888000">video</a> is available.</p>
+<section id="pilot-2" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-2">Pilot 2</h3>
+<p>JBR brought the meeting to order and Paul Schuette gave an account FDA analyst HyeSoo Cho’s findings so far with respect to the Pilot 2 submission. Identified problems include:</p>
+<ul>
+<li>Warning messages about packages being loaded from GitHub. (Packages should be loaded from CRAN or some other curated repository which archives packages.)</li>
+<li>Footnotes and reference numbers that appeared in the previous Pilot 2 submission were missing from some tables.</li>
+<li>Instead of remaining unchanged, some p-values were replaced with the text “non applicable” when filters were applied to the KM curve.</li>
+<li>It is possible to create an empty data set with conflicting filters.</li>
+</ul>
+<p>Although all agreed that these were relatively minor problems, it was nevertheless agreed that we should ask Hye Soo to stop her review, while Eric Nantz fixes the problems. The end goal is to have Pilot 2 be as clean as possible to serve as a model for future work.</p>
+<p>The new schedule is to arrange for a new Pilot 2 Submission by the end of June. We will arrange for a new submission date when Eric is ready.</p>
+</section>
+<section id="pilot-3" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-3">Pilot 3</h3>
+<ul>
+<li>There was no Pilot 3 update</li>
+<li>The additional work on Pilot 2 will cause the Pilot 3 submission to be pushed back to the end of July.</li>
+</ul>
+</section>
+<section id="pilot-4" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-4">Pilot 4</h3>
+<ul>
+<li>Eric Nantz announced that the Pilot 4 kickoff meeting will happen next work</li>
+<li>Engineers from Appsilon will join the Pilot 4 team. They are particularly interested in investigating the <a href="https://webassembly.org/">WebAssembly</a> technology and have experience with containers.</li>
+</ul>
+<p>The next meeting of the Submissions WG will be at 9AM Pacific Time on Friday, July 7, 2023.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-06-02/index.html</guid>
+  <pubDate>Fri, 02 Jun 2023 04:00:00 GMT</pubDate>
+</item>
+<item>
   <title>Minutes 2023-05-05</title>
   <dc:creator>Joseph Rickert</dc:creator>
   <link>https://rconsortium.github.io/submissions-wg/minutes/2023-05-05/index.html</link>
@@ -202,84 +280,6 @@ View Attendee List
 
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-05-05/index.html</guid>
-  <pubDate>Fri, 05 May 2023 04:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2023-06-02</title>
-  <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-06-02/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="callout-tip callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Andrew Borgman (Bristol Myers Squibb)</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>Heidi Curinckx (JnJ)</li>
-<li>Jizu Zhi (FDA)</li>
-<li>Joseph Rickert (R Consortium)</li>
-<li>Kui Shen (Bayer)</li>
-<li>Loan Robinson (Bayer)</li>
-<li>Miriam Fossate (Merck)</li>
-<li>Nan Xiao (Merck)</li>
-<li>Nate Mockler (Biogen)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Renping Zhang (Johnson &amp; Johnson)</li>
-<li>Shannon Lewis</li>
-<li>Yilong Zhang</li>
-</ul>
-</div>
-</div>
-</div>
-<section id="minutes" class="level2">
-<h2 class="anchored" data-anchor-id="minutes">Minutes</h2>
-<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/O_pRQJl9E9Wq5mesygYFA4KTfVAudRq1Y8YIW3VwCrsr6LpV-9Lg4nfD3TuJs1a6.ewHmJNFkhrTRByzx?startTime=1685721888000">video</a> is available.</p>
-<section id="pilot-2" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-2">Pilot 2</h3>
-<p>JBR brought the meeting to order and Paul Schuette gave an account FDA analyst HyeSoo Cho’s findings so far with respect to the Pilot 2 submission. Identified problems include:</p>
-<ul>
-<li>Warning messages about packages being loaded from GitHub. (Packages should be loaded from CRAN or some other curated repository which archives packages.)</li>
-<li>Footnotes and reference numbers that appeared in the previous Pilot 2 submission were missing from some tables.</li>
-<li>Instead of remaining unchanged, some p-values were replaced with the text “non applicable” when filters were applied to the KM curve.</li>
-<li>It is possible to create an empty data set with conflicting filters.</li>
-</ul>
-<p>Although all agreed that these were relatively minor problems, it was nevertheless agreed that we should ask Hye Soo to stop her review, while Eric Nantz fixes the problems. The end goal is to have Pilot 2 be as clean as possible to serve as a model for future work.</p>
-<p>The new schedule is to arrange for a new Pilot 2 Submission by the end of June. We will arrange for a new submission date when Eric is ready.</p>
-</section>
-<section id="pilot-3" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-3">Pilot 3</h3>
-<ul>
-<li>There was no Pilot 3 update</li>
-<li>The additional work on Pilot 2 will cause the Pilot 3 submission to be pushed back to the end of July.</li>
-</ul>
-</section>
-<section id="pilot-4" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-4">Pilot 4</h3>
-<ul>
-<li>Eric Nantz announced that the Pilot 4 kickoff meeting will happen next work</li>
-<li>Engineers from Appsilon will join the Pilot 4 team. They are particularly interested in investigating the <a href="https://webassembly.org/">WebAssembly</a> technology and have experience with containers.</li>
-</ul>
-<p>The next meeting of the Submissions WG will be at 9AM Pacific Time on Friday, July 7, 2023.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-06-02/index.html</guid>
   <pubDate>Fri, 05 May 2023 04:00:00 GMT</pubDate>
 </item>
 <item>
