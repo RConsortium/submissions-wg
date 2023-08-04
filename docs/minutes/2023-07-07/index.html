@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Joseph Rickert">
-<meta name="dcterms.date" content="2021-02-05">
+<meta name="dcterms.date" content="2023-07-07">
 
-<title>R Submissions Working Group - Minutes 2021-02-05</title>
+<title>R Submissions Working Group - Minutes 2023-07-07</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -153,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Minutes 2021-02-05</h1>
+      <h1 class="title">Minutes 2023-07-07</h1>
                       </div>
   </div>
     
@@ -170,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">February 5, 2021</p>
+        <p class="date">July 7, 2023</p>
       </div>
     </div>
     
@@ -182,7 +182,18 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#add-minutes-here" id="toc-add-minutes-here" class="nav-link active" data-scroll-target="#add-minutes-here">Add Minutes Here</a>
+  <ul class="collapse">
+  <li><a href="#pilot-2" id="toc-pilot-2" class="nav-link" data-scroll-target="#pilot-2">Pilot 2</a></li>
+  <li><a href="#pilot-3" id="toc-pilot-3" class="nav-link" data-scroll-target="#pilot-3">Pilot 3</a></li>
+  <li><a href="#pilot-4" id="toc-pilot-4" class="nav-link" data-scroll-target="#pilot-4">Pilot 4</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2023-07-07/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -203,53 +214,73 @@ View Attendee List
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
-<li>“Joseph Rickert - R Consortium”</li>
-<li>“Adrian Waddell - Roche”</li>
-<li>“Paul Schuette - FDA”</li>
-<li>“Bella Feng - EQRx”</li>
-<li>“Yilong Zhang - Merck”</li>
-<li>“Eric Nantz - Lilly”</li>
-<li>“Doug Kelkhoff - Genentech”</li>
-<li>“Mike Stackhouse - Atorus Research”</li>
-<li>“Nan Xiao - Merck”</li>
-<li>“Ning Leng - Genentech”</li>
-<li>“Sascha Ahrweiler - Bayer”</li>
-<li>“Steven Hasendinckx J&amp;J”</li>
-<li>“Phil Bowsher - RStudio”</li>
-<li>“Bob Engle - Biogen”</li>
+<li>Eric Nantz (Eli Lilly)</li>
+<li>HyeSoo Cho (FDA)</li>
+<li>Jizu Zhi (FDA)</li>
+<li>Joel Laxamana (Roche/Genentech)</li>
+<li>Joseph Rickert (R Consortium)</li>
+<li>Nan Xiao (Merck)</li>
+<li>Ning Leng (Roche/Genentech)</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Saghir Bashir (Argenx)</li>
+<li>Yilong Zhang (Meta)</li>
 </ul>
 </div>
 </div>
 </div>
-<p>Joseph Rickert brought the meeting to order, reminded everyone of the <a href="https://github.com/RConsortium/submissions-wg">GitHub repo</a> for the working group where minutes and other documents are kept, and summarized the goal articulated in the previous meeting to develop a pilot environment to study approaches for creating R submissions.</p>
-<p>Mike Stackhouse noted that the group should focus on creating an environment that was “consumable” by the FDA. Paul Schuette agreed with this. He noted that the experiment he did with Eric Nantz two years ago (discussed in a previous meeting) was the closest he has come so far.</p>
-<p>Next followed a discussion about the FDA computing environment, a discussion thread that developed over the course of the meeting. Some key points are:</p>
+<section id="add-minutes-here" class="level2">
+<h2 class="anchored" data-anchor-id="add-minutes-here">Add Minutes Here</h2>
+<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/UWy0e4rQiG-Qa7LJL8NT6cLCrl0PgqZPr93VAVBZowYbCnqZ01C1hQDf1haXAdM_.n__f-SUm5BcNMzgm?startTime=1688745965000">video</a> is available.</p>
+<section id="pilot-2" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-2">Pilot 2</h3>
+<p>Eric Nantz has made progress on addressing the issues identified with the Pilot 2 resubmission. Fixes include:</p>
 <ul>
-<li>FDA reviewers and researchers work primarily on desktop machines that mostly run Windows 10.</li>
-<li>There are two classes of desktop computers 1) regulatory computers and 2) scientific computers.</li>
-<li>The scientific computers are not as rigorously controlled as the scientific computers.</li>
-<li>Paul has installed Ubuntu on a few of the scientific computers</li>
-<li>Desktop computers run SAS version 9.4, but the build may differ</li>
-<li>A perceived advantage of SAS is that it generally runs older software</li>
-<li>There is a pilot project going on at the FDA to run SAS on a server, which would ensure a common build.</li>
-<li>When asked: If the FDA decided to move to Linux, how long would it take to convert all of the desktops from Windows to Linux, Paul speculated that it would take a minimum of two years. The implication is that Windows is not going away anytime soon.</li>
-<li>When asked about the installation of R packages, Paul indicated that installation was not a problem.</li>
-<li>Obtaining R packages is more of an issue. In theory, the FDA could use MRAN or some other repository which enables downloading specific versions of packages.</li>
+<li>User-friendly warnings when filters result in an empty data set</li>
+<li>Consistent footer and header notes in the tables titles that match the Pilot 1 output</li>
 </ul>
-<p>The discussion turned to considering section 4.1.2.10 of the Study Data Technical Performance Guide:</p>
-<p><img src="img/sec_4.1.2.10.png" height="250" width="100%"></p>
-<p>Yilong Zhang stated that his company has focused on the sentence: “The Specific Software utilized should be specified in the ADRG.” Mike Stackhouse explained that the PHUSE working group is is leading is also focused on interpreting this sentence.</p>
-<p>Paul noted that companies are obligated to use the SAS export file format, but are not obligated to use SAS. Bella Feng noted that a recent FDA oncology pilot explicitly specifies SAS.</p>
-<p>Paul noted that many FDA analyses are hybrid using both SAS and R. The group acknowledge that all R submissions were the ultimate goal, we should be planning to work with mixed submissions for some time.</p>
-<p>Mike Stackhouse stated that, although there are many corner cases, we should focus on building a reference platform along the lines of least resistance and go for what is easily achievable. The group generally agreed with this.</p>
-<p>Towards the end of the meeting Paul mentioned that although the that section 4.1.2.10 specifies that programs should be submitted as text files, it does not mean that .txt extensions must be used. This surprised everyone. When asked if the FDA document could be revised to make this more clear, Paul stated that it was possible. He said that the document is generally revised once or twice a year, the most recent revision is dated Nov 20, 2020.</p>
-<p><strong>Action Item:</strong> Paul stated that if the group wanted to suggest the wording to revise the document, he would submit it to the responsible FDA committee. He noted that to make the change it would need to be approved by the committee and go through the normal approval process.</p>
-<p>Joseph Rickert asked the group to use the repo to submit their suggested changes to the wording about using text, and reminded everyone that the next meeting was set for Friday, March 5, 2021.</p>
-<p>Joseph Rickert, Mike Stackhouse and Sascha Ahrweiler agreed to meet before the next Submissions group meeting to try and map out the various PHUSE, PSI and R Consortium working groups that are doing similar or complementary work.</p>
-<p>The link to the video of the meeting is: https://zoom.us/rec/share/gFQancacysPFHm0Czrw3sAYOCrt35BgTbcodBdY2LGld4fkykDypkL99PX5o0i-c.JRCWwmZfO9Ui8G6f</p>
-<p>Passcode: <code>+GKR9&amp;i6</code></p>
+<p>The only outstanding issue that is still being worked on is the warning message that results from loading the <code>teal</code> package from GitHub because it is not yet on CRAN.</p>
+<p>The Pilot 2 resubmission is now scheduled for 9AM PST on Wednesday July 19, 2023. Note that shortly after the meeting the date was confirmed with Beverly Chin and HyeSoo Cho.</p>
+<p><strong>Action</strong> JBR to schedule a zoom meeting and invite:</p>
+<ul>
+<li>HyeSoo Cho</li>
+<li>Beverly Chin</li>
+<li>Ning Leng</li>
+<li>Eric Nantz</li>
+</ul>
+</section>
+<section id="pilot-3" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-3">Pilot 3</h3>
+<p>Joel Laxamana provide the status update on Pilot 3.</p>
+<ul>
+<li>The Pilot 3 team is developing the testing process and updating the ADRG to follow the process used in Pilots 1 and 2.</li>
+<li>Developing the testing process is taking longer than expected because they are attempting to develop a hybrid of the different process used in Pilot 1 and Pilot 2.</li>
+<li>The group is now targeting the first or second week of August for the Pilot 3 submission.</li>
+</ul>
+<p><strong>Action:</strong></p>
+<ul>
+<li>Joel will confer with Eric and Nan at a separate meeting.</li>
+</ul>
+</section>
+<section id="pilot-4" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-4">Pilot 4</h3>
+<p>Eric began the status update by thanking the team members from Appsilon who have set up a robust container environment for the Pilot.</p>
+<ul>
+<li>Saghir has been able to get the container and app running in his environment</li>
+<li>We must work with the FDA to determine the best method of transferring the container</li>
+<li>Team members from Posit are working with the the WebAssembly</li>
+<li>The major technical requirement is that the FDA reviewers will be able to run the <a href="https://podman.io/">Podman</a> container environment</li>
+<li>Right now, we believe that the WebAssembly, if it works as advertised, would be preferred by the FDA</li>
+<li>It was noted that that FDA primarily works in a Windows environment</li>
+</ul>
+<p><strong>Action:</strong></p>
+<ul>
+<li>JBR to discuss FDA constraints and preferences with Paul Schuette.</li>
+</ul>
+<p>The next meeting of the working group will be at 9AM PST on Friday, August 4, 2023</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
