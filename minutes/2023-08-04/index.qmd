@@ -1,0 +1,87 @@
+--
+title: "Minutes 2023-08-04"
+date: 2023-08-04
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Ben Straub (GSK)
+- Li Eva
+- Christopher Kania (Biogen)
+- Eric Nantz (Eli Lilly)
+- HyeSoo Cho (FDA)
+- Jizu Zhi (FDA)
+- Joel Laxamana (Roche/Genentech)
+- Joseph Rickert (R Consortium)
+- Nan Xiao (Merck)
+- Ning Leng (Roche/Genentech)
+- Paul Schuette (FDA)
+- Sam Parmar (Pfizer)
+- Shannon Lewis (BeiGene)
+- Stephanie Lussier (Moderna)
+:::
+
+## Minutes
+
+The meeting was recorded and the [video](https://zoom.us/rec/share/iap2ryh7-PHu8_fOMfwtXHpO7D7hB333mCsNODLlxE99EoCGXRTm1MSEFP7ceXzk.DnZSMt89C-TB8tZj?startTime=1691165275000) is available.
+
+
+### Pilot 2
+
+* HyeSoo Cho reported that she is working with the Pilot 2 re-submission and that it looks good.
+* HyeSoo expects that the final on this pilot submission will be available at the end of August.
+* Everyone recognized and thanked Eric Nantz for the sustained and last-minute efforts to get the submission out.
+
+### Pilot 3
+
+* Paul Schuette brought the attention of the group to section 4.i.2.10 of the [Study Data Technical Conformance Guide - Technical Specification Document](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/study-data-technical-conformance-guide-technical-specifications-document) and noted that .r and .zip files are listed as acceptable file formats for submissions. 
+* After some discussion, the WG decided not to use [pkglite](https://cran.r-project.org/package=pkglite) to wrap the R code as has been done in previous submissions, but to use .r files for the code. (Note that the FDA is unable to use .R internally.)
+* Paul noted that the FDA desires submission materials to be applicable for at least six years after submission. This triggered a discussion about possibility of using .zip files to transmit the proprietary packages, instead of pulling them from public GitHub repos as been done so far.
+* In the end, the WG decided to stick with using GitHub repos for Pilot 3 as there is currently no apparent advantage testing the .zip file method at this time.
+* Joel Laxama reported that preparations for Pilot 3 are going well, and that a submission using .r files could be made in early September.
+* The WG thought it best to wait for the report of Pilot 2 before submitting Pilot 3.
+
+### Pilot 4
+
+* Eric reported that thanks to the contributions form the [Appsilon](https://appsilon.com/) team significant progress has been made on using both mechanisms for packaging R submissions: Containers and [Webassembly](https://webassembly.org/).
+* Appsilon has a prototype submission using [Podman](https://podman.io/) container technology working and has confirmed that it does not cause files to be written to the hard-drive.
+* Eric and the Appsilon engineers also have a very preliminary prototype of using Webassembly to wrap a small Shiny app working. 
+* Posit engineers have contributed [webr](https://cran.r-project.org/package=webr) expertise.
+* Eric is optimistic about having Pilot submissions based on at least one, and possibly both, of these technologies ready by the end of the year.
+
+**Action**
+
+* Paul will confer with the proper FDA authorities to determine what preparations need to be undertaken by the FDA to use the Podman containers.
+* Eric will invite an Appsilon representative to come to a future meeting of this working group
+
+### July 21 San Jose State R Foundation Event
+
+The R Foundation [SummeR Bay Area R Meetup](https://bbsw-tickets.ticketleap.com/summer-r-day2/) was held at San Jose State University on July 21. Ning Leng reports that:
+
+* The 50 plus attendees indicated that quite a few Bay Area companies are moving towards using R in preclinical and genomics research.
+* Representatives from several small CROs attended the meeting.
+* R Consortium recognition was not good among this group.
+
+**Action**
+
+* JBR and Ning to discuss what can be done to promote the RC.
+
+### Speaking Opportunities
+
+* Eric will submit an abstract to speak about Pilot 3 and Pilot 4 at the [R/Pharma](https://bbsw-tickets.ticketleap.com/summer-r-day2/) virtual conference to be held in  on October 24 - 26.
+* Paul will be presenting at both at the [PHUSE/FDA CSS 2023](https://advance.phuse.global/pages/viewpage.action?pageId=70778947) conference on September 18 -20 and the  [ASA Biopharmaaceutical Section Regulatory-Industry statistics Workshop](https://advance.phuse.global/pages/viewpage.action?pageId=70778947) to be held in Rockville, MD on September 27 - 29 and intends to use the activities of this working group as a case study.
+* Ning suggests that it would be very nice if the RC could hold and R Adoption Webinar in the November time frame to describe the Pilot 2 and Pilot 3 submissions.
+
+**Action:** 
+
+* Paul will check with FDA authorities to see whether it is appropriate for the R Consortium to publicize his speaking opportunities on social media.
+* JBR will work with the RC Community development committee to make preparations for the promoting the speaking activities and setting up the webinar.
+
+
+The next meeting of the Submissions working group will be at 9AM PST on Friday, September 1st.
+
+
+
+
+
