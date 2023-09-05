@@ -45,7 +45,7 @@ Joel Laxamana provided the status update.
 * Installed proprietary package from its own repo
 * Had to change .lock file to renv-lock.txt and provide instructions how to change it back.
 * Team members tested on Linux, Mac, and Windows
-* Submitted the Pilot through the FDA gateway 
+* Submitted the Pilot through the FDA gateway
 * HyeSoo Cho, the FDA Pilot 3 reviewer, contacted the FDA gateway team to request access and expects to receive access next week
 * HyeSoo believes she will be able to report on Pilot 3 by the October meeting.
 
@@ -55,6 +55,7 @@ Joel Laxamana provided the status update.
 Eric Nantz provided a status up date on Pilot 4 describing the significant progress that has been made with developing prototypes for both the WebAssemply and Container approaches. 
 
 #### WebAssembly
+ 
 * At 19:48 minutes in to the video Eric displays the Pilot 4 teams minutes for their recent meeting, [Minutes 2023-08-18](https://rconsortium.github.io/submissions-pilot4/minutes/2023-08-18/), and talks through the activities.
 * George Stagg and Winston Chang from Posit attended the Pilot 4 meeting
 * The [httpuv](https://cran.r-project.org/package=httpuv) R package will be  necessary to start up a mini web server in the user's local environment. There will be a script to accomplish this.
