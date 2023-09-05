@@ -1,0 +1,100 @@
+---
+title: "Minutes 2023-09-01"
+date: 2023-09-01
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Eric Nantz (Eli Lilly)
+- Heidi Curinckx (Johnson & Johnson)
+- HyeSoo Cho (FDA)
+- Jizu Zhi (FDA)
+- Joel Laxamana (Roche/Genentech)
+- Joseph Rickert (R Consortium)
+- Nan Xiao (Merck)
+- Ning Leng (Roche/Genentech)
+- Paul Schuette (FDA)
+- Robert Devine (Johnson & Johnson)
+- Saghir Bashir (Argenx)
+- Sam Parmar (Pfizer)
+:::
+
+The meeting was recorded and the [video](https://zoom.us/rec/share/nG5RS852RTgvfz3wYmQzX-Wfei82ZlkfvaNd3UpqbeMHbvVqdYKHEwjc3VinIQ.7-hyNhzzPESRq00r?startTime=1693584254000) is available.
+
+### Pilot 2
+Paul Schuette provided and update on the Agency's review of Pilot 2
+
+* HyeSoo Cho completed her review and passed it on to FDA authorities for additional review.
+* Paul feels that he and HyeSoo anticipate they will be able to answer any questions from the reviewers
+* Paul does not anticipate problems
+* It may take two weeks or longer to close things out
+* Paul will include some material about Pilot 1 in his up coming ASA data set
+
+**Actions:**
+
+* Joel will send Paul the data set link used for Pilot 1
+* Joel will review the draft announcement for Pilot 3, Ning will approve and pass it to Paul for his review.
+
+### Pilot 3
+
+Joel Laxamana provided the status update.
+
+* Did not use [pkglite](https://cran.r-project.org/package=pkglite)
+* submitted the .r file
+* Installed proprietary package from its own repo
+* Had to change .lock file to renv-lock.txt and provide instructions how to change it back.
+* Team members tested on Linux, Mac, and Windows
+* Submitted the Pilot through the FDA gateway 
+* HyeSoo Cho, the FDA Pilot 3 reviewer, contacted the FDA gateway team to request access and expects to receive access next week
+* HyeSoo believes she will be able to report on Pilot 3 by the October meeting.
+
+
+### Pilot 4
+
+Eric Nantz provided a status up date on Pilot 4 describing the significant progress that has been made with developing prototypes for both the WebAssemply and Container approaches. 
+
+#### WebAssembly
+* At 19:48 minutes in to the video Eric displays the Pilot 4 teams minutes for their recent meeting, [Minutes 2023-08-18](https://rconsortium.github.io/submissions-pilot4/minutes/2023-08-18/), and talks through the activities.
+* George Stagg and Winston Chang from Posit attended the Pilot 4 meeting
+* The [httpuv](https://cran.r-project.org/package=httpuv) R package will be  necessary to start up a mini web server in the user's local environment. There will be a script to accomplish this.
+* There will be no traces of the Shiny app interacting with the host system
+* Binaries of the packages used will be included in the transfer. These will not be executable binaries. They will be similar to .tar or .zip files.
+* The end user will have to install the version of R used in Pilot 1
+* [Shinylive](https://shiny.posit.co/py/docs/shinylive.html) is another rapidly developing technology that may per pertinent to Pilot 4. Currently Shinylive is only available for Python. However, Winston Chang expects the R based version will be available soon.
+* Eric demos Shinylive from the posit website at 28:00 minutes into the video
+* See the Posit post [webR 0.2.0](https://www.tidyverse.org/blog/2023/08/webr-0-2-0/) for additional information.
+* A Pilot 4 submission based on WebAssembly technology looks feasible by the end of the year.
+
+
+#### Containers
+
+* Eric's team already has a Podman container with Pilot 2 running
+* The team is waiting for Paul to clarify what is required by the FDA IT team for them be able to receive containers.
+
+#### Preferred technology 
+
+* Since the WebAssembly version does not require the involvement of FDA technology, it looks like it is the preferred method for a first Pilot 4 submission
+* At 37:43 minutes into the video, Eric shows the "Hello World" version of a WebAssembly submission created by Appsilon engineers.
+
+### Promotion
+
+* Joseph Rickert suggests that the story of the Submissions group cooperative effort is as important as the story of the technology.
+* The story of the overall submission group should be written up, However, Joe proposed that since the Pilot 4 effort is moving so quickly and involves contributions not only from working group members, but also from vendors we should tell this story first while the details are fresh.
+* Eric agrees that the participation of the two development teams from Posit and Appsilon is unique.
+* Eric notes that he has submitted a talk about Pilot 4 for the R/Pharma conference
+
+**Action:**
+
+* Eric and Ning will update the GitHub sites for the Pilot teams to make sure the information is up to date and all the contributors are recognized. 
+* Eric, Joe, Eric agree to work on an end of year thank you / celebration post.
+* Joe will make sure the R Consortium promotes Eric's talk
+
+### Novo Nordisk Submission
+
+* Joe asked the group if anyone has information about the Novo Nordisk all R submission.
+* See the upcoming [webinar](https://posit.co/blog/novo-nordisks-journey-to-an-r-based-fda-submission/)
+
+
+The next meeting of the working group will be at 9AM PST on Friday October 6, 2023.
+
