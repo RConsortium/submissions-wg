@@ -32,6 +32,10 @@ R Submissions Working Group
 
 # News
 
+[2023/09/28] Pilot 2 (shiny) FDA response letter received! [link](https://github.com/RConsortium/submissions-wg/blob/0f1dc5c30985d413f75d196c2b6caa96231b26ee/_Documents/Summary_R_Pilot2_Submission%2027SEP2023.pdf)
+
+[2023/09/11] [Pilot 3 (ADaM) has been successfully submitted to FDA](https://www.r-consortium.org/announcement/2023/09/11/first-publicly-available-r-based-submission-package-submitted-to-fda-pilot-3)
+
 [2022/12/07 Successful R-Based Package Submission with Shiny Component to FDA](https://www.r-consortium.org/blog/2022/12/07/update-successful-r-based-package-submission-with-shiny-component-to-fda)
 
 [2022/03/16 UPDATE: Successful R-based Test Package Submitted to FDA](https://www.r-consortium.org/blog/2022/03/16/update-successful-r-based-test-package-submitted-to-fda)
