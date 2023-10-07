@@ -1,0 +1,112 @@
+---
+title: "Minutes 2023-10-06"
+date: 2023-10-06
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Andrew Borgman (Bristol Myers Squibb)
+- Ben Straub (GSK)
+- Eric Nantz (Eli Lilly)
+- HyeSoo Cho (FDA)
+- Jizu Zhi (FDA)
+- Joseph Rickert (R Consortium)
+- Kaushal Shah (ASU)
+- Nan Xiao (Merck)
+- Ning Leng (Roche/Genentech)
+- Paul Schuette (FDA)
+- Renping Zhang (Johnson & Johnson)
+- Robert Devine (Johnson & Johnson)
+- Saghir Bashir (Argenx)
+- Sam Parmar (Pfizer)
+- Youn Kyeong Chang (FDA)
+:::
+
+The meeting was recorded and the [video](https://zoom.us/rec/share/3VPBIvULy8dJcVRBngyPKjgxOrLNFFJ4zIPI8seYpBoOk1LFzNEYd6BxyoPWiwjc.aOV0PJIel6jPMV68?startTime=1696608150000) is available.
+
+
+### New Member
+
+HyeSoo introduced Youn Kyeong Chang as a new member of the group who will be helping to evaluate the pilot submissions for the FDA.
+
+### Pilot 2
+
+* JBR began the meeting by noting the successful conclusion of the [Pilot 2 submission](https://www.r-consortium.org/announcement/2023/10/05/shiny-app-successfully-reviewed-by-fda-cder-staff-pilot-2-announcement-2) and commenting on the attention it is getting throughout the industry.
+* The group thanked Paul and HyeSoo for there work on the project and their efforts to shepherd the review through the FDA process.
+* Ning remarked that it was really helpful that Paul was able to provide us with the FDA letter for the ASA conference.
+* Ning and Eric talked about the how much attention their poster got at the conference.
+* The working group is enthusiastic about doing an R Consortium webinar about the Pilot 2 project.
+* The tentative date for the webinar is 3:00PM EST on Monday December 11, 2023.
+* **Action:** Ning will prepare the letter requesting speakers for the FDA and contact the R Adoption series organizers.
+* **Action:** JBR will also contact the R Consortium webinar production team.
+
+### Pilot 3
+
+* HyeSoo laid out a timeline for evaluating Pilot 3, saying it would take an additional six to seven months to complete.
+* Ben said that there is quite a bit of interest at GSK about the ADRG because Pilot 3 did not use pkglite.
+* HyeSoo remarked that the ADRG is different but that her preliminary look did not show any problems.
+* There was some discussion abut looking back at the ADRGs made for both Pilot 2 and Pilot 3.
+* Eric noted that he made the Pilot 2 ADRG in Quarto and was very happy with the workflow.
+* We can expect feedback on the review during our normal sessions.
+* Ben Staub noted that Novo Nordisk about presentation about their recent R submission.
+* Paul remarked that he cannot comment on the Novo Nordisk submission since it is not finalized, but he did say that what Novo Nordisk said in their presentation about keeping things simple (limiting packages and dependencies) and being able to trace key endpoints is the same advice the FDA would be give.
+* Paul also noted that the fact that the FDA is not able to comment on submissions in progress is one reason why it is nice to have a pilot.
+
+### Pilot 4
+
+* Eric reported that he had the opportunity with meet with the Appsilon folks helping with Pilot 4 at posit::conf and that next sprint on the project will begin this coming week.
+* JBR brought up on several limitations to WebAssembly, such as not being able to accommodate networking functions in the browser. 
+* Eric replied that Pilot 4 is not likely to hit the constraining limits, but that these may become a concern as we move into more robust submissions in 2024. (This discussion begins about 21:00 in the video)
+* JBR asks that we take the trouble to communicate clearly about our knowledge of the limitations.
+* There was a discussion about whether the FDA would be ready to receive a container based sub-submission.
+* The agreed that Pilot 4 in two parts: part a will be WebAssembly based and part b sill be based on containers.
+* Eric believes that he will be ready to submit Part 4.a in mid December. Paul will confer with his management about resources being available in that time frame.
+* There was a discussion about whether setting up a server with containers outside of the FDA would we be helpful for FDA reviewers becoming familiar with Podman.
+* JBR remarked that other working groups are interested in establishing protocols, best practices, and requirements for repositories. 
+* Paul noted that from the FDA's point of view, longevity should be a requirement noting that 6 years would be a minimum and there may be reasons to consider 20 years.
+* The group decided that it would be feasible and may be helpful to set up a server with the Pilot 2 submission shiny app running in a container. 
+
+### Participation in the ISBS 7th Symposium
+
+* JBR mentioned that he received an an invitation from 
+Qi, Hong <hong_qi@merck.com>, the organizer of the [The 7th International Symposium on Biopharmaceutical Statistics](https://www.isbiostat.org/) to present a 20 minute talk at the event. The invitation is below.
+* Link to [ISBS past event](https://www2.aeplan.co.jp/isbs2019/invited.html)
+* The group agreed that we should try to participate even though it seems to be a primarily statistician driven event.
+* Ning offered to put together an abstract.
+* Pending some final investigation, JBR will let them know that we would like to participate but that we do not yet know who the speaker will be. 
+* JBR noted that it might be an opportunity to present the FDA's view about the kind of statistics and principles that govern an FDA submission.
+
+
+### FDASA Proposal
+
+* Ning has prepared a final version of the abstract for a session solely from the R Consortium.
+* Joe will send the proposal in a with a cover letter to Paul.
+* The ASA Biopharma working group intends to send its own proposal for a talk.
+
+
+The next meeting of the working group will be at 9AM PST on Friday November 3, 2023.
+
+### Invitation from ISBS
+Dear Joseph,
+
+Thanks so much for expressing interest in presenting at The 7th International Symposium on Biopharmaceutical Statistics, which will take place on March 6 – 9, 2024, at Hilton Baltimore Inner Harbor. The symposium is organized by the International Society for Biopharmaceutical Statistics (ISBS). Prominent statisticians and drug development professionals from regulatory agencies, academia, and industry will deliver keynote speeches on various emerging/evolving fields. Invited and contributed presentations will cover a wide range of topics including innovative statistics, clinical development, regulatory science, and data science.
+
+We are organizing a Regulatory Submission session dedicated to communicating the agencies’ requirements for drug submission, and the implementation of industry standards to support the acquisition, exchange, analysis, submission and archival of clinical data and metadata in the pharmaceutical industry. We cordially invite you to present an R topic related to regulatory submission. Each presentation has 20 minutes including speech and Q&A. It is highly appreciated if you may provide the presentation topic and presenter(s)’ name by October 15, 2023. Below are the important dates:
+
+Abstract submission due: Oct. 29th, 2023.
+Registration start date: Nov. 15th, 2023.
+Presentation slides due: Feb. 15th, 2024.
+Sincerely,
+
+Mary Varughese, Chair
+Hong Qi, Organizer
+
+ 
+
+Regulatory Submission Session
+
+7th Symposium, ISBS
+
+ 
+
