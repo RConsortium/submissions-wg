@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Eric Nantz">
-<meta name="dcterms.date" content="2023-01-13">
+<meta name="author" content="Joseph Rickert">
+<meta name="dcterms.date" content="2023-09-01">
 
-<title>R Submissions Working Group - Minutes 2023-01-13</title>
+<title>R Submissions Working Group - Minutes 2023-09-01</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -153,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Minutes 2023-01-13</h1>
+      <h1 class="title">Minutes 2023-09-01</h1>
                       </div>
   </div>
     
@@ -163,14 +163,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Eric Nantz </p>
+               <p>Joseph Rickert </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 13, 2023</p>
+        <p class="date">September 1, 2023</p>
       </div>
     </div>
     
@@ -186,11 +186,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#pilot-2-update" id="toc-pilot-2-update" class="nav-link active" data-scroll-target="#pilot-2-update">Pilot 2 Update</a></li>
-  <li><a href="#pilot-3-update" id="toc-pilot-3-update" class="nav-link" data-scroll-target="#pilot-3-update">Pilot 3 Update</a></li>
-  <li><a href="#r-validation-hub-intro-to-repositories-working-group" id="toc-r-validation-hub-intro-to-repositories-working-group" class="nav-link" data-scroll-target="#r-validation-hub-intro-to-repositories-working-group">R Validation Hub intro to Repositories working group</a></li>
+  <li><a href="#pilot-2" id="toc-pilot-2" class="nav-link active" data-scroll-target="#pilot-2">Pilot 2</a></li>
+  <li><a href="#pilot-3" id="toc-pilot-3" class="nav-link" data-scroll-target="#pilot-3">Pilot 3</a></li>
+  <li><a href="#pilot-4" id="toc-pilot-4" class="nav-link" data-scroll-target="#pilot-4">Pilot 4</a></li>
+  <li><a href="#promotion" id="toc-promotion" class="nav-link" data-scroll-target="#promotion">Promotion</a></li>
+  <li><a href="#novo-nordisk-submission" id="toc-novo-nordisk-submission" class="nav-link" data-scroll-target="#novo-nordisk-submission">Novo Nordisk Submission</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2023-01-13/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2023-09-01/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -211,68 +213,108 @@ View Attendee List
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
-<li>Andrew Borgman (Bristol Myers Squibb)</li>
-<li>Ben Straub (GSK)</li>
-<li>Bob Engle (Biogen)</li>
-<li>Doug Kelkhoff (Roche/Genentech)</li>
 <li>Eric Nantz (Eli Lilly)</li>
+<li>Heidi Curinckx (Johnson &amp; Johnson)</li>
 <li>HyeSoo Cho (FDA)</li>
 <li>Jizu Zhi (FDA)</li>
 <li>Joel Laxamana (Roche/Genentech)</li>
-<li>Kevin Kunzmann (Boehringer Ingelheim)</li>
-<li>Luke Schantz (R Consortium)</li>
+<li>Joseph Rickert (R Consortium)</li>
+<li>Nan Xiao (Merck)</li>
+<li>Ning Leng (Roche/Genentech)</li>
 <li>Paul Schuette (FDA)</li>
-<li>Phil Bowsher (Posit)</li>
-<li>Ryan Johnson (Posit)</li>
-<li>Sean Healey (Pfizer)</li>
-<li>Stephanie Lussier (Moderna)</li>
-<li>Steven Hasendinckx (Johnson &amp; Johnson)</li>
-<li>Tadeusz Lewandowski (Roche/Genentech)</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Saghir Bashir (Argenx)</li>
+<li>Sam Parmar (Pfizer)</li>
 </ul>
 </div>
 </div>
 </div>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/apmL_9HvbAo" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="pilot-2-update" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-2-update">Pilot 2 Update</h3>
+<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/nG5RS852RTgvfz3wYmQzX-Wfei82ZlkfvaNd3UpqbeMHbvVqdYKHEwjc3VinIQ.7-hyNhzzPESRq00r?startTime=1693584254000">video</a> is available.</p>
+<section id="pilot-2" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-2">Pilot 2</h3>
+<p>Paul Schuette provided and update on the Agency’s review of Pilot 2</p>
 <ul>
-<li>Paul Schuette confirms he was able to successfully run the Shiny application</li>
-<li>They encountered a few messages that they ignored, as the app still ran successfully</li>
-<li>HyeSoo Cho followed the ADRG instructions and launched Shiny app, without major issues</li>
-<li>She noticed minor issues around errors and warning messages. As part of her evaluation she tried launching the app in different machines to compare results. She saw some inconsistency between the environments, and they will report specific findings by next month (February)</li>
+<li>HyeSoo Cho completed her review and passed it on to FDA authorities for additional review.</li>
+<li>Paul feels that he and HyeSoo anticipate they will be able to answer any questions from the reviewers</li>
+<li>Paul does not anticipate problems</li>
+<li>It may take two weeks or longer to close things out</li>
+<li>Paul will include some material about Pilot 1 in his up coming ASA data set</li>
+</ul>
+<p><strong>Actions:</strong></p>
+<ul>
+<li>Joel will send Paul the data set link used for Pilot 1</li>
+<li>Joel will review the draft announcement for Pilot 3, Ning will approve and pass it to Paul for his review.</li>
 </ul>
 </section>
-<section id="pilot-3-update" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-3-update">Pilot 3 Update</h3>
+<section id="pilot-3" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-3">Pilot 3</h3>
+<p>Joel Laxamana provided the status update.</p>
 <ul>
-<li>Proposal was sent in early December for comments and feedback <a href="https://github.com/RConsortium/submissions-pilot3-adam/issues/37" class="uri">https://github.com/RConsortium/submissions-pilot3-adam/issues/37</a></li>
-<li>Running into minor issues with using the same specifications and define settings as the original Pilot 1</li>
-<li>They are not clear on the most up-to-date specifications to use for the AdAM creation, would like help from others</li>
-<li>Thomas found a Phuse 2017 white paper on transport files for the next generation. This paper proposed new ways to convert the data before transfer</li>
-<li>Additional ideas such as a proposal to use JSON format <a href="https://wiki.cdisc.org/display/ODM2/Dataset-JSON" class="uri">https://wiki.cdisc.org/display/ODM2/Dataset-JSON</a></li>
-<li>FDA is aware of the proposal, but it is not clear how far the proposal has gone</li>
-<li>Study Data Technical Conformance Guide details the latest specs and what is acceptable in the gateway <a href="https://www.fda.gov/media/162867/download" class="uri">https://www.fda.gov/media/162867/download</a></li>
-<li>Sponsors can use SAS version 8 of XPT if they choose, most sponsors are using version 5 from their experience</li>
-<li>Other pilots have explored alternative formats, but have not been satisfactory in their opinion</li>
-<li>It is common to convert the XPT format to a more consumable format. For instance as sas7bdat in SAS or R objects inside R.</li>
-<li>Pilot 3 will adhere to the current specifications</li>
-<li>Ben recommended consulting with Sam Hume as a collaborate to push the effort along</li>
-<li>The ectd gateway would need updating to accommodate json formats. That would require discussions with the E-data team in the FDA</li>
+<li>Did not use <a href="https://cran.r-project.org/package=pkglite">pkglite</a></li>
+<li>submitted the .r file</li>
+<li>Installed proprietary package from its own repo</li>
+<li>Had to change .lock file to renv-lock.txt and provide instructions how to change it back.</li>
+<li>Team members tested on Linux, Mac, and Windows</li>
+<li>Submitted the Pilot through the FDA gateway</li>
+<li>HyeSoo Cho, the FDA Pilot 3 reviewer, contacted the FDA gateway team to request access and expects to receive access next week</li>
+<li>HyeSoo believes she will be able to report on Pilot 3 by the October meeting.</li>
 </ul>
 </section>
-<section id="r-validation-hub-intro-to-repositories-working-group" class="level3">
-<h3 class="anchored" data-anchor-id="r-validation-hub-intro-to-repositories-working-group">R Validation Hub intro to Repositories working group</h3>
+<section id="pilot-4" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-4">Pilot 4</h3>
+<p>Eric Nantz provided a status up date on Pilot 4 describing the significant progress that has been made with developing prototypes for both the WebAssemply and Container approaches.</p>
+<section id="webassembly" class="level4">
+<h4 class="anchored" data-anchor-id="webassembly">WebAssembly</h4>
 <ul>
-<li>Doug Kelkhoff and Kevin Kunzmann led a an introduction to the mission and goals of the working group</li>
-<li>Mission is to support a transparent cross-industry approach of maintaining a repo of R packages with evidence of their quality and assessment criteria</li>
-<li>Repo structure may resemble pieces of CRAN, R Universe . Still in the early stages of finding what is needed before working on the technical solutions</li>
-<li>Asks for regulatory input: Work with the team to understand how you want to observe quality. Paul mentioned that bigger issues that FDA are thinking about are from the IT perspective (making sure that packages don’t compromise infrastructure). Example of haven running into buffer overflow issues. Typically those concerns are raised by security team colleagues. They are not aware of any independent effort to gauge the quality of an R package. Typically they point people to the R Validation Hub. While it is not doing independent replication of algorithms, it is a reasonable attempt in the right direction. Typically all pieces of software give you the “as-is” message and no implied guarantee of quality</li>
-<li>Asks for industry input: Contribute by direct support, or by intermittent feedback as they prepare deliverables</li>
-<li>High level of planned deliverables: List of quality criteria, mockup of the communication portal, and an example of a package server modelling a real-world workflow</li>
-<li>Visit the repository to get involved <a href="https://github.com/pharmaR/regulatory-r-repo-wg" class="uri">https://github.com/pharmaR/regulatory-r-repo-wg</a></li>
-<li>Ben asked about ways to consolidation various validation efforts heard from other sponsors. What existing tools are being implemented in this space?</li>
-<li>Doug shared an article from the ASA Biopharmaceutical Report regarding the risk assessment of R packages: <a href="https://www.pharmar.org/blog/2022/12/05/2022-12-05-asa-biopharmaceutical-report-fall-2022/" class="uri">https://www.pharmar.org/blog/2022/12/05/2022-12-05-asa-biopharmaceutical-report-fall-2022/</a></li>
+<li>At 19:48 minutes in to the video Eric displays the Pilot 4 teams minutes for their recent meeting, <a href="https://rconsortium.github.io/submissions-pilot4/minutes/2023-08-18/">Minutes 2023-08-18</a>, and talks through the activities.</li>
+<li>George Stagg and Winston Chang from Posit attended the Pilot 4 meeting</li>
+<li>The <a href="https://cran.r-project.org/package=httpuv">httpuv</a> R package will be necessary to start up a mini web server in the user’s local environment. There will be a script to accomplish this.</li>
+<li>There will be no traces of the Shiny app interacting with the host system</li>
+<li>Binaries of the packages used will be included in the transfer. These will not be executable binaries. They will be similar to .tar or .zip files.</li>
+<li>The end user will have to install the version of R used in Pilot 1</li>
+<li><a href="https://shiny.posit.co/py/docs/shinylive.html">Shinylive</a> is another rapidly developing technology that may per pertinent to Pilot 4. Currently Shinylive is only available for Python. However, Winston Chang expects the R based version will be available soon.</li>
+<li>Eric demos Shinylive from the posit website at 28:00 minutes into the video</li>
+<li>See the Posit post <a href="https://www.tidyverse.org/blog/2023/08/webr-0-2-0/">webR 0.2.0</a> for additional information.</li>
+<li>A Pilot 4 submission based on WebAssembly technology looks feasible by the end of the year.</li>
 </ul>
+</section>
+<section id="containers" class="level4">
+<h4 class="anchored" data-anchor-id="containers">Containers</h4>
+<ul>
+<li>Eric’s team already has a Podman container with Pilot 2 running</li>
+<li>The team is waiting for Paul to clarify what is required by the FDA IT team for them be able to receive containers.</li>
+</ul>
+</section>
+<section id="preferred-technology" class="level4">
+<h4 class="anchored" data-anchor-id="preferred-technology">Preferred technology</h4>
+<ul>
+<li>Since the WebAssembly version does not require the involvement of FDA technology, it looks like it is the preferred method for a first Pilot 4 submission</li>
+<li>At 37:43 minutes into the video, Eric shows the “Hello World” version of a WebAssembly submission created by Appsilon engineers.</li>
+</ul>
+</section>
+</section>
+<section id="promotion" class="level3">
+<h3 class="anchored" data-anchor-id="promotion">Promotion</h3>
+<ul>
+<li>Joseph Rickert suggests that the story of the Submissions group cooperative effort is as important as the story of the technology.</li>
+<li>The story of the overall submission group should be written up, However, Joe proposed that since the Pilot 4 effort is moving so quickly and involves contributions not only from working group members, but also from vendors we should tell this story first while the details are fresh.</li>
+<li>Eric agrees that the participation of the two development teams from Posit and Appsilon is unique.</li>
+<li>Eric notes that he has submitted a talk about Pilot 4 for the R/Pharma conference</li>
+</ul>
+<p><strong>Action:</strong></p>
+<ul>
+<li>Eric and Ning will update the GitHub sites for the Pilot teams to make sure the information is up to date and all the contributors are recognized.</li>
+<li>Eric, Joe, Eric agree to work on an end of year thank you / celebration post.</li>
+<li>Joe will make sure the R Consortium promotes Eric’s talk</li>
+</ul>
+</section>
+<section id="novo-nordisk-submission" class="level3">
+<h3 class="anchored" data-anchor-id="novo-nordisk-submission">Novo Nordisk Submission</h3>
+<ul>
+<li>Joe asked the group if anyone has information about the Novo Nordisk all R submission.</li>
+<li>See the upcoming <a href="https://posit.co/blog/novo-nordisks-journey-to-an-r-based-fda-submission/">webinar</a></li>
+</ul>
+<p>The next meeting of the working group will be at 9AM PST on Friday October 6, 2023.</p>
 
 
 </section>

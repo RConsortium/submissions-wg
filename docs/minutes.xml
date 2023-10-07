@@ -9,8 +9,266 @@
 <link>https://rconsortium.github.io/submissions-wg/minutes.html</link>
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.2.313</generator>
-<lastBuildDate>Fri, 07 Jul 2023 04:00:00 GMT</lastBuildDate>
+<generator>quarto-1.3.353</generator>
+<lastBuildDate>Fri, 06 Oct 2023 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2023-10-06</title>
+  <dc:creator>Joseph Rickert</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-10-06/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Andrew Borgman (Bristol Myers Squibb)</li>
+<li>Ben Straub (GSK)</li>
+<li>Eric Nantz (Eli Lilly)</li>
+<li>HyeSoo Cho (FDA)</li>
+<li>Jizu Zhi (FDA)</li>
+<li>Joseph Rickert (R Consortium)</li>
+<li>Kaushal Shah (ASU)</li>
+<li>Nan Xiao (Merck)</li>
+<li>Ning Leng (Roche/Genentech)</li>
+<li>Paul Schuette (FDA)</li>
+<li>Renping Zhang (Johnson &amp; Johnson)</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Saghir Bashir (Argenx)</li>
+<li>Sam Parmar (Pfizer)</li>
+<li>Youn Kyeong Chang (FDA)</li>
+</ul>
+</div>
+</div>
+</div>
+<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/3VPBIvULy8dJcVRBngyPKjgxOrLNFFJ4zIPI8seYpBoOk1LFzNEYd6BxyoPWiwjc.aOV0PJIel6jPMV68?startTime=1696608150000">video</a> is available.</p>
+<section id="new-member" class="level3">
+<h3 class="anchored" data-anchor-id="new-member">New Member</h3>
+<p>HyeSoo introduced Youn Kyeong Chang as a new member of the group who will be helping to evaluate the pilot submissions for the FDA.</p>
+</section>
+<section id="pilot-2" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-2">Pilot 2</h3>
+<ul>
+<li>JBR began the meeting by noting the successful conclusion of the <a href="https://www.r-consortium.org/announcement/2023/10/05/shiny-app-successfully-reviewed-by-fda-cder-staff-pilot-2-announcement-2">Pilot 2 submission</a> and commenting on the attention it is getting throughout the industry.</li>
+<li>The group thanked Paul and HyeSoo for there work on the project and their efforts to shepherd the review through the FDA process.</li>
+<li>Ning remarked that it was really helpful that Paul was able to provide us with the FDA letter for the ASA conference.</li>
+<li>Ning and Eric talked about the how much attention their poster got at the conference.</li>
+<li>The working group is enthusiastic about doing an R Consortium webinar about the Pilot 2 project.</li>
+<li>The tentative date for the webinar is 3:00PM EST on Monday December 11, 2023.</li>
+<li><strong>Action:</strong> Ning will prepare the letter requesting speakers for the FDA and contact the R Adoption series organizers.</li>
+<li><strong>Action:</strong> JBR will also contact the R Consortium webinar production team.</li>
+</ul>
+</section>
+<section id="pilot-3" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-3">Pilot 3</h3>
+<ul>
+<li>HyeSoo laid out a timeline for evaluating Pilot 3, saying it would take an additional six to seven months to complete.</li>
+<li>Ben said that there is quite a bit of interest at GSK about the ADRG because Pilot 3 did not use pkglite.</li>
+<li>HyeSoo remarked that the ADRG is different but that her preliminary look did not show any problems.</li>
+<li>There was some discussion abut looking back at the ADRGs made for both Pilot 2 and Pilot 3.</li>
+<li>Eric noted that he made the Pilot 2 ADRG in Quarto and was very happy with the workflow.</li>
+<li>We can expect feedback on the review during our normal sessions.</li>
+<li>Ben Staub noted that Novo Nordisk about presentation about their recent R submission.</li>
+<li>Paul remarked that he cannot comment on the Novo Nordisk submission since it is not finalized, but he did say that what Novo Nordisk said in their presentation about keeping things simple (limiting packages and dependencies) and being able to trace key endpoints is the same advice the FDA would be give.</li>
+<li>Paul also noted that the fact that the FDA is not able to comment on submissions in progress is one reason why it is nice to have a pilot.</li>
+</ul>
+</section>
+<section id="pilot-4" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-4">Pilot 4</h3>
+<ul>
+<li>Eric reported that he had the opportunity with meet with the Appsilon folks helping with Pilot 4 at posit::conf and that next sprint on the project will begin this coming week.</li>
+<li>JBR brought up on several limitations to WebAssembly, such as not being able to accommodate networking functions in the browser.</li>
+<li>Eric replied that Pilot 4 is not likely to hit the constraining limits, but that these may become a concern as we move into more robust submissions in 2024. (This discussion begins about 21:00 in the video)</li>
+<li>JBR asks that we take the trouble to communicate clearly about our knowledge of the limitations.</li>
+<li>There was a discussion about whether the FDA would be ready to receive a container based sub-submission.</li>
+<li>The agreed that Pilot 4 in two parts: part a will be WebAssembly based and part b sill be based on containers.</li>
+<li>Eric believes that he will be ready to submit Part 4.a in mid December. Paul will confer with his management about resources being available in that time frame.</li>
+<li>There was a discussion about whether setting up a server with containers outside of the FDA would we be helpful for FDA reviewers becoming familiar with Podman.</li>
+<li>JBR remarked that other working groups are interested in establishing protocols, best practices, and requirements for repositories.</li>
+<li>Paul noted that from the FDA’s point of view, longevity should be a requirement noting that 6 years would be a minimum and there may be reasons to consider 20 years.</li>
+<li>The group decided that it would be feasible and may be helpful to set up a server with the Pilot 2 submission shiny app running in a container.</li>
+</ul>
+</section>
+<section id="participation-in-the-isbs-7th-symposium" class="level3">
+<h3 class="anchored" data-anchor-id="participation-in-the-isbs-7th-symposium">Participation in the ISBS 7th Symposium</h3>
+<ul>
+<li>JBR mentioned that he received an an invitation from Qi, Hong <a href="mailto:hong_qi@merck.com" class="email">hong_qi@merck.com</a>, the organizer of the <a href="https://www.isbiostat.org/">The 7th International Symposium on Biopharmaceutical Statistics</a> to present a 20 minute talk at the event. The invitation is below.</li>
+<li>Link to <a href="https://www2.aeplan.co.jp/isbs2019/invited.html">ISBS past event</a></li>
+<li>The group agreed that we should try to participate even though it seems to be a primarily statistician driven event.</li>
+<li>Ning offered to put together an abstract.</li>
+<li>Pending some final investigation, JBR will let them know that we would like to participate but that we do not yet know who the speaker will be.</li>
+<li>JBR noted that it might be an opportunity to present the FDA’s view about the kind of statistics and principles that govern an FDA submission.</li>
+</ul>
+</section>
+<section id="fdasa-proposal" class="level3">
+<h3 class="anchored" data-anchor-id="fdasa-proposal">FDASA Proposal</h3>
+<ul>
+<li>Ning has prepared a final version of the abstract for a session solely from the R Consortium.</li>
+<li>Joe will send the proposal in a with a cover letter to Paul.</li>
+<li>The ASA Biopharma working group intends to send its own proposal for a talk.</li>
+</ul>
+<p>The next meeting of the working group will be at 9AM PST on Friday November 3, 2023.</p>
+</section>
+<section id="invitation-from-isbs" class="level3">
+<h3 class="anchored" data-anchor-id="invitation-from-isbs">Invitation from ISBS</h3>
+<p>Dear Joseph,</p>
+<p>Thanks so much for expressing interest in presenting at The 7th International Symposium on Biopharmaceutical Statistics, which will take place on March 6 – 9, 2024, at Hilton Baltimore Inner Harbor. The symposium is organized by the International Society for Biopharmaceutical Statistics (ISBS). Prominent statisticians and drug development professionals from regulatory agencies, academia, and industry will deliver keynote speeches on various emerging/evolving fields. Invited and contributed presentations will cover a wide range of topics including innovative statistics, clinical development, regulatory science, and data science.</p>
+<p>We are organizing a Regulatory Submission session dedicated to communicating the agencies’ requirements for drug submission, and the implementation of industry standards to support the acquisition, exchange, analysis, submission and archival of clinical data and metadata in the pharmaceutical industry. We cordially invite you to present an R topic related to regulatory submission. Each presentation has 20 minutes including speech and Q&amp;A. It is highly appreciated if you may provide the presentation topic and presenter(s)’ name by October 15, 2023. Below are the important dates:</p>
+<p>Abstract submission due: Oct.&nbsp;29th, 2023. Registration start date: Nov.&nbsp;15th, 2023. Presentation slides due: Feb.&nbsp;15th, 2024. Sincerely,</p>
+<p>Mary Varughese, Chair Hong Qi, Organizer</p>
+<p>Regulatory Submission Session</p>
+<p>7th Symposium, ISBS</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-10-06/index.html</guid>
+  <pubDate>Fri, 06 Oct 2023 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Minutes 2023-09-01</title>
+  <dc:creator>Joseph Rickert</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-09-01/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Eric Nantz (Eli Lilly)</li>
+<li>Heidi Curinckx (Johnson &amp; Johnson)</li>
+<li>HyeSoo Cho (FDA)</li>
+<li>Jizu Zhi (FDA)</li>
+<li>Joel Laxamana (Roche/Genentech)</li>
+<li>Joseph Rickert (R Consortium)</li>
+<li>Nan Xiao (Merck)</li>
+<li>Ning Leng (Roche/Genentech)</li>
+<li>Paul Schuette (FDA)</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Saghir Bashir (Argenx)</li>
+<li>Sam Parmar (Pfizer)</li>
+</ul>
+</div>
+</div>
+</div>
+<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/nG5RS852RTgvfz3wYmQzX-Wfei82ZlkfvaNd3UpqbeMHbvVqdYKHEwjc3VinIQ.7-hyNhzzPESRq00r?startTime=1693584254000">video</a> is available.</p>
+<section id="pilot-2" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-2">Pilot 2</h3>
+<p>Paul Schuette provided and update on the Agency’s review of Pilot 2</p>
+<ul>
+<li>HyeSoo Cho completed her review and passed it on to FDA authorities for additional review.</li>
+<li>Paul feels that he and HyeSoo anticipate they will be able to answer any questions from the reviewers</li>
+<li>Paul does not anticipate problems</li>
+<li>It may take two weeks or longer to close things out</li>
+<li>Paul will include some material about Pilot 1 in his up coming ASA data set</li>
+</ul>
+<p><strong>Actions:</strong></p>
+<ul>
+<li>Joel will send Paul the data set link used for Pilot 1</li>
+<li>Joel will review the draft announcement for Pilot 3, Ning will approve and pass it to Paul for his review.</li>
+</ul>
+</section>
+<section id="pilot-3" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-3">Pilot 3</h3>
+<p>Joel Laxamana provided the status update.</p>
+<ul>
+<li>Did not use <a href="https://cran.r-project.org/package=pkglite">pkglite</a></li>
+<li>submitted the .r file</li>
+<li>Installed proprietary package from its own repo</li>
+<li>Had to change .lock file to renv-lock.txt and provide instructions how to change it back.</li>
+<li>Team members tested on Linux, Mac, and Windows</li>
+<li>Submitted the Pilot through the FDA gateway</li>
+<li>HyeSoo Cho, the FDA Pilot 3 reviewer, contacted the FDA gateway team to request access and expects to receive access next week</li>
+<li>HyeSoo believes she will be able to report on Pilot 3 by the October meeting.</li>
+</ul>
+</section>
+<section id="pilot-4" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-4">Pilot 4</h3>
+<p>Eric Nantz provided a status up date on Pilot 4 describing the significant progress that has been made with developing prototypes for both the WebAssemply and Container approaches.</p>
+<section id="webassembly" class="level4">
+<h4 class="anchored" data-anchor-id="webassembly">WebAssembly</h4>
+<ul>
+<li>At 19:48 minutes in to the video Eric displays the Pilot 4 teams minutes for their recent meeting, <a href="https://rconsortium.github.io/submissions-pilot4/minutes/2023-08-18/">Minutes 2023-08-18</a>, and talks through the activities.</li>
+<li>George Stagg and Winston Chang from Posit attended the Pilot 4 meeting</li>
+<li>The <a href="https://cran.r-project.org/package=httpuv">httpuv</a> R package will be necessary to start up a mini web server in the user’s local environment. There will be a script to accomplish this.</li>
+<li>There will be no traces of the Shiny app interacting with the host system</li>
+<li>Binaries of the packages used will be included in the transfer. These will not be executable binaries. They will be similar to .tar or .zip files.</li>
+<li>The end user will have to install the version of R used in Pilot 1</li>
+<li><a href="https://shiny.posit.co/py/docs/shinylive.html">Shinylive</a> is another rapidly developing technology that may per pertinent to Pilot 4. Currently Shinylive is only available for Python. However, Winston Chang expects the R based version will be available soon.</li>
+<li>Eric demos Shinylive from the posit website at 28:00 minutes into the video</li>
+<li>See the Posit post <a href="https://www.tidyverse.org/blog/2023/08/webr-0-2-0/">webR 0.2.0</a> for additional information.</li>
+<li>A Pilot 4 submission based on WebAssembly technology looks feasible by the end of the year.</li>
+</ul>
+</section>
+<section id="containers" class="level4">
+<h4 class="anchored" data-anchor-id="containers">Containers</h4>
+<ul>
+<li>Eric’s team already has a Podman container with Pilot 2 running</li>
+<li>The team is waiting for Paul to clarify what is required by the FDA IT team for them be able to receive containers.</li>
+</ul>
+</section>
+<section id="preferred-technology" class="level4">
+<h4 class="anchored" data-anchor-id="preferred-technology">Preferred technology</h4>
+<ul>
+<li>Since the WebAssembly version does not require the involvement of FDA technology, it looks like it is the preferred method for a first Pilot 4 submission</li>
+<li>At 37:43 minutes into the video, Eric shows the “Hello World” version of a WebAssembly submission created by Appsilon engineers.</li>
+</ul>
+</section>
+</section>
+<section id="promotion" class="level3">
+<h3 class="anchored" data-anchor-id="promotion">Promotion</h3>
+<ul>
+<li>Joseph Rickert suggests that the story of the Submissions group cooperative effort is as important as the story of the technology.</li>
+<li>The story of the overall submission group should be written up, However, Joe proposed that since the Pilot 4 effort is moving so quickly and involves contributions not only from working group members, but also from vendors we should tell this story first while the details are fresh.</li>
+<li>Eric agrees that the participation of the two development teams from Posit and Appsilon is unique.</li>
+<li>Eric notes that he has submitted a talk about Pilot 4 for the R/Pharma conference</li>
+</ul>
+<p><strong>Action:</strong></p>
+<ul>
+<li>Eric and Ning will update the GitHub sites for the Pilot teams to make sure the information is up to date and all the contributors are recognized.</li>
+<li>Eric, Joe, Eric agree to work on an end of year thank you / celebration post.</li>
+<li>Joe will make sure the R Consortium promotes Eric’s talk</li>
+</ul>
+</section>
+<section id="novo-nordisk-submission" class="level3">
+<h3 class="anchored" data-anchor-id="novo-nordisk-submission">Novo Nordisk Submission</h3>
+<ul>
+<li>Joe asked the group if anyone has information about the Novo Nordisk all R submission.</li>
+<li>See the upcoming <a href="https://posit.co/blog/novo-nordisks-journey-to-an-r-based-fda-submission/">webinar</a></li>
+</ul>
+<p>The next meeting of the working group will be at 9AM PST on Friday October 6, 2023.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-09-01/index.html</guid>
+  <pubDate>Fri, 01 Sep 2023 07:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2023-07-07</title>
   <dc:creator>Joseph Rickert</dc:creator>
@@ -20,12 +278,12 @@
 
 
 
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 View Attendee List
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
@@ -103,7 +361,7 @@ View Attendee List
 
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-07-07/index.html</guid>
-  <pubDate>Fri, 07 Jul 2023 04:00:00 GMT</pubDate>
+  <pubDate>Fri, 07 Jul 2023 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2023-06-02</title>
@@ -114,12 +372,12 @@ View Attendee List
 
 
 
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 View Attendee List
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
@@ -181,7 +439,7 @@ View Attendee List
 
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-06-02/index.html</guid>
-  <pubDate>Fri, 02 Jun 2023 04:00:00 GMT</pubDate>
+  <pubDate>Fri, 02 Jun 2023 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2023-05-05</title>
@@ -192,12 +450,12 @@ View Attendee List
 
 
 
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 View Attendee List
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
@@ -280,7 +538,7 @@ View Attendee List
 
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-05-05/index.html</guid>
-  <pubDate>Fri, 05 May 2023 04:00:00 GMT</pubDate>
+  <pubDate>Fri, 05 May 2023 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2023-04-07</title>
@@ -291,12 +549,12 @@ View Attendee List
 
 
 
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 View Attendee List
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
@@ -368,7 +626,7 @@ View Attendee List
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rconsortium.github.io/submissions-wg/minutes/2023-04-07/repos.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Proposed Pilot 3 Repo Setup</figcaption><p></p>
+<figcaption class="figure-caption">Proposed Pilot 3 Repo Setup</figcaption>
 </figure>
 </div></li>
 </ul>
@@ -426,8 +684,7 @@ We might invite another speaker from a pharma company on their experience with R
 
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-04-07/index.html</guid>
-  <pubDate>Fri, 07 Apr 2023 04:00:00 GMT</pubDate>
-  <media:content url="https://rconsortium.github.io/submissions-wg/minutes/2023-04-07/repos.png" medium="image" type="image/png" height="75" width="144"/>
+  <pubDate>Fri, 07 Apr 2023 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2023-03-03</title>
@@ -438,12 +695,12 @@ We might invite another speaker from a pharma company on their experience with R
 
 
 
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 View Attendee List
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
@@ -494,7 +751,7 @@ View Attendee List
 
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-03-03/index.html</guid>
-  <pubDate>Fri, 03 Mar 2023 05:00:00 GMT</pubDate>
+  <pubDate>Fri, 03 Mar 2023 08:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2023-02-03</title>
@@ -505,12 +762,12 @@ View Attendee List
 
 
 
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 View Attendee List
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
@@ -610,7 +867,7 @@ View Attendee List
 
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-02-03/index.html</guid>
-  <pubDate>Thu, 09 Feb 2023 05:00:00 GMT</pubDate>
+  <pubDate>Thu, 09 Feb 2023 08:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2023-01-13</title>
@@ -621,12 +878,12 @@ View Attendee List
 
 
 
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 View Attendee List
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
@@ -655,7 +912,7 @@ View Attendee List
 </div>
 </div>
 </div>
-<div class="quarto-video ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/apmL_9HvbAo" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/apmL_9HvbAo" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <section id="pilot-2-update" class="level3">
 <h3 class="anchored" data-anchor-id="pilot-2-update">Pilot 2 Update</h3>
 <ul>
@@ -702,7 +959,7 @@ View Attendee List
 
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-01-13/index.html</guid>
-  <pubDate>Fri, 13 Jan 2023 05:00:00 GMT</pubDate>
+  <pubDate>Fri, 13 Jan 2023 08:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2022-12-02</title>
@@ -713,12 +970,12 @@ View Attendee List
 
 
 
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 View Attendee List
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
@@ -801,7 +1058,7 @@ View Attendee List
 
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-12-02/index.html</guid>
-  <pubDate>Fri, 02 Dec 2022 05:00:00 GMT</pubDate>
+  <pubDate>Fri, 02 Dec 2022 08:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2022-11-04</title>
@@ -812,12 +1069,12 @@ View Attendee List
 
 
 
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 View Attendee List
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
@@ -851,7 +1108,7 @@ View Attendee List
 </div>
 </div>
 </div>
-<div class="quarto-video ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/LDVWXgDhzzo" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/LDVWXgDhzzo" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>The <a href="https://www.youtube.com/watch?v=LDVWXgDhzzo">video</a> is available on the <a href="https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg">R Consortium YouTube Channel</a></p>
 <p>The meeting began with EN summarizing his understanding of the comments made by PS about his preliminary look at the Pilot 2 submission package.</p>
 <p>The following is a summary of Paul’s comments which were made in a email exchange with the workgroup members on 10-27-22:</p>
@@ -894,7 +1151,7 @@ View Attendee List
 
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-11-04/index.html</guid>
-  <pubDate>Fri, 04 Nov 2022 04:00:00 GMT</pubDate>
+  <pubDate>Fri, 04 Nov 2022 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2022-10-07</title>
@@ -905,12 +1162,12 @@ View Attendee List
 
 
 
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 View Attendee List
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
@@ -989,7 +1246,7 @@ View Attendee List
 
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-10-07/index.html</guid>
-  <pubDate>Fri, 07 Oct 2022 04:00:00 GMT</pubDate>
+  <pubDate>Fri, 07 Oct 2022 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2022-09-02</title>
@@ -1000,12 +1257,12 @@ View Attendee List
 
 
 
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 View Attendee List
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
@@ -1085,7 +1342,7 @@ View Attendee List
 
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-09-02/index.html</guid>
-  <pubDate>Fri, 02 Sep 2022 04:00:00 GMT</pubDate>
+  <pubDate>Fri, 02 Sep 2022 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2022-08-05</title>
@@ -1096,12 +1353,12 @@ View Attendee List
 
 
 
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 View Attendee List
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
@@ -1151,7 +1408,7 @@ View Attendee List
 
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-08-05/index.html</guid>
-  <pubDate>Fri, 05 Aug 2022 04:00:00 GMT</pubDate>
+  <pubDate>Fri, 05 Aug 2022 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2022-07-01</title>
@@ -1162,12 +1419,12 @@ View Attendee List
 
 
 
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 View Attendee List
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
@@ -1235,7 +1492,7 @@ UK: NICE</p>
 
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-07-01/index.html</guid>
-  <pubDate>Fri, 01 Jul 2022 04:00:00 GMT</pubDate>
+  <pubDate>Fri, 01 Jul 2022 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2022-06-04</title>
@@ -1246,12 +1503,12 @@ UK: NICE</p>
 
 
 
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 View Attendee List
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
@@ -1357,7 +1614,7 @@ View Attendee List
 
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-06-04/index.html</guid>
-  <pubDate>Sat, 04 Jun 2022 04:00:00 GMT</pubDate>
+  <pubDate>Sat, 04 Jun 2022 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2022-05-06</title>
@@ -1368,12 +1625,12 @@ View Attendee List
 
 
 
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 View Attendee List
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
@@ -1439,7 +1696,7 @@ View Attendee List
 
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-05-06/index.html</guid>
-  <pubDate>Fri, 06 May 2022 04:00:00 GMT</pubDate>
+  <pubDate>Fri, 06 May 2022 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2022-03-04</title>
@@ -1450,12 +1707,12 @@ View Attendee List
 
 
 
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 View Attendee List
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
@@ -1521,7 +1778,7 @@ View Attendee List
 
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-03-05/index.html</guid>
-  <pubDate>Fri, 04 Mar 2022 05:00:00 GMT</pubDate>
+  <pubDate>Fri, 04 Mar 2022 08:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2022-02-04</title>
@@ -1532,12 +1789,12 @@ View Attendee List
 
 
 
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 View Attendee List
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
@@ -1630,7 +1887,7 @@ View Attendee List
 
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-02-04/index.html</guid>
-  <pubDate>Fri, 04 Feb 2022 05:00:00 GMT</pubDate>
+  <pubDate>Fri, 04 Feb 2022 08:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2022-01-07</title>
@@ -1641,12 +1898,12 @@ View Attendee List
 
 
 
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 View Attendee List
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
@@ -1714,165 +1971,7 @@ View Attendee List
 
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-01-07/index.html</guid>
-  <pubDate>Fri, 07 Jan 2022 05:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2021-12-03</title>
-  <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2021-12-03/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="callout-tip callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>“Phil Bowsher - RStudio”</li>
-<li>“Hye Soo Cho - FDA”</li>
-<li>“Heidi Curinckx - Johnson &amp; Johnson”</li>
-<li>“Miriam Fossati - Merck”</li>
-<li>“Ellis Hughes - GSK”</li>
-<li>“Maria Matilde Kam - FDA”</li>
-<li>“Emily Nguyen - FDA”</li>
-<li>“Jiang Xu - FDA”</li>
-<li>“Steven Hassendinckx”</li>
-<li>“Ning Leng - Genentech”</li>
-<li>“Joseph Rickert - R Consortium”</li>
-<li>“Paul Schuette - FDA”</li>
-<li>“Adrian Waddell - Roche”</li>
-<li>“Nan Xiao - Merck”</li>
-<li>“Hong Yaan - Regeneron”</li>
-<li>“Renping Zhang - FDA”</li>
-<li>“Yilong Zhang - Merck”</li>
-<li>“Jizu Zhi - FDA”</li>
-</ul>
-</div>
-</div>
-</div>
-<p>The meeting was recorded and the video is available <a href="https://rstudio.zoom.us/rec/share/TPhUmx-9fsnaF8ZWkGqSXGgTqIZAuDy8Fvli182eRysycU5WPOse7kOzagdRU7Lh.acdswWFSSBr7m0K0">here</a> Passcode: 0tA$D+ev</p>
-<p><strong>JR</strong> Opened the meeting with the agenda to discuss the recent pilot submission through the FDA gateway and then discuss a request to have interested companies describe what they are currently doing with respect to FDA submissions in R.</p>
-<p><strong>YZ</strong> reported that the submission went through the gateway, thanked all who participated and was looking forward to receiving feedback from the FDA.</p>
-<p><strong>JR</strong> reported that there were still issues with employees from different companies using the RC portal. The current solution is to have people accessing the gateway on behalf of the RC use an R Consortium email address. <strong>JR</strong> wants to make sure that this is fine with the FDA.</p>
-<p>At <strong>6:37</strong> into the video <strong>PS</strong> begins providing FDA feedback on the submission.</p>
-<p>The initial findings were:</p>
-<ul>
-<li>The submission was partially successful</li>
-<li>The were no problems with the .R extensions</li>
-<li>The FDA was unable to find the <code>Pilot1wrappers</code> package. However, the * * FDA analyst was able to generate tables</li>
-<li>The FDA thinks there may have been a switch in the high bit vs.&nbsp;bit settings and asked the WG to check this.</li>
-<li>The FDA analyst was able to retrieve the <code>pilot1wrappers</code> package from the Submission WG website, download the code and verify the results</li>
-<li>The FDA noted that including a dependency chart showing the 2nd and 3rd order dependencies would be very helpful. If this were and actual submission, at least one IR request would have been generated.</li>
-</ul>
-<p>On behalf of the WG, <strong>JR</strong> thanked the FDA team for making extra effort to retrieve the wrapper package and run the code.</p>
-<p>In the subsequent discussion it was determined that the FDA analysts overlooked the instructions, buried in the ADRG, to unpack the <code>pilot1wrappers</code> from the file r0plg.txt. Once this was clarified <strong>HC</strong>, the FDA analyst, was able to execute the command and unpack the <code>pilot1wrappers</code> package. <strong>HY</strong> noted that in her experience, submissions with R code tend to be <em>ad hoc</em>, and that it is common to include a README file. The WG took note and agreed that it would be a good idea to include a <code>README</code> file that highlights the key steps, maybe by referring to the ADRG.</p>
-<p>Next, followed a discussion about the requested dependency chart tree diagram. <strong>PS</strong> noted that the importance of dependencies depends on the setting. When running from a standard machine, FDA analysts are able to pull packages from the internet. However, when running from one of their scientific enclaves high performance computing environments they must port in the packages. To illustrate the problem with dependencies <em>HC</em> showed the error messages generated by calling R packages previously installed on her machine, but which did not have the dependencies installed that are required to run the submission code.</p>
-<p>The problem seems to be that every file in the submission needs the library calls. This problem needs to be addressed.</p>
-<p><strong>HC</strong> also identified a problem of not having write permissions.</p>
-<p>The temporary solution seems to be to copy the file into a temporary folder. This problem needs more thought.</p>
-<p>It was agreed that the WG should produce a document about establishing the proper environment. <strong>AW</strong> suggests that there are two possible actions: 1. Copying to a local folder might clear up most of the problems 2. If not, the WG should look into environment reproducibility</p>
-<p><strong>PS</strong> noted that the FDA does not need to run on a central server. This implies that we can assume FDA analysts running on their local environments for the near future.</p>
-<p><strong>PS</strong> suggested having a pre-submission meeting explaining everything that is necessary to get everything installed and working.</p>
-<p><strong>AW</strong> suggested that we set up the submission assuming that each file will be run from a fresh R session, and that perhaps we could run some tests to see if the environment is as is expected.</p>
-<p><strong>NL</strong> asked about writing a blog post about the pilot submission. The WG agreed to write up the post and have <strong>PS</strong> and <strong>HC</strong> review.</p>
-<p><strong>YL</strong> asked about redoing the submission. <strong>PS</strong> said indicated that is common practice.</p>
-<p><strong>NL</strong> said that she and <strong>HC</strong> would like to schedule a separate meeting early next year to discuss where the various participating companies are in the process of making R submissions. Please let <strong>NL</strong> know if you are interested in participating.</p>
-<p>The next meeting is set for 9:00 AM Pacific Time on Friday, January 7, 2022.</p>
-
-
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2021-12-03/index.html</guid>
-  <pubDate>Fri, 03 Dec 2021 05:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2021-12-03</title>
-  <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-04-01/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="callout-tip callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>“Michael Blanks - Beigene”</li>
-<li>“Gregory Chem”</li>
-<li>“Bryant Chen - FDA”</li>
-<li>“Hye Soo Cho - FDA”</li>
-<li>“Heidi Curinckz”</li>
-<li>“Robert Devine -Johnsom &amp; Johnson”</li>
-<li>“Bob Engle - Biogen”</li>
-<li>“Miram Fossati - Merck”</li>
-<li>“Steven Haesendonckx”</li>
-<li>“Ryan Johnson - RStudio”</li>
-<li>“Ning Leng - Genentech”</li>
-<li>“Tadeusz Lewandowski - Roche”</li>
-<li>“Eli Miller - Atorus”</li>
-<li>“Emily Nguyen - FDA”</li>
-<li>“Joseph Rickert - R Consortium”</li>
-<li>“Frederic Saad”</li>
-<li>“Paul Schuette - FDA”</li>
-<li>“Jonathan Tisack - Beigene”</li>
-<li>“Bryan Tegomoh”</li>
-<li>“Hao Wang - FDA”</li>
-<li>“Heng Wang”</li>
-<li>“Nan Xiao - Merck”</li>
-<li>“Hong Yan - Regeneron”</li>
-<li>“Renping Zhang - FDA”</li>
-<li>“Jizu Shi”</li>
-</ul>
-</div>
-</div>
-</div>
-<p>The meeting was recorded and the <a href="https://rstudio.zoom.us/rec/share/WAjfjpcZzTGt-jqWdAQ2RaOIJU0VvmFjMYd08mEoyyuY15oYXqYZNi9K6Y_FZeLj.pUmLEm5wDASxtQoN">video</a> is available with passcode: m4Jfez!E</p>
-<p>JBR opened the meeting and remarked that the announcement of the recent successful completion of the Pilot 1 submission generated quite a bit of activity on social media, and that he has received several requests from people who would like to join the working group, or at least attend some of the meetings. JBR stated that it is great benefit to the R Community and to the R Consortium that all interested folks can join working groups. There is no requirement that working members be employed by companies who are members of the R Consortium. He noted that, so far, having large numbers of people attend the monthly meeting of the submission working group meeting has not been a problem.</p>
-<p>JBR also noted that small teams of WG members have been meeting separately from the general meeting to accomplish the technical work and asked that all of these please make an effort to take minutes and upload them to the appropriate repository. These meetings can be very brief limited to who attended and some bullet points of what was accomplished.</p>
-<p>JBR then ask NL to give a brief overview of WG activity. NL stated that in addition to the Pilot 1 team, there are two groups working on projects.</p>
-<ol type="1">
-<li><p>The Pilot 2 submission that is developing a shiny app based on the analyses developed in the Pilot 1 submission. This app will then be made into an R package, wrapped up with the analysis and data used in Pilot 1 and then submitted through the FDA gateway. The team working on this meets every two weeks and has already developed a preliminary version of the shiny app. They will ask the extended working group to review the draft shiny app. if all goes well they think they should be able to make the Pilot 2 submission in two to three months.</p></li>
-<li><p>Another subgroup has just been formed to make a Pilot 1 submission the PMDA, the Japanese health authority. This will essentially be the Pilot 1 submission to the FDA with some translate materials. SH and HW are are members of this team. TL asked to be included.</p></li>
-</ol>
-<p>At 16:16 minutes into the video TL demonstrated the preliminary of the <a href="https://genentech.shinyapps.io/FDA-app/">Pilot 2 Shiny App</a>. He described how filtering and subsetting works.</p>
-<p><img src="https://rconsortium.github.io/submissions-wg/minutes/2022-04-01/pilot2_shiny.png" height="300" width="500" alt=" Opening page of preliminary Pilot 2 Shiny App "></p>
-<p>JBR suggested that eventually the shiny app should be deployed to an R Consortium property.</p>
-<p>The group they began a discussion about how the Shiny App would fit into a typical FDA workflow. PS that his group has not yet dealt with any Shiny apps and they are only in the preliminary stages of developing their own apps. He also remarked that there would still be a significant amount of preliminary work to set up for an analysis.</p>
-<p>PS said that an issue with Shiny will be reproducibility. He remarked that he is following the work of Joe Cheng and Carson Sievert on the Shiny Meta project which will generate code that captures the Shiny app settings to allow users to independently rerun an analysis.</p>
-<p>PS remarked that the ability to do subgroup analysis would be a value add to the reviewers. The Shiny app would be an auxiliary tool. The main task would still be to do an independent analysis of the models and show that the models are appropriately developed and executed.</p>
-<p>RJ then asked PS whether the FDA has the infrastructure to receive a Shiny app and deploy it throughout the enterprise. PS replied that do not yet have the capabilities for enterprise deployment, but that two different possible solutions are being discussed: one of these is <a href="https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/office-computational-science">OCS</a> the Office of Computational Science.</p>
-<p>Right now, the FDA is running things locally. The best that the FDA can do is to install a shiny app and submission package on a number of workstations which would provide remote access to FDA analysts. The workstations would not be networked. At the present time, the FDA does not permit analysts to use servers.</p>
-<p>JBR asked PS: “Given the FDA environment as it is now, not as we all would like it to be, is there anything the we can do do facilitate your workflows?”</p>
-<p>PS replied that the FDA is in the process of updating its workflows including the use of GitLab, but that he does not know how they could make things easier without achieving the enterprise environment being discussed. JBR remarked that if any of the FDA</p>
-<p>JBR if anyone in the meeting was working on the containers project. EM stated that he would like to be involved. NL noted that Eric Nantz has already begun collecting documentation. JBR pointed out that researching the use of containers for R submissions would be a project that newcomers to the Submissions WG could help with.</p>
-<p>In summary, the WG has two active project and two that are just beginning: 1. The Shiny app for the Pilot 2 submission 2. Research on containers for Pilot 3 3. A Pilot 1 submission for Japan 4. A pilot 1 submission for China</p>
-<p>The next meeting of the WG will be on Friday May 6, 2022 at 9AM Pacific Time.</p>
-
-
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-04-01/index.html</guid>
-  <pubDate>Fri, 03 Dec 2021 05:00:00 GMT</pubDate>
+  <pubDate>Fri, 07 Jan 2022 08:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
