@@ -13,7 +13,7 @@ R Submissions Working Group
 
 - Pilot 1: R based CDER submission of static outputs (completed)
 - Pilot 2: R based CDER submission with a shiny component (completed)
-- Pilot 3: R based CDER submission of ADaM dataset (under development)
+- Pilot 3: R based CDER submission of ADaM dataset (under review)
 - Pilot 4: R based CDER submission with a container component (under development)
   
   
