@@ -2,10 +2,54 @@
 title: "R Submission Pilot 3"
 ---
 
-## Pilot 3 - Generation of ADaM data sets 
+**Goals**:
 
-**Goal**: Example R based submission contains ADaM data sets generated using R based on the content of the [Pilot 1](pilot1.qmd) submission.
+1.  Deliver a publicly accessible R-based Submission through the eTCD portal
+1.  Expand on the work done in [Submission Pilot 1](pilot1.qmd), by now utilizing R to generate ADaM datasets.
 
-::: {.callout-warning}
-This page is under construction. More information is forthcoming!
-:::
+**Timeline**: Submitted to FDA on September 11th, 2023
+
+**Data and analysis scope**:
+  
+- 5 TLFs created using R
+- 5 ADaMs created using R
+- SDTM data is taken from CDISC Pilot Study using `xpt` files 
+
+**Links**:
+
+[R Submission Pilot 3 Development Repo](https://github.com/RConsortium/submissions-pilot3-adam)
+
+- Development area for Pilot 3 Team
+- See Closed Issues discussion for how we worked
+- Check out QC Findings
+
+[R Submission Pilot 3 eCTD Submission Package to FDA](https://github.com/RConsortium/submissions-pilot3-adam-to-fda)
+
+- Materials submitted to the FDA via eTCD
+
+[R Submission Pilot 3 Website](https://rconsortium.github.io/submissions-pilot3-adam/main/)
+
+- Breakdown of the structure of the repos and files
+- Renderings of TLFs, datasets, ADRG and Cover Letter
+- Discussions at Conferences and feedback from FDA
+- Links to QC Findings
+
+**Key team members**: 
+
+Developer team:
+
+- Joel Laxamana-Roche
+- Thomas Neitmann-Denali
+- Phanikumar Tata-Syneos
+- Robert Devine-J&J
+- Steven Haesendonckx-J&J
+- Lei Zhao-Roche
+- Nicole Jones-Denali 
+- Kangjie Zhang-Bayer
+- Benjamin Straub-GSK
+- Declan Hodges-GSK
+
+FDA Staff:  
+
+- Paul Schuette  
+- Hye Soo Cho  
