@@ -4,8 +4,17 @@ title: "R Submission Pilot 3"
 
 **Goals**:
 
-1.  Deliver a publicly accessible R-based Submission to the FDA
-1.  Expand on the work done in [Submission Pilot 1](pilot1.qmd), by now utilizing R to generate ADaM datasets.
+-  Expand on the work done in [Submission Pilot 1](pilot1.qmd), by now utilizing R to generate ADaM datasets.
+-  Deliver a publicly accessible R-based Submission to the FDA
+
+
+**Key evaluation aspects**: 
+  
+- For Submitter  
+  - Generation of a reproducible R environment with a proprietary R package from git and open source R packages using `{renv}`
+  - Preparation of R-based submission materials
+- For FDA Staff
+  - Reproduce analysis results by reproducing the R environment and retrieving both proprietary & open source packages
 
 **Timeline**: Submitted to FDA on August 28th, 2023
 
@@ -13,7 +22,6 @@ title: "R Submission Pilot 3"
   
 - ADaMs created using R (SDTM `.xpt` sourced from the CDISC Pilot study)
 - TLFs created using R (ADaMs `.xpt` sourced from the ADaMs generated in R by the Pilot 3 team)
-- SDTM data is taken from CDISC Pilot Study using `xpt` files 
 
 **Links**:
 
@@ -31,9 +39,8 @@ title: "R Submission Pilot 3"
 [R Submission Pilot 3 Website](https://rconsortium.github.io/submissions-pilot3-adam/main/)
 
 - Breakdown of the Github repositories and files used for analysis development, e-submission and proprietary Pilot 3 R Package
-- Renderings of TLFs, ADaMs, ADRG and Cover Letter
+- Renderings of ADaMs, TLFs, ADRG and Cover Letter
 - Discussions at Conferences and feedback from FDA
-- [Links to QC Findings](https://github.com/RConsortium/submissions-pilot3-adam/wiki)
 
 **Key team members**: 
 
