@@ -9,13 +9,14 @@
 <link>https://rconsortium.github.io/submissions-wg/minutes.html</link>
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.3.353</generator>
-<lastBuildDate>Fri, 06 Oct 2023 07:00:00 GMT</lastBuildDate>
+<generator>quarto-1.4.395</generator>
+<lastBuildDate>Fri, 06 Oct 2023 04:00:00 GMT</lastBuildDate>
 <item>
   <title>Minutes 2023-10-06</title>
   <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-10-06/index.html</link>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-10-06/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -134,14 +135,15 @@ View Attendee List
 </section>
 
  ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-10-06/index.html</guid>
-  <pubDate>Fri, 06 Oct 2023 07:00:00 GMT</pubDate>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-10-06/</guid>
+  <pubDate>Fri, 06 Oct 2023 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2023-09-01</title>
   <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-09-01/index.html</link>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-09-01/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -266,14 +268,128 @@ View Attendee List
 </section>
 
  ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-09-01/index.html</guid>
-  <pubDate>Fri, 01 Sep 2023 07:00:00 GMT</pubDate>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-09-01/</guid>
+  <pubDate>Fri, 01 Sep 2023 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Minutes 2023-08-04</title>
+  <dc:creator>Joseph Rickert</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-08-04/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Ben Straub (GSK)</li>
+<li>Li Eva</li>
+<li>Christopher Kania (Biogen)</li>
+<li>Eric Nantz (Eli Lilly)</li>
+<li>HyeSoo Cho (FDA)</li>
+<li>Jizu Zhi (FDA)</li>
+<li>Joel Laxamana (Roche/Genentech)</li>
+<li>Joseph Rickert (R Consortium)</li>
+<li>Nan Xiao (Merck)</li>
+<li>Ning Leng (Roche/Genentech)</li>
+<li>Paul Schuette (FDA)</li>
+<li>Sam Parmar (Pfizer)</li>
+<li>Shannon Lewis (BeiGene)</li>
+<li>Stephanie Lussier (Moderna)</li>
+</ul>
+</div>
+</div>
+</div>
+<section id="minutes" class="level2">
+<h2 class="anchored" data-anchor-id="minutes">Minutes</h2>
+<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/iap2ryh7-PHu8_fOMfwtXHpO7D7hB333mCsNODLlxE99EoCGXRTm1MSEFP7ceXzk.DnZSMt89C-TB8tZj?startTime=1691165275000">video</a> is available.</p>
+<section id="pilot-2" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-2">Pilot 2</h3>
+<ul>
+<li>HyeSoo Cho reported that she is working with the Pilot 2 re-submission and that it looks good.</li>
+<li>HyeSoo expects that the final on this pilot submission will be available at the end of August.</li>
+<li>Everyone recognized and thanked Eric Nantz for the sustained and last-minute efforts to get the submission out.</li>
+</ul>
+</section>
+<section id="pilot-3" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-3">Pilot 3</h3>
+<ul>
+<li>Paul Schuette brought the attention of the group to section 4.i.2.10 of the <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/study-data-technical-conformance-guide-technical-specifications-document">Study Data Technical Conformance Guide - Technical Specification Document</a> and noted that .r and .zip files are listed as acceptable file formats for submissions.</li>
+<li>After some discussion, the WG decided not to use <a href="https://cran.r-project.org/package=pkglite">pkglite</a> to wrap the R code as has been done in previous submissions, but to use .r files for the code. (Note that the FDA is unable to use .R internally.)</li>
+<li>Paul noted that the FDA desires submission materials to be applicable for at least six years after submission. This triggered a discussion about possibility of using .zip files to transmit the proprietary packages, instead of pulling them from public GitHub repos as been done so far.</li>
+<li>In the end, the WG decided to stick with using GitHub repos for Pilot 3 as there is currently no apparent advantage testing the .zip file method at this time.</li>
+<li>Joel Laxama reported that preparations for Pilot 3 are going well, and that a submission using .r files could be made in early September.</li>
+<li>The WG thought it best to wait for the report of Pilot 2 before submitting Pilot 3.</li>
+</ul>
+</section>
+<section id="pilot-4" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-4">Pilot 4</h3>
+<ul>
+<li>Eric reported that thanks to the contributions form the <a href="https://appsilon.com/">Appsilon</a> team significant progress has been made on using both mechanisms for packaging R submissions: Containers and <a href="https://webassembly.org/">Webassembly</a>.</li>
+<li>Appsilon has a prototype submission using <a href="https://podman.io/">Podman</a> container technology working and has confirmed that it does not cause files to be written to the hard-drive.</li>
+<li>Eric and the Appsilon engineers also have a very preliminary prototype of using Webassembly to wrap a small Shiny app working.</li>
+<li>Posit engineers have contributed <a href="https://cran.r-project.org/package=webr">webr</a> expertise.</li>
+<li>Eric is optimistic about having Pilot submissions based on at least one, and possibly both, of these technologies ready by the end of the year.</li>
+</ul>
+<p><strong>Action</strong></p>
+<ul>
+<li>Paul will confer with the proper FDA authorities to determine what preparations need to be undertaken by the FDA to use the Podman containers.</li>
+<li>Eric will invite an Appsilon representative to come to a future meeting of this working group</li>
+</ul>
+</section>
+<section id="july-21-san-jose-state-r-foundation-event" class="level3">
+<h3 class="anchored" data-anchor-id="july-21-san-jose-state-r-foundation-event">July 21 San Jose State R Foundation Event</h3>
+<p>The R Foundation <a href="https://bbsw-tickets.ticketleap.com/summer-r-day2/">SummeR Bay Area R Meetup</a> was held at San Jose State University on July 21. Ning Leng reports that:</p>
+<ul>
+<li>The 50 plus attendees indicated that quite a few Bay Area companies are moving towards using R in preclinical and genomics research.</li>
+<li>Representatives from several small CROs attended the meeting.</li>
+<li>R Consortium recognition was not good among this group.</li>
+</ul>
+<p><strong>Action</strong></p>
+<ul>
+<li>JBR and Ning to discuss what can be done to promote the RC.</li>
+</ul>
+</section>
+<section id="speaking-opportunities" class="level3">
+<h3 class="anchored" data-anchor-id="speaking-opportunities">Speaking Opportunities</h3>
+<ul>
+<li>Eric will submit an abstract to speak about Pilot 3 and Pilot 4 at the <a href="https://bbsw-tickets.ticketleap.com/summer-r-day2/">R/Pharma</a> virtual conference to be held in on October 24 - 26.</li>
+<li>Paul will be presenting at both at the <a href="https://advance.phuse.global/pages/viewpage.action?pageId=70778947">PHUSE/FDA CSS 2023</a> conference on September 18 -20 and the <a href="https://advance.phuse.global/pages/viewpage.action?pageId=70778947">ASA Biopharmaaceutical Section Regulatory-Industry statistics Workshop</a> to be held in Rockville, MD on September 27 - 29 and intends to use the activities of this working group as a case study.</li>
+<li>Ning suggests that it would be very nice if the RC could hold and R Adoption Webinar in the November time frame to describe the Pilot 2 and Pilot 3 submissions.</li>
+</ul>
+<p><strong>Action:</strong></p>
+<ul>
+<li>Paul will check with FDA authorities to see whether it is appropriate for the R Consortium to publicize his speaking opportunities on social media.</li>
+<li>JBR will work with the RC Community development committee to make preparations for the promoting the speaking activities and setting up the webinar.</li>
+</ul>
+<p>The next meeting of the Submissions working group will be at 9AM PST on Friday, September 1st.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-08-04/</guid>
+  <pubDate>Fri, 04 Aug 2023 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2023-07-07</title>
   <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-07-07/index.html</link>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-07-07/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -360,14 +476,15 @@ View Attendee List
 </section>
 
  ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-07-07/index.html</guid>
-  <pubDate>Fri, 07 Jul 2023 07:00:00 GMT</pubDate>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-07-07/</guid>
+  <pubDate>Fri, 07 Jul 2023 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2023-06-02</title>
   <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-06-02/index.html</link>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-06-02/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -438,14 +555,15 @@ View Attendee List
 </section>
 
  ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-06-02/index.html</guid>
-  <pubDate>Fri, 02 Jun 2023 07:00:00 GMT</pubDate>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-06-02/</guid>
+  <pubDate>Fri, 02 Jun 2023 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2023-05-05</title>
   <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-05-05/index.html</link>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-05-05/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -537,14 +655,15 @@ View Attendee List
 </section>
 
  ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-05-05/index.html</guid>
-  <pubDate>Fri, 05 May 2023 07:00:00 GMT</pubDate>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-05-05/</guid>
+  <pubDate>Fri, 05 May 2023 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2023-04-07</title>
   <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-04-07/index.html</link>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-04-07/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -626,7 +745,7 @@ View Attendee List
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rconsortium.github.io/submissions-wg/minutes/2023-04-07/repos.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Proposed Pilot 3 Repo Setup</figcaption>
+<figcaption>Proposed Pilot 3 Repo Setup</figcaption>
 </figure>
 </div></li>
 </ul>
@@ -683,14 +802,15 @@ We might invite another speaker from a pharma company on their experience with R
 </section>
 
  ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-04-07/index.html</guid>
-  <pubDate>Fri, 07 Apr 2023 07:00:00 GMT</pubDate>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-04-07/</guid>
+  <pubDate>Fri, 07 Apr 2023 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2023-03-03</title>
   <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-03-03/index.html</link>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-03-03/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -750,14 +870,15 @@ View Attendee List
 
 
  ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-03-03/index.html</guid>
-  <pubDate>Fri, 03 Mar 2023 08:00:00 GMT</pubDate>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-03-03/</guid>
+  <pubDate>Fri, 03 Mar 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2023-02-03</title>
   <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-02-03/index.html</link>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-02-03/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -866,14 +987,15 @@ View Attendee List
 </section>
 
  ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-02-03/index.html</guid>
-  <pubDate>Thu, 09 Feb 2023 08:00:00 GMT</pubDate>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-02-03/</guid>
+  <pubDate>Thu, 09 Feb 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2023-01-13</title>
   <dc:creator>Eric Nantz</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-01-13/index.html</link>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-01-13/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -958,14 +1080,15 @@ View Attendee List
 </section>
 
  ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-01-13/index.html</guid>
-  <pubDate>Fri, 13 Jan 2023 08:00:00 GMT</pubDate>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-01-13/</guid>
+  <pubDate>Fri, 13 Jan 2023 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2022-12-02</title>
   <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-12-02/index.html</link>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-12-02/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1057,14 +1180,15 @@ View Attendee List
 </section>
 
  ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-12-02/index.html</guid>
-  <pubDate>Fri, 02 Dec 2022 08:00:00 GMT</pubDate>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-12-02/</guid>
+  <pubDate>Fri, 02 Dec 2022 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2022-11-04</title>
   <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-11-04/index.html</link>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-11-04/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1150,14 +1274,15 @@ View Attendee List
 
 
  ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-11-04/index.html</guid>
-  <pubDate>Fri, 04 Nov 2022 07:00:00 GMT</pubDate>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-11-04/</guid>
+  <pubDate>Fri, 04 Nov 2022 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2022-10-07</title>
   <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-10-07/index.html</link>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-10-07/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1245,14 +1370,15 @@ View Attendee List
 </section>
 
  ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-10-07/index.html</guid>
-  <pubDate>Fri, 07 Oct 2022 07:00:00 GMT</pubDate>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-10-07/</guid>
+  <pubDate>Fri, 07 Oct 2022 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2022-09-02</title>
   <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-09-02/index.html</link>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-09-02/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1341,14 +1467,15 @@ View Attendee List
 </section>
 
  ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-09-02/index.html</guid>
-  <pubDate>Fri, 02 Sep 2022 07:00:00 GMT</pubDate>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-09-02/</guid>
+  <pubDate>Fri, 02 Sep 2022 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2022-08-05</title>
   <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-08-05/index.html</link>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-08-05/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1407,14 +1534,15 @@ View Attendee List
 
 
  ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-08-05/index.html</guid>
-  <pubDate>Fri, 05 Aug 2022 07:00:00 GMT</pubDate>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-08-05/</guid>
+  <pubDate>Fri, 05 Aug 2022 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2022-07-01</title>
   <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-07-01/index.html</link>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-07-01/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1491,14 +1619,15 @@ UK: NICE</p>
 </section>
 
  ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-07-01/index.html</guid>
-  <pubDate>Fri, 01 Jul 2022 07:00:00 GMT</pubDate>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-07-01/</guid>
+  <pubDate>Fri, 01 Jul 2022 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2022-06-04</title>
   <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-06-04/index.html</link>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-06-04/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1613,14 +1742,15 @@ View Attendee List
 </section>
 
  ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-06-04/index.html</guid>
-  <pubDate>Sat, 04 Jun 2022 07:00:00 GMT</pubDate>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-06-04/</guid>
+  <pubDate>Sat, 04 Jun 2022 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2022-05-06</title>
   <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-05-06/index.html</link>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-05-06/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1695,14 +1825,15 @@ View Attendee List
 
 
  ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-05-06/index.html</guid>
-  <pubDate>Fri, 06 May 2022 07:00:00 GMT</pubDate>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-05-06/</guid>
+  <pubDate>Fri, 06 May 2022 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2022-03-04</title>
   <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-03-05/index.html</link>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-03-05/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1777,14 +1908,15 @@ View Attendee List
 
 
  ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-03-05/index.html</guid>
-  <pubDate>Fri, 04 Mar 2022 08:00:00 GMT</pubDate>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-03-05/</guid>
+  <pubDate>Fri, 04 Mar 2022 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minutes 2022-02-04</title>
   <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-02-04/index.html</link>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-02-04/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1886,92 +2018,8 @@ View Attendee List
 </section>
 
  ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-02-04/index.html</guid>
-  <pubDate>Fri, 04 Feb 2022 08:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2022-01-07</title>
-  <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-01-07/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>“Phil Bowsher - RStudio”</li>
-<li>“Heidi Curinckx - Johnson &amp; Johnson”</li>
-<li>“Graeme Hickey - BD”</li>
-<li>“Ellis Hughes - GSK”</li>
-<li>“Emily Nguyen - FDA”</li>
-<li>“Jiang Xu - FDA”</li>
-<li>“Steven Hassendinckx”</li>
-<li>“Ning Leng - Genentech”</li>
-<li>“Joseph Rickert - R Consortium”</li>
-<li>“Paul Schuette - FDA”</li>
-<li>“Nan Xiao - Merck”</li>
-<li>“Renping Zhang - FDA”</li>
-<li>“Yilong Zhang - Merck”</li>
-<li>“Tadeusz Lewandowski - Roche”</li>
-<li>“Michael Mayer - RStudio”</li>
-<li>“Eric Nantz - Lilly”</li>
-<li>“Xin Qiu”</li>
-<li>“CG Wang”</li>
-</ul>
-</div>
-</div>
-</div>
-<p>The meeting was recorded and the <a href="https://rstudio.zoom.us/rec/share/O1F_Ylokh-C1dKYqKNxARJiVoMHBZMjVld8UvUbl3rjN1dZ1KMW7xGgRCFNrl1E0.ipxH19MuL4UnB9Hn">video</a> is available with Passcode: g?xb.9fs</p>
-<p>Ning Leng began the meeting by providing a brief summary of recent submission. We received written feedback from the FDA which is available in the submissions repository <a href="https://github.com/RConsortium/submissions-wg/blob/main/Documents/Summary_R_Pilot_Submission.pdf">here</a>. There were a few findings with the pilot:</p>
-<ul>
-<li>A mislableed treatment arm (This is a potential bug)</li>
-<li>A rounding issue</li>
-<li>Table fomatting</li>
-</ul>
-<p>NL noted that our execution team was not able to recreate the rounding issue, and asked PS is it would be possible to for us to look at the FDA code. This is possible, but needs to be cleared with management and may take a couple of weeks,</p>
-<p>Ning and the other members of the submission execution team are looking into these and hope to be able to submit a follow up to Pilot 1 in several weeks. Ning asked if the FDA would be willing to review the resubmission of Pilot 1. PS said that this would be fine.</p>
-<p>The discussion then moved to the contents of Pilot 2. PS noted that with submitting .R files we already met some of the goals we had been planning for Pilot 2.</p>
-<p>To begin the discussion JR asked: what kinds of things have been considered difficult to do in submissions in the past and what could we do that would be impressive from the FDA’s point of view?</p>
-<p>PS suggested package versioning and archival issues</p>
-<p>NL suggested four topics that have come up in previous discussions.</p>
-<ol type="1">
-<li>Package versioning</li>
-<li>Using Docker</li>
-<li>Alternative data formats to sas7bdat</li>
-<li>Shiny</li>
-</ol>
-<p>EN agreed that these were the top issues, and noted that using a container such as Docker would also solve the package versioning.</p>
-<p>PS remarked that doing anything with data formatting is unlikely at this time. Two recent pilots failed to come up with an alternative. This is “not the hill to die on” right now. It is probably an issue that is worthy of broader discussion with other groups such as ASA, DIA, or PHUSE. PS suggested looping in <a href="Heather.Crandall@fda.hhs.gov">Heather Crandall</a> and OBI, <a href="https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/office-business-informatics-obi">the Office of Business Informatics</a>.</p>
-<p>PS also noted that Docker has made changes to licensing so that FDA is not able to play with local installations of Docker. EN said that he was aware of these issues and suggested alternatives such as <a href="https://podman.io/">podman</a> which he believes to be the first candidate to investigate. PS stated that any container technology would have to be approved by IT. He also noted that the FDA is currently using an obsolete version of Docker, and that upgrading to a newer version would have to go through the FDA approval process. Also, the FDA security team will not let containers have access to the hard drive. The group concurred that since getting Docker approved would not be any easier than podman the group should explore this new technology. EN offered to take the lead on this and enter the task into the Kanban board.</p>
-<p>PS suggested that since we have just shown that we can get a package through the gateway, the next step might be to turn a shiny app into a package and pass it through the gateway. EN confirmed that this is indeed possible and noted that the <a href="https://cran.r-project.org/package=golem">golem</a> package can do this and deploy the shiny app locally without having to go to a server.</p>
-<p>YZ noted that he has seen several <a href="https://www.linkedin.com/search/results/content/?keywords=shiny%20submissions&amp;sid=aye&amp;update=urn%3Ali%3Afs_updateV2%3A(urn%3Ali%3Aactivity%3A6879137760716886016%2CBLENDED_SEARCH_FEED%2CEMPTY%2CDEFAULT%2Cfalse)">linkedin posts</a> about using Shiny for submissions and asked if that was happening in this group. PB stated that this Shiny submissions effort is being run by the R/Pharma group. They are planning to start holding monthly meeting, the first being at the end of January. R/Pharma wants to focus on the technical issues.</p>
-<p>The group agreed that the path forward with Shiny as a package is much more straightforward than using containers, and suggested that we settle on Shiny for Pilot 2 and Containers for Pilot 3.</p>
-<p>The discussion then turned on which Shiny app we should select. TD suggested the teal package that Roche is working on and noted that Roche is planning to make this open source. The group agreed that the source code of any Shiny package submitted should be open source.</p>
-<p>At 30:03 into the video, TL demonstrated the teal package. After the demo, the group discussed the benefits of submitting a complicated package like teal which has several interesting features versus a simple app that meets the basic requirements. PS noted that ideally we would want to launch server from a local PC and not touch a server. To do otherwise would require the FDA to involve a special contractor and funding. The group decided to use a simple app and NL suggested wrapping the Pilot 1 modules into a Shiny app.</p>
-<p>At 46:15 into the video, TL demonstrates calling different packages from a Shiny app.</p>
-<p>EN agreed to open up a second repo for development of Pilot 2. We will keep use the same setup as Pilot 1 and have the kanban board on the main submissions repo point to the Pilot 2 repo.</p>
-<p>JR said that he would follow up with PHUSE about work they may be doing on the formatting issue.</p>
-<p>NL asked about <a href="https://www.accumulus.org/">accumulus synergy</a>, an FDA and cross industry looking at cloud solutions. Would there be a way to connect our container effort with accumulus? The group suggested searching for a contact.</p>
-<p>JR noted that before the next submission of Pilot 1 we must write to the FDA to reopen the gateway.</p>
-<p>The next meeting of the working group will be at 9AM Pacific Time Friday, February 4, 2022.</p>
-
-
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-01-07/index.html</guid>
-  <pubDate>Fri, 07 Jan 2022 08:00:00 GMT</pubDate>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-02-04/</guid>
+  <pubDate>Fri, 04 Feb 2022 05:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
