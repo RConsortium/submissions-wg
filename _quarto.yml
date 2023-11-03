@@ -1,6 +1,5 @@
 project:
   type: website
-  output-dir: docs
 
 website:
   title: "R Submissions Working Group"
@@ -39,3 +38,6 @@ format:
       dark: darkly
     css: styles.css
     toc: true
+    
+execute: 
+  freeze: auto
