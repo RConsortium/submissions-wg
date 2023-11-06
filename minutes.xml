@@ -10,7 +10,85 @@
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Fri, 06 Oct 2023 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 03 Nov 2023 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2023-11-03</title>
+  <dc:creator>Joseph Rickert</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-11-03/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Minutes prepared by Joseph Rickert and Joel Laxamana.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Ben Straub (GSK)</li>
+<li>Dadong Zhang (Illumina)</li>
+<li>Eric Nantz (Eli Lilly)</li>
+<li>HyeSoo Cho (FDA)</li>
+<li>Jizu Zhi (FDA)</li>
+<li>Joel Laxamana (Roche/Genentech)</li>
+<li>Kaushal Shah</li>
+<li>Nan Xiao (Merck)</li>
+<li>Paul Schuette (FDA)</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Saghir Bashir (Argenx)</li>
+<li>Sam Parmar (Pfizer)</li>
+<li>Joseph Rickert (ProCogia)</li>
+<li>Ismael Alejandro Rodriguez Rodriguez (Appsilon)</li>
+<li>Yilong Zhang (Meta)</li>
+<li>YounKyeong Chang</li>
+</ul>
+</div>
+</div>
+</div>
+<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/5kFrV4r2DWK1aHHozPu0k8fu_66jV4IRlVsWoEgrnyocLF8ki-KBswB6wBEcBQmm.-txYArp2uGa7KpZp?startTime=1699027425000">video</a> is available.</p>
+<section id="fdasa-presentation" class="level3">
+<h3 class="anchored" data-anchor-id="fdasa-presentation">FDASA Presentation</h3>
+<ul>
+<li>The FDASA would like to invite the R Consortium to present at their meeting on December 11, 2023 (3 to 4:30PM ET).</li>
+<li>However the FDASA would like to extend an informal invitation rather than formally sponsor the event which would require administrative approvals</li>
+<li>The RC would still be able to advertise that Paul and HyeSoo are speaking</li>
+<li>The RC would conduct the event which is expected to attract at least 200 of the approximately 400 FDASA participants.</li>
+<li>Registration of the event is not required</li>
+<li>The RC can also invite the general public to attend. (JBR will confer with Ning and Eric about doing this.)</li>
+<li>JBR will s=send an invitation to the event, which should include the abstract, to Paul to be used to invite FDASA members to the event through internal channels.</li>
+</ul>
+</section>
+<section id="pilot-3" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-3">Pilot 3</h3>
+<p>HeySoo and Paul provide some preliminary comments regarding their evaluation of Pilot 3. An extensive discussion starts approximately 12 minutes into the video recording.</p>
+<ul>
+<li>The ADRG states that Pilot 3 was uses R 4.2.3. However, FDA may test using different R versions. (i.e.&nbsp;one reviewer using Rv4.2.1 and other using Rv4.2.3). There are at least two kinds of workstations used by FDA reviewers. Reviewers with “scientific workstations” may have administrative privileges and be able to install R. Users on other “regulatory” workstations will most likely use the version of R installed by IT.</li>
+<li>The Pilot 3 package didn’t install using renv::install() when using Rv4.2.1, but did install when the reviewer was using Rv4.2.3.</li>
+<li>The submissions programs which process ADaM data were not updated to match the file adam-pilot-3.xlsx which was included in the submission.</li>
+<li>Reviewers were able to update the file name. When they did so the adsl.r ran fine.</li>
+<li>Do not include notes to change the path to source data file in the ADRG steps. Instead, keep a note open to advise reviewers that they “should change the source data path to the location where the data was downloaded from the EDR”.</li>
+<li>The submission documentation should include the version of the Microsoft operating system used along with the the version of the RStudio IDE used.</li>
+<li>Sponsors using proprietary software also encounter Operating system issues. There may also be issues with respect to a difference in the size and power of the computers used by the sponsors and those available to the FDA reviewers.</li>
+<li>There may be problems if file names using upper case letters are used in submissions. The FDA technical conformance guide specifies the use of lower case letters.</li>
+</ul>
+<p>The next meeting of the Submissions WG will be held at 9AM Pacific Time on Friday, December 8, 2023.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-11-03/index.html</guid>
+  <pubDate>Fri, 03 Nov 2023 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2023-10-06</title>
   <dc:creator>Joseph Rickert</dc:creator>
@@ -1891,115 +1969,6 @@ View Attendee List
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-03-05/index.html</guid>
   <pubDate>Fri, 04 Mar 2022 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2022-02-04</title>
-  <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-02-04/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>“Phil Bowsher - RStudio”</li>
-<li>“Heidi Curinckx - Johnson &amp; Johnson”</li>
-<li>“Graeme Hickey - BD”</li>
-<li>“Ellis Hughes - GSK”</li>
-<li>“Emily Nguyen - FDA”</li>
-<li>“Jiang Xu - FDA”</li>
-<li>“Steven Hassendinckx”</li>
-<li>“Ning Leng - Genentech”</li>
-<li>“Joseph Rickert - R Consortium”</li>
-<li>“Paul Schuette - FDA”</li>
-<li>“Nan Xiao - Merck”</li>
-<li>“Renping Zhang - FDA”</li>
-<li>“Yilong Zhang - Merck”</li>
-<li>“Tadeusz Lewandowski - Roche”</li>
-<li>“Michael Mayer - RStudio”</li>
-<li>“Eric Nantz - Lilly”</li>
-<li>“Xin Qiu - Johnson &amp; Johnson”</li>
-<li>“CG Wang”</li>
-<li>“Michael Blanks - Beigene”</li>
-<li>“Gregory Chem - MSD”</li>
-<li>“Hey Soo Choo - FDA”</li>
-<li>“Bob Engle - Biogen”</li>
-<li>“Bella Feng - EQRx”</li>
-<li>“Miram Fossati - Merck”</li>
-<li>“Ryan Johnson - RStudio”</li>
-<li>“Christopher Kania - Biogen”</li>
-<li>“Shannon Lewis - Beigene”</li>
-<li>“Eli Miller - Atorus”</li>
-<li>“Jonathan Tisack - Beigene”</li>
-<li>“Shiva Kalyan Voruganti”</li>
-<li>“Hong Yan - Regeneron”</li>
-<li>“Patruchi”</li>
-</ul>
-</div>
-</div>
-</div>
-<p>The meeting was recorded and the <a href="https://rstudio.zoom.us/rec/share/szar9nFQH0BF-BOn134TSLzfGH6n4VOJP8iibLdHnqgluDC7PAPn6C3sg0TiyLHg.b97ETbrhnfYgr3Wb?startTime=1643994263000">video</a> (Passcode: &amp;nET4J?I) is available.</p>
-<p>JR began the meeting and asked NL to give an overview of the GitHub repositories for the Submissions WG. Every submission will have two repositories: a development repo and a repo that follows the FDA ECTD structure that contains the files that will go through the gateway.</p>
-<ul>
-<li><a href="https://github.com/RConsortium/submissions-wg">submissions-wg</a> is he umbrella repo that contains the <a href="https://github.com/RConsortium/submissions-wg/projects/2">kanban board</a> for the project.</li>
-<li><a href="https://github.com/RConsortium/submissions-pilot1">submissions-pilot1</a> is the development repository for the Pilot 1 submission</li>
-<li><a href="https://github.com/RConsortium/submissions-pilot1-to-fda">submission-pilot1-to-fda</a> contains the only the files that will go to the FDA</li>
-<li><a href="https://github.com/RConsortium/submissions-pilot2">submissions-pilot2</a> is the development repo for Pilot 2</li>
-<li>[https://github.com/RConsortium/submissions-pilot2]</li>
-</ul>
-<p>The group then summarized the present status of the project. The Pilot 1 submission of last year was mostly successful but the FDA response flagged a couple of problem areas: * An apparent but the resulted in column labels being switched * An unexplained rounding discrepancy in a p-value may be due to different operating systems. * Several good practice issues to address</p>
-<p>HSC who helped to conduct the FDA review of the Pilot 1 submission offered to share the code that flagged the rounding error. She will enter it as an issue on the submissions repo.</p>
-<p>The Pilot 1 team has been working on the Pilot 1 resubmission. The team will will review the FDA code and test it on multiple operating systems. They expect to be able to resubmit in a couple of weeks. NL asked if HSC could look over the new code before they do so. Assuming that the resubmission goes well the group will prepare a blog for posting on the RC blog.</p>
-<p>NL then reviewed plans of the Pilot 2 shiny submission. It is envisioned as a simple four tab Shiny app that contains the same analyses as the previous submission. The plan is to use the Roche teal framework because of its filtering structure.</p>
-<p>YZ then outlined work required to complete the Pilot 2 work and identified three dependencies:</p>
-<ol type="1">
-<li>teal must become open source</li>
-<li>The scope of Pilot 2 needs to be clarified</li>
-<li>A template needs to be developed for submission documentation that includes a Shiny app.</li>
-</ol>
-<p>YZ recommended that a separate Pilot 2 documentation team be formed to work on the Shiny documentation in parallel with the code development for Pilot 2.</p>
-<p>EN said that he had experience preparing this sort of documentation and agreed to lead the documentation task.</p>
-<p>JR asked when teal would become open source and whether the fact that it is not now open source prohibiting other companies from contributing to the project. TL responded that project to open source teal is currently with the Roche lawyers and that he expects it will be complete within three months. No one present believed that not currently having teal as open source code was prohibiting participation. Everyone will be able to run the Shiny app from a public website. EN noted that work on infrastructure can proceed in parallel.</p>
-<p>The team working on Pilot 2 said that a submission in Q2 is feasible.</p>
-<p>Currently there are not plans for multiple Pilot 2 submissions. However, it is likely that we would want to have a submission in the future that includes a more complicated Shiny app. JR noted that it would be optimal if the FDA could provide guidance on what features they would like to see in a more robust Shiny app.</p>
-<p>Moving beyond Shiny JR asked if by the end of the year we would be looking a submission based on container technology. EN remarked that that is the direction the group would like to see but since Docker is not suitable (because of licensing issues) it will be necessary to research alternative container technology.</p>
-<p>JR noted that having 29 people in the meeting indicated that there was considerable industry interest in the work being done and whether it would be possible to recruit a team to do the research for long range projects. He asked group members who are not involved in immediate work to get involved in long term planning. EN noted that we definitely need to help from the regulatory side to help effect any changes that would have to be made to make use of container technology.</p>
-<p>The discussion then turned to the possibility of making a submission to <a href="https://credevo.com/articles/2021/02/25/china-drug-registration-process/">CDE</a> the Chinese health authority. (See issue <a href="https://github.com/RConsortium/submissions-wg/issues/62">#62</a> ) They are trying their own submissions gateway. They have shared validation software with Roche that could check a submission. NL suggested that we undertake an effort to see if we could validate a test submission using the Chinese supplied software. If that worked the only additional work to be done to make a viable submission to the CDE would be to translate the documentation into Chinese.</p>
-<p>NL asked if anyone has contacts with the CDE that could review a test submission from the Submissions WG. JR asked EN if she could check with PS about possible FDA contacts with the CDE.</p>
-<p>BF noted that her company, EQRx, has the opposite problem. They have had a compound approved by the CEA and now want to submit it to the FDA. She noted that there are high level regulations about the transfer of data between China and the FDA. The CDE has an HGR application that must be approved by the Human Genetic Resources Agency for China. HY offered that she has some experience dealing with the CDE, having done two or three submissions to the CED in the past when she worked for Novartis. At that time the CDE accepted the FDA package.</p>
-<p>The discussion they turned to other countries HY noted that she is working on a submission to the Japanese <a href="https://www.pmda.go.jp/english/about-pmda/index.html">PMDA</a> which the group aggreed is more strict than the CDE an offered to look for a contact there.</p>
-<p>YL noted that the German authorities have strict requirements about the table formats.</p>
-<p>JR asked if there is there is a European authority that we should have on our radar. Apparently, the EMA does not presently require a data submission, but that may be changing. TL noted that they have had a proof of concept sharing data with the EMA.</p>
-<p>YL also raised the possibility of following the <a href="https://advance.phuse.global/display/WEL/Analysis+Data+Reviewer%27s+Guide+%28ADRG%29+Package">PHUSE ADGR</a> template. He suggested that we contact PHUSE and ask if they would be willing to update the template so that it does not specify SAS data sets. JR agreed to look for a contact within PHUSE. We would want a language agnostic template.</p>
-<p>NL noted that this would be a good time to revisit our effort to develop suggested language for section 14 (<a href="https://github.com/RConsortium/submissions-wg/issues/38">issue #38</a>).</p>
-<p>JR suggested that we need some high level planning document to capture all of the ideas presented.</p>
-<p>At 47:10 in the video NL explains the contents of the Submission WG GI Hub sites.</p>
-<section id="some-useful-links-from-the-chat-box" class="level3">
-<h3 class="anchored" data-anchor-id="some-useful-links-from-the-chat-box">Some useful links from the chat box</h3>
-<p>R Consortium GitHub sites: https://github.com/RConsortium/</p>
-<p>WG web page: https://rconsortium.github.io/submissions-wg/</p>
-<p>Tracker for the pilot1 submission: https://github.com/RConsortium/submissions-pilot1-to-fda/issues</p>
-<p>https://github.com/RConsortium/submissions-wg/issues/38</p>
-<p>Issue filed for pilot 2 documentation : https://github.com/RConsortium/submissions-wg/issues/63</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-02-04/index.html</guid>
-  <pubDate>Fri, 04 Feb 2022 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
