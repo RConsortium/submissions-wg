@@ -1,0 +1,54 @@
+---
+title: "Minutes 2023-11-03"
+date: 2023-11-03
+---
+
+Minutes prepared by Joseph Rickert and Joel Laxamana.
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Ben Straub (GSK)
+- Dadong Zhang (Illumina)
+- Eric Nantz (Eli Lilly)
+- HyeSoo Cho (FDA)
+- Jizu Zhi (FDA)
+- Joel Laxamana (Roche/Genentech)
+- Kaushal Shah
+- Nan Xiao (Merck)
+- Paul Schuette (FDA)
+- Robert Devine (Johnson & Johnson)
+- Saghir Bashir (Argenx)
+- Sam Parmar (Pfizer)
+- Joseph Rickert (ProCogia)
+- Ismael Alejandro Rodriguez Rodriguez (Appsilon)
+- Yilong Zhang (Meta)
+- YounKyeong Chang
+:::
+
+The meeting was recorded and the [video](https://zoom.us/rec/share/5kFrV4r2DWK1aHHozPu0k8fu_66jV4IRlVsWoEgrnyocLF8ki-KBswB6wBEcBQmm.-txYArp2uGa7KpZp?startTime=1699027425000) is available.
+
+### FDASA Presentation
+
+* The FDASA would like to invite the R Consortium to present at their meeting on December 11, 2023 (3 to 4:30PM ET).
+* However the FDASA would like to extend an informal invitation rather than formally sponsor the event which would require administrative approvals
+* The RC would still be able to advertise that Paul and HyeSoo are speaking
+* The RC would conduct the event which is expected to attract at least 200 of the approximately 400 FDASA participants.
+* Registration of the event is not required
+* The RC can also invite the general public to attend. (JBR will confer with Ning and Eric about doing this.)
+* JBR will s=send an invitation to the event, which should include the abstract, to Paul to be used to invite FDASA members to the event through internal channels.
+
+### Pilot 3
+
+HeySoo and Paul provide some preliminary comments regarding their evaluation of Pilot 3. An extensive discussion starts approximately 12 minutes into the video recording.
+
+* The ADRG states that Pilot 3 was uses R 4.2.3. However, FDA may test using different R versions. (i.e. one reviewer using Rv4.2.1 and other using Rv4.2.3). There are at least two kinds of workstations used by FDA reviewers. Reviewers with "scientific workstations" may have administrative privileges and be able to install R. Users on other "regulatory" workstations will most likely use the version of R installed by IT.
+* The Pilot 3 package didn't install using renv::install() when using Rv4.2.1, but did install when the reviewer was using Rv4.2.3.
+* The submissions programs which process ADaM data were not updated to match the file adam-pilot-3.xlsx which was included in the submission.
+* Reviewers were able to update the file name. When they did so the adsl.r ran fine.
+* Do not include notes to change the path to source data file in the ADRG steps. Instead, keep a note open to advise reviewers that they "should change the source data path to the location where the data was downloaded from the EDR".
+* The submission documentation should include the version of the Microsoft operating system used along with the the version of the RStudio IDE used.
+* Sponsors using proprietary software also encounter Operating system issues. There may also be issues with respect to a difference in the size and power of the computers used by the sponsors and those available to the FDA reviewers.
+* There may be problems if file names using upper case letters are used in submissions. The FDA technical conformance guide specifies the use of lower case letters.
+
+The next meeting of the Submissions WG will be held at 9AM Pacific Time on Friday, December 8, 2023.
