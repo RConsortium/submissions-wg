@@ -1,0 +1,64 @@
+---
+title: "Minutes 2023-12-01"
+date: 2023-12-01
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Ben Straub (GSK)
+- YounKyeong Chang (FDA)
+- Eric Nantz (Eli Lilly)
+- HyeSoo Cho (FDA)
+- Jizu Zhi (FDA)
+- Joel Laxamana (Roche/Genentech)
+- Joseph Rickert (R Consortium)
+- Nan Xiao (Merck)
+- Ning Leng (Roche/Genentech)
+- Paul Schuette (FDA)
+- Saghir Bashir (Argenx)
+- Sam Parmar (Pfizer)
+- Steven Hasendinckx (Johnson & Johnson)
+:::
+
+The meeting was recorded and screen sharing in the [video](https://zoom.us/rec/share/rE68tBPpnjdwl0RhevCYKDzq-FA7Z0kla1dSbHixZXZ9jHzoe4Kud-6Mc3r4-PKd.25fRPYZYgN0MzxxU?startTime=1701450234000) provides information about the FDA review of Pilot 3 which is in progress.
+
+JBR began the meeting the meeting with a reminder that the meeting is to be conducted in compliance with the Antitrust laws.
+
+### Pilot 3
+
+YounKyeong Chang of the FDA provided and update on he ongoing FDA review.
+
+* Able to generate identical data sets with the code provided, but there were some minor corrections and issues.
+ *  Incorrect folder name in adlvc.r
+ *  After switching to R.4.2.3, code in ADRG installed pilotutils package instead of pilot3 package. Switching to from R 4.3.1 to R 4.2.3 resolved the problem.
+* There was an extensive discussion about missing values.
+ *  The CDISC standard indicates missing values with blanks, and depending on the variable type SAS may also use blanks for missing values. However, R encodes missing values as "NA".
+ *  Decision made to convert missing values to NA when using R, but provide an option to use blanks for analysts using SAS. However, the FDA does not yet have an SOP for this.
+ * A paragraph will be added to the ADRG to explain that SAS users should convert NAs to blanks.
+ * The ADaM datasets in Pilot 3 where run through [Pinnacle 21](https://www.lexjansen.com/pharmasug/2019/DS/PharmaSUG-2019-DS-119.pdf) without error.
+ * the WG should reach out to CDISC to see if they will modify their standard to accommodate R.
+ * **Action** Ning and Joel will prepare a statement to communicate with CDISC.
+ * Sharing of the details of any FDA findings, such as as those discussed in the meeting, require clearance
+ * Some minor differences were observed in how SAS and R interpreted data types.
+ * The FDA will try to evaluate the submission outputs by next month's meeting
+ * The WG agreed that after the evaluation of Pilot 3 is completed, it would be interesting to do a Pilot 3B submission using .zip instead of `pkglite` as was used in Pilots 1 and 2. Paul said that in light of the FDA requirement to keep submission materials for 6 years this would provide an alternative for long term preservation of the submission materials.
+* The FDA will make a decision whether an additional Pilot 3 submission to correct the problems identified so far is necessary after they have completed their evaluation.
+ 
+### Pilot 4
+
+Eric Nantz provide a status update on Pilot 4
+
+* Pilot 4 will take the approach of submitting as a .zip archive.
+* An issue is that the default behavior of `WebR` is to install a special version of some commonly used R packages that are optimized for `WebR`.
+* We would like to include these special `WebR` binaries in the submission bundle in order to improve performance.
+* Because the binaries are not executable without a WebAssembly process running, the WG believes these binaries wold not violate the FDA requirement of not including executables.
+
+### Events
+
+* Eric, Hyesoo, and Paul will be presenting on December 11 in a Webinar that will be broadcast within the FDA as well as available to the public. Ning will lead a panel discussion afterwards.
+* The webinar *The use of R in Japan’s Pharma Industry* is scheduled for January 8, 2024.
+* Gregory Chen will be presenting the WGs work in person at Department of Clinical Assessment for Market Authorization at Swiss medic in January
+
+The next meeting will take place at 9AM St on Friday, January 5, 2025. **Action:** JBR will issue a new set of calendar invitations for 2024. Stay  tuned for details.
+ 
