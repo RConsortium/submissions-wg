@@ -1,0 +1,75 @@
+---
+title: "Minutes 2024-01-05"
+date: 2024-01-05
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Ben Straub (GSK)
+- Dadong Zhang (Illumina)
+- Eva Li
+- Heidi Curinckx (Johnson & Johnson)
+- HyeSoo Cho (FDA)
+- Joseph Rickert (R Consortium)
+- Margaret Wishart
+- Nan Xiao (Merck)
+- Ning Leng (Roche/Genentech)
+- Paul Schuette (FDA)
+- Robert Devine (Johnson & Johnson)
+- Saghir Bashir (Argenx)
+- Sam Parmar (Pfizer)
+- Steven Hasendinckx (Johnson & Johnson)
+- Youn Kyeong Chang
+:::
+
+The meeting was recorded and the [video](https://zoom.us/rec/share/S3CjidPqOBSwSHo7xW3VUu_aUXKS9RdB3rNb07hWWkeyze5SthawUq5I8gnzQ2th.kpiljMfkqrlkuUJf?startTime=1704474237000) is available.
+
+
+## Pilot 3
+
+HyeSoo presented an update on the continuing FDA evaluation of Pilot 3. 
+
+* Using the R generated ADaM data sets, the FDA reviewers were able to replicate the results of the demographic, efficacy, primary and KM plot analyses
+
+* The reviewers compared the results of the four analyses between Pilot 1 and Pilot 3.
+  * Primary output in Pilot 3 was different from the Pilot 1 result due to the QC findings
+  * QC findings in ADRG include all of the discrepancies between the original ADaM datasets
+  * The discrepancies in ADADAS data sets cause different primary analyses outputs
+  * This is an issue from the CDISC ADADAS
+  * It is not clear which CDISC file, the file from Pilot 1 or the file from Pilot 3, is correct.
+  
+The following figure compares the Pilot 1 and Pilot 3 primary output. Discrepancies are highlighted.
+
+![Comparison of Primary outputs](output_compare.png)
+Additional FDA questions included:
+
+* Why is there an indication in the output of LOCF, "Last observation carried forward" when the original data set had no missing data?
+* There was no statistical analysis plan included in the submission.
+* **Action:** Ben Straub will confer with the Pilot 3 team to answer these questions and review the discrepancy problems between Pilots 1 and 3.
+* **Action:** Paul and HyeSoo will discuss whether we need to resubmit Pilot 3
+The next meeting of the working group will be on Friday, February 2, 2024 at 9AM Pacific Time.
+* All agreed that if a resubmission of Pilot 3 is required, we will consider submitting via a .zip file.
+
+
+There was some discussion about what we could do to improve the quality control of our submissions. 
+
+* The group agreed that we should have a check list to compare items against a Pilot 1 source of truth.
+* We should have additional reviewers who are not close to the work.
+* The idea of using AI tools to check consistency was mentioned.
+
+## Upcoming Webinar
+
+On Monday at 7PM PST Rikimaru Nishimura and Yuki Matsunaga will present a webinar on The Adoption of R in Japan’s Pharma Industry Confirmation. Look [here](https://www.r-consortium.org/r-adoption-series-the-adoption-of-r-in-japans-pharma-industry-confirmation) for details and information on how to register. 
+
+* Ning noted that Yuki expressed an interest in collaborating with the R Consortium. 
+* **Action:** we will set up a meeting with the Japanese team after the meeting.
+
+## PharmaSUG
+
+* JBR mentioned that it is an R Consortium goal for 2024 to make the opportunity for as many speaking engagements as possible.
+* Ben mentioned that [PharmaSUG 2024](https://www.pharmasug.org/us/index.html) is coming up in May,
+* **Action:** Ben volunteered to submit an abstract by the January 15 deadline. Ning will provide Ben with some copy used for a previous abstract.
+
+
+The next meeting of the working group will be at 9AM PST on Friday, February 2, 2024.
