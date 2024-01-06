@@ -1,191 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://rconsortium.github.io/submissions-wg/pilot4.html</loc>
-    <lastmod>2023-12-12T16:59:48.114Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/pilot1.html</loc>
-    <lastmod>2023-12-12T16:59:47.166Z</lastmod>
-  </url>
-  <url>
     <loc>https://rconsortium.github.io/submissions-wg/pilot2.html</loc>
-    <lastmod>2023-12-12T16:59:46.166Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-07-07/index.html</loc>
-    <lastmod>2023-12-12T16:59:45.042Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-11-03/index.html</loc>
-    <lastmod>2023-12-12T16:59:43.242Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-10-06/index.html</loc>
-    <lastmod>2023-12-12T16:59:41.462Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-04-01/index.html</loc>
-    <lastmod>2023-12-12T16:59:39.666Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-10-07/index.html</loc>
-    <lastmod>2023-12-12T16:59:37.946Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-06-04/index.html</loc>
-    <lastmod>2023-12-12T16:59:36.266Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-06-02/index.html</loc>
-    <lastmod>2023-12-12T16:59:34.514Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-12-01/index.html</loc>
-    <lastmod>2023-12-12T16:59:32.902Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2021-09-03/index.html</loc>
-    <lastmod>2023-12-12T16:59:31.142Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2021-04-05/index.html</loc>
-    <lastmod>2023-12-12T16:59:29.482Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-11-04/index.html</loc>
-    <lastmod>2023-12-12T16:59:27.898Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-05-06/index.html</loc>
-    <lastmod>2023-12-12T16:59:25.698Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-09-02/index.html</loc>
-    <lastmod>2023-12-12T16:59:23.878Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-03-03/index.html</loc>
-    <lastmod>2023-12-12T16:59:22.038Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-04-07/index.html</loc>
-    <lastmod>2023-12-12T16:59:20.282Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-08-05/index.html</loc>
-    <lastmod>2023-12-12T16:59:18.106Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-07-01/index.html</loc>
-    <lastmod>2023-12-12T16:59:16.390Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2021-05-07/index.html</loc>
-    <lastmod>2023-12-12T16:59:14.494Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/about.html</loc>
-    <lastmod>2023-12-12T16:59:12.694Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/dev_background.html</loc>
-    <lastmod>2023-12-12T16:59:11.866Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/index.html</loc>
-    <lastmod>2023-12-12T16:59:10.646Z</lastmod>
+    <lastmod>2024-01-06T01:15:15.258Z</lastmod>
   </url>
   <url>
     <loc>https://rconsortium.github.io/submissions-wg/faq.html</loc>
-    <lastmod>2023-12-12T16:59:11.566Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/pilot3.html</loc>
-    <lastmod>2023-12-12T16:59:12.206Z</lastmod>
+    <lastmod>2024-01-06T01:15:14.670Z</lastmod>
   </url>
   <url>
     <loc>https://rconsortium.github.io/submissions-wg/minutes_prep.html</loc>
-    <lastmod>2023-12-12T16:59:13.290Z</lastmod>
+    <lastmod>2024-01-06T01:15:13.606Z</lastmod>
   </url>
   <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2021-08-06/index.html</loc>
-    <lastmod>2023-12-12T16:59:15.510Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2021-12-03/index.html</loc>
-    <lastmod>2023-12-12T16:59:17.286Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2021-02-05/index.html</loc>
-    <lastmod>2023-12-12T16:59:18.942Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-02-04/index.html</loc>
-    <lastmod>2023-12-12T16:59:21.230Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-05-05/index.html</loc>
-    <lastmod>2023-12-12T16:59:23.082Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-01-07/index.html</loc>
-    <lastmod>2023-12-12T16:59:24.790Z</lastmod>
+    <loc>https://rconsortium.github.io/submissions-wg/pilot3.html</loc>
+    <lastmod>2024-01-06T01:15:12.334Z</lastmod>
   </url>
   <url>
     <loc>https://rconsortium.github.io/submissions-wg/minutes/2021-06-04/index.html</loc>
-    <lastmod>2023-12-12T16:59:26.474Z</lastmod>
+    <lastmod>2024-01-06T01:15:11.334Z</lastmod>
   </url>
   <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-03-05/index.html</loc>
-    <lastmod>2023-12-12T16:59:28.710Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2021-03-05/index.html</loc>
-    <lastmod>2023-12-12T16:59:30.326Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2021-01-15/index.html</loc>
-    <lastmod>2023-12-12T16:59:32.010Z</lastmod>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-12-01/index.html</loc>
+    <lastmod>2024-01-06T01:15:09.614Z</lastmod>
   </url>
   <url>
     <loc>https://rconsortium.github.io/submissions-wg/minutes/2021-11-05/index.html</loc>
-    <lastmod>2023-12-12T16:59:33.730Z</lastmod>
+    <lastmod>2024-01-06T01:15:08.022Z</lastmod>
   </url>
   <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-08-04/index.html</loc>
-    <lastmod>2023-12-12T16:59:35.402Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-12-02/index.html</loc>
-    <lastmod>2023-12-12T16:59:37.086Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-09-01/index.html</loc>
-    <lastmod>2023-12-12T16:59:38.846Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2020-12-04/index.html</loc>
-    <lastmod>2023-12-12T16:59:40.410Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-01-13/index.html</loc>
-    <lastmod>2023-12-12T16:59:42.366Z</lastmod>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-05-05/index.html</loc>
+    <lastmod>2024-01-06T01:15:06.438Z</lastmod>
   </url>
   <url>
     <loc>https://rconsortium.github.io/submissions-wg/minutes/2021-10-01/index.html</loc>
-    <lastmod>2023-12-12T16:59:44.034Z</lastmod>
+    <lastmod>2024-01-06T01:15:04.818Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-05-06/index.html</loc>
+    <lastmod>2024-01-06T01:15:03.146Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-08-04/index.html</loc>
+    <lastmod>2024-01-06T01:15:01.462Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-10-07/index.html</loc>
+    <lastmod>2024-01-06T01:14:59.674Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-04-07/index.html</loc>
+    <lastmod>2024-01-06T01:14:58.138Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-02-04/index.html</loc>
+    <lastmod>2024-01-06T01:14:56.358Z</lastmod>
   </url>
   <url>
     <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-02-03/index.html</loc>
-    <lastmod>2023-12-12T16:59:45.874Z</lastmod>
+    <lastmod>2024-01-06T01:14:54.734Z</lastmod>
   </url>
   <url>
-    <loc>https://rconsortium.github.io/submissions-wg/pilot_background.html</loc>
-    <lastmod>2023-12-12T16:59:46.474Z</lastmod>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-07-07/index.html</loc>
+    <lastmod>2024-01-06T01:14:53.074Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-11-04/index.html</loc>
+    <lastmod>2024-01-06T01:14:51.518Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-09-02/index.html</loc>
+    <lastmod>2024-01-06T01:14:49.790Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2021-09-03/index.html</loc>
+    <lastmod>2024-01-06T01:14:48.078Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-06-02/index.html</loc>
+    <lastmod>2024-01-06T01:14:46.494Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2021-01-15/index.html</loc>
+    <lastmod>2024-01-06T01:14:44.910Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-03-05/index.html</loc>
+    <lastmod>2024-01-06T01:14:43.122Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/index.html</loc>
+    <lastmod>2024-01-06T01:14:41.442Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/about.html</loc>
+    <lastmod>2024-01-06T01:14:40.870Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/dev_background.html</loc>
+    <lastmod>2024-01-06T01:14:39.842Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/pilot4.html</loc>
+    <lastmod>2024-01-06T01:14:41.158Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2021-12-03/index.html</loc>
+    <lastmod>2024-01-06T01:14:42.306Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-08-05/index.html</loc>
+    <lastmod>2024-01-06T01:14:44.034Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-07-01/index.html</loc>
+    <lastmod>2024-01-06T01:14:45.758Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-12-02/index.html</loc>
+    <lastmod>2024-01-06T01:14:47.334Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-01-07/index.html</loc>
+    <lastmod>2024-01-06T01:14:48.946Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-06-04/index.html</loc>
+    <lastmod>2024-01-06T01:14:50.702Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-03-03/index.html</loc>
+    <lastmod>2024-01-06T01:14:52.302Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-09-01/index.html</loc>
+    <lastmod>2024-01-06T01:14:53.922Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-11-03/index.html</loc>
+    <lastmod>2024-01-06T01:14:55.506Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2021-05-07/index.html</loc>
+    <lastmod>2024-01-06T01:14:57.214Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2021-02-05/index.html</loc>
+    <lastmod>2024-01-06T01:14:58.882Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-10-06/index.html</loc>
+    <lastmod>2024-01-06T01:15:00.590Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2023-01-13/index.html</loc>
+    <lastmod>2024-01-06T01:15:02.302Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2021-08-06/index.html</loc>
+    <lastmod>2024-01-06T01:15:03.942Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2021-03-05/index.html</loc>
+    <lastmod>2024-01-06T01:15:05.642Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2022-04-01/index.html</loc>
+    <lastmod>2024-01-06T01:15:07.274Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2020-12-04/index.html</loc>
+    <lastmod>2024-01-06T01:15:08.826Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2024-01-05/index.html</loc>
+    <lastmod>2024-01-06T01:15:10.478Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/minutes/2021-04-05/index.html</loc>
+    <lastmod>2024-01-06T01:15:11.994Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/pilot1.html</loc>
+    <lastmod>2024-01-06T01:15:13.042Z</lastmod>
   </url>
   <url>
     <loc>https://rconsortium.github.io/submissions-wg/minutes.html</loc>
-    <lastmod>2023-12-12T16:59:47.862Z</lastmod>
+    <lastmod>2024-01-06T01:15:14.318Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rconsortium.github.io/submissions-wg/pilot_background.html</loc>
+    <lastmod>2024-01-06T01:15:14.962Z</lastmod>
   </url>
 </urlset>
