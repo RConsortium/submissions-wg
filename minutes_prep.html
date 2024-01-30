@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -22,7 +22,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -81,7 +81,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -90,6 +96,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -109,9 +116,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">R Submissions Working Group</span>
     </a>
@@ -123,51 +130,51 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./minutes.html" rel="" target="">
- <span class="menu-text">Meeting Minutes</span></a>
+    <a class="nav-link" href="./minutes.html"> 
+<span class="menu-text">Meeting Minutes</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-pilots" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-pilots" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Pilots</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-pilots">    
         <li>
-    <a class="dropdown-item" href="./pilot_background.html" rel="" target="">
+    <a class="dropdown-item" href="./pilot_background.html">
  <span class="dropdown-text">Background</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./pilot1.html" rel="" target="">
+    <a class="dropdown-item" href="./pilot1.html">
  <span class="dropdown-text">R Submission Pilot 1</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./pilot2.html" rel="" target="">
+    <a class="dropdown-item" href="./pilot2.html">
  <span class="dropdown-text">R Submission Pilot 2</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./pilot3.html" rel="" target="">
+    <a class="dropdown-item" href="./pilot3.html">
  <span class="dropdown-text">R Submission Pilot 3</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./pilot4.html" rel="" target="">
+    <a class="dropdown-item" href="./pilot4.html">
  <span class="dropdown-text">R Submission Pilot 4</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-site-development" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-site-development" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Site Development</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-site-development">    
         <li>
-    <a class="dropdown-item" href="./dev_background.html" rel="" target="">
+    <a class="dropdown-item" href="./dev_background.html">
  <span class="dropdown-text">Development Guide</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./minutes_prep.html" rel="" target="">
+    <a class="dropdown-item" href="./minutes_prep.html">
  <span class="dropdown-text">Minutes Draft Gen</span></a>
   </li>  
     </ul>
@@ -175,15 +182,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/RConsortium/submissions-wg" rel="" target=""><i class="bi bi-github" role="img" aria-label="GitHub Site">
+    <a class="nav-link" href="https://github.com/RConsortium/submissions-wg"> <i class="bi bi-github" role="img" aria-label="GitHub Site">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -206,7 +213,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes_prep.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes_prep.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -226,7 +233,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
+
 </header>
+
 
 <section id="instructions" class="level1">
 <h1>Instructions</h1>
@@ -390,9 +399,8 @@ Warning
 </section>
 
 </main> <!-- /main -->
-
 <script type="ojs-module-contents">
-{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"viewof meeting_date = Inputs.date({\n  label: \"Meeting Date\",\n  value: \"2023-02-01\"\n})\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"\nmeeting_year = (meeting_date.getFullYear()).toString()\nmeeting_month = (meeting_date.getMonth() + 1).toString().padStart(2, \"0\")\nmeeting_day = (meeting_date.getDate() + 1).toString().padStart(2, \"0\")\n\nmeeting_array = [meeting_year, meeting_month, meeting_day]\nmeeting_print = meeting_array.join(\"-\")\n"},{"methodName":"interpret","cellName":"ojs-cell-3","inline":false,"source":"data2 = transpose(people_data)\n"},{"methodName":"interpret","cellName":"ojs-cell-4","inline":false,"source":"viewof people_selection = Inputs.table(data2, {\n  sort: \"name\",\n  multiple: true,\n  rows: 40,\n  required: false\n})\n"},{"methodName":"interpret","cellName":"ojs-cell-5","inline":false,"source":"meeting_print\n"},{"methodName":"interpret","cellName":"ojs-cell-6","inline":false,"source":"silly = html`${Array.from(new Set(people_selection.map(c => c.name2)))\n.sort()\n.map(c => `- ${c}`)\n.join(\"\\n\")}`\n\nsilly2 = html`<pre>---\ntitle: \"Minutes ${meeting_print}\"\ndate: ${meeting_print}\n---\n\n::: {.callout-tip collapse=\"true\"}\n## View Attendee List\n\n${silly}:::\n\n## Add Minutes Here\n\n</pre>`\n"},{"methodName":"interpret","cellName":"ojs-cell-7","inline":false,"source":"silly2\n"},{"methodName":"interpretQuiet","source":"shinyInput('meeting_date')"},{"methodName":"interpretQuiet","source":"shinyInput('people_selection')"}]}
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiBtZWV0aW5nX2RhdGUgPSBJbnB1dHMuZGF0ZSh7XG4gIGxhYmVsOiBcIk1lZXRpbmcgRGF0ZVwiLFxuICB2YWx1ZTogXCIyMDIzLTAyLTAxXCJcbn0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTIiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJcbm1lZXRpbmdfeWVhciA9IChtZWV0aW5nX2RhdGUuZ2V0RnVsbFllYXIoKSkudG9TdHJpbmcoKVxubWVldGluZ19tb250aCA9IChtZWV0aW5nX2RhdGUuZ2V0TW9udGgoKSArIDEpLnRvU3RyaW5nKCkucGFkU3RhcnQoMiwgXCIwXCIpXG5tZWV0aW5nX2RheSA9IChtZWV0aW5nX2RhdGUuZ2V0RGF0ZSgpICsgMSkudG9TdHJpbmcoKS5wYWRTdGFydCgyLCBcIjBcIilcblxubWVldGluZ19hcnJheSA9IFttZWV0aW5nX3llYXIsIG1lZXRpbmdfbW9udGgsIG1lZXRpbmdfZGF5XVxubWVldGluZ19wcmludCA9IG1lZXRpbmdfYXJyYXkuam9pbihcIi1cIilcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImRhdGEyID0gdHJhbnNwb3NlKHBlb3BsZV9kYXRhKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC00IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoidmlld29mIHBlb3BsZV9zZWxlY3Rpb24gPSBJbnB1dHMudGFibGUoZGF0YTIsIHtcbiAgc29ydDogXCJuYW1lXCIsXG4gIG11bHRpcGxlOiB0cnVlLFxuICByb3dzOiA0MCxcbiAgcmVxdWlyZWQ6IGZhbHNlXG59KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC01IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoibWVldGluZ19wcmludFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC02IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoic2lsbHkgPSBodG1sYCR7QXJyYXkuZnJvbShuZXcgU2V0KHBlb3BsZV9zZWxlY3Rpb24ubWFwKGMgPT4gYy5uYW1lMikpKVxuLnNvcnQoKVxuLm1hcChjID0+IGAtICR7Y31gKVxuLmpvaW4oXCJcXG5cIil9YFxuXG5zaWxseTIgPSBodG1sYDxwcmU+LS0tXG50aXRsZTogXCJNaW51dGVzICR7bWVldGluZ19wcmludH1cIlxuZGF0ZTogJHttZWV0aW5nX3ByaW50fVxuLS0tXG5cbjo6OiB7LmNhbGxvdXQtdGlwIGNvbGxhcHNlPVwidHJ1ZVwifVxuIyMgVmlldyBBdHRlbmRlZSBMaXN0XG5cbiR7c2lsbHl9Ojo6XG5cbiMjIEFkZCBNaW51dGVzIEhlcmVcblxuPC9wcmU+YFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC03IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoic2lsbHkyXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ21lZXRpbmdfZGF0ZScpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdwZW9wbGVfc2VsZWN0aW9uJykifV19
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
@@ -443,6 +451,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -511,13 +546,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -596,10 +633,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -609,8 +645,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -623,6 +668,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -666,6 +830,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -691,6 +856,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -754,4 +945,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes_prep.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
