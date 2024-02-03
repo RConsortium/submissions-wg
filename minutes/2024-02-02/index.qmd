@@ -1,0 +1,117 @@
+---
+title: "Minutes 2024-02-02"
+date: 2024-02-02
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+-   Dadong Zhang (Illumina)
+-   Eric Nantz (Eli Lilly)
+-   Eva Li
+-   Gregory Chen (MSD)
+-   HyeSoo Cho (FDA)
+-   Jizu Zhi (FDA)
+-   Joel Laxamana (Roche/Genentech)
+-   Joseph Rickert (R Consortium)
+-   Kaushal Shah (ASU)
+-   Nan Xiao (Merck)
+-   Ning Leng (Roche/Genentech)
+-   Paul Schuette (FDA)
+-   Renping Zhang (Johnson & Johnson)
+-   Robert Devine (Johnson & Johnson)
+-   Saghir Bashir (Argenx)
+-   Sam Parmar (Pfizer)
+-   Youn Kyeong Chang (FDA)
+:::
+
+The meeting was recorded and the [video](https://zoom.us/rec/share/dtAH375BZFxiI7SK8H5aciRvsd-8YSpCoNiUduKf9xppCitN80J2N2fZrG6A6m4V.g0LkTMFG35sCXuXj?startTime=1706893431000) is available.
+
+## Pilot 3
+
+Hye Soo Cho presented a summary of the findings of the from the FDA review
+
+-   Different versions of R and RStudio
+    -   There were issues switching between R versions
+    -   The FDA would like the wg to explore the impact of different versions of R,RStudio and RTools
+    -   Also Linux vs. Windows
+-   Differences between generated Pilot 2 ADaM and CDISC data sets
+    -   attributes
+    -   types (e.g. integer vs. double)
+    -   NA vs. NULL
+-   Package and file names
+    -   Incorrect package name (pilot3utils)
+    -   File name change (Pilot 3.xlsx to adam-pilot-3.xlsx)
+-   File path
+    -   The location of a director was specified using relative file path
+    -   Recommendation: use full path name
+-   Different primary output in Pilot 1 and Pilot 3
+    -   There are discrepancies between Pilot 3 ADaM and CDISC datasets
+    -   Discrepancies are noted in QC findings in ADRG
+
+There was considerable discussion about the challenges of dealing with different R versions and establishing a Windows test environment to test a submission before transmitting it to the FDA.
+
+-   The idea of setting up a gold standard windows test environment was considered but reject as beginning impractical. The actual FDA environment changes frequently because of hot fixes addressing security concerns.
+-   It appears that the most practical path forward as to what preemptive measures sponsors can take to match submission environments with the FDA test environment is to work with the FDA to lock down the environment as best as can be done just prior to submission.
+-   An interesting note: Paul mentioned that the FDA no longer pushes the idea of last observation carried forward for imputations. They favor exploring multiple imputation methods.
+
+**Actions:**
+
+-   The FDA will consider the implications of what was discussed today and decide if we are ready to resubmit Pilot 3 by the next meeting in March. The submission will use the .zip approach.
+-   Joel agreed to speak with Eric about establishing an automated way to set up a container running a "vanilla" Windows test environment. **Note:** in a series of private email conversations after the meeting Robert Devine volunteered his expertise to work with Eric and Joel to set up the windows environment.
+
+
+## Pilot 4
+
+Eric provided a brief update on Pilot 4.
+
+-   He will convene the Pilot 4 team to test the Webassembly submission,
+-   The submission should be ready by mid March.
+-   We will decide on an actual submission date in March.
+-   Eric will invite the Appsilon engineers who have be providing assistance on the project to one of our meetings as we get closer to the submission.
+-   The container version of the Pilot 4 submission will coordinate with the FDA to make arrangements for working with containers.
+
+## Presentation to Swiss Medic
+
+On January 30, Gregory Chen presented the activities of our working group in person to an audience 15 people at the [swissmedic](https://www.swissmedic.ch/swissmedic/en/home.html) regulatory agency and 50 people online. Gregory's slides are in the [github repository](https://github.com/RConsortium/submissions-wg/tree/main/_Documents). He summarized the discussion that took place after his presentation.
+
+* The swissmedic audience was very interested in the use of Shiny for the Pilot 2 submission and would like to work with the R Consortium to explore the possibility of doing something similar at swissmedic. They discussed two possible ways to proceed:
+  1. A Pilot 2 like project
+  2. Having sponsors set up a cloud environment
+* The swissmedic audience said that they would prefer an industry collaborative effort rather than a vendor specific solution.
+* The were interested in learning about the resources the FDA allocated to the Pilot 2 and * asked about creating Shiny applications for market authorization.
+* The WG was excited about the possibility of collaborating with swissmedic
+* However, after some discussion it was decided that this opportunity should be pursued by
+a new working group devoted to swissmedic.
+* We should also find out if swissmedic has discussed these ideas with the EMA.
+
+**Action:** 
+
+* JBR will work figure out how best to recruit members for a new working group focused on swissmedic.
+* This should include a call to the industry to identify people with European connections who could lead this effort.
+
+The next meeting of the working group will be at 9AM PST on Friday, March 1, 2024,
+
+
+
+
+
+### Abstract for Gregory's Presentation
+
+[Name of presenter]{.underline}: Gregory Chen
+
+[Affiliation]{.underline}: MSD, Switzerland; R Submission Working group (R Consortium)
+
+[Brief introduction of the working group]{.underline}:
+
+The R submission working group is a cross-industry working group in pharma, focusing on improving practices of R-based clinical trial regulatory submissions. Our mission is to make R-based clinical trial regulatory submissions easier today and tomorrow by
+
+1.  showing open examples of using current submission portals,
+
+2.  collecting feedback and influencing future industry and agency decisions on system/process setup
+
+[Title]{.underline}: R and Shiny in regulatory submission
+
+[Abstract]{.underline}:
+
+In recent years, statisticians and analysts from both industry and regulatory agencies have increased adoption of open-source software such as R. Compared to other statistical programming languages, R brought great benefit from its vibrant open-source community, providing a wealth of cutting-edge statistical tools and adaptability to the latest data science trends. Particularly, R shiny provided great flexibility and interactivity to increase data scientists productivity and make it easier to extract insights or review through massive statistical outputs. To test the concept that R language and shiny app can be bundled into a submission package and transferred successfully to FDA reviewers, the R Submission Working group (R Consortium) successfully completed two pilot submissions to FDA fully in R, and received CDER response letters ([pilot 1,](https://www.r-consortium.org/blog/2021/12/08/successful-r-based-test-package-submitted-to-fda) [pilot 2](https://www.r-consortium.org/announcement/2023/10/05/shiny-app-successfully-reviewed-by-fda-cder-staff-pilot-2-announcement-2)). To our knowledge, these are the first publicly available submission packages that include components of open-source languages. In this talk, we will introduce R consortium, particularly its Submission Working group, and the completed pilot 1 and 2.
