@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Joseph Rickert">
-<meta name="dcterms.date" content="2021-09-03">
+<meta name="dcterms.date" content="2024-03-30">
 
-<title>R Submissions Working Group - Minutes 2021-09-03</title>
+<title>R Submissions Working Group - Minutes 2024-03-01</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -161,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Minutes 2021-09-03</h1>
+      <h1 class="title">Minutes 2024-03-01</h1>
                       </div>
   </div>
     
@@ -178,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 3, 2021</p>
+        <p class="date">March 30, 2024</p>
       </div>
     </div>
     
@@ -190,7 +190,26 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#plot-3-update" id="toc-plot-3-update" class="nav-link active" data-scroll-target="#plot-3-update">Plot 3 Update</a>
+  <ul class="collapse">
+  <li><a href="#fda-recommendation" id="toc-fda-recommendation" class="nav-link" data-scroll-target="#fda-recommendation">FDA Recommendation</a></li>
+  </ul></li>
+  <li><a href="#pilot-3-update" id="toc-pilot-3-update" class="nav-link" data-scroll-target="#pilot-3-update">Pilot 3 Update</a></li>
+  <li><a href="#rmedicine" id="toc-rmedicine" class="nav-link" data-scroll-target="#rmedicine">R/Medicine</a></li>
+  <li><a href="#user-2024" id="toc-user-2024" class="nav-link" data-scroll-target="#user-2024">UseR! 2024</a></li>
+  <li><a href="#pilot-4-update" id="toc-pilot-4-update" class="nav-link" data-scroll-target="#pilot-4-update">Pilot 4 update</a>
+  <ul class="collapse">
+  <li><a href="#immediate-plans" id="toc-immediate-plans" class="nav-link" data-scroll-target="#immediate-plans">Immediate Plans</a></li>
+  </ul></li>
+  <li><a href="#the-submission-environmnt-setup" id="toc-the-submission-environmnt-setup" class="nav-link" data-scroll-target="#the-submission-environmnt-setup">The Submission Environmnt Setup</a></li>
+  <li><a href="#swissmedic-wg" id="toc-swissmedic-wg" class="nav-link" data-scroll-target="#swissmedic-wg">Swissmedic WG</a></li>
+  <li><a href="#next-meeting" id="toc-next-meeting" class="nav-link" data-scroll-target="#next-meeting">Next Meeting</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2024-03-01/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -212,59 +231,85 @@ View Attendee List
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
-<li>“Christopher Kania - Biogen”</li>
-<li>“Doug Kelkhoff - Genentech”</li>
-<li>“Ning Leng - Genentech”</li>
-<li>“Tadeusz Lewandowski - Roche”</li>
-<li>“Eli Miller - Atorus”</li>
-<li>“Eric Nantz - Lilly”</li>
-<li>“Joseph Rickert - R Consortium”</li>
-<li>“Paul Schuette - FDA”</li>
-<li>“Kevin Snyder - FDA”</li>
-<li>“Mike Stackhouse - Atorus”</li>
-<li>“Ben Staub - GSK”</li>
-<li>“Adrian Waddell - Roche”</li>
-<li>“Nan Xiao - Merck”</li>
-<li>“Jiang Xu - FDA”</li>
-<li>“Renping Zhang - FDA”</li>
-<li>“Yilong Zhang - Merck”</li>
-<li>“Jizu Zhi - FDA”</li>
+<li>Eric Nantz (Eli Lilly)</li>
+<li>Heidi Curinckx (Johnson &amp; Johnson)</li>
+<li>HyeSoo Cho (FDA)</li>
+<li>Jizu Zhi (FDA)</li>
+<li>Joel Laxamana (Roche/Genentech)</li>
+<li>Joseph Rickert (JBR) (R Consortium)</li>
+<li>Lovemore Gakava (Novo Nordisk)</li>
+<li>Nan Xiao (Merck)</li>
+<li>Nicholas Masel (JRDUS)</li>
+<li>Ning Leng (Roche/Genentech)</li>
+<li>Paul Schuette (FDA)</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Saghir Bashir (Argenx)</li>
+<li>Sam Parmar (Pfizer)</li>
+<li>Youn Kyeong Chang (FDA)</li>
 </ul>
+<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/_n7MWF0l4R5FsccL4GzRrzXUoGOCXwxQqQuY4Pu2CqF0_DX9xMmpYUoxREA92uX-.m3O3hPqvxfZKyws4?startTime=1709312595000">video</a> is available.</p>
 </div>
 </div>
 </div>
-<p>Joseph Rickert brought the meeting to order at 9:04 and began the video recording. He mentioned that Eli Miller reported although we do have credentials to use the FDA submissions gateway, these have timed out. Reactivating gateway access requires that I send an email to the FDA help desk. Eli recommends that I wait until we are nearly ready to submit before doing this.</p>
-<p>Next, Ning Leng presented the recently up dated slides describing the R Submissions Pilot. Ning will upload this slides to the repo.</p>
-<p><img src="img/p1.png" height="300" width="500"></p>
-<p>The slides include the working time line for the series of pilot submissions:</p>
+<section id="plot-3-update" class="level2">
+<h2 class="anchored" data-anchor-id="plot-3-update">Plot 3 Update</h2>
+<section id="fda-recommendation" class="level3">
+<h3 class="anchored" data-anchor-id="fda-recommendation">FDA Recommendation</h3>
+<p>HyeSoo stated that the FDA is considering issuing a recommendation that submissions sponsors should use the most recent patch version of the previous minor version of R.</p>
+<p>For example, R versions are organized as V x.y.z where:</p>
 <ul>
-<li>Pilot1: common analysis (Q4 2021 - hopefully Oct/early Nov)</li>
-<li>Pilot2: advanced analysis (Q2 2022)</li>
-<li>Pilot3: alternative formatting for package submission (TBD)</li>
+<li>x is the major version</li>
+<li>y is the minor version or subversion</li>
+<li>z is the patch version</li>
 </ul>
-<p>Timeline for near term work: * 9/30/2021 complete the draft code and documents along with the internal review by the execution team * 10/1 - 10/15 2021: review by the WG * Late Oct: actual submission after adjudication</p>
-<p>The two major asks from the execution team: 1. WG members: provide feedback during the review in Oct 2. FDA: Identify potential reviewers</p>
-<p>Next, there was a discussion about the content of the submission package and terminology. (9:48 in the video). This discussion also contains and explanation of the strategy for encoding the R package as a text file to get it through the gateway and how we will handle package dependencies.</p>
-<p>In our documentation and communication we must be careful to distinguish between the Submission package for the pilot and the R Package containing R code that will be a part of the Submission package. Ning and the team will come up with names for both of these maybe: <em>Pilot1 Submission</em> for the Pilot1 Submission Package. The format for the Submission package will match the folder structure for the submission portal.</p>
-<p>Joe then noted that we now have two R Consortium GitHub repositories associated with the working group. 1. https://github.com/RConsortium/submissions-wg is the primary repository for the working group. The Kanban board project on this repo is what we use to manage the submissions project. 2. The repo https://github.com/RConsortium/submissions-pilot1 is the code development repo for the Pilot1 submission.</p>
-<p>Next, Adrian walked through the status of the tasks on the Kanban Board. (20:19 on the video).</p>
-<p>Joe will write a blog post to describing what the submission team is doing with the intention of getting more pharma companies before the submission. Mike Stackhouse will help with getting it through the PHUSE marketing channels.</p>
-<p>There was a discussion (43:30) about finding an FDA reviewer for the pilot. Paul Schuette took the action item to find someone who will probably be a statistician but not a formally designated FDA reviewer. It was suggested that the criteria for reviewing the pilot submission and the criteria for the success of the project be included in the cover letter.</p>
-<p>Joe asked what would be required to communicate the success of the pilot. Paul stated that formal approval from the FDA would be required for a press release and that the project should be included as part of the FDA’s Technology Modernization Action Plan (T-MAP) and the Data Modernization Action Plan (D-MAP). It would be best to investigate this after we have the proof of concept of the Pilot1.</p>
-<p>In response to the question if eventually we would want to have the pilot reviewed by a formal FDA reviewer, Paul noted that they have several R competent FDA reviewers especially among the new graduates. However, if a reviewer need help they would most likely reach out to the Paul’s group.</p>
-<p>When asked whether would expect reviewers to compare SAS and R results, Paul suggested that we should focus on a limited definition of validation for our first submission.</p>
-<p>When asked whether we should have a future goal of having FDA reviewers to take the code in the submission package and and do further analyses, Paul stated that they can do that now. More interesting would be to have the submission package include a Shiny application for interactive data visualization.</p>
-<p>At the top of the hour Joe asked whether anyone on the call was involved with preparing a presentation about the Submissions project for the upcoming R / Pharma conference. Paul responded that he may be. The FDA is still working out the details of a keynote talk in which Paul will participate. The group extended an offer to help provide material.</p>
-<p>The group agreed to extend the meeting beyond the hour to review Ning’s proposal for language to be added to section 4.1.2.10 of the Study Data Technical Performance Guide. (1:03 on video) Ning suggested adding:</p>
-<blockquote class="blockquote">
-<p><em>Submission of programs with their native file extensions are acceptable, as long as binary file formats and pre-compilde code are not delivered.</em></p>
-</blockquote>
-<p>Paul stated that .bat files need to be excluded. This launched a discussion of how to generalize this. Paul suggested <em>executable</em> but Doug noted that .bat files are executable on Windows but not on other operating systems. Doug took the action to consider how to describe the issue in a more general fashion. Paul expressed the essential idea as “We can open it, we can look at it, but we don’t want it to run.”</p>
-<p>In the final minutes, Adrian asked about not having to submit .txt files. Paul suggested that this would require changes within the Agency, and would probably require getting the suggested changes to 4.1.2.10 passed.</p>
-<p>The next meeting is scheduled for Friday, October 1, 2020. At that meeting we will decide whether we need a special session to provide material for Paul’s presentation.</p>
-<p>The zoom <a href="https://rstudio.zoom.us/rec/share/kBYMvXBfVsouRgM8By0kpPdQh5I8NRWqg68RRUe8rqVxCgsnHol3G6hOjFigqBtL.mp_rW8bsGP83qcEX">video recording</a> is available. Passcode: <code>#Sk!6tXL</code></p>
+<p>The WG members affirmed that a policy of using a proven stable version of R and not the latest version is in accordance with the practices of their respective companies.</p>
+<p>After some thought the working group proposed that since patch versions are issued frequently (every couple of months), it might be better to have the FDA guidance suggest the last patch version of the previous subversion.</p>
+<p>Note that the FDA is considering making a recommendation and not considering setting policy.</p>
+<p><strong>Action:</strong> JBR will confer with Sam, Paul and HyeSoo about the wording of the recommendation and then draft a blog post. The post will go to Paul, HyeSoo, Eric, and Ning for review before being published on the R Consortium Blog.</p>
+</section>
+</section>
+<section id="pilot-3-update" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-3-update">Pilot 3 Update</h2>
+<p>HyeSoo and Joel informed the group that they met last month to resolve the discrepancy between the original CDISC version of the ADADAS ADaM data set and the Pilot 3 version of the ADaM data set. Joel noted that there are 818 available records in the QS domain. The CDISC ADADAS only brought in 799 records and imputed the rest, whereas Pilot 3 brought in all available 818 records into ADADAS and then imputed. When the Pilot 3 team adjusted by subsetting to ANL01FL=‘Y’ records first before doing the LOCF imputation the results matched Pilot 1 and the discrepancy was resolved. Look <a href="https://github.com/RConsortium/submissions-pilot3-adam/pull/146">here</a> for details.</p>
+<p>This issue illustrates the level of detail that the FDA must consider in replicating a sponsor’s submission environment. This particular issue was due to a statistical decision and not an error. Ning pointed out that most of the work in resolving discrepancies over the three Pilot submissions are due to insufficient documentation and inadequate communication and not to differences between SAS and R.</p>
+<p><strong>Action:</strong> Ning and Joe will work on a blog post about this topic.</p>
+</section>
+<section id="rmedicine" class="level2">
+<h2 class="anchored" data-anchor-id="rmedicine">R/Medicine</h2>
+<p>Joel has been invited to give a talk at the upcoming R/Medicine virtual conference which will be held from June 10 to 14. He is deciding whether to give a talk or a workshop.</p>
+</section>
+<section id="user-2024" class="level2">
+<h2 class="anchored" data-anchor-id="user-2024">UseR! 2024</h2>
+<p>The group decided to submit an abstract for useR!2024 which will be held from July 8 to 11 in Salzburg, Austria. the deadline for the CFP is Sunday, 10 March at 11:59 PM CET (UTC+1)</p>
+<p><strong>Action:</strong></p>
+<p>Eric and Ning will draft the abstract.</p>
+</section>
+<section id="pilot-4-update" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-4-update">Pilot 4 update</h2>
+<p>At <strong>38:38</strong> into the video of the meeting, Eric previews the Pilot 4 WebAssembly (Wasm) submission. To be compatible with Wasm, the submission is being built with the <a href="https://appsilon.github.io/rhino/">Rhino</a> framework for shiny which is different from what was used in Pilot 2 but is functionally equivalent. The screen capture below references the compiling the <code>WebR</code> Wasm submission with <code>shinylive</code>.</p>
+<p><img src="pilot4.png" class="img-fluid"> After the build it is necessary to launch a webserver process on your your local setup. The Wasm version of the Shiny app reproduces the <code>teal</code> filters without using teal itself.</p>
+<p><img src="KM.png" class="img-fluid"> The next step is to test the application on the container approximating the FDA Windows environment.</p>
+<section id="immediate-plans" class="level3">
+<h3 class="anchored" data-anchor-id="immediate-plans">Immediate Plans</h3>
+<p>Joel’s team will continue working on Pilot 3 re-submission with the goal of picking a submission date at the April meeting.</p>
+</section>
+</section>
+<section id="the-submission-environmnt-setup" class="level2">
+<h2 class="anchored" data-anchor-id="the-submission-environmnt-setup">The Submission Environmnt Setup</h2>
+<p>Setting up the submission environment is a manual process. The WG would like to automate at lest some of this process to ease the burden of setup and improve repeatability. It would be nice to have a GitHub action workflow that uses containers and runs on Azure. This will be a topic for the next meeting.</p>
+<p><strong>Action:</strong> JBR will promote this task and try to find a company willing to work on it.</p>
+</section>
+<section id="swissmedic-wg" class="level2">
+<h2 class="anchored" data-anchor-id="swissmedic-wg">Swissmedic WG</h2>
+<p>JBR asked the WG for help in identifying Europe-based Pharma employees who might be interested in starting a new working group focused on Swissmedic.</p>
+<p><strong>Action:</strong> Ning will open an issue on this and tag JBR and Gregory.</p>
+</section>
+<section id="next-meeting" class="level2">
+<h2 class="anchored" data-anchor-id="next-meeting">Next Meeting</h2>
+<p>The next meeting of the working group will be on Friday, April 5, 2024 at 9AM PST.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -807,4 +852,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2021-09-03/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2024-03-01/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
