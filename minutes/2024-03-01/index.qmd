@@ -1,0 +1,105 @@
+---
+title: "Minutes 2024-03-01"
+date: 2024-02-30
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Eric Nantz (Eli Lilly)
+- Heidi Curinckx (Johnson & Johnson)
+- HyeSoo Cho (FDA)
+- Jizu Zhi (FDA)
+- Joel Laxamana (Roche/Genentech)
+- Joseph Rickert (JBR) (R Consortium)
+- Lovemore Gakava (Novo Nordisk)
+- Nan Xiao (Merck)
+- Nicholas Masel (JRDUS)
+- Ning Leng (Roche/Genentech)
+- Paul Schuette (FDA)
+- Robert Devine (Johnson & Johnson)
+- Saghir Bashir (Argenx)
+- Sam Parmar (Pfizer)
+- Youn Kyeong Chang (FDA)
+
+The meeting was recorded and the [video](https://zoom.us/rec/share/_n7MWF0l4R5FsccL4GzRrzXUoGOCXwxQqQuY4Pu2CqF0_DX9xMmpYUoxREA92uX-.m3O3hPqvxfZKyws4?startTime=1709312595000) is available.
+ 
+:::
+
+## Plot 3 Update
+
+### FDA Recommendation
+
+HyeSoo stated that the FDA is considering issuing a recommendation that submissions sponsors should use the most recent patch version of the previous minor version of R.
+
+For example, R versions are organized as V x.y.z where:
+
+* x is the major version
+* y is the minor version or subversion 
+* z is the patch version
+
+The WG members affirmed that a policy of using a proven stable version of R and not the latest version is in accordance with the practices of their respective companies.
+
+After some thought the working group proposed that since patch versions are issued frequently (every couple of months), it might be better to have the FDA guidance suggest the last patch version of the previous subversion.
+
+
+Note that the FDA is considering making a recommendation and not considering setting policy.
+
+
+**Action:**
+JBR will confer with Sam, Paul and HyeSoo about the wording of the recommendation and then draft a blog post. The post will go to Paul, HyeSoo, Eric, and Ning for review before being published on the R Consortium Blog.
+
+## Pilot 3 Update
+
+HyeSoo and Joel informed the group that they met last month to resolve the discrepancy between the original CDISC version of the ADADAS ADaM data set and the Pilot 3 version of the ADaM data set. Joel noted that there are 818 available records in the QS domain. The CDISC ADADAS only brought in 799 records and imputed the rest, whereas Pilot 3 brought in all available 818 records into ADADAS and then imputed. When the Pilot 3 team adjusted by subsetting to ANL01FL='Y' records first before doing the LOCF imputation the results matched Pilot 1 and the discrepancy was resolved. Look [here](https://github.com/RConsortium/submissions-pilot3-adam/pull/146) for details.
+
+
+This issue illustrates the level of detail that the FDA must consider in replicating a sponsor's submission environment. This particular issue was due to a statistical decision and not an error. Ning pointed out that most of the work in resolving discrepancies over the three Pilot submissions are due to insufficient documentation and inadequate communication and not to differences between SAS and R.
+
+**Action:**
+Ning and Joe will work on a blog post about this topic.
+
+
+## R/Medicine
+
+Joel has been invited to give a talk at the upcoming R/Medicine virtual conference which will be held from June 10 to 14. He is deciding whether to give a talk or a workshop.
+
+
+## UseR! 2024
+The group decided to submit an abstract for useR!2024 which will be held from July 8 to 11 in Salzburg, Austria. the deadline for the CFP is Sunday, 10 March at 11:59 PM CET (UTC+1)
+
+**Action:**
+
+Eric and Ning will draft the abstract.
+
+## Pilot 4 update
+
+At **38:38** into the video of the meeting, Eric previews the Pilot 4 WebAssembly (Wasm) submission. To be compatible with Wasm, the submission is being built with the [Rhino](https://appsilon.github.io/rhino/) framework for shiny which is different from what was used in Pilot 2 but is functionally equivalent. The screen capture below references the compiling the `WebR` Wasm submission with `shinylive`.
+
+![](pilot4.png)
+After the build it is necessary to launch a webserver process on your your local setup. The Wasm version of the Shiny app reproduces the `teal` filters without using teal itself.
+
+![](KM.png)
+The next step is to test the application on the container approximating the FDA Windows environment.
+
+### Immediate Plans
+
+Joel's team will continue working on Pilot 3 re-submission with the goal of picking a submission date at the April meeting.
+
+
+
+## The Submission Environmnt Setup
+
+Setting up the submission environment is a manual process. The WG would like to automate at lest some of this process to ease the burden of setup and improve repeatability. It would be nice to have a GitHub action workflow that uses containers and runs on Azure. This will be a topic for the next meeting. 
+
+**Action:**
+JBR will promote this task and try to find a company willing to work on it.
+
+## Swissmedic WG
+JBR asked the WG for help in identifying Europe-based Pharma employees who might be interested in starting a new working group focused on Swissmedic.
+
+**Action:**
+Ning will open an issue on this and tag JBR and Gregory.
+
+## Next Meeting
+The next meeting of the working group will be on Friday, April 5, 2024 at 9AM PST. 
