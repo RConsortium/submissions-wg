@@ -2,10 +2,46 @@
 title: "R Submission Pilot 4"
 ---
 
-## Pilot 4 - Alternative submission formats
+**Goal**: Utilized alternative methods of distributing a self-contained submission bundle of the Pilot 2 Shiny application with container and web-assebly technologies.
 
-**Goal**: Utilized alternative methods of distributing a self-contained submission bundle with container technology.
+**Key evaluation aspects**:
 
-::: {.callout-warning}
-This page is under construction. More information is forthcoming!
-:::
+- For Submitter
+  - Generation of a reproducible execution environment containing both the system and R-specific dependencies using [Podman](https://podman.io/) as the container runtime.
+  - Generation of a web-assembly version of the Pilot 2 Shiny application (with small modifications) that can be executed in an existing R process running a web server using the `{httpuv}` R package
+  - Preparation of submission materials with detailed instructions on setting up the execution environments
+- For FDA Staff
+  - Reproduce the ability to use the Shiny application by building the specific Podman container and viewing the web-assembly version of the application using the Edge internet browser.
+
+**Timeline**: Targeting a first submission in Q2 2024
+
+**Data and analysis scope**:
+
+- A shiny app that replicates most of the functionality from the [pilot 2]((https://github.com/RConsortium/submissions-pilot2-to-fda)), with small modifications to account for the web-assembly constraints.
+- Simulated data from CDISC Pilot (the same data set as in pilot 1)
+
+**Links**:
+
+[R Submission Pilot 4 Container Development Repository](https://github.com/Appsilon/experimental-fda-submission-4-podman)
+
+[R Submission Pilot 4 Web-Assembly App Repository](https://github.com/RConsortium/submissions-pilot4-webR)
+
+**Key team members**
+
+Developer team:
+
+- Eric Nantz (Eli Lilly)
+- Sam Parmar (Pfizer)
+- Pedro Silva (Appsilon)
+- Ismael Rodgriguez (Appsilon)
+- Andre Verissimo (Appsilon)
+- Robert Devine (J&J)
+- Nate Mockler (Biogen)
+- Andrew Borgman (Bristol Myers Squibb)
+- Ben Straub (GSK)
+
+FDA Staff:
+
+- Paul Schutte
+- Hye Soo Cho
+
