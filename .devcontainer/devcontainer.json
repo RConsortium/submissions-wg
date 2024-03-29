@@ -7,7 +7,12 @@
 	"service": "vscode",
 
 	"features": {
-		"fish": "latest"
+		"ghcr.io/rocker-org/devcontainer-features/pandoc:1": {},
+		"ghcr.io/meaningful-ooo/devcontainer-features/fish:1": {},
+		"ghcr.io/guiyomh/features/vim:0": {},
+		"ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
+				"version": "latest"
+		}
 	},
 
 	// Set *default* container specific settings.json values on container create.
