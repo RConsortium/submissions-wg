@@ -1,6 +1,6 @@
 ---
-title: "Minutes 24-04-05"
-date: 24-04-05
+title: "Minutes 2024-04-05"
+date: 2024-04-05
 ---
 
 ::: {.callout-tip collapse="true"}
