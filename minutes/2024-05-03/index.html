@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Joseph Rickert">
+<meta name="dcterms.date" content="2024-05-03">
 
-<title>R Submissions Working Group - R Submission Pilot 2</title>
+<title>R Submissions Working Group - Minutes 2024-05-03</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,17 +72,17 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">R Submissions Working Group</span>
     </a>
   </div>
@@ -91,11 +93,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./minutes.html"> 
+    <a class="nav-link" href="../../minutes.html"> 
 <span class="menu-text">Meeting Minutes</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -104,23 +106,23 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-pilots">    
         <li>
-    <a class="dropdown-item" href="./pilot_background.html">
+    <a class="dropdown-item" href="../../pilot_background.html">
  <span class="dropdown-text">Background</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./pilot1.html">
+    <a class="dropdown-item" href="../../pilot1.html">
  <span class="dropdown-text">R Submission Pilot 1</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./pilot2.html">
+    <a class="dropdown-item" href="../../pilot2.html">
  <span class="dropdown-text">R Submission Pilot 2</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./pilot3.html">
+    <a class="dropdown-item" href="../../pilot3.html">
  <span class="dropdown-text">R Submission Pilot 3</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./pilot4.html">
+    <a class="dropdown-item" href="../../pilot4.html">
  <span class="dropdown-text">R Submission Pilot 4</span></a>
   </li>  
     </ul>
@@ -131,11 +133,11 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-site-development">    
         <li>
-    <a class="dropdown-item" href="./dev_background.html">
+    <a class="dropdown-item" href="../../dev_background.html">
  <span class="dropdown-text">Development Guide</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./minutes_prep.html">
+    <a class="dropdown-item" href="../../minutes_prep.html">
  <span class="dropdown-text">Minutes Draft Gen</span></a>
   </li>  
     </ul>
@@ -156,7 +158,35 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Minutes 2024-05-03</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Joseph Rickert </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">May 3, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -164,65 +194,125 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#pilot-2---shiny-submission" id="toc-pilot-2---shiny-submission" class="nav-link active" data-scroll-target="#pilot-2---shiny-submission">Pilot 2 - shiny submission</a></li>
+  <li><a href="#discussion-of-recently-revealed-r-vulnerability" id="toc-discussion-of-recently-revealed-r-vulnerability" class="nav-link active" data-scroll-target="#discussion-of-recently-revealed-r-vulnerability">Discussion of Recently Revealed R Vulnerability</a></li>
+  <li><a href="#pilot-3" id="toc-pilot-3" class="nav-link" data-scroll-target="#pilot-3">Pilot 3</a></li>
+  <li><a href="#pilot-4" id="toc-pilot-4" class="nav-link" data-scroll-target="#pilot-4">Pilot 4</a></li>
+  <li><a href="#adrg-standard" id="toc-adrg-standard" class="nav-link" data-scroll-target="#adrg-standard">ADRG Standard</a></li>
+  <li><a href="#recording-chat-file-contents" id="toc-recording-chat-file-contents" class="nav-link" data-scroll-target="#recording-chat-file-contents">Recording Chat File Contents</a></li>
+  <li><a href="#next-meeting" id="toc-next-meeting" class="nav-link" data-scroll-target="#next-meeting">Next Meeting</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/pilot2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2024-05-03/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">R Submission Pilot 2</h1>
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="pilot-2---shiny-submission" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-2---shiny-submission">Pilot 2 - shiny submission</h2>
-<p><strong>Goal</strong>: Example R based submission contains a shiny app, submission through the current FDA e-submission system and process</p>
-<p><strong>Key evaluation aspects</strong>:</p>
+<div class="callout-title-container flex-fill">
+View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <ul>
-<li>For Submitter
-<ul>
-<li>Submission of an shiny app through the eCTD portal</li>
-<li>The shiny codes will be provided as a proprietary R package</li>
-</ul></li>
-<li>For FDA Reviewer
-<ul>
-<li>Reproduce analysis results by deploying the shiny app on a FDA laptop/server</li>
-</ul></li>
+<li>Eric Nantz (Eli Lilly)</li>
+<li>Heidi Curinckx (Johnson &amp; Johnson)</li>
+<li>HyeSoo Cho (FDA)</li>
+<li>Jizu Zhi (FDA)</li>
+<li>Joel Laxamana (Roche/Genentech)</li>
+<li>Joseph Rickert (R Consortium)</li>
+<li>Nan Xiao (Merck)</li>
+<li>Ning Leng (Roche/Genentech)</li>
+<li>Paul Schuette (FDA)</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Sam Parmar (Pfizer)</li>
+<li>Lovemore Gakava</li>
+<li>Youn Kyeong Chang</li>
 </ul>
-<p><strong>Timeline</strong>: 2022 H1</p>
-<p><strong>Data and analysis scope</strong>:</p>
+</div>
+</div>
+</div>
+<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/YuB7-UBwkP_Dw0Ix5ofjyQEcjKF4RhbNOOyU3PqPZxRHoc0vL8NRKvPX8uUQrnrJ.BLkOTmt3skY8CjSG?startTime=1714752223000">video</a> is available</p>
+<section id="discussion-of-recently-revealed-r-vulnerability" class="level2">
+<h2 class="anchored" data-anchor-id="discussion-of-recently-revealed-r-vulnerability">Discussion of Recently Revealed R Vulnerability</h2>
 <ul>
-<li>a shiny app that displays the 4 TLFs submitted in <a href="(https://github.com/RConsortium/submissions-pilot1-to-fda)">pilot 1</a>, with basic data set filtering functionalities.</li>
-<li>Simulated data from CDISC Pilot (the same data set as in pilot 1)</li>
+<li>The working group spent a few moments discussing the recently raveled vulnerability in R as reported in <a href="https://www.darkreading.com/application-security/r-programming-language-exposes-orgs-to-supply-chain-risk">Dark Reading</a> and <a href="https://aitap.github.io/2024/05/02/unserialize.html">other online</a> sites and discussed in this <a href="https://infosec.exchange/@median_headroom/112361657419172154">infosec exchange</a>.</li>
+<li>The working group that the incident highlights the need for caution in accepting serialized objects just as one ought to be careful about clicking on any link from an untrusted source.</li>
+<li>It was noted that our pilot submissions do not directly transmit data sets.</li>
+<li>JBR noted that he has heard the R Foundation is working on an official statement about the incident and that the R Consortium will draw attention to it when it is available.</li>
+<li>The working group agreed that the incident should be viewed as an “overdue wake up call” and.</li>
+<li>JBR suggested that this might we a good time to see if we could attract R users with security expertise to the R Consortium.</li>
+<li>Eric suggested Bob Rudis and and posted this <a href="https://rud.is/b/2024/05/03/cve-2024-27322-should-never-have-been-assigned-and-r-data-files-are-still-super-risky-even-in-r-4-4-0/?subscribe=success#subscribe-blog-blog_subscription-6">link</a> to a relevant post.</li>
 </ul>
-<p><strong>Links</strong>:</p>
-<p><a href="https://github.com/RConsortium/submissions-pilot2">R Submission Pilot 2 Development Repo</a></p>
-<p><a href="https://github.com/RConsortium/submissions-pilot2-to-fda">R Submission Pilot 2 eCTD Submission Package to FDA</a></p>
-<p><strong>Key team members</strong>:</p>
-<p>Developer team:<br>
-- Ning Leng, Heng Wang (Roche)<br>
-- Mike Stakehouse, Eli Miller (Atorus)<br>
-- Yilong Zhang, Gregery Chen (Merck)<br>
-- Eric Nantz (Eli Lilly)</p>
-<p>FDA Staff:<br>
-- Paul Schuette<br>
-- Hye Soo Cho</p>
+<p><strong>Action:</strong> JBR to investigate the possibility of a security focused working group.</p>
+</section>
+<section id="pilot-3" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-3">Pilot 3</h2>
+<ul>
+<li>Pilot 3 was resubmitted on April 19, 2024 under BLA application number 111111 sequence 0007</li>
+<li>HyeSoo confirmed receipt by the FDA and performed a preliminary analysis.</li>
+<li>HyeSoo’s update begins at <strong>10 minutes, 30 seconds</strong> into the video</li>
+<li>Her initial check did not reveal any major issues, but she did have a few minor issues mostly relating to the zip file and file names.</li>
+<li>HyeSoo shared two solutions to the error depicted in the screen capture below.</li>
+</ul>
+<p><img src="p3error.png" class="img-fluid"> * There was also an inconsistency with a file name in the submission and the name in the ADRG. * A solution might be to rename the file after submission. * The FDA target date to wrap up the review is early July. * This would enable Ning to include the news the the useR! presentation.</p>
+</section>
+<section id="pilot-4" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-4">Pilot 4</h2>
+<ul>
+<li>Eric Nantz begins presenting his update on Pilot 4 at <strong>32:35</strong> into the video.</li>
+<li>The <a href="https://rpodcast.quarto.pub/pilot4-webassembly-adrg/">ADRG for Pilot 4</a> which is almost complete.</li>
+<li>The following screen capture shows the commands starting wasm in Eric’s Windows VM.</li>
+</ul>
+<p><img src="VM.png" class="img-fluid"></p>
+<ul>
+<li>The 10GB threshold on etcd gateway mostly to guarantee transfer on first try.</li>
+<li>Pilot 4 transfer is approximately 800 MB</li>
+<li>Decision mate to try two ways of building wasm app</li>
+<li>Prebuilt before transfer</li>
+<li>Built by FDA after transfer</li>
+<li>Specified versions of R and RStudio IDE need to be pre-installed.</li>
+<li>The target for submission is late June or early July after HyeSoo has sent her evaluation of Pilot 3 off for document clearance</li>
+<li>It might be possible to also submit the docker version of Pilot 4</li>
+<li>Paul will investigate whether docker desktop or docker runtime is possible or preferable.</li>
+</ul>
+</section>
+<section id="adrg-standard" class="level2">
+<h2 class="anchored" data-anchor-id="adrg-standard">ADRG Standard</h2>
+<ul>
+<li>There is a proposal that the RC investigate setting up a working group for drafting an ADRG standard for R.</li>
+<li>We will open up an issue o the submissions-wg repository to capture ideas members may want to contribute and then discuss the proposal at our next meeting.</li>
+</ul>
+</section>
+<section id="recording-chat-file-contents" class="level2">
+<h2 class="anchored" data-anchor-id="recording-chat-file-contents">Recording Chat File Contents</h2>
+<ul>
+<li>00:08:01 Sam Parmar: Reacted to “https://infosec.exch…” with 👍🏽</li>
+<li>00:10:01 Eric Nantz: This is another balanced take https://aitap.github.io/2024/05/02/unserialize.html</li>
+<li>00:10:06 Sam Parmar: Reacted to “This is another bala…” with 👍🏽</li>
+<li>00:11:44 Sam Parmar: The Python pickle modules has a very similar situation. https://docs.python.org/3/library/pickle.html</li>
+<li>00:12:04 Sam Parmar: That blog post Eric linked mentions it.</li>
+<li>00:17:11 Eric Nantz: https://rud.is/b/2024/05/03/cve-2024-27322-should-never-have-been-assigned-and-r-data-files-are-still-super-risky-even-in-r-4-4-0/</li>
+<li>00:17:15 Sam Parmar: Reacted to “https://rud.is/b/202…” with 👍🏽</li>
+<li>00:33:52 laxamanj: See Note from Pilot 1 submission : https://github.com/RConsortium/submissions-pilot1-to-fda/blob/main/m1/us/report-tlf.pdf</li>
+<li>00:40:28 Eric Nantz: Pilot 4 Readme: https://github.com/RConsortium/submissions-pilot4-webR</li>
+<li>Preview version of the Pilot 4 Analysis Data Reviewer Guide (ADRG):</li>
+<li>HTML Format: https://rpodcast.quarto.pub/pilot4-webassembly-adrg/</li>
+<li>PDF Format: https://rsubmission-draft.us-east-1.linodeobjects.com/adrg-quarto-pdf.pdf</li>
+<li>00:52:13 Sam Parmar: Hi Eric. Did we run mention this issue? https://github.com/RConsortium/submissions-pilot4/issues/5</li>
+</ul>
+</section>
+<section id="next-meeting" class="level2">
+<h2 class="anchored" data-anchor-id="next-meeting">Next Meeting</h2>
+<p>The next meeting of the working group will be at 9AM Pacific Time on Friday June 7, 2024.</p>
 
 
 </section>
@@ -781,9 +871,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<script src="https://giscus.app/client.js" data-repo="RConsortium/submissions-wg" data-repo-id="MDEwOlJlcG9zaXRvcnkzMTk1MjUxNTI=" data-category="General" data-category-id="MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyNTY3MTQx" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
+</script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
 </div> <!-- /content -->
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/pilot2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2024-05-03/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
