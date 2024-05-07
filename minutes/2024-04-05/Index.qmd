@@ -70,7 +70,6 @@ Also note the the process that spins up WebAssebly installs the required R packa
 * A major development at the FDA is that FDA IT rejected the request to use Podman, but recommended that we use Docker.
 * Eric will include instructions in the ADRG to setup and run Docker containers.
 
-
 ## Communication and Documentation
 
 * Joe pointed out the infrastructure developed by the Submissions working group is significant and complex and that it is difficult to explain. He asked if we should undertake an effort to expand the website to include materials to explain the processes and technology to newcomers and document the history of what has been done.
