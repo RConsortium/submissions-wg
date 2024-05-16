@@ -2,7 +2,7 @@
 title: "R Submission Pilot 4"
 ---
 
-**Goal**: Utilized alternative methods of distributing a self-contained submission bundle of the Pilot 2 Shiny application with container and web-assebly technologies.
+**Goal**: Utilize alternative methods of distributing a self-contained submission bundle of the Pilot 2 Shiny application with container and web-assembly technologies.
 
 **Key evaluation aspects**:
 
