@@ -4,61 +4,64 @@ title: "R Submission Pilot 3"
 
 **Goals**:
 
--  Expand on the work done in [Submission Pilot 1](pilot1.qmd), by now utilizing R to generate ADaM datasets.
--  Deliver a publicly accessible R-based Submission to the FDA
+-   Expand on the work done in [Submission Pilot 1](pilot1.qmd), by now utilizing R to generate ADaM datasets.
+-   Deliver a publicly accessible R-based Submission to the FDA
 
+**Key evaluation aspects**:
 
-**Key evaluation aspects**: 
-  
-- For Submitter  
-  - Generation of a reproducible R environment with a proprietary R package from git and open source R packages using `{renv}`
-  - Preparation of R-based submission materials
-- For FDA Staff
-  - Reproduce analysis results by reproducing the R environment and retrieving both proprietary & open source packages
+-   For Submitter
+    -   Generation of a reproducible R environment with a proprietary R package from git and open source R packages using `{renv}`
+    -   Preparation of R-based submission materials
+-   For FDA Staff
+    -   Reproduce analysis results by reproducing the R environment and retrieving both proprietary & open source packages
 
-**Timeline**: Submitted to FDA on August 28th, 2023
+**Timeline**:
+
+-   Submitted to FDA on August 28th, 2023
+-   Feedback from FDA on February 2nd, 2024 (See feedback [here](https://rconsortium.github.io/submissions-wg/minutes/2024-02-02/))
+-   Re-submitted to FDA on April 19th, 2024
 
 **Data and analysis scope**:
-  
-- ADaMs created using R (SDTM `.xpt` sourced from the CDISC Pilot study)
-- TLFs created using R (ADaMs `.xpt` sourced from the ADaMs generated in R by the Pilot 3 team)
+
+-   ADaMs created using R (SDTM `.xpt` sourced from the CDISC Pilot study)
+-   TLFs created using R (ADaMs `.xpt` sourced from the ADaMs generated in R by the Pilot 3 team)
 
 **Links**:
 
 [R Submission Pilot 3 Development Repo](https://github.com/RConsortium/submissions-pilot3-adam)
 
-- Development area for Pilot 3 Team
-- See Closed Issues discussion for how we worked
-- See [Wiki](https://github.com/RConsortium/submissions-pilot3-adam/wiki) for Common Issues we ran into and QC Findings we encountered when comparing the ADaMs generated in the CDISC Pilot study.
-- We made use of a [GitHub Project Board](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) (Kanban Style Board) to drive development. 
+-   Development area for Pilot 3 Team
+-   See Closed Issues discussion for how we worked
+-   See [Wiki](https://github.com/RConsortium/submissions-pilot3-adam/wiki) for Common Issues we ran into and QC Findings we encountered when comparing the ADaMs generated in the CDISC Pilot study.
+-   We made use of a [GitHub Project Board](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) (Kanban Style Board) to drive development.
 
 [R Submission Pilot 3 eCTD Submission Package to FDA](https://github.com/RConsortium/submissions-pilot3-adam-to-fda)
 
-- Materials submitted to the FDA following eCTD standards
+-   Materials submitted to the FDA following eCTD standards
 
 [R Submission Pilot 3 Website](https://rconsortium.github.io/submissions-pilot3-adam/main/)
 
-- Breakdown of the Github repositories and files used for analysis development, e-submission and proprietary Pilot 3 R Package
-- Renderings of ADaMs, TLFs, ADRG and Cover Letter
-- Discussions at Conferences and feedback from FDA
+-   Breakdown of the Github repositories and files used for analysis development, e-submission and proprietary Pilot 3 R Package
+-   Renderings of ADaMs, TLFs, ADRG and Cover Letter
+-   Discussions at Conferences and feedback from FDA
 
-**Key team members**: 
+**Key team members**:
 
 Developer team:
 
-- Joel Laxamana-Roche
-- Thomas Neitmann-Denali
-- Phanikumar Tata-Syneos
-- Robert Devine-J&J
-- Steven Haesendonckx-J&J
-- Lei Zhao-Roche
-- Nicole Jones-Denali 
-- Kangjie Zhang-Bayer
-- Benjamin Straub-GSK
-- Declan Hodges-GSK
-- Bingjun Wang - Merck
+-   Joel Laxamana-Roche
+-   Thomas Neitmann-Denali
+-   Phanikumar Tata-Syneos
+-   Robert Devine-J&J
+-   Steven Haesendonckx-J&J
+-   Lei Zhao-Roche
+-   Nicole Jones-Denali
+-   Kangjie Zhang-Bayer
+-   Benjamin Straub-GSK
+-   Declan Hodges-GSK
+-   Bingjun Wang - Merck
 
-FDA Staff:  
+FDA Staff:
 
-- Paul Schuette  
-- Hye Soo Cho  
+-   Paul Schuette\
+-   Hye Soo Cho
