@@ -9,8 +9,142 @@
 <link>https://rconsortium.github.io/submissions-wg/minutes.html</link>
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.4.554</generator>
-<lastBuildDate>Fri, 03 May 2024 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.4.555</generator>
+<lastBuildDate>Fri, 07 Jun 2024 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2024-06-07</title>
+  <dc:creator>Joseph Rickert</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2024-06-07/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Ben Straub (GSK)</li>
+<li>Eva Li</li>
+<li>Heidi Curinckx (Johnson &amp; Johnson)</li>
+<li>HyeSoo Cho (FDA)</li>
+<li>Ismael Alejandro Rodriguez (Appsilon)</li>
+<li>Jane Owens (Phuse &amp; Eli Lilly)</li>
+<li>Joel Laxamana (Roche/Genentech)</li>
+<li>Joseph Rickert (R Consortium)</li>
+<li>Lovemore Gakava (Novo Nordisk)</li>
+<li>Ning Leng (Roche/Genentech)</li>
+<li>Paul Schuette (FDA)</li>
+<li>Saghir Bashir (Argenx)</li>
+<li>Stephanie Lussier (Moderna)</li>
+<li>Steven Hasendinckx (Johnson &amp; Johnson)</li>
+<li>YounKyeong Chang (FDA)</li>
+</ul>
+</div>
+</div>
+</div>
+<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/cMcaFb0OOQmcFhdwktFrFu31Bd3ANXFm91ugZqe5WzRM0erMMzQVhYDBd1fa_Am8.ATQgpOrlYiLru6b4?startTime=1717776258000">video</a> is available.</p>
+<section id="pharmasug-conference" class="level2">
+<h2 class="anchored" data-anchor-id="pharmasug-conference">PharmaSUG Conference</h2>
+<ul>
+<li>Both Ben Straub (Pilot 3) and Ismael Rodriguez (Pilot 4) gave talks at the recent <a href="https://www.pharmasug.org/us/index.html">Pharma SUG</a> conference which was held in Baltimore.</li>
+<li>Both reported that there was a lot of interest in their talks</li>
+<li>Ben reported that he spoke to several people who thought the the FDA only approves SAS submissions.</li>
+<li>Both presentations will be placed in the R Submissions WG GitHub repository.</li>
+</ul>
+</section>
+<section id="coordination-with-r-package-validation" class="level2">
+<h2 class="anchored" data-anchor-id="coordination-with-r-package-validation">Coordination with R Package Validation</h2>
+<ul>
+<li>Ismael noted that Magnus from a package validation working group approached him about cooperating with the Submissions WG.</li>
+<li>JBR asked Ismael to ask Magnus to write to him and said that we be happy to invite Magnus to our meetings.</li>
+</ul>
+</section>
+<section id="pilot-3" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-3">Pilot 3</h2>
+<p>Hye Soo Cho and YounKyeong Chang provided an update on their review of the Pilot 3 submission.</p>
+<ul>
+<li>The FDA eviewers are wrapping up their review.</li>
+<li>There are no major issues.</li>
+<li>They were able to install the Util package from the zip file and review the R programs to drive the ADaM data sets.</li>
+<li>QC of the ADRG did turn up a minor issue regarding inconsistencies among three date variables.
+<ul>
+<li>The discussion of this issue begins at <strong>7:55</strong> in the video and is illustrated in the screen capture below.</li>
+<li>The recommended solution is that the date origin should be specified in ISO 8601 date/time format in the ADRG.</li>
+<li>Joel agreed to review the record of issues with Pilot 3 and see if there are any other parameters that ought to be explicitly mentioned in the ADRG.</li>
+</ul></li>
+</ul>
+<p><img src="https://rconsortium.github.io/submissions-wg/minutes/2024-06-07/dates.png" class="img-fluid"></p>
+</section>
+<section id="pilot-4" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-4">Pilot 4</h2>
+<p>Eric Nantz described progress on the Pilot 4 Submission.</p>
+<ul>
+<li>The end of June is still our target for the WebAssembly version of Pilot 4.</li>
+<li>The plan is to do the container version at a later time after the WebAssembly version has been reviewed.</li>
+<li>The question was asked if there are any special rules about package downloads.</li>
+<li>Paul Schuette stated that downloading from CRAN is preferable, that in addition to the serialization FDA Security has mentioned downloads as a potential security problem, but that as far as he knows there are no regulations.</li>
+<li>Eric pointed out that the Docker version of Pilot 4 also requires an image download.</li>
+<li>Eric and Paul will meet to discuss this issue.</li>
+<li>Eric will provide ADRG instructions and he and Paul will investigate,</li>
+<li>Paul noted that the FDA has recently approved WSL (Windows System Linux)</li>
+</ul>
+</section>
+<section id="adrg" class="level2">
+<h2 class="anchored" data-anchor-id="adrg">ADRG</h2>
+<p>There has been discussion within the working group as to whether we should investigate best practices for writing ADRGs for R based submissions. JBR noted that recent comments in issue #112 suggested that we should coordinated with the PHUSE ADRG working group. Discussion begins at <strong>29:00</strong> into the video.</p>
+<ul>
+<li>As it turned out Jane Owens (Eli Lilly) who is co-lead of the PHUSE ADRG working group was on the call.</li>
+<li>PHUSE owns the ADRG templates</li>
+<li>They are actively working on updating the templates with respect to R in section 7.1 of the template.</li>
+<li>Pilot 3 has documentation on R packages in Section 7 and in an appendix to the ADRG (Section 9).</li>
+</ul>
+<p><img src="https://rconsortium.github.io/submissions-wg/minutes/2024-06-07/ADRG.png" class="img-fluid"></p>
+<ul>
+<li>PHUSE got its starting point for updating the ADRG for R from J&amp;J which Heidi Curinckx confirmed is based on J&amp;J’s participation in the Submissions WG.</li>
+<li>The PHUSE WG will publish their updated template and then send it out for review</li>
+<li>The Submissions WG and the PHUSE ADRG WG will cooperate and share information.</li>
+<li>JBR invited Jane and other members of her WG to attend future meetings.</li>
+</ul>
+</section>
+<section id="r-versions-blog-post" class="level2">
+<h2 class="anchored" data-anchor-id="r-versions-blog-post">R Versions Blog Post</h2>
+<p>A small group led my Ning Leng is working on a blog post aimed at generating consensus about what versions of R might be appropriate for R based submissions at any point in time.</p>
+<ul>
+<li>The post has been revised to reelect the Submissions WG point of view and ends with a request for readers to comment in an issue that that we will open up on our GitHub repository.</li>
+<li>The post includes paragraphs on how four companies Roche, Lilly, GSK, Pfizer deal internally with versioning and package management issues</li>
+<li>Unfortunately, we must remove the quote from Paul because including it would require FDA approval.</li>
+<li>Will also remove the FDA logo.</li>
+</ul>
+<p><strong>ACTION:</strong></p>
+<ul>
+<li>Ning and the other authors will finalize the text.</li>
+<li>JBR will send a MS word version of the post to Paul for final review.</li>
+</ul>
+</section>
+<section id="next-meeting" class="level2">
+<h2 class="anchored" data-anchor-id="next-meeting">Next meeting</h2>
+<ul>
+<li>Because the July meeting is scheduled on the US July 4th holiday weekend and because of travel to the useR! conference the July meeting will be cancelled. * The next meeting of the submissions WG will be at 9AM Pacific Time on Friday August 2, 2022.</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-06-07/</guid>
+  <pubDate>Fri, 07 Jun 2024 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2024-05-03</title>
   <dc:creator>Joseph Rickert</dc:creator>
@@ -2077,102 +2211,6 @@ View Attendee List
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-11-04/</guid>
   <pubDate>Fri, 04 Nov 2022 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2022-10-07</title>
-  <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-10-07/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Ellis Hughes (GSK)</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>Honghong Zhou (Moderna)</li>
-<li>Jizu Zhi (FDA)</li>
-<li>Joseph Rickert (R Consortium)</li>
-<li>Lei Zhao (Roche/Genentech)</li>
-<li>Miriam Fossati (Merck)</li>
-<li>Nan Xiao (Merck)</li>
-<li>Ning Leng (Roche/Genentech)</li>
-<li>Phil Bowsher (Posit)</li>
-<li>Qin Li</li>
-<li>Renping Zhang (Johnson &amp; Johnson)</li>
-<li>Robert Devine (Johnson &amp; Johnson)</li>
-<li>Ryan Johnson (Posit)</li>
-<li>Saghir Bashir (Argenx)</li>
-<li>Sam Parmar (Pfizer)</li>
-<li>Sean Healey (Pfizer)</li>
-<li>Tadeusz Lewandowski (Roche/Genentech)</li>
-<li>Thomas Neitmann (Roche/Genentech)</li>
-<li>Yilong Zhang (Meta)</li>
-</ul>
-</div>
-</div>
-</div>
-<p>The meeting was recorded and the <a href="https://rstudio.zoom.us/rec/share/OfSxaPPUsLuFJtZeUjzsZ6kZoAtCn7GTAj-N1j4zU9gUXOI8NqU5SUXf7rbeG2eu.q4s5o6ZiCBJHId8h?startTime=1665158653000">video</a> is available.</p>
-<section id="pilot-2-submission" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-2-submission">Pilot 2 Submission</h3>
-<p>Ning began her update on the Pilot 2 Submission by thanking everyone who helped with the testing.</p>
-<p>Status: The submission package is ready. However, the submissions team must address some last minute comments from the FDA. One comment is a request to mask p-values that are automatically reported. The apparent concern is that by default p-values will automatically be updated and reported when users filter the data by subgroups. Because we only have a small test data set this will likely lead to widely varying p-values which could be misinterpreted by general reviewers who are not statisticians. The FDA may request additional outputs to me masked. These comments appear to address the long term use of interactive applications in submissions and are not related to the technical aspects of making the submission.</p>
-<p>Consequently, the meeting scheduled for next Tuesday which was intended for submitting Pilot 2 will now be devoted to addressing FDA comments. The team will reschedule the submission as soon as possible after addressing the comments. We do not anticipate a long delay. There are no technical difficulties with masking additional default outputs.</p>
-<p>In the meantime more testing would be helpful and appreciated. Follow the instructions in the Appendix for Pilot 2: https://github.com/RConsortium/submissions-pilot2/issues/46 Put issues here: https://github.com/RConsortium/submissions-pilot2/issues/</p>
-<p>JBR noted that there is now significant material in the GitHub repository for the working group which is indicative of the scope and scale of cooperation of the project. This is itself a success story of some interest.</p>
-</section>
-<section id="pilot-3---adam" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-3---adam">Pilot 3 - ADaM</h3>
-<p>(<strong>13:51min</strong> into the video) Thomas Neitmann presented a proposal by Joel Laxamana and himself to extend Pilot 1 to include ADaM datasets programmed in R. The purpose of the proposal is to:</p>
-<ol type="1">
-<li>Demonstrate the viability of using R for ADaM dataset creation in the context of an FDA submission</li>
-<li>Provide the industry with an end-to-end example of an R-based FDA filing</li>
-</ol>
-<p>Thomas’ presentation may be found here: https://github.com/RConsortium/submissions-wg/tree/main/Documents</p>
-<p>Yilong suggested taking ODM XML as the source to make it more representative of an end-to-end process. This started a discussion about the value of beginning end-to-end examples from various different starting file formats.</p>
-<p>The present team team includes:</p>
-<ul>
-<li>Thomas Neitmann - Roche (Co-Lead)</li>
-<li>Joel Laxamana - Roche (Co-Lead)</li>
-<li>Lei Zhao - Roche</li>
-<li>Nicole Jones - Merck</li>
-</ul>
-<p>The team is looking for additional help. Please have a look at the presentation and contact one of the Co-Leads if you would like to get involved.</p>
-<p>The working group agreed to change the name of the project from Pilot 1-ADaM Extension to Pilot 3-ADaM to emphasize that the project will include a significant amount of new work.</p>
-<p><strong>Action Item</strong> JBR will make Paul Schuette aware of this new project and ask for his feedback.</p>
-</section>
-<section id="da-japan-talk" class="level2">
-<h2 class="anchored" data-anchor-id="da-japan-talk">DA Japan Talk</h2>
-<p>(<strong>31:30</strong> min into video) Tadeusz presented a Shiny application that he developed for a presentation he is going to make at the <a href="https://www.diaglobal.org/en/conference-listing/meetings/2022/10/19th-dia-japan-annual-meeting-2022">DIA Japan conference</a> on October 9, 2022. The intention of the presentation is to gauge the interest of the Japanese authorities. The session in which Tadeusz will present is called <a href="https://www.diaglobal.org/en/conference-listing/meetings/2022/10/19th-dia-japan-annual-meeting-2022/agenda/09/ls09?ref=LS09">LS09 Innovative and Dynamic Statistical Analytics for Regulatory Submissions</a></p>
-</section>
-<section id="subgroups" class="level2">
-<h2 class="anchored" data-anchor-id="subgroups">Subgroups</h2>
-<p>The working group discussed writing writing some material for the GitHub repository explaining the purpose of the various subgroups, listing the members, and explaining how newcomers can get involved.</p>
-<p><strong>Action Item</strong> Joe and Eric will meet after the Pilot 2 submission to discuss documenting the subgroups.</p>
-</section>
-<section id="containers" class="level2">
-<h2 class="anchored" data-anchor-id="containers">Containers</h2>
-<p>The working group agreed that the planned project to submit a containerized version of the Pilot 2 submission will require a significant amount of new work and pose several challenges. It should therefore be new, independent pilot submission, perhaps Pilot 4-Containers.</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-10-07/</guid>
-  <pubDate>Fri, 07 Oct 2022 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
