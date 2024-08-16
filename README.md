@@ -13,7 +13,7 @@ R Submissions Working Group
 
 - Pilot 1: R based CDER submission of static outputs (completed)
 - Pilot 2: R based CDER submission with a shiny component (completed)
-- Pilot 3: R based CDER submission of ADaM dataset (under review)
+- Pilot 3: R based CDER submission of ADaM dataset (completed)
 - Pilot 4: R based CDER submission with a container component (under development)
   
   
@@ -30,7 +30,14 @@ R Submissions Working Group
 
 [Development repo for R submission pilot 3](https://github.com/RConsortium/submissions-pilot3-adam)
 
+[R submission pilot 3 - Final eCTD submission package to FDA](https://github.com/RConsortium/submissions-pilot3-adam-to-fda)
+
+[Development repo for R submission pilot 4](https://github.com/RConsortium/submissions-pilot4-webR)
+
 # News
+
+
+[2024/08/08] Pilot 3 (ADaM) FDA response letter received! [link](https://github.com/RConsortium/submissions-wg/blob/main/_Documents/Summary_R_Pilot3_Submission.pdf)
 
 [2023/09/28] Pilot 2 (shiny) FDA response letter received! [link](https://github.com/RConsortium/submissions-wg/blob/0f1dc5c30985d413f75d196c2b6caa96231b26ee/_Documents/Summary_R_Pilot2_Submission%2027SEP2023.pdf)
 
