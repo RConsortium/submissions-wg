@@ -9,8 +9,131 @@
 <link>https://rconsortium.github.io/submissions-wg/minutes.html</link>
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.5.56</generator>
-<lastBuildDate>Fri, 02 Aug 2024 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.5.57</generator>
+<lastBuildDate>Fri, 06 Sep 2024 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2024-09-06</title>
+  <dc:creator>Eric Nantz</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2024-09-06/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Ben Straub (GSK)</li>
+<li>Eric Nantz (Eli Lilly)</li>
+<li>HyeSoo Cho (FDA)</li>
+<li>Joel Laxamana (Roche/Genentech)</li>
+<li>Michael Kane (MD Anderson Cancer Institute)</li>
+<li>Ning Leng (Roche/Genentech)</li>
+<li>Paul Schuette (FDA)</li>
+<li>Renping Zhang (Johnson &amp; Johnson)</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Saghir Bashir (Argenx)</li>
+<li>Sam Parmar (Pfizer)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Due to technical issues, we were not able to record this session. Also, the attendees list above may not be complete. If you attended the call and your name is not listed above, please contact Eric Nantz.</p>
+</div>
+</div>
+<section id="analysis-data-reviewers-guide-adrg" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-data-reviewers-guide-adrg">Analysis Data Reviewers Guide (ADRG)</h2>
+<ul>
+<li>Joel Laxamana is co-leading a new PHUSE working group on updating a template ADRG to account for open-source software such as R. A preliminary site for that working group is available at <a href="https://phuse-org.github.io/OSDocuMeta/" class="uri">https://phuse-org.github.io/OSDocuMeta/</a>. Note that it is in the early stages of development, but it will be updated as progress is made.</li>
+<li>Attendees from the meeting interested in learning more and joining that working group are encouraged to contact Joel.</li>
+<li>With the success of our previous pilots, attendees expressed interested in using a similar workflow to provide support for the PHUSE working group. For instance, Sam Parmar has already created a template ADRG in Quarto that could serve as inspiration: <a href="https://github.com/parmsam/quarto-adrg" class="uri">https://github.com/parmsam/quarto-adrg</a></li>
+</ul>
+</section>
+<section id="pilot-4-web-assembly" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-4-web-assembly">Pilot 4 (Web-Assembly)</h2>
+<ul>
+<li>Eric shared that the repository is just about ready for transfer. The tentative date for the transfer of the Pilot 4 bundle through the eCTD gateway is set for September 20, 2024.</li>
+<li>Paul and HyeSoo asked if there is a desire for a small test before the transfer. Eric mentioned that from his perspective a possible issue could be access to the WebR binary package repository, which is a different repository than the CRAN repository and its mirrors around the world. Eric mentioned that there will be two different ways the web-assembly bundle can be executed:
+<ul>
+<li>Method 1: Utilize the pre-compiled bundle that contains the R packages as well as the application itself. In this way, the WebR binary package repository CDN should not need to be contacted from the reviewer’s machine</li>
+<li>Method 2: Compile the web-assembly bundle upon first launch of the application, which will need to access the WebR binary package repository CDN to install the packages.</li>
+</ul></li>
+<li>Eric will arrange a dedicated testing meeting for the Docker container setup and testing to see if a Docker container can be built on the reviewers’ machines.</li>
+</ul>
+</section>
+<section id="potential-manuscript-on-web-assembly-in-life-sciences" class="level2">
+<h2 class="anchored" data-anchor-id="potential-manuscript-on-web-assembly-in-life-sciences">Potential Manuscript on Web-Assembly in Life Sciences</h2>
+<ul>
+<li>Paul requested a change in the proposed title of the paper to remove any references to “timelines.” Having any hint of that terminology could introduce additional policy issues during the disclosure process on their side.</li>
+<li>The plan is to propose the manuscript for publication in Nature. It was noted that the fee for open-access manuscripts is $11,000, and we would need to explore sponsorship from the Consortium or other avenues to address that cost.</li>
+<li>Eric will follow up with the editor he collaborated with on the recent Nature article <a href="https://www.nature.com/articles/d41586-024-00725-1">No installation required: how WebAssembly is changing scientific computing</a> to inquiry on interest from the editors at Nature to pursue this manuscript</li>
+<li>Michael Kane mentioned that he is an editor of the <a href="https://www.jstatsoft.org/index">Journal of Statistical Software</a> and there could be an opportunity to publish a similar manuscript on this topic in that journal.</li>
+</ul>
+</section>
+<section id="upcoming-conferences" class="level2">
+<h2 class="anchored" data-anchor-id="upcoming-conferences">Upcoming Conferences</h2>
+<ul>
+<li>Eric asked the Pilot 3 team if anyone from that group would like to join a presentation at the upcoming R/Pharma virtual conference focusing on clinical submissions. Both Joel and Ben expressed interest in joining that session. Eric will provide more details on timing and expectations once the R/Pharma program is completed.</li>
+<li>Michael noted that the R-Medicine conference next year would also be a potential venue for an additional presentation.</li>
+</ul>
+</section>
+<section id="future-pilot-ideas-for-2025" class="level2">
+<h2 class="anchored" data-anchor-id="future-pilot-ideas-for-2025">Future Pilot Ideas for 2025</h2>
+<p>A key focus of the meeting was to brainstorm on potential topics for future pilots in the next year:</p>
+<ul>
+<li>Focused pilot on the ADRG template (more background in the ADRG section above)</li>
+<li>Working with the repositories working group on a robust container image for a reproducible computing environment</li>
+<li>A more comprehensive submission that closely resembles a “real” submission (e.g.&nbsp;a large number of deliverables and outputs)
+<ul>
+<li>A consistent piece of feedback received at previous conference talks is that the current pilots only have sparse content (only 4 tables and a figure).</li>
+<li>At the time the previous pilots launched, the publically-available CDISC data was the best avenue for data</li>
+</ul></li>
+<li>Explore creating a large-scale mock clinical trial data via simulation methods.
+<ul>
+<li>On top of providing a rich source to generate many submission deliverables, this set could also be used as a robust source to test how statistical methods perform, enabling these assessments to be done truly in the open instead of behind company doors.</li>
+</ul></li>
+</ul>
+</section>
+<section id="additional-topics" class="level2">
+<h2 class="anchored" data-anchor-id="additional-topics">Additional Topics</h2>
+<ul>
+<li>Ben asked the FDA reviewers if the approaches used in the Pilot submissions could inform a future guidance document by FDA on using open-source software for submissions. Paul mentioned that they officially will not likely make any suggestions on the use of open-source software, as current guidances are meant to be high-level and will stay software-agnostic.</li>
+<li>It is possible FDA could share that sponsors should follow best practices, whatever they happen to be.</li>
+<li>Paul recommended our group work closely with PHUSE who have provided best practices in the past. One potential avenue to explore is the use of the JSON format instead of XPT. Atorus Research has open-sourced a package called <a href="https://github.com/atorus-research/datasetjson"><code>{datasetjson}</code></a> to address the viewing/importing of this format.</li>
+</ul>
+<section id="next-meeting" class="level3">
+<h3 class="anchored" data-anchor-id="next-meeting">Next Meeting</h3>
+<p>The next meeting of the R Submissions working group will be on Friday, October 6, 2024 at 9 AM Pacific Time.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-09-06/</guid>
+  <pubDate>Fri, 06 Sep 2024 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2024-08-02</title>
   <dc:creator>Joseph Rickert</dc:creator>
@@ -2133,106 +2256,6 @@ View Attendee List
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-01-13/</guid>
   <pubDate>Fri, 13 Jan 2023 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2022-12-02</title>
-  <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2022-12-02/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Bob Engle (Biogen)</li>
-<li>Brian Sucher (Unknown)</li>
-<li>Christopher Kania (Biogen)</li>
-<li>Dadong Zhang (Illumina)</li>
-<li>Ellis Hughes (GSK)</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>Heidi Curinckx (Johnson &amp; Johnson)</li>
-<li>HyeSoo Cho (FDA)</li>
-<li>Jizu Zhi (FDA)</li>
-<li>Joel Laxamana (Roche/Genentech)</li>
-<li>Joseph Rickert (R Consortium)</li>
-<li>Miriam Fossati (Merck)</li>
-<li>Nan Xiao (Merck)</li>
-<li>Ning Leng (Roche/Genentech)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Phil Bowsher (Posit)</li>
-<li>Renping Zhang (Johnson &amp; Johnson)</li>
-<li>Robert Devine (Johnson &amp; Johnson)</li>
-<li>Ryan Johnson (Posit)</li>
-<li>Sam Parmar (Pfizer)</li>
-<li>Stephanie Lussier (Moderna)</li>
-<li>Thomas Neitmann (Roche/Genentech)</li>
-<li>Xin Qiu (Johnson &amp; Johnson)</li>
-<li>Yilong Zhang (Meta)</li>
-</ul>
-</div>
-</div>
-</div>
-<section id="pilot-2" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-2">Pilot 2</h3>
-<ul>
-<li>Ning Leng and Eric Nantz reported that Pilot 2 was submitted on 2022-11-18, upholding the working groups tradition of submitting right before Thanksgiving, and that confirmation was received from the the FDA.</li>
-<li>Paul Schuette explained that since Pilot 2 was not a production submission it was necessary to make a manual request to receive it. Consequently, his group did not receive it until earlier this wee.</li>
-<li>Heysoo Cho said that she will begin working on the submission next week.</li>
-<li>Eric Nantz offered to be available to help if the FDA had any questions.</li>
-</ul>
-</section>
-<section id="pilot-3" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-3">Pilot 3</h3>
-<p>Joel Laxamana briefly reviewed the preparations his team is making for Pilot 3 and said that the proposal is ready for transmission to the FDA. Paul suggested that the proposal should be sent to everyone in the working group and not just the FDA. Joel agreed to put the proposal in the Submissions WG GitHub repository and send the link to everyone in the working group.</p>
-<p>Joel noted that many of the Pilot 3 concepts were taken from the ADRG for Pilot 2 and mentioned that they are checking against the CDISC versions as they build the package.</p>
-</section>
-<section id="pilot-4" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-4">Pilot 4</h3>
-<p>Eric said that he hopes to ramp up Pilot 4 work after the Pilot 2 submission. The simplest plan will be just to containerize the Pilot 2 submission. <a href="https://podman.io/">Podman</a> is the initial choice for a the container technology.</p>
-<p>The group also expressed about aligning the Pilot 4 project with the Validation Hub to stand up a repo of validated packages. This would open up the possibility of hosting the container on the validation repo. The Validation Hub repo for this project is: https://github.com/pharmaR/regulatory-r-repo-wg</p>
-</section>
-<section id="other-business" class="level3">
-<h3 class="anchored" data-anchor-id="other-business">Other Business</h3>
-<p>JBR asked Ning and Joel for summary paragraphs for Pilot 2 and Pilot 3 for inclusion in end of the year reports on working group status. Ning is working on a blog post about Pilot 2 for inclusion in the R Consortium Blog.</p>
-<p>There were no updates available about efforts to make pilot submissions to other regulatory agencies.</p>
-<p>The following events were identified as possibilities for delivering presentations:</p>
-<ul>
-<li>The Appsilon Shiny conference: <a href="https://shinyconf.appsilon.com/">ShinyConf 2023</a> March 15-17 - Ning and Eric are drafting an abstract</li>
-<li>R/Medicine June 8-9</li>
-<li>R/Pharma</li>
-<li>useR! 2023</li>
-<li>Posit::conf</li>
-<li>ASA BioPharma SWE Workshop in September</li>
-</ul>
-<section id="other-future-plans" class="level4">
-<h4 class="anchored" data-anchor-id="other-future-plans">Other future plans:</h4>
-<ul>
-<li>Ning noted that she and Yilong have been thinking about a journal submission and have begun writing a draft.</li>
-<li>The group also agreed that they would like to do another R - Adoption Webinar.</li>
-<li>Finally, Eric noted that he would like to rework the Submissions repository site and build it on a Quarto framework.</li>
-<li><strong>The next meeting of the Submissions WG will be at 10AM PST, Friday 13, 2023.</strong> This is a one week delay to move the meeting beyond the holiday season.</li>
-</ul>
-
-
-</section>
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2022-12-02/</guid>
-  <pubDate>Fri, 02 Dec 2022 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
