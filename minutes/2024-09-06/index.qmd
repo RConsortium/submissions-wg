@@ -1,0 +1,74 @@
+---
+title: "Minutes 2024-09-06"
+date: 2024-09-06
+author: Eric Nantz
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Ben Straub (GSK)
+- Eric Nantz (Eli Lilly)
+- HyeSoo Cho (FDA)
+- Joel Laxamana (Roche/Genentech)
+- Michael Kane (MD Anderson Cancer Institute)
+- Ning Leng (Roche/Genentech)
+- Paul Schuette (FDA)
+- Renping Zhang (Johnson & Johnson)
+- Robert Devine (Johnson & Johnson)
+- Saghir Bashir (Argenx)
+- Sam Parmar (Pfizer)
+:::
+
+::: {.callout-caution}
+Due to technical issues, we were not able to record this session. Also, the attendees list above may not be complete. If you attended the call and your name is not listed above, please contact Eric Nantz.
+:::
+
+
+## Analysis Data Reviewers Guide (ADRG) 
+
+* Joel Laxamana is co-leading a new PHUSE working group on updating a template ADRG to account for open-source software such as R. A preliminary site for that working group is available at <https://phuse-org.github.io/OSDocuMeta/>. Note that it is in the early stages of development, but it will be updated as progress is made.
+* Attendees from the meeting interested in learning more and joining that working group are encouraged to contact Joel.
+* With the success of our previous pilots, attendees expressed interested in using a similar workflow to provide support for the PHUSE working group. For instance, Sam Parmar has already created a template ADRG in Quarto that could serve as inspiration: <https://github.com/parmsam/quarto-adrg>
+
+## Pilot 4 (Web-Assembly)
+
+* Eric shared that the repository is just about ready for transfer. The tentative date for the transfer of the Pilot 4 bundle through the eCTD gateway is set for September 20, 2024.
+* Paul and HyeSoo asked if there is a desire for a small test before the transfer. Eric mentioned that from his perspective a possible issue could be access to the WebR binary package repository, which is a different repository than the CRAN repository and its mirrors around the world. Eric mentioned that there will be two different ways the web-assembly bundle can be executed:
+   * Method 1: Utilize the pre-compiled bundle that contains the R packages as well as the application itself. In this way, the WebR binary package repository CDN should not need to be contacted from the reviewer's machine
+   * Method 2: Compile the web-assembly bundle upon first launch of the application, which will need to access the WebR binary package repository CDN to install the packages.
+* Eric will arrange a dedicated testing meeting for the Docker container setup and testing to see if a Docker container can be built on the reviewers' machines. 
+
+## Potential Manuscript on Web-Assembly in Life Sciences
+
+* Paul requested a change in the proposed title of the paper to remove any references to "timelines." Having any hint of that terminology could introduce additional policy issues during the disclosure process on their side.
+* The plan is to propose the manuscript for publication in Nature. It was noted that the fee for open-access manuscripts is $11,000, and we would need to explore sponsorship from the Consortium or other avenues to address that cost.
+* Eric will follow up with the editor he collaborated with on the recent Nature article [No installation required: how WebAssembly is changing scientific computing](https://www.nature.com/articles/d41586-024-00725-1) to inquiry on interest from the editors at Nature to pursue this manuscript
+* Michael Kane mentioned that he is an editor of the [Journal of Statistical Software](https://www.jstatsoft.org/index) and there could be an opportunity to publish a similar manuscript on this topic in that journal.
+
+## Upcoming Conferences
+
+* Eric asked the Pilot 3 team if anyone from that group would like to join a presentation at the upcoming R/Pharma virtual conference focusing on clinical submissions. Both Joel and Ben expressed interest in joining that session. Eric will provide more details on timing and expectations once the R/Pharma program is completed.
+* Michael noted that the R-Medicine conference next year would also be a potential venue for an additional presentation.
+
+## Future Pilot Ideas for 2025
+
+A key focus of the meeting was to brainstorm on potential topics for future pilots in the next year:
+
+* Focused pilot on the ADRG template (more background in the ADRG section above)
+* Working with the repositories working group on a robust container image for a reproducible computing environment
+* A more comprehensive submission that closely resembles a "real" submission (e.g. a large number of deliverables and outputs)
+   * A consistent piece of feedback received at previous conference talks is that the current pilots only have sparse content (only 4 tables and a figure).
+   * At the time the previous pilots launched, the publically-available CDISC data was the best avenue for data
+* Explore creating a large-scale mock clinical trial data via simulation methods.
+   * On top of providing a rich source to generate many submission deliverables, this set could also be used as a robust source to test how statistical methods perform, enabling these assessments to be done truly in the open instead of behind company doors.
+
+## Additional Topics
+
+* Ben asked the FDA reviewers if the approaches used in the Pilot submissions could inform a future guidance document by FDA on using open-source software for submissions. Paul mentioned that they officially will not likely make any suggestions on the use of open-source software, as current guidances are meant to be high-level and will stay software-agnostic.
+* It is possible FDA could share that sponsors should follow best practices, whatever they happen to be.
+* Paul recommended our group work closely with PHUSE who have provided best practices in the past. One potential avenue to explore is the use of the JSON format instead of XPT. Atorus Research has open-sourced a package called [`{datasetjson}`](https://github.com/atorus-research/datasetjson) to address the viewing/importing of this format.
+
+### Next Meeting
+
+The next meeting of the R Submissions working group will be on Friday, October 6, 2024 at 9 AM Pacific Time.
