@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Eric Nantz &amp; Terry Christiani">
+<meta name="dcterms.date" content="2024-10-04">
 
-<title>Minutes Document Writer – R Submissions Working Group</title>
+<title>Minutes 2024-10-04 – R Submissions Working Group</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,61 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -102,24 +70,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
-<link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
-<script type="ojs-define">
-{"contents":[{"name":"people_data","value":{"name":["Adrian Waddell","Amanda Martin","Andre Couturier","Andrew Borgman","Andy Nicholls","Ari Siggaard Knoph","Bella Feng","Ben Straub","Beverly Chin","Bob Engle","Brian Sucher","Bryan Tegomoh","Bryant Chen","Chenguang Wang","Christopher Kania","Coline Zeballos","Dadong Zhang","Doug Kelkhoff","Eli Miller","Ellis Hughes","Emily Nguyan","Eric Nantz","Estella Dong","Ethan Chen","Frederic Saad","Gabriel Becker","Graeme Hickey","Gregory Chen","Hao Wang","Heidi Curinckx","Helena Sviglin","Heng Wang","Henry Wang","Hong Yan","Honghong Zhou","HyeSoo Cho","Jiang Xu","Jizu Zhi","Joel Laxamana","Jonathan Tisack","Joseph Rickert","Juliane Manitz","Keaven Anderson","Kevin Bolger","Kevin Kunzmann","Kevin Snyder","Kui Schen","Lei Zhao","Lovemore Gakava","Luke Schantz","Lyn Taylor","Maria Matilde Kam","Michael Blanks","Michael Kane","Michael Mayer","Mike Stackhouse","Miriam Fossati","Nan Xiao","Nate Mockler","Neetu Sangari","Nicholas Masel","Ning Leng","Ojesh Upandhyay","Paul Schuette","Paulo Bargo","Peikun Wu","Phanikumar Tata","Phil Bowsher","Qin Lin","Renping Zhang","Robert Devine","Rupam Bhattacharyya","Ryan Johnson","Saghir Bashir","Sam Parmar","Sascha Ahrweiler","Sean Healey","Shannon Lewis","Stephanie Lussier","Steven Hasendinckx","Tadeusz Lewandowski","Terry Christiani","Thomas Neitmann","Tim Powell","Xin Qiu","Yilong Zhang","Yiwen Luo","Yutong Liu"],"affiliation":["Roche/Genentech","R Consortium","Sanofi","Bristol Myers Squibb","GSK","Novo Nordisk","EQRx","GSK","Roche/Genentech","Biogen","Unknown","CDC Foundation","FDA","Regeneron","Biogen","Roche/Genentech","Illumina","Roche/Genentech","Atorus","GSK","FDA","Eli Lilly","Bayer","FDA","Janssen","Roche/Genentech","Metronic","MSD","FDA","Johnson & Johnson","FDA","Roche/Genentech","Roche/Genentech","Regeneron","Moderna","FDA","FDA","FDA","Roche/Genentech","BeiGene","R Consortium","EMD Serono","Merck","Procogia","Boehringer Ingelheim","FDA","Bayer","Roche/Genentech","Novo Nordisk","R Consortium","Phastar","FDA","BeiGene","MD Anderson Cancer Institute","Posit","Atorus","Merck","Merck","Biogen","Pfizer","Johnson & Johnson","Roche/Genentech","GSK","FDA","Janssen","Merck","Syneos Health","Posit","GSK","Johnson & Johnson","Johnson & Johnson","University of Michigan","Posit","Argenx","Pfizer","Bayer","Pfizer","BeiGene","Moderna","Johnson & Johnson","Roche/Genentech","R Consortium","Roche/Genentech","Biogen","Johnson & Johnson","Meta","Merck","Moderna"],"name2":["Adrian Waddell (Roche/Genentech)","Amanda Martin (R Consortium)","Andre Couturier (Sanofi)","Andrew Borgman (Bristol Myers Squibb)","Andy Nicholls (GSK)","Ari Siggaard Knoph (Novo Nordisk)","Bella Feng (EQRx)","Ben Straub (GSK)","Beverly Chin (Roche/Genentech)","Bob Engle (Biogen)","Brian Sucher (Unknown)","Bryan Tegomoh (CDC Foundation)","Bryant Chen (FDA)","Chenguang Wang (Regeneron)","Christopher Kania (Biogen)","Coline Zeballos (Roche/Genentech)","Dadong Zhang (Illumina)","Doug Kelkhoff (Roche/Genentech)","Eli Miller (Atorus)","Ellis Hughes (GSK)","Emily Nguyan (FDA)","Eric Nantz (Eli Lilly)","Estella Dong (Bayer)","Ethan Chen (FDA)","Frederic Saad (Janssen)","Gabriel Becker (Roche/Genentech)","Graeme Hickey (Metronic)","Gregory Chen (MSD)","Hao Wang (FDA)","Heidi Curinckx (Johnson & Johnson)","Helena Sviglin (FDA)","Heng Wang (Roche/Genentech)","Henry Wang (Roche/Genentech)","Hong Yan (Regeneron)","Honghong Zhou (Moderna)","HyeSoo Cho (FDA)","Jiang Xu (FDA)","Jizu Zhi (FDA)","Joel Laxamana (Roche/Genentech)","Jonathan Tisack (BeiGene)","Joseph Rickert (R Consortium)","Juliane Manitz (EMD Serono)","Keaven Anderson (Merck)","Kevin Bolger (Procogia)","Kevin Kunzmann (Boehringer Ingelheim)","Kevin Snyder (FDA)","Kui Schen (Bayer)","Lei Zhao (Roche/Genentech)","Lovemore Gakava (Novo Nordisk)","Luke Schantz (R Consortium)","Lyn Taylor (Phastar)","Maria Matilde Kam (FDA)","Michael Blanks (BeiGene)","Michael Kane (MD Anderson Cancer Institute)","Michael Mayer (Posit)","Mike Stackhouse (Atorus)","Miriam Fossati (Merck)","Nan Xiao (Merck)","Nate Mockler (Biogen)","Neetu Sangari (Pfizer)","Nicholas Masel (Johnson & Johnson)","Ning Leng (Roche/Genentech)","Ojesh Upandhyay (GSK)","Paul Schuette (FDA)","Paulo Bargo (Janssen)","Peikun Wu (Merck)","Phanikumar Tata (Syneos Health)","Phil Bowsher (Posit)","Qin Lin (GSK)","Renping Zhang (Johnson & Johnson)","Robert Devine (Johnson & Johnson)","Rupam Bhattacharyya (University of Michigan)","Ryan Johnson (Posit)","Saghir Bashir (Argenx)","Sam Parmar (Pfizer)","Sascha Ahrweiler (Bayer)","Sean Healey (Pfizer)","Shannon Lewis (BeiGene)","Stephanie Lussier (Moderna)","Steven Hasendinckx (Johnson & Johnson)","Tadeusz Lewandowski (Roche/Genentech)","Terry Christiani (R Consortium)","Thomas Neitmann (Roche/Genentech)","Tim Powell (Biogen)","Xin Qiu (Johnson & Johnson)","Yilong Zhang (Meta)","Yiwen Luo (Merck)","Yutong Liu (Moderna)"]}}]}
-</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">R Submissions Working Group</span>
     </a>
   </div>
@@ -130,11 +93,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./minutes.html"> 
+    <a class="nav-link" href="../../minutes.html"> 
 <span class="menu-text">Meeting Minutes</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -143,23 +106,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-pilots">    
         <li>
-    <a class="dropdown-item" href="./pilot_background.html">
+    <a class="dropdown-item" href="../../pilot_background.html">
  <span class="dropdown-text">Background</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./pilot1.html">
+    <a class="dropdown-item" href="../../pilot1.html">
  <span class="dropdown-text">R Submission Pilot 1</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./pilot2.html">
+    <a class="dropdown-item" href="../../pilot2.html">
  <span class="dropdown-text">R Submission Pilot 2</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./pilot3.html">
+    <a class="dropdown-item" href="../../pilot3.html">
  <span class="dropdown-text">R Submission Pilot 3</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./pilot4.html">
+    <a class="dropdown-item" href="../../pilot4.html">
  <span class="dropdown-text">R Submission Pilot 4</span></a>
   </li>  
     </ul>
@@ -170,11 +133,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-site-development">    
         <li>
-    <a class="dropdown-item" href="./dev_background.html">
+    <a class="dropdown-item" href="../../dev_background.html">
  <span class="dropdown-text">Development Guide</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./minutes_prep.html">
+    <a class="dropdown-item" href="../../minutes_prep.html">
  <span class="dropdown-text">Minutes Draft Gen</span></a>
   </li>  
     </ul>
@@ -195,7 +158,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Minutes 2024-10-04</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Eric Nantz &amp; Terry Christiani </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 4, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -203,214 +194,115 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a>
+  <li><a href="#administrative-updates" id="toc-administrative-updates" class="nav-link active" data-scroll-target="#administrative-updates">Administrative Updates</a></li>
+  <li><a href="#submissions-pilot-4" id="toc-submissions-pilot-4" class="nav-link" data-scroll-target="#submissions-pilot-4">Submissions Pilot 4</a></li>
+  <li><a href="#analysis-data-reviewers-guide-adrg" id="toc-analysis-data-reviewers-guide-adrg" class="nav-link" data-scroll-target="#analysis-data-reviewers-guide-adrg">Analysis Data Reviewers Guide (ADRG)</a></li>
+  <li><a href="#repositories-working-group-notes" id="toc-repositories-working-group-notes" class="nav-link" data-scroll-target="#repositories-working-group-notes">Repositories Working Group Notes</a></li>
+  <li><a href="#future-pilot-ideas" id="toc-future-pilot-ideas" class="nav-link" data-scroll-target="#future-pilot-ideas">Future Pilot Ideas</a>
   <ul class="collapse">
-  <li><a href="#date-selection" id="toc-date-selection" class="nav-link" data-scroll-target="#date-selection">Date Selection</a></li>
-  <li><a href="#attendee-selection" id="toc-attendee-selection" class="nav-link" data-scroll-target="#attendee-selection">Attendee Selection</a></li>
+  <li><a href="#realistic-pilot-submissions" id="toc-realistic-pilot-submissions" class="nav-link" data-scroll-target="#realistic-pilot-submissions">Realistic Pilot Submissions</a></li>
   </ul></li>
-  <li><a href="#output" id="toc-output" class="nav-link" data-scroll-target="#output">Output</a>
-  <ul class="collapse">
-  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a></li>
-  </ul></li>
+  <li><a href="#json-data-format" id="toc-json-data-format" class="nav-link" data-scroll-target="#json-data-format">JSON Data Format</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes_prep.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2024-10-04/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Minutes Document Writer</h1>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
-
-
-<section id="instructions" class="level1">
-<h1>Instructions</h1>
-<p>This interactive page creates a template Quarto document text for capturing meeting minutes associated with the Submissions working group.</p>
-<section id="date-selection" class="level2">
-<h2 class="anchored" data-anchor-id="date-selection">Date Selection</h2>
-<p>Use the date input below to choose the date of the meeting. Click the calendar icon in the widget to launch the UI.</p>
-<div class="cell">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="30" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 29;"><span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>viewof meeting_date <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">date</span>({</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Meeting Date"</span><span class="op">,</span></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="st">"2023-02-01"</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-1" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="39" data-source-offset="-1"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 38;"><span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>meeting_year <span class="op">=</span> (meeting_date<span class="op">.</span><span class="fu">getFullYear</span>())<span class="op">.</span><span class="fu">toString</span>()</span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>meeting_month <span class="op">=</span> (meeting_date<span class="op">.</span><span class="fu">getMonth</span>() <span class="op">+</span> <span class="dv">1</span>)<span class="op">.</span><span class="fu">toString</span>()<span class="op">.</span><span class="fu">padStart</span>(<span class="dv">2</span><span class="op">,</span> <span class="st">"0"</span>)</span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>meeting_day <span class="op">=</span> (meeting_date<span class="op">.</span><span class="fu">getDate</span>() <span class="op">+</span> <span class="dv">1</span>)<span class="op">.</span><span class="fu">toString</span>()<span class="op">.</span><span class="fu">padStart</span>(<span class="dv">2</span><span class="op">,</span> <span class="st">"0"</span>)</span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>meeting_array <span class="op">=</span> [meeting_year<span class="op">,</span> meeting_month<span class="op">,</span> meeting_day]</span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>meeting_print <span class="op">=</span> meeting_array<span class="op">.</span><span class="fu">join</span>(<span class="st">"-"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-1" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-2" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-3" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-4" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-5" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="attendee-selection" class="level2">
-<h2 class="anchored" data-anchor-id="attendee-selection">Attendee Selection</h2>
-<p>Use the personnel table below to select the attendees present at the meeting by checking the box that appears once you hover your cursor above a name. The table is ordered alphabetically by first name as default, but you can sort by a different column by clicking the column name.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Warning
+View Attendee List
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>If an attendee is not listed in this table, please add their name, affiliation, and affiliation URL to the <code>wg_attendees.xlsx</code> spreadsheet located in the <code>data</code> subdirectory of this repository. After your edits to the spreadsheet are completed, re-build the Quarto site.</p>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="57" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 56;"><span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a>data2 <span class="op">=</span> <span class="fu">transpose</span>(people_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-3" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="62" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 61;"><span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>viewof people_selection <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">table</span>(data2<span class="op">,</span> {</span>
-<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a>  <span class="dt">sort</span><span class="op">:</span> <span class="st">"name"</span><span class="op">,</span></span>
-<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a>  <span class="dt">multiple</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a>  <span class="dt">rows</span><span class="op">:</span> <span class="dv">40</span><span class="op">,</span></span>
-<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a>  <span class="dt">required</span><span class="op">:</span> <span class="kw">false</span></span>
-<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-4" data-nodetype="declaration">
-
+<ul>
+<li>Amanda Martin (R Consortium)</li>
+<li>Andre Couturier (Sanofi)</li>
+<li>Ben Straub (GSK)</li>
+<li>Eric Nantz (Eli Lilly)</li>
+<li>HyeSoo Cho (FDA)</li>
+<li>Joel Laxamana (Roche/Genentech)</li>
+<li>Lovemore Gakava (Novo Nordisk)</li>
+<li>Michael Kane (MD Anderson Cancer Institute)</li>
+<li>Mike Stackhouse (Atorus)</li>
+<li>Nicholas Masel (Johnson &amp; Johnson)</li>
+<li>Ning Leng (Roche/Genentech)</li>
+<li>Paul Schuette (FDA)</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Saghir Bashir (Argenx)</li>
+<li>Terry Christiani (R Consortium)</li>
+</ul>
 </div>
 </div>
 </div>
+<section id="administrative-updates" class="level2">
+<h2 class="anchored" data-anchor-id="administrative-updates">Administrative Updates</h2>
+<ul>
+<li>The working group welcomed Terry Christiani, the new executive director for the R Consortium. We are greatly appreciate the important leadership provided by Joseph Rickert, the previous director. More information can be found on this <a href="https://r-consortium.org/posts/thank-you-joseph-rickert-a-legacy-of-leadership/">R Consortium Blog post</a>.</li>
+</ul>
+</section>
+<section id="submissions-pilot-4" class="level2">
+<h2 class="anchored" data-anchor-id="submissions-pilot-4">Submissions Pilot 4</h2>
+<ul>
+<li>The submissins pilot 4 (web-assembly version) was transferred on September 20, 2024 successfully and received by the FDA reviewers through the eCTD gateway transfer. The news was also shared in this <a href="https://r-consortium.org/posts/using-r-to-submit-research-to-the-fda-pilot-4-successfully-submitted/">announcement post</a> on the R Consortium blog.</li>
+<li>Hye Soo informed that their internal reviewer computers required an update to R version 4.4.1 to match the version used in the pilot submission. She also verified that there were no issues in rendering the Shiny application with the web-assembly method of execution.</li>
+<li>A small issue with column labels being switched on Primary Table was identified (a legacy issue that unfortunately was carried forward from an earlier version of the Pilot 1 output). While this is not a critical issue for the scope of pilot 4, Ben Straub shared how leveraging continuous integration / continuous deployment (CI/CD) for verifying the integrity of the data and outputs could be helpful.</li>
+<li>The full review of the submission is ongoing.</li>
+<li>Eric Nantz shared that the Docker container version of Pilot 4 is undergoing additional testing with the working group, and the goal is to have a transfer to the FDA reviewers in November (exact timing TBD).</li>
+<li>Communication with the Nature journal on a potential manuscript is ongoing. Michael Kane noted that additional journals such as the <a href="https://www.jstatsoft.org/index">Journal of Statistical Software</a> are another possibility for sharing the concepts of web-assembly in clinical submissions.</li>
+</ul>
+</section>
+<section id="analysis-data-reviewers-guide-adrg" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-data-reviewers-guide-adrg">Analysis Data Reviewers Guide (ADRG)</h2>
+<ul>
+<li>Joel Laxamana shared the ADRG Phuse working group established quarterly meetings starting on October 16.</li>
+<li>Initial steps involve identifying all of the pieces required for an ADRG, and how can templates be enhanced using the learnings from previous open-source efforts such as the Pilot submissions.</li>
+<li>Additional members from the submmissions working group will be invited to future discussions after the initial brainstorming of high-level ideas.</li>
+</ul>
+</section>
+<section id="repositories-working-group-notes" class="level2">
+<h2 class="anchored" data-anchor-id="repositories-working-group-notes">Repositories Working Group Notes</h2>
+<ul>
+<li>The Repositories Working Group is continuing their efforts to deliver a reproducible environment structure in which each organization can adopt to fit their needs.</li>
+<li>It was recommended to invite Doug Kelkoff to a future submissions WG meeting to stay updated with their efforts</li>
+</ul>
+</section>
+<section id="future-pilot-ideas" class="level2">
+<h2 class="anchored" data-anchor-id="future-pilot-ideas">Future Pilot Ideas</h2>
+<section id="realistic-pilot-submissions" class="level3">
+<h3 class="anchored" data-anchor-id="realistic-pilot-submissions">Realistic Pilot Submissions</h3>
+<ul>
+<li>The previous pilot submissions have been successful with the higher-level goals of demonstrating open-source software including R is a viable method for producing the typical submission deliverables.</li>
+<li>However, the mock clinical data sets and collection of outputs are a much smaller scale than a typical clinical submission which routinely involve many data sets and clinical TFLs.</li>
+<li>Bringing members outside of this core group to lead a realistic pilot submission grouup could be valuable in many fronts.</li>
+<li>Paul Schutte shared that there isn’t a cononical data set applicable to the life sciences space in the way that widely-known data sets such as iris and more recently <a href="https://allisonhorst.github.io/palmerpenguins/articles/intro.html">Palmer Penguins</a>.</li>
+<li>With the lack of public de-identified clinical data sets on the scale of the typical submission, creating these realistic sets via robust simulation could be a path forward.</li>
+<li>Action item: Create a subgroup of those interested in this effort.</li>
+<li>Sources such as <a href="https://data.projectdatasphere.org/projectdatasphere/html/home">Project Datasphere</a> are a way to obtain ADAM data sets involving treatment and standard of care data sets (with many oncology studies). One must request access before data are shared.</li>
+</ul>
 </section>
 </section>
-<section id="output" class="level1">
-<h1>Output</h1>
-<section id="setup" class="level2">
-<h2 class="anchored" data-anchor-id="setup">Setup</h2>
-<p>In your local copy of this repository, create a sub-directory within the <code>minutes</code> directory to hold files associated with this meeting’s minutes. Based on your selection above, create the following directory:</p>
-<div class="cell">
-<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="77" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 76;"><span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a>meeting_print</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-5" data-nodetype="expression">
-
-</div>
-</div>
-</div>
-<p>Copy the text in the output below into a new Quarto document named <code>index.qmd</code>.</p>
-<div class="cell">
-<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="84" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 83;"><span id="cb6-84"><a href="#cb6-84" aria-hidden="true" tabindex="-1"></a>silly <span class="op">=</span> <span class="fu">html</span><span class="vs">`</span><span class="sc">${</span><span class="bu">Array</span><span class="op">.</span><span class="fu">from</span>(<span class="kw">new</span> <span class="bu">Set</span>(people_selection<span class="op">.</span><span class="fu">map</span>(c <span class="kw">=&gt;</span> c<span class="op">.</span><span class="at">name2</span>)))</span>
-<span id="cb6-85"><a href="#cb6-85" aria-hidden="true" tabindex="-1"></a><span class="op">.</span><span class="fu">sort</span>()</span>
-<span id="cb6-86"><a href="#cb6-86" aria-hidden="true" tabindex="-1"></a><span class="op">.</span><span class="fu">map</span>(c <span class="kw">=&gt;</span> <span class="vs">`- </span><span class="sc">${</span>c<span class="sc">}</span><span class="vs">`</span>)</span>
-<span id="cb6-87"><a href="#cb6-87" aria-hidden="true" tabindex="-1"></a><span class="op">.</span><span class="fu">join</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)<span class="sc">}</span><span class="vs">`</span></span>
-<span id="cb6-88"><a href="#cb6-88" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-89"><a href="#cb6-89" aria-hidden="true" tabindex="-1"></a>silly2 <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;pre&gt;---</span></span>
-<span id="cb6-90"><a href="#cb6-90" aria-hidden="true" tabindex="-1"></a><span class="vs">title: "Minutes </span><span class="sc">${</span>meeting_print<span class="sc">}</span><span class="vs">"</span></span>
-<span id="cb6-91"><a href="#cb6-91" aria-hidden="true" tabindex="-1"></a><span class="vs">date: </span><span class="sc">${</span>meeting_print<span class="sc">}</span></span>
-<span id="cb6-92"><a href="#cb6-92" aria-hidden="true" tabindex="-1"></a><span class="vs">---</span></span>
-<span id="cb6-93"><a href="#cb6-93" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-94"><a href="#cb6-94" aria-hidden="true" tabindex="-1"></a><span class="vs">::: {.callout-tip collapse="true"}</span></span>
-<span id="cb6-95"><a href="#cb6-95" aria-hidden="true" tabindex="-1"></a><span class="vs">## View Attendee List</span></span>
-<span id="cb6-96"><a href="#cb6-96" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-97"><a href="#cb6-97" aria-hidden="true" tabindex="-1"></a><span class="sc">${</span>silly<span class="sc">}</span></span>
-<span id="cb6-98"><a href="#cb6-98" aria-hidden="true" tabindex="-1"></a><span class="vs">:::</span></span>
-<span id="cb6-99"><a href="#cb6-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-100"><a href="#cb6-100" aria-hidden="true" tabindex="-1"></a><span class="vs">## Add Minutes Here</span></span>
-<span id="cb6-101"><a href="#cb6-101" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-102"><a href="#cb6-102" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/pre&gt;`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-6-1" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-6-2" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code hidden" id="cb7" data-startfrom="105" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 104;"><span id="cb7-105"><a href="#cb7-105" aria-hidden="true" tabindex="-1"></a>silly2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-7" data-nodetype="expression">
-
-</div>
-</div>
-</div>
+<section id="json-data-format" class="level2">
+<h2 class="anchored" data-anchor-id="json-data-format">JSON Data Format</h2>
+<ul>
+<li>The group is interested in learning more on the current progress of the <a href="https://www.cdisc.org/dataset-json">Dataset-JSON</a> effort.</li>
+<li>Mike Stakhouse will share more information on the <a href="https://atorus-research.github.io/datasetjson/"><code>{datasetjson}</code></a> package in the next submissions working group meeting.</li>
+</ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
-<script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiBtZWV0aW5nX2RhdGUgPSBJbnB1dHMuZGF0ZSh7XG4gIGxhYmVsOiBcIk1lZXRpbmcgRGF0ZVwiLFxuICB2YWx1ZTogXCIyMDIzLTAyLTAxXCJcbn0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTIiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJcbm1lZXRpbmdfeWVhciA9IChtZWV0aW5nX2RhdGUuZ2V0RnVsbFllYXIoKSkudG9TdHJpbmcoKVxubWVldGluZ19tb250aCA9IChtZWV0aW5nX2RhdGUuZ2V0TW9udGgoKSArIDEpLnRvU3RyaW5nKCkucGFkU3RhcnQoMiwgXCIwXCIpXG5tZWV0aW5nX2RheSA9IChtZWV0aW5nX2RhdGUuZ2V0RGF0ZSgpICsgMSkudG9TdHJpbmcoKS5wYWRTdGFydCgyLCBcIjBcIilcblxubWVldGluZ19hcnJheSA9IFttZWV0aW5nX3llYXIsIG1lZXRpbmdfbW9udGgsIG1lZXRpbmdfZGF5XVxubWVldGluZ19wcmludCA9IG1lZXRpbmdfYXJyYXkuam9pbihcIi1cIilcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImRhdGEyID0gdHJhbnNwb3NlKHBlb3BsZV9kYXRhKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC00IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoidmlld29mIHBlb3BsZV9zZWxlY3Rpb24gPSBJbnB1dHMudGFibGUoZGF0YTIsIHtcbiAgc29ydDogXCJuYW1lXCIsXG4gIG11bHRpcGxlOiB0cnVlLFxuICByb3dzOiA0MCxcbiAgcmVxdWlyZWQ6IGZhbHNlXG59KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC01IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoibWVldGluZ19wcmludFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC02IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoic2lsbHkgPSBodG1sYCR7QXJyYXkuZnJvbShuZXcgU2V0KHBlb3BsZV9zZWxlY3Rpb24ubWFwKGMgPT4gYy5uYW1lMikpKVxuLnNvcnQoKVxuLm1hcChjID0+IGAtICR7Y31gKVxuLmpvaW4oXCJcXG5cIil9YFxuXG5zaWxseTIgPSBodG1sYDxwcmU+LS0tXG50aXRsZTogXCJNaW51dGVzICR7bWVldGluZ19wcmludH1cIlxuZGF0ZTogJHttZWV0aW5nX3ByaW50fVxuLS0tXG5cbjo6OiB7LmNhbGxvdXQtdGlwIGNvbGxhcHNlPVwidHJ1ZVwifVxuIyMgVmlldyBBdHRlbmRlZSBMaXN0XG5cbiR7c2lsbHl9XG46OjpcblxuIyMgQWRkIE1pbnV0ZXMgSGVyZVxuXG48L3ByZT5gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTciLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJzaWxseTJcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnbWVldGluZ19kYXRlJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3Blb3BsZV9zZWxlY3Rpb24nKSJ9XX0=
-</script>
-<script type="module">
-if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
-window._ojs.paths.runtimeToDoc = "../..";
-window._ojs.paths.runtimeToRoot = "../..";
-window._ojs.paths.docToRoot = "";
-window._ojs.selfContained = false;
-window._ojs.runtime.interpretFromScriptTags();
-</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -975,9 +867,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<script src="https://giscus.app/client.js" data-repo="RConsortium/submissions-wg" data-repo-id="MDEwOlJlcG9zaXRvcnkzMTk1MjUxNTI=" data-category="General" data-category-id="MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyNTY3MTQx" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
+</script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
 </div> <!-- /content -->
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes_prep.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2024-10-04/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

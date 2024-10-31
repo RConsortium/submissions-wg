@@ -10,7 +10,110 @@
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Fri, 06 Sep 2024 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 04 Oct 2024 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2024-10-04</title>
+  <dc:creator>Eric Nantz &amp; Terry Christiani</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2024-10-04/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Amanda Martin (R Consortium)</li>
+<li>Andre Couturier (Sanofi)</li>
+<li>Ben Straub (GSK)</li>
+<li>Eric Nantz (Eli Lilly)</li>
+<li>HyeSoo Cho (FDA)</li>
+<li>Joel Laxamana (Roche/Genentech)</li>
+<li>Lovemore Gakava (Novo Nordisk)</li>
+<li>Michael Kane (MD Anderson Cancer Institute)</li>
+<li>Mike Stackhouse (Atorus)</li>
+<li>Nicholas Masel (Johnson &amp; Johnson)</li>
+<li>Ning Leng (Roche/Genentech)</li>
+<li>Paul Schuette (FDA)</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Saghir Bashir (Argenx)</li>
+<li>Terry Christiani (R Consortium)</li>
+</ul>
+</div>
+</div>
+</div>
+<section id="administrative-updates" class="level2">
+<h2 class="anchored" data-anchor-id="administrative-updates">Administrative Updates</h2>
+<ul>
+<li>The working group welcomed Terry Christiani, the new executive director for the R Consortium. We are greatly appreciate the important leadership provided by Joseph Rickert, the previous director. More information can be found on this <a href="https://r-consortium.org/posts/thank-you-joseph-rickert-a-legacy-of-leadership/">R Consortium Blog post</a>.</li>
+</ul>
+</section>
+<section id="submissions-pilot-4" class="level2">
+<h2 class="anchored" data-anchor-id="submissions-pilot-4">Submissions Pilot 4</h2>
+<ul>
+<li>The submissins pilot 4 (web-assembly version) was transferred on September 20, 2024 successfully and received by the FDA reviewers through the eCTD gateway transfer. The news was also shared in this <a href="https://r-consortium.org/posts/using-r-to-submit-research-to-the-fda-pilot-4-successfully-submitted/">announcement post</a> on the R Consortium blog.</li>
+<li>Hye Soo informed that their internal reviewer computers required an update to R version 4.4.1 to match the version used in the pilot submission. She also verified that there were no issues in rendering the Shiny application with the web-assembly method of execution.</li>
+<li>A small issue with column labels being switched on Primary Table was identified (a legacy issue that unfortunately was carried forward from an earlier version of the Pilot 1 output). While this is not a critical issue for the scope of pilot 4, Ben Straub shared how leveraging continuous integration / continuous deployment (CI/CD) for verifying the integrity of the data and outputs could be helpful.</li>
+<li>The full review of the submission is ongoing.</li>
+<li>Eric Nantz shared that the Docker container version of Pilot 4 is undergoing additional testing with the working group, and the goal is to have a transfer to the FDA reviewers in November (exact timing TBD).</li>
+<li>Communication with the Nature journal on a potential manuscript is ongoing. Michael Kane noted that additional journals such as the <a href="https://www.jstatsoft.org/index">Journal of Statistical Software</a> are another possibility for sharing the concepts of web-assembly in clinical submissions.</li>
+</ul>
+</section>
+<section id="analysis-data-reviewers-guide-adrg" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-data-reviewers-guide-adrg">Analysis Data Reviewers Guide (ADRG)</h2>
+<ul>
+<li>Joel Laxamana shared the ADRG Phuse working group established quarterly meetings starting on October 16.</li>
+<li>Initial steps involve identifying all of the pieces required for an ADRG, and how can templates be enhanced using the learnings from previous open-source efforts such as the Pilot submissions.</li>
+<li>Additional members from the submmissions working group will be invited to future discussions after the initial brainstorming of high-level ideas.</li>
+</ul>
+</section>
+<section id="repositories-working-group-notes" class="level2">
+<h2 class="anchored" data-anchor-id="repositories-working-group-notes">Repositories Working Group Notes</h2>
+<ul>
+<li>The Repositories Working Group is continuing their efforts to deliver a reproducible environment structure in which each organization can adopt to fit their needs.</li>
+<li>It was recommended to invite Doug Kelkoff to a future submissions WG meeting to stay updated with their efforts</li>
+</ul>
+</section>
+<section id="future-pilot-ideas" class="level2">
+<h2 class="anchored" data-anchor-id="future-pilot-ideas">Future Pilot Ideas</h2>
+<section id="realistic-pilot-submissions" class="level3">
+<h3 class="anchored" data-anchor-id="realistic-pilot-submissions">Realistic Pilot Submissions</h3>
+<ul>
+<li>The previous pilot submissions have been successful with the higher-level goals of demonstrating open-source software including R is a viable method for producing the typical submission deliverables.</li>
+<li>However, the mock clinical data sets and collection of outputs are a much smaller scale than a typical clinical submission which routinely involve many data sets and clinical TFLs.</li>
+<li>Bringing members outside of this core group to lead a realistic pilot submission grouup could be valuable in many fronts.</li>
+<li>Paul Schutte shared that there isn’t a cononical data set applicable to the life sciences space in the way that widely-known data sets such as iris and more recently <a href="https://allisonhorst.github.io/palmerpenguins/articles/intro.html">Palmer Penguins</a>.</li>
+<li>With the lack of public de-identified clinical data sets on the scale of the typical submission, creating these realistic sets via robust simulation could be a path forward.</li>
+<li>Action item: Create a subgroup of those interested in this effort.</li>
+<li>Sources such as <a href="https://data.projectdatasphere.org/projectdatasphere/html/home">Project Datasphere</a> are a way to obtain ADAM data sets involving treatment and standard of care data sets (with many oncology studies). One must request access before data are shared.</li>
+</ul>
+</section>
+</section>
+<section id="json-data-format" class="level2">
+<h2 class="anchored" data-anchor-id="json-data-format">JSON Data Format</h2>
+<ul>
+<li>The group is interested in learning more on the current progress of the <a href="https://www.cdisc.org/dataset-json">Dataset-JSON</a> effort.</li>
+<li>Mike Stakhouse will share more information on the <a href="https://atorus-research.github.io/datasetjson/"><code>{datasetjson}</code></a> package in the next submissions working group meeting.</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-10-04/</guid>
+  <pubDate>Fri, 04 Oct 2024 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2024-09-06</title>
   <dc:creator>Eric Nantz</dc:creator>
@@ -2163,99 +2266,6 @@ View Attendee List
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-02-03/</guid>
   <pubDate>Thu, 09 Feb 2023 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2023-01-13</title>
-  <dc:creator>Eric Nantz</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-01-13/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Andrew Borgman (Bristol Myers Squibb)</li>
-<li>Ben Straub (GSK)</li>
-<li>Bob Engle (Biogen)</li>
-<li>Doug Kelkhoff (Roche/Genentech)</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>HyeSoo Cho (FDA)</li>
-<li>Jizu Zhi (FDA)</li>
-<li>Joel Laxamana (Roche/Genentech)</li>
-<li>Kevin Kunzmann (Boehringer Ingelheim)</li>
-<li>Luke Schantz (R Consortium)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Phil Bowsher (Posit)</li>
-<li>Ryan Johnson (Posit)</li>
-<li>Sean Healey (Pfizer)</li>
-<li>Stephanie Lussier (Moderna)</li>
-<li>Steven Hasendinckx (Johnson &amp; Johnson)</li>
-<li>Tadeusz Lewandowski (Roche/Genentech)</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/apmL_9HvbAo" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="pilot-2-update" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-2-update">Pilot 2 Update</h3>
-<ul>
-<li>Paul Schuette confirms he was able to successfully run the Shiny application</li>
-<li>They encountered a few messages that they ignored, as the app still ran successfully</li>
-<li>HyeSoo Cho followed the ADRG instructions and launched Shiny app, without major issues</li>
-<li>She noticed minor issues around errors and warning messages. As part of her evaluation she tried launching the app in different machines to compare results. She saw some inconsistency between the environments, and they will report specific findings by next month (February)</li>
-</ul>
-</section>
-<section id="pilot-3-update" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-3-update">Pilot 3 Update</h3>
-<ul>
-<li>Proposal was sent in early December for comments and feedback <a href="https://github.com/RConsortium/submissions-pilot3-adam/issues/37" class="uri">https://github.com/RConsortium/submissions-pilot3-adam/issues/37</a></li>
-<li>Running into minor issues with using the same specifications and define settings as the original Pilot 1</li>
-<li>They are not clear on the most up-to-date specifications to use for the AdAM creation, would like help from others</li>
-<li>Thomas found a Phuse 2017 white paper on transport files for the next generation. This paper proposed new ways to convert the data before transfer</li>
-<li>Additional ideas such as a proposal to use JSON format <a href="https://wiki.cdisc.org/display/ODM2/Dataset-JSON" class="uri">https://wiki.cdisc.org/display/ODM2/Dataset-JSON</a></li>
-<li>FDA is aware of the proposal, but it is not clear how far the proposal has gone</li>
-<li>Study Data Technical Conformance Guide details the latest specs and what is acceptable in the gateway <a href="https://www.fda.gov/media/162867/download" class="uri">https://www.fda.gov/media/162867/download</a></li>
-<li>Sponsors can use SAS version 8 of XPT if they choose, most sponsors are using version 5 from their experience</li>
-<li>Other pilots have explored alternative formats, but have not been satisfactory in their opinion</li>
-<li>It is common to convert the XPT format to a more consumable format. For instance as sas7bdat in SAS or R objects inside R.</li>
-<li>Pilot 3 will adhere to the current specifications</li>
-<li>Ben recommended consulting with Sam Hume as a collaborate to push the effort along</li>
-<li>The ectd gateway would need updating to accommodate json formats. That would require discussions with the E-data team in the FDA</li>
-</ul>
-</section>
-<section id="r-validation-hub-intro-to-repositories-working-group" class="level3">
-<h3 class="anchored" data-anchor-id="r-validation-hub-intro-to-repositories-working-group">R Validation Hub intro to Repositories working group</h3>
-<ul>
-<li>Doug Kelkhoff and Kevin Kunzmann led a an introduction to the mission and goals of the working group</li>
-<li>Mission is to support a transparent cross-industry approach of maintaining a repo of R packages with evidence of their quality and assessment criteria</li>
-<li>Repo structure may resemble pieces of CRAN, R Universe . Still in the early stages of finding what is needed before working on the technical solutions</li>
-<li>Asks for regulatory input: Work with the team to understand how you want to observe quality. Paul mentioned that bigger issues that FDA are thinking about are from the IT perspective (making sure that packages don’t compromise infrastructure). Example of haven running into buffer overflow issues. Typically those concerns are raised by security team colleagues. They are not aware of any independent effort to gauge the quality of an R package. Typically they point people to the R Validation Hub. While it is not doing independent replication of algorithms, it is a reasonable attempt in the right direction. Typically all pieces of software give you the “as-is” message and no implied guarantee of quality</li>
-<li>Asks for industry input: Contribute by direct support, or by intermittent feedback as they prepare deliverables</li>
-<li>High level of planned deliverables: List of quality criteria, mockup of the communication portal, and an example of a package server modelling a real-world workflow</li>
-<li>Visit the repository to get involved <a href="https://github.com/pharmaR/regulatory-r-repo-wg" class="uri">https://github.com/pharmaR/regulatory-r-repo-wg</a></li>
-<li>Ben asked about ways to consolidation various validation efforts heard from other sponsors. What existing tools are being implemented in this space?</li>
-<li>Doug shared an article from the ASA Biopharmaceutical Report regarding the risk assessment of R packages: <a href="https://www.pharmar.org/blog/2022/12/05/2022-12-05-asa-biopharmaceutical-report-fall-2022/" class="uri">https://www.pharmar.org/blog/2022/12/05/2022-12-05-asa-biopharmaceutical-report-fall-2022/</a></li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-01-13/</guid>
-  <pubDate>Fri, 13 Jan 2023 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
