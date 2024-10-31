@@ -1,0 +1,66 @@
+---
+title: "Minutes 2024-10-04"
+date: 2024-10-04
+author: Eric Nantz & Terry Christiani
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Amanda Martin (R Consortium)
+- Andre Couturier (Sanofi)
+- Ben Straub (GSK)
+- Eric Nantz (Eli Lilly)
+- HyeSoo Cho (FDA)
+- Joel Laxamana (Roche/Genentech)
+- Lovemore Gakava (Novo Nordisk)
+- Michael Kane (MD Anderson Cancer Institute)
+- Mike Stackhouse (Atorus)
+- Nicholas Masel (Johnson & Johnson)
+- Ning Leng (Roche/Genentech)
+- Paul Schuette (FDA)
+- Robert Devine (Johnson & Johnson)
+- Saghir Bashir (Argenx)
+- Terry Christiani (R Consortium)
+:::
+
+## Administrative Updates
+
+* The working group welcomed Terry Christiani, the new executive director for the R Consortium. We are greatly appreciate the important leadership provided by Joseph Rickert, the previous director. More information can be found on this [R Consortium Blog post](https://r-consortium.org/posts/thank-you-joseph-rickert-a-legacy-of-leadership/).
+
+## Submissions Pilot 4
+
+* The submissins pilot 4 (web-assembly version) was transferred on September 20, 2024 successfully and received by the FDA reviewers through the eCTD gateway transfer. The news was also shared in this [announcement post](https://r-consortium.org/posts/using-r-to-submit-research-to-the-fda-pilot-4-successfully-submitted/) on the R Consortium blog.
+* Hye Soo informed that their internal reviewer computers required an update to R version 4.4.1 to match the version used in the pilot submission. She also verified that there were no issues in rendering the Shiny application with the web-assembly method of execution. 
+* A small issue with column labels being switched on Primary Table was identified (a legacy issue that unfortunately was carried forward from an earlier version of the Pilot 1 output). While this is not a critical issue for the scope of pilot 4, Ben Straub shared how leveraging continuous integration / continuous deployment (CI/CD) for verifying the integrity of the data and outputs could be helpful.
+* The full review of the submission is ongoing. 
+* Eric Nantz shared that the Docker container version of Pilot 4 is undergoing additional testing with the working group, and the goal is to have a transfer to the FDA reviewers in November (exact timing TBD).
+* Communication with the Nature journal on a potential manuscript is ongoing. Michael Kane noted that additional journals such as the [Journal of Statistical Software](https://www.jstatsoft.org/index) are another possibility for sharing the concepts of web-assembly in clinical submissions.
+
+## Analysis Data Reviewers Guide (ADRG) 
+
+* Joel Laxamana shared the ADRG Phuse working group established quarterly meetings starting on October 16.
+* Initial steps involve identifying all of the pieces required for an ADRG, and how can templates be enhanced using the learnings from previous open-source efforts such as the Pilot submissions.
+* Additional members from the submmissions working group will be invited to future discussions after the initial brainstorming of high-level ideas.
+
+## Repositories Working Group Notes
+
+* The Repositories Working Group is continuing their efforts to deliver a reproducible environment structure in which each organization can adopt to fit their needs.
+* It was recommended to invite Doug Kelkoff to a future submissions WG meeting to stay updated with their efforts
+
+## Future Pilot Ideas
+
+### Realistic Pilot Submissions
+
+* The previous pilot submissions have been successful with the higher-level goals of demonstrating open-source software including R is a viable method for producing the typical submission deliverables.
+* However, the mock clinical data sets and collection of outputs are a much smaller scale than a typical clinical submission which routinely involve many data sets and clinical TFLs.
+* Bringing members outside of this core group to lead a realistic pilot submission grouup could be valuable in many fronts.
+* Paul Schutte shared that there isn't a cononical data set applicable to the life sciences space in the way that widely-known data sets such as iris and more recently [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/articles/intro.html).
+* With the lack of public de-identified clinical data sets on the scale of the typical submission, creating these realistic sets via robust simulation could be a path forward.
+* Action item: Create a subgroup of those interested in this effort.
+* Sources such as [Project Datasphere](https://data.projectdatasphere.org/projectdatasphere/html/home) are a way to obtain ADAM data sets involving treatment and standard of care data sets (with many oncology studies). One must request access before data are shared.
+
+## JSON Data Format
+
+* The group is interested in learning more on the current progress of the [Dataset-JSON](https://www.cdisc.org/dataset-json) effort.
+* Mike Stakhouse will share more information on the [`{datasetjson}`](https://atorus-research.github.io/datasetjson/) package in the next submissions working group meeting.
