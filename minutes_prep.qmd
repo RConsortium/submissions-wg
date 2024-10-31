@@ -94,7 +94,8 @@ date: ${meeting_print}
 ::: {.callout-tip collapse="true"}
 ## View Attendee List
 
-${silly}:::
+${silly}
+:::
 
 ## Add Minutes Here
 
