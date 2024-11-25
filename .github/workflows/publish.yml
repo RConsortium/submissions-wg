@@ -31,6 +31,10 @@ jobs:
         run: install.packages("openxlsx2")
         shell: Rscript {0}
 
+      - name: Install rmarkdown
+        run: install.packages("rmarkdown")
+        shell: Rscript {0}
+
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
