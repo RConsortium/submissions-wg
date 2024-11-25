@@ -9,8 +9,101 @@
 <link>https://rconsortium.github.io/submissions-wg/minutes.html</link>
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.5.57</generator>
-<lastBuildDate>Fri, 04 Oct 2024 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.6.37</generator>
+<lastBuildDate>Fri, 01 Nov 2024 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2024-11-01</title>
+  <dc:creator>Eric Nantz &amp; Theresa Christiani</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2024-11-01/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Ben Straub (GSK)</li>
+<li>Eric Nantz (Eli Lilly)</li>
+<li>HyeSoo Cho (FDA)</li>
+<li>Joel Laxamana (Roche/Genentech)</li>
+<li>Katie Harding (Freemore)</li>
+<li>Lovemore Gakava (Novo Nordisk)</li>
+<li>Nicholas Masel (Johnson &amp; Johnson)</li>
+<li>Ning Leng (Roche/Genentech)</li>
+<li>Paul Schuette (FDA)</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Theresa Christiani (R Consortium)</li>
+<li>Youn Kyeong Chang (FDA)</li>
+</ul>
+</div>
+</div>
+</div>
+<section id="pilot-4-updates" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-4-updates">Pilot 4 Updates</h2>
+<ul>
+<li>HyeSoo shared concerns regarding the appropriateness of zip file formats for program delivery under FDA specifications. Suggestions to explore new architectures or formats for future submissions were raised, particularly for web-based applications.</li>
+<li>Testing for the Docker container component of Pilot 4 is ongoing, thus far no issues but Eric will share more updates in the next meeting.</li>
+</ul>
+</section>
+<section id="working-group-coordination" class="level2">
+<h2 class="anchored" data-anchor-id="working-group-coordination">Working Group Coordination</h2>
+<ul>
+<li>Theresa Christiani introduced an inter-organization coordination committee to streamline overlapping efforts across working groups (R Consortium, PhUSE, Pharmaverse). This committee will promote efficient use of resources and avoid redundant work. Robert Devine volunteered to present at the next coordination meeting.</li>
+<li>Robert will present at the R Consortium’s inter-organization coordination committee to share the group’s current projects and align efforts across R Consortium, PhUSE, and Pharmaverse.</li>
+<li>Those interested in attending that coordinating meeting can contact Theresa for getting on the invitation to those meetings</li>
+</ul>
+</section>
+<section id="analysis-data-reviewers-guide-adrg-updates" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-data-reviewers-guide-adrg-updates">Analysis Data Reviewer’s Guide (ADRG) Updates</h2>
+<ul>
+<li>The PhUSE working group on open-source metadata documentation is working to update the ADRG template to better support open-source submissions, with feedback from FDA and industry representatives.</li>
+<li>Lovemore gave a recap of a presentation about the ADRG workstream at the PHUSE FDA quarterly meeting</li>
+<li>The team discussed the potential use of Quarto (QMD) and HTML formats for more accessible, navigable submissions, as well as potential supplementary documents for open-source submissions. Paul confirmed that R Markdown (<code>.rmd</code>) format has already been approved as a file type.</li>
+<li>Joel and Lovemore will set up a future meeting to gather additional industry feedback as a first step to developing a new prototype of the ADRG using enhanced metadata and the Quarto format.</li>
+<li>While Quarto is an approved software package at the FDA, and Quarto file format (<code>.qmd</code>) is part of the approved file types within the <strong>Modeling and Simulation</strong> section of the <a href="https://www.fda.gov/media/85816/download">eCTD Format Specifications</a> document.</li>
+<li>Paul and HyeSoo will touch base with Helena Spiglin (part of the FDA committee currently assessing the <code>.json</code> formats as an alternative to SAS Transport <code>.xpt</code>) for confirming the Quarto and HTML formats can be added as supported formats for ADRG submissions.</li>
+</ul>
+</section>
+<section id="data-set-json-format-and-alternative-data-formats" class="level2">
+<h2 class="anchored" data-anchor-id="data-set-json-format-and-alternative-data-formats">Data Set JSON Format and Alternative Data Formats</h2>
+<ul>
+<li>The team discussed exploring JSON and alternative data formats like <a href="https://parquet.apache.org/">Parquet</a>, given the large data sizes in modern studies.</li>
+<li>Although the industry largely uses JSON, there are concerns about its efficiency for high-volume data. Parquet, used internally by several team members, offers a promising alternative, particularly for big data applications.</li>
+<li>For a comprehensive overview of the benefits and tradeoffs between JSON, Parquet, and other formats, see the recent R/Pharma 2024 presentation <strong>An arrow towards the future: A critical look at data formats for clinical reporting</strong> by Craig Gower-Page (<a href="https://www.youtube.com/watch?v=ipvcRPr0eig">recording link</a>).</li>
+<li>The FDA has primarily used JSON but is open to considering alternatives like Parquet with further testing and demonstrations.</li>
+<li>Paul mentioned he is not aware of previous efforts to convert the publically available CDISC data sets utilized in the previous pilot submissions to JSON format and then perform statistical analyses.</li>
+<li><strong>Opportunity for Pilot 5</strong>: Using the structure of Pilot 3 as a template, leverage JSON as the format to assess performance. Ben Straub will draft a proposal for an initial review at the next Submissions Working Group meeting in December.</li>
+<li>Nicholas Masel shared that the <a href="https://atorus-research.github.io/datasetjson/">{datasetjson}</a> R package will need updates to align with the latest schema (1.1) to ensure compatability with the future Pilot 5.</li>
+<li>In addition, Nick and Ben will gather input from industry colleagues and the FDA to determine if Parquet is a viable alternative to JSON for high-volume data in future pilots, and discuss any potential technical or bureaucratic limitations with FDA.</li>
+</ul>
+</section>
+<section id="future-pilot-projects" class="level2">
+<h2 class="anchored" data-anchor-id="future-pilot-projects">Future Pilot Projects</h2>
+<p>The team plans to prioritize two future pilot projects:</p>
+<ul>
+<li>Pilot 5: A repeat of Pilot 3 but using JSON format to assess package performance and ADRG requirements.</li>
+<li>Comprehensive Benchmark Pilot: A longer-term pilot for H2 2025 using a large, realistic simulated data set to evaluate JSON vs.&nbsp;Parquet for performance, usability, and compatibility.</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-11-01/</guid>
+  <pubDate>Fri, 01 Nov 2024 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2024-10-04</title>
   <dc:creator>Eric Nantz &amp; Terry Christiani</dc:creator>
@@ -2149,123 +2242,6 @@ View Attendee List
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-03-03/</guid>
   <pubDate>Fri, 03 Mar 2023 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2023-02-03</title>
-  <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-02-03/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>Heidi Curinckx (Johnson &amp; Johnson)</li>
-<li>Jizu Zhi (FDA)</li>
-<li>Joel Laxamana (Roche/Genentech)</li>
-<li>Juliane Manitz (EMD Serono)</li>
-<li>Luke Schantz (R Consortium)</li>
-<li>Nan Xiao (Merck)</li>
-<li>Ning Leng (Roche/Genentech)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Renping Zhang (Johnson &amp; Johnson)</li>
-<li>Saghir Bashir (Argenx)</li>
-<li>Stephanie Lussier (Moderna)</li>
-<li>Yilong Zhang (Meta)</li>
-</ul>
-</div>
-</div>
-</div>
-<p>The meeting was recorded and the <a href="https://zoom.us/rec/play/_r36eqGi8QfcrTyUn9Gq9dGJ3PrcVSImESyURrrHORDRgH3eZMl339Ay2v-_WgcYnoNv7l_OGv7dB7A.ceeNzouCunCUAi3I?continueMode=true&amp;_x_zm_rtaid=Od0rcCEIQBqAiOnyBePFDQ.1675462941996.dacb4db0c1d380b6173ed3092354bc50&amp;_x_zm_rhtaid=571">video</a> is available.</p>
-<section id="pilot-2" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-2">Pilot 2</h3>
-<p>Eric Nantz provided a summary of the Pilot 2 submission status:</p>
-<ul>
-<li><p>As previously reported, Paul confirmed that he was able to open submission and run the code.&nbsp;</p></li>
-<li><p>Paul also reported some minor differences from what was expected, received some warning messages and found some differences when running in different environments.</p></li>
-<li><p>Hye Soo sent an email saying that she expects to be able to complete her evaluation in time to present her finding at the March 3, 2023 meeting.</p></li>
-<li><p>Eric offered to work with Paul and the Hye Soo to resolve a</p></li>
-</ul>
-</section>
-<section id="pilot-3" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-3">Pilot 3</h3>
-<p>Nan Xiao summarized some of the topics discussed at the recent Pilot 2 meeting and pointed to some of the issues on GitHub. In particular, he highlighted the discussion about whether Pilot 2 should wrap the submission in an R package as was done in Pilot 1 and Pilot 2.</p>
-<ul>
-<li><p>Joel, a lead for the Pilot 3 group, joined the meeting and provided an update. (31:54 into the video)</p></li>
-<li><p>The group is making progress with data sets and tracking differences from those used in Pilot 1</p></li>
-<li><p>This month the team is focusing on finalizing data sets and generating output.</p></li>
-<li><p>The group has had some discussion about packing the submission</p></li>
-<li><p>The Submission WG members were in general agreement that Pilot 3 should conform to the standards set in Pilot 1 and Pilot 2 and use the package paradigm.</p></li>
-</ul>
-</section>
-<section id="pilot-4" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-4">Pilot 4</h3>
-<p>Eric briefly described the mission of this Pilot to make use of container technology, and noted that one goal is to make the use of containers easier for non experts.</p>
-</section>
-<section id="meeting-invitation-issue" class="level3">
-<h3 class="anchored" data-anchor-id="meeting-invitation-issue">Meeting invitation Issue</h3>
-<p>The group noticed that not everyone is getting the submissions to the Submissions WG meeting.</p>
-<p><strong>Action:</strong></p>
-<ul>
-<li><p>Luke will relaunch the Submissions WG meeting and make sure that the Pilot 3 folks are also invited to the general submissions WG meeting</p></li>
-<li><p>JBR and Luke will work together to determine who should receive invitations.</p></li>
-<li><p>JBR wants to make sure that although inactive members will be removed from the current invitation list, we will keep a record of their participation and maintain a list of current and past WG members somewhere on the website.</p></li>
-</ul>
-</section>
-<section id="new-submissions-wg-website" class="level3">
-<h3 class="anchored" data-anchor-id="new-submissions-wg-website">New Submissions WG Website</h3>
-<p>At 17:45 into the video Eric presents the new Quarto based website he has created for the WG. Eric has automated many of the task required to generate minutes and track members.</p>
-<p><strong>Action:</strong></p>
-<ul>
-<li><p>Joel will work with Eric to build out the Pilot 3 part of the site.</p></li>
-<li><p>Eric will select a time to provide a tutorial on using the website for JBR and Luke and record the session to share with others.</p></li>
-</ul>
-</section>
-<section id="discussion-about-device-submissions" class="level3">
-<h3 class="anchored" data-anchor-id="discussion-about-device-submissions">Discussion about Device Submissions</h3>
-<ul>
-<li><p>JBR mentioned that in a recent conversation asked if this group Robert Gentleman would be interested in R based device submissions.</p></li>
-<li><p>Paul noted that there is already a group making device submissions.</p></li>
-<li><p>See the <a href="https://www.niss.org/news/niss-merck-meet-discusses-open-source-software-pharma-april-21-2021">video</a> of the recent NISS-Merk meetup for some details. <a href="https://www.linkedin.com/in/tarek-haddad-07003a10/">Tarek Haddad</a> and <a href="https://www.linkedin.com/in/tedlystig/">Ted Lystig</a> could provide more information.</p></li>
-<li><p><a href="https://www.fda.gov/about-fda/center-devices-and-radiological-health/cdrh-offices">CDRH</a> does not have these same CDISC structure that <a href="https://www.fda.gov/about-fda/fda-organization/center-drug-evaluation-and-research-cder">CDER</a> and <a href="https://www.fda.gov/about-fda/fda-organization/center-biologics-evaluation-and-research-cber">CBER</a> have.</p></li>
-<li><p>CDRH has different requirements and is more flexible than CDER and CBER. The restrictions imposed by the CDER gateway generally has to do with accommodating large data sets. In general, CDRH data sets are not so large.</p></li>
-</ul>
-<p><strong>Action:</strong></p>
-<ul>
-<li>Paul offered to contact John Scott, Director of the CBER Biostats group, to see if his group has any interest in submissions.</li>
-</ul>
-</section>
-<section id="transcelerate" class="level3">
-<h3 class="anchored" data-anchor-id="transcelerate">Transcelerate</h3>
-<ul>
-<li><p>Paul noted that there was a recent FDA meeting with <a href="https://www.transceleratebiopharmainc.com/">Transcelerate</a> in which Transcelerate proposed projects to which Paul responded that some of the proposed work is already being done by the Submission Working Group.</p></li>
-<li><p>Paul also noted the RC work is going well.</p></li>
-<li><p>JBR asked if we should reach out to Transcelerate and Pau suggested Keaven Anderson of Merck</p></li>
-<li><p>Paul offered to make introductions to the R Consortium if they are willing.</p></li>
-<li><p>JBR noted that the RC is very willing to welcome Transcelerate into its efforts.</p></li>
-</ul>
-<p><strong>The next meeting will be at 9:00 AM Pacific Time on Friday, March 3, 2023.</strong></p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-02-03/</guid>
-  <pubDate>Thu, 09 Feb 2023 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
