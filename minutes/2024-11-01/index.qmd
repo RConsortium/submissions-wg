@@ -1,0 +1,60 @@
+---
+title: "Minutes 2024-11-01"
+date: 2024-11-01
+author: Eric Nantz & Theresa Christiani
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Ben Straub (GSK)
+- Eric Nantz (Eli Lilly)
+- HyeSoo Cho (FDA)
+- Joel Laxamana (Roche/Genentech)
+- Katie Harding (Freemore)
+- Lovemore Gakava (Novo Nordisk)
+- Nicholas Masel (Johnson & Johnson)
+- Ning Leng (Roche/Genentech)
+- Paul Schuette (FDA)
+- Robert Devine (Johnson & Johnson)
+- Theresa Christiani (R Consortium)
+- Youn Kyeong Chang (FDA)
+:::
+
+## Pilot 4 Updates
+
+* HyeSoo shared concerns regarding the appropriateness of zip file formats for program delivery under FDA specifications. Suggestions to explore new architectures or formats for future submissions were raised, particularly for web-based applications.
+* Testing for the Docker container component of Pilot 4 is ongoing, thus far no issues but Eric will share more updates in the next meeting.
+
+## Working Group Coordination
+
+* Theresa Christiani introduced an inter-organization coordination committee to streamline overlapping efforts across working groups (R Consortium, PhUSE, Pharmaverse). This committee will promote efficient use of resources and avoid redundant work. Robert Devine volunteered to present at the next coordination meeting.
+* Robert will present at the R Consortium's inter-organization coordination committee to share the group's current projects and align efforts across R Consortium, PhUSE, and Pharmaverse.
+* Those interested in attending that coordinating meeting can contact Theresa for getting on the invitation to those meetings
+
+## Analysis Data Reviewer’s Guide (ADRG) Updates
+
+* The PhUSE working group on open-source metadata documentation is working to update the ADRG template to better support open-source submissions, with feedback from FDA and industry representatives.
+* Lovemore gave a recap of a presentation about the ADRG workstream at the PHUSE FDA quarterly meeting
+* The team discussed the potential use of Quarto (QMD) and HTML formats for more accessible, navigable submissions, as well as potential supplementary documents for open-source submissions. Paul confirmed that R Markdown (`.rmd`) format has already been approved as a file type.
+* Joel and Lovemore will set up a future meeting to gather additional industry feedback as a first step to developing a new prototype of the ADRG using enhanced metadata and the Quarto format.
+* While Quarto is an approved software package at the FDA, and Quarto file format (`.qmd`) is part of the approved file types within the **Modeling and Simulation** section of the [eCTD Format Specifications](https://www.fda.gov/media/85816/download) document.
+* Paul and HyeSoo will touch base with Helena Spiglin (part of the FDA committee currently assessing the `.json` formats as an alternative to SAS Transport `.xpt`) for confirming the Quarto and HTML formats can be added as supported formats for ADRG submissions.
+
+## Data Set JSON Format and Alternative Data Formats
+
+* The team discussed exploring JSON and alternative data formats like [Parquet](https://parquet.apache.org/), given the large data sizes in modern studies.
+* Although the industry largely uses JSON, there are concerns about its efficiency for high-volume data. Parquet, used internally by several team members, offers a promising alternative, particularly for big data applications.
+* For a comprehensive overview of the benefits and tradeoffs between JSON, Parquet, and other formats, see the recent R/Pharma 2024 presentation **An arrow towards the future: A critical look at data formats for clinical reporting** by Craig Gower-Page ([recording link](https://www.youtube.com/watch?v=ipvcRPr0eig)).
+* The FDA has primarily used JSON but is open to considering alternatives like Parquet with further testing and demonstrations.
+* Paul mentioned he is not aware of previous efforts to convert the publically available CDISC data sets utilized in the previous pilot submissions to JSON format and then perform statistical analyses.
+* __Opportunity for Pilot 5__: Using the structure of Pilot 3 as a template, leverage JSON as the format to assess performance. Ben Straub will draft a proposal for an initial review at the next Submissions Working Group meeting in December.
+* Nicholas Masel shared that the [{datasetjson}](https://atorus-research.github.io/datasetjson/) R package will need updates to align with the latest schema (1.1) to ensure compatability with the future Pilot 5.
+* In addition, Nick and Ben will gather input from industry colleagues and the FDA to determine if Parquet is a viable alternative to JSON for high-volume data in future pilots, and discuss any potential technical or bureaucratic limitations with FDA.
+
+## Future Pilot Projects
+
+The team plans to prioritize two future pilot projects:
+
+* Pilot 5: A repeat of Pilot 3 but using JSON format to assess package performance and ADRG requirements.
+* Comprehensive Benchmark Pilot: A longer-term pilot for H2 2025 using a large, realistic simulated data set to evaluate JSON vs. Parquet for performance, usability, and compatibility.

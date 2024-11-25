@@ -30,7 +30,7 @@ Use the date input below to choose the date of the meeting. Click the calendar i
 ```{ojs}
 viewof meeting_date = Inputs.date({
   label: "Meeting Date",
-  value: "2023-02-01"
+  value: "2024-12-01"
 })
 ```
 
