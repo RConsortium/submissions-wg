@@ -1,0 +1,10 @@
+---
+title: How to Join
+---
+
+The Submissions Working Group welcomes all contributors who are passionate about bringing innovation to the clinical submission process! Here are the ways you can join the group's communication platforms and keep up-to-date with additional information:
+
+* Register for future Submissions Working Group meetings by visiting the [public calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/rcons?view=week). Our working group meetings typically occur on the first Friday of each month.
+* Send a note to our contact email: `operations[at]r-consortium.org`.
+* Join the Slock Group using the link [slack.r-consortium.org](https://slack.r-consortium.org) at the channel `#wg-submissions`.
+* Review the mailing list at [lists.r-consortium.org/g/Rconsortium-wg-submissions](https://lists.r-consortium.org/g/Rconsortium-wg-submissions)
