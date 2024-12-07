@@ -4,8 +4,8 @@ on:
     branches:
       - main
     paths-ignore:
-      - '\.devcontainer/*'
-      - '\.github/*'
+      - '\.devcontainer/**'
+      - '\.github/**'
       - 'README.md' 
 
 name: Quarto Publish
