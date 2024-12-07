@@ -91,5 +91,5 @@ jobs:
           status: ${{ job.status }}
           deployment_id: ${{ steps.deployment.outputs.deployment_id }}
           env: ${{ steps.deployment.outputs.env }}
-          env_url: 'https://${{ steps.deployment.outputs.env }}--quarto-website-template.netlify.app'
+          env_url: 'https://${{ steps.deployment.outputs.env }}--submissions-wg-preview.netlify.app'
           logs: 'https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
