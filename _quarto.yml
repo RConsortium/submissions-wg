@@ -12,6 +12,8 @@ website:
       - href: index.qmd
         text: Home
       - minutes.qmd
+      - href: join.qmd
+        text: How to Join
       - text: "Pilots"
         menu: 
           - pilot_background.qmd

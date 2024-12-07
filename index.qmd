@@ -14,3 +14,10 @@ You can view previous meeting minutes with links to recorded sessions [here](min
   - by showing open examples of using current submission portals
 - Easier R-based clinical trial regulatory submissions tomorrow
   - by collecting feedback and influencing future industry and agency decisions on system/process setup
+
+::: {.callout-tip}
+## Join the Team!
+
+Please visit the [How to Join](join.qmd) page for complete details on joining our working group.
+:::
+  
