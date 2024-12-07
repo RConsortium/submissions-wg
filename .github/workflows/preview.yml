@@ -62,7 +62,7 @@ jobs:
         with:
           step: start
           token: ${{ secrets.GITHUB_TOKEN }}
-          env: ${{ env.RELEASE_NAME }}
+          env: staging
           ref: ${{ github.head_ref }}
           logs: 'https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
 
