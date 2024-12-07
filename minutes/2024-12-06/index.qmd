@@ -1,0 +1,24 @@
+---
+title: "Minutes 2024-12-06"
+date: 2024-12-06
+author: Eric Nantz & Theresa Christiani
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Amanda Martin (R Consortium)
+- Ben Straub (GSK)
+- Eric Nantz (Eli Lilly)
+- HyeSoo Cho (FDA)
+- Joel Laxamana (Roche/Genentech)
+- Joseph Rickert
+- Mike Stackhouse (Atorus)
+- Nicholas Masel (Johnson & Johnson)
+- Ning Leng (Roche/Genentech)
+- Robert Devine (Johnson & Johnson)
+- Sam Parmar (Pfizer)
+- Terry Christiani (R Consortium)
+:::
+
+## Add Minutes Here
