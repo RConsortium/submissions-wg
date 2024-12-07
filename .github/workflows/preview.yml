@@ -1,0 +1,94 @@
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+
+name: Preview Site
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Install R dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages:
+            any::dplyr
+            any::openxlsx2
+            any::rmarkdown
+
+      # ============================================
+      # Build
+      # ============================================
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render Site
+        uses: quarto-dev/quarto-actions/render@v2
+
+      # ============================================
+      # Deploy Preview to Netlify
+      # ============================================
+
+      - name: Configure pull release name
+        if: ${{github.event_name == 'pull_request'}}
+        env:
+          PR_NUMBER: ${{ github.event.number }}
+        run: |
+          echo "RELEASE_NAME=pr-${PR_NUMBER}" >> $GITHUB_ENV
+
+      - name: Configure branch release name
+        if: ${{github.event_name != 'pull_request'}}
+        run: |
+          # use branch name, but replace slashes. E.g. feat/a -> feat-a
+          echo "RELEASE_NAME=${GITHUB_REF_NAME/\//-}" >> $GITHUB_ENV
+
+      - name: Create Github "view deployment" button in PR
+        if: ${{github.event_name == 'pull_request'}}
+        uses: bobheadxi/deployments@v1
+        id: deployment
+        with:
+          step: start
+          token: ${{ secrets.GITHUB_TOKEN }}
+          env: ${{ env.RELEASE_NAME }}
+          ref: ${{ github.head_ref }}
+          logs: 'https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+
+      - name: Deploy to Netlify
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          REF_NAME: ${{ github.ref_name }}
+          ALIAS: ${{ steps.deployment.outputs.env }}
+        run: |
+          npm install -g netlify-cli
+          # push main branch to production, others to preview --
+          if [ "${REF_NAME}" = "master" ] || [ "${REF_NAME}" = "main" ]; then
+            netlify deploy --dir=_site/ --prod
+          else
+            netlify deploy --dir=_site/ --alias="${ALIAS}"
+          fi
+
+      - name: Update Github "view deployment" button in PR
+        uses: bobheadxi/deployments@v1
+        if: ${{ always() && github.event_name == 'pull_request'}}
+        with:
+          step: finish
+          token: ${{ secrets.GITHUB_TOKEN }}
+          status: ${{ job.status }}
+          deployment_id: ${{ steps.deployment.outputs.deployment_id }}
+          env: ${{ steps.deployment.outputs.env }}
+          env_url: 'https://${{ steps.deployment.outputs.env }}--quarto-website-template.netlify.app'
+          logs: 'https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
