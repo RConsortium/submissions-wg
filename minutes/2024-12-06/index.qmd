@@ -16,9 +16,46 @@ author: Eric Nantz & Theresa Christiani
 - Mike Stackhouse (Atorus)
 - Nicholas Masel (Johnson & Johnson)
 - Ning Leng (Roche/Genentech)
+- Paul Schuette (FDA)
 - Robert Devine (Johnson & Johnson)
+- Sam Hume (CDISC)
 - Sam Parmar (Pfizer)
 - Terry Christiani (R Consortium)
 :::
 
-## Add Minutes Here
+## ADRG Formats
+
+* HyeSoo shared additional feedback from FDA on the file formats used for sending the Analysis Data Reviewers Guide (ADRG) in clinical submissions:
+     * For an FDA submission, a final ADRG document should be submitted for review. It is not recommended for reviewers to take additional steps such as rendering the ADRG using Quarto or another technical publishing system/package.
+     * The PDF format is required for submitting an ADRG. However there is a possibility of conducting a pilot test with submitting the ADRG in alternative formats such as the source Quarto file `.qmd` as well as the HTML output format `.html`.
+* The rational for submitting an ADRG in HTML format was discussed. Eric and Joel shared that having the HTML format brings the possibility of interactive displays (such as tables) which could be beneficial, especially for a submission including a large amount of programs and TLG outputs.
+* The group agreed that sending the ADRG source file in `.qmd` format would not be as beneficial in the current stage, as the rendered document itself is the main focus.
+* Future pilots such as Pilot 5 could be the first project to test submitting the ADRG in HTML format
+* While Pilot 4 (WebAssembly Shiny app) formally submitted the ADRG in PDF format, Eric created a separate version of the ADRG in HTML format as a technical preview, which can be viewed at [this link](https://rpodcast.quarto.pub/pilot4-webassembly-adrg/).
+
+## eCTD and Zip Archives
+
+* HyeSoo shared clarifications on the current eCTD specifications for including a ZIP archive file in a submission package. The accepted location is M5.3, with the permissible uses of grouping large sets of aECG XML files.
+* The method of including both the data sets and programs in the ZIP archive (utilized by the Pilot 4 WebAssembly submission) is not permissible.
+* Eric will set up a targeted discussion with Paul and HyeSoo in January 2025 on how to best utilized the ZIP format in the future Pilot 4 Docker Container submission.
+* Questions were raised on the possible inclusion of additional archive formats such as compressed Tar archives `.tar.gz` in the eCTD specifications. Currently that format is not supported, but it could be explored for discussion with FDA next year.
+
+## Dataset-JSON Overview
+
+* Sam Hume from CDISC joined the meeting to share CDISC's efforts in creating JSON datasets for clinical submissions, and feedback from previous pilots with FDA. You can view slides from Sam's previous presentation on Dataset-JSON from the 2024 CDISC & TMF Europe Interchange conference at [this link](https://www.cdisc.org/sites/default/files/2024-04/2024-EU-Interchange-Session-6B-SamHume-final.pdf), as well as the slides from a Public Review webinar held by CDISC at [this link](https://www.cdisc.org/sites/default/files/pdf/Dataset-JSON-v1-1-Public-Review.pdf).
+* Many of the standards in data exchanges are now using the JSON format as default.
+* There is increasing interest in additional structures besides the traditional rectangular/tabular approach, such as in the Electronic Study Protocol Template M11 module.
+* CDISC ran a pilot within CDER at FDA to verify the Dataset-JSON format could be successfull transferred and viewed by reviewers. The testing was deemed successful.
+* A mix of tools were utilized in the pilot. One of the over-arching goals is to ensure that the Dataset-JSON format is agonostic to the tools/languages used to ingest the format. For example, multiple languages like SAS, R, and Python should be able to import and analyze the data in this format.
+* Recently the Dataset-JSON version 1.1 was released, addressing feedback generated from the earlier pilot. You can view the updated user guide for v1.1 at [this link](https://wiki.cdisc.org/plugins/servlet/mobile?contentId=230658980#content/view/230658980).
+* Mike Stackhouse shared that the [`{datasetjson}](https://atorus-research.github.io/datasetjson/) package, tasked with reading and writing CDISC Dataset JSON files, is in active development to accomodate v1.1 of the Dataset-JSON format.
+* Nick and Mike would welcome collaboration from others on the package updates.
+* Another important fix ongoing for the package is switching to a more performant JSON processing backend, as detailed in [issue 32](https://github.com/atorus-research/datasetjson/issues/32) of the package's GitHub repository.
+* In light of learning about the successful pilot, questions were asked on whether our submissions group should still initiate a new Pilot that leverages JSON format instead of XPT. Sam and others in the call concurred that the pilot would still be worthwhile to conduct, as it could be the first test of the new Dataset-JSON v1.1 specification in a realistic setting.
+* Ben shared that this could be a great opportunity for others in the working group to take the lead on this new Pilot, now being called Pilot 5. Ben will take on the task of creating a new channel in Slack dedicated to Pilot 5 within the R Consortium Slack Channel.
+
+## Admin & Housekeeping
+
+* The group agreed to keep the current cadence of having the Submissions WG meetings on the first Friday of every month, with adjustments as needed.
+* A few members on the call were not clear on how to get invitations properly on their calendar. Theresa shared the ways anyone can add the working group meetings on their calendar. However the group agreed that having a dedicated page on the Working Group site for how to join the group and the various communication platforms would be a beneficial.
+* Eric will create a new page on the site to hold this information. In fact that page is now live! Visit the [How to Join](join.qmd) page for complete details.
