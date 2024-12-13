@@ -10,7 +10,102 @@
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.6.39</generator>
-<lastBuildDate>Fri, 01 Nov 2024 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 06 Dec 2024 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2024-12-06</title>
+  <dc:creator>Eric Nantz &amp; Theresa Christiani</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2024-12-06/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Amanda Martin (R Consortium)</li>
+<li>Ben Straub (GSK)</li>
+<li>Eric Nantz (Eli Lilly)</li>
+<li>HyeSoo Cho (FDA)</li>
+<li>Joel Laxamana (Roche/Genentech)</li>
+<li>Joseph Rickert</li>
+<li>Mike Stackhouse (Atorus)</li>
+<li>Nicholas Masel (Johnson &amp; Johnson)</li>
+<li>Ning Leng (Roche/Genentech)</li>
+<li>Paul Schuette (FDA)</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Sam Hume (CDISC)</li>
+<li>Sam Parmar (Pfizer)</li>
+<li>Terry Christiani (R Consortium)</li>
+</ul>
+</div>
+</div>
+</div>
+<section id="adrg-formats" class="level2">
+<h2 class="anchored" data-anchor-id="adrg-formats">ADRG Formats</h2>
+<ul>
+<li>HyeSoo shared additional feedback from FDA on the file formats used for sending the Analysis Data Reviewers Guide (ADRG) in clinical submissions:
+<ul>
+<li>For an FDA submission, a final ADRG document should be submitted for review. It is not recommended for reviewers to take additional steps such as rendering the ADRG using Quarto or another technical publishing system/package.</li>
+<li>The PDF format is required for submitting an ADRG. However there is a possibility of conducting a pilot test with submitting the ADRG in alternative formats such as the source Quarto file <code>.qmd</code> as well as the HTML output format <code>.html</code>.</li>
+</ul></li>
+<li>The rational for submitting an ADRG in HTML format was discussed. Eric and Joel shared that having the HTML format brings the possibility of interactive displays (such as tables) which could be beneficial, especially for a submission including a large amount of programs and TLG outputs.</li>
+<li>The group agreed that sending the ADRG source file in <code>.qmd</code> format would not be as beneficial in the current stage, as the rendered document itself is the main focus.</li>
+<li>Future pilots such as Pilot 5 could be the first project to test submitting the ADRG in HTML format</li>
+<li>While Pilot 4 (WebAssembly Shiny app) formally submitted the ADRG in PDF format, Eric created a separate version of the ADRG in HTML format as a technical preview, which can be viewed at <a href="https://rpodcast.quarto.pub/pilot4-webassembly-adrg/">this link</a>.</li>
+</ul>
+</section>
+<section id="ectd-and-zip-archives" class="level2">
+<h2 class="anchored" data-anchor-id="ectd-and-zip-archives">eCTD and Zip Archives</h2>
+<ul>
+<li>HyeSoo shared clarifications on the current eCTD specifications for including a ZIP archive file in a submission package. The accepted location is M5.3, with the permissible uses of grouping large sets of aECG XML files.</li>
+<li>The method of including both the data sets and programs in the ZIP archive (utilized by the Pilot 4 WebAssembly submission) is not permissible.</li>
+<li>Eric will set up a targeted discussion with Paul and HyeSoo in January 2025 on how to best utilized the ZIP format in the future Pilot 4 Docker Container submission.</li>
+<li>Questions were raised on the possible inclusion of additional archive formats such as compressed Tar archives <code>.tar.gz</code> in the eCTD specifications. Currently that format is not supported, but it could be explored for discussion with FDA next year.</li>
+</ul>
+</section>
+<section id="dataset-json-overview" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-json-overview">Dataset-JSON Overview</h2>
+<ul>
+<li>Sam Hume from CDISC joined the meeting to share CDISC’s efforts in creating JSON datasets for clinical submissions, and feedback from previous pilots with FDA. You can view slides from Sam’s previous presentation on Dataset-JSON from the 2024 CDISC &amp; TMF Europe Interchange conference at <a href="https://www.cdisc.org/sites/default/files/2024-04/2024-EU-Interchange-Session-6B-SamHume-final.pdf">this link</a>, as well as the slides from a Public Review webinar held by CDISC at <a href="https://www.cdisc.org/sites/default/files/pdf/Dataset-JSON-v1-1-Public-Review.pdf">this link</a>.</li>
+<li>Many of the standards in data exchanges are now using the JSON format as default.</li>
+<li>There is increasing interest in additional structures besides the traditional rectangular/tabular approach, such as in the Electronic Study Protocol Template M11 module.</li>
+<li>CDISC ran a pilot within CDER at FDA to verify the Dataset-JSON format could be successfull transferred and viewed by reviewers. The testing was deemed successful.</li>
+<li>A mix of tools were utilized in the pilot. One of the over-arching goals is to ensure that the Dataset-JSON format is agonostic to the tools/languages used to ingest the format. For example, multiple languages like SAS, R, and Python should be able to import and analyze the data in this format.</li>
+<li>Recently the Dataset-JSON version 1.1 was released, addressing feedback generated from the earlier pilot. You can view the updated user guide for v1.1 at <a href="https://wiki.cdisc.org/plugins/servlet/mobile?contentId=230658980#content/view/230658980">this link</a>.</li>
+<li>Mike Stackhouse shared that the <a href="https://atorus-research.github.io/datasetjson/">`{datasetjson}</a> package, tasked with reading and writing CDISC Dataset JSON files, is in active development to accomodate v1.1 of the Dataset-JSON format.</li>
+<li>Nick and Mike would welcome collaboration from others on the package updates.</li>
+<li>Another important fix ongoing for the package is switching to a more performant JSON processing backend, as detailed in <a href="https://github.com/atorus-research/datasetjson/issues/32">issue 32</a> of the package’s GitHub repository.</li>
+<li>In light of learning about the successful pilot, questions were asked on whether our submissions group should still initiate a new Pilot that leverages JSON format instead of XPT. Sam and others in the call concurred that the pilot would still be worthwhile to conduct, as it could be the first test of the new Dataset-JSON v1.1 specification in a realistic setting.</li>
+<li>Ben shared that this could be a great opportunity for others in the working group to take the lead on this new Pilot, now being called Pilot 5. Ben will take on the task of creating a new channel in Slack dedicated to Pilot 5 within the R Consortium Slack Channel.</li>
+</ul>
+</section>
+<section id="admin-housekeeping" class="level2">
+<h2 class="anchored" data-anchor-id="admin-housekeeping">Admin &amp; Housekeeping</h2>
+<ul>
+<li>The group agreed to keep the current cadence of having the Submissions WG meetings on the first Friday of every month, with adjustments as needed.</li>
+<li>A few members on the call were not clear on how to get invitations properly on their calendar. Theresa shared the ways anyone can add the working group meetings on their calendar. However the group agreed that having a dedicated page on the Working Group site for how to join the group and the various communication platforms would be a beneficial.</li>
+<li>Eric will create a new page on the site to hold this information. In fact that page is now live! Visit the <a href="join.qmd">How to Join</a> page for complete details.</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-12-06/</guid>
+  <pubDate>Fri, 06 Dec 2024 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2024-11-01</title>
   <dc:creator>Eric Nantz &amp; Theresa Christiani</dc:creator>
@@ -2174,74 +2269,6 @@ We might invite another speaker from a pharma company on their experience with R
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-04-07/</guid>
   <pubDate>Fri, 07 Apr 2023 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2023-03-03</title>
-  <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-03-03/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Ben Straub (GSK)</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>HyeSoo Cho (FDA)</li>
-<li>Joel Laxamana (Roche/Genentech)</li>
-<li>Joseph Rickert (R Consortium)</li>
-<li>Kui Schen (Bayer)</li>
-<li>Lei Zhao (Roche/Genentech)</li>
-<li>Nan Xiao (Merck)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Renping Zhang (Johnson &amp; Johnson)</li>
-<li>Robert Devine (Johnson &amp; Johnson)</li>
-<li>Saghir Bashir (Argenx)</li>
-<li>Sam Parmar (Pfizer)</li>
-<li>Sean Healey (Pfizer)</li>
-</ul>
-</div>
-</div>
-</div>
-<p>The meeting was recorded and the <a href="https://positpbc.zoom.us/rec/share/q2j9oskw1QXsUzjeI9NfdvBFYZcy6ml1aqCqGYRmtUC_NeH7RYUKePzyfj-e1OIS.y_DcC-vgNR4sVWjw">video</a> is available.</p>
-<p>Due to a problem with zoom permissions, the meeting started 15 minutes late. Apologize to everyone who was inconvenienced.</p>
-<p>(At 1:37 into the video) HyeSoo Cho begins sharing here screen and providing her comments on the recent Pilot 2 submission.</p>
-<p>A bug in the submission code caused population subsetting in the Kaplan Meier Curve to propagate silently throughout the <code>shiny</code> app. During the course of the meeting Eric Nantz was able to identify the problem as a incorrectly set option and correct it.</p>
-<p>JBR noted that turning off subgrouping for everything but the KM plot was a special requirement for the pilot submission and asked if under normal operation whether the FDA reviewers would like the <code>shiny</code> app to display this default behavior. (The alternative would be for app users to remember to turn on the same subgrouping for every plot or table in order to make comparisons.) HeySoo and Paul Schuette provided an explanation of the FDA’s need to be very careful of subgroup analysis.</p>
-<p>Paul emphasized that it is very important to distinguish between “exploratory analysis” and analysis for “inferential analysis”. Subgrouping that causes p-values to change cross the line between the two types of analyses. The FDA is very concerned that the misuse of subgrouping could lead people to improperly argue for evidence of efficacy based on restricted subpopulations. When asked if he was advising that submissions should not contain interactive capabilities Paul replied “No”. He elaborated that nothing interactive should produce a p-value.</p>
-<p>(10:48 into the video) Ning Leng asked if subpopulation analyses associated with predefined endpoints would be permissible as this would distinguish between inferential and exploratory analyses. Paul replied this is correct. He noted that prespecified subgroup analyses will often product confidence intervals but not p-values.</p>
-<p>(At 19:56) Eric announced the resolution to the parameter problem and the group agreed that we have a path forward for the current Pilot 2 submission. Eric also suggested that the interactivity may be the biggest topic for the group to discuss. Paul asked to defer the discussion of this bigger issue and suggested that the working group look to the <a href="https://amstat.tandfonline.com/doi/full/10.1080/00031305.2016.1154108#.ZAKTTuzML0q">ASA statement on p-values</a> for guidance.</p>
-<p>(18:36) The FDA does not want to be seen as endorsing the practice of rescuing a “failed” clinical trial by torturing the data. He noted that even now there is a problem with JMP and other tools that that are interactive but do not produce an open and fully transparent analysis true.</p>
-<p>Interactive tool must be open, transparent, reproducible, and consistent with good statistical practices. Paul suggested that an interactive tool that produces interactive tools on demand may not be consistent with the ASA statement on p-values.</p>
-<p>In response to a question, Paul affirmed that the ASA statement in p-values is a good foundation for understanding FDA practices.</p>
-<p>(22:57) Begins a discussion on <a href="https://github.com/rstudio/shinymeta"><code>shinymeta</code></a> and reproducibility. It as also noted that the <a href="https://insightsengineering.github.io/teal.code/main/articles/teal-code.html">teal</a> project is also addressing this reproducibility issue.</p>
-<p>(27:43) HeySoo resumes her comments on the Pilot 2 submission by commenting on the warning and error messages generated by the submission code, and points out that referencing a repository other than CRAN is problematic. Paul noted that FDA IT security is insisting on strong security checks, but that a case can be made that CRAN provides sufficient checks. He said that his group at the FDA is floating the notion of “curated” packages.</p>
-<p>HeySoo suggested that providing a README file that discusses all the potential error and warning messages and what needs to be done to run the app properly. Paul noted that some of this information should be included in the app to make it as stand alone as possible.</p>
-<p>The working group agreed that the next step should be to produce an updated Pilot 2 submission package and resubmit it through the gateway. This will make it for the FDA to produce a written response. We will proceed with Pilot 2 take 2.</p>
-<p>Eric will deploy will a new version on our internal host so that everyone can review it before the second submission.</p>
-<p>When asked if the FDA security work Paul mentioned would lead to a guidance document, Paul replied that it may and noted that there is an internal FDA working group addressing the problem, and that currently Python appears to be a bigger security problem than R.</p>
-<p>(44:26) Paul informed the group that the FDA is being approached by multiple groups, including PhUSE and Transcelerate, about using R and validation issues. The FDA would coordinate the activities of these groups to prevent duplication of effort and decide who is going to do what. He also suggested that we should broaden our base within the FDA and seek to get John Scott and CBER involved.</p>
-<p><strong>Action</strong> JBR will invite someone from the R Validation Working Group to attend our next meeting and meet with Paul to identify a representative from PhUSE to invite.</p>
-<p>The next meeting of the Submissions Working Group will be on Friday, April 7, 2023 at 9AM PST.</p>
-
-
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-03-03/</guid>
-  <pubDate>Fri, 03 Mar 2023 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
