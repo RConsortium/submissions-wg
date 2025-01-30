@@ -1,5 +1,6 @@
 ---
 title: "Minutes 2024-04-05"
+author: Joseph Rickert
 date: 2024-04-05
 ---
 

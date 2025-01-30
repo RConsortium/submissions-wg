@@ -1,5 +1,6 @@
 ---
 title: "Minutes 2023-05-05"
+author: Joseph Rickert
 date: 2023-05-05
 ---
 

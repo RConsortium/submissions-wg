@@ -1,5 +1,6 @@
 ---
 title: "Minutes 2023-07-07"
+author: Joseph Rickert
 date: 2023-07-07
 ---
 

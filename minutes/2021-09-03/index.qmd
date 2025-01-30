@@ -1,5 +1,6 @@
 ---
 title: "Minutes 2021-09-03"
+author: Joseph Rickert
 date: 09-03-2021
 editor: 
   markdown: 

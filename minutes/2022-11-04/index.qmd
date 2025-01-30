@@ -1,5 +1,6 @@
 ---
 title: "Minutes 2022-11-04"
+author: Joseph Rickert
 date: 11-04-2022
 ---
 
