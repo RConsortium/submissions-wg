@@ -9,11 +9,13 @@ editor:
 ## View Attendee List
 
 - Ben Straub (GSK)
+- CG Wang
 - Heidi Curinckx (Johnson & Johnson)
 - HyeSoo Cho (FDA)
 - Joel Laxamana (Roche/Genentech)
 - Katie Harding (Freenome)
 - Lovemore Gakava (Novo Nordisk)
+- Nikolay Nikolaev
 - Ning Leng (Roche/Genentech)
 - Paul Schuette (FDA)
 - Phanikumar Tata (Syneos Health)
@@ -22,12 +24,6 @@ editor:
 - Sam Parmar (Pfizer)
 - Terry Christiani (R Consortium)
 :::
-
-## Attendees not in current data file
-
-Nikolay Nikolaev
-CG Wang
-
 
 ## ADRG Working Group Updates
 
