@@ -1,0 +1,65 @@
+---
+title: "Minutes 2025-01-10"
+date: 2025-01-10
+editor:
+  render-on-save: true
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Ben Straub (GSK)
+- CG Wang
+- Heidi Curinckx (Johnson & Johnson)
+- HyeSoo Cho (FDA)
+- Joel Laxamana (Roche/Genentech)
+- Katie Harding (Freenome)
+- Lovemore Gakava (Novo Nordisk)
+- Nikolay Nikolaev
+- Ning Leng (Roche/Genentech)
+- Paul Schuette (FDA)
+- Phanikumar Tata (Syneos Health)
+- Phil Bowsher (Posit)
+- Robert Devine (Johnson & Johnson)
+- Sam Parmar (Pfizer)
+- Terry Christiani (R Consortium)
+:::
+
+## ADRG Working Group Updates
+
+* Lovemore provided an update on recent ADRG working group discussions, with minutes available at <https://github.com/phuse-org/OSDocuMeta/pull/7/files>.
+* Part of the recent discussions involved sharing the FDA's proposed draft of ADRG content with Christine Rossin at Pfizer (a member of the PHUSE ADRG working group). She had many comments pertaining to keeping the ADRG template language-agnostic. The team will set up a
+
+## Pilot 5 (Dataset-JSON) Updates
+
+* Ben shared a two-stage approach to the pilot that mimics how Pilot 4 was split to two components
+* The pilot 5 team will hold weekly 30-minute calls on Fridays (10 AM EST) for discussions and updates.
+* At a high level the pilot will have two key stages of development:
+    * Convert the data sets created in Pilot 3 to JSON.
+	* Adding additional JSON data sets and possibly new TLGs for additional testing and to pinpoint edge cases. 
+* Pilot 5 now has the following GitHub repositories created:
+     * Development repository: <https://github.com/RConsortium/submissions-pilot5-datasetjson>
+	 * Submission (eCTD-struture) repository: <https://github.com/RConsortium/submissions-pilot5-datasetjson-to-fda>
+	 * R package repository: <https://github.com/RConsortium/submissions-pilot5-utilities>
+	 * Pilot web site repository: <https://github.com/RConsortium/submissions-pilot5-website>
+
+## Pilot 6 (Realistic Submission Data)
+
+* Ateendees expressed excitement about the ways this new pilot's data package could help many aspects of future submissions involving open-source software, ranging from the ability to handle larger data sets, to having custom versions of the data tailored to benchmarking statistical methodologies.
+* Paul reminded the group that while they have access to a vast set of data from submissions, they are not allowed to share sponsor data externally.
+* Ben had a suggestion that part of the pilot 6 deliverables include a mock study protocol and statistical analysis plan. 
+* Eric will begin to create GitHub repositories for the pilot and set up working group meetings.
+
+## Additional items
+
+* The working group expressed interest in sharing publicly the new Pilot 5 and 6 objectives and goals in a future R Consortium Blog Post.
+* Nan Xiao has created a Pyton version of `{pkglite}` which is now part of the Pharmaverse! Details on the package can be found on GitHub at <https://github.com/pharmaverse/py-pkglite?
+* The group discussed the possibilities of Pytthon being part of future submission using multiple languages? Time will tell, but there could be a future Pilot that addresses the possibilitiy.
+* Paul confirmed that Python is acceptable in submissions per the [eCTD Specifications](https://www.fda.gov/media/85816/download) document. 
+* Terry informed the group about important efforts for open-source software repositories involving R to comply with the pending [Cyber Resiliance Act](https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act) (CRA).
+* The R Consortium along with representatives from the R Foundation, Bioconductor, ROpenSci, and the new Multiverse project are in close collaboration to ensure their repositories meet the requirements of the act.
+* As of this writing, open-source software repositories must comply with the CRA mandates by December 11, 2027.
+
+## Joining the Submissions Working Group
+
+A friendly reminder that you can find complete details on joining the Submissions Working Group at <https://rconsortium.github.io/submissions-wg/join.html>.

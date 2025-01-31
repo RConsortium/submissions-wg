@@ -1,5 +1,6 @@
 ---
 title: "Minutes 2020-12-04"
+author: Joseph Rickert
 date: 12-04-2020
 ---
 

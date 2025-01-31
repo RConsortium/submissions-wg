@@ -1,5 +1,6 @@
 ---
 title: "Minutes 2021-11-05"
+author: Joseph Rickert
 date: 11-05-2021
 ---
 
