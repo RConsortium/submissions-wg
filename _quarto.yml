@@ -21,6 +21,8 @@ website:
           - pilot2.qmd
           - pilot3.qmd
           - pilot4.qmd
+          - href: https://rconsortium.github.io/submissions-pilot5-website/
+            text: R Submission Pilot 5
       - text: "Site Development"
         menu:
           - href: dev_background.qmd
