@@ -249,7 +249,7 @@
     "href": "minutes/2025-01-10/index.html",
     "title": "Minutes 2025-01-10",
     "section": "",
-    "text": "View Attendee List\n\n\n\n\n\n\nBen Straub (GSK)\nCG Wang\nHeidi Curinckx (Johnson & Johnson)\nHyeSoo Cho (FDA)\nJoel Laxamana (Roche/Genentech)\nKatie Harding (Freenome)\nLovemore Gakava (Novo Nordisk)\nNikolay Nikolaev\nNing Leng (Roche/Genentech)\nPaul Schuette (FDA)\nPhanikumar Tata (Syneos Health)\nPhil Bowsher (Posit)\nRobert Devine (Johnson & Johnson)\nSam Parmar (Pfizer)\nTerry Christiani (R Consortium)"
+    "text": "View Attendee List\n\n\n\n\n\n\nBen Straub (GSK)\nEric Nantz (Eli Lilly)\nCG Wang\nHeidi Curinckx (Johnson & Johnson)\nHyeSoo Cho (FDA)\nJoel Laxamana (Roche/Genentech)\nKatie Harding (Freenome)\nLovemore Gakava (Novo Nordisk)\nNikolay Nikolaev\nNing Leng (Roche/Genentech)\nPaul Schuette (FDA)\nPhanikumar Tata (Syneos Health)\nPhil Bowsher (Posit)\nRobert Devine (Johnson & Johnson)\nSam Parmar (Pfizer)\nTerry Christiani (R Consortium)"
   },
   {
     "objectID": "minutes/2025-01-10/index.html#adrg-working-group-updates",
@@ -277,7 +277,7 @@
     "href": "minutes/2025-01-10/index.html#additional-items",
     "title": "Minutes 2025-01-10",
     "section": "Additional items",
-    "text": "Additional items\n\nThe working group expressed interest in sharing publicly the new Pilot 5 and 6 objectives and goals in a future R Consortium Blog Post.\nNan Xiao has created a Pyton version of {pkglite} which is now part of the Pharmaverse! Details on the package can be found on GitHub at &lt;https://github.com/pharmaverse/py-pkglite?\nThe group discussed the possibilities of Pytthon being part of future submission using multiple languages? Time will tell, but there could be a future Pilot that addresses the possibilitiy.\nPaul confirmed that Python is acceptable in submissions per the eCTD Specifications document.\nTerry informed the group about important efforts for open-source software repositories involving R to comply with the pending Cyber Resiliance Act (CRA).\nThe R Consortium along with representatives from the R Foundation, Bioconductor, ROpenSci, and the new Multiverse project are in close collaboration to ensure their repositories meet the requirements of the act.\nAs of this writing, open-source software repositories must comply with the CRA mandates by December 11, 2027."
+    "text": "Additional items\n\nThe working group expressed interest in sharing publicly the new Pilot 5 and 6 objectives and goals in a future R Consortium Blog Post.\nNan Xiao has created a Python version of {pkglite} which is now part of the Pharmaverse! Details on the package can be found on GitHub at &lt;https://github.com/pharmaverse/py-pkglite?\nThe group discussed the possibilities of Python being part of future submission using multiple languages? Time will tell, but there could be a future Pilot that addresses the possibilitiy.\nPaul confirmed that Python is acceptable in submissions per the eCTD Specifications document.\nTerry informed the group about important efforts for open-source software repositories involving R to comply with the pending Cyber Resiliance Act (CRA).\nThe R Consortium along with representatives from the R Foundation, Bioconductor, ROpenSci, and the new Multiverse project are in close collaboration to ensure their repositories meet the requirements of the act.\nAs of this writing, open-source software repositories must comply with the CRA mandates by December 11, 2027."
   },
   {
     "objectID": "minutes/2025-01-10/index.html#joining-the-submissions-working-group",
