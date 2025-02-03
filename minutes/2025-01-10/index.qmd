@@ -9,6 +9,7 @@ editor:
 ## View Attendee List
 
 - Ben Straub (GSK)
+- Eric Nantz (Eli Lilly)
 - CG Wang
 - Heidi Curinckx (Johnson & Johnson)
 - HyeSoo Cho (FDA)
