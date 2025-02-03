@@ -9,6 +9,7 @@ editor:
 ## View Attendee List
 
 - Ben Straub (GSK)
+- Eric Nantz (Eli Lilly)
 - CG Wang
 - Heidi Curinckx (Johnson & Johnson)
 - HyeSoo Cho (FDA)
@@ -53,8 +54,8 @@ editor:
 ## Additional items
 
 * The working group expressed interest in sharing publicly the new Pilot 5 and 6 objectives and goals in a future R Consortium Blog Post.
-* Nan Xiao has created a Pyton version of `{pkglite}` which is now part of the Pharmaverse! Details on the package can be found on GitHub at <https://github.com/pharmaverse/py-pkglite?
-* The group discussed the possibilities of Pytthon being part of future submission using multiple languages? Time will tell, but there could be a future Pilot that addresses the possibilitiy.
+* Nan Xiao has created a Python version of `{pkglite}` which is now part of the Pharmaverse! Details on the package can be found on GitHub at <https://github.com/pharmaverse/py-pkglite?
+* The group discussed the possibilities of Python being part of future submission using multiple languages? Time will tell, but there could be a future Pilot that addresses the possibilitiy.
 * Paul confirmed that Python is acceptable in submissions per the [eCTD Specifications](https://www.fda.gov/media/85816/download) document. 
 * Terry informed the group about important efforts for open-source software repositories involving R to comply with the pending [Cyber Resiliance Act](https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act) (CRA).
 * The R Consortium along with representatives from the R Foundation, Bioconductor, ROpenSci, and the new Multiverse project are in close collaboration to ensure their repositories meet the requirements of the act.
