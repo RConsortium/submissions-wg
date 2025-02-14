@@ -1,0 +1,47 @@
+---
+title: "Minutes 2025-02-07"
+date: 2025-02-07
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Ben Straub (GSK)
+- Katie Harding (Freenome)
+- Lovemore Gakava (Novo Nordisk)
+- Phanikumar Tata (Syneos Health)
+- Robert Devine (Johnson & Johnson)
+- Sam Parmar (Pfizer)
+- Terry Christiani (R Consortium)
+- Vedha Viyash (Appsilon)
+:::
+
+## ADRG metadata group updates
+
+* Lovemore and Sam shared the group's recent updates progress. They recently invited Christine Christine Rossin (from the Phuse ADRG working group) to their meetings for discussion on the proposed template.
+* Christine's recommendations include moving the instructions for executing the R code and setting up the execution environment to a supporting document and not part of the ADRG itself, ensuring the ADRG remains software-agnostic, and separate guidelines be developed for specific software.
+* The metadata group will be taking the lead on autoring guidelines for the R exection and environment language
+* The group will also establish diaglogs with other sub-teams addressing additional sections of ADRG such as such as estimands team to ensure everyone is on the same page for updating the ADRG sections
+* Next steps include authoring R scripts to help automate population of certain sections in the ADRG template.
+
+## Pilot 4 Container Submission updates
+
+* Eric shared recent progress on assembling a proposed submission structure for the container portion of Pilot 4.
+* Substantial updates have been made to the development repository available at <https://github.com/RConsortium/submissions-pilot4-container> as well as the proposed submission structure at <https://github.com/RConsortium/submissions-pilot4-container-to-fda>.
+* Eric will share the proposed structure with our FDA colleagues to ensure this is aligned with the eCTD guidelines.
+* Robert inquired about the specific version of the Windows Subsystem for Linux (WSL) used in the testing environment. Eric believes it is WSL2 but that will be confirmed and the appropriate sections of the ADRG will be updated accordingly.
+* Vedha shared that running the command `wsl --version` in the testing environment should output the key metadata on the WSL installation.
+
+## Pilot 5 DataSet-JSON updates
+
+* Sam and Ben shared the recent progress from the Pilot 5 working group
+* The team has created GitHub repositories for key portions of the pilot:
+    + Development repository: <https://github.com/RConsortium/submissions-pilot5-datasetjson>
+    * R package repository: <https://github.com/RConsortium/submissions-pilot5-utilities>
+    * Website: https://rconsortium.github.io/submissions-pilot5-website/ 
+    * Submission package structure: <https://github.com/RConsortium/submissions-pilot5-datasetjson-to-fda>
+* The data sets and R code used in Pilot 3 will be ported over to the Pilot 5 repositories
+* The team is very interested in utilizing GitHub actions to perform quality checks of the data set
+* `{datasetjson}` was recently updated to version 1.1 and the new update is available on CRAN. You can view the changelog at <https://atorus-research.github.io/datasetjson/news/index.html>.
+* As development begins for the quality checks and other testing, they will use the Pilot 3 code as a starting point.
+- Robert shared that CDISC will hold a general meeting on February 18, 2025. Members of the working group are encouraged to attend.
