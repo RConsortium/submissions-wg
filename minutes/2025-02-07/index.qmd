@@ -7,7 +7,7 @@ date: 2025-02-07
 ## View Attendee List
 
 - Ben Straub (GSK)
-- Eic Nantz (Eli Lilly)
+- Eric Nantz (Eli Lilly)
 - Katie Harding (Freenome)
 - Lovemore Gakava (Novo Nordisk)
 - Phanikumar Tata (Syneos Health)
