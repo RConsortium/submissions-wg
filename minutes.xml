@@ -9,8 +9,89 @@
 <link>https://rconsortium.github.io/submissions-wg/minutes.html</link>
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.6.40</generator>
-<lastBuildDate>Fri, 10 Jan 2025 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.6.41</generator>
+<lastBuildDate>Fri, 07 Feb 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2025-02-07</title>
+  <dc:creator>Eric Nantz &amp; Theresa Christiani</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2025-02-07/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Ben Straub (GSK)</li>
+<li>Eric Nantz (Eli Lilly)</li>
+<li>Katie Harding (Freenome)</li>
+<li>Lovemore Gakava (Novo Nordisk)</li>
+<li>Phanikumar Tata (Syneos Health)</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Sam Parmar (Pfizer)</li>
+<li>Terry Christiani (R Consortium)</li>
+<li>Vedha Viyash (Appsilon)</li>
+</ul>
+</div>
+</div>
+</div>
+<section id="adrg-metadata-group-updates" class="level2">
+<h2 class="anchored" data-anchor-id="adrg-metadata-group-updates">ADRG metadata group updates</h2>
+<ul>
+<li>Lovemore and Sam shared the group’s recent updates progress. They recently invited Christine Rossin (from the Phuse ADRG working group) to their meetings for discussion on the proposed template.</li>
+<li>Christine’s recommendations include moving the instructions for executing the R code and setting up the execution environment to a supporting document and not part of the ADRG itself, ensuring the ADRG remains software-agnostic, and separate guidelines be developed for specific software.</li>
+<li>The metadata group will be taking the lead on authoring guidelines for the R exection and environment language</li>
+<li>The group will also establish dialogs with other sub-teams addressing additional sections of ADRG such as such as estimands team to ensure everyone is on the same page for updating the ADRG sections</li>
+<li>Next steps include authoring R scripts to help automate population of certain sections in the ADRG template.</li>
+</ul>
+</section>
+<section id="pilot-4-container-submission-updates" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-4-container-submission-updates">Pilot 4 Container Submission updates</h2>
+<ul>
+<li>Eric shared recent progress on assembling a proposed submission structure for the container portion of Pilot 4.</li>
+<li>Substantial updates have been made to the development repository available at <a href="https://github.com/RConsortium/submissions-pilot4-container" class="uri">https://github.com/RConsortium/submissions-pilot4-container</a> as well as the proposed submission structure at <a href="https://github.com/RConsortium/submissions-pilot4-container-to-fda" class="uri">https://github.com/RConsortium/submissions-pilot4-container-to-fda</a>.</li>
+<li>Eric will share the proposed structure with our FDA colleagues to ensure this is aligned with the eCTD guidelines.</li>
+<li>Robert inquired about the specific version of the Windows Subsystem for Linux (WSL) used in the testing environment. Eric believes it is WSL2 but that will be confirmed and the appropriate sections of the ADRG will be updated accordingly.</li>
+<li>Vedha shared that running the command <code>wsl --version</code> in the testing environment should output the key metadata on the WSL installation.</li>
+</ul>
+</section>
+<section id="pilot-5-dataset-json-updates" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-5-dataset-json-updates">Pilot 5 DataSet-JSON updates</h2>
+<ul>
+<li>Sam and Ben shared the recent progress from the Pilot 5 working group</li>
+<li>The team has created GitHub repositories for key portions of the pilot:
+<ul>
+<li>Development repository: <a href="https://github.com/RConsortium/submissions-pilot5-datasetjson" class="uri">https://github.com/RConsortium/submissions-pilot5-datasetjson</a></li>
+<li>R package repository: <a href="https://github.com/RConsortium/submissions-pilot5-utilities" class="uri">https://github.com/RConsortium/submissions-pilot5-utilities</a></li>
+<li>Website: https://rconsortium.github.io/submissions-pilot5-website/</li>
+<li>Submission package structure: <a href="https://github.com/RConsortium/submissions-pilot5-datasetjson-to-fda" class="uri">https://github.com/RConsortium/submissions-pilot5-datasetjson-to-fda</a></li>
+</ul></li>
+<li>The data sets and R code used in Pilot 3 will be ported over to the Pilot 5 repositories</li>
+<li>The team is very interested in utilizing GitHub actions to perform quality checks of the data set</li>
+<li><code>{datasetjson}</code> was recently updated to version 1.1 and the new update is available on CRAN. You can view the changelog at <a href="https://atorus-research.github.io/datasetjson/news/index.html" class="uri">https://atorus-research.github.io/datasetjson/news/index.html</a>.</li>
+<li>As development begins for the quality checks and other testing, they will use the Pilot 3 code as a starting point.</li>
+<li>Robert shared that CDISC will hold a general meeting on February 18, 2025. Members of the working group are encouraged to attend. Additional details and registration are available at the pharma-oversight Slack channel in the February 14, 2025 post.</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2025-02-07/</guid>
+  <pubDate>Fri, 07 Feb 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2025-01-10</title>
   <dc:creator>Eric Nantz &amp; Theresa Christiani</dc:creator>
@@ -2123,106 +2204,6 @@ View Attendee List
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-06-02/</guid>
   <pubDate>Fri, 02 Jun 2023 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2023-05-05</title>
-  <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-05-05/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Andrew Borgman (Bristol Myers Squibb)</li>
-<li>Ben Straub (GSK)</li>
-<li>Brandon Suchon</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>HyeSoo Cho (FDA)</li>
-<li>Jizu Zhi (FDA)</li>
-<li>Joel Laxamana (Roche/Genentech)</li>
-<li>Joseph Rickert (R Consortium)</li>
-<li>Kui Shen (Bayer)</li>
-<li>Nan Xiao (Merck)</li>
-<li>Nate Mockler (Biogen)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Renping Zhang (Johnson &amp; Johnson)</li>
-<li>Robert Devine (Johnson &amp; Johnson)</li>
-<li>Saghir Bashir (Argenx)</li>
-<li>Sam Parmar (Pfizer)</li>
-<li>Sean Healey (Pfizer)</li>
-</ul>
-</div>
-</div>
-</div>
-<section id="add-minutes-here" class="level2">
-<h2 class="anchored" data-anchor-id="add-minutes-here">Add Minutes Here</h2>
-<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/OZyp5N4QZCsl-D-8BMBzjuSubI0BYbISZTa6703egO97UUroboDFZVt4hjRudEY.1qe8A653kLrj7tfz?startTime=1683302886000">video</a> is available.</p>
-<p>Joseph Rickert brought the meeting to order.</p>
-<section id="pilot-2" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-2">Pilot 2</h3>
-<ul>
-<li>Hye Soo Cho of the FDA reported that her review of the Pilot 2 submission is going well and that she expects to be finished in June.</li>
-<li>She is not sure how long it will take the FDA to produce a written response.</li>
-</ul>
-</section>
-<section id="pilot-3" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-3">Pilot 3</h3>
-<p>Joel Laxamana reported on Pilot 3 work.</p>
-<ul>
-<li>The execution team isfocusing on documentation particularly in the ADRG.</li>
-<li>The WG confirmed that Pilot 3 should follow the Pilot 2 approach and send the renv.lock file in the R package text.</li>
-<li>There was a question about SDTM Versions. The WG confirmed that the Pilot 3 should use the same 1.4 STDM version as Pilots 1 and 2. See <a href="https://github.com/RConsortium/submissions-pilot3-adam/issues/104">Issue #104</a>.</li>
-<li>QC Findings will go as Appendix to the ADRG.</li>
-<li>The WG agreed that the second week in July would be a good target for Pilot 3 Submission.</li>
-</ul>
-</section>
-<section id="pilot-4" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-4">Pilot 4</h3>
-<p>Eric Nantz provided an update on Pilot 4 work.</p>
-<ul>
-<li>Eric expects to have the first meeting of the execution team volunteers in the next few weeks.</li>
-<li>Eric is taking a step back from committing to a container based approach in order to consider the possibility of using a self executing app in the browser using <a href="https://webassembly.org/">WebAssembly</a>.</li>
-<li>George Stagg from Posit is providing some assistance.</li>
-<li>The idea is that the R submission code would run in a browser on the local machine of an FDA analyst.</li>
-<li>Paul Schuette indicated that this approach would likely be possible at the FDA.</li>
-<li>Eric said that he would be happy to try and replicate the FDA web browser environment.</li>
-<li>The group suggested that a Webinar for the R Adoption series and other venues would be valuable for promoting the project.</li>
-<li>Paul speculated that this web browser technology might also be useful to FDA field inspectors.</li>
-<li>Eric noted that a selection core of R packages is being identified to have them run run “out of the box”.</li>
-<li>If you would like to be part of the Pilot 4 team please contact Eric Nantz.</li>
-<li>Paul noted that recent events where outside entities can re-litigate FDA approvals decades after the approval could make it even more necessary to be able to run analysis software many years after the submission.</li>
-<li>JBR surmised that there may be interest in WG to explore long term archiving.</li>
-</ul>
-</section>
-<section id="other-discussions" class="level3">
-<h3 class="anchored" data-anchor-id="other-discussions">Other discussions</h3>
-<ul>
-<li>Nan Xiao brought attention to a <a href="https://www.jpma.or.jp/information/evaluation/results/allotment/DS_202204_oss.html">document</a> describing the submission WG in Japan. It refers to a survey about open source that mentions the Pilot 1 Submissions.</li>
-<li>We are exploring the possibility of arranging for the authors of this document to participation in an R Adoption Series webinar.</li>
-</ul>
-<p>The next meeting of the Submissions WG will be on Friday, June 2, 2023 at 9AM Pacific Time.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-05-05/</guid>
-  <pubDate>Fri, 05 May 2023 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
