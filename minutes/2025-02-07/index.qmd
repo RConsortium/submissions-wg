@@ -46,3 +46,4 @@ date: 2025-02-07
 * `{datasetjson}` was recently updated to version 1.1 and the new update is available on CRAN. You can view the changelog at <https://atorus-research.github.io/datasetjson/news/index.html>.
 * As development begins for the quality checks and other testing, they will use the Pilot 3 code as a starting point.
 - Robert shared that CDISC will hold a general meeting on February 18, 2025. Members of the working group are encouraged to attend. Additional details and registration are available at the pharma-oversight Slack channel in the February 14, 2025 post.
+
