@@ -9,8 +9,105 @@
 <link>https://rconsortium.github.io/submissions-wg/minutes.html</link>
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.6.42</generator>
-<lastBuildDate>Fri, 07 Mar 2025 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.6.43</generator>
+<lastBuildDate>Fri, 04 Apr 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2025-04-04</title>
+  <dc:creator>Eric Nantz</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2025-04-04/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Andre Couturier (Sanofi)</li>
+<li>Ben Straub (GSK)</li>
+<li>Camille Calmasini (Natera)</li>
+<li>HyeSoo Cho (FDA)</li>
+<li>Jim Rothstein (Freelance)</li>
+<li>Keaven Anderson (Merck)</li>
+<li>Lovemore Gakava (Novo Nordisk)</li>
+<li>Nan Xiao (Merck)</li>
+<li>Nicholas Masel (Johnson &amp; Johnson)</li>
+<li>Paul Schuette (FDA)</li>
+<li>Phil Bowsher (Posit)</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Tilo (unknown)</li>
+<li>Youn Kyeong Chang (FDA)</li>
+</ul>
+</div>
+</div>
+</div>
+<section id="pilot-4-web-assembly-and-docker-container-shiny-app" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-4-web-assembly-and-docker-container-shiny-app">Pilot 4 (Web-assembly and Docker Container Shiny app)</h2>
+<ul>
+<li>Eric has investigated the possibility of utilizing <code>{pkglite}</code> to assemble the submission files necessary for both the container and web-assembly versions of Pilot 4.
+<ul>
+<li>Container version: No issues, as the necessary Dockerfile can easily be renamed to <code>Dockerfile.txt</code> with the command to build the image updated accordingly. The existing Pilot 2 R files can be assembled alongside the aforementioned Dockerfile.</li>
+<li>Web-assembly: As long as the pre-compiled version of the application is not included in the transfer, the modified application files and helper R scripts used to compile the application would still be using the permitted file types (R scripts, text files).</li>
+</ul></li>
+<li>The FDA reviewers would like a re-transfer of the web-assembly application using the new structure. The reviewers are in agreement to perform separate transfers for each of the Pilot 4 types, as trying to assemble each in to a single transfer package could introduce more complications as they require much different steps for running their respective applications.</li>
+<li>Paul mentioned that any discussions on the future use of Zip archive files in ECTD transfers is being put on hold due to circumstances happening at the agency outside of their control.</li>
+</ul>
+</section>
+<section id="pilot-5-dataset-json-format" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-5-dataset-json-format">Pilot 5 (Dataset-JSON format)</h2>
+<ul>
+<li>Ben shared that terrific process is being made:
+<ul>
+<li>The use of XPT files has been removed in favor of native <code>.rds</code> files for data storage.</li>
+<li>Additional code cleanup is on track.</li>
+</ul></li>
+<li>Next steps are to merge the candidate Dataset-JSON files into the main repostory.</li>
+<li>Based on discussin in the March working group meeting, Ning and Nabil created a prototype workflow that leverages the <code>{ellmer}</code> pacage to populate portions of the ADRG using LLMs.</li>
+<li>Thanks to Sam, we have a new page on the <a href="https://rconsortium.github.io/submissions-pilot5-website/viewer.html">Pilot 5</a> web site that embeds the DatasetJSON Viewer Shiny application.</li>
+<li>Paul shared that the aforementioned “circumstances” have impacted the FDA’s internal resourcing on the Dataset-JSON effort. How this impacts the future of a Pilot 5 transfer is to be determined. As of now, there is still an embargo on written communications.</li>
+</ul>
+</section>
+<section id="phuse-metadata-adrg-working-group" class="level2">
+<h2 class="anchored" data-anchor-id="phuse-metadata-adrg-working-group">Phuse Metadata / ADRG Working Group</h2>
+<ul>
+<li>Lovemore shared that preparation is underway for a interactive session at the Phuse CSS conference in Europe.</li>
+<li>Team is working to build functions to gen metadata for the different sections of the ADRG, to be eventually folded into a package.</li>
+<li>Christine from Pfizer shared the current template for the ADRG which will be distrbuted to the other team members. The group will determine how it aligns with comments previously provided by the FDA reviewers.</li>
+</ul>
+</section>
+<section id="other-topics" class="level2">
+<h2 class="anchored" data-anchor-id="other-topics">Other Topics</h2>
+<ul>
+<li>The working group welcomes a new member: <a href="https://www.linkedin.com/in/camilla-calmasini/">Camilla Calmasini</a>!</li>
+<li>Ben reminded the group of an opportunity to add a <a href="https://github.com/RConsortium/submissions-wg/issues/106">timeline</a> to the Submissions Working Group site, as a way to present visitors a quick visual of the many accomplishments coming from these pilots. A great example can be found on the <a href="https://insightsengineering.github.io/nest/">NEST</a> website. Another approach could be to leverage the <a href="https://daattali.com/shiny/timevis-demo/"><code>{timevis}</code></a> HTML widget authored by Dean Attali, as well as clever use of Observable to create an <a href="https://observablehq.com/@observablehq/build-your-own-gantt-chart">interactive Gantt chart</a>.</li>
+<li>Lovemore shared that a new Phuse Working group called <a href="https://advance.hub.phuse.global/wiki/spaces/WEL/pages/90472489/QC+Workflow+Optimisation"><strong>QC Workflow Optimisation</strong></a> has launched to investigate the use of double-programming in the QC process of validating clinical programming. There could be opportunities for them to share an update with our group as they make progress, and to determine how future pilots may benefit. Ben mentioned this was a topic discussed in the recent PHUSE Connect, especially with how AI could help in this process.</li>
+<li>Keaven asked the group how reproducibility is being addressed currently for Shiny applications?
+<ul>
+<li>The Teal framework leverages a [custom-build solution called <code>qenv</code>]*https://insightsengineering.github.io/teal.code/latest-tag/articles/teal-code.html() as documented on the <code>{teal.code}</code> package website</li>
+<li>Phil reminded the group that the Shiny team created a package years ago called <a href="https://rstudio.github.io/shinymeta/"><code>{shinymeta}</code></a> to help application authors capture logic based on user interactions and create a reprodcuible R script to replicate those interactions.</li>
+<li>Matthew Kumar &amp; Srinivas Verragoni from Bayer presented their use of <code>{shinymeta}</code> in a presentation titled <a href="https://phuse.s3.eu-central-1.amazonaws.com/Archive/2023/Connect/US/Florida/PRE_OS10.pdf">Reproducibility of Interactive Analyses</a> at the 2023 Phuse US Connect conference.</li>
+</ul></li>
+<li>Bonus trivia: Why was the SAS JMP software called JMP? JMP was named as “John’s Mackintosh Program” as it was an early attempt within the company to make SAS compatible with the Apple Macintosh operating systems (h/t Paul).</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2025-04-04/</guid>
+  <pubDate>Fri, 04 Apr 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2025-03-07</title>
   <dc:creator>Eric Nantz</dc:creator>
@@ -2123,101 +2220,6 @@ View Attendee List
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-08-04/</guid>
   <pubDate>Fri, 04 Aug 2023 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2023-07-07</title>
-  <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-07-07/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>HyeSoo Cho (FDA)</li>
-<li>Jizu Zhi (FDA)</li>
-<li>Joel Laxamana (Roche/Genentech)</li>
-<li>Joseph Rickert (R Consortium)</li>
-<li>Nan Xiao (Merck)</li>
-<li>Ning Leng (Roche/Genentech)</li>
-<li>Robert Devine (Johnson &amp; Johnson)</li>
-<li>Saghir Bashir (Argenx)</li>
-<li>Yilong Zhang (Meta)</li>
-</ul>
-</div>
-</div>
-</div>
-<section id="add-minutes-here" class="level2">
-<h2 class="anchored" data-anchor-id="add-minutes-here">Add Minutes Here</h2>
-<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/UWy0e4rQiG-Qa7LJL8NT6cLCrl0PgqZPr93VAVBZowYbCnqZ01C1hQDf1haXAdM_.n__f-SUm5BcNMzgm?startTime=1688745965000">video</a> is available.</p>
-<section id="pilot-2" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-2">Pilot 2</h3>
-<p>Eric Nantz has made progress on addressing the issues identified with the Pilot 2 resubmission. Fixes include:</p>
-<ul>
-<li>User-friendly warnings when filters result in an empty data set</li>
-<li>Consistent footer and header notes in the tables titles that match the Pilot 1 output</li>
-</ul>
-<p>The only outstanding issue that is still being worked on is the warning message that results from loading the <code>teal</code> package from GitHub because it is not yet on CRAN.</p>
-<p>The Pilot 2 resubmission is now scheduled for 9AM PST on Wednesday July 19, 2023. Note that shortly after the meeting the date was confirmed with Beverly Chin and HyeSoo Cho.</p>
-<p><strong>Action</strong> JBR to schedule a zoom meeting and invite:</p>
-<ul>
-<li>HyeSoo Cho</li>
-<li>Beverly Chin</li>
-<li>Ning Leng</li>
-<li>Eric Nantz</li>
-</ul>
-</section>
-<section id="pilot-3" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-3">Pilot 3</h3>
-<p>Joel Laxamana provide the status update on Pilot 3.</p>
-<ul>
-<li>The Pilot 3 team is developing the testing process and updating the ADRG to follow the process used in Pilots 1 and 2.</li>
-<li>Developing the testing process is taking longer than expected because they are attempting to develop a hybrid of the different process used in Pilot 1 and Pilot 2.</li>
-<li>The group is now targeting the first or second week of August for the Pilot 3 submission.</li>
-</ul>
-<p><strong>Action:</strong></p>
-<ul>
-<li>Joel will confer with Eric and Nan at a separate meeting.</li>
-</ul>
-</section>
-<section id="pilot-4" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-4">Pilot 4</h3>
-<p>Eric began the status update by thanking the team members from Appsilon who have set up a robust container environment for the Pilot.</p>
-<ul>
-<li>Saghir has been able to get the container and app running in his environment</li>
-<li>We must work with the FDA to determine the best method of transferring the container</li>
-<li>Team members from Posit are working with the the WebAssembly</li>
-<li>The major technical requirement is that the FDA reviewers will be able to run the <a href="https://podman.io/">Podman</a> container environment</li>
-<li>Right now, we believe that the WebAssembly, if it works as advertised, would be preferred by the FDA</li>
-<li>It was noted that that FDA primarily works in a Windows environment</li>
-</ul>
-<p><strong>Action:</strong></p>
-<ul>
-<li>JBR to discuss FDA constraints and preferences with Paul Schuette.</li>
-</ul>
-<p>The next meeting of the working group will be at 9AM PST on Friday, August 4, 2023</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-07-07/</guid>
-  <pubDate>Fri, 07 Jul 2023 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
