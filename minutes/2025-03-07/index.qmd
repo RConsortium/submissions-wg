@@ -1,0 +1,60 @@
+---
+title: "Minutes 2025-03-07"
+author: Eric Nantz
+date: 2025-03-07
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Ben Straub (GSK)
+- Eric Nantz (Eli Lilly)
+- HyeSoo Cho (FDA)
+- Joel Laxamana (Roche/Genentech)
+- Katie Harding (Freenome)
+- Lovemore Gakava (Novo Nordisk)
+- Nabil Baugher (Baseline AI)
+- Nan Xiao (Merck)
+- Nicholas Masel (Johnson & Johnson)
+- Ning Leng (Roche/Genentech)
+- Paul Schuette (FDA)
+- Sam Parmar (Pfizer)
+- Youn Kyeong Chang (FDA)
+:::
+
+## Pilot 4: File Structures
+
+* Discussions internally are taking place at FDA on whether the Zip file can include the file types that may not be on the approved software list
+* In light of the evolving discussions, Paul recommends to explore the use of `{pkglite}` for bunlding the applicaiton files in a similar fashion as Submissions Pilot 2 (traditional shiny application)
+* Eric will examine both the web assembly and Docker container versions of Pilot 4 and provide FDA reviewers a list of the essenstial file types necessary to review each submission bundle 
+* Nan Xiao recommends we examine his recent releaes of [pkglite for Python](https://nanx.me/blog/post/pkglite-python/) in case that could help streamline the process, especially for the web-assembly version
+
+## Pilot 5: DatasetJSON
+
+* The pilot 5 team is aiming to have dataset programming completed by the end of March, and TLF programming completed by end of April.
+* Questions remain on whether the JSON format can be included as a submission format, Paul mentioned that they are waiting to confirm with the E-sub group internally 
+* The R-Consortium Blog recently featured a [fantastic post](https://r-consortium.org/posts/submissions-wg-pilot5-pilot6-and-more/) announcing the launch of Pilot 5: 
+* Minutes from the Pilot 5 working group meetings are available on the Pilot 5 datasetJSON GitHub repository: <https://github.com/RConsortium/submissions-pilot5-datasetjson/discussions/3>
+* One potential benefit for education and awareness: Embed an example Shiny application inside the Pilot 5 Quarto website for users to explore contents of dataset JSON files.
+    + After Robert shared a list of apps created in a recent DatasetJSON Hackathon, the team saw an apportunity with the [Dataset-JSON Viewer](https://github.com/sbarcelo777/Dataset-JSON-hackathon) Shiny application
+    * Sam Parmer quickly created a novel way to compile the application as a web-assembly Shiny app and dynamically deploy the app on Posit's shinylive-R hosting platform to embed insde the Pilot 5 Quarto website as an iframe! You can view the page at <https://rconsortium.github.io/submissions-pilot5-website/viewer.html>
+    * In parallel, Eric also experimented with compiling the same Shiny application into web-assembly, and has a prototype automatically deployed on GitHub Pages via GitHub Actions: <https://rpodcast.github.io/Dataset-JSON-hackathon/>
+    * Eric will reach out to the developers of the Dataset-JSON viewer to see if they are receptive to Eric sending a pull request to have the application hosted from their GitHub repository (thus their GitHub Pages account). In addition, Eric will ask the maintainers if they would support having a slightly streamlined version of the application that pre-loads JSON data files created for this pilot.
+* Eric and other team members are currently updating GitHub actions for repository maintenance and automation
+
+## Phuse Metadata / ADRG Working Group
+
+* Joel Laxana shared the latest updates: They group is trying to hash out the information to be added in the ADRG for future open source submissions
+* During recent discussions, the team is going forward with creating a separate supplement document to go along with the traditional ADRG submission document in the case of an R-based submission
+* The group is reviewing feedback provided by FDA reviewers from the past couple of pilots submitted
+* The open source metadata working group will continue to leverage metadata from a particular project to populate sections of the document, using R functions that can help fill in manual steps
+* The group ponders if generative AI help to populate these templates?
+* While AI is not in the scope of the Phuse project, the team is open for exploration
+* Indeed there could be an opportunity to spin off a separate pilot on exploring generative AI in a clinical submission documentation preparation such as the ADRG.
+* A new channel will be created in the R Consortium Submissions Working Group Slack channel. For details on obtaining access to group, please visit the [How to Join](https://rconsortium.github.io/submissions-wg/join.html) page.
+
+## Other Topics
+
+* Members of the wroking group (Ben, Sam, and Eric) will join Appsilon for the April 29th edition of [Shiny Gatherings](https://events.ringcentral.com/events/shiny-gathering-fda-pilots-key-insights-lessons-learned-and-what-s-next-for-2025-820c22c5-9f84-4bb1-a9ba-9341ecaf791d) discussing the insights, lessons learned, and what's next for 2025.
+* The group assured colleagues from FDA that there would not be any direct quotes shared from FDA colleagues inside of this webinar, and any issues from the regulatory side would be discussed in general terms.
+
