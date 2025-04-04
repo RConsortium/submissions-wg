@@ -9,8 +9,101 @@
 <link>https://rconsortium.github.io/submissions-wg/minutes.html</link>
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.6.41</generator>
-<lastBuildDate>Fri, 07 Feb 2025 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.6.42</generator>
+<lastBuildDate>Fri, 07 Mar 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2025-03-07</title>
+  <dc:creator>Eric Nantz</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2025-03-07/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Ben Straub (GSK)</li>
+<li>Eric Nantz (Eli Lilly)</li>
+<li>HyeSoo Cho (FDA)</li>
+<li>Joel Laxamana (Roche/Genentech)</li>
+<li>Katie Harding (Freenome)</li>
+<li>Lovemore Gakava (Novo Nordisk)</li>
+<li>Nabil Baugher (Baseline AI)</li>
+<li>Nan Xiao (Merck)</li>
+<li>Nicholas Masel (Johnson &amp; Johnson)</li>
+<li>Ning Leng (Roche/Genentech)</li>
+<li>Paul Schuette (FDA)</li>
+<li>Sam Parmar (Pfizer)</li>
+<li>Youn Kyeong Chang (FDA)</li>
+</ul>
+</div>
+</div>
+</div>
+<section id="pilot-4-file-structures" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-4-file-structures">Pilot 4: File Structures</h2>
+<ul>
+<li>Discussions internally are taking place at FDA on whether the Zip file can include the file types that may not be on the approved software list</li>
+<li>In light of the evolving discussions, Paul recommends to explore the use of <code>{pkglite}</code> for bunlding the applicaiton files in a similar fashion as Submissions Pilot 2 (traditional shiny application)</li>
+<li>Eric will examine both the web assembly and Docker container versions of Pilot 4 and provide FDA reviewers a list of the essenstial file types necessary to review each submission bundle</li>
+<li>Nan Xiao recommends we examine his recent releaes of <a href="https://nanx.me/blog/post/pkglite-python/">pkglite for Python</a> in case that could help streamline the process, especially for the web-assembly version</li>
+</ul>
+</section>
+<section id="pilot-5-datasetjson" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-5-datasetjson">Pilot 5: DatasetJSON</h2>
+<ul>
+<li>The pilot 5 team is aiming to have dataset programming completed by the end of March, and TLF programming completed by end of April.</li>
+<li>Questions remain on whether the JSON format can be included as a submission format, Paul mentioned that they are waiting to confirm with the E-sub group internally</li>
+<li>The R-Consortium Blog recently featured a <a href="https://r-consortium.org/posts/submissions-wg-pilot5-pilot6-and-more/">fantastic post</a> announcing the launch of Pilot 5:</li>
+<li>Minutes from the Pilot 5 working group meetings are available on the Pilot 5 datasetJSON GitHub repository: <a href="https://github.com/RConsortium/submissions-pilot5-datasetjson/discussions/3" class="uri">https://github.com/RConsortium/submissions-pilot5-datasetjson/discussions/3</a></li>
+<li>One potential benefit for education and awareness: Embed an example Shiny application inside the Pilot 5 Quarto website for users to explore contents of dataset JSON files.
+<ul>
+<li>After Robert shared a list of apps created in a recent DatasetJSON Hackathon, the team saw an apportunity with the <a href="https://github.com/sbarcelo777/Dataset-JSON-hackathon">Dataset-JSON Viewer</a> Shiny application</li>
+<li>Sam Parmer quickly created a novel way to compile the application as a web-assembly Shiny app and dynamically deploy the app on Posit’s shinylive-R hosting platform to embed insde the Pilot 5 Quarto website as an iframe! You can view the page at <a href="https://rconsortium.github.io/submissions-pilot5-website/viewer.html" class="uri">https://rconsortium.github.io/submissions-pilot5-website/viewer.html</a></li>
+<li>In parallel, Eric also experimented with compiling the same Shiny application into web-assembly, and has a prototype automatically deployed on GitHub Pages via GitHub Actions: <a href="https://rpodcast.github.io/Dataset-JSON-hackathon/" class="uri">https://rpodcast.github.io/Dataset-JSON-hackathon/</a></li>
+<li>Eric will reach out to the developers of the Dataset-JSON viewer to see if they are receptive to Eric sending a pull request to have the application hosted from their GitHub repository (thus their GitHub Pages account). In addition, Eric will ask the maintainers if they would support having a slightly streamlined version of the application that pre-loads JSON data files created for this pilot.</li>
+</ul></li>
+<li>Eric and other team members are currently updating GitHub actions for repository maintenance and automation</li>
+</ul>
+</section>
+<section id="phuse-metadata-adrg-working-group" class="level2">
+<h2 class="anchored" data-anchor-id="phuse-metadata-adrg-working-group">Phuse Metadata / ADRG Working Group</h2>
+<ul>
+<li>Joel Laxana shared the latest updates: They group is trying to hash out the information to be added in the ADRG for future open source submissions</li>
+<li>During recent discussions, the team is going forward with creating a separate supplement document to go along with the traditional ADRG submission document in the case of an R-based submission</li>
+<li>The group is reviewing feedback provided by FDA reviewers from the past couple of pilots submitted</li>
+<li>The open source metadata working group will continue to leverage metadata from a particular project to populate sections of the document, using R functions that can help fill in manual steps</li>
+<li>The group ponders if generative AI help to populate these templates?</li>
+<li>While AI is not in the scope of the Phuse project, the team is open for exploration</li>
+<li>Indeed there could be an opportunity to spin off a separate pilot on exploring generative AI in a clinical submission documentation preparation such as the ADRG.</li>
+<li>A new channel will be created in the R Consortium Submissions Working Group Slack channel. For details on obtaining access to group, please visit the <a href="https://rconsortium.github.io/submissions-wg/join.html">How to Join</a> page.</li>
+</ul>
+</section>
+<section id="other-topics" class="level2">
+<h2 class="anchored" data-anchor-id="other-topics">Other Topics</h2>
+<ul>
+<li>Members of the wroking group (Ben, Sam, and Eric) will join Appsilon for the April 29th edition of <a href="https://events.ringcentral.com/events/shiny-gathering-fda-pilots-key-insights-lessons-learned-and-what-s-next-for-2025-820c22c5-9f84-4bb1-a9ba-9341ecaf791d">Shiny Gatherings</a> discussing the insights, lessons learned, and what’s next for 2025.</li>
+<li>The group assured colleagues from FDA that there would not be any direct quotes shared from FDA colleagues inside of this webinar, and any issues from the regulatory side would be discussed in general terms.</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2025-03-07/</guid>
+  <pubDate>Fri, 07 Mar 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2025-02-07</title>
   <dc:creator>Eric Nantz &amp; Theresa Christiani</dc:creator>
@@ -2125,85 +2218,6 @@ View Attendee List
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-07-07/</guid>
   <pubDate>Fri, 07 Jul 2023 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2023-06-02</title>
-  <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-06-02/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Andrew Borgman (Bristol Myers Squibb)</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>Heidi Curinckx (JnJ)</li>
-<li>Jizu Zhi (FDA)</li>
-<li>Joseph Rickert (R Consortium)</li>
-<li>Kui Shen (Bayer)</li>
-<li>Loan Robinson (Bayer)</li>
-<li>Miriam Fossate (Merck)</li>
-<li>Nan Xiao (Merck)</li>
-<li>Nate Mockler (Biogen)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Renping Zhang (Johnson &amp; Johnson)</li>
-<li>Shannon Lewis</li>
-<li>Yilong Zhang</li>
-</ul>
-</div>
-</div>
-</div>
-<section id="minutes" class="level2">
-<h2 class="anchored" data-anchor-id="minutes">Minutes</h2>
-<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/O_pRQJl9E9Wq5mesygYFA4KTfVAudRq1Y8YIW3VwCrsr6LpV-9Lg4nfD3TuJs1a6.ewHmJNFkhrTRByzx?startTime=1685721888000">video</a> is available.</p>
-<section id="pilot-2" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-2">Pilot 2</h3>
-<p>JBR brought the meeting to order and Paul Schuette gave an account FDA analyst HyeSoo Cho’s findings so far with respect to the Pilot 2 submission. Identified problems include:</p>
-<ul>
-<li>Warning messages about packages being loaded from GitHub. (Packages should be loaded from CRAN or some other curated repository which archives packages.)</li>
-<li>Footnotes and reference numbers that appeared in the previous Pilot 2 submission were missing from some tables.</li>
-<li>Instead of remaining unchanged, some p-values were replaced with the text “non applicable” when filters were applied to the KM curve.</li>
-<li>It is possible to create an empty data set with conflicting filters.</li>
-</ul>
-<p>Although all agreed that these were relatively minor problems, it was nevertheless agreed that we should ask Hye Soo to stop her review, while Eric Nantz fixes the problems. The end goal is to have Pilot 2 be as clean as possible to serve as a model for future work.</p>
-<p>The new schedule is to arrange for a new Pilot 2 Submission by the end of June. We will arrange for a new submission date when Eric is ready.</p>
-</section>
-<section id="pilot-3" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-3">Pilot 3</h3>
-<ul>
-<li>There was no Pilot 3 update</li>
-<li>The additional work on Pilot 2 will cause the Pilot 3 submission to be pushed back to the end of July.</li>
-</ul>
-</section>
-<section id="pilot-4" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-4">Pilot 4</h3>
-<ul>
-<li>Eric Nantz announced that the Pilot 4 kickoff meeting will happen next work</li>
-<li>Engineers from Appsilon will join the Pilot 4 team. They are particularly interested in investigating the <a href="https://webassembly.org/">WebAssembly</a> technology and have experience with containers.</li>
-</ul>
-<p>The next meeting of the Submissions WG will be at 9AM Pacific Time on Friday, July 7, 2023.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-06-02/</guid>
-  <pubDate>Fri, 02 Jun 2023 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

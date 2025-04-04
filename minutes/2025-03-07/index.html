@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Eric Nantz">
-<meta name="dcterms.date" content="2023-01-13">
+<meta name="dcterms.date" content="2025-03-07">
 
-<title>Minutes 2023-01-13 – R Submissions Working Group</title>
+<title>Minutes 2025-03-07 – R Submissions Working Group</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -169,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Minutes 2023-01-13</h1>
+      <h1 class="title">Minutes 2025-03-07</h1>
                       </div>
   </div>
     
@@ -186,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 13, 2023</p>
+        <p class="date">March 7, 2025</p>
       </div>
     </div>
     
@@ -202,11 +202,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#pilot-2-update" id="toc-pilot-2-update" class="nav-link active" data-scroll-target="#pilot-2-update">Pilot 2 Update</a></li>
-  <li><a href="#pilot-3-update" id="toc-pilot-3-update" class="nav-link" data-scroll-target="#pilot-3-update">Pilot 3 Update</a></li>
-  <li><a href="#r-validation-hub-intro-to-repositories-working-group" id="toc-r-validation-hub-intro-to-repositories-working-group" class="nav-link" data-scroll-target="#r-validation-hub-intro-to-repositories-working-group">R Validation Hub intro to Repositories working group</a></li>
+  <li><a href="#pilot-4-file-structures" id="toc-pilot-4-file-structures" class="nav-link active" data-scroll-target="#pilot-4-file-structures">Pilot 4: File Structures</a></li>
+  <li><a href="#pilot-5-datasetjson" id="toc-pilot-5-datasetjson" class="nav-link" data-scroll-target="#pilot-5-datasetjson">Pilot 5: DatasetJSON</a></li>
+  <li><a href="#phuse-metadata-adrg-working-group" id="toc-phuse-metadata-adrg-working-group" class="nav-link" data-scroll-target="#phuse-metadata-adrg-working-group">Phuse Metadata / ADRG Working Group</a></li>
+  <li><a href="#other-topics" id="toc-other-topics" class="nav-link" data-scroll-target="#other-topics">Other Topics</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2023-01-13/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2025-03-07/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -228,67 +229,67 @@ View Attendee List
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
-<li>Andrew Borgman (Bristol Myers Squibb)</li>
 <li>Ben Straub (GSK)</li>
-<li>Bob Engle (Biogen)</li>
-<li>Doug Kelkhoff (Roche/Genentech)</li>
 <li>Eric Nantz (Eli Lilly)</li>
 <li>HyeSoo Cho (FDA)</li>
-<li>Jizu Zhi (FDA)</li>
 <li>Joel Laxamana (Roche/Genentech)</li>
-<li>Kevin Kunzmann (Boehringer Ingelheim)</li>
-<li>Luke Schantz (R Consortium)</li>
+<li>Katie Harding (Freenome)</li>
+<li>Lovemore Gakava (Novo Nordisk)</li>
+<li>Nabil Baugher (Baseline AI)</li>
+<li>Nan Xiao (Merck)</li>
+<li>Nicholas Masel (Johnson &amp; Johnson)</li>
+<li>Ning Leng (Roche/Genentech)</li>
 <li>Paul Schuette (FDA)</li>
-<li>Phil Bowsher (Posit)</li>
-<li>Ryan Johnson (Posit)</li>
-<li>Sean Healey (Pfizer)</li>
-<li>Stephanie Lussier (Moderna)</li>
-<li>Steven Hasendinckx (Johnson &amp; Johnson)</li>
-<li>Tadeusz Lewandowski (Roche/Genentech)</li>
+<li>Sam Parmar (Pfizer)</li>
+<li>Youn Kyeong Chang (FDA)</li>
 </ul>
 </div>
 </div>
 </div>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/apmL_9HvbAo" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<section id="pilot-2-update" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-2-update">Pilot 2 Update</h3>
+<section id="pilot-4-file-structures" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-4-file-structures">Pilot 4: File Structures</h2>
 <ul>
-<li>Paul Schuette confirms he was able to successfully run the Shiny application</li>
-<li>They encountered a few messages that they ignored, as the app still ran successfully</li>
-<li>HyeSoo Cho followed the ADRG instructions and launched Shiny app, without major issues</li>
-<li>She noticed minor issues around errors and warning messages. As part of her evaluation she tried launching the app in different machines to compare results. She saw some inconsistency between the environments, and they will report specific findings by next month (February)</li>
+<li>Discussions internally are taking place at FDA on whether the Zip file can include the file types that may not be on the approved software list</li>
+<li>In light of the evolving discussions, Paul recommends to explore the use of <code>{pkglite}</code> for bunlding the applicaiton files in a similar fashion as Submissions Pilot 2 (traditional shiny application)</li>
+<li>Eric will examine both the web assembly and Docker container versions of Pilot 4 and provide FDA reviewers a list of the essenstial file types necessary to review each submission bundle</li>
+<li>Nan Xiao recommends we examine his recent releaes of <a href="https://nanx.me/blog/post/pkglite-python/">pkglite for Python</a> in case that could help streamline the process, especially for the web-assembly version</li>
 </ul>
 </section>
-<section id="pilot-3-update" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-3-update">Pilot 3 Update</h3>
+<section id="pilot-5-datasetjson" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-5-datasetjson">Pilot 5: DatasetJSON</h2>
 <ul>
-<li>Proposal was sent in early December for comments and feedback <a href="https://github.com/RConsortium/submissions-pilot3-adam/issues/37" class="uri">https://github.com/RConsortium/submissions-pilot3-adam/issues/37</a></li>
-<li>Running into minor issues with using the same specifications and define settings as the original Pilot 1</li>
-<li>They are not clear on the most up-to-date specifications to use for the AdAM creation, would like help from others</li>
-<li>Thomas found a Phuse 2017 white paper on transport files for the next generation. This paper proposed new ways to convert the data before transfer</li>
-<li>Additional ideas such as a proposal to use JSON format <a href="https://wiki.cdisc.org/display/ODM2/Dataset-JSON" class="uri">https://wiki.cdisc.org/display/ODM2/Dataset-JSON</a></li>
-<li>FDA is aware of the proposal, but it is not clear how far the proposal has gone</li>
-<li>Study Data Technical Conformance Guide details the latest specs and what is acceptable in the gateway <a href="https://www.fda.gov/media/162867/download" class="uri">https://www.fda.gov/media/162867/download</a></li>
-<li>Sponsors can use SAS version 8 of XPT if they choose, most sponsors are using version 5 from their experience</li>
-<li>Other pilots have explored alternative formats, but have not been satisfactory in their opinion</li>
-<li>It is common to convert the XPT format to a more consumable format. For instance as sas7bdat in SAS or R objects inside R.</li>
-<li>Pilot 3 will adhere to the current specifications</li>
-<li>Ben recommended consulting with Sam Hume as a collaborate to push the effort along</li>
-<li>The ectd gateway would need updating to accommodate json formats. That would require discussions with the E-data team in the FDA</li>
+<li>The pilot 5 team is aiming to have dataset programming completed by the end of March, and TLF programming completed by end of April.</li>
+<li>Questions remain on whether the JSON format can be included as a submission format, Paul mentioned that they are waiting to confirm with the E-sub group internally</li>
+<li>The R-Consortium Blog recently featured a <a href="https://r-consortium.org/posts/submissions-wg-pilot5-pilot6-and-more/">fantastic post</a> announcing the launch of Pilot 5:</li>
+<li>Minutes from the Pilot 5 working group meetings are available on the Pilot 5 datasetJSON GitHub repository: <a href="https://github.com/RConsortium/submissions-pilot5-datasetjson/discussions/3" class="uri">https://github.com/RConsortium/submissions-pilot5-datasetjson/discussions/3</a></li>
+<li>One potential benefit for education and awareness: Embed an example Shiny application inside the Pilot 5 Quarto website for users to explore contents of dataset JSON files.
+<ul>
+<li>After Robert shared a list of apps created in a recent DatasetJSON Hackathon, the team saw an apportunity with the <a href="https://github.com/sbarcelo777/Dataset-JSON-hackathon">Dataset-JSON Viewer</a> Shiny application</li>
+<li>Sam Parmer quickly created a novel way to compile the application as a web-assembly Shiny app and dynamically deploy the app on Posit’s shinylive-R hosting platform to embed insde the Pilot 5 Quarto website as an iframe! You can view the page at <a href="https://rconsortium.github.io/submissions-pilot5-website/viewer.html" class="uri">https://rconsortium.github.io/submissions-pilot5-website/viewer.html</a></li>
+<li>In parallel, Eric also experimented with compiling the same Shiny application into web-assembly, and has a prototype automatically deployed on GitHub Pages via GitHub Actions: <a href="https://rpodcast.github.io/Dataset-JSON-hackathon/" class="uri">https://rpodcast.github.io/Dataset-JSON-hackathon/</a></li>
+<li>Eric will reach out to the developers of the Dataset-JSON viewer to see if they are receptive to Eric sending a pull request to have the application hosted from their GitHub repository (thus their GitHub Pages account). In addition, Eric will ask the maintainers if they would support having a slightly streamlined version of the application that pre-loads JSON data files created for this pilot.</li>
+</ul></li>
+<li>Eric and other team members are currently updating GitHub actions for repository maintenance and automation</li>
 </ul>
 </section>
-<section id="r-validation-hub-intro-to-repositories-working-group" class="level3">
-<h3 class="anchored" data-anchor-id="r-validation-hub-intro-to-repositories-working-group">R Validation Hub intro to Repositories working group</h3>
+<section id="phuse-metadata-adrg-working-group" class="level2">
+<h2 class="anchored" data-anchor-id="phuse-metadata-adrg-working-group">Phuse Metadata / ADRG Working Group</h2>
 <ul>
-<li>Doug Kelkhoff and Kevin Kunzmann led a an introduction to the mission and goals of the working group</li>
-<li>Mission is to support a transparent cross-industry approach of maintaining a repo of R packages with evidence of their quality and assessment criteria</li>
-<li>Repo structure may resemble pieces of CRAN, R Universe . Still in the early stages of finding what is needed before working on the technical solutions</li>
-<li>Asks for regulatory input: Work with the team to understand how you want to observe quality. Paul mentioned that bigger issues that FDA are thinking about are from the IT perspective (making sure that packages don’t compromise infrastructure). Example of haven running into buffer overflow issues. Typically those concerns are raised by security team colleagues. They are not aware of any independent effort to gauge the quality of an R package. Typically they point people to the R Validation Hub. While it is not doing independent replication of algorithms, it is a reasonable attempt in the right direction. Typically all pieces of software give you the “as-is” message and no implied guarantee of quality</li>
-<li>Asks for industry input: Contribute by direct support, or by intermittent feedback as they prepare deliverables</li>
-<li>High level of planned deliverables: List of quality criteria, mockup of the communication portal, and an example of a package server modelling a real-world workflow</li>
-<li>Visit the repository to get involved <a href="https://github.com/pharmaR/regulatory-r-repo-wg" class="uri">https://github.com/pharmaR/regulatory-r-repo-wg</a></li>
-<li>Ben asked about ways to consolidation various validation efforts heard from other sponsors. What existing tools are being implemented in this space?</li>
-<li>Doug shared an article from the ASA Biopharmaceutical Report regarding the risk assessment of R packages: <a href="https://www.pharmar.org/blog/2022/12/05/2022-12-05-asa-biopharmaceutical-report-fall-2022/" class="uri">https://www.pharmar.org/blog/2022/12/05/2022-12-05-asa-biopharmaceutical-report-fall-2022/</a></li>
+<li>Joel Laxana shared the latest updates: They group is trying to hash out the information to be added in the ADRG for future open source submissions</li>
+<li>During recent discussions, the team is going forward with creating a separate supplement document to go along with the traditional ADRG submission document in the case of an R-based submission</li>
+<li>The group is reviewing feedback provided by FDA reviewers from the past couple of pilots submitted</li>
+<li>The open source metadata working group will continue to leverage metadata from a particular project to populate sections of the document, using R functions that can help fill in manual steps</li>
+<li>The group ponders if generative AI help to populate these templates?</li>
+<li>While AI is not in the scope of the Phuse project, the team is open for exploration</li>
+<li>Indeed there could be an opportunity to spin off a separate pilot on exploring generative AI in a clinical submission documentation preparation such as the ADRG.</li>
+<li>A new channel will be created in the R Consortium Submissions Working Group Slack channel. For details on obtaining access to group, please visit the <a href="https://rconsortium.github.io/submissions-wg/join.html">How to Join</a> page.</li>
+</ul>
+</section>
+<section id="other-topics" class="level2">
+<h2 class="anchored" data-anchor-id="other-topics">Other Topics</h2>
+<ul>
+<li>Members of the wroking group (Ben, Sam, and Eric) will join Appsilon for the April 29th edition of <a href="https://events.ringcentral.com/events/shiny-gathering-fda-pilots-key-insights-lessons-learned-and-what-s-next-for-2025-820c22c5-9f84-4bb1-a9ba-9341ecaf791d">Shiny Gatherings</a> discussing the insights, lessons learned, and what’s next for 2025.</li>
+<li>The group assured colleagues from FDA that there would not be any direct quotes shared from FDA colleagues inside of this webinar, and any issues from the regulatory side would be discussed in general terms.</li>
 </ul>
 
 
@@ -870,4 +871,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2023-01-13/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2025-03-07/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
