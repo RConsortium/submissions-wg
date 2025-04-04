@@ -1,0 +1,59 @@
+---
+title: "Minutes 2025-04-04"
+author: Eric Nantz
+date: 2025-04-04
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Andre Couturier (Sanofi)
+- Ben Straub (GSK)
+- Camille Calmasini (Natera)
+- HyeSoo Cho (FDA)
+- Jim Rothstein (Freelance)
+- Keaven Anderson (Merck)
+- Lovemore Gakava (Novo Nordisk)
+- Nan Xiao (Merck)
+- Nicholas Masel (Johnson & Johnson)
+- Paul Schuette (FDA)
+- Phil Bowsher (Posit)
+- Robert Devine (Johnson & Johnson)
+- Tilo (unknown)
+- Youn Kyeong Chang (FDA)
+:::
+
+## Pilot 4 (Web-assembly and Docker Container Shiny app)
+
+* Eric has investigated the possibility of utilizing `{pkglite}` to assemble the submission files necessary for both the container and web-assembly versions of Pilot 4.
+    * Container version: No issues, as the necessary Dockerfile can easily be renamed to `Dockerfile.txt` with the command to build the image updated accordingly. The existing Pilot 2 R files can be assembled alongside the aforementioned Dockerfile.
+    * Web-assembly: As long as the pre-compiled version of the application is not included in the transfer, the modified application files and helper R scripts used to compile the application would still be using the permitted file types (R scripts, text files).
+* The FDA reviewers would like a re-transfer of the web-assembly application using the new structure. The reviewers are in agreement to perform separate transfers for each of the Pilot 4 types, as trying to assemble each in to a single transfer package could introduce more complications as they require much different steps for running their respective applications.
+* Paul mentioned that any discussions on the future use of Zip archive files in ECTD transfers is being put on hold due to circumstances happening at the agency outside of their control.
+
+## Pilot 5 (Dataset-JSON format)
+
+* Ben shared that terrific process is being made:
+     * The use of XPT files has been removed in favor of native `.rds` files for data storage.
+     * Additional code cleanup is on track.
+* Next steps are to merge the candidate Dataset-JSON files into the main repostory.
+* Based on discussin in the March working group meeting, Ning and Nabil created a prototype workflow that leverages the `{ellmer}` pacage to populate portions of the ADRG using LLMs.
+* Thanks to Sam, we have a new page on the [Pilot 5](https://rconsortium.github.io/submissions-pilot5-website/viewer.html) web site that embeds the DatasetJSON Viewer Shiny application.
+* Paul shared that the aforementioned "circumstances" have impacted the FDA's internal resourcing on the Dataset-JSON effort. How this impacts the future of a Pilot 5 transfer is to be determined. As of now, there is still an embargo on written communications.
+
+## Phuse Metadata / ADRG Working Group
+
+* Lovemore shared that preparation is underway for a interactive session at the Phuse CSS conference in Europe.
+* Team is working to build functions to gen metadata for the different sections of the ADRG, to be eventually folded into a package.
+* Christine from Pfizer shared the current template for the ADRG which will be distrbuted to the other team members. The group will determine how it aligns with comments previously provided by the FDA reviewers.
+
+## Other Topics
+
+* The working group welcomes a new member: [Camilla Calmasini](https://www.linkedin.com/in/camilla-calmasini/)!
+* Ben reminded the group of an opportunity to add a [timeline](https://github.com/RConsortium/submissions-wg/issues/106) to the Submissions Working Group site, as a way to present visitors a quick visual of the many accomplishments coming from these pilots. A great example can be found on the [NEST](https://insightsengineering.github.io/nest/) website. Another approach could be to leverage the [`{timevis}`](https://daattali.com/shiny/timevis-demo/) HTML widget authored by Dean Attali, as well as clever use of Observable to create an [interactive Gantt chart](https://observablehq.com/@observablehq/build-your-own-gantt-chart).
+* Lovemore shared that a new Phuse Working group called [**QC Workflow Optimisation**](https://advance.hub.phuse.global/wiki/spaces/WEL/pages/90472489/QC+Workflow+Optimisation) has launched to investigate the use of double-programming in the QC process of validating clinical programming. There could be opportunities for them to share an update with our group as they make progress, and to determine how future pilots may benefit. Ben mentioned this was a topic discussed in the recent PHUSE Connect, especially with how AI could help in this process.
+* Keaven asked the group how reproducibility is being addressed currently for Shiny applications?
+    * The Teal framework leverages a [custom-build solution called `qenv`]*https://insightsengineering.github.io/teal.code/latest-tag/articles/teal-code.html() as documented on the `{teal.code}` package website
+    * Phil reminded the group that the Shiny team created a package years ago called [`{shinymeta}`](https://rstudio.github.io/shinymeta/) to help application authors capture logic based on user interactions and create a reprodcuible R script to replicate those interactions.
+    * Matthew Kumar & Srinivas Verragoni from Bayer presented their use of `{shinymeta}` in a presentation titled [Reproducibility of Interactive Analyses](https://phuse.s3.eu-central-1.amazonaws.com/Archive/2023/Connect/US/Florida/PRE_OS10.pdf) at the 2023 Phuse US Connect conference. 
+* Bonus trivia: Why was the SAS JMP software called JMP?  JMP was named as "John's Mackintosh Program" as it was an early attempt within the company to make SAS compatible with the Apple Macintosh operating systems (h/t Paul).
