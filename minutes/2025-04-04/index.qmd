@@ -38,7 +38,7 @@ date: 2025-04-04
      * Additional code cleanup is on track.
 * Next steps are to merge the candidate Dataset-JSON files into the main repostory.
 * Based on discussin in the March working group meeting, Ning and Nabil created a prototype workflow that leverages the `{ellmer}` pacage to populate portions of the ADRG using LLMs.
-* Thanks to Sam, we have a new page on the Pilot 5 web site that embeds the DatasetJSON Viewer Shiny application.
+* Thanks to Sam, we have a new page on the [Pilot 5](https://rconsortium.github.io/submissions-pilot5-website/viewer.html) web site that embeds the DatasetJSON Viewer Shiny application.
 * Paul shared that the aforementioned "circumstances" have impacted the FDA's internal resourcing on the Dataset-JSON effort. How this impacts the future of a Pilot 5 transfer is to be determined. As of now, there is still an embargo on written communications.
 
 ## Phuse Metadata / ADRG Working Group
