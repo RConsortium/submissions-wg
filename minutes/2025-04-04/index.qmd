@@ -23,8 +23,6 @@ date: 2025-04-04
 - Youn Kyeong Chang (FDA)
 :::
 
-## Add Minutes Here
-
 ## Pilot 4 (Web-assembly and Docker Container Shiny app)
 
 * Eric has investigated the possibility of utilizing `{pkglite}` to assemble the submission files necessary for both the container and web-assembly versions of Pilot 4.
