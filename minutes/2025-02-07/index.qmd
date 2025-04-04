@@ -7,6 +7,7 @@ date: 2025-02-07
 ## View Attendee List
 
 - Ben Straub (GSK)
+- Eric Nantz (Eli Lilly)
 - Katie Harding (Freenome)
 - Lovemore Gakava (Novo Nordisk)
 - Phanikumar Tata (Syneos Health)
@@ -18,10 +19,10 @@ date: 2025-02-07
 
 ## ADRG metadata group updates
 
-* Lovemore and Sam shared the group's recent updates progress. They recently invited Christine Christine Rossin (from the Phuse ADRG working group) to their meetings for discussion on the proposed template.
+* Lovemore and Sam shared the group's recent updates progress. They recently invited Christine Rossin (from the Phuse ADRG working group) to their meetings for discussion on the proposed template.
 * Christine's recommendations include moving the instructions for executing the R code and setting up the execution environment to a supporting document and not part of the ADRG itself, ensuring the ADRG remains software-agnostic, and separate guidelines be developed for specific software.
-* The metadata group will be taking the lead on autoring guidelines for the R exection and environment language
-* The group will also establish diaglogs with other sub-teams addressing additional sections of ADRG such as such as estimands team to ensure everyone is on the same page for updating the ADRG sections
+* The metadata group will be taking the lead on authoring guidelines for the R exection and environment language
+* The group will also establish dialogs with other sub-teams addressing additional sections of ADRG such as such as estimands team to ensure everyone is on the same page for updating the ADRG sections
 * Next steps include authoring R scripts to help automate population of certain sections in the ADRG template.
 
 ## Pilot 4 Container Submission updates
@@ -44,4 +45,5 @@ date: 2025-02-07
 * The team is very interested in utilizing GitHub actions to perform quality checks of the data set
 * `{datasetjson}` was recently updated to version 1.1 and the new update is available on CRAN. You can view the changelog at <https://atorus-research.github.io/datasetjson/news/index.html>.
 * As development begins for the quality checks and other testing, they will use the Pilot 3 code as a starting point.
-- Robert shared that CDISC will hold a general meeting on February 18, 2025. Members of the working group are encouraged to attend.
+- Robert shared that CDISC will hold a general meeting on February 18, 2025. Members of the working group are encouraged to attend. Additional details and registration are available at the pharma-oversight Slack channel in the February 14, 2025 post.
+
