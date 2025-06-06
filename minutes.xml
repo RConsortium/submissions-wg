@@ -9,13 +9,115 @@
 <link>https://rconsortium.github.io/submissions-wg/minutes.html</link>
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.6.43</generator>
-<lastBuildDate>Fri, 04 Apr 2025 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.7.31</generator>
+<lastBuildDate>Fri, 02 May 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2025-05-02</title>
+  <dc:creator>Eric Nantz &amp; Theresa Christiani</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2025-05-02/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Athenkosi Nikonyeni</li>
+<li>Ben Straub (GSK)</li>
+<li>Camilla Calmasini</li>
+<li>HyeSoo Cho (FDA)</li>
+<li>Jared Woolfolk</li>
+<li>Joel Laxamana (Roche/Genentech)</li>
+<li>Keaven Anderson (Merck)</li>
+<li>LG</li>
+<li>Mekhala Acharya (Takeda)</li>
+<li>Paul Schuette (FDA)</li>
+<li>Phanikumar Tata (Syneos Health)</li>
+<li>Phil Bowsher (Posit)</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Sadchla Mascary</li>
+<li>Saghir Bashir (Argenx)</li>
+<li>Sam Parmar (Pfizer)</li>
+<li>Stephen Knapp</li>
+<li>Yilong Zhang (Meta)</li>
+<li>Youn Kyeong Chang (FDA)</li>
+</ul>
+</div>
+</div>
+</div>
+<section id="pilot-4" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-4">Pilot 4</h2>
+<ul>
+<li>Eric to set up a informal review meeting with FDA colleagues in Mid May (EDIT: The revised transfer will take place on June 13th, 2025)</li>
+<li>Full speed ahead to use <code>{pkglite}</code> for assembling the web assembly and container submission bundles.</li>
+</ul>
+</section>
+<section id="pilot-5" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-5">Pilot 5</h2>
+<ul>
+<li>Part 1 is moving well (conversion from xpt is complete)</li>
+<li>Team will wait until pilot 4 review is complete before transferring pilot 5</li>
+<li>Paul: Not sure where the evaluation of <code>datasetjson</code> currently stands within FDA. The team that was sponsoring it has been affected by recent events. They think the gateway will accept the format, but needs verification.</li>
+<li>Previous transfers in the CDISC effort last year may or may not have been through the ectd gateway</li>
+<li>ESUB team is still having discussion on testing the json format</li>
+<li>Heather Crandle from a previous R Pharma conference is part of that team (2021)</li>
+<li>In current <a href="https://www.fda.gov/media/85816/download">eCTD instructions</a>, JSON is allowed for the PK category<br>
+</li>
+<li>Ben will follow up with team involved in the CDISC pilot to see how they transferred the JSON files.</li>
+<li>The team has embedded a datasetJSON viewer with shiny and webassebly in the pilot 5 website available at <a href="https://rconsortium.github.io/submissions-pilot5-website/viewer.html" class="uri">https://rconsortium.github.io/submissions-pilot5-website/viewer.html</a></li>
+<li>Ning had started investing using LLMs to generate portions of the ADRG. There may be an update at the next WG meeting.</li>
+</ul>
+</section>
+<section id="adrg-updates" class="level2">
+<h2 class="anchored" data-anchor-id="adrg-updates">ADRG updates</h2>
+<ul>
+<li>The group’s approach is to help communicate the version of different packages and how to best display that information in the ADRG template.</li>
+<li>Feedback has been received from FDA reviewers. The group is looking into ways to update templates such that multiple software languages can be supported</li>
+<li>Keeping in close sync with Christine at Pfizer on ensuring the existing standards are being met.</li>
+<li>Also have plans to contact reps from Pinnacle21 on how they populate the ADRG, while ensuring minimal overlap occurs.</li>
+<li>Goal of the group is to reduce manual effort of populating the various tables in the ADRG such as package versions, number of programs, functions used in those programs, which is all a manual effort at the moment</li>
+</ul>
+</section>
+<section id="other-topics" class="level2">
+<h2 class="anchored" data-anchor-id="other-topics">Other Topics</h2>
+<ul>
+<li>Yilong would like to know if there is interest in a Python-based pilot for submitting tables and listings produced in Python.</li>
+<li>Thus far not as much interest in the office of Biostatistics according to FDA reviewers</li>
+<li>CDRH handles things differently than CDER. CDRH does not require CDISC standards to be followed. A greater range of issues can occur in those cases.</li>
+<li>Meta has utilized standards inspired by CDISC in their initial work</li>
+<li>FDA is open to a more focused discussion, but they will need to pull in internal experts that have more expertise</li>
+<li>Eric asked about the FDA having any preference on the method of rounding as there are rare cases where the default rounding method in R can be different than SAS default method</li>
+<li>FDA does not have a “preferred method” to share at this time, and there may not be a single one answer that’s correct in this area</li>
+<li>Pilot 1 had a small issue with rounding dealing with the approximation method for confidence intervals</li>
+<li>We are looking for help on the website! Please get in touch with the working group and browse the <a href="https://github.com/RConsortium/submissions-wg/issues">GitHub issue list</a> if you would like to contribute.</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2025-05-02/</guid>
+  <pubDate>Fri, 02 May 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2025-04-04</title>
   <dc:creator>Eric Nantz</dc:creator>
   <link>https://rconsortium.github.io/submissions-wg/minutes/2025-04-04/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -118,6 +220,7 @@ View Attendee List
 
 
 
+
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -211,6 +314,7 @@ View Attendee List
 
 
 
+
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -287,6 +391,7 @@ View Attendee List
   <dc:creator>Eric Nantz &amp; Theresa Christiani</dc:creator>
   <link>https://rconsortium.github.io/submissions-wg/minutes/2025-01-10/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -393,6 +498,7 @@ View Attendee List
 
 
 
+
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -488,6 +594,7 @@ View Attendee List
 
 
 
+
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -576,6 +683,7 @@ View Attendee List
   <dc:creator>Eric Nantz &amp; Terry Christiani</dc:creator>
   <link>https://rconsortium.github.io/submissions-wg/minutes/2024-10-04/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -679,6 +787,7 @@ View Attendee List
   <dc:creator>Eric Nantz</dc:creator>
   <link>https://rconsortium.github.io/submissions-wg/minutes/2024-09-06/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -807,6 +916,7 @@ Caution
 
 
 
+
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -918,6 +1028,7 @@ View Attendee List
   <dc:creator>Joseph Rickert</dc:creator>
   <link>https://rconsortium.github.io/submissions-wg/minutes/2024-06-07/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1057,6 +1168,7 @@ View Attendee List
 
 
 
+
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1173,6 +1285,7 @@ View Attendee List
   <dc:creator>Joseph Rickert</dc:creator>
   <link>https://rconsortium.github.io/submissions-wg/minutes/2024-04-05/Index.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1343,6 +1456,7 @@ View Attendee List
 
 
 
+
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1445,6 +1559,7 @@ View Attendee List
   <dc:creator>Joseph Rickert</dc:creator>
   <link>https://rconsortium.github.io/submissions-wg/minutes/2024-02-02/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1593,6 +1708,7 @@ View Attendee List
 
 
 
+
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1690,6 +1806,7 @@ View Attendee List
 
 
 
+
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1779,6 +1896,7 @@ View Attendee List
 
 
 
+
 <p>Minutes prepared by Joseph Rickert and Joel Laxamana.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
@@ -1853,6 +1971,7 @@ View Attendee List
   <dc:creator>Joseph Rickert</dc:creator>
   <link>https://rconsortium.github.io/submissions-wg/minutes/2023-10-06/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1985,6 +2104,7 @@ View Attendee List
 
 
 
+
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -2107,119 +2227,6 @@ View Attendee List
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-09-01/</guid>
   <pubDate>Fri, 01 Sep 2023 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2023-08-04</title>
-  <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-08-04/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Ben Straub (GSK)</li>
-<li>Li Eva</li>
-<li>Christopher Kania (Biogen)</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>HyeSoo Cho (FDA)</li>
-<li>Jizu Zhi (FDA)</li>
-<li>Joel Laxamana (Roche/Genentech)</li>
-<li>Joseph Rickert (R Consortium)</li>
-<li>Nan Xiao (Merck)</li>
-<li>Ning Leng (Roche/Genentech)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Sam Parmar (Pfizer)</li>
-<li>Shannon Lewis (BeiGene)</li>
-<li>Stephanie Lussier (Moderna)</li>
-</ul>
-</div>
-</div>
-</div>
-<section id="minutes" class="level2">
-<h2 class="anchored" data-anchor-id="minutes">Minutes</h2>
-<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/iap2ryh7-PHu8_fOMfwtXHpO7D7hB333mCsNODLlxE99EoCGXRTm1MSEFP7ceXzk.DnZSMt89C-TB8tZj?startTime=1691165275000">video</a> is available.</p>
-<section id="pilot-2" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-2">Pilot 2</h3>
-<ul>
-<li>HyeSoo Cho reported that she is working with the Pilot 2 re-submission and that it looks good.</li>
-<li>HyeSoo expects that the final on this pilot submission will be available at the end of August.</li>
-<li>Everyone recognized and thanked Eric Nantz for the sustained and last-minute efforts to get the submission out.</li>
-</ul>
-</section>
-<section id="pilot-3" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-3">Pilot 3</h3>
-<ul>
-<li>Paul Schuette brought the attention of the group to section 4.i.2.10 of the <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/study-data-technical-conformance-guide-technical-specifications-document">Study Data Technical Conformance Guide - Technical Specification Document</a> and noted that .r and .zip files are listed as acceptable file formats for submissions.</li>
-<li>After some discussion, the WG decided not to use <a href="https://cran.r-project.org/package=pkglite">pkglite</a> to wrap the R code as has been done in previous submissions, but to use .r files for the code. (Note that the FDA is unable to use .R internally.)</li>
-<li>Paul noted that the FDA desires submission materials to be applicable for at least six years after submission. This triggered a discussion about possibility of using .zip files to transmit the proprietary packages, instead of pulling them from public GitHub repos as been done so far.</li>
-<li>In the end, the WG decided to stick with using GitHub repos for Pilot 3 as there is currently no apparent advantage testing the .zip file method at this time.</li>
-<li>Joel Laxama reported that preparations for Pilot 3 are going well, and that a submission using .r files could be made in early September.</li>
-<li>The WG thought it best to wait for the report of Pilot 2 before submitting Pilot 3.</li>
-</ul>
-</section>
-<section id="pilot-4" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-4">Pilot 4</h3>
-<ul>
-<li>Eric reported that thanks to the contributions form the <a href="https://appsilon.com/">Appsilon</a> team significant progress has been made on using both mechanisms for packaging R submissions: Containers and <a href="https://webassembly.org/">Webassembly</a>.</li>
-<li>Appsilon has a prototype submission using <a href="https://podman.io/">Podman</a> container technology working and has confirmed that it does not cause files to be written to the hard-drive.</li>
-<li>Eric and the Appsilon engineers also have a very preliminary prototype of using Webassembly to wrap a small Shiny app working.</li>
-<li>Posit engineers have contributed <a href="https://cran.r-project.org/package=webr">webr</a> expertise.</li>
-<li>Eric is optimistic about having Pilot submissions based on at least one, and possibly both, of these technologies ready by the end of the year.</li>
-</ul>
-<p><strong>Action</strong></p>
-<ul>
-<li>Paul will confer with the proper FDA authorities to determine what preparations need to be undertaken by the FDA to use the Podman containers.</li>
-<li>Eric will invite an Appsilon representative to come to a future meeting of this working group</li>
-</ul>
-</section>
-<section id="july-21-san-jose-state-r-foundation-event" class="level3">
-<h3 class="anchored" data-anchor-id="july-21-san-jose-state-r-foundation-event">July 21 San Jose State R Foundation Event</h3>
-<p>The R Foundation <a href="https://bbsw-tickets.ticketleap.com/summer-r-day2/">SummeR Bay Area R Meetup</a> was held at San Jose State University on July 21. Ning Leng reports that:</p>
-<ul>
-<li>The 50 plus attendees indicated that quite a few Bay Area companies are moving towards using R in preclinical and genomics research.</li>
-<li>Representatives from several small CROs attended the meeting.</li>
-<li>R Consortium recognition was not good among this group.</li>
-</ul>
-<p><strong>Action</strong></p>
-<ul>
-<li>JBR and Ning to discuss what can be done to promote the RC.</li>
-</ul>
-</section>
-<section id="speaking-opportunities" class="level3">
-<h3 class="anchored" data-anchor-id="speaking-opportunities">Speaking Opportunities</h3>
-<ul>
-<li>Eric will submit an abstract to speak about Pilot 3 and Pilot 4 at the <a href="https://bbsw-tickets.ticketleap.com/summer-r-day2/">R/Pharma</a> virtual conference to be held in on October 24 - 26.</li>
-<li>Paul will be presenting at both at the <a href="https://advance.phuse.global/pages/viewpage.action?pageId=70778947">PHUSE/FDA CSS 2023</a> conference on September 18 -20 and the <a href="https://advance.phuse.global/pages/viewpage.action?pageId=70778947">ASA Biopharmaaceutical Section Regulatory-Industry statistics Workshop</a> to be held in Rockville, MD on September 27 - 29 and intends to use the activities of this working group as a case study.</li>
-<li>Ning suggests that it would be very nice if the RC could hold and R Adoption Webinar in the November time frame to describe the Pilot 2 and Pilot 3 submissions.</li>
-</ul>
-<p><strong>Action:</strong></p>
-<ul>
-<li>Paul will check with FDA authorities to see whether it is appropriate for the R Consortium to publicize his speaking opportunities on social media.</li>
-<li>JBR will work with the RC Community development committee to make preparations for the promoting the speaking activities and setting up the webinar.</li>
-</ul>
-<p>The next meeting of the Submissions working group will be at 9AM PST on Friday, September 1st.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-08-04/</guid>
-  <pubDate>Fri, 04 Aug 2023 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
