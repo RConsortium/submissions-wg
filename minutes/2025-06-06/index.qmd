@@ -1,0 +1,57 @@
+---
+title: "Minutes 2025-06-06"
+date: 2025-06-06
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+
+- Ben Straub (GSK)
+- HyeSoo Cho (FDA)
+- Jared Woolfolk
+- Joel Laxamana (Roche/Genentech)
+- Keaven Anderson (Merck)
+- Paul Schuette (FDA)
+- Ning Leng (Roche)
+- Saghir Bashir (Argenx)
+- Sam Parmar (Pfizer)
+- Youn Kyeong Chang (FDA)
+- Terry Christiani
+:::
+
+## Pilot 4
+
+* Hye Soo provided an update on high level feedback of current pilot 4 submission
+* some discrepancy were found between the ADRG and the actual github folder structure, etc
+* outdated links were noticed in ADRG (e.g. https://cran.r-project.org/bin/windows/base/old/4.4.1/, moved from base/ to base/old/)
+* Hye Soo will work with Eric offline on the re-submission
+* Some issues Hye Soo encountered may be due to windows system versioning. If needed, we will engage more WG members to test the submission bundle using different windows versions.
+
+## Pilot 5
+
+* Part 1 is near completion (reproduce pilot 3 contents but in json format)
+* Pilot 5 team will submit part 1 to FDA in late July. Will confirm the submission date in the July WG meeting.
+* The Pilot 5 team will initiate a discussion on the scope of pilot 5 part 2. In part 2, we will cover more complicated TLFs, and more ADaM data sets to make the submission closer to a real submission.
+* Eli implemented two [QC bots](https://github.com/RConsortium/submissions-pilot5-datasetjson/pull/57) for pilot 5 using github actions. One uses diffdf to check consistencies between pilot3 data and pilot 5 data; the second bot uses llm to check consistencies between pilot 3 graphs and pilot 5 graphs. 
+* Ning used LLM to generate three tables of the ADRG [PR](https://github.com/RConsortium/submissions-adrg-generation-pipeline/pull/12). The LLM generated, human reviewed tables will be included in pilot 5 ADRG
+* When generating new codes for pilot 5 part 2, the team may also consider using code assistants to write the first line code. (Roche is exploring building customized bots for admiral and NEST)
+## Pilot 6
+* Keaven suggested exploring submission of html in pilot 6. The proposed scope is having an interactive report to assist review - especially for large tables such as AE tables, be able to drill down to specific terms and display listing of patients involved
+* Hye Soo and Paul commented that they are happy to explore the review of html as a supplementary material to the primary pdf file
+* will also explore submitting html version of ADRG
+* The pilot 5 team will align their part 2 scope to pilot 6 proposal, to make sure we maximize the reusability of the codes
+* Keaven will reach out to Merck individuals to seek interest of participation
+
+## Pilot 5 lessons learned webinar
+* We will host a R consortium webinar with the pilot 5 team. The focus will be on 1) how to use git efficiently among a relatively large team of collaborators, 2) the usage of github actions to build automated QC bots
+* Terry, Ning and Ben will organize the event
+
+## Hex stickers
+* Ben will finalize the design of the Hex stickers
+* Terry will help printing out the stickers and send to key WG members to distribute at conferences
+
+## SCE blog #2
+* Jared asked whether there are any discussions on producing a whitepaper on container management (example topic: for a long running trial, what are the suggestions on when to upverison the container)
+* As we are at a very early stage of exploring of the usage of container in regulatory submission, we will start with a few interviews with big pharma and produce a blog post (similar to [this one](https://r-consortium.org/posts/the-crucial-role-of-release-control-in-r-for-healthcare-organizations/))
+* Jared agreed to lead this effort 
