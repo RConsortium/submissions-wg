@@ -1,0 +1,67 @@
+---
+title: "Minutes 2025-05-02"
+date: 2025-05-02
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Athenkosi Nikonyeni
+- Ben Straub (GSK)
+- Camilla Calmasini
+- HyeSoo Cho (FDA)
+- Jared Woolfolk
+- Joel Laxamana (Roche/Genentech)
+- Keaven Anderson (Merck)
+- LG
+- Mekhala Acharya (Takeda)
+- Paul Schuette (FDA)
+- Phanikumar Tata (Syneos Health)
+- Phil Bowsher (Posit)
+- Robert Devine (Johnson & Johnson)
+- Sadchla Mascary
+- Saghir Bashir (Argenx)
+- Sam Parmar (Pfizer)
+- Stephen Knapp
+- Yilong Zhang (Meta)
+- Youn Kyeong Chang (FDA)
+:::
+
+## Pilot 4
+
+* Eric to set up a informal review meeting with FDA colleagues in Mid May (EDIT: The revised transfer will take place on June 13th, 2025)
+* Full speed ahead to use `{pkglite}` for assembling the web assembly and container submission bundles.
+
+## Pilot 5
+
+* Part 1 is moving well (conversion from xpt is complete)
+* Team will wait until pilot 4 review is complete before transferring pilot 5
+* Paul: Not sure where the evaluation of `datasetjson` currently stands within FDA. The team that was sponsoring it has been affected by recent events. They think the gateway will accept the format, but needs verification.
+* Previous transfers in the CDISC effort last year may or may not have been through the ectd gateway
+* ESUB team is still having discussion on testing the json format
+* Heather Crandle from a previous R Pharma conference is part of that team (2021) 
+* In current [eCTD instructions](https://www.fda.gov/media/85816/download), JSON is allowed for the PK category  
+* Ben will follow up with team involved in the CDISC pilot to see how they transferred the JSON files.
+* The team has embedded a datasetJSON viewer with shiny and webassebly in the pilot 5 website available at <https://rconsortium.github.io/submissions-pilot5-website/viewer.html>
+* Ning had started investing using LLMs to generate portions of the ADRG. There may be an update at the next WG meeting.
+
+## ADRG updates
+
+* The group's approach is to help communicate the version of different packages and how to best display that information in the ADRG template.
+* Feedback has been received from FDA reviewers. The group is looking into ways to update templates such that multiple software languages can be supported
+* Keeping in close sync with Christine at Pfizer on ensuring the existing standards are being met.
+* Also have plans to contact reps from Pinnacle21 on how they populate the ADRG, while ensuring minimal overlap occurs.
+* Goal of the group is to reduce manual effort of populating the various tables in the ADRG such as package versions, number of programs, functions used in those programs, which is all a manual effort at the moment
+
+
+## Other Topics
+
+* Yilong would like to know if there is interest in a Python-based pilot for submitting tables and listings produced in Python.
+* Thus far not as much interest in the office of Biostatistics according to FDA reviewers
+* CDRH handles things differently than CDER. CDRH does not require CDISC standards to be followed. A greater range of issues can occur in those cases.
+* Meta has utilized standards inspired by CDISC in their initial work
+* FDA is open to a more focused discussion, but they will need to pull in internal experts that have more expertise
+* Eric asked about the FDA having any preference on the method of rounding as there are rare cases where the default rounding method in R can be different than SAS default method
+* FDA does not have a "preferred method" to share at this time, and there may not be a single one answer that's correct in this area
+* Pilot 1 had a small issue with rounding dealing with the approximation method for confidence intervals
+* We are looking for help on the website! Please get in touch with the working group and browse the [GitHub issue list](https://github.com/RConsortium/submissions-wg/issues) if you would like to contribute.
