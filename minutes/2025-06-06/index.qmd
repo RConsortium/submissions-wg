@@ -1,5 +1,6 @@
 ---
 title: "Minutes 2025-06-06"
+author: Ning Leng
 date: 2025-06-06
 ---
 

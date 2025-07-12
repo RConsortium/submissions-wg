@@ -1,0 +1,72 @@
+---
+title: "Minutes 2025-07-11"
+author: Eric Nantz
+date: 2025-07-11
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Andre Couturier (Sanofi)
+- Ben Straub (GSK)
+- Eric Nantz (Eli Lilly)
+- Hong Zheng
+- HyeSoo Cho (FDA)
+- Joel Laxamana (Roche/Genentech)
+- Nicholas Raymond
+- Ning Leng (Roche/Genentech)
+- Robert Devine (Johnson & Johnson)
+- Sam Parmar (Pfizer)
+- Stephanie Lussier (Moderna)
+- Youn Kyeong Chang (FDA)
+:::
+
+## Pilot 4 Update
+
+* Hye Soo shared their group's comprehensive initial feedback
+* Pilot 4 WebAssembly version: No major issues identified and the team was able to run the application.
+* Minor issues identified 
+    * In certain file paths that contained underscores `_`, something in the transfer process automatically converted the underscore characters to hypens `-`. The root cause is unknown at this time. As a result, portions of the file names referenced in the ADRG instructions had to be manually updated to ensure the application was able to run.
+    * Hye Soo began investating a custom `index.xml` file that is produced at some point during the transfer, which is referenced in the [eCTD Backbone Files Specifications for Modules 2-5-3.2.2](https://www.fda.gov/media/159380/download)
+    * Ning offered to discuss the issue with her colleagues with expertise in the transfer process to learn more about this issue.
+    * Joel mentioned that during the Pilot 3 preparations, file names with underscore had to be converted to hyphen
+    * Additional guidance on file conventions can be found in the [Specifications for File Format Types Using eCTD Specifications document](https://www.fda.gov/media/85816/download).
+    * HyeSoo noted that certain elements of the WebAssembly application appeared differently than the Pilot 2 application. Eric noted that certain packages used for the data filtering involving Teal modules were not supported out of the box in the WebR package repositories at the time the application was created. At that time, Appsilon developers assisting with the Pilot 4 project re-implemented the filtering modules using native Shiny functions. Had the Pilot 4 WebAssembly project been launched in the present, these issues would not have been present as the Teal packages are now supported in WebR.
+* Pilot 4 Container version: Unfortunately major issues were identified that prevented successful execution of the application:
+    * On the computers used by the reviewers, running Docker Desktop was not stable, and often would lead to unexplained crashes. They had to consult with their IT group for an attempt to solve these issues, one of the solutions was to update the version of the Windows Subsystem for Linux (WSL) on their machines. While that helped somewhat, they still experienced stability issues.
+    * Multiple failures occurred during the process of building the Docker container image that prevented the image from being built successfully. Examples of the issues include packages not installing correctly (such as `{MASS}`), package repositories not able to be accessed (for instance the version of certain Teal packages that were used at the time of the Pilot 2 application development).
+    * Eric shared that in his extensive testing involving Windows virtual machines, none of these issues were present and he was able to build and execute the application successfully. He acknowledged that even these virtual machines may not be fully representative of the various technical configurations added to the reviewers' workstations due to IT policies and other administration settings.
+* In light of these difficulties, Hye Soo noted that they would like to learn more about the processes and workflows used to create the Pilot 4 container submission bundle, as well as a general tutorial on the fundamentals in container technology. Unlike previous pilots focused solely on R installations, trying to debug issues preventing the Docker process from running as well as the Docker container images being built successfully is a difficult situation without additional knowledge on this technology.
+* Eric offered to set up a dedicated session with FDA reviewers and others from the working group to explore the fundamentals of the container process and the workflows used to develop Pilot 4. Additional details will be shared in the Slack channel.
+
+## Pilot 5 Update
+
+* On track for getting a first submission ready by the end of July
+* View the group's latest meeting minutes on GitHub at [this link](https://github.com/RConsortium/submissions-pilot5-datasetjson/discussions/3#discussioncomment-13732444).
+* In progress: Pull requests to add the hex stickers to the repositories!
+* They are trying to get ahead of issues that could be identified by the reviewers, such as creating the KM plots using updated packages that might alter appearances
+* Novel tooling being used in the QC pipelines. You can view Eli Miller's QC GitHub action workflow at [this link](https://github.com/RConsortium/submissions-pilot5-datasetjson/blob/main/.github/workflows/qc.yaml)
+
+
+## Upcoming Events
+
+* R adoption series webinar **Open Source Software Adoption in Japan's Pharma Industry: Key Findings from the 2024 JPMA R Usage Survey**. Registration available at [this link](https://r-consortium.org/webinars/open-source-adoption-in-japans-pharma-industry.html). The webinar will be offered on July 23rd 5 PM PDT (July 24th 9 AM JST).
+* Another webinar schedule for August 28 focusing on Collaboration tools used in submission pilots (such as GitHub actions). Registration details forthcoming. 
+
+
+## Proposal: CDx and open source in submissions
+
+* Hong Zheng shared an overview of their proposal for collaboration 
+* With the rise of Clinical Diagnostics (CDx) co-development in targeted therapy approvals, there is an urgent need for the use of novel technology and open-source solutions to meet this challenge
+* They are proposing an effort to develop open-source tools based in R to modernize and streamline CDx submissions, aligning with regulatory (in particular the CDRH division at FDA to start)
+* The submissions WG is certainly eager to help share the learnings from our previous pilots and to be a resource for this new effort
+* An important next step is for Hong's group to share their prototype package mentioned in their proposal
+* Also it will be important to identify a representative to contact in CDRH
+* Ning recommends to draft a proposal for a first pilot in this collaboration, ensuring the scope is clearly defined before engaging with CDRH colleagues.
+
+## Other Topics
+
+* Andre asked if ARDs will become part of future submissions?
+* Ning mentioned it is still early stage for the CDISC standard for ARD, but it will be worthwhile to investigate in a future pilot.
+* Andre mentioned they are creating internal tooling for the creation of ARDs using key inputs such as metadata.
+* The working group has discussed a few potential ideas for future pilots, and it's becoming more important to capture these centrally. Eric will set up a GitHub discussion board with topics to capture these future pilot ideas.
