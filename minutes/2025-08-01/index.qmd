@@ -1,0 +1,42 @@
+---
+title: "Minutes 2025-08-01"
+date: 2025-08-01
+author: Eric Nantz
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Ben Straub (GSK)
+- Gabriel Krotkov
+- HyeSoo Cho (FDA)
+- Jayant
+- Jim Rothstein
+- Joel Laxamana (Roche/Genentech)
+- Ning Leng (Roche/Genentech)
+- Phanikumar Tata (Syneos Health)
+- Robert Devine (Johnson & Johnson)
+- Sam Parmar (Pfizer)
+- Sasi Palanisamy
+:::
+
+## Pilot 5 Update
+
+* Team is working on the ADRG for Pilot 5
+* Aiming for a transfer to FDA reviewers near the end of August
+* Goal is to have ADRG wrapped up by middle of August
+* The team is going to adopt an approach from J&J for setting paths to relevant data directories and R files at the start of execution 
+* Meeting minutes https://github.com/RConsortium/submissions-wg/discussions/150
+
+
+## ECTD File type feedback
+
+* Link to issue https://github.com/RConsortium/submissions-wg/discussions/150
+* Unique to R, many programmers write R scripts with the `.R` extension
+* eCTD transfer portal automatically renames any files with a capital letter are converted to lower-case
+* Package structures tend to have many file types, it may not be sustainable to try and list all of the different possible files
+* FDA does hope to have the zip archive's file types be listed in the acceptable file list
+* In light of resources available, it could be advantageous to prune the list to the essential types and moving the "nice to have" file types could be a subsequent update
+* Certain file types such as `DESCRIPTION`, `NAMESPACE` `LICENCE` are actually plain-text files, but they need to be named as they are in order for an R package to be compiled correctly as a ZIP installer
+* Next steps: FDA will have internal discussion to propose the essential file types
+* Next step: Ensure that the proposed file types also include recommended use cases that could inform the updated ECTD guidance document
