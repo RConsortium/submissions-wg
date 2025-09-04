@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Joseph Rickert">
-<meta name="dcterms.date" content="2024-04-05">
+<meta name="author" content="Eric Nantz">
+<meta name="dcterms.date" content="2025-08-01">
 
-<title>Minutes 2024-04-05 – R Submissions Working Group</title>
+<title>Minutes 2025-08-01 – R Submissions Working Group</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -334,7 +334,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Minutes 2024-04-05</h1>
+      <h1 class="title">Minutes 2025-08-01</h1>
                       </div>
   </div>
     
@@ -344,14 +344,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Joseph Rickert </p>
+               <p>Eric Nantz </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">April 5, 2024</p>
+        <p class="date">August 1, 2025</p>
       </div>
     </div>
     
@@ -367,18 +367,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#pilot-3-update" id="toc-pilot-3-update" class="nav-link active" data-scroll-target="#pilot-3-update">Pilot 3 Update</a></li>
-  <li><a href="#pilot-4" id="toc-pilot-4" class="nav-link" data-scroll-target="#pilot-4">Pilot 4</a>
-  <ul class="collapse">
-  <li><a href="#wasam-version" id="toc-wasam-version" class="nav-link" data-scroll-target="#wasam-version">WASAM Version</a></li>
-  <li><a href="#container-version" id="toc-container-version" class="nav-link" data-scroll-target="#container-version">Container Version</a></li>
-  </ul></li>
-  <li><a href="#communication-and-documentation" id="toc-communication-and-documentation" class="nav-link" data-scroll-target="#communication-and-documentation">Communication and Documentation</a></li>
-  <li><a href="#conference-presentations" id="toc-conference-presentations" class="nav-link" data-scroll-target="#conference-presentations">Conference Presentations</a></li>
-  <li><a href="#recommended-r-versions" id="toc-recommended-r-versions" class="nav-link" data-scroll-target="#recommended-r-versions">Recommended R Versions</a></li>
-  <li><a href="#next-meeting" id="toc-next-meeting" class="nav-link" data-scroll-target="#next-meeting">Next meeting</a></li>
+  <li><a href="#pilot-5-update" id="toc-pilot-5-update" class="nav-link active" data-scroll-target="#pilot-5-update">Pilot 5 Update</a></li>
+  <li><a href="#ectd-file-type-feedback" id="toc-ectd-file-type-feedback" class="nav-link" data-scroll-target="#ectd-file-type-feedback">ECTD File type feedback</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2024-04-05/Index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2025-08-01/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -402,139 +394,43 @@ View Attendee List
 <div class="callout-body-container callout-body">
 <ul>
 <li>Ben Straub (GSK)</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>Gregory Chen (MSD)</li>
-<li>Heidi Curinckx (Johnson &amp; Johnson)</li>
+<li>Gabriel Krotkov</li>
 <li>HyeSoo Cho (FDA)</li>
-<li>Jizu Zhi (FDA)</li>
-<li>Joseph Rickert (R Consortium)</li>
-<li>Nan Xiao (Merck)</li>
+<li>Jayant</li>
+<li>Jim Rothstein</li>
+<li>Joel Laxamana (Roche/Genentech)</li>
 <li>Ning Leng (Roche/Genentech)</li>
-<li>Paul Schuette (FDA)</li>
+<li>Phanikumar Tata (Syneos Health)</li>
 <li>Robert Devine (Johnson &amp; Johnson)</li>
-<li>Saghir Bashir (Argenx)</li>
 <li>Sam Parmar (Pfizer)</li>
-<li>Kangjie Zhang (Bayer)</li>
-<li>Youn Kyeon Chang (FDA)</li>
+<li>Sasi Palanisamy</li>
 </ul>
 </div>
 </div>
 </div>
-<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/N9uzMNTWoX-zu8M3XUliXdKO8sKEnnFlvMvUUJIjJx3oClkJBYIwDLwSXGod_uvY.OoHOPQdJMo7gelmI?startTime=1712333065000">video</a> is available.</p>
-<section id="pilot-3-update" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-3-update">Pilot 3 Update</h2>
-<p>Ben Staub provided an update on Pilot 3</p>
+<section id="pilot-5-update" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-5-update">Pilot 5 Update</h2>
 <ul>
-<li>The Pilot 3 team is ready to make the resubmission.</li>
-<li>The team will make the submission on Friday, April 12.</li>
-<li>Ning will alert Bev at Roche who tests the gateway connection and makes the actual submission.</li>
-<li>If all goes well, we expect the FDA could produce an evaluation report in late June or early July.</li>
+<li>Team is working on the ADRG for Pilot 5</li>
+<li>Aiming for a transfer to FDA reviewers near the end of August</li>
+<li>Goal is to have ADRG wrapped up by middle of August</li>
+<li>The team is going to adopt an approach from J&amp;J for setting paths to relevant data directories and R files at the start of execution</li>
+<li>Meeting minutes https://github.com/RConsortium/submissions-wg/discussions/150</li>
 </ul>
 </section>
-<section id="pilot-4" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-4">Pilot 4</h2>
-<p>Eric Nantz reported on the Plot 4 effort. (<strong>9:11</strong> into the video)</p>
-<section id="wasam-version" class="level3">
-<h3 class="anchored" data-anchor-id="wasam-version">WASAM Version</h3>
-<p>Eric asked for guidance on the placement of the zip file containing the application source files in the eCTD bundle. The WG decided that the placement indicated in the figure below looks fine.</p>
-<p><img src="etcd.png" class="img-fluid"> The ADRG will provide instructions for running the application. The workflow will be something like:</p>
-<ol type="1">
-<li>Unzip the file</li>
-<li>Execute the functions provided to compile the WASM application</li>
-<li>Execute the functions provided to run the application. Two versions of execution functions will be provided:</li>
-</ol>
+<section id="ectd-file-type-feedback" class="level2">
+<h2 class="anchored" data-anchor-id="ectd-file-type-feedback">ECTD File type feedback</h2>
 <ul>
-<li>Functions to execute with WASM</li>
-<li>Functions to run a normal Shiny app as in Pilot 2</li>
+<li>Link to issue https://github.com/RConsortium/submissions-wg/discussions/150</li>
+<li>Unique to R, many programmers write R scripts with the <code>.R</code> extension</li>
+<li>eCTD transfer portal automatically renames any files with a capital letter are converted to lower-case</li>
+<li>Package structures tend to have many file types, it may not be sustainable to try and list all of the different possible files</li>
+<li>FDA does hope to have the zip archive’s file types be listed in the acceptable file list</li>
+<li>In light of resources available, it could be advantageous to prune the list to the essential types and moving the “nice to have” file types could be a subsequent update</li>
+<li>Certain file types such as <code>DESCRIPTION</code>, <code>NAMESPACE</code> <code>LICENCE</code> are actually plain-text files, but they need to be named as they are in order for an R package to be compiled correctly as a ZIP installer</li>
+<li>Next steps: FDA will have internal discussion to propose the essential file types</li>
+<li>Next step: Ensure that the proposed file types also include recommended use cases that could inform the updated ECTD guidance document</li>
 </ul>
-<p>Decisions were made:</p>
-<ul>
-<li>to continue zip files for M5, and not M#, even though this may throw a low level error.</li>
-<li>to keep the datasets in a sub directory of the directory containing the WASM code without having to copy them into a another location before building the app.</li>
-</ul>
-<p>A question was asked about what persists on the workstation when the browser is closed. The answer was: not much persists on the machine. It may be the case that some information is cached but nothing is written to the disk.</p>
-<p>A question was asked about having a short cut to launch the application. The answer is that in the current state of WebAssembly it is necessary to start a new R session (or other process) that can serve static files.</p>
-<p>Also note the the process that spins up WebAssebly installs the required R packages. Unfortunately, with the current state of the technology there is no way to snapshot the versions of the packages.</p>
-</section>
-<section id="container-version" class="level3">
-<h3 class="anchored" data-anchor-id="container-version">Container Version</h3>
-<ul>
-<li>A major development at the FDA is that FDA IT rejected the request to use Podman, but recommended that we use Docker.</li>
-<li>Eric will include instructions in the ADRG to setup and run Docker containers.</li>
-</ul>
-</section>
-</section>
-<section id="communication-and-documentation" class="level2">
-<h2 class="anchored" data-anchor-id="communication-and-documentation">Communication and Documentation</h2>
-<ul>
-<li>Joe pointed out the infrastructure developed by the Submissions working group is significant and complex and that it is difficult to explain. He asked if we should undertake an effort to expand the website to include materials to explain the processes and technology to newcomers and document the history of what has been done.</li>
-<li>Ning suggested that we follow the lead of the R Valid Hub and look for a communications manager or assemble a small team.</li>
-<li>Eric noted that we have been focused on the submission itself and do not want to take on the challenge of how companies might establish their internal environments. All agreed with this.</li>
-<li>Joe pointed out that the fact that Ning was chatting with Doug Kelkhoff is a good sign that there seems to be sufficient communication among the working groups to keep the working groups focused and avoid duplication.</li>
-<li>Sam suggested putting a start here page and time line on the webpage. For example, see the <a href="https://insightsengineering.github.io/nest/">NEST Timeline</a>.</li>
-<li>Eric noted that there might be a quarto extension to do a time line.</li>
-<li>A suggestion was made to compile all of our presentation.</li>
-<li>The WG will open an issue on the submission-wg repository to collect ideas</li>
-<li>he <a href="https://r4csr.org/">R for Clinical Study Reports and Submission</a> website might serve as a model.</li>
-</ul>
-<section id="actions" class="level4">
-<h4 class="anchored" data-anchor-id="actions"><strong>Actions</strong></h4>
-<p>Joe will:</p>
-<ul>
-<li>compile suggestions for improving the website</li>
-<li>See what help the RC marketing team can provide</li>
-<li>start looking for a communications manager</li>
-</ul>
-</section>
-</section>
-<section id="conference-presentations" class="level2">
-<h2 class="anchored" data-anchor-id="conference-presentations">Conference Presentations</h2>
-<ul>
-<li><a href="https://www.pharmasug.org/us/2024/papers.html#SS-344">pharmaSUG</a> - May 19 to 24
-<ul>
-<li>Appsilon is planing a presentation on Pilot 4 work: SS-376 : Experimenting with Containers and webR for Submissions to FDA in the Pilot 4, André Veríssimo and Ismael Rodriguez Appsilon of Appsilon.</li>
-<li>SS-344 : Piloting into the Future: Publicly available R-based Submissions to the FDA by Benjamin Straub, GlaxoSmithKline</li>
-</ul></li>
-<li>UseR! 2024
-<ul>
-<li>Ning has submitted an abstract about Submissions WG work</li>
-</ul></li>
-<li>Ning and Eric will be presenting at the DIA webinar</li>
-</ul>
-<section id="actions-1" class="level4">
-<h4 class="anchored" data-anchor-id="actions-1"><strong>Actions</strong></h4>
-<ul>
-<li>Joe will ask RC marketing to prepare an RC slide for Sam and Appsilon to use in their presentations</li>
-<li>Ning will provide the details on the DIA webinar so we can promote it.</li>
-</ul>
-</section>
-</section>
-<section id="recommended-r-versions" class="level2">
-<h2 class="anchored" data-anchor-id="recommended-r-versions">Recommended R Versions</h2>
-<p>It turns out that making a recommendation for the version of R for companies to used in their submissions that would best harmonize with the versions that are likely to be in use at the FDA is much harder than we anticipated. Even our phrase for identifying our recommendation “Last patch version of the previous subversion” is not without ambiguity.</p>
-<ul>
-<li>It is likely that each company will have its own approach to managing versions for submissions</li>
-<li>Our new goal is to see if we can make an R Consortium recommendation that has sufficient industry support.</li>
-<li>The FDA would like to avoid the extremes:
-<ul>
-<li>Submissions using very old R versions</li>
-<li>Submissions using the latest R development version</li>
-</ul></li>
-<li>The FDA would also like to have submissions that are likely to still be available over a six year horizon. (FDA retention rules are six years.)</li>
-<li>Ning proposed a series of posts from different companies on how they deal with versioning.</li>
-<li>After we have published a few posts we will survey the industry.</li>
-</ul>
-<section id="action" class="level4">
-<h4 class="anchored" data-anchor-id="action"><strong>Action</strong></h4>
-<ul>
-<li>Ning will draft a post on the Roche approach</li>
-<li>Joe will have R Consortium Marketing produce the post</li>
-</ul>
-</section>
-</section>
-<section id="next-meeting" class="level2">
-<h2 class="anchored" data-anchor-id="next-meeting">Next meeting</h2>
-<p>The next meeting of he working group will be on Friday, May 3, 2024 at 9AM Pacific Time.</p>
 
 
 </section>
@@ -994,4 +890,4 @@ View Attendee List
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2024-04-05/Index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2025-08-01/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

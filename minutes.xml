@@ -9,8 +9,78 @@
 <link>https://rconsortium.github.io/submissions-wg/minutes.html</link>
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.7.32</generator>
-<lastBuildDate>Fri, 11 Jul 2025 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.7.34</generator>
+<lastBuildDate>Fri, 01 Aug 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2025-08-01</title>
+  <dc:creator>Eric Nantz</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2025-08-01/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Ben Straub (GSK)</li>
+<li>Gabriel Krotkov</li>
+<li>HyeSoo Cho (FDA)</li>
+<li>Jayant</li>
+<li>Jim Rothstein</li>
+<li>Joel Laxamana (Roche/Genentech)</li>
+<li>Ning Leng (Roche/Genentech)</li>
+<li>Phanikumar Tata (Syneos Health)</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Sam Parmar (Pfizer)</li>
+<li>Sasi Palanisamy</li>
+</ul>
+</div>
+</div>
+</div>
+<section id="pilot-5-update" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-5-update">Pilot 5 Update</h2>
+<ul>
+<li>Team is working on the ADRG for Pilot 5</li>
+<li>Aiming for a transfer to FDA reviewers near the end of August</li>
+<li>Goal is to have ADRG wrapped up by middle of August</li>
+<li>The team is going to adopt an approach from J&amp;J for setting paths to relevant data directories and R files at the start of execution</li>
+<li>Meeting minutes https://github.com/RConsortium/submissions-wg/discussions/150</li>
+</ul>
+</section>
+<section id="ectd-file-type-feedback" class="level2">
+<h2 class="anchored" data-anchor-id="ectd-file-type-feedback">ECTD File type feedback</h2>
+<ul>
+<li>Link to issue https://github.com/RConsortium/submissions-wg/discussions/150</li>
+<li>Unique to R, many programmers write R scripts with the <code>.R</code> extension</li>
+<li>eCTD transfer portal automatically renames any files with a capital letter are converted to lower-case</li>
+<li>Package structures tend to have many file types, it may not be sustainable to try and list all of the different possible files</li>
+<li>FDA does hope to have the zip archive’s file types be listed in the acceptable file list</li>
+<li>In light of resources available, it could be advantageous to prune the list to the essential types and moving the “nice to have” file types could be a subsequent update</li>
+<li>Certain file types such as <code>DESCRIPTION</code>, <code>NAMESPACE</code> <code>LICENCE</code> are actually plain-text files, but they need to be named as they are in order for an R package to be compiled correctly as a ZIP installer</li>
+<li>Next steps: FDA will have internal discussion to propose the essential file types</li>
+<li>Next step: Ensure that the proposed file types also include recommended use cases that could inform the updated ECTD guidance document</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2025-08-01/</guid>
+  <pubDate>Fri, 01 Aug 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2025-07-11</title>
   <dc:creator>Eric Nantz</dc:creator>
@@ -2088,86 +2158,6 @@ View Attendee List
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-12-01/</guid>
   <pubDate>Fri, 01 Dec 2023 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2023-11-03</title>
-  <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-11-03/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-
-<p>Minutes prepared by Joseph Rickert and Joel Laxamana.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Ben Straub (GSK)</li>
-<li>Dadong Zhang (Illumina)</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>HyeSoo Cho (FDA)</li>
-<li>Jizu Zhi (FDA)</li>
-<li>Joel Laxamana (Roche/Genentech)</li>
-<li>Kaushal Shah</li>
-<li>Nan Xiao (Merck)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Robert Devine (Johnson &amp; Johnson)</li>
-<li>Saghir Bashir (Argenx)</li>
-<li>Sam Parmar (Pfizer)</li>
-<li>Joseph Rickert (ProCogia)</li>
-<li>Ismael Alejandro Rodriguez Rodriguez (Appsilon)</li>
-<li>Yilong Zhang (Meta)</li>
-<li>YounKyeong Chang</li>
-</ul>
-</div>
-</div>
-</div>
-<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/5kFrV4r2DWK1aHHozPu0k8fu_66jV4IRlVsWoEgrnyocLF8ki-KBswB6wBEcBQmm.-txYArp2uGa7KpZp?startTime=1699027425000">video</a> is available.</p>
-<section id="fdasa-presentation" class="level3">
-<h3 class="anchored" data-anchor-id="fdasa-presentation">FDASA Presentation</h3>
-<ul>
-<li>The FDASA would like to invite the R Consortium to present at their meeting on December 11, 2023 (3 to 4:30PM ET).</li>
-<li>However the FDASA would like to extend an informal invitation rather than formally sponsor the event which would require administrative approvals</li>
-<li>The RC would still be able to advertise that Paul and HyeSoo are speaking</li>
-<li>The RC would conduct the event which is expected to attract at least 200 of the approximately 400 FDASA participants.</li>
-<li>Registration of the event is not required</li>
-<li>The RC can also invite the general public to attend. (JBR will confer with Ning and Eric about doing this.)</li>
-<li>JBR will s=send an invitation to the event, which should include the abstract, to Paul to be used to invite FDASA members to the event through internal channels.</li>
-</ul>
-</section>
-<section id="pilot-3" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-3">Pilot 3</h3>
-<p>HeySoo and Paul provide some preliminary comments regarding their evaluation of Pilot 3. An extensive discussion starts approximately 12 minutes into the video recording.</p>
-<ul>
-<li>The ADRG states that Pilot 3 was uses R 4.2.3. However, FDA may test using different R versions. (i.e.&nbsp;one reviewer using Rv4.2.1 and other using Rv4.2.3). There are at least two kinds of workstations used by FDA reviewers. Reviewers with “scientific workstations” may have administrative privileges and be able to install R. Users on other “regulatory” workstations will most likely use the version of R installed by IT.</li>
-<li>The Pilot 3 package didn’t install using renv::install() when using Rv4.2.1, but did install when the reviewer was using Rv4.2.3.</li>
-<li>The submissions programs which process ADaM data were not updated to match the file adam-pilot-3.xlsx which was included in the submission.</li>
-<li>Reviewers were able to update the file name. When they did so the adsl.r ran fine.</li>
-<li>Do not include notes to change the path to source data file in the ADRG steps. Instead, keep a note open to advise reviewers that they “should change the source data path to the location where the data was downloaded from the EDR”.</li>
-<li>The submission documentation should include the version of the Microsoft operating system used along with the the version of the RStudio IDE used.</li>
-<li>Sponsors using proprietary software also encounter Operating system issues. There may also be issues with respect to a difference in the size and power of the computers used by the sponsors and those available to the FDA reviewers.</li>
-<li>There may be problems if file names using upper case letters are used in submissions. The FDA technical conformance guide specifies the use of lower case letters.</li>
-</ul>
-<p>The next meeting of the Submissions WG will be held at 9AM Pacific Time on Friday, December 8, 2023.</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-11-03/</guid>
-  <pubDate>Fri, 03 Nov 2023 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
