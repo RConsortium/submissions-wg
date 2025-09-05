@@ -10,7 +10,160 @@
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.7.34</generator>
-<lastBuildDate>Fri, 01 Aug 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 05 Sep 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2025-09-05</title>
+  <dc:creator>Eric Nantz</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2025-09-05/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Ben Straub (GSK)</li>
+<li>Conor Moloney</li>
+<li>Doug Kelkhoff (Roche/Genentech)</li>
+<li>Eric Nantz (Eli Lilly)</li>
+<li>Jared Woolfolk (Cytel)</li>
+<li>Keaven Anderson (Merck)</li>
+<li>Lovemore Gakava (Novo Nordisk)</li>
+<li>Ning Leng (Roche/Genentech)</li>
+<li>Orla Doyle</li>
+<li>Paul Schuette (FDA)</li>
+<li>Phil Bowsher (Posit)</li>
+<li>Saghir Bashir (Argenx)</li>
+<li>Sam Parmar (Pfizer)</li>
+<li>Stephen Clieply</li>
+<li>Youn Kyeong Chang (FDA)</li>
+</ul>
+</div>
+</div>
+</div>
+<section id="welcoming-new-attendees" class="level2">
+<h2 class="anchored" data-anchor-id="welcoming-new-attendees">Welcoming New Attendees!</h2>
+<ul>
+<li>Stephen Clieply</li>
+<li>Orla Doyle</li>
+<li>Conor Moloney</li>
+<li>Jared Woolfolk</li>
+</ul>
+</section>
+<section id="rpharma-summit-and-gatherings" class="level2">
+<h2 class="anchored" data-anchor-id="rpharma-summit-and-gatherings">R/Pharma Summit and Gatherings</h2>
+<ul>
+<li>For anyone attending the 2025 R/Pharma Summit and/or <code>posit::conf(2025)</code>, Phil Bowsher shared that there are plans for social gatherings possibly for the evenings of September 14 and September 15. Be sure to check the R/Pharma <a href="https://github.com/rinpharma/rinpharma-summit-2025">summit repository</a> for updates!</li>
+<li>The R/Pharma summit board is open to new members and input on the rountable session topics. Visit the summit <a href="https://github.com/rinpharma/rinpharma-summit-2025/discussions">discussion board</a> for details.</li>
+</ul>
+</section>
+<section id="pilot-4-updates" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-4-updates">Pilot 4 Updates</h2>
+<ul>
+<li>Earlier in August, Eric led two leanring sessions on the fundamentals of containers built with Docker with FDA reviewers and interested members of the working group.</li>
+<li>The recordings for these session can be found on the revampled <a href="https://rpodcast.quarto.pub/submissions-wg-pilot-4/tech_session.html#pilot-4-container-information">Pilot 4 web site</a></li>
+<li>The next learning session will cover the fundamentals of WebAssembly technology and how the Shiny application included in the Pilot is converted to WebAssembly. Eric will coordinate with the FDA reviewers on timing of this next learning session.</li>
+</ul>
+</section>
+<section id="pilot-5-updates" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-5-updates">Pilot 5 Updates</h2>
+<ul>
+<li>Ben shared the current state of Pilot 5 efforts.</li>
+<li>Current status: Debugging issues with using Pinnacle 21 Community edition
+<ul>
+<li>At this time, the community edition incoporates the datasetJSON 1.0 standard</li>
+<li>However, pilot 5 is using the more recent datasetJSON 1.1 standard</li>
+</ul></li>
+<li>Ben asked if others in the group have experience with updating the community edition to the latest standard
+<ul>
+<li>Paul mentioned that the community edition is used at the FDA, and recommended reaching out to the Pinnacle 21 team.</li>
+<li>Is this a showstopper for the submission?</li>
+<li>If the XPT files are converted within Pinnacle 21 to convert to JSON, then those converted files seem to pass the conversion test.</li>
+</ul></li>
+<li>The R package <a href="https://atorus-research.github.io/datasetjson/"><code>{datasetJSON}</code></a> uses the 1.1 standard</li>
+<li>Additional effort: Create the integrated report of the TLFs that use the datasetJSON files</li>
+<li>Additional polishing is ongoing with the ADRG. Ben and Eric will finish up the remaining minor issues in the next week.</li>
+<li>Ben, Eric, Eli Miller, and Ning Leng recently led an exciting webinar on how Pilot 5 utilizes the power of <code>{renv}</code>, CI/CD with GitHub Actions, and novel uses of LLMs in partnership with the R Consortium. You can view the recording of the webinar on the R Consortium <a href="https://www.youtube.com/watch?v=8U_9sQdr2WE">YouTube Channel</a>.</li>
+</ul>
+</section>
+<section id="esub-portal" class="level2">
+<h2 class="anchored" data-anchor-id="esub-portal">eSUB Portal</h2>
+<ul>
+<li>Ning informed the group that certain text files such as README and DESCRIPTION files do not require a suffix of <code>.txt</code> in order to pass the submission gateway portal.</li>
+<li>This is a very important development, as certain files required by R packages such as <code>DESCRIPTION</code> cannot have their name modified or they will not be considered a valid R package in the R session.</li>
+</ul>
+</section>
+<section id="new-pilot-idea-ars" class="level2">
+<h2 class="anchored" data-anchor-id="new-pilot-idea-ars">New Pilot Idea: ARS</h2>
+<ul>
+<li>Orla and Lovemore shared a set of slides about analysis results standards (ARS)</li>
+<li>Novo Nordisk and Novartis are actively developing tools using the CDISC ARS (Analysis Results Standards) to help structure this format as well as the required metadata</li>
+<li>Exploring the possibilities of a submission (such as what files would be part of a submission, and how it would be submitted)</li>
+<li>How would this effort compare with existing tools such as cards package? The cards package will give youa piece of that result, but this effort helps to augment these pieces with the necessary metadata and ensure that the results could be produced by the metadata</li>
+<li>With the data being machine readable, we have a lot of possibilities for how they are consumed by other frameworks such as AI based tools</li>
+<li>The cards package does not cover all analyses, so these tools would add additional functionality</li>
+<li>Up to this point, there has not been a discussion with regulatory on the adoption of the CDISC ARS specifications. But a new pilot could help provide valuable feedback</li>
+<li>Ning mentioned that these efforts are in an early stage</li>
+<li>Paul is not aware of a process underway with FDA on the ARS effort. However the team that would have handled that responsibility was impacted by recent events</li>
+<li>At this moment, Paul’s team is in the division of statstical programming issues, where this pilot idea requires buy-in from other groups at the FDA that might require a more formal process from other divisions</li>
+<li>Orlo expressed concern on the tools being developed in the ARS effort might get too far ahead and we find out later that the tools may not be acceptable for submission</li>
+<li>October WG meeting could be an opportunity to continue the discussion and potentially invite lead of the CDISC group looking at this space</li>
+</ul>
+</section>
+<section id="submissions-wg-and-r-validation-hub-collaboration" class="level2">
+<h2 class="anchored" data-anchor-id="submissions-wg-and-r-validation-hub-collaboration">Submissions WG and R Validation Hub Collaboration</h2>
+<ul>
+<li>Doug Kelkhoff led the discussion on the potential of a new collaboration with the Submissions Working Group on using new package repositories in a test submission.</li>
+<li>Visit the R Validation Hub <a href="https://pharmar.org/">site</a> for additonal background on the group and contributions.</li>
+<li>Current effort is to kick off a repository of pre-assessed packages</li>
+<li>Potential to bring a pilot to this group for using the new repository</li>
+<li>Since there isn’t a pre-defined new set of analysis, this pilot could integrate nicely with a previous pilot that performed an analysis, but with the packages from this repository</li>
+<li>Doug reviewed key sections of the group’s <a href="https://pharmar.org/white-paper/">white paper</a>:
+<ul>
+<li>Components of a Risk Assessment Framework</li>
+<li>Some are facts, others are how to intrepret these facts</li>
+<li>They are trying to de-couple these two pieces</li>
+<li>Create a database of these “facts” and let user decide if it is appropriate for their work</li>
+</ul></li>
+<li>New packages as part of a re-imagining of the risk assessment framework:
+<ul>
+<li><a href="https://github.com/pharmaR/val.criterion"><code>{val.criterion}</code></a>: Decision-making tools for <code>{val.meter}</code> package metrics</li>
+<li><a href="https://github.com/pharmaR/val.repo"><code>{val.repo}</code></a>: A curated repository of R packages that is structured similarly to CRAN but with additional metadata: It hosts validation reports on its associated website, published via GitHub Pages.</li>
+<li><a href="https://github.com/pharmaR/riskscore"><code>{riskscore}</code></a>: A data package for cataloging <code>riskmetric</code> results across public repositories.</li>
+</ul></li>
+<li>The new framworks allow the user to link their R session up to a repository, alongside a metrics repository, and supply their own filters</li>
+<li>What are the possibilities of using this in a future pilot?
+<ul>
+<li>Paul mentioned that there isn’t a formal software validation team at FDA</li>
+<li>Separate teams handle the e-submission process</li>
+<li>Validation of the software is up to the end-user groups such as the office of biostatistics, they can help determine the tools appropriate for their workflows</li>
+</ul></li>
+<li>Doug mentioned that typically the only feedback a sponsor receives on this type of effort is through an inspection</li>
+<li>Short term idea would be to target the “end-user” group like we’ve been doing up to this point with previous pilots</li>
+<li>Paul asked for a crafted proposal (1-2 pages) that he could share with colleagues in different divisions such as the office of compliance, hence their division can facilite while technical details would be outside of their responsibilities</li>
+<li>Doug is supportive of creating that initial proposal, they can edit an existing writeup to target a compliance division as the target audience.</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2025-09-05/</guid>
+  <pubDate>Fri, 05 Sep 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2025-08-01</title>
   <dc:creator>Eric Nantz</dc:creator>
@@ -2068,96 +2221,6 @@ View Attendee List
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-01-05/</guid>
   <pubDate>Fri, 05 Jan 2024 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2023-12-01</title>
-  <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2023-12-01/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Ben Straub (GSK)</li>
-<li>YounKyeong Chang (FDA)</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>HyeSoo Cho (FDA)</li>
-<li>Jizu Zhi (FDA)</li>
-<li>Joel Laxamana (Roche/Genentech)</li>
-<li>Joseph Rickert (R Consortium)</li>
-<li>Nan Xiao (Merck)</li>
-<li>Ning Leng (Roche/Genentech)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Saghir Bashir (Argenx)</li>
-<li>Sam Parmar (Pfizer)</li>
-<li>Steven Hasendinckx (Johnson &amp; Johnson)</li>
-</ul>
-</div>
-</div>
-</div>
-<p>The meeting was recorded and screen sharing in the <a href="https://zoom.us/rec/share/rE68tBPpnjdwl0RhevCYKDzq-FA7Z0kla1dSbHixZXZ9jHzoe4Kud-6Mc3r4-PKd.25fRPYZYgN0MzxxU?startTime=1701450234000">video</a> provides information about the FDA review of Pilot 3 which is in progress.</p>
-<p>JBR began the meeting the meeting with a reminder that the meeting is to be conducted in compliance with the Antitrust laws.</p>
-<section id="pilot-3" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-3">Pilot 3</h3>
-<p>YounKyeong Chang of the FDA provided and update on he ongoing FDA review.</p>
-<ul>
-<li>Able to generate identical data sets with the code provided, but there were some minor corrections and issues.</li>
-<li>Incorrect folder name in adlvc.r</li>
-<li>After switching to R.4.2.3, code in ADRG installed pilotutils package instead of pilot3 package. Switching to from R 4.3.1 to R 4.2.3 resolved the problem.</li>
-<li>There was an extensive discussion about missing values.</li>
-<li>The CDISC standard indicates missing values with blanks, and depending on the variable type SAS may also use blanks for missing values. However, R encodes missing values as “NA”.</li>
-<li>Decision made to convert missing values to NA when using R, but provide an option to use blanks for analysts using SAS. However, the FDA does not yet have an SOP for this.</li>
-<li>A paragraph will be added to the ADRG to explain that SAS users should convert NAs to blanks.</li>
-<li>The ADaM datasets in Pilot 3 where run through <a href="https://www.lexjansen.com/pharmasug/2019/DS/PharmaSUG-2019-DS-119.pdf">Pinnacle 21</a> without error.</li>
-<li>the WG should reach out to CDISC to see if they will modify their standard to accommodate R.</li>
-<li><strong>Action</strong> Ning and Joel will prepare a statement to communicate with CDISC.</li>
-<li>Sharing of the details of any FDA findings, such as as those discussed in the meeting, require clearance</li>
-<li>Some minor differences were observed in how SAS and R interpreted data types.</li>
-<li>The FDA will try to evaluate the submission outputs by next month’s meeting</li>
-<li>The WG agreed that after the evaluation of Pilot 3 is completed, it would be interesting to do a Pilot 3B submission using .zip instead of <code>pkglite</code> as was used in Pilots 1 and 2. Paul said that in light of the FDA requirement to keep submission materials for 6 years this would provide an alternative for long term preservation of the submission materials.</li>
-<li>The FDA will make a decision whether an additional Pilot 3 submission to correct the problems identified so far is necessary after they have completed their evaluation.</li>
-</ul>
-</section>
-<section id="pilot-4" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-4">Pilot 4</h3>
-<p>Eric Nantz provide a status update on Pilot 4</p>
-<ul>
-<li>Pilot 4 will take the approach of submitting as a .zip archive.</li>
-<li>An issue is that the default behavior of <code>WebR</code> is to install a special version of some commonly used R packages that are optimized for <code>WebR</code>.</li>
-<li>We would like to include these special <code>WebR</code> binaries in the submission bundle in order to improve performance.</li>
-<li>Because the binaries are not executable without a WebAssembly process running, the WG believes these binaries wold not violate the FDA requirement of not including executables.</li>
-</ul>
-</section>
-<section id="events" class="level3">
-<h3 class="anchored" data-anchor-id="events">Events</h3>
-<ul>
-<li>Eric, Hyesoo, and Paul will be presenting on December 11 in a Webinar that will be broadcast within the FDA as well as available to the public. Ning will lead a panel discussion afterwards.</li>
-<li>The webinar <em>The use of R in Japan’s Pharma Industry</em> is scheduled for January 8, 2024.</li>
-<li>Gregory Chen will be presenting the WGs work in person at Department of Clinical Assessment for Market Authorization at Swiss medic in January</li>
-</ul>
-<p>The next meeting will take place at 9AM St on Friday, January 5, 2025. <strong>Action:</strong> JBR will issue a new set of calendar invitations for 2024. Stay tuned for details.</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2023-12-01/</guid>
-  <pubDate>Fri, 01 Dec 2023 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
