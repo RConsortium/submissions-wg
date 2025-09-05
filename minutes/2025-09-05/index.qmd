@@ -1,0 +1,106 @@
+---
+title: "Minutes 2025-09-05"
+date: 2025-09-05
+author: Eric Nantz
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Ben Straub (GSK)
+- Conor Moloney
+- Doug Kelkhoff (Roche/Genentech)
+- Eric Nantz (Eli Lilly)
+- Jared Woolfolk (Cytel)
+- Keaven Anderson (Merck)
+- Lovemore Gakava (Novo Nordisk)
+- Ning Leng (Roche/Genentech)
+- Orla Doyle
+- Paul Schuette (FDA)
+- Phil Bowsher (Posit)
+- Saghir Bashir (Argenx)
+- Sam Parmar (Pfizer)
+- Stephen Clieply
+- Youn Kyeong Chang (FDA)
+:::
+
+## Welcoming New Attendees!
+
+* Stephen Clieply
+* Orla Doyle
+* Conor Moloney
+* Jared Woolfolk
+
+## R/Pharma Summit and Gatherings
+
+* For anyone attending the 2025 R/Pharma Summit and/or `posit::conf(2025)`, Phil Bowsher shared that there are plans for social gatherings possibly for the evenings of September 14 and September 15. Be sure to check the R/Pharma [summit repository](https://github.com/rinpharma/rinpharma-summit-2025) for updates!
+* The R/Pharma summit board is open to new members and input on the rountable session topics. Visit the summit [discussion board](https://github.com/rinpharma/rinpharma-summit-2025/discussions) for details. 
+
+
+## Pilot 4 Updates
+
+* Earlier in August, Eric led two leanring sessions on the fundamentals of containers built with Docker with FDA reviewers and interested members of the working group.
+* The recordings for these session can be found on the revampled [Pilot 4 web site](https://rpodcast.quarto.pub/submissions-wg-pilot-4/tech_session.html#pilot-4-container-information)
+* The next learning session will cover the fundamentals of WebAssembly technology and how the Shiny application included in the Pilot is converted to WebAssembly. Eric will coordinate with the FDA reviewers on timing of this next learning session.
+
+## Pilot 5 Updates
+
+* Ben shared the current state of Pilot 5 efforts.
+* Current status: Debugging issues with using Pinnacle 21 Community edition
+    * At this time, the community edition incoporates the datasetJSON 1.0 standard
+    * However, pilot 5 is using the more recent datasetJSON 1.1 standard
+* Ben asked if others in the group have experience with updating the community edition to the latest standard
+    * Paul mentioned that the community edition is used at the FDA, and recommended reaching out to the Pinnacle 21 team.
+    * Is this a showstopper for the submission? 
+    * If the XPT files are converted within Pinnacle 21 to convert to JSON, then those converted files seem to pass the conversion test.
+
+* The R package [`{datasetJSON}`](https://atorus-research.github.io/datasetjson/) uses the 1.1 standard
+* Additional effort: Create the integrated report of the TLFs that use the datasetJSON files
+* Additional polishing is ongoing with the ADRG. Ben and Eric will finish up the remaining minor issues in the next week.
+* Ben, Eric, Eli Miller, and Ning Leng recently led an exciting webinar on how Pilot 5 utilizes the power of `{renv}`, CI/CD with GitHub Actions, and novel uses of LLMs in partnership with the R Consortium. You can view the recording of the webinar on the R Consortium [YouTube Channel](https://www.youtube.com/watch?v=8U_9sQdr2WE). 
+
+## eSUB Portal
+
+* Ning informed the group that certain text files such as README and DESCRIPTION files do not require a suffix of `.txt` in order to pass the submission gateway portal.
+* This is a very important development, as certain files required by R packages such as `DESCRIPTION` cannot have their name modified or they will not be considered a valid R package in the R session.
+
+## New Pilot Idea: ARS
+
+* Orla and Lovemore shared a set of slides about analysis results standards (ARS)
+* Novo Nordisk and Novartis are actively developing tools using the CDISC ARS (Analysis Results Standards) to help structure this format as well as the required metadata
+* Exploring the possibilities of a submission (such as what files would be part of a submission, and how it would be submitted)
+* How would this effort compare with existing tools such as cards package? The cards package will give youa  piece of that result, but this effort helps to augment these pieces with the necessary metadata and ensure that the results could be produced by the metadata
+* With the data being machine readable, we have a lot of possibilities for how they are consumed by other frameworks such as AI based tools
+* The cards package does not cover all analyses, so these tools would add additional functionality
+* Up to this point, there has not been a discussion with regulatory on the adoption of the CDISC ARS specifications. But a new pilot could help provide valuable feedback
+* Ning mentioned that these efforts are in an early stage
+* Paul is not aware of a process underway with FDA on the ARS effort. However the team that would have handled that responsibility was impacted by recent events
+* At this moment, Paul's team is in the division of statstical programming issues, where this pilot idea requires buy-in from other groups at the FDA that might require a more formal process from other divisions
+* Orlo expressed concern on the tools being developed in the ARS effort might get too far ahead and we find out later that the tools may not be acceptable for submission
+* October WG meeting could be an opportunity to continue the discussion and potentially invite lead of the CDISC group looking at this space
+
+## Submissions WG and R Validation Hub Collaboration
+
+* Doug Kelkhoff led the discussion on the potential of a new collaboration with the Submissions Working Group on using new package repositories in a test submission.
+* Visit the R Validation Hub [site](https://pharmar.org/) for additonal background on the group and contributions.
+* Current effort is to kick off a repository of pre-assessed packages
+* Potential to bring a pilot to this group for using the new repository
+* Since there isn't a pre-defined new set of analysis, this pilot could integrate nicely with a previous pilot that performed an analysis, but with the packages from this repository
+* Doug reviewed key sections of the group's [white paper](https://pharmar.org/white-paper/):
+    * Components of a Risk Assessment Framework
+    * Some are facts, others are how to intrepret these facts
+    * They are trying to de-couple these two pieces
+    * Create a database of these "facts" and let user decide if it is appropriate for their work
+* New packages as part of a re-imagining of the risk assessment framework:
+    * [`{val.criterion}`](https://github.com/pharmaR/val.criterion): Decision-making tools for `{val.meter}` package metrics
+    * [`{val.repo}`](https://github.com/pharmaR/val.repo): A curated repository of R packages that is structured similarly to CRAN but with additional metadata: It hosts validation reports on its associated website, published via GitHub Pages.
+    * [`{riskscore}`](https://github.com/pharmaR/riskscore): A data package for cataloging `riskmetric` results across public repositories.
+* The new framworks allow the user to link their R session up to a repository, alongside a metrics repository, and supply their own filters
+* What are the possibilities of using this in a future pilot?
+    * Paul mentioned that there isn't a formal software validation team at FDA
+    * Separate teams handle the e-submission process
+    * Validation of the software is up to the end-user groups such as the office of biostatistics, they can help determine the tools appropriate for their workflows
+* Doug mentioned that typically the only feedback a sponsor receives on this type of effort is through an inspection
+* Short term idea would be to target the "end-user" group like we've been doing up to this point with previous pilots
+* Paul asked for a crafted proposal (1-2 pages) that he could share with colleagues in different divisions such as the office of compliance, hence their division can facilite while technical details would be outside of their responsibilities
+* Doug is supportive of creating that initial proposal, they can edit an existing writeup to target a compliance division as the target audience.
