@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,18 +34,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-befe23ebd2f54d8af2c8a89d1a1611f1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1d547202ef5b81858b5cd4b4ce92205d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-3824aa816de5134366ccfe78104cf7a8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-1d547202ef5b81858b5cd4b4ce92205d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-960d9d362f81d399278ec3e29b622b37.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-e7f4145358ce1d0cd37d8d374dbb44f9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-960d9d362f81d399278ec3e29b622b37.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -118,7 +119,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -306,6 +307,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">R Submissions Working Group</span>
     </a>
@@ -469,7 +472,7 @@ window.Quarto = {
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-date-sort="1757030400000" data-listing-file-modified-sort="1757098553451" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1236" data-listing-title-sort="Minutes 2025-09-05" data-listing-filename-sort="index.qmd">
+<tr data-index="0" data-listing-date-sort="1757030400000" data-listing-file-modified-sort="1762024616669" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1236" data-listing-title-sort="Minutes 2025-09-05" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Sep 5, 2025</span>
 </td>
@@ -482,7 +485,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="1" data-listing-date-sort="1754006400000" data-listing-file-modified-sort="1757098553451" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="272" data-listing-title-sort="Minutes 2025-08-01" data-listing-filename-sort="index.qmd">
+<tr data-index="1" data-listing-date-sort="1754006400000" data-listing-file-modified-sort="1762024616669" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="272" data-listing-title-sort="Minutes 2025-08-01" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Aug 1, 2025</span>
 </td>
@@ -495,7 +498,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="2" data-listing-date-sort="1752192000000" data-listing-file-modified-sort="1757098553451" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1062" data-listing-title-sort="Minutes 2025-07-11" data-listing-filename-sort="index.qmd">
+<tr data-index="2" data-listing-date-sort="1752192000000" data-listing-file-modified-sort="1762024616669" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1062" data-listing-title-sort="Minutes 2025-07-11" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Jul 11, 2025</span>
 </td>
@@ -508,7 +511,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="3" data-listing-date-sort="1749168000000" data-listing-file-modified-sort="1757098553451" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="564" data-listing-title-sort="Minutes 2025-06-06" data-listing-filename-sort="index.qmd">
+<tr data-index="3" data-listing-date-sort="1749168000000" data-listing-file-modified-sort="1762024616669" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="564" data-listing-title-sort="Minutes 2025-06-06" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Jun 6, 2025</span>
 </td>
@@ -521,7 +524,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="4" data-listing-date-sort="1746144000000" data-listing-file-modified-sort="1757098553451" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="595" data-listing-title-sort="Minutes 2025-05-02" data-listing-filename-sort="index.qmd">
+<tr data-index="4" data-listing-date-sort="1746144000000" data-listing-file-modified-sort="1762024616669" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="595" data-listing-title-sort="Minutes 2025-05-02" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">May 2, 2025</span>
 </td>
@@ -534,7 +537,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="5" data-listing-date-sort="1743724800000" data-listing-file-modified-sort="1757098553451" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="784" data-listing-title-sort="Minutes 2025-04-04" data-listing-filename-sort="index.qmd">
+<tr data-index="5" data-listing-date-sort="1743724800000" data-listing-file-modified-sort="1762024616669" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="784" data-listing-title-sort="Minutes 2025-04-04" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Apr 4, 2025</span>
 </td>
@@ -547,7 +550,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="6" data-listing-date-sort="1741305600000" data-listing-file-modified-sort="1757098553451" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="729" data-listing-title-sort="Minutes 2025-03-07" data-listing-filename-sort="index.qmd">
+<tr data-index="6" data-listing-date-sort="1741305600000" data-listing-file-modified-sort="1762024616669" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="729" data-listing-title-sort="Minutes 2025-03-07" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Mar 7, 2025</span>
 </td>
@@ -560,7 +563,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="7" data-listing-date-sort="1738886400000" data-listing-file-modified-sort="1757098553451" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="477" data-listing-title-sort="Minutes 2025-02-07" data-listing-filename-sort="index.qmd">
+<tr data-index="7" data-listing-date-sort="1738886400000" data-listing-file-modified-sort="1762024616669" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="477" data-listing-title-sort="Minutes 2025-02-07" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Feb 7, 2025</span>
 </td>
@@ -573,7 +576,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="8" data-listing-date-sort="1736467200000" data-listing-file-modified-sort="1757098553451" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="535" data-listing-title-sort="Minutes 2025-01-10" data-listing-filename-sort="index.qmd">
+<tr data-index="8" data-listing-date-sort="1736467200000" data-listing-file-modified-sort="1762024616669" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="535" data-listing-title-sort="Minutes 2025-01-10" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Jan 10, 2025</span>
 </td>
@@ -586,7 +589,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="9" data-listing-date-sort="1733443200000" data-listing-file-modified-sort="1757098553450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="924" data-listing-title-sort="Minutes 2024-12-06" data-listing-filename-sort="index.qmd">
+<tr data-index="9" data-listing-date-sort="1733443200000" data-listing-file-modified-sort="1762024616669" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="924" data-listing-title-sort="Minutes 2024-12-06" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Dec 6, 2024</span>
 </td>
@@ -599,7 +602,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="10" data-listing-date-sort="1730419200000" data-listing-file-modified-sort="1757098553450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="702" data-listing-title-sort="Minutes 2024-11-01" data-listing-filename-sort="index.qmd">
+<tr data-index="10" data-listing-date-sort="1730419200000" data-listing-file-modified-sort="1762024616668" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="702" data-listing-title-sort="Minutes 2024-11-01" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Nov 1, 2024</span>
 </td>
@@ -612,7 +615,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="11" data-listing-date-sort="1728000000000" data-listing-file-modified-sort="1757098553450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="670" data-listing-title-sort="Minutes 2024-10-04" data-listing-filename-sort="index.qmd">
+<tr data-index="11" data-listing-date-sort="1728000000000" data-listing-file-modified-sort="1762024616668" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="670" data-listing-title-sort="Minutes 2024-10-04" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Oct 4, 2024</span>
 </td>
@@ -625,7 +628,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="12" data-listing-date-sort="1725580800000" data-listing-file-modified-sort="1757098553450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="933" data-listing-title-sort="Minutes 2024-09-06" data-listing-filename-sort="index.qmd">
+<tr data-index="12" data-listing-date-sort="1725580800000" data-listing-file-modified-sort="1762024616668" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="933" data-listing-title-sort="Minutes 2024-09-06" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Sep 6, 2024</span>
 </td>
@@ -638,7 +641,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="13" data-listing-date-sort="1722556800000" data-listing-file-modified-sort="1757098553450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="905" data-listing-title-sort="Minutes 2024-08-02" data-listing-filename-sort="index.qmd">
+<tr data-index="13" data-listing-date-sort="1722556800000" data-listing-file-modified-sort="1762024616668" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="905" data-listing-title-sort="Minutes 2024-08-02" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Aug 2, 2024</span>
 </td>
@@ -651,7 +654,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="14" data-listing-date-sort="1717718400000" data-listing-file-modified-sort="1757098553450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="827" data-listing-title-sort="Minutes 2024-06-07" data-listing-filename-sort="index.qmd">
+<tr data-index="14" data-listing-date-sort="1717718400000" data-listing-file-modified-sort="1762024616668" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="827" data-listing-title-sort="Minutes 2024-06-07" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Jun 7, 2024</span>
 </td>
@@ -664,7 +667,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="15" data-listing-date-sort="1714694400000" data-listing-file-modified-sort="1757098553447" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="665" data-listing-title-sort="Minutes 2024-05-03" data-listing-filename-sort="index.qmd">
+<tr data-index="15" data-listing-date-sort="1714694400000" data-listing-file-modified-sort="1762024616665" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="665" data-listing-title-sort="Minutes 2024-05-03" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">May 3, 2024</span>
 </td>
@@ -677,7 +680,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="16" data-listing-date-sort="1712275200000" data-listing-file-modified-sort="1757098553445" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1005" data-listing-title-sort="Minutes 2024-04-05" data-listing-filename-sort="Index.qmd">
+<tr data-index="16" data-listing-date-sort="1712275200000" data-listing-file-modified-sort="1762024616663" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1005" data-listing-title-sort="Minutes 2024-04-05" data-listing-filename-sort="Index.qmd">
 <td>
 <span class="listing-date">Apr 5, 2024</span>
 </td>
@@ -690,7 +693,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="17" data-listing-date-sort="1709251200000" data-listing-file-modified-sort="1757098553445" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="754" data-listing-title-sort="Minutes 2024-03-01" data-listing-filename-sort="index.qmd">
+<tr data-index="17" data-listing-date-sort="1709251200000" data-listing-file-modified-sort="1762024616663" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="754" data-listing-title-sort="Minutes 2024-03-01" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Mar 1, 2024</span>
 </td>
@@ -703,7 +706,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="18" data-listing-date-sort="1706832000000" data-listing-file-modified-sort="1757098553444" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1127" data-listing-title-sort="Minutes 2024-02-02" data-listing-filename-sort="index.qmd">
+<tr data-index="18" data-listing-date-sort="1706832000000" data-listing-file-modified-sort="1762024616662" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1127" data-listing-title-sort="Minutes 2024-02-02" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Feb 2, 2024</span>
 </td>
@@ -716,7 +719,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="19" data-listing-date-sort="1704412800000" data-listing-file-modified-sort="1757098553443" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="520" data-listing-title-sort="Minutes 2024-01-05" data-listing-filename-sort="index.qmd">
+<tr data-index="19" data-listing-date-sort="1704412800000" data-listing-file-modified-sort="1762024616660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="520" data-listing-title-sort="Minutes 2024-01-05" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Jan 5, 2024</span>
 </td>
@@ -729,7 +732,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="20" data-listing-date-sort="1701388800000" data-listing-file-modified-sort="1757098553443" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="631" data-listing-title-sort="Minutes 2023-12-01" data-listing-filename-sort="index.qmd">
+<tr data-index="20" data-listing-date-sort="1701388800000" data-listing-file-modified-sort="1762024616660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="631" data-listing-title-sort="Minutes 2023-12-01" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Dec 1, 2023</span>
 </td>
@@ -742,7 +745,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="21" data-listing-date-sort="1698969600000" data-listing-file-modified-sort="1757098553442" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="503" data-listing-title-sort="Minutes 2023-11-03" data-listing-filename-sort="index.qmd">
+<tr data-index="21" data-listing-date-sort="1698969600000" data-listing-file-modified-sort="1762024616660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="503" data-listing-title-sort="Minutes 2023-11-03" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Nov 3, 2023</span>
 </td>
@@ -755,7 +758,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="22" data-listing-date-sort="1696550400000" data-listing-file-modified-sort="1757098553442" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1103" data-listing-title-sort="Minutes 2023-10-06" data-listing-filename-sort="index.qmd">
+<tr data-index="22" data-listing-date-sort="1696550400000" data-listing-file-modified-sort="1762024616660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1103" data-listing-title-sort="Minutes 2023-10-06" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Oct 6, 2023</span>
 </td>
@@ -768,7 +771,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="23" data-listing-date-sort="1693526400000" data-listing-file-modified-sort="1757098553442" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="750" data-listing-title-sort="Minutes 2023-09-01" data-listing-filename-sort="index.qmd">
+<tr data-index="23" data-listing-date-sort="1693526400000" data-listing-file-modified-sort="1762024616660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="750" data-listing-title-sort="Minutes 2023-09-01" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Sep 1, 2023</span>
 </td>
@@ -781,7 +784,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="24" data-listing-date-sort="1691107200000" data-listing-file-modified-sort="1757098553442" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="708" data-listing-title-sort="Minutes 2023-08-04" data-listing-filename-sort="index.qmd">
+<tr data-index="24" data-listing-date-sort="1691107200000" data-listing-file-modified-sort="1762024616660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="708" data-listing-title-sort="Minutes 2023-08-04" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Aug 4, 2023</span>
 </td>
@@ -794,7 +797,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="25" data-listing-date-sort="1688688000000" data-listing-file-modified-sort="1757098553442" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="395" data-listing-title-sort="Minutes 2023-07-07" data-listing-filename-sort="index.qmd">
+<tr data-index="25" data-listing-date-sort="1688688000000" data-listing-file-modified-sort="1762024616660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="395" data-listing-title-sort="Minutes 2023-07-07" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Jul 7, 2023</span>
 </td>
@@ -807,7 +810,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="26" data-listing-date-sort="1685664000000" data-listing-file-modified-sort="1757098553442" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="325" data-listing-title-sort="Minutes 2023-06-02" data-listing-filename-sort="index.qmd">
+<tr data-index="26" data-listing-date-sort="1685664000000" data-listing-file-modified-sort="1762024616660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="325" data-listing-title-sort="Minutes 2023-06-02" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Jun 2, 2023</span>
 </td>
@@ -820,7 +823,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="27" data-listing-date-sort="1683244800000" data-listing-file-modified-sort="1757098553442" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="526" data-listing-title-sort="Minutes 2023-05-05" data-listing-filename-sort="index.qmd">
+<tr data-index="27" data-listing-date-sort="1683244800000" data-listing-file-modified-sort="1762024616660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="526" data-listing-title-sort="Minutes 2023-05-05" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">May 5, 2023</span>
 </td>
@@ -833,7 +836,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="28" data-listing-date-sort="1680825600000" data-listing-file-modified-sort="1757098553442" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1565" data-listing-title-sort="Minutes 2023-04-07" data-listing-filename-sort="index.qmd">
+<tr data-index="28" data-listing-date-sort="1680825600000" data-listing-file-modified-sort="1762024616659" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1565" data-listing-title-sort="Minutes 2023-04-07" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Apr 7, 2023</span>
 </td>
@@ -846,7 +849,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="29" data-listing-date-sort="1677801600000" data-listing-file-modified-sort="1757098553441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="879" data-listing-title-sort="Minutes 2023-03-03" data-listing-filename-sort="index.qmd">
+<tr data-index="29" data-listing-date-sort="1677801600000" data-listing-file-modified-sort="1762024616659" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="879" data-listing-title-sort="Minutes 2023-03-03" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Mar 3, 2023</span>
 </td>
@@ -859,7 +862,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="30" data-listing-date-sort="1675900800000" data-listing-file-modified-sort="1757098553441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="753" data-listing-title-sort="Minutes 2023-02-03" data-listing-filename-sort="index.qmd">
+<tr data-index="30" data-listing-date-sort="1675900800000" data-listing-file-modified-sort="1762024616659" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="753" data-listing-title-sort="Minutes 2023-02-03" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Feb 9, 2023</span>
 </td>
@@ -872,7 +875,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="31" data-listing-date-sort="1673568000000" data-listing-file-modified-sort="1757098553441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="653" data-listing-title-sort="Minutes 2023-01-13" data-listing-filename-sort="index.qmd">
+<tr data-index="31" data-listing-date-sort="1673568000000" data-listing-file-modified-sort="1762024616659" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="653" data-listing-title-sort="Minutes 2023-01-13" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Jan 13, 2023</span>
 </td>
@@ -885,7 +888,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="32" data-listing-date-sort="1669939200000" data-listing-file-modified-sort="1757098553441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="545" data-listing-title-sort="Minutes 2022-12-02" data-listing-filename-sort="index.qmd">
+<tr data-index="32" data-listing-date-sort="1669939200000" data-listing-file-modified-sort="1762024616659" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="545" data-listing-title-sort="Minutes 2022-12-02" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Dec 2, 2022</span>
 </td>
@@ -898,7 +901,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="33" data-listing-date-sort="1667520000000" data-listing-file-modified-sort="1757098553441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="707" data-listing-title-sort="Minutes 2022-11-04" data-listing-filename-sort="index.qmd">
+<tr data-index="33" data-listing-date-sort="1667520000000" data-listing-file-modified-sort="1762024616659" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="707" data-listing-title-sort="Minutes 2022-11-04" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Nov 4, 2022</span>
 </td>
@@ -911,7 +914,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="34" data-listing-date-sort="1665100800000" data-listing-file-modified-sort="1757098553441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="668" data-listing-title-sort="Minutes 2022-10-07" data-listing-filename-sort="index.qmd">
+<tr data-index="34" data-listing-date-sort="1665100800000" data-listing-file-modified-sort="1762024616659" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="668" data-listing-title-sort="Minutes 2022-10-07" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Oct 7, 2022</span>
 </td>
@@ -924,7 +927,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="35" data-listing-date-sort="1662076800000" data-listing-file-modified-sort="1757098553441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="777" data-listing-title-sort="Minutes 2022-09-02" data-listing-filename-sort="index.qmd">
+<tr data-index="35" data-listing-date-sort="1662076800000" data-listing-file-modified-sort="1762024616659" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="777" data-listing-title-sort="Minutes 2022-09-02" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Sep 2, 2022</span>
 </td>
@@ -937,7 +940,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="36" data-listing-date-sort="1659657600000" data-listing-file-modified-sort="1757098553441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="912" data-listing-title-sort="Minutes 2022-08-05" data-listing-filename-sort="index.qmd">
+<tr data-index="36" data-listing-date-sort="1659657600000" data-listing-file-modified-sort="1762024616659" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="912" data-listing-title-sort="Minutes 2022-08-05" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Aug 5, 2022</span>
 </td>
@@ -950,7 +953,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="37" data-listing-date-sort="1656633600000" data-listing-file-modified-sort="1757098553441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="894" data-listing-title-sort="Minutes 2022-07-01" data-listing-filename-sort="index.qmd">
+<tr data-index="37" data-listing-date-sort="1656633600000" data-listing-file-modified-sort="1762024616659" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="894" data-listing-title-sort="Minutes 2022-07-01" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Jul 1, 2022</span>
 </td>
@@ -963,7 +966,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="38" data-listing-date-sort="1654300800000" data-listing-file-modified-sort="1757098553441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="703" data-listing-title-sort="Minutes 2022-06-04" data-listing-filename-sort="index.qmd">
+<tr data-index="38" data-listing-date-sort="1654300800000" data-listing-file-modified-sort="1762024616658" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="703" data-listing-title-sort="Minutes 2022-06-04" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Jun 4, 2022</span>
 </td>
@@ -976,7 +979,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="39" data-listing-date-sort="1651795200000" data-listing-file-modified-sort="1757098553441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1063" data-listing-title-sort="Minutes 2022-05-06" data-listing-filename-sort="index.qmd">
+<tr data-index="39" data-listing-date-sort="1651795200000" data-listing-file-modified-sort="1762024616658" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1063" data-listing-title-sort="Minutes 2022-05-06" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">May 6, 2022</span>
 </td>
@@ -989,7 +992,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="40" data-listing-date-sort="1646352000000" data-listing-file-modified-sort="1757098553440" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="859" data-listing-title-sort="Minutes 2022-03-04" data-listing-filename-sort="index.qmd">
+<tr data-index="40" data-listing-date-sort="1646352000000" data-listing-file-modified-sort="1762024616658" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="859" data-listing-title-sort="Minutes 2022-03-04" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Mar 4, 2022</span>
 </td>
@@ -1002,7 +1005,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="41" data-listing-date-sort="1643932800000" data-listing-file-modified-sort="1757098553440" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1285" data-listing-title-sort="Minutes 2022-02-04" data-listing-filename-sort="index.qmd">
+<tr data-index="41" data-listing-date-sort="1643932800000" data-listing-file-modified-sort="1762024616658" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1285" data-listing-title-sort="Minutes 2022-02-04" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Feb 4, 2022</span>
 </td>
@@ -1015,7 +1018,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="42" data-listing-date-sort="1641513600000" data-listing-file-modified-sort="1757098553440" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="982" data-listing-title-sort="Minutes 2022-01-07" data-listing-filename-sort="index.qmd">
+<tr data-index="42" data-listing-date-sort="1641513600000" data-listing-file-modified-sort="1762024616658" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="982" data-listing-title-sort="Minutes 2022-01-07" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Jan 7, 2022</span>
 </td>
@@ -1028,20 +1031,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="43" data-listing-date-sort="1638489600000" data-listing-file-modified-sort="1757098553440" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="804" data-listing-title-sort="Minutes 2021-12-03" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">Dec 3, 2021</span>
-</td>
-<td>
-<a href="./minutes/2021-12-03/index.html" class="title listing-title">Minutes 2021-12-03</a>
-</td>
-<td>
-<span class="listing-author">Joseph Rickert</span>
-</td>
-
-</tr>
-
-<tr data-index="44" data-listing-date-sort="1638489600000" data-listing-file-modified-sort="1757098553440" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="967" data-listing-title-sort="Minutes 2021-12-03" data-listing-filename-sort="index.qmd">
+<tr data-index="43" data-listing-date-sort="1638489600000" data-listing-file-modified-sort="1762024616658" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="967" data-listing-title-sort="Minutes 2021-12-03" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Dec 3, 2021</span>
 </td>
@@ -1054,7 +1044,20 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="45" data-listing-date-sort="1636070400000" data-listing-file-modified-sort="1757098553440" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="676" data-listing-title-sort="Minutes 2021-11-05" data-listing-filename-sort="index.qmd">
+<tr data-index="44" data-listing-date-sort="1638489600000" data-listing-file-modified-sort="1762024616658" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="804" data-listing-title-sort="Minutes 2021-12-03" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">Dec 3, 2021</span>
+</td>
+<td>
+<a href="./minutes/2021-12-03/index.html" class="title listing-title">Minutes 2021-12-03</a>
+</td>
+<td>
+<span class="listing-author">Joseph Rickert</span>
+</td>
+
+</tr>
+
+<tr data-index="45" data-listing-date-sort="1636070400000" data-listing-file-modified-sort="1762024616658" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="676" data-listing-title-sort="Minutes 2021-11-05" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Nov 5, 2021</span>
 </td>
@@ -1067,7 +1070,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="46" data-listing-date-sort="1633046400000" data-listing-file-modified-sort="1757098553439" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401" data-listing-title-sort="Minutes 2021-10-01" data-listing-filename-sort="index.qmd">
+<tr data-index="46" data-listing-date-sort="1633046400000" data-listing-file-modified-sort="1762024616657" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401" data-listing-title-sort="Minutes 2021-10-01" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Oct 1, 2021</span>
 </td>
@@ -1080,7 +1083,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="47" data-listing-date-sort="1630627200000" data-listing-file-modified-sort="1757098553439" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="988" data-listing-title-sort="Minutes 2021-09-03" data-listing-filename-sort="index.qmd">
+<tr data-index="47" data-listing-date-sort="1630627200000" data-listing-file-modified-sort="1762024616657" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="988" data-listing-title-sort="Minutes 2021-09-03" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Sep 3, 2021</span>
 </td>
@@ -1093,7 +1096,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="48" data-listing-date-sort="1628208000000" data-listing-file-modified-sort="1757098553438" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="820" data-listing-title-sort="Minutes 2021-08-06" data-listing-filename-sort="index.qmd">
+<tr data-index="48" data-listing-date-sort="1628208000000" data-listing-file-modified-sort="1762024616656" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="820" data-listing-title-sort="Minutes 2021-08-06" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Aug 6, 2021</span>
 </td>
@@ -1106,7 +1109,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="49" data-listing-date-sort="1622764800000" data-listing-file-modified-sort="1757098553438" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="767" data-listing-title-sort="Minutes 2021-06-04" data-listing-filename-sort="index.qmd">
+<tr data-index="49" data-listing-date-sort="1622764800000" data-listing-file-modified-sort="1762024616656" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="767" data-listing-title-sort="Minutes 2021-06-04" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Jun 4, 2021</span>
 </td>
@@ -1119,7 +1122,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="50" data-listing-date-sort="1620345600000" data-listing-file-modified-sort="1757098553438" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1037" data-listing-title-sort="Minutes 2021-05-07" data-listing-filename-sort="index.qmd">
+<tr data-index="50" data-listing-date-sort="1620345600000" data-listing-file-modified-sort="1762024616656" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1037" data-listing-title-sort="Minutes 2021-05-07" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">May 7, 2021</span>
 </td>
@@ -1132,7 +1135,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="51" data-listing-date-sort="1617580800000" data-listing-file-modified-sort="1757098553438" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="197" data-listing-title-sort="Minutes 2021-04-05" data-listing-filename-sort="index.qmd">
+<tr data-index="51" data-listing-date-sort="1617580800000" data-listing-file-modified-sort="1762024616656" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="197" data-listing-title-sort="Minutes 2021-04-05" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Apr 5, 2021</span>
 </td>
@@ -1145,7 +1148,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="52" data-listing-date-sort="1614902400000" data-listing-file-modified-sort="1757098553438" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="691" data-listing-title-sort="Minutes 2021-03-05" data-listing-filename-sort="index.qmd">
+<tr data-index="52" data-listing-date-sort="1614902400000" data-listing-file-modified-sort="1762024616656" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="691" data-listing-title-sort="Minutes 2021-03-05" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Mar 5, 2021</span>
 </td>
@@ -1158,7 +1161,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="53" data-listing-date-sort="1612483200000" data-listing-file-modified-sort="1757098553438" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="726" data-listing-title-sort="Minutes 2021-02-05" data-listing-filename-sort="index.qmd">
+<tr data-index="53" data-listing-date-sort="1612483200000" data-listing-file-modified-sort="1762024616655" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="726" data-listing-title-sort="Minutes 2021-02-05" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Feb 5, 2021</span>
 </td>
@@ -1171,7 +1174,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="54" data-listing-date-sort="1610668800000" data-listing-file-modified-sort="1757098553436" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1346" data-listing-title-sort="Minutes 2021-01-15" data-listing-filename-sort="index.qmd">
+<tr data-index="54" data-listing-date-sort="1610668800000" data-listing-file-modified-sort="1762024616654" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1346" data-listing-title-sort="Minutes 2021-01-15" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Jan 15, 2021</span>
 </td>
@@ -1184,7 +1187,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="55" data-listing-date-sort="1607040000000" data-listing-file-modified-sort="1757098553436" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="265" data-listing-title-sort="Minutes 2020-12-04" data-listing-filename-sort="index.qmd">
+<tr data-index="55" data-listing-date-sort="1607040000000" data-listing-file-modified-sort="1762024616654" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="265" data-listing-title-sort="Minutes 2020-12-04" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-date">Dec 4, 2020</span>
 </td>
@@ -1268,13 +1271,14 @@ window.Quarto = {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
