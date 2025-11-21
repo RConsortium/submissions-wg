@@ -10,7 +10,110 @@
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Fri, 03 Oct 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 21 Nov 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2025-11-21</title>
+  <dc:creator>Eric Nantz</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2025-11-21/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Ben Straub (GSK)</li>
+<li>Brandon Theodorou (Keiji AI)</li>
+<li>HyeSoo Cho (FDA)</li>
+<li>Keaven Anderson (Merck)</li>
+<li>Kevin Lee (Clinvia)</li>
+<li>Lluis Revilla Sancho (Roche)</li>
+<li>Nicholas Masel (Johnson &amp; Johnson)</li>
+<li>Ning Leng (Roche/Genentech)</li>
+<li>Paul Schuette (FDA)</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Sam Parmar (Pfizer)</li>
+<li>Stephen Cieply</li>
+<li>Trinath Panda</li>
+<li>Yilong Zhang (Meta)</li>
+<li>Yiwen Luo (Merck)</li>
+<li>Zifeng Wang (Keiji AI)</li>
+</ul>
+</div>
+</div>
+</div>
+<section id="pilot-4-review-status" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-4-review-status">Pilot 4 Review Status</h2>
+<ul>
+<li>Hye Soo shared that their group is continuing to test the Docker container and WebAssembly versions in multiple systems. Their team will share test results once available.</li>
+<li>If there are minor issues identified that do not require immediate resolution, they will be documented in the review summary.</li>
+<li>Assuming everything goes smoothly, the team hopes to have the Pilot 4 evaluation completed by end of the year!</li>
+</ul>
+</section>
+<section id="pilot-5-review" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-5-review">Pilot 5 Review</h2>
+<ul>
+<li>FDA reviewers successfully received the eCTD transfer of the <a href="https://github.com/RConsortium/submissions-pilot5-datasetjson-to-fda">Pilot 5 submission bundle</a> earlier in November.</li>
+<li>The team will provide an updated on their progress at the next Working Group meeting in December.</li>
+</ul>
+</section>
+<section id="future-work-in-2026" class="level2">
+<h2 class="anchored" data-anchor-id="future-work-in-2026">Future Work in 2026</h2>
+<section id="aillm-generation-of-adamstlfs-synthetic-data" class="level3">
+<h3 class="anchored" data-anchor-id="aillm-generation-of-adamstlfs-synthetic-data">AI/LLM Generation of ADaMS/TLFs &amp; Synthetic Data</h3>
+<ul>
+<li>Earlier this month, members of the pilot 5 team began discussions on potential uses of AI/LLMs to generate R programs for the creation of new ADaM data sets and TLF outputs to reduce the burdon of creating these scripts manually.</li>
+<li>There is excitement to see how various solutions could help in this project, which will be officially known as Pilot 6. In the most recent meeting, Dimitry Kolosov and Kevin Lee showcased different AI solutions such as <a href="https://github.com/features/copilot">GitHub Copilot</a> inside Visual Studio Code and <a href="https://clinvia.com/solutions/">CodeZen</a>.</li>
+<li>While there is not an expectation that this would require a formal transfer of a submission bundle to FDA, the hope is that these new data and outputs will serve as a foundation for new Pilot submissions in 2026 and beyond.</li>
+<li>Any future work involving the use of AI tools to generate programming and/or other artifacts will not compromise the current “ethos” of our working group in which all of our materials and the development processes to create key outputs/data is all created within the “open.”</li>
+<li>Ben will create a new Slack channel for Pilot 6 to hold group communication.</li>
+<li>In the WG call, Brandon Theodorou and Zifeng Wang from <a href="https://keiji.ai/">Keiji AI</a> shared a demonstration of using their custom platform called TrialMind involving tailor-made agents to produce common statistical analysis outputs related to demographic summaries.</li>
+<li>One desired workflow would be to create ADaM data sets from the specifications file (such as <code>define.xml</code>).</li>
+<li>Brandon mentioned that the platform also has the ability to access Databases, which could be useful for the large-scale synthetic data generation.</li>
+<li>While it is possible other external groups (such as CDISC and Phuse) might also be investigating this possibility of a larger data set, our group would still like to initiate this project to prioritize our group’s needs for future Pilot submissions.</li>
+<li>Eric will create a separate Slack channel for the synthetic data generation project. More details will be shared at the next WG call.</li>
+</ul>
+</section>
+<section id="validation-risk-assessment-of-future-submissions" class="level3">
+<h3 class="anchored" data-anchor-id="validation-risk-assessment-of-future-submissions">Validation / Risk Assessment of future submissions</h3>
+<ul>
+<li>Lluis Revilla Sancho: They are focused on public CRAN packages but also to create repositories of packages</li>
+<li>Companies measure risk differently</li>
+<li>Teams can make different decisions, it is not up to the validation hub to make those decisions for sponsors</li>
+<li>A good first test would be to assess the packages used in Pilot 5 and generate risk reports, and sharing that report in the public</li>
+<li>It would be possible to share this report with FDA reviewers, and they could provide feedback on what would be useful for a statistician reviewer</li>
+<li>FDA would like to have the synthetic data sets available to benchmark methodologies, and others that are plug-ins on top of R such as Jags, Stan, and Nimble. Those could be key inputs for the future transparency of risk assessments.</li>
+</ul>
+</section>
+</section>
+<section id="action-items" class="level2">
+<h2 class="anchored" data-anchor-id="action-items">Action Items</h2>
+<ul>
+<li>Investigate the root cause of the extra XML file that was produced in the Pilot 4 eCTD transfer. Eric will follow up with Ning and other Roche colleagues to gather further information.</li>
+<li>Invite Doug Kelkhoff to a future Submissions WG meeting to discuss potential new work on validating the R package suite used in Pilot 5.</li>
+<li>Brandon will assess the possibility of creating a custom organization within their TrialMind platform and how many members could be added for prototyping solutions.</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2025-11-21/</guid>
+  <pubDate>Fri, 21 Nov 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2025-10-03</title>
   <dc:creator>Eric Nantz</dc:creator>
@@ -2087,150 +2190,6 @@ Caution
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-03-01/</guid>
   <pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2024-02-02</title>
-  <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2024-02-02/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Dadong Zhang (Illumina)</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>Eva Li</li>
-<li>Gregory Chen (MSD)</li>
-<li>HyeSoo Cho (FDA)</li>
-<li>Jizu Zhi (FDA)</li>
-<li>Joel Laxamana (Roche/Genentech)</li>
-<li>Joseph Rickert (R Consortium)</li>
-<li>Kaushal Shah (ASU)</li>
-<li>Nan Xiao (Merck)</li>
-<li>Ning Leng (Roche/Genentech)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Renping Zhang (Johnson &amp; Johnson)</li>
-<li>Robert Devine (Johnson &amp; Johnson)</li>
-<li>Saghir Bashir (Argenx)</li>
-<li>Sam Parmar (Pfizer)</li>
-<li>Youn Kyeong Chang (FDA)</li>
-</ul>
-</div>
-</div>
-</div>
-<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/dtAH375BZFxiI7SK8H5aciRvsd-8YSpCoNiUduKf9xppCitN80J2N2fZrG6A6m4V.g0LkTMFG35sCXuXj?startTime=1706893431000">video</a> is available.</p>
-<section id="pilot-3" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-3">Pilot 3</h2>
-<p>Hye Soo Cho presented a summary of the findings of the from the FDA review</p>
-<ul>
-<li>Different versions of R and RStudio
-<ul>
-<li>There were issues switching between R versions</li>
-<li>The FDA would like the wg to explore the impact of different versions of R,RStudio and RTools</li>
-<li>Also Linux vs.&nbsp;Windows</li>
-</ul></li>
-<li>Differences between generated Pilot 2 ADaM and CDISC data sets
-<ul>
-<li>attributes</li>
-<li>types (e.g.&nbsp;integer vs.&nbsp;double)</li>
-<li>NA vs.&nbsp;NULL</li>
-</ul></li>
-<li>Package and file names
-<ul>
-<li>Incorrect package name (pilot3utils)</li>
-<li>File name change (Pilot 3.xlsx to adam-pilot-3.xlsx)</li>
-</ul></li>
-<li>File path
-<ul>
-<li>The location of a director was specified using relative file path</li>
-<li>Recommendation: use full path name</li>
-</ul></li>
-<li>Different primary output in Pilot 1 and Pilot 3
-<ul>
-<li>There are discrepancies between Pilot 3 ADaM and CDISC datasets</li>
-<li>Discrepancies are noted in QC findings in ADRG</li>
-</ul></li>
-</ul>
-<p>There was considerable discussion about the challenges of dealing with different R versions and establishing a Windows test environment to test a submission before transmitting it to the FDA.</p>
-<ul>
-<li>The idea of setting up a gold standard windows test environment was considered but reject as beginning impractical. The actual FDA environment changes frequently because of hot fixes addressing security concerns.</li>
-<li>It appears that the most practical path forward as to what preemptive measures sponsors can take to match submission environments with the FDA test environment is to work with the FDA to lock down the environment as best as can be done just prior to submission.</li>
-<li>An interesting note: Paul mentioned that the FDA no longer pushes the idea of last observation carried forward for imputations. They favor exploring multiple imputation methods.</li>
-</ul>
-<p><strong>Actions:</strong></p>
-<ul>
-<li>The FDA will consider the implications of what was discussed today and decide if we are ready to resubmit Pilot 3 by the next meeting in March. The submission will use the .zip approach.</li>
-<li>Joel agreed to speak with Eric about establishing an automated way to set up a container running a “vanilla” Windows test environment. <strong>Note:</strong> in a series of private email conversations after the meeting Robert Devine volunteered his expertise to work with Eric and Joel to set up the windows environment.</li>
-</ul>
-</section>
-<section id="pilot-4" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-4">Pilot 4</h2>
-<p>Eric provided a brief update on Pilot 4.</p>
-<ul>
-<li>He will convene the Pilot 4 team to test the Webassembly submission,</li>
-<li>The submission should be ready by mid March.</li>
-<li>We will decide on an actual submission date in March.</li>
-<li>Eric will invite the Appsilon engineers who have be providing assistance on the project to one of our meetings as we get closer to the submission.</li>
-<li>The container version of the Pilot 4 submission will coordinate with the FDA to make arrangements for working with containers.</li>
-</ul>
-</section>
-<section id="presentation-to-swiss-medic" class="level2">
-<h2 class="anchored" data-anchor-id="presentation-to-swiss-medic">Presentation to Swiss Medic</h2>
-<p>On January 30, Gregory Chen presented the activities of our working group in person to an audience 15 people at the <a href="https://www.swissmedic.ch/swissmedic/en/home.html">swissmedic</a> regulatory agency and 50 people online. Gregory’s slides are in the <a href="https://github.com/RConsortium/submissions-wg/tree/main/_Documents">github repository</a>. He summarized the discussion that took place after his presentation.</p>
-<ul>
-<li>The swissmedic audience was very interested in the use of Shiny for the Pilot 2 submission and would like to work with the R Consortium to explore the possibility of doing something similar at swissmedic. They discussed two possible ways to proceed:
-<ol type="1">
-<li>A Pilot 2 like project</li>
-<li>Having sponsors set up a cloud environment</li>
-</ol></li>
-<li>The swissmedic audience said that they would prefer an industry collaborative effort rather than a vendor specific solution.</li>
-<li>The were interested in learning about the resources the FDA allocated to the Pilot 2 and * asked about creating Shiny applications for market authorization.</li>
-<li>The WG was excited about the possibility of collaborating with swissmedic</li>
-<li>However, after some discussion it was decided that this opportunity should be pursued by a new working group devoted to swissmedic.</li>
-<li>We should also find out if swissmedic has discussed these ideas with the EMA.</li>
-</ul>
-<p><strong>Action:</strong></p>
-<ul>
-<li>JBR will work figure out how best to recruit members for a new working group focused on swissmedic.</li>
-<li>This should include a call to the industry to identify people with European connections who could lead this effort.</li>
-</ul>
-<p>The next meeting of the working group will be at 9AM PST on Friday, March 1, 2024,</p>
-<section id="abstract-for-gregorys-presentation" class="level3">
-<h3 class="anchored" data-anchor-id="abstract-for-gregorys-presentation">Abstract for Gregory’s Presentation</h3>
-<p><u>Name of presenter</u>: Gregory Chen</p>
-<p><u>Affiliation</u>: MSD, Switzerland; R Submission Working group (R Consortium)</p>
-<p><u>Brief introduction of the working group</u>:</p>
-<p>The R submission working group is a cross-industry working group in pharma, focusing on improving practices of R-based clinical trial regulatory submissions. Our mission is to make R-based clinical trial regulatory submissions easier today and tomorrow by</p>
-<ol type="1">
-<li><p>showing open examples of using current submission portals,</p></li>
-<li><p>collecting feedback and influencing future industry and agency decisions on system/process setup</p></li>
-</ol>
-<p><u>Title</u>: R and Shiny in regulatory submission</p>
-<p><u>Abstract</u>:</p>
-<p>In recent years, statisticians and analysts from both industry and regulatory agencies have increased adoption of open-source software such as R. Compared to other statistical programming languages, R brought great benefit from its vibrant open-source community, providing a wealth of cutting-edge statistical tools and adaptability to the latest data science trends. Particularly, R shiny provided great flexibility and interactivity to increase data scientists productivity and make it easier to extract insights or review through massive statistical outputs.&nbsp;To test the concept that R language and shiny app can be bundled into a submission package and transferred successfully to FDA reviewers, the R Submission Working group (R Consortium) successfully completed two pilot submissions to FDA fully in R, and received CDER response letters (<a href="https://www.r-consortium.org/blog/2021/12/08/successful-r-based-test-package-submitted-to-fda">pilot 1,</a> <a href="https://www.r-consortium.org/announcement/2023/10/05/shiny-app-successfully-reviewed-by-fda-cder-staff-pilot-2-announcement-2">pilot 2</a>). To our knowledge, these are the first publicly available submission packages that include components of open-source languages. In this talk, we will introduce R consortium, particularly its Submission Working group, and the completed pilot 1 and 2.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-02-02/</guid>
-  <pubDate>Fri, 02 Feb 2024 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
