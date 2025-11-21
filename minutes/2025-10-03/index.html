@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Eric Nantz &amp; Theresa Christiani">
-<meta name="dcterms.date" content="2025-02-07">
+<meta name="author" content="Eric Nantz">
+<meta name="dcterms.date" content="2025-10-03">
 
-<title>Minutes 2025-02-07 – R Submissions Working Group</title>
+<title>Minutes 2025-10-03 – R Submissions Working Group</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -335,7 +335,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Minutes 2025-02-07</h1>
+      <h1 class="title">Minutes 2025-10-03</h1>
                       </div>
   </div>
     
@@ -345,14 +345,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Eric Nantz &amp; Theresa Christiani </p>
+               <p>Eric Nantz </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">February 7, 2025</p>
+        <p class="date">October 3, 2025</p>
       </div>
     </div>
     
@@ -368,11 +368,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#adrg-metadata-group-updates" id="toc-adrg-metadata-group-updates" class="nav-link active" data-scroll-target="#adrg-metadata-group-updates">ADRG metadata group updates</a></li>
-  <li><a href="#pilot-4-container-submission-updates" id="toc-pilot-4-container-submission-updates" class="nav-link" data-scroll-target="#pilot-4-container-submission-updates">Pilot 4 Container Submission updates</a></li>
-  <li><a href="#pilot-5-dataset-json-updates" id="toc-pilot-5-dataset-json-updates" class="nav-link" data-scroll-target="#pilot-5-dataset-json-updates">Pilot 5 DataSet-JSON updates</a></li>
+  <li><a href="#pilot-4-status" id="toc-pilot-4-status" class="nav-link active" data-scroll-target="#pilot-4-status">Pilot 4 Status</a></li>
+  <li><a href="#pilot-5-status" id="toc-pilot-5-status" class="nav-link" data-scroll-target="#pilot-5-status">Pilot 5 Status</a></li>
+  <li><a href="#arsard-future-pilot" id="toc-arsard-future-pilot" class="nav-link" data-scroll-target="#arsard-future-pilot">ARS/ARD Future Pilot</a></li>
+  <li><a href="#other-future-pilots" id="toc-other-future-pilots" class="nav-link" data-scroll-target="#other-future-pilots">Other Future Pilots</a></li>
+  <li><a href="#upcoming-events" id="toc-upcoming-events" class="nav-link" data-scroll-target="#upcoming-events">Upcoming Events</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2025-02-07/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2025-10-03/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -395,55 +397,81 @@ ul.task-list li input[type="checkbox"] {
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
+<li>Andre Couturier (Sanofi)</li>
 <li>Ben Straub (GSK)</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>Katie Harding (Freenome)</li>
-<li>Lovemore Gakava (Novo Nordisk)</li>
+<li>Gabriel Krotkov</li>
+<li>HyeSoo Cho (FDA)</li>
+<li>Joel Laxamana (Roche/Genentech)</li>
+<li>Keaven Anderson (Merck)</li>
+<li>Ning Leng (Roche/Genentech)</li>
 <li>Phanikumar Tata (Syneos Health)</li>
-<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Phil Bowsher (Posit)</li>
+<li>Saghir Bashir (Argenx)</li>
 <li>Sam Parmar (Pfizer)</li>
-<li>Terry Christiani (R Consortium)</li>
-<li>Vedha Viyash (Appsilon)</li>
+<li>Stephen Cieply</li>
+<li>Trinath Panda</li>
+<li>Youn Kyeong Chang (FDA)</li>
 </ul>
 </div>
 </div>
 </div>
-<section id="adrg-metadata-group-updates" class="level2">
-<h2 class="anchored" data-anchor-id="adrg-metadata-group-updates">ADRG metadata group updates</h2>
+<section id="pilot-4-status" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-4-status">Pilot 4 Status</h2>
 <ul>
-<li>Lovemore and Sam shared the group’s recent updates progress. They recently invited Christine Rossin (from the Phuse ADRG working group) to their meetings for discussion on the proposed template.</li>
-<li>Christine’s recommendations include moving the instructions for executing the R code and setting up the execution environment to a supporting document and not part of the ADRG itself, ensuring the ADRG remains software-agnostic, and separate guidelines be developed for specific software.</li>
-<li>The metadata group will be taking the lead on authoring guidelines for the R exection and environment language</li>
-<li>The group will also establish dialogs with other sub-teams addressing additional sections of ADRG such as such as estimands team to ensure everyone is on the same page for updating the ADRG sections</li>
-<li>Next steps include authoring R scripts to help automate population of certain sections in the ADRG template.</li>
-</ul>
-</section>
-<section id="pilot-4-container-submission-updates" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-4-container-submission-updates">Pilot 4 Container Submission updates</h2>
-<ul>
-<li>Eric shared recent progress on assembling a proposed submission structure for the container portion of Pilot 4.</li>
-<li>Substantial updates have been made to the development repository available at <a href="https://github.com/RConsortium/submissions-pilot4-container" class="uri">https://github.com/RConsortium/submissions-pilot4-container</a> as well as the proposed submission structure at <a href="https://github.com/RConsortium/submissions-pilot4-container-to-fda" class="uri">https://github.com/RConsortium/submissions-pilot4-container-to-fda</a>.</li>
-<li>Eric will share the proposed structure with our FDA colleagues to ensure this is aligned with the eCTD guidelines.</li>
-<li>Robert inquired about the specific version of the Windows Subsystem for Linux (WSL) used in the testing environment. Eric believes it is WSL2 but that will be confirmed and the appropriate sections of the ADRG will be updated accordingly.</li>
-<li>Vedha shared that running the command <code>wsl --version</code> in the testing environment should output the key metadata on the WSL installation.</li>
+<li>FDA reviewers Looking at end of October for the next round of review</li>
+<li>Re-submission folder created an <code>index.xml</code> file in the root of the document folder.</li>
+<li>Why did that file appear when it is not part of the GitHub repository? The group hypothesized that it was a configuration issue on the sponsor side for how the eCTD transfer tool was configured.</li>
+<li>At this time we are not clear on the specific validation procedures that were executed during the transfer itself.</li>
+<li>FDA noted that it will be considered a “high” error that will be reported in the submission feedback.</li>
 </ul>
 </section>
-<section id="pilot-5-dataset-json-updates" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-5-dataset-json-updates">Pilot 5 DataSet-JSON updates</h2>
+<section id="pilot-5-status" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-5-status">Pilot 5 Status</h2>
 <ul>
-<li>Sam and Ben shared the recent progress from the Pilot 5 working group</li>
-<li>The team has created GitHub repositories for key portions of the pilot:
+<li>The team is ready for submission of the Pilot 5 eCTD bundle to FDA</li>
+<li>The Pilot 5 ADRG has been updated with the conformance report on the XPT files to be sent through Pinnacle 21 community. No issues were identified</li>
+<li>Another report was created using the DatasetJSON 1.0 standard, where issues were identified that may persist with 1.1 standard</li>
+<li>The underlying data remains the same, and all outputs remain the same.</li>
+<li>Label and formatting issues appeared.</li>
+<li>The 1.0 standard was akin to the POC, but the 1.1 standard is the stable version that is meant for future development</li>
+<li>Another appendix has been created with the issue summaries in the conformance checks, with citation links</li>
+<li>Certain differences in class types for variables changed between pilot 3 and pilot 5. Further discussions with the datasetJSON package developers on the reason for these issues are pending.</li>
+<li>Additional warning messages appear on the console regarding NA values being introduced by coercion</li>
+<li>Ben and/or Sam will likely be giving a presentation accepted at Phuse 2026 as their paper on Pilot 5 was accepted.</li>
+<li>Minor formatting issues have been identified in the PDF version of the ADRG such as table rows extending past the margins of the page and certain code blocks extending beyond the margins.</li>
+</ul>
+</section>
+<section id="arsard-future-pilot" class="level2">
+<h2 class="anchored" data-anchor-id="arsard-future-pilot">ARS/ARD Future Pilot</h2>
 <ul>
-<li>Development repository: <a href="https://github.com/RConsortium/submissions-pilot5-datasetjson" class="uri">https://github.com/RConsortium/submissions-pilot5-datasetjson</a></li>
-<li>R package repository: <a href="https://github.com/RConsortium/submissions-pilot5-utilities" class="uri">https://github.com/RConsortium/submissions-pilot5-utilities</a></li>
-<li>Website: https://rconsortium.github.io/submissions-pilot5-website/</li>
-<li>Submission package structure: <a href="https://github.com/RConsortium/submissions-pilot5-datasetjson-to-fda" class="uri">https://github.com/RConsortium/submissions-pilot5-datasetjson-to-fda</a></li>
+<li>A smaller working group will discuss what the specific asks and key goals will be if it goes to a future Pilot in the Submissions WG</li>
+<li>There have been open questions on the use of these formats in a regulatory perspective</li>
+<li>The ARS/ARD specs can be helpful for internal validation and QC process</li>
+<li>There is broad consensus amongst industry that ARS/ARD is a worthwhile endeavor</li>
+<li>There is a little hesitation around some companies already being meta-data driven in their processes, but will there be potential push-back from regulatory</li>
+<li>From the CDISC group: ARS is not anywhere close to being mandated by regulatory</li>
+<li>Typically regulatory will not comment on specific tooling, so in the context of TLF we have a handful of packages that can be used to create those deliverables</li>
+<li>Naturally there will likely be more than one solution to create and manage ARS in the R community</li>
+<li>In Pilot 1, multiple frameworks and formats were tested to generate TLFs. A future pilot for ARS/ARD could follow a similar pattern</li>
+<li>CDISC representatives will be engaging with regulatory colleagues and then there will be a future discussion with industry representatives to align on a future pilot scope.</li>
+<li>For those who wish to participate in the future calls, the meetings are open and asynchronous communication will be done within Slack</li>
+</ul>
+</section>
+<section id="other-future-pilots" class="level2">
+<h2 class="anchored" data-anchor-id="other-future-pilots">Other Future Pilots</h2>
+<ul>
+<li>2026 could have a few future pilots:
+<ul>
+<li>Python used for machine learning and medical devices</li>
+<li>Large-scale data generation that can serve as a new reference set to be used in future method benchmarking and future pilots</li>
 </ul></li>
-<li>The data sets and R code used in Pilot 3 will be ported over to the Pilot 5 repositories</li>
-<li>The team is very interested in utilizing GitHub actions to perform quality checks of the data set</li>
-<li><code>{datasetjson}</code> was recently updated to version 1.1 and the new update is available on CRAN. You can view the changelog at <a href="https://atorus-research.github.io/datasetjson/news/index.html" class="uri">https://atorus-research.github.io/datasetjson/news/index.html</a>.</li>
-<li>As development begins for the quality checks and other testing, they will use the Pilot 3 code as a starting point.</li>
-<li>Robert shared that CDISC will hold a general meeting on February 18, 2025. Members of the working group are encouraged to attend. Additional details and registration are available at the pharma-oversight Slack channel in the February 14, 2025 post.</li>
+</ul>
+</section>
+<section id="upcoming-events" class="level2">
+<h2 class="anchored" data-anchor-id="upcoming-events">Upcoming Events</h2>
+<ul>
+<li><a href="https://rinpharma.com">R/Pharma 2025 virtual conference</a></li>
+<li><a href="https://rconsortium.github.io/RplusAI_website/">R &amp; AI conference</a></li>
 </ul>
 
 
@@ -905,4 +933,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2025-02-07/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2025-10-03/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

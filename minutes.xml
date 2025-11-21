@@ -9,8 +9,116 @@
 <link>https://rconsortium.github.io/submissions-wg/minutes.html</link>
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.8.25</generator>
-<lastBuildDate>Fri, 05 Sep 2025 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.8.26</generator>
+<lastBuildDate>Fri, 03 Oct 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2025-10-03</title>
+  <dc:creator>Eric Nantz</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2025-10-03/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Andre Couturier (Sanofi)</li>
+<li>Ben Straub (GSK)</li>
+<li>Gabriel Krotkov</li>
+<li>HyeSoo Cho (FDA)</li>
+<li>Joel Laxamana (Roche/Genentech)</li>
+<li>Keaven Anderson (Merck)</li>
+<li>Ning Leng (Roche/Genentech)</li>
+<li>Phanikumar Tata (Syneos Health)</li>
+<li>Phil Bowsher (Posit)</li>
+<li>Saghir Bashir (Argenx)</li>
+<li>Sam Parmar (Pfizer)</li>
+<li>Stephen Cieply</li>
+<li>Trinath Panda</li>
+<li>Youn Kyeong Chang (FDA)</li>
+</ul>
+</div>
+</div>
+</div>
+<section id="pilot-4-status" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-4-status">Pilot 4 Status</h2>
+<ul>
+<li>FDA reviewers Looking at end of October for the next round of review</li>
+<li>Re-submission folder created an <code>index.xml</code> file in the root of the document folder.</li>
+<li>Why did that file appear when it is not part of the GitHub repository? The group hypothesized that it was a configuration issue on the sponsor side for how the eCTD transfer tool was configured.</li>
+<li>At this time we are not clear on the specific validation procedures that were executed during the transfer itself.</li>
+<li>FDA noted that it will be considered a “high” error that will be reported in the submission feedback.</li>
+</ul>
+</section>
+<section id="pilot-5-status" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-5-status">Pilot 5 Status</h2>
+<ul>
+<li>The team is ready for submission of the Pilot 5 eCTD bundle to FDA</li>
+<li>The Pilot 5 ADRG has been updated with the conformance report on the XPT files to be sent through Pinnacle 21 community. No issues were identified</li>
+<li>Another report was created using the DatasetJSON 1.0 standard, where issues were identified that may persist with 1.1 standard</li>
+<li>The underlying data remains the same, and all outputs remain the same.</li>
+<li>Label and formatting issues appeared.</li>
+<li>The 1.0 standard was akin to the POC, but the 1.1 standard is the stable version that is meant for future development</li>
+<li>Another appendix has been created with the issue summaries in the conformance checks, with citation links</li>
+<li>Certain differences in class types for variables changed between pilot 3 and pilot 5. Further discussions with the datasetJSON package developers on the reason for these issues are pending.</li>
+<li>Additional warning messages appear on the console regarding NA values being introduced by coercion</li>
+<li>Ben and/or Sam will likely be giving a presentation accepted at Phuse 2026 as their paper on Pilot 5 was accepted.</li>
+<li>Minor formatting issues have been identified in the PDF version of the ADRG such as table rows extending past the margins of the page and certain code blocks extending beyond the margins.</li>
+</ul>
+</section>
+<section id="arsard-future-pilot" class="level2">
+<h2 class="anchored" data-anchor-id="arsard-future-pilot">ARS/ARD Future Pilot</h2>
+<ul>
+<li>A smaller working group will discuss what the specific asks and key goals will be if it goes to a future Pilot in the Submissions WG</li>
+<li>There have been open questions on the use of these formats in a regulatory perspective</li>
+<li>The ARS/ARD specs can be helpful for internal validation and QC process</li>
+<li>There is broad consensus amongst industry that ARS/ARD is a worthwhile endeavor</li>
+<li>There is a little hesitation around some companies already being meta-data driven in their processes, but will there be potential push-back from regulatory</li>
+<li>From the CDISC group: ARS is not anywhere close to being mandated by regulatory</li>
+<li>Typically regulatory will not comment on specific tooling, so in the context of TLF we have a handful of packages that can be used to create those deliverables</li>
+<li>Naturally there will likely be more than one solution to create and manage ARS in the R community</li>
+<li>In Pilot 1, multiple frameworks and formats were tested to generate TLFs. A future pilot for ARS/ARD could follow a similar pattern</li>
+<li>CDISC representatives will be engaging with regulatory colleagues and then there will be a future discussion with industry representatives to align on a future pilot scope.</li>
+<li>For those who wish to participate in the future calls, the meetings are open and asynchronous communication will be done within Slack</li>
+</ul>
+</section>
+<section id="other-future-pilots" class="level2">
+<h2 class="anchored" data-anchor-id="other-future-pilots">Other Future Pilots</h2>
+<ul>
+<li>2026 could have a few future pilots:
+<ul>
+<li>Python used for machine learning and medical devices</li>
+<li>Large-scale data generation that can serve as a new reference set to be used in future method benchmarking and future pilots</li>
+</ul></li>
+</ul>
+</section>
+<section id="upcoming-events" class="level2">
+<h2 class="anchored" data-anchor-id="upcoming-events">Upcoming Events</h2>
+<ul>
+<li><a href="https://rinpharma.com">R/Pharma 2025 virtual conference</a></li>
+<li><a href="https://rconsortium.github.io/RplusAI_website/">R &amp; AI conference</a></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2025-10-03/</guid>
+  <pubDate>Fri, 03 Oct 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2025-09-05</title>
   <dc:creator>Eric Nantz</dc:creator>
@@ -2123,104 +2231,6 @@ Caution
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-02-02/</guid>
   <pubDate>Fri, 02 Feb 2024 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2024-01-05</title>
-  <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2024-01-05/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Ben Straub (GSK)</li>
-<li>Dadong Zhang (Illumina)</li>
-<li>Eva Li</li>
-<li>Heidi Curinckx (Johnson &amp; Johnson)</li>
-<li>HyeSoo Cho (FDA)</li>
-<li>Joseph Rickert (R Consortium)</li>
-<li>Margaret Wishart</li>
-<li>Nan Xiao (Merck)</li>
-<li>Ning Leng (Roche/Genentech)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Robert Devine (Johnson &amp; Johnson)</li>
-<li>Saghir Bashir (Argenx)</li>
-<li>Sam Parmar (Pfizer)</li>
-<li>Steven Hasendinckx (Johnson &amp; Johnson)</li>
-<li>Youn Kyeong Chang</li>
-</ul>
-</div>
-</div>
-</div>
-<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/S3CjidPqOBSwSHo7xW3VUu_aUXKS9RdB3rNb07hWWkeyze5SthawUq5I8gnzQ2th.kpiljMfkqrlkuUJf?startTime=1704474237000">video</a> is available.</p>
-<section id="pilot-3" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-3">Pilot 3</h2>
-<p>HyeSoo presented an update on the continuing FDA evaluation of Pilot 3.</p>
-<ul>
-<li><p>Using the R generated ADaM data sets, the FDA reviewers were able to replicate the results of the demographic, efficacy, primary and KM plot analyses</p></li>
-<li><p>The reviewers compared the results of the four analyses between Pilot 1 and Pilot 3.</p>
-<ul>
-<li>Primary output in Pilot 3 was different from the Pilot 1 result due to the QC findings</li>
-<li>QC findings in ADRG include all of the discrepancies between the original ADaM datasets</li>
-<li>The discrepancies in ADADAS data sets cause different primary analyses outputs</li>
-<li>This is an issue from the CDISC ADADAS</li>
-<li>It is not clear which CDISC file, the file from Pilot 1 or the file from Pilot 3, is correct.</li>
-</ul></li>
-</ul>
-<p>The following figure compares the Pilot 1 and Pilot 3 primary output. Discrepancies are highlighted.</p>
-<p><img src="https://rconsortium.github.io/submissions-wg/minutes/2024-01-05/output_compare.png" class="img-fluid" alt="Comparison of Primary outputs"> Additional FDA questions included:</p>
-<ul>
-<li>Why is there an indication in the output of LOCF, “Last observation carried forward” when the original data set had no missing data?</li>
-<li>There was no statistical analysis plan included in the submission.</li>
-<li><strong>Action:</strong> Ben Straub will confer with the Pilot 3 team to answer these questions and review the discrepancy problems between Pilots 1 and 3.</li>
-<li><strong>Action:</strong> Paul and HyeSoo will discuss whether we need to resubmit Pilot 3 The next meeting of the working group will be on Friday, February 2, 2024 at 9AM Pacific Time.</li>
-<li>All agreed that if a resubmission of Pilot 3 is required, we will consider submitting via a .zip file.</li>
-</ul>
-<p>There was some discussion about what we could do to improve the quality control of our submissions.</p>
-<ul>
-<li>The group agreed that we should have a check list to compare items against a Pilot 1 source of truth.</li>
-<li>We should have additional reviewers who are not close to the work.</li>
-<li>The idea of using AI tools to check consistency was mentioned.</li>
-</ul>
-</section>
-<section id="upcoming-webinar" class="level2">
-<h2 class="anchored" data-anchor-id="upcoming-webinar">Upcoming Webinar</h2>
-<p>On Monday at 7PM PST Rikimaru Nishimura and Yuki Matsunaga will present a webinar on The Adoption of R in Japan’s Pharma Industry Confirmation. Look <a href="https://www.r-consortium.org/r-adoption-series-the-adoption-of-r-in-japans-pharma-industry-confirmation">here</a> for details and information on how to register.</p>
-<ul>
-<li>Ning noted that Yuki expressed an interest in collaborating with the R Consortium.</li>
-<li><strong>Action:</strong> we will set up a meeting with the Japanese team after the meeting.</li>
-</ul>
-</section>
-<section id="pharmasug" class="level2">
-<h2 class="anchored" data-anchor-id="pharmasug">PharmaSUG</h2>
-<ul>
-<li>JBR mentioned that it is an R Consortium goal for 2024 to make the opportunity for as many speaking engagements as possible.</li>
-<li>Ben mentioned that <a href="https://www.pharmasug.org/us/index.html">PharmaSUG 2024</a> is coming up in May,</li>
-<li><strong>Action:</strong> Ben volunteered to submit an abstract by the January 15 deadline. Ning will provide Ben with some copy used for a previous abstract.</li>
-</ul>
-<p>The next meeting of the working group will be at 9AM PST on Friday, February 2, 2024.</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-01-05/</guid>
-  <pubDate>Fri, 05 Jan 2024 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
