@@ -22,52 +22,49 @@ date: 2025-10-03
 - Youn Kyeong Chang (FDA)
 :::
 
-## Pilot 4
+## Pilot 4 Status
 
-* Looking at end of October for the next round of review
-* Re-submission folder created an index.xml file in the root of the document
-* There was a configuration issue on the sponsor side for how the eCTD tool configure
-* We are unclear on the validation details that were run in the transfer (it was considered a high error that will be reported in feedback)
+* FDA reviewers Looking at end of October for the next round of review
+* Re-submission folder created an `index.xml` file in the root of the document folder.
+* Why did that file appear when it is not part of the GitHub repository? The group hypothesized that it was  a configuration issue on the sponsor side for how the eCTD transfer tool was configured.
+* At this time we are not clear on the specific validation procedures that were executed during the transfer itself.
+* FDA noted that it will be considered a "high" error that will be reported in the submission feedback.
 
-## Pilot 5 
+## Pilot 5 Status
 
 * The team is ready for submission of the Pilot 5 eCTD bundle to FDA
-* ADRG has been updated with the conformance report on the XPT files to be sent through Pinnacle 21 community. No issues were identified
+* The Pilot 5 ADRG has been updated with the conformance report on the XPT files to be sent through Pinnacle 21 community. No issues were identified
 * Another report was created using the DatasetJSON 1.0 standard, where issues were identified that may persist with 1.1 standard
-* The underlying data remains the same, and all outputs remain the same
+* The underlying data remains the same, and all outputs remain the same.
 * Label and formatting issues appeared.
 * The 1.0 standard was akin to the POC, but the 1.1 standard is the stable version that is meant for future development
 * Another appendix has been created with the issue summaries in the conformance checks, with citation links
 * Certain differences in class types for variables changed between pilot 3 and pilot 5. Further discussions with the datasetJSON package developers on the reason for these issues are pending.
 * Additional warning messages appear on the console regarding NA values being introduced by coercion
-* Ben and Sam will be giving a paper/presentation accepted at Phuse conference
-* Minor formatting issues in the PDF version of the ADRG 
+* Ben and/or Sam will likely be giving a presentation accepted at Phuse 2026 as their paper on Pilot 5 was accepted.
+* Minor formatting issues have been identified in the PDF version of the ADRG such as table rows extending past the margins of the page and certain code blocks extending beyond the margins. 
 
 ## ARS/ARD Future Pilot
 
 * A smaller working group will discuss what the specific asks and key goals will be if it goes to a future Pilot in the Submissions WG
-* There have been open questions on the use of these formats in a regularoy perspective
+* There have been open questions on the use of these formats in a regulatory perspective
 * The ARS/ARD specs can be helpful for internal validation and QC process
-* There is broad concensus amongst industry that ARS/ARD is a worthwhile endeavor
-* There is a little hesitation around some companies already being meta-data driven in their processes, but will there be potential pushback from regulatory
+* There is broad consensus amongst industry that ARS/ARD is a worthwhile endeavor
+* There is a little hesitation around some companies already being meta-data driven in their processes, but will there be potential push-back from regulatory
 * From the CDISC group: ARS is not anywhere close to being mandated by regulatory
 * Typically regulatory will not comment on specific tooling, so in the context of TLF we have a handful of packages that can be used to create those deliverables
 * Naturally there will likely be more than one solution to create and manage ARS in the R community
 * In Pilot 1, multiple frameworks and formats were tested to generate TLFs. A future pilot for ARS/ARD could follow a similar pattern
-* CDISC representatives will be engaging with regulatory colleages and then there will be a future discussion with industry representatives to aling on a future pilot scope.
-* For thsoe who wish to participate in the future calls, the meetings are open and will be communicate Slack
+* CDISC representatives will be engaging with regulatory colleagues and then there will be a future discussion with industry representatives to align on a future pilot scope.
+* For those who wish to participate in the future calls, the meetings are open and asynchronous communication will be done within Slack
 
 ## Other Future Pilots
 
 * 2026 could have a few future pilots:
     * Python used for machine learning and medical devices
     * Large-scale data generation that can serve as a new reference set to be used in future method benchmarking and future pilots
-    * 
 
 ## Upcoming Events
 
-* R/Pharma virtual will be happening (get dates)
-* Workshops are happening
-   * Past members of WG (Yilong and Nan) are leading a workshop on using Python for clinical deliverables
-* Keep an eye on the site
-* R & AI conference
+* [R/Pharma 2025 virtual conference](https://rinpharma.com)
+* [R & AI conference](https://rconsortium.github.io/RplusAI_website/)
