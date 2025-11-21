@@ -1,6 +1,7 @@
 ---
 title: "Minutes 2025-10-03"
 date: 2025-10-03
+author: Eric Nantz
 ---
 
 ::: {.callout-tip collapse="true"}
