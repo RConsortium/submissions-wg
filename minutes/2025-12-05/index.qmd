@@ -1,0 +1,64 @@
+---
+title: "Minutes 2025-12-05"
+date: 2025-12-05
+author: Eric Nantz
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Ben Straub (GSK)
+- Gabriel Krotkov (FDA)
+- Hye Soo Cho (FDA)
+- Jared Woolfolk (Cytel)
+- Joel Laxamana (Roche/Genentech)
+- Lovemore Gakava (Novo Nordisk)
+- Nicholas Masel (Johnson & Johnson)
+- Paul Schuette (FDA)
+- Phanikumar Tata (Syneos Health)
+- Robert Devine (Johnson & Johnson)
+- Sam Parmar (Pfizer)
+- Terry Christiani (R Consortium)
+- Yilong Zhang (Meta)
+- Yiwen Luo (Merck)
+- Youn Kyeong Chang (FDA)
+:::
+
+## Pilot 4 Review Status
+
+* Hye Soo shared key updates on the Pilot 4 (Docker Container and WebAssembly Shiny applications) review progress:
+    + Approximately 15 different computing environments were tested amongst the reviewers for both the Docker and WebAssembly portions of Pilot 4.
+    * The WebAssembly application performed well overall across the environments
+    * A handful of random issues occurred in the Docker container version which were able to be resolved, and do not seem to be caused by any of the Pilot 4 container instructions / code. The [Pilot 4 Container Learning Guide](https://rpodcast.quarto.pub/submissions-wg-pilot-4/tech_session.html) was a great resource to help solve those issues.
+    * A draft of the review summary is in progress in which these issues will be shared.
+* A significant revelation during the discussion: Due to recent security policy updates, the Windows Subsystem for Linux (WSL) utility is no longer permitted for installation on FDA reviewer computers. The WSL utility is a key dependency of running Docker on a Windows host, due to the Docker runtime requiring a Linux-compatible environment.
+* Recent security issues associated with malicious packages entering popular open-source language package systems (such as the [soopsocks](https://thehackernews.com/2025/10/alert-malicious-pypi-package-soopsocks.html) package entering PyPi) and the node package manager (npm) with NodeJS have caused concern over the use of open-source repositories like GitHub for accessing software in the FDA internal networks.
+* In light of these factors, the use of containers in future submissions will prove to be difficult as container runtimes such as Docker will be much more difficult to set up on a typical FDA reviewer's working machine.
+* Any future blog posts which summarize Pilot 4 should not just include the results of this submission, but also include the practical challenges such as the aforementioned container environment logistics as many in life sciences are inquiring about the viability of a container-based submission. All learnings from these Pilots (not just the "success" of a submission) are valuable pieces of information for the future.
+
+## Pilot 5 Review Status
+
+* Hye Soo shared that their team have performed preliminary testing of bootstrapping the Pilot 5 execution instructions from the ADRG and begun to evaluate the Pilot 5 R programs. The following questions were raised:
+* R version 4.4.3 was specified in the ADRG as the version to install. Was there a particular reasons for using this version? Ben shared that R 4.4.3 was the latest version available when development of the Pilot 5 codebase. 
+* FDA considers 4.4.3 as a "newer" version that is not generally available on the FDA reviewer computers.
+* As another workaround, Hye Soo demonstrated the use of a separate workstation environment running R 4.5.0. There was an error in the bootstrapping of the `{renv}` package library when R tried to compile a package called `{mgcv}` from source. While the ADRG provided instructions to install Rtools, that version of Rtools was only appropriate for R versions in the `4.4.x` series. A separate version of Rtools for the R `4.5.x` series (installer available from CRAN at [this link](https://cloud.r-project.org/bin/windows/Rtools/rtools45/files/rtools45-6691-6492.exe)) should be used instead.
+* Clarification on the intent of the Pilot 5 code: Why were R scripts created to convert the DatasetJSON versions of the source data to the `rds` format? Ben shared that the original goal of Pilot 5 was to demonstrate that the JSON format could successfully be used in place of the `xpt` format to transfer data files to the FDA through the eCTD portal.
+* Hye Soo noted that with the current Pilot 5 code base using this intermediate `rds` format, it seemed that they would be tasked with verifying outputs created from the `rds` versions of the data would be the same as when using the JSON data versions as the source instead.
+* An interesting dichotomy was identified: Most workflows within companies involve the creation of an intermediate format such as `sas7bdat` or more recently `parquet` after the raw XPT data files to streamline processing workflows. However, when FDA reviewers examine submissions they will treat the `xpt` data sets as the "source of truth" in any custom programming they create to evaluate a sponsor's submission, without creating an intermediate format.
+* After this enlightening discussion, the FDA reviewers and the Pilot 5 team aligned on creating a re-submission of the Pilot 5 code that removes the creation of `rds` files and simply uses the JSON data files as the source for any outputs created.
+* As part of this re-submission, the ADRG instructions will be updated to include instructions for locating the appropriate version of the Rtools utility based on the version of R being used for the analysis. With that said, the version of R will still be stated as 4.4.3.
+* FDA reviewers inquired about how the goals of Pilot 5 compare to the Phuse/CDISC pilot in partnership with FDA conducted in 2024. While there is a bit of overlap in which both Pilots wanted to verify the utility of using Dataset-JSON as the transport file format with no loss of data (complete details can be found in the [Phuse/CDISC Pilot report](https://phuse.s3.eu-central-1.amazonaws.com/Deliverables/Optimizing+the+Use+of+Data+Standards/WP-88+Dataset-JSON+Report.pdf)), Pilot 5 follows the similar paradigm of our previous submission pilots by evaluating the practical operations of how R can be used to produce submission deliverables and test an actual transfer of the submission bundle to FDA.
+* Others on the call mentioned the emerging use of Parquet as an intermediate format as the source for industry workflows. Certain issues concerning metadata exist with Parquet. A detailed writeup on the benefits / tradeoffs between Dataset-JSON and Parquet can be found in Same Hume's post: [Top 10 Reasons for Using Dataset-JSON over Parquet for Data Exchange](https://www.linkedin.com/pulse/top-10-reasons-using-dataset-json-over-parquet-data-exchange-sam-hume-scv6e/)
+* With the holiday season rapidly approaching, the goal will be to assemble the updated submission package for Pilot 5 in January for a re-submission via the eCTD portal to FDA.
+
+## Pilot 6 (AI-generated programming) Progress
+
+* The Pilot 6 team is looking for ways to make it easier for the development of the key programs in light of this Pilot not being considered a submission package.
+* Thus far, five volunteers are ready to develop programming using the available AI tools. Access to the platforms is still in progress.
+* The team would be interested in a year-end blog post to highlight the goals of Pilot 6 as well as recap the journey of Pilot 4.
+* Terry expressed support of publishing the blog post when ready, ensuring that the messaging is consistent with the previous Pilots' blog post emphasizing the open-source mindset and not being driven by commercial interests. 
+
+
+## Pilot 7 (Benchmark Submission Data)
+
+* Yilong shared that he has worked closely with Open Clinica to obtain a synthetic set of EDC data whcih could be a great launching point for the Pilot 7 data sources. These data have no identifying information. Yilong would like to have a new repository created in the RConsortium GitHub organization to hold these data, with likely separate directories corresponding to the different types of data.
