@@ -10,7 +10,105 @@
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Fri, 21 Nov 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 05 Dec 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2025-12-05</title>
+  <dc:creator>Eric Nantz</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2025-12-05/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Ben Straub (GSK)</li>
+<li>Gabriel Krotkov (FDA)</li>
+<li>Hye Soo Cho (FDA)</li>
+<li>Jared Woolfolk (Cytel)</li>
+<li>Joel Laxamana (Roche/Genentech)</li>
+<li>Lovemore Gakava (Novo Nordisk)</li>
+<li>Nicholas Masel (Johnson &amp; Johnson)</li>
+<li>Paul Schuette (FDA)</li>
+<li>Phanikumar Tata (Syneos Health)</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Sam Parmar (Pfizer)</li>
+<li>Terry Christiani (R Consortium)</li>
+<li>Yilong Zhang (Meta)</li>
+<li>Yiwen Luo (Merck)</li>
+<li>Youn Kyeong Chang (FDA)</li>
+</ul>
+</div>
+</div>
+</div>
+<section id="pilot-4-review-status" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-4-review-status">Pilot 4 Review Status</h2>
+<ul>
+<li>Hye Soo shared key updates on the Pilot 4 (Docker Container and WebAssembly Shiny applications) review progress:
+<ul>
+<li>Approximately 15 different computing environments were tested amongst the reviewers for both the Docker and WebAssembly portions of Pilot 4.</li>
+<li>The WebAssembly application performed well overall across the environments</li>
+<li>A handful of random issues occurred in the Docker container version which were able to be resolved, and do not seem to be caused by any of the Pilot 4 container instructions / code. The <a href="https://rpodcast.quarto.pub/submissions-wg-pilot-4/tech_session.html">Pilot 4 Container Learning Guide</a> was a great resource to help solve those issues.</li>
+<li>A draft of the review summary is in progress in which these issues will be shared.</li>
+</ul></li>
+<li>A significant revelation during the discussion: Due to recent security policy updates, the Windows Subsystem for Linux (WSL) utility is no longer permitted for installation on FDA reviewer computers. The WSL utility is a key dependency of running Docker on a Windows host, due to the Docker runtime requiring a Linux-compatible environment.</li>
+<li>Recent security issues associated with malicious packages entering popular open-source language package systems (such as the <a href="https://thehackernews.com/2025/10/alert-malicious-pypi-package-soopsocks.html">soopsocks</a> package entering PyPi) and the node package manager (npm) with NodeJS have caused concern over the use of open-source repositories like GitHub for accessing software in the FDA internal networks.</li>
+<li>In light of these factors, the use of containers in future submissions will prove to be difficult as container runtimes such as Docker will be much more difficult to set up on a typical FDA reviewer’s working machine.</li>
+<li>Any future blog posts which summarize Pilot 4 should not just include the results of this submission, but also include the practical challenges such as the aforementioned container environment logistics as many in life sciences are inquiring about the viability of a container-based submission. All learnings from these Pilots (not just the “success” of a submission) are valuable pieces of information for the future.</li>
+</ul>
+</section>
+<section id="pilot-5-review-status" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-5-review-status">Pilot 5 Review Status</h2>
+<ul>
+<li>Hye Soo shared that their team have performed preliminary testing of bootstrapping the Pilot 5 execution instructions from the ADRG and begun to evaluate the Pilot 5 R programs. The following questions were raised:</li>
+<li>R version 4.4.3 was specified in the ADRG as the version to install. Was there a particular reasons for using this version? Ben shared that R 4.4.3 was the latest version available when development of the Pilot 5 codebase.</li>
+<li>FDA considers 4.4.3 as a “newer” version that is not generally available on the FDA reviewer computers.</li>
+<li>As another workaround, Hye Soo demonstrated the use of a separate workstation environment running R 4.5.0. There was an error in the bootstrapping of the <code>{renv}</code> package library when R tried to compile a package called <code>{mgcv}</code> from source. While the ADRG provided instructions to install Rtools, that version of Rtools was only appropriate for R versions in the <code>4.4.x</code> series. A separate version of Rtools for the R <code>4.5.x</code> series (installer available from CRAN at <a href="https://cloud.r-project.org/bin/windows/Rtools/rtools45/files/rtools45-6691-6492.exe">this link</a>) should be used instead.</li>
+<li>Clarification on the intent of the Pilot 5 code: Why were R scripts created to convert the DatasetJSON versions of the source data to the <code>rds</code> format? Ben shared that the original goal of Pilot 5 was to demonstrate that the JSON format could successfully be used in place of the <code>xpt</code> format to transfer data files to the FDA through the eCTD portal.</li>
+<li>Hye Soo noted that with the current Pilot 5 code base using this intermediate <code>rds</code> format, it seemed that they would be tasked with verifying outputs created from the <code>rds</code> versions of the data would be the same as when using the JSON data versions as the source instead.</li>
+<li>An interesting dichotomy was identified: Most workflows within companies involve the creation of an intermediate format such as <code>sas7bdat</code> or more recently <code>parquet</code> after the raw XPT data files to streamline processing workflows. However, when FDA reviewers examine submissions they will treat the <code>xpt</code> data sets as the “source of truth” in any custom programming they create to evaluate a sponsor’s submission, without creating an intermediate format.</li>
+<li>After this enlightening discussion, the FDA reviewers and the Pilot 5 team aligned on creating a re-submission of the Pilot 5 code that removes the creation of <code>rds</code> files and simply uses the JSON data files as the source for any outputs created.</li>
+<li>As part of this re-submission, the ADRG instructions will be updated to include instructions for locating the appropriate version of the Rtools utility based on the version of R being used for the analysis. With that said, the version of R will still be stated as 4.4.3.</li>
+<li>FDA reviewers inquired about how the goals of Pilot 5 compare to the Phuse/CDISC pilot in partnership with FDA conducted in 2024. While there is a bit of overlap in which both Pilots wanted to verify the utility of using Dataset-JSON as the transport file format with no loss of data (complete details can be found in the <a href="https://phuse.s3.eu-central-1.amazonaws.com/Deliverables/Optimizing+the+Use+of+Data+Standards/WP-88+Dataset-JSON+Report.pdf">Phuse/CDISC Pilot report</a>), Pilot 5 follows the similar paradigm of our previous submission pilots by evaluating the practical operations of how R can be used to produce submission deliverables and test an actual transfer of the submission bundle to FDA.</li>
+<li>Others on the call mentioned the emerging use of Parquet as an intermediate format as the source for industry workflows. Certain issues concerning metadata exist with Parquet. A detailed writeup on the benefits / tradeoffs between Dataset-JSON and Parquet can be found in Same Hume’s post: <a href="https://www.linkedin.com/pulse/top-10-reasons-using-dataset-json-over-parquet-data-exchange-sam-hume-scv6e/">Top 10 Reasons for Using Dataset-JSON over Parquet for Data Exchange</a></li>
+<li>With the holiday season rapidly approaching, the goal will be to assemble the updated submission package for Pilot 5 in January for a re-submission via the eCTD portal to FDA.</li>
+</ul>
+</section>
+<section id="pilot-6-ai-generated-programming-progress" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-6-ai-generated-programming-progress">Pilot 6 (AI-generated programming) Progress</h2>
+<ul>
+<li>The Pilot 6 team is looking for ways to make it easier for the development of the key programs in light of this Pilot not being considered a submission package.</li>
+<li>Thus far, five volunteers are ready to develop programming using the available AI tools. Access to the platforms is still in progress.</li>
+<li>The team would be interested in a year-end blog post to highlight the goals of Pilot 6 as well as recap the journey of Pilot 4.</li>
+<li>Terry expressed support of publishing the blog post when ready, ensuring that the messaging is consistent with the previous Pilots’ blog post emphasizing the open-source mindset and not being driven by commercial interests.</li>
+</ul>
+</section>
+<section id="pilot-7-benchmark-submission-data" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-7-benchmark-submission-data">Pilot 7 (Benchmark Submission Data)</h2>
+<ul>
+<li>Yilong shared that he has worked closely with Open Clinica to obtain a synthetic set of EDC data whcih could be a great launching point for the Pilot 7 data sources. These data have no identifying information. Yilong would like to have a new repository created in the RConsortium GitHub organization to hold these data, with likely separate directories corresponding to the different types of data.</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2025-12-05/</guid>
+  <pubDate>Fri, 05 Dec 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2025-11-21</title>
   <dc:creator>Eric Nantz</dc:creator>
@@ -2082,114 +2180,6 @@ Caution
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-04-05/Index.html</guid>
   <pubDate>Fri, 05 Apr 2024 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2024-03-01</title>
-  <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2024-03-01/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>Heidi Curinckx (Johnson &amp; Johnson)</li>
-<li>HyeSoo Cho (FDA)</li>
-<li>Jizu Zhi (FDA)</li>
-<li>Joel Laxamana (Roche/Genentech)</li>
-<li>Joseph Rickert (JBR) (R Consortium)</li>
-<li>Lovemore Gakava (Novo Nordisk)</li>
-<li>Nan Xiao (Merck)</li>
-<li>Nicholas Masel (JRDUS)</li>
-<li>Ning Leng (Roche/Genentech)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Robert Devine (Johnson &amp; Johnson)</li>
-<li>Saghir Bashir (Argenx)</li>
-<li>Sam Parmar (Pfizer)</li>
-<li>Youn Kyeong Chang (FDA)</li>
-</ul>
-<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/_n7MWF0l4R5FsccL4GzRrzXUoGOCXwxQqQuY4Pu2CqF0_DX9xMmpYUoxREA92uX-.m3O3hPqvxfZKyws4?startTime=1709312595000">video</a> is available.</p>
-</div>
-</div>
-</div>
-<section id="plot-3-update" class="level2">
-<h2 class="anchored" data-anchor-id="plot-3-update">Plot 3 Update</h2>
-<section id="fda-recommendation" class="level3">
-<h3 class="anchored" data-anchor-id="fda-recommendation">FDA Recommendation</h3>
-<p>HyeSoo stated that the FDA is considering issuing a recommendation that submissions sponsors should use the most recent patch version of the previous minor version of R.</p>
-<p>For example, R versions are organized as V x.y.z where:</p>
-<ul>
-<li>x is the major version</li>
-<li>y is the minor version or subversion</li>
-<li>z is the patch version</li>
-</ul>
-<p>The WG members affirmed that a policy of using a proven stable version of R and not the latest version is in accordance with the practices of their respective companies.</p>
-<p>After some thought the working group proposed that since patch versions are issued frequently (every couple of months), it might be better to have the FDA guidance suggest the last patch version of the previous subversion.</p>
-<p>Note that the FDA is considering making a recommendation and not considering setting policy.</p>
-<p><strong>Action:</strong> JBR will confer with Sam, Paul and HyeSoo about the wording of the recommendation and then draft a blog post. The post will go to Paul, HyeSoo, Eric, and Ning for review before being published on the R Consortium Blog.</p>
-</section>
-</section>
-<section id="pilot-3-update" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-3-update">Pilot 3 Update</h2>
-<p>HyeSoo and Joel informed the group that they met last month to resolve the discrepancy between the original CDISC version of the ADADAS ADaM data set and the Pilot 3 version of the ADaM data set. Joel noted that there are 818 available records in the QS domain. The CDISC ADADAS only brought in 799 records and imputed the rest, whereas Pilot 3 brought in all available 818 records into ADADAS and then imputed. When the Pilot 3 team adjusted by subsetting to ANL01FL=‘Y’ records first before doing the LOCF imputation the results matched Pilot 1 and the discrepancy was resolved. Look <a href="https://github.com/RConsortium/submissions-pilot3-adam/pull/146">here</a> for details.</p>
-<p>This issue illustrates the level of detail that the FDA must consider in replicating a sponsor’s submission environment. This particular issue was due to a statistical decision and not an error. Ning pointed out that most of the work in resolving discrepancies over the three Pilot submissions are due to insufficient documentation and inadequate communication and not to differences between SAS and R.</p>
-<p><strong>Action:</strong> Ning and Joe will work on a blog post about this topic.</p>
-</section>
-<section id="rmedicine" class="level2">
-<h2 class="anchored" data-anchor-id="rmedicine">R/Medicine</h2>
-<p>Joel has been invited to give a talk at the upcoming R/Medicine virtual conference which will be held from June 10 to 14. He is deciding whether to give a talk or a workshop.</p>
-</section>
-<section id="user-2024" class="level2">
-<h2 class="anchored" data-anchor-id="user-2024">UseR! 2024</h2>
-<p>The group decided to submit an abstract for useR!2024 which will be held from July 8 to 11 in Salzburg, Austria. the deadline for the CFP is Sunday, 10 March at 11:59 PM CET (UTC+1)</p>
-<p><strong>Action:</strong></p>
-<p>Eric and Ning will draft the abstract.</p>
-</section>
-<section id="pilot-4-update" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-4-update">Pilot 4 update</h2>
-<p>At <strong>38:38</strong> into the video of the meeting, Eric previews the Pilot 4 WebAssembly (Wasm) submission. To be compatible with Wasm, the submission is being built with the <a href="https://appsilon.github.io/rhino/">Rhino</a> framework for shiny which is different from what was used in Pilot 2 but is functionally equivalent. The screen capture below references the compiling the <code>WebR</code> Wasm submission with <code>shinylive</code>.</p>
-<p><img src="https://rconsortium.github.io/submissions-wg/minutes/2024-03-01/pilot4.png" class="img-fluid"> After the build it is necessary to launch a webserver process on your your local setup. The Wasm version of the Shiny app reproduces the <code>teal</code> filters without using teal itself.</p>
-<p><img src="https://rconsortium.github.io/submissions-wg/minutes/2024-03-01/KM.png" class="img-fluid"> The next step is to test the application on the container approximating the FDA Windows environment.</p>
-<section id="immediate-plans" class="level3">
-<h3 class="anchored" data-anchor-id="immediate-plans">Immediate Plans</h3>
-<p>Joel’s team will continue working on Pilot 3 re-submission with the goal of picking a submission date at the April meeting.</p>
-</section>
-</section>
-<section id="the-submission-environmnt-setup" class="level2">
-<h2 class="anchored" data-anchor-id="the-submission-environmnt-setup">The Submission Environmnt Setup</h2>
-<p>Setting up the submission environment is a manual process. The WG would like to automate at lest some of this process to ease the burden of setup and improve repeatability. It would be nice to have a GitHub action workflow that uses containers and runs on Azure. This will be a topic for the next meeting.</p>
-<p><strong>Action:</strong> JBR will promote this task and try to find a company willing to work on it.</p>
-</section>
-<section id="swissmedic-wg" class="level2">
-<h2 class="anchored" data-anchor-id="swissmedic-wg">Swissmedic WG</h2>
-<p>JBR asked the WG for help in identifying Europe-based Pharma employees who might be interested in starting a new working group focused on Swissmedic.</p>
-<p><strong>Action:</strong> Ning will open an issue on this and tag JBR and Gregory.</p>
-</section>
-<section id="next-meeting" class="level2">
-<h2 class="anchored" data-anchor-id="next-meeting">Next Meeting</h2>
-<p>The next meeting of the working group will be on Friday, April 5, 2024 at 9AM PST.</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-03-01/</guid>
-  <pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
