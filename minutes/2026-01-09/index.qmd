@@ -1,0 +1,19 @@
+---
+title: "Minutes 2026-01-09"
+date: 2026-01-09
+author: Eric Nantz
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Eric Nantz (Eli Lilly)
+- Additional attendees to be added after meeting
+:::
+
+## Agenda
+
+* Update on Pilot 4 (container / WebAssembly) review report status
+* Pilot 5 (DatasetJSON) re-submission update
+* Pilot 6 (AI-generated programming) status and communication update on early progress (i.e. blog post)
+* Pilot 7 (Realistic Submission Data) - Review synthetic data repositories and kick off planning for sub-team
