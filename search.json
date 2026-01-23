@@ -781,14 +781,14 @@
     "href": "minutes_prep.html",
     "title": "Minutes Document Writer",
     "section": "",
-    "text": "This interactive page creates a template Quarto document text for capturing meeting minutes associated with the Submissions working group.\n\n\nUse the date input below to choose the date of the meeting. Click the calendar icon in the widget to launch the UI.\n\nviewof meeting_date = Inputs.date({\n  label: \"Meeting Date\",\n  value: \"2024-12-01\"\n})\n\n\n\n\n\n\n\nmeeting_year = (meeting_date.getFullYear()).toString()\nmeeting_month = (meeting_date.getMonth() + 1).toString().padStart(2, \"0\")\nmeeting_day = (meeting_date.getDate() + 1).toString().padStart(2, \"0\")\n\nmeeting_array = [meeting_year, meeting_month, meeting_day]\nmeeting_print = meeting_array.join(\"-\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUse the personnel table below to select the attendees present at the meeting by checking the box that appears once you hover your cursor above a name. The table is ordered alphabetically by first name as default, but you can sort by a different column by clicking the column name.\n\n\n\n\n\n\nWarning\n\n\n\nIf an attendee is not listed in this table, please add their name, affiliation, and affiliation URL to the wg_attendees.xlsx spreadsheet located in the data subdirectory of this repository. After your edits to the spreadsheet are completed, re-build the Quarto site.\n\n\n\ndata2 = transpose(people_data)\n\n\n\n\n\n\n\nviewof people_selection = Inputs.table(data2, {\n  sort: \"name\",\n  multiple: true,\n  rows: 40,\n  required: false\n})"
+    "text": "This interactive page creates a template Quarto document text for capturing meeting minutes associated with the Submissions working group.\n\n\nUse the date input below to choose the date of the meeting. Click the calendar icon in the widget to launch the UI.\n\nviewof meeting_date = Inputs.date({\n  label: \"Meeting Date\",\n  value: \"2026-01-09\"\n})\n\n\n\n\n\n\n\nmeeting_year = (meeting_date.getFullYear()).toString()\nmeeting_month = (meeting_date.getMonth() + 1).toString().padStart(2, \"0\")\nmeeting_day = (meeting_date.getDate() + 1).toString().padStart(2, \"0\")\n\nmeeting_array = [meeting_year, meeting_month, meeting_day]\nmeeting_print = meeting_array.join(\"-\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUse the personnel table below to select the attendees present at the meeting by checking the box that appears once you hover your cursor above a name. The table is ordered alphabetically by first name as default, but you can sort by a different column by clicking the column name.\n\n\n\n\n\n\nWarning\n\n\n\nIf an attendee is not listed in this table, please add their name, affiliation, and affiliation URL to the wg_attendees.xlsx spreadsheet located in the data subdirectory of this repository. After your edits to the spreadsheet are completed, re-build the Quarto site.\n\n\n\ndata2 = transpose(people_data)\n\n\n\n\n\n\n\nviewof people_selection = Inputs.table(data2, {\n  sort: \"name\",\n  multiple: true,\n  rows: 40,\n  required: false\n})"
   },
   {
     "objectID": "minutes_prep.html#date-selection",
     "href": "minutes_prep.html#date-selection",
     "title": "Minutes Document Writer",
     "section": "",
-    "text": "Use the date input below to choose the date of the meeting. Click the calendar icon in the widget to launch the UI.\n\nviewof meeting_date = Inputs.date({\n  label: \"Meeting Date\",\n  value: \"2024-12-01\"\n})\n\n\n\n\n\n\n\nmeeting_year = (meeting_date.getFullYear()).toString()\nmeeting_month = (meeting_date.getMonth() + 1).toString().padStart(2, \"0\")\nmeeting_day = (meeting_date.getDate() + 1).toString().padStart(2, \"0\")\n\nmeeting_array = [meeting_year, meeting_month, meeting_day]\nmeeting_print = meeting_array.join(\"-\")"
+    "text": "Use the date input below to choose the date of the meeting. Click the calendar icon in the widget to launch the UI.\n\nviewof meeting_date = Inputs.date({\n  label: \"Meeting Date\",\n  value: \"2026-01-09\"\n})\n\n\n\n\n\n\n\nmeeting_year = (meeting_date.getFullYear()).toString()\nmeeting_month = (meeting_date.getMonth() + 1).toString().padStart(2, \"0\")\nmeeting_day = (meeting_date.getDate() + 1).toString().padStart(2, \"0\")\n\nmeeting_array = [meeting_year, meeting_month, meeting_day]\nmeeting_print = meeting_array.join(\"-\")"
   },
   {
     "objectID": "minutes_prep.html#attendee-selection",
@@ -1145,7 +1145,7 @@
     "href": "minutes/2026-01-09/index.html",
     "title": "Minutes 2026-01-09",
     "section": "",
-    "text": "TipView Attendee List\n\n\n\n\n\n\nEric Nantz (Eli Lilly)\nAdditional attendees to be added after meeting"
+    "text": "TipView Attendee List\n\n\n\n\n\n\nBen Straub (GSK)\nEric Nantz (Eli Lilly)\nHyeSoo Cho (FDA)\nNing Leng (Roche/Genentech)\nPaul Schuette (FDA)\nPhanikumar Tata (Syneos Health)\nPhil Bowsher (Posit)\nRobert Devine (Johnson & Johnson)\nSam Parmar (Pfizer)\nJared Woolfolk (Cytel)\nYilong Zhang (Meta)"
   },
   {
     "objectID": "minutes/2026-01-09/index.html#agenda",
@@ -1153,6 +1153,41 @@
     "title": "Minutes 2026-01-09",
     "section": "Agenda",
     "text": "Agenda\n\nUpdate on Pilot 4 (container / WebAssembly) review report status\nPilot 5 (DatasetJSON) re-submission update\nPilot 6 (AI-generated programming) status and communication update on early progress (i.e. blog post)\nPilot 7 (Realistic Submission Data) - Review synthetic data repositories and kick off planning for sub-team"
+  },
+  {
+    "objectID": "minutes/2026-01-09/index.html#pilot-4",
+    "href": "minutes/2026-01-09/index.html#pilot-4",
+    "title": "Minutes 2026-01-09",
+    "section": "Pilot 4",
+    "text": "Pilot 4\n\nFDA’s formal review report is still in progress\nThe report will be shared via email before the next working group meeting in February\nDiscussion about an XML file issue that appeared during the Pilot 4 submission process - Eric and Ben plan to follow up with Beverly to investigate why this occurred"
+  },
+  {
+    "objectID": "minutes/2026-01-09/index.html#pilot-5",
+    "href": "minutes/2026-01-09/index.html#pilot-5",
+    "title": "Minutes 2026-01-09",
+    "section": "Pilot 5",
+    "text": "Pilot 5\n\nBen is preparing to resubmit Pilot 5 after removing the RDS data file objects\nThe PR is ready and awaiting final steps from Beverly at Roche for submission\nExpected to be submitted by Monday (January 12, 2026)\nThe submission script may need updates to remove references to the old RDS files\nNing Leng has left Roche but will continue involvement in the working group in her new role"
+  },
+  {
+    "objectID": "minutes/2026-01-09/index.html#pilot-6",
+    "href": "minutes/2026-01-09/index.html#pilot-6",
+    "title": "Minutes 2026-01-09",
+    "section": "Pilot 6",
+    "text": "Pilot 6\n\nOfficially focusing on AI-generated programming to build out all datasets from the original CDISC pilot\nThis is NOT a formal submission to FDA - it’s an exploratory effort to create a more comprehensive submission package\nTeam is leveraging various AI platforms (GitHub Copilot, KG AI, Conviva) to assist with programming\nMeetings moved to Zoom platform and occur every Friday at 10 AM Eastern Time\nOpen to anyone interested in participating - join via the R Consortium calendar link\nDiscussion about creating a blog post to publicize early progress\nCurrent submission package is small (5 datasets, 3 tables, 1 figure) - Pilot 6 aims to expand this"
+  },
+  {
+    "objectID": "minutes/2026-01-09/index.html#pilot-7",
+    "href": "minutes/2026-01-09/index.html#pilot-7",
+    "title": "Minutes 2026-01-09",
+    "section": "Pilot 7",
+    "text": "Pilot 7\n\nNew pilot focusing on realistic submission data for Phase 3 trials\nYilong Zhang connected the group with OpenClinica for synthetic data\nInitial synthetic dataset (8MB XML file) now available in GitHub repository\nNew Slack channel created: “Pilot 7 Benchmark Data”\nEric will organize a sub-team with dedicated meeting times (weekly or bi-weekly)\nFirst task is to evaluate the OpenClinica synthetic data and determine if additional data sources or simulation approaches are needed\nTeam will explore using AI to convert XML data into tidy datasets"
+  },
+  {
+    "objectID": "minutes/2026-01-09/index.html#website-updates",
+    "href": "minutes/2026-01-09/index.html#website-updates",
+    "title": "Minutes 2026-01-09",
+    "section": "Website Updates",
+    "text": "Website Updates\n\nBen encouraged contributions to improve the R Consortium Submissions Working Group website\nSuggested additions include a timeline of the group’s history and integration of hex stickers created by J&J colleagues\nThe repository is public and open to contributions via pull requests"
   },
   {
     "objectID": "minutes/2024-05-03/index.html",
