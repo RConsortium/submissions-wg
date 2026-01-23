@@ -7,9 +7,23 @@ author: Eric Nantz
 ::: {.callout-tip collapse="true"}
 ## View Attendee List
 
+- Ben Straub (GSK)
 - Eric Nantz (Eli Lilly)
-- Additional attendees to be added after meeting
+- HyeSoo Cho (FDA)
+- Ning Leng (Roche/Genentech)
+- Paul Schuette (FDA)
+- Phanikumar Tata (Syneos Health)
+- Phil Bowsher (Posit)
+- Robert Devine (Johnson & Johnson)
+- Sam Parmar (Pfizer)
+- Jared Woolfolk (Cytel)
+- Yilong Zhang (Meta)
 :::
+
+::: {.callout-note}
+The creation of these meeting minutes was supported by the use of a large-language model (LLM)
+:::
+
 
 ## Agenda
 
@@ -17,3 +31,43 @@ author: Eric Nantz
 * Pilot 5 (DatasetJSON) re-submission update
 * Pilot 6 (AI-generated programming) status and communication update on early progress (i.e. blog post)
 * Pilot 7 (Realistic Submission Data) - Review synthetic data repositories and kick off planning for sub-team
+
+## Pilot 4
+
+* FDA's formal review report is still in progress
+* The report will be shared via email before the next working group meeting in February
+* Discussion about an XML file issue that appeared during the Pilot 4 submission process - Eric and Ben plan to follow up with Beverly to investigate why this occurred
+
+## Pilot 5
+
+* Ben is preparing to resubmit Pilot 5 after removing the RDS data file objects
+* The PR is ready and awaiting final steps from Beverly at Roche for submission
+* Expected to be submitted by Monday (January 12, 2026)
+* The submission script may need updates to remove references to the old RDS files
+* Ning Leng has left Roche but will continue involvement in the working group in her new role
+
+## Pilot 6
+
+* Officially focusing on AI-generated programming to build out all datasets from the original CDISC pilot
+* This is NOT a formal submission to FDA - it's an exploratory effort to create a more comprehensive submission package
+* Team is leveraging various AI platforms (GitHub Copilot, KG AI, Conviva) to assist with programming
+* Meetings moved to Zoom platform and occur every Friday at 10 AM Eastern Time
+* Open to anyone interested in participating - join via the R Consortium calendar link
+* Discussion about creating a blog post to publicize early progress
+* Current submission package is small (5 datasets, 3 tables, 1 figure) - Pilot 6 aims to expand this
+
+## Pilot 7
+
+* New pilot focusing on realistic submission data for Phase 3 trials
+* Yilong Zhang connected the group with OpenClinica for synthetic data
+* Initial synthetic dataset (8MB XML file) now available in GitHub repository
+* New Slack channel created: "Pilot 7 Benchmark Data"
+* Eric will organize a sub-team with dedicated meeting times (weekly or bi-weekly)
+* First task is to evaluate the OpenClinica synthetic data and determine if additional data sources or simulation approaches are needed
+* Team will explore using AI to convert XML data into tidy datasets
+
+## Website Updates
+
+* Ben encouraged contributions to improve the R Consortium Submissions Working Group website
+* Suggested additions include a timeline of the group's history and integration of hex stickers created by J&J colleagues
+* The repository is public and open to contributions via pull requests
