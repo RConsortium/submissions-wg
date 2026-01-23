@@ -20,6 +20,11 @@ author: Eric Nantz
 - Yilong Zhang (Meta)
 :::
 
+::: {.callout-note}
+The creation of these meeting minutes was supported by the use of a large-language model (LLM)
+:::
+
+
 ## Agenda
 
 * Update on Pilot 4 (container / WebAssembly) review report status
