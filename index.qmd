@@ -20,4 +20,3 @@ You can view previous meeting minutes with links to recorded sessions [here](min
 
 Please visit the [How to Join](join.qmd) page for complete details on joining our working group.
 :::
-  
