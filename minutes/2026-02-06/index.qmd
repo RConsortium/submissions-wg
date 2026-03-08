@@ -1,0 +1,86 @@
+---
+title: "Minutes 2026-02-06"
+date: 2026-02-06
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Andre Couturier (Sanofi)
+- Ben Straub (GSK)
+- Eric Nantz (Eli Lilly)
+- Gabriel Krotkov (FDA)
+- Hong Zheng (Bayer)
+- Hye Soo Cho (FDA)
+- Karthik Velega (Unknown)
+- Luis Osorio (Los Angeles Count Department of Public Health)
+- Ning Leng (AbbVie)
+- Phanikumar Tata (Syneos Health)
+- Phil Bowsher (Posit)
+- Robert Devine (Johnson & Johnson)
+- Sam Parmar (Pfizer)
+- Sara Z (Unknown)
+- Sydney Dennison (Pfizer)
+- Vital Reddy Jaggavarapu (Boehringer Ingelheim)
+- Yogesh Gupta (Pfizer)
+- Youn Kyeong Chang (FDA)
+:::
+
+::: {.callout-note}
+The creation of these meeting minutes was supported by the use of Zoom AI for meeting summaries.
+:::
+
+## Quick Recap
+
+The February Working Group Meeting focused on updates and discussions around ongoing pilot projects, website improvements, and technical challenges. Eric led the meeting, addressing the status of Pilot 4's summary report, which is near completion with feedback incorporated, and Pilot 5's resubmission, awaiting review. Hye provided updates on Pilot 4's draft report and clarified file name discrepancies due to legacy tools. The group discussed technical challenges with Docker containers, particularly on Windows, and explored alternative technologies like Nix for future submissions. Ning introduced Pilot 7, which aims to simulate clinical trial data using AI tools, and encouraged collaboration. Vital, a new member, was welcomed and encouraged to participate in ongoing pilots. The conversation ended with a brief overview of Pilot 6 and discussions on improving the website and documentation.
+
+## R Consortium Blog Post Review
+
+The meeting began with Eric greeting participants and discussing technical difficulties with his microphone 😅. The group then reviewed the agenda, which included a discussion about a new blog post for the R Consortium blog. Eric inquired about the status of the blog post, which was supposed to recap new pilots and existing pilots, but he was unsure if it had been published yet. Ben shared that an [open pull request](https://github.com/RConsortium/rconsortium_website/pull/553) to the R Consortium web site has the contents of the blog post, and the goal is to publish the blog post by Monday (February 9).
+
+## Meeting Notes Review and Automation
+
+Ben and Eric discussed the review and publication of meeting notes. They discussed the potential to streamline the process of linking agenda and minutes across the main submissions working group site and the GitHub Discussions board where the meeting agendas are posted. Eric mentioned the possibility of using an LLM to automate this. Ben also raised the need for help with visualizing pilot timelines on the website, but no new volunteers came forward.
+
+## Website Improvements and Pilot Updates
+
+The group discussed website improvements, with Ben suggesting adding hex stickers and Eric proposing a timeline schematic for pilot access. Vital, a new member from Boringheim, introduced himself and expressed interest in contributing to the group's R submissions work. Phanikumar offered to help with website development and suggested creating a template for the corto site. The group agreed that Vital should join the Slack channel to participate in ongoing pilot discussions. Eric provided an update on Pilot 4, mentioning that the summary report was being finalized with additional research being conducted to provide more information.
+
+## Pilot Updates and Technical Clarifications
+
+Hye Soo provided updates on Pilot 5, which has been resubmitted but not yet reviewed, and discussed Pilot 4, for which the draft summary report has been completed and is being revised based on Eric's feedback. They addressed a file name discrepancy issue, which was clarified by Beverly as being caused by an old ECTD publishing tool at Genentech that automatically converts underscores to hyphens. Eric expressed relief at having a clear explanation for the file name discrepancy, which had been perplexing the team. The meeting also touched on the logistics of running Docker containers, with Eric explaining the technical details behind networking and local application running.
+
+## Docker Implementation for FDA Applications
+
+Eric explained the technical details of running Shiny applications in Docker containers, particularly how network addresses and port mapping work. He noted that while Docker works well on Linux, there are challenges with Windows due to the WSL virtual machine layer. Hye clarified that while the FDA previously had restrictions on Docker access, these issues have been resolved, though new users still need IT approval to install Docker on FDA laptops. Ben acknowledged the significant technical hurdles faced in developing the container-based submission system for Pilot 4, and Eric warned that Docker's practical use at FDA review divisions may be limited due to evolving IT policies.
+
+## Container and Package Manager Discussion
+
+The team discussed various container technologies and package managers for pharmaceutical submissions, with Eric explaining that Docker and Podman build on a common Linux framework for managing segregated processes. Eric introduced Nix as a potential alternative to container technology, describing it as a package manager that creates reproducible environments through symbolic links and sandboxing, though its adoption in R is still limited and it requires WSL on Windows systems. Phanikumar noted that Nix is gaining traction as a better alternative to RENV lock files in the DevOps community, while Eric acknowledged that while Nix offers advantages over Docker/Podman, the current infrastructure and WSL requirements make it less suitable for their immediate needs.
+
+## Cloud Solutions for FDA Computing
+
+Ning suggested exploring the possibility of FDA developing a cloud-based solution to address computing environment issues, referencing the Precision FDA platform built on AWS for research. Gabriel clarified that while cloud-based solutions might be feasible for certain FDA divisions, the Office of Biostatistics and Cedar likely won't adopt such environments soon due to restrictive computing environments, particularly concerning the WSL dependency. Gabriel emphasized the need to align with the most restrictive environments to ensure convenience for reviewers, explaining the complexity of running Docker containers in these settings.
+
+## Challenges in FDA Submission Approaches
+
+The team discussed challenges with using WebAssembly and Docker containers for FDA regulatory submissions, noting that while these approaches are promising, they may not be the most efficient or robust options in the near term. Eric provided detailed explanations about networking and WebAssembly, which Hye will consider for inclusion in the pilot summary report. The group agreed to highlight this gap in their communications, including in a blog post and at conferences, to potentially enable further discussions with the right FDA personnel. They also acknowledged that the PIO4 report will demonstrate the viability of container-based approaches, which could influence industry trends.
+
+## Pilot Projects Update and Collaboration
+
+The meeting focused on updates and discussions about various pilot projects, including Pilot 5, 6, and 7. Ben and Sam are working on Pilot 5, which involves exploring dataset JSON and will be presented at a conference in March. Pilot 6 aims to create more datasets and tables for future use, while Pilot 7, led by Ning, involves simulating clinical trial data using an AI tool developed by Jimin's team. The team discussed the need for newer, more realistic data for testing tools and evaluating submissions. Participants expressed interest in collaborating and contributing to these projects, with Ning inviting others to join the weekly Pilot 7 stand-up meetings. 
+
+## Next Steps
+
+* Eric: Review the blog post draft summarizing Pilots 4, 5, 6, and 7 and provide feedback, with aim to publish on Monday.
+* Ben: Share the blog post PR link in the chat for others to review and comment.
+* Hye Soo: Finalize and begin the clearance process for the Pilot 4 summary report this month, incorporating relevant technical findings and Eric's feedback.
+* Phanikumar: Create a draft of a new website (Quarto) for the group, share with the team for feedback within a couple of weeks, and coordinate further discussion on Slack.
+* Vital: Join the Slack channel to participate in ongoing pilot discussions and connect with Phanikumar for onboarding and collaboration.
+* Ning: Continue leading Pilot 7, including weekly stand-up meetings; welcome new contributors and coordinate collaboration (e.g., with Yogesh/Pfizer).
+* Ben and Sam: Present on Pilot 5 at the Fuse conference (March 22/23), focusing on dataset JSON and Pilot 5 exploration.
+* Eric: Investigate automation or LLM-based solutions to link meeting agendas with published minutes and consider modernizing the documentation pipeline.
+* Hye Soo: Discuss with Paul the possibility of a meeting with the FDA IT team regarding cloud-based solutions for containerized submissions, and report back if there is any update.
+* Hye Soo: Consider highlighting the gap/need for centralized cloud-based solutions in future letters, blog posts, and conference discussions, as suggested by Ning.
+* Eric: Add entries for Pilots 6 and 7 to the public website as they become more involved.
+* Yogesh and Ning: Connect to discuss potential collaboration on Pilot 7, especially regarding SDTM/ADaM implementation and sharing of internal packages.
