@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Joseph Rickert">
-<meta name="dcterms.date" content="2022-06-04">
+<meta name="author" content="Eric Nantz">
+<meta name="dcterms.date" content="2026-02-06">
 
-<title>Minutes 2022-06-04 – R Submissions Working Group</title>
+<title>Minutes 2026-02-06 – R Submissions Working Group</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -335,7 +335,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Minutes 2022-06-04</h1>
+      <h1 class="title">Minutes 2026-02-06</h1>
                       </div>
   </div>
     
@@ -345,14 +345,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Joseph Rickert </p>
+               <p>Eric Nantz </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">June 4, 2022</p>
+        <p class="date">February 6, 2026</p>
       </div>
     </div>
     
@@ -368,14 +368,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#pilot-2-status" id="toc-pilot-2-status" class="nav-link active" data-scroll-target="#pilot-2-status">Pilot 2 Status</a></li>
-  <li><a href="#r-adowtion-series-webinar" id="toc-r-adowtion-series-webinar" class="nav-link" data-scroll-target="#r-adowtion-series-webinar">R Adowtion Series Webinar</a></li>
-  <li><a href="#pilot-3" id="toc-pilot-3" class="nav-link" data-scroll-target="#pilot-3">Pilot 3</a></li>
-  <li><a href="#japan-submission" id="toc-japan-submission" class="nav-link" data-scroll-target="#japan-submission">Japan Submission</a></li>
-  <li><a href="#china-submission" id="toc-china-submission" class="nav-link" data-scroll-target="#china-submission">China Submission</a></li>
-  <li><a href="#general-discussion" id="toc-general-discussion" class="nav-link" data-scroll-target="#general-discussion">General Discussion</a></li>
+  <li><a href="#quick-recap" id="toc-quick-recap" class="nav-link active" data-scroll-target="#quick-recap">Quick Recap</a></li>
+  <li><a href="#r-consortium-blog-post-review" id="toc-r-consortium-blog-post-review" class="nav-link" data-scroll-target="#r-consortium-blog-post-review">R Consortium Blog Post Review</a></li>
+  <li><a href="#meeting-notes-review-and-automation" id="toc-meeting-notes-review-and-automation" class="nav-link" data-scroll-target="#meeting-notes-review-and-automation">Meeting Notes Review and Automation</a></li>
+  <li><a href="#website-improvements-and-pilot-updates" id="toc-website-improvements-and-pilot-updates" class="nav-link" data-scroll-target="#website-improvements-and-pilot-updates">Website Improvements and Pilot Updates</a></li>
+  <li><a href="#pilot-updates-and-technical-clarifications" id="toc-pilot-updates-and-technical-clarifications" class="nav-link" data-scroll-target="#pilot-updates-and-technical-clarifications">Pilot Updates and Technical Clarifications</a></li>
+  <li><a href="#docker-implementation-for-fda-applications" id="toc-docker-implementation-for-fda-applications" class="nav-link" data-scroll-target="#docker-implementation-for-fda-applications">Docker Implementation for FDA Applications</a></li>
+  <li><a href="#container-and-package-manager-discussion" id="toc-container-and-package-manager-discussion" class="nav-link" data-scroll-target="#container-and-package-manager-discussion">Container and Package Manager Discussion</a></li>
+  <li><a href="#cloud-solutions-for-fda-computing" id="toc-cloud-solutions-for-fda-computing" class="nav-link" data-scroll-target="#cloud-solutions-for-fda-computing">Cloud Solutions for FDA Computing</a></li>
+  <li><a href="#challenges-in-fda-submission-approaches" id="toc-challenges-in-fda-submission-approaches" class="nav-link" data-scroll-target="#challenges-in-fda-submission-approaches">Challenges in FDA Submission Approaches</a></li>
+  <li><a href="#pilot-projects-update-and-collaboration" id="toc-pilot-projects-update-and-collaboration" class="nav-link" data-scroll-target="#pilot-projects-update-and-collaboration">Pilot Projects Update and Collaboration</a></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next Steps</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2022-06-04/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2026-02-06/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -398,98 +403,97 @@ ul.task-list li input[type="checkbox"] {
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
-<li>Bob Engle (Biogen)</li>
-<li>Ellis Hughes (GSK)</li>
-<li>Gabriel Becker (Roche/Genentech)</li>
-<li>Gregory Chen (MSD)</li>
-<li>Jizu Zhi (FDA)</li>
-<li>Joseph Rickert (R Consortium)</li>
-<li>Kui Schen (Bayer)</li>
-<li>Michael Blanks (BeiGene)</li>
-<li>Nan Xiao (Merck)</li>
+<li>Andre Couturier (Sanofi)</li>
+<li>Ben Straub (GSK)</li>
+<li>Eric Nantz (Eli Lilly)</li>
+<li>Gabriel Krotkov (FDA)</li>
+<li>Hong Zheng (Bayer)</li>
+<li>Hye Soo Cho (FDA)</li>
+<li>Karthik Velega (Unknown)</li>
+<li>Luis Osorio (Los Angeles Count Department of Public Health)</li>
+<li>Ning Leng (AbbVie)</li>
 <li>Phanikumar Tata (Syneos Health)</li>
 <li>Phil Bowsher (Posit)</li>
 <li>Robert Devine (Johnson &amp; Johnson)</li>
-<li>Ryan Johnson (Posit)</li>
-<li>Sean Healey (Pfizer)</li>
-<li>Steven Hasendinckx (Johnson &amp; Johnson)</li>
-<li>Tadeusz Lewandowski (Roche/Genentech)</li>
-<li>Xin Qiu (Johnson &amp; Johnson)</li>
+<li>Sam Parmar (Pfizer)</li>
+<li>Sara Z (Unknown)</li>
+<li>Sydney Dennison (Pfizer)</li>
+<li>Vital Reddy Jaggavarapu (Boehringer Ingelheim)</li>
+<li>Yogesh Gupta (Pfizer)</li>
+<li>Youn Kyeong Chang (FDA)</li>
 </ul>
 </div>
 </div>
 </div>
-<p>Unfortunately, the video of the meeting is not available.</p>
-<p>JBR began the meeting with this agenda:</p>
-<ul>
-<li>Pilot 2 Status Update</li>
-<li>R Adoption Webinar</li>
-<li>Pilot 3 Status?</li>
-<li>Japan Submission Status?</li>
-<li>China Submission Status?</li>
-<li>Review project Board</li>
-<li>Open Discussion</li>
-</ul>
-<section id="pilot-2-status" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-2-status">Pilot 2 Status</h3>
-<p>The following status was provided in an email to JBR by Ning Leng</p>
-<ul>
-<li>The Pilot 2 team is addressing feedback from this working group</li>
-<li>The Roche “NEST” software, which includes the <code>teal</code> package, is scheduled to be open sourced in mid June.</li>
-<li>After <code>teal</code> open source: Pilot 2 team will package up the <code>shiny</code> app code using the <code>golem</code> package.</li>
-<li>Pilot 2 is on track for July Submission</li>
-</ul>
-<p>JBR asked the following questions:</p>
-<ul>
-<li>Will teal be put on CRAN?</li>
-<li>Is the gateway ready?</li>
-<li>Is the <a href="https://github.com/RConsortium/submissions-wg/issues/80">cover letter</a> for Pilot 2 fine?</li>
-</ul>
-<p>No one present was sure whether the <code>teal</code> package would be submitted to CRAN before the submission or whether the Pilot 2 submission would be made with this package on GitHub. Tad L. noted <code>teal</code> will have an Apache 2.0 license.</p>
-<p>Tad Lewandowski noted that the Pilot 2 execution team received several helpful comments on the <code>shiny</code> app. The team plans to keep the initial app as simple as possible and will consider the ideas proposed in the comments as extensions for the future. He also noted hat the Roche team has built additional <code>shiny</code> apps that have been made public and are available for use in future submissions that collectively form a “clinical studies results viewer”. These include:</p>
-<ul>
-<li><a href="https://genentech.shinyapps.io/teal_efficacy/">Efficacy</a></li>
-<li><a href="https://genentech.shinyapps.io/teal_exploratory/">Exploratory</a></li>
-<li><a href="https://genentech.shinyapps.io/teal_safety/">Safety</a></li>
-</ul>
-<p>The next meeting of the execution team will be on 6-16-2022</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The creation of these meeting minutes was supported by the use of Zoom AI for meeting summaries.</p>
+</div>
+</div>
+<section id="quick-recap" class="level2">
+<h2 class="anchored" data-anchor-id="quick-recap">Quick Recap</h2>
+<p>The February Working Group Meeting focused on updates and discussions around ongoing pilot projects, website improvements, and technical challenges. Eric led the meeting, addressing the status of Pilot 4’s summary report, which is near completion with feedback incorporated, and Pilot 5’s resubmission, awaiting review. Hye provided updates on Pilot 4’s draft report and clarified file name discrepancies due to legacy tools. The group discussed technical challenges with Docker containers, particularly on Windows, and explored alternative technologies like Nix for future submissions. Ning introduced Pilot 7, which aims to simulate clinical trial data using AI tools, and encouraged collaboration. Vital, a new member, was welcomed and encouraged to participate in ongoing pilots. The conversation ended with a brief overview of Pilot 6 and discussions on improving the website and documentation.</p>
 </section>
-<section id="r-adowtion-series-webinar" class="level3">
-<h3 class="anchored" data-anchor-id="r-adowtion-series-webinar">R Adowtion Series Webinar</h3>
-<p>The next R Consortium R Adoption series webinar will feature the work of the Submissions Working group The tentative agenda for the 2022 July R Adoption webinar is:</p>
+<section id="r-consortium-blog-post-review" class="level2">
+<h2 class="anchored" data-anchor-id="r-consortium-blog-post-review">R Consortium Blog Post Review</h2>
+<p>The meeting began with Eric greeting participants and discussing technical difficulties with his microphone 😅. The group then reviewed the agenda, which included a discussion about a new blog post for the R Consortium blog. Eric inquired about the status of the blog post, which was supposed to recap new pilots and existing pilots, but he was unsure if it had been published yet. Ben shared that an <a href="https://github.com/RConsortium/rconsortium_website/pull/553">open pull request</a> to the R Consortium web site has the contents of the blog post, and the goal is to publish the blog post by Monday (February 9).</p>
+</section>
+<section id="meeting-notes-review-and-automation" class="level2">
+<h2 class="anchored" data-anchor-id="meeting-notes-review-and-automation">Meeting Notes Review and Automation</h2>
+<p>Ben and Eric discussed the review and publication of meeting notes. They discussed the potential to streamline the process of linking agenda and minutes across the main submissions working group site and the GitHub Discussions board where the meeting agendas are posted. Eric mentioned the possibility of using an LLM to automate this. Ben also raised the need for help with visualizing pilot timelines on the website, but no new volunteers came forward.</p>
+</section>
+<section id="website-improvements-and-pilot-updates" class="level2">
+<h2 class="anchored" data-anchor-id="website-improvements-and-pilot-updates">Website Improvements and Pilot Updates</h2>
+<p>The group discussed website improvements, with Ben suggesting adding hex stickers and Eric proposing a timeline schematic for pilot access. Vital, a new member from Boringheim, introduced himself and expressed interest in contributing to the group’s R submissions work. Phanikumar offered to help with website development and suggested creating a template for the corto site. The group agreed that Vital should join the Slack channel to participate in ongoing pilot discussions. Eric provided an update on Pilot 4, mentioning that the summary report was being finalized with additional research being conducted to provide more information.</p>
+</section>
+<section id="pilot-updates-and-technical-clarifications" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-updates-and-technical-clarifications">Pilot Updates and Technical Clarifications</h2>
+<p>Hye Soo provided updates on Pilot 5, which has been resubmitted but not yet reviewed, and discussed Pilot 4, for which the draft summary report has been completed and is being revised based on Eric’s feedback. They addressed a file name discrepancy issue, which was clarified by Beverly as being caused by an old ECTD publishing tool at Genentech that automatically converts underscores to hyphens. Eric expressed relief at having a clear explanation for the file name discrepancy, which had been perplexing the team. The meeting also touched on the logistics of running Docker containers, with Eric explaining the technical details behind networking and local application running.</p>
+</section>
+<section id="docker-implementation-for-fda-applications" class="level2">
+<h2 class="anchored" data-anchor-id="docker-implementation-for-fda-applications">Docker Implementation for FDA Applications</h2>
+<p>Eric explained the technical details of running Shiny applications in Docker containers, particularly how network addresses and port mapping work. He noted that while Docker works well on Linux, there are challenges with Windows due to the WSL virtual machine layer. Hye clarified that while the FDA previously had restrictions on Docker access, these issues have been resolved, though new users still need IT approval to install Docker on FDA laptops. Ben acknowledged the significant technical hurdles faced in developing the container-based submission system for Pilot 4, and Eric warned that Docker’s practical use at FDA review divisions may be limited due to evolving IT policies.</p>
+</section>
+<section id="container-and-package-manager-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="container-and-package-manager-discussion">Container and Package Manager Discussion</h2>
+<p>The team discussed various container technologies and package managers for pharmaceutical submissions, with Eric explaining that Docker and Podman build on a common Linux framework for managing segregated processes. Eric introduced Nix as a potential alternative to container technology, describing it as a package manager that creates reproducible environments through symbolic links and sandboxing, though its adoption in R is still limited and it requires WSL on Windows systems. Phanikumar noted that Nix is gaining traction as a better alternative to RENV lock files in the DevOps community, while Eric acknowledged that while Nix offers advantages over Docker/Podman, the current infrastructure and WSL requirements make it less suitable for their immediate needs.</p>
+</section>
+<section id="cloud-solutions-for-fda-computing" class="level2">
+<h2 class="anchored" data-anchor-id="cloud-solutions-for-fda-computing">Cloud Solutions for FDA Computing</h2>
+<p>Ning suggested exploring the possibility of FDA developing a cloud-based solution to address computing environment issues, referencing the Precision FDA platform built on AWS for research. Gabriel clarified that while cloud-based solutions might be feasible for certain FDA divisions, the Office of Biostatistics and Cedar likely won’t adopt such environments soon due to restrictive computing environments, particularly concerning the WSL dependency. Gabriel emphasized the need to align with the most restrictive environments to ensure convenience for reviewers, explaining the complexity of running Docker containers in these settings.</p>
+</section>
+<section id="challenges-in-fda-submission-approaches" class="level2">
+<h2 class="anchored" data-anchor-id="challenges-in-fda-submission-approaches">Challenges in FDA Submission Approaches</h2>
+<p>The team discussed challenges with using WebAssembly and Docker containers for FDA regulatory submissions, noting that while these approaches are promising, they may not be the most efficient or robust options in the near term. Eric provided detailed explanations about networking and WebAssembly, which Hye will consider for inclusion in the pilot summary report. The group agreed to highlight this gap in their communications, including in a blog post and at conferences, to potentially enable further discussions with the right FDA personnel. They also acknowledged that the PIO4 report will demonstrate the viability of container-based approaches, which could influence industry trends.</p>
+</section>
+<section id="pilot-projects-update-and-collaboration" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-projects-update-and-collaboration">Pilot Projects Update and Collaboration</h2>
+<p>The meeting focused on updates and discussions about various pilot projects, including Pilot 5, 6, and 7. Ben and Sam are working on Pilot 5, which involves exploring dataset JSON and will be presented at a conference in March. Pilot 6 aims to create more datasets and tables for future use, while Pilot 7, led by Ning, involves simulating clinical trial data using an AI tool developed by Jimin’s team. The team discussed the need for newer, more realistic data for testing tools and evaluating submissions. Participants expressed interest in collaborating and contributing to these projects, with Ning inviting others to join the weekly Pilot 7 stand-up meetings.</p>
+</section>
+<section id="next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps">Next Steps</h2>
 <ul>
-<li>Tentative date: July 14</li>
-<li>Meeting length: 1.5 hr</li>
-<li>Opening (5min) - Coline, R consortium/Roche</li>
-<li>Presentation: Achieving Regulatory Approval Using R (20min) Tae Hyun Jung, FDA</li>
-<li>Presentation: Review experience of the R consortium R submission pilot 1 (20min) Hye Soo Cho, FDA</li>
-<li>Panel discussion (45min)</li>
-<li>Moderator: Ning Leng, R consortium/Roche</li>
-<li>Panelists: Paul Schuette, Hye Soo Cho, and Tae Hyun Jung</li>
+<li>Eric: Review the blog post draft summarizing Pilots 4, 5, 6, and 7 and provide feedback, with aim to publish on Monday.</li>
+<li>Ben: Share the blog post PR link in the chat for others to review and comment.</li>
+<li>Hye Soo: Finalize and begin the clearance process for the Pilot 4 summary report this month, incorporating relevant technical findings and Eric’s feedback.</li>
+<li>Phanikumar: Create a draft of a new website (Quarto) for the group, share with the team for feedback within a couple of weeks, and coordinate further discussion on Slack.</li>
+<li>Vital: Join the Slack channel to participate in ongoing pilot discussions and connect with Phanikumar for onboarding and collaboration.</li>
+<li>Ning: Continue leading Pilot 7, including weekly stand-up meetings; welcome new contributors and coordinate collaboration (e.g., with Yogesh/Pfizer).</li>
+<li>Ben and Sam: Present on Pilot 5 at the Fuse conference (March 22/23), focusing on dataset JSON and Pilot 5 exploration.</li>
+<li>Eric: Investigate automation or LLM-based solutions to link meeting agendas with published minutes and consider modernizing the documentation pipeline.</li>
+<li>Hye Soo: Discuss with Paul the possibility of a meeting with the FDA IT team regarding cloud-based solutions for containerized submissions, and report back if there is any update.</li>
+<li>Hye Soo: Consider highlighting the gap/need for centralized cloud-based solutions in future letters, blog posts, and conference discussions, as suggested by Ning.</li>
+<li>Eric: Add entries for Pilots 6 and 7 to the public website as they become more involved.</li>
+<li>Yogesh and Ning: Connect to discuss potential collaboration on Pilot 7, especially regarding SDTM/ADaM implementation and sharing of internal packages.</li>
 </ul>
-</section>
-<section id="pilot-3" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-3">Pilot 3</h3>
-<p>JBR asked the group to begin thinking about Pilot 3. He noted that we had been thinking about using container technology in a submission, but the WG has not completed its investigation into container technology and the FDA does not appear to be ready for such a submission.</p>
-<p>Tad suggested that questions about the content of a Pilot 3 submission would be appropriate for the panel discussion of the upcoming webinar.</p>
-</section>
-<section id="japan-submission" class="level3">
-<h3 class="anchored" data-anchor-id="japan-submission">Japan Submission</h3>
-<p>Tad and his colleagues have had a paper accepted for the upcoming <a href="https://www.diaglobal.org/en/conference-listing/meetings/2022/10/19th-dia-japan-annual-meeting-2022">DIA Conference.</a></p>
-</section>
-<section id="china-submission" class="level3">
-<h3 class="anchored" data-anchor-id="china-submission">China Submission</h3>
-<p>No update.</p>
-</section>
-<section id="general-discussion" class="level3">
-<h3 class="anchored" data-anchor-id="general-discussion">General Discussion</h3>
-<p>The group then updated the project <a href="https://github.com/RConsortium/submissions-wg/projects/2">kanban board</a> moving the <code>shiny</code> documentation to the “In Progress” column.</p>
-<p>The discussion then turned towards considering the topic of HTA, <a href="https://www.nlm.nih.gov/nichsr/hta101/ta10103.html">Health Technology Assessment</a> submissions that was considered in our previous meeting. We are only at the beginning stages and need discuss which European agency we would like to target and what we could bring to the HTA process. As was noted at our previous meeting, <a href="https://www.nice.org.uk/">NICE</a> in the U.K. and <a href="https://www.iqwig.de/en/about-us/methods/results/hta-reports/">IQWIG</a> in Germany are the primary candidates.</p>
-<p><strong>Action</strong> HTA submissions will be a topic for the July Meeting. Tad Lewandowski will ask his colleague Christian Buehrer to speak about Roche’s efforts in this area.</p>
-<p>Gregory Chen noted that several members of the WG have expressed in interest in HTA submissions. He also suggested that it would be very helpful to involve experts in this area to assist us.</p>
-<p><strong>Action</strong> Gregory agreed to take the lead on compiling a list of experts whose participation could help the working group.</p>
-<p><strong>Action</strong> Once the list is available, JBR agreed to contact people on the list to seek their participation.</p>
-<p>The next meeting of the WG will be at 9AM Pacific Time, on Friday July 1, 2022.</p>
 
 
 </section>
@@ -950,4 +954,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2022-06-04/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2026-02-06/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
