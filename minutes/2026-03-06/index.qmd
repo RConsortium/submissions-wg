@@ -1,0 +1,57 @@
+---
+title: "Minutes 2026-03-06"
+date: 2026-03-06
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Ben Straub (GSK)
+- Chi-Hua Huang (Astellas Pharmaceuticals)
+- Gabriel Krotkov (FDA)
+- Hong Zheng (Bayer)
+- Hye Soo Cho (FDA)
+- Jared Woolfolk (Cytel)
+- Ning Leng (AbbVie)
+- Paul Schuette (FDA)
+- Ram
+- Robert Devine (Johnson & Johnson)
+- Steven
+- Vinod Kumar
+- Vital Reddy Jaggavarapu (Boehringer Ingelheim)
+- Youn Kyeong Chang (FDA)
+:::
+
+::: {.callout-note}
+The creation of these meeting minutes was supported by the use of Zoom AI for meeting summaries.
+:::
+
+## Quick Recap
+
+The Submissions Working Group meeting focused primarily on technical challenges with R version compatibility and package installations, particularly regarding Pilot 5 submissions and FDA review processes. The group discussed issues with curl library compilation errors and the challenges of maintaining reproducibility across different R versions, with Ben and Hye sharing their experiences about testing Pilot 5 in different R environments. The discussion also covered updates on Pilot 6's progress with Kadji AI for data quality checks and Pilot 7's collaboration with KGAI for developing realistic trial datasets, including potential future collaboration with Absalom's MetaForce AI suite. The conversation ended with a brief discussion about AI tools in regulatory submissions, where Paul clarified that while FDA uses AI for research and administrative purposes, it is not currently used for direct drug review.
+
+## Summary
+
+### Pilot 5 Technical Issues Discussion
+
+The team discussed technical issues with Pilot 5, where Hye reported errors when running the REMV package due to version compatibility between R 4.4.3 and 4.5.2, with the error specifically related to SSL connectivity during curl installation. Ben offered to investigate the error further, while Eric suggested it might be related to missing development libraries for curl compilation. The team also noted that Pilot 4's clearance process was underway and expected to be completed within a month.
+
+### R Version and Curl Compatibility
+
+The team discussed issues with R version compatibility and compilation errors related to the curl library. Hye reported problems with version 4.5.2 and was advised to test on a 4.4.3 workstation, which Gabriel confirmed was being set up. Eric suggested that the issue might be related to an older version of curl being compiled from source, rather than an R version problem. The team agreed to compare results between different R versions to identify the root cause, with Eric offering to test on virtual machines. Ben requested a follow-up meeting with Hye to discuss technical details further.
+
+### R Version Management for FDA
+
+The group discussed R version management and compatibility issues for FDA submissions. They explored the possibility of synchronizing release schedules between companies and sharing information with FDA. The conversation touched on the use of AI in regulatory submissions and the potential challenges it may pose. They also discussed ongoing pilot projects and the progress being made in data quality checks and AI integration. The conversation ended with plans to organize a separate session focused on reproducibility and validation issues. 
+
+## Next Steps
+
+* Hye Soo: Test the resubmitted Pilot 5 in R 4.4.3 and report if the same error occurs or not.
+* Gabriel: Install R 4.4.3 and RTools 4.4 on a workstation and notify Hye which machine it is after the meeting.
+* Gabriel: Consider tracking all R versions on each workstation in a more structured way to help team members find required versions in the future.
+* Ning: Start an email thread with representatives from Roche, GSK, Lilly, and Boehringer to discuss and potentially sync up R version update cycles, and share information with FDA.
+* Vital: Check internally at Boehringer how often R versions are updated and what the schedule is, then share this information with the group.
+* Ben: Push internally at GSK to sync R version update cycles with the group.
+* Eric: Boot up a VM with R 4.4.3 and 4.5.2 to attempt to replicate the curl/SSL error and report findings.
+* Ben: Offer to meet one-on-one with Hye to discuss technical troubleshooting when Hye gets access to R 4.4.3.
+* Jared: Do some digging on the curl/SSL error and share findings with the group.
