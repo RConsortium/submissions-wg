@@ -1,4 +1,4 @@
----
+ ---
 title: "Minutes 2026-03-06"
 date: 2026-03-06
 ---
@@ -42,7 +42,19 @@ The team discussed issues with R version compatibility and compilation errors re
 
 ### R Version Management for FDA
 
-The group discussed R version management and compatibility issues for FDA submissions. They explored the possibility of synchronizing release schedules between companies and sharing information with FDA. The conversation touched on the use of AI in regulatory submissions and the potential challenges it may pose. They also discussed ongoing pilot projects and the progress being made in data quality checks and AI integration. The conversation ended with plans to organize a separate session focused on reproducibility and validation issues. 
+The group discussed R version management and compatibility issues for FDA submissions. They explored the possibility of synchronizing release schedules between companies and sharing information with FDA. The conversation touched on the use of AI in regulatory submissions and the potential challenges it may pose. They also discussed ongoing pilot projects and the progress being made in data quality checks and AI integration. The conversation ended with plans to organize a separate session focused on reproducibility and validation issues.
+
+### Discussion on use of AI
+
+The group discussed the current landscape of leveraging artificial intelligence in the continued progress of Pilots 6 and 7, as well as recent discourse in the general community. One recent development in Pilot 7 is to begin creating skills tailored to clinical data simulation which will be open-sourced. 
+
+Resources mentioned in the discussion:
+
+* [rig](https://github.com/r-lib/rig): The R Installation Manager (cross-platform)
+* R Consortium blog post: [The Crucial Role of Release Control in R for Healthcare Organizations](https://r-consortium.org/posts/the-crucial-role-of-release-control-in-r-for-healthcare-organizations/)
+* [Developers, Reinvented](https://ashtom.github.io/developers-reinvented) (Thomas Dohmke)
+* R/Pharma GenAI Day 2025 recordings [playlist](https://www.youtube.com/playlist?list=PLMtxz1fUYA5CrQehBULN5lHlnz-uVLOxy)
+
 
 ## Next Steps
 
