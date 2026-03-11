@@ -10,7 +10,113 @@
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.27</generator>
-<lastBuildDate>Fri, 06 Feb 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 06 Mar 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2026-03-06</title>
+  <dc:creator>Eric Nantz</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2026-03-06/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Ben Straub (GSK)</li>
+<li>Chi-Hua Huang (Astellas Pharmaceuticals)</li>
+<li>Gabriel Krotkov (FDA)</li>
+<li>Hong Zheng (Bayer)</li>
+<li>Hye Soo Cho (FDA)</li>
+<li>Jared Woolfolk (Cytel)</li>
+<li>Ning Leng (AbbVie)</li>
+<li>Paul Schuette (FDA)</li>
+<li>Ram</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Steven</li>
+<li>Vinod Kumar</li>
+<li>Vital Reddy Jaggavarapu (Boehringer Ingelheim)</li>
+<li>Youn Kyeong Chang (FDA)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The creation of these meeting minutes was supported by the use of Zoom AI for meeting summaries.</p>
+</div>
+</div>
+<section id="quick-recap" class="level2">
+<h2 class="anchored" data-anchor-id="quick-recap">Quick Recap</h2>
+<p>The Submissions Working Group meeting focused primarily on technical challenges with R version compatibility and package installations, particularly regarding Pilot 5 submissions and FDA review processes. The group discussed issues with curl library compilation errors and the challenges of maintaining reproducibility across different R versions, with Ben and Hye sharing their experiences about testing Pilot 5 in different R environments. The discussion also covered updates on Pilot 6’s progress with Kadji AI for data quality checks and Pilot 7’s collaboration with KGAI for developing realistic trial datasets, including potential future collaboration with Absalom’s MetaForce AI suite. The conversation ended with a brief discussion about AI tools in regulatory submissions, where Paul clarified that while FDA uses AI for research and administrative purposes, it is not currently used for direct drug review.</p>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<section id="pilot-5-technical-issues-discussion" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-5-technical-issues-discussion">Pilot 5 Technical Issues Discussion</h3>
+<p>The team discussed technical issues with Pilot 5, where Hye reported errors when running the REMV package due to version compatibility between R 4.4.3 and 4.5.2, with the error specifically related to SSL connectivity during curl installation. Ben offered to investigate the error further, while Eric suggested it might be related to missing development libraries for curl compilation. The team also noted that Pilot 4’s clearance process was underway and expected to be completed within a month.</p>
+</section>
+<section id="r-version-and-curl-compatibility" class="level3">
+<h3 class="anchored" data-anchor-id="r-version-and-curl-compatibility">R Version and Curl Compatibility</h3>
+<p>The team discussed issues with R version compatibility and compilation errors related to the curl library. Hye reported problems with version 4.5.2 and was advised to test on a 4.4.3 workstation, which Gabriel confirmed was being set up. Eric suggested that the issue might be related to an older version of curl being compiled from source, rather than an R version problem. The team agreed to compare results between different R versions to identify the root cause, with Eric offering to test on virtual machines. Ben requested a follow-up meeting with Hye to discuss technical details further.</p>
+</section>
+<section id="r-version-management-for-fda" class="level3">
+<h3 class="anchored" data-anchor-id="r-version-management-for-fda">R Version Management for FDA</h3>
+<p>The group discussed R version management and compatibility issues for FDA submissions. They explored the possibility of synchronizing release schedules between companies and sharing information with FDA. The conversation touched on the use of AI in regulatory submissions and the potential challenges it may pose. They also discussed ongoing pilot projects and the progress being made in data quality checks and AI integration. The conversation ended with plans to organize a separate session focused on reproducibility and validation issues.</p>
+</section>
+<section id="discussion-on-use-of-ai" class="level3">
+<h3 class="anchored" data-anchor-id="discussion-on-use-of-ai">Discussion on use of AI</h3>
+<p>The group discussed the current landscape of leveraging artificial intelligence in the continued progress of Pilots 6 and 7, as well as recent discourse in the general community. One recent development in Pilot 7 is to begin creating skills tailored to clinical data simulation which will be open-sourced.</p>
+<p>Resources mentioned in the discussion:</p>
+<ul>
+<li><a href="https://github.com/r-lib/rig">rig</a>: The R Installation Manager (cross-platform)</li>
+<li>R Consortium blog post: <a href="https://r-consortium.org/posts/the-crucial-role-of-release-control-in-r-for-healthcare-organizations/">The Crucial Role of Release Control in R for Healthcare Organizations</a></li>
+<li><a href="https://ashtom.github.io/developers-reinvented">Developers, Reinvented</a> (Thomas Dohmke)</li>
+<li>R/Pharma GenAI Day 2025 recordings <a href="https://www.youtube.com/playlist?list=PLMtxz1fUYA5CrQehBULN5lHlnz-uVLOxy">playlist</a></li>
+</ul>
+</section>
+</section>
+<section id="next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps">Next Steps</h2>
+<ul>
+<li>Hye Soo: Test the resubmitted Pilot 5 in R 4.4.3 and report if the same error occurs or not.</li>
+<li>Gabriel: Install R 4.4.3 and RTools 4.4 on a workstation and notify Hye which machine it is after the meeting.</li>
+<li>Gabriel: Consider tracking all R versions on each workstation in a more structured way to help team members find required versions in the future.</li>
+<li>Ning: Start an email thread with representatives from Roche, GSK, Lilly, and Boehringer to discuss and potentially sync up R version update cycles, and share information with FDA.</li>
+<li>Vital: Check internally at Boehringer how often R versions are updated and what the schedule is, then share this information with the group.</li>
+<li>Ben: Push internally at GSK to sync R version update cycles with the group.</li>
+<li>Eric: Boot up a VM with R 4.4.3 and 4.5.2 to attempt to replicate the curl/SSL error and report findings.</li>
+<li>Ben: Offer to meet one-on-one with Hye to discuss technical troubleshooting when Hye gets access to R 4.4.3.</li>
+<li>Jared: Do some digging on the curl/SSL error and share findings with the group.</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2026-03-06/</guid>
+  <pubDate>Fri, 06 Mar 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2026-02-06</title>
   <dc:creator>Eric Nantz</dc:creator>
@@ -1998,141 +2104,6 @@ Caution
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-08-02/</guid>
   <pubDate>Fri, 02 Aug 2024 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2024-06-07</title>
-  <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2024-06-07/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Ben Straub (GSK)</li>
-<li>Eva Li</li>
-<li>Heidi Curinckx (Johnson &amp; Johnson)</li>
-<li>HyeSoo Cho (FDA)</li>
-<li>Ismael Alejandro Rodriguez (Appsilon)</li>
-<li>Jane Owens (Phuse &amp; Eli Lilly)</li>
-<li>Joel Laxamana (Roche/Genentech)</li>
-<li>Joseph Rickert (R Consortium)</li>
-<li>Lovemore Gakava (Novo Nordisk)</li>
-<li>Ning Leng (Roche/Genentech)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Saghir Bashir (Argenx)</li>
-<li>Stephanie Lussier (Moderna)</li>
-<li>Steven Hasendinckx (Johnson &amp; Johnson)</li>
-<li>YounKyeong Chang (FDA)</li>
-</ul>
-</div>
-</div>
-</div>
-<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/cMcaFb0OOQmcFhdwktFrFu31Bd3ANXFm91ugZqe5WzRM0erMMzQVhYDBd1fa_Am8.ATQgpOrlYiLru6b4?startTime=1717776258000">video</a> is available.</p>
-<section id="pharmasug-conference" class="level2">
-<h2 class="anchored" data-anchor-id="pharmasug-conference">PharmaSUG Conference</h2>
-<ul>
-<li>Both Ben Straub (Pilot 3) and Ismael Rodriguez (Pilot 4) gave talks at the recent <a href="https://www.pharmasug.org/us/index.html">Pharma SUG</a> conference which was held in Baltimore.</li>
-<li>Both reported that there was a lot of interest in their talks</li>
-<li>Ben reported that he spoke to several people who thought the the FDA only approves SAS submissions.</li>
-<li>Both presentations will be placed in the R Submissions WG GitHub repository.</li>
-</ul>
-</section>
-<section id="coordination-with-r-package-validation" class="level2">
-<h2 class="anchored" data-anchor-id="coordination-with-r-package-validation">Coordination with R Package Validation</h2>
-<ul>
-<li>Ismael noted that Magnus from a package validation working group approached him about cooperating with the Submissions WG.</li>
-<li>JBR asked Ismael to ask Magnus to write to him and said that we be happy to invite Magnus to our meetings.</li>
-</ul>
-</section>
-<section id="pilot-3" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-3">Pilot 3</h2>
-<p>Hye Soo Cho and YounKyeong Chang provided an update on their review of the Pilot 3 submission.</p>
-<ul>
-<li>The FDA eviewers are wrapping up their review.</li>
-<li>There are no major issues.</li>
-<li>They were able to install the Util package from the zip file and review the R programs to drive the ADaM data sets.</li>
-<li>QC of the ADRG did turn up a minor issue regarding inconsistencies among three date variables.
-<ul>
-<li>The discussion of this issue begins at <strong>7:55</strong> in the video and is illustrated in the screen capture below.</li>
-<li>The recommended solution is that the date origin should be specified in ISO 8601 date/time format in the ADRG.</li>
-<li>Joel agreed to review the record of issues with Pilot 3 and see if there are any other parameters that ought to be explicitly mentioned in the ADRG.</li>
-</ul></li>
-</ul>
-<p><img src="https://rconsortium.github.io/submissions-wg/minutes/2024-06-07/dates.png" class="img-fluid"></p>
-</section>
-<section id="pilot-4" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-4">Pilot 4</h2>
-<p>Eric Nantz described progress on the Pilot 4 Submission.</p>
-<ul>
-<li>The end of June is still our target for the WebAssembly version of Pilot 4.</li>
-<li>The plan is to do the container version at a later time after the WebAssembly version has been reviewed.</li>
-<li>The question was asked if there are any special rules about package downloads.</li>
-<li>Paul Schuette stated that downloading from CRAN is preferable, that in addition to the serialization FDA Security has mentioned downloads as a potential security problem, but that as far as he knows there are no regulations.</li>
-<li>Eric pointed out that the Docker version of Pilot 4 also requires an image download.</li>
-<li>Eric and Paul will meet to discuss this issue.</li>
-<li>Eric will provide ADRG instructions and he and Paul will investigate,</li>
-<li>Paul noted that the FDA has recently approved WSL (Windows System Linux)</li>
-</ul>
-</section>
-<section id="adrg" class="level2">
-<h2 class="anchored" data-anchor-id="adrg">ADRG</h2>
-<p>There has been discussion within the working group as to whether we should investigate best practices for writing ADRGs for R based submissions. JBR noted that recent comments in issue #112 suggested that we should coordinated with the PHUSE ADRG working group. Discussion begins at <strong>29:00</strong> into the video.</p>
-<ul>
-<li>As it turned out Jane Owens (Eli Lilly) who is co-lead of the PHUSE ADRG working group was on the call.</li>
-<li>PHUSE owns the ADRG templates</li>
-<li>They are actively working on updating the templates with respect to R in section 7.1 of the template.</li>
-<li>Pilot 3 has documentation on R packages in Section 7 and in an appendix to the ADRG (Section 9).</li>
-</ul>
-<p><img src="https://rconsortium.github.io/submissions-wg/minutes/2024-06-07/ADRG.png" class="img-fluid"></p>
-<ul>
-<li>PHUSE got its starting point for updating the ADRG for R from J&amp;J which Heidi Curinckx confirmed is based on J&amp;J’s participation in the Submissions WG.</li>
-<li>The PHUSE WG will publish their updated template and then send it out for review</li>
-<li>The Submissions WG and the PHUSE ADRG WG will cooperate and share information.</li>
-<li>JBR invited Jane and other members of her WG to attend future meetings.</li>
-</ul>
-</section>
-<section id="r-versions-blog-post" class="level2">
-<h2 class="anchored" data-anchor-id="r-versions-blog-post">R Versions Blog Post</h2>
-<p>A small group led my Ning Leng is working on a blog post aimed at generating consensus about what versions of R might be appropriate for R based submissions at any point in time.</p>
-<ul>
-<li>The post has been revised to reelect the Submissions WG point of view and ends with a request for readers to comment in an issue that that we will open up on our GitHub repository.</li>
-<li>The post includes paragraphs on how four companies Roche, Lilly, GSK, Pfizer deal internally with versioning and package management issues</li>
-<li>Unfortunately, we must remove the quote from Paul because including it would require FDA approval.</li>
-<li>Will also remove the FDA logo.</li>
-</ul>
-<p><strong>ACTION:</strong></p>
-<ul>
-<li>Ning and the other authors will finalize the text.</li>
-<li>JBR will send a MS word version of the post to Paul for final review.</li>
-</ul>
-</section>
-<section id="next-meeting" class="level2">
-<h2 class="anchored" data-anchor-id="next-meeting">Next meeting</h2>
-<ul>
-<li>Because the July meeting is scheduled on the US July 4th holiday weekend and because of travel to the useR! conference the July meeting will be cancelled. * The next meeting of the submissions WG will be at 9AM Pacific Time on Friday August 2, 2022.</li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-06-07/</guid>
-  <pubDate>Fri, 07 Jun 2024 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
