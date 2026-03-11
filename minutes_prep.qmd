@@ -97,6 +97,10 @@ date: ${meeting_print}
 ${silly}
 :::
 
+::: {.callout-note}
+The creation of these meeting minutes was supported by the use of Zoom AI for meeting summaries.
+:::
+
 ## Add Minutes Here
 
 </pre>`
