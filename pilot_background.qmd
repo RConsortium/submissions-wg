@@ -18,3 +18,6 @@ You can view more details about each of the current pilots by visiting their ded
 - [Pilot 2](pilot2.qmd): Shiny application submission
 - [Pilot 3](pilot3.qmd): ADaM datasets
 - [Pilot 4](pilot4.qmd): Alternative formats
+- [Pilot 5](https://rconsortium.github.io/submissions-pilot5-website/): DatasetJSON
+- [Pilot 6](pilot6.qmd): AI-assisted ADaM and TLF generation
+- [Pilot 7](pilot7.qmd): Synthetic clinical trial data
