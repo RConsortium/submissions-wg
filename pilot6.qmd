@@ -1,0 +1,36 @@
+---
+title: "R Submission Pilot 6"
+---
+
+## Pilot 6 - AI-Assisted ADaM and TLF Generation
+
+**Goal**: Leverage AI/LLM tools to generate a more comprehensive set of ADaM datasets and Tables, Listings, and Figures (TLFs) based on the original CDISC pilot study, expanding the scope of analysis artifacts available for future regulatory submissions.
+
+**Key evaluation aspects**:
+
+- For the Development Team
+  - Use AI coding assistants (e.g., GitHub Copilot, CodeZen, Keiji AI TrialMind) to generate R programs for ADaM dataset construction and TLF production
+  - Evaluate the effectiveness and efficiency of AI-assisted programming within the clinical submission context
+  - Ensure all generated programs and outputs follow CDISC standards and open-source principles
+- For the Broader Community
+  - Provide a publicly available, expanded submission package to support future Pilot submissions
+  - Demonstrate open and transparent use of AI tools in clinical data programming
+
+**Data and analysis scope**:
+
+- Builds upon the original CDISC Pilot 1 dataset (5 datasets, 3 tables, 1 figure) to produce a broader collection of ADaM datasets and TLFs
+- Uses CDISC Pilot 1 SDTM data as the reference source
+- Not intended as a formal submission to the FDA; serves as an exploratory and preparatory effort for future pilots
+
+**Links**:
+
+[R Submission Pilot 6 Development Repository](https://github.com/RConsortium/submissions-pilot6-adams-tlfs)
+
+**Key team members**:
+
+Developer team:
+
+- Ben Straub (GSK)
+- Dimitry Kolosov
+- Kevin Lee
+

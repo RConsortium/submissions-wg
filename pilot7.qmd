@@ -1,0 +1,36 @@
+---
+title: "R Submission Pilot 7"
+---
+
+## Pilot 7 - Synthetic Clinical Trial Data
+
+**Goal**: Develop and curate modern, realistic, and reusable synthetic clinical trial datasets that can serve as a high-quality public benchmark for evaluating R tools, AI-assisted analysis workflows, and end-to-end regulatory submissions.
+
+**Key evaluation aspects**:
+
+- For the Development Team
+  - Evaluate publicly available synthetic EDC data (e.g., from OpenClinica) as a foundation for realistic submission datasets
+  - Leverage AI tools to convert and transform raw synthetic data (e.g., XML) into tidy, analysis-ready datasets aligned with CDISC standards
+  - Develop skills and workflows tailored to clinical data simulation that will be open-sourced
+- For the Broader Community
+  - Provide modern, publicly available synthetic clinical trial data that addresses limitations of the existing CDISC Pilot 1 dataset (outdated standards, limited scale, insufficient complexity)
+  - Support tool demonstration, method evaluation, and community education across the pharmaceutical ecosystem
+
+**Data and analysis scope**:
+
+- Targets Phase 3 clinical trial scale and complexity
+- Initial dataset sourced from OpenClinica (8 MB XML synthetic EDC data with no identifying information)
+- Data will be organized into separate directories by type within the repository
+- Designed to benchmark R tools, AI-assisted analysis, automation, and end-to-end submission workflows
+
+**Links**:
+
+[R Submission Pilot 7 Development Repository](https://github.com/RConsortium/submissions-pilot7-synthetic-data)
+
+**Key team members**:
+
+Developer team:
+
+- Ning Leng (AbbVie)
+- Yilong Zhang (Meta)
+
