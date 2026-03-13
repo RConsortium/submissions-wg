@@ -162,3 +162,35 @@
   color: var(--bs-secondary-color, #6c757d);
   margin-top: 0.15rem;
 }
+
+/* ── SWG Featured Sticker ────────────────────────────────────────────────── */
+.swg-featured {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--bs-secondary-bg, #f8f9fa);
+  border: 2px solid #2b50a2;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 560px;
+}
+
+.swg-hex {
+  width: 100px;
+  height: auto;
+  flex-shrink: 0;
+  filter: drop-shadow(0 4px 8px rgba(43, 80, 162, 0.25));
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.swg-hex:hover {
+  transform: scale(1.06) translateY(-3px);
+  filter: drop-shadow(0 8px 14px rgba(43, 80, 162, 0.35));
+}
+
+.swg-featured-text {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--bs-body-color, #212529);
+}

@@ -38,7 +38,7 @@
       }
 
       .cls-2, .cls-6 {
-        fill: #E65100;
+        fill: #1565C0;
       }
 
       .cls-9 {
@@ -53,12 +53,12 @@
         font-family: Cousine-Bold, Cousine;
         font-weight: 700;
         font-size: 21px;
-        fill: #E65100;
+        fill: #1565C0;
         isolation: isolate;
       }
 
       .cls-5 {
-        fill: #FFB300;
+        fill: #42A5F5;
       }
     </style>
   </defs>

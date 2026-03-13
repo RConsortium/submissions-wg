@@ -23,6 +23,8 @@ Please visit the [How to Join](join.qmd) page for complete details on joining ou
 
 # Our Pilots
 
+The R Submissions Working Group has conducted a series of pilot projects to demonstrate and advance best practices for R-based regulatory submissions to the FDA. Each pilot builds on the last — exploring submissions packages, ADaM datasets, TLFs, novel technologies like WebAssembly and Dataset-JSON, AI-assisted analysis, and synthetic clinical data. Together they form a growing body of evidence that R is ready for the full regulatory submission workflow.
+
 ## Timeline
 
 ```{=html}
@@ -82,6 +84,14 @@ Please visit the [How to Join](join.qmd) page for complete details on joining ou
 ## Hex Stickers
 
 ```{=html}
+<div class="swg-featured">
+  <img src="hexes/swg.svg" alt="R Submissions Working Group hex sticker" class="swg-hex"/>
+  <div class="swg-featured-text">
+    <strong>R Submissions Working Group</strong><br/>
+    Seven pilots. One mission. Open-source R for regulatory submissions.
+  </div>
+</div>
+
 <div class="hex-grid">
 
 <a class="hex-item" href="pilot1.html">
