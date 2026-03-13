@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 462" width="400" height="462">
+  <defs>
+    <linearGradient id="bg7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a6b82;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1e4a5e;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <!-- Main hex -->
+  <polygon points="200,0 400,115.5 400,346.5 200,462 0,346.5 0,115.5"
+           fill="url(#bg7)" stroke="white" stroke-width="14"/>
+  <!-- Inner border -->
+  <polygon points="200,26 374,127 374,335 200,436 26,335 26,127"
+           fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="4"/>
+  <!-- Pilot number -->
+  <text x="200" y="180" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="96" font-weight="bold" fill="white" opacity="0.95">7</text>
+  <!-- Pilot label -->
+  <text x="200" y="255" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="38" font-weight="bold" fill="white">Pilot 7</text>
+  <!-- Date range -->
+  <text x="200" y="302" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="24" fill="rgba(255,255,255,0.85)">2026 – ongoing</text>
+  <!-- Coming soon badge -->
+  <rect x="115" y="325" width="170" height="32" rx="6"
+        fill="rgba(255,255,255,0.2)"/>
+  <text x="200" y="347" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="18" fill="white">Coming Soon</text>
+</svg>

@@ -20,3 +20,117 @@ You can view previous meeting minutes with links to recorded sessions [here](min
 
 Please visit the [How to Join](join.qmd) page for complete details on joining our working group.
 :::
+
+# Our Pilots
+
+## Timeline
+
+```{=html}
+<div class="timeline-wrapper">
+<div class="timeline-chart">
+<div class="timeline-years">
+<span>2021</span><span>2022</span><span>2023</span><span>2024</span><span>2025</span><span>2026</span><span>→</span>
+</div>
+<div class="timeline-rows">
+<div class="pilot-row">
+<div class="pilot-row-label">Pilot 1</div>
+<div class="pilot-row-track">
+<div class="pilot-row-bar bar-p1" style="left:0%;width:16.67%;">2021–2022</div>
+</div>
+</div>
+<div class="pilot-row">
+<div class="pilot-row-label">Pilot 2</div>
+<div class="pilot-row-track">
+<div class="pilot-row-bar bar-p2" style="left:16.67%;width:33.33%;">2022–2024</div>
+</div>
+</div>
+<div class="pilot-row">
+<div class="pilot-row-label">Pilot 3</div>
+<div class="pilot-row-track">
+<div class="pilot-row-bar bar-p3" style="left:33.33%;width:16.67%;">2023–2024</div>
+</div>
+</div>
+<div class="pilot-row">
+<div class="pilot-row-label">Pilot 4</div>
+<div class="pilot-row-track">
+<div class="pilot-row-bar bar-p4" style="left:50%;width:16.67%;">2024–2025</div>
+</div>
+</div>
+<div class="pilot-row">
+<div class="pilot-row-label">Pilot 5</div>
+<div class="pilot-row-track">
+<div class="pilot-row-bar bar-p5" style="left:66.67%;width:16.67%;">2025–2026</div>
+</div>
+</div>
+<div class="pilot-row">
+<div class="pilot-row-label">Pilot 6</div>
+<div class="pilot-row-track">
+<div class="pilot-row-bar bar-p6 ongoing" style="left:83.33%;width:16.67%;">2026–</div>
+</div>
+</div>
+<div class="pilot-row">
+<div class="pilot-row-label">Pilot 7</div>
+<div class="pilot-row-track">
+<div class="pilot-row-bar bar-p7 ongoing" style="left:83.33%;width:16.67%;">2026–</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+```
+
+## Hex Stickers
+
+```{=html}
+<div class="hex-grid">
+
+<a class="hex-item" href="pilot1.html">
+  <img src="hexes/pilot 1@2x.png" alt="Pilot 1 hex sticker"/>
+  <div class="hex-label">Pilot 1</div>
+  <div class="hex-dates">2021 – 2022</div>
+</a>
+
+<a class="hex-item" href="pilot2.html">
+  <img src="hexes/pilot 2_1@2x.png" alt="Pilot 2 hex sticker"/>
+  <div class="hex-label">Pilot 2</div>
+  <div class="hex-dates">2022 – 2024</div>
+</a>
+
+<a class="hex-item" href="pilot3.html">
+  <img src="hexes/pilot 3@2x.png" alt="Pilot 3 hex sticker"/>
+  <div class="hex-label">Pilot 3</div>
+  <div class="hex-dates">2023 – 2024</div>
+</a>
+
+<a class="hex-item" href="pilot4.html">
+  <img src="hexes/pilot 4a_1@2x.png" alt="Pilot 4a hex sticker"/>
+  <div class="hex-label">Pilot 4a</div>
+  <div class="hex-dates">2024 – 2025</div>
+</a>
+
+<a class="hex-item" href="pilot4.html">
+  <img src="hexes/pilot 4b@2x.png" alt="Pilot 4b hex sticker"/>
+  <div class="hex-label">Pilot 4b</div>
+  <div class="hex-dates">2024 – 2025</div>
+</a>
+
+<a class="hex-item" href="https://rconsortium.github.io/submissions-pilot5-website/" target="_blank" rel="noopener">
+  <img src="hexes/pilot 5@2x.png" alt="Pilot 5 hex sticker"/>
+  <div class="hex-label">Pilot 5</div>
+  <div class="hex-dates">2025 – 2026</div>
+</a>
+
+<span class="hex-item">
+  <img src="hexes/pilot 6.svg" alt="Pilot 6 placeholder"/>
+  <div class="hex-label">Pilot 6</div>
+  <div class="hex-dates">2026 – ongoing</div>
+</span>
+
+<span class="hex-item">
+  <img src="hexes/pilot 7.svg" alt="Pilot 7 placeholder"/>
+  <div class="hex-label">Pilot 7</div>
+  <div class="hex-dates">2026 – ongoing</div>
+</span>
+
+</div>
+```
