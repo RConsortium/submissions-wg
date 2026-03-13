@@ -31,6 +31,13 @@ title: "R Submission Pilot 6"
 Developer team:
 
 - Ben Straub (GSK)
-- Dimitry Kolosov
-- Kevin Lee
+- Brandon Theodorou (Keiji AI)
+- Camilla Calmasini
+- Dmitry Kolosov
+- Eli Miller (Atorus)
+- Jeff Dickinson (Navitas)
+- Phani Tata (Syneos)
+- Robert Devine (Johnson & Johnson Companies)
+- Sam Parmar (Pfizer)
+- Steven Haesendonckx (Johnson & Johnson Companies)
 
