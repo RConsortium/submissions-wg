@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Joseph Rickert">
-<meta name="dcterms.date" content="2021-04-05">
 
-<title>Minutes 2021-04-05 – R Submissions Working Group</title>
+<title>R Submission Pilot 7 – R Submissions Working Group</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,28 +23,28 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-28ce2f92125236a284ff4f393e5b0d14.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-7b59f535f4be280c95e9d201c1713015.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-28ce2f92125236a284ff4f393e5b0d14.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-28ce2f92125236a284ff4f393e5b0d14.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-7b59f535f4be280c95e9d201c1713015.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-28ce2f92125236a284ff4f393e5b0d14.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -244,11 +242,11 @@ ul.task-list li input[type="checkbox"] {
   </script>
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">R Submissions Working Group</span>
     </a>
   </div>
@@ -259,15 +257,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../minutes.html"> 
+    <a class="nav-link" href="./minutes.html"> 
 <span class="menu-text">Meeting Minutes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../join.html"> 
+    <a class="nav-link" href="./join.html"> 
 <span class="menu-text">How to Join</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -276,23 +274,23 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-pilots">    
         <li>
-    <a class="dropdown-item" href="../../pilot_background.html">
+    <a class="dropdown-item" href="./pilot_background.html">
  <span class="dropdown-text">Background</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pilot1.html">
+    <a class="dropdown-item" href="./pilot1.html">
  <span class="dropdown-text">R Submission Pilot 1</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pilot2.html">
+    <a class="dropdown-item" href="./pilot2.html">
  <span class="dropdown-text">R Submission Pilot 2</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pilot3.html">
+    <a class="dropdown-item" href="./pilot3.html">
  <span class="dropdown-text">R Submission Pilot 3</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pilot4.html">
+    <a class="dropdown-item" href="./pilot4.html">
  <span class="dropdown-text">R Submission Pilot 4</span></a>
   </li>  
         <li>
@@ -300,11 +298,11 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">R Submission Pilot 5</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pilot6.html">
+    <a class="dropdown-item" href="./pilot6.html">
  <span class="dropdown-text">R Submission Pilot 6</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../pilot7.html">
+    <a class="dropdown-item" href="./pilot7.html">
  <span class="dropdown-text">R Submission Pilot 7</span></a>
   </li>  
     </ul>
@@ -315,11 +313,11 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-site-development">    
         <li>
-    <a class="dropdown-item" href="../../dev_background.html">
+    <a class="dropdown-item" href="./dev_background.html">
  <span class="dropdown-text">Development Guide</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../minutes_prep.html">
+    <a class="dropdown-item" href="./minutes_prep.html">
  <span class="dropdown-text">Minutes Draft Gen</span></a>
   </li>  
     </ul>
@@ -340,82 +338,81 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Minutes 2021-04-05</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Joseph Rickert </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">April 5, 2021</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#pilot-7---synthetic-clinical-trial-data" id="toc-pilot-7---synthetic-clinical-trial-data" class="nav-link active" data-scroll-target="#pilot-7---synthetic-clinical-trial-data">Pilot 7 - Synthetic Clinical Trial Data</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/pilot7.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">R Submission Pilot 7</h1>
 </div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="pilot-7---synthetic-clinical-trial-data" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-7---synthetic-clinical-trial-data">Pilot 7 - Synthetic Clinical Trial Data</h2>
+<p><strong>Goal</strong>: Develop and curate modern, realistic, and reusable synthetic clinical trial datasets that can serve as a high-quality public benchmark for evaluating R tools, AI-assisted analysis workflows, and end-to-end regulatory submissions.</p>
+<p><strong>Key evaluation aspects</strong>:</p>
 <ul>
-<li>“Joseph Rickert - R Consortium”</li>
-<li>“Paul Schuette - FDA”</li>
-<li>“Yilong Zhang - Merck”</li>
-<li>“Doug Kelkhoff - Genentech”</li>
-<li>“Nan Xiao - Merck”</li>
-<li>“Ning Leng - Genentech”</li>
-<li>“Bob Engle - Biogen”</li>
-<li>“Eric Nantz - Lilly”</li>
-<li>“Phil Bowsher - RStudio”</li>
-<li>“Sean Lopp - RStudio”</li>
+<li>For the Development Team
+<ul>
+<li>Evaluate publicly available synthetic EDC data (e.g., from OpenClinica) as a foundation for realistic submission datasets</li>
+<li>Leverage AI tools to convert and transform raw synthetic data (e.g., XML) into tidy, analysis-ready datasets aligned with CDISC standards</li>
+<li>Develop skills and workflows tailored to clinical data simulation that will be open-sourced</li>
+</ul></li>
+<li>For the Broader Community
+<ul>
+<li>Provide modern, publicly available synthetic clinical trial data that addresses limitations of the existing CDISC Pilot 1 dataset (outdated standards, limited scale, insufficient complexity)</li>
+<li>Support tool demonstration, method evaluation, and community education across the pharmaceutical ecosystem</li>
+</ul></li>
 </ul>
-</div>
-</div>
-</div>
-<p>Joe Rickert brought the meeting to order and reminded attendees about the action item from the previous meeting to consider the SDTCG_SoftwareProgram document and comment on changes to the language that the group would like the FDA to consider.</p>
-<p>Next, Yilong Zhang shared a proposal that Mike Stackhouse submitted to PHUSE outlining a pilot submission to the FDA prepared for PhUSE for consideration by the group. This document R_eCTD_pilot_submissions.docx.</p>
-<p>For the remainder of the meeting the attendees examined the content of the document and discuss how the project should proceed. The prevailing sentiment was that the pilot submission should be an R Consortium Submissions working group project.</p>
-<p>The video recording for the meeting is available <a href="https://zoom.us/rec/share/0uljlGZRgZGx9zZuRgloMOIH92qvtScRq1YtUZhxnC0GF2KxkMXsycDYykqHCIXl.pz5myyWa0kJ5JdnO">here</a> (Passcode: <code>=0yt$%V9</code>)</p>
-<p>It was agreed that the group would like to go back to meeting on Fridays. The next meeting is scheduled for Friday, May 7, 2021. Thereafter, the group will continue to meet on the first Friday of the month.</p>
+<p><strong>Data and analysis scope</strong>:</p>
+<ul>
+<li>Targets Phase 3 clinical trial scale and complexity</li>
+<li>Initial dataset sourced from OpenClinica (8 MB XML synthetic EDC data with no identifying information)</li>
+<li>Data will be organized into separate directories by type within the repository</li>
+<li>Designed to benchmark R tools, AI-assisted analysis, automation, and end-to-end submission workflows</li>
+</ul>
+<p><strong>Links</strong>:</p>
+<p><a href="https://github.com/RConsortium/submissions-pilot7-synthetic-data">R Submission Pilot 7 Development Repository</a></p>
+<p><strong>Key team members</strong>:</p>
+<p>Developer team:</p>
+<ul>
+<li>Brandon Theodorou (Keiji AI)</li>
+<li>Eric Nantz (Eli Lilly)</li>
+<li>J Sun (Keiji AI)</li>
+<li>Ning Leng (AbbVie)</li>
+<li>Robert Devine (Johnson &amp; Johnson Companies)</li>
+<li>Yilong Zhang</li>
+<li>Zifeng Wang</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -836,41 +833,9 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<input type="hidden" id="giscus-base-theme" value="light">
-<input type="hidden" id="giscus-alt-theme" value="dark">
-<script>
-  function loadGiscus() {
-    // Function to get the theme based on body class
-    const getTheme = () => {
-      let baseTheme = document.getElementById('giscus-base-theme').value;
-      let altTheme = document.getElementById('giscus-alt-theme').value;
-      if (authorPrefersDark) {
-          [baseTheme, altTheme] = [altTheme, baseTheme];
-      }
-      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
-    };
-    const script = document.createElement("script");
-    script.src = "https://giscus.app/client.js";
-    script.async = true;
-    script.dataset.repo = "RConsortium/submissions-wg";
-    script.dataset.repoId = "MDEwOlJlcG9zaXRvcnkzMTk1MjUxNTI=";
-    script.dataset.category = "General";
-    script.dataset.categoryId = "MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyNTY3MTQx";
-    script.dataset.mapping = "title";
-    script.dataset.reactionsEnabled = "1";
-    script.dataset.emitMetadata = "0";
-    script.dataset.inputPosition = "top";
-    script.dataset.theme = getTheme();
-    script.dataset.lang = "en";
-    script.crossOrigin = "anonymous";
-    // Append the script to the desired div instead of at the end of the body
-    document.getElementById("quarto-content").appendChild(script);
-  }
-  loadGiscus();
-</script>
 </div> <!-- /content -->
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2021-04-05/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/pilot7.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
