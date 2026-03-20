@@ -33,7 +33,7 @@ Developer team:
 - Ben Straub (GSK)
 - Brandon Theodorou (Keiji AI)
 - Camilla Calmasini
-- Dmitry Kolosov (Parexel
+- Dmitry Kolosov (Parexel)
 - Eli Miller (Atorus)
 - Jeff Dickinson (Navitas)
 - Phani Tata (Syneos)
