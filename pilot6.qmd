@@ -33,11 +33,11 @@ Developer team:
 - Ben Straub (GSK)
 - Brandon Theodorou (Keiji AI)
 - Camilla Calmasini
-- Dmitry Kolosov
+- Dmitry Kolosov (Parexel
 - Eli Miller (Atorus)
 - Jeff Dickinson (Navitas)
 - Phani Tata (Syneos)
-- Robert Devine (Johnson & Johnson Companies)
+- Robert Devine 
 - Sam Parmar (Pfizer)
 - Steven Haesendonckx (Johnson & Johnson Companies)
 
