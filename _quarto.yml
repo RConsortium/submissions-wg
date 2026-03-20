@@ -6,8 +6,11 @@ website:
   site-url: https://rconsortium.github.io/submissions-wg
   repo-url: https://github.com/RConsortium/submissions-wg
   repo-actions: [edit, issue]
+  favicon: hexes/swg.svg
     
   navbar:
+    logo: hexes/swg.svg
+    logo-alt: "R Submissions Working Group"
     left:
       - href: index.qmd
         text: Home
