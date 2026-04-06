@@ -1,0 +1,60 @@
+---
+title: "Minutes 2026-04-03"
+date: 2026-04-03
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+Note: If you attended the meeting but do not see your name here, please let us know on the R Consortium Slack channel.
+
+- Eli Miller (Atorus)
+- Eric Nantz (Eli Lilly)
+- Hye Soo Cho (FDA)
+- Jared Woolfolk (Cytel)
+- Nicholas Masel (Johnson & Johnson)
+- Ning Leng (AbbVie)
+- Paul Schuette (FDA)
+- Phanikumar Tata (Syneos Health)
+- Phil Bowsher (Posit)
+- Robert Devine (Johnson & Johnson)
+- Sam Parmar (Pfizer)
+- Yilong Zhang (Meta)
+- Yogesh Gupta (Pfizer)
+- Youn Kyeong Chang (FDA)
+:::
+
+::: {.callout-note}
+The creation of these meeting minutes was supported by the use of Zoom AI for meeting summaries.
+:::
+
+## Website Updates
+
+* The meeting began with Eric welcoming attendees and noting good turnout. 
+* Eric highlighted recent website updates, including a new [timeline](https://rconsortium.github.io/submissions-wg/#timeline) and [hex stickers](https://rconsortium.github.io/submissions-wg/#hex-stickers) linking to individual Pilot pages, which were credited to Ben Straub's work through GitHub Copilot.
+
+## Pilot 5 Feedback
+
+* Hye Soo Hye presented updates on Pilot 5 and R version incompatibility issues. She reported successfully using `{renv}` to install the package environment when using R version 4.4.3 and identified several issues in comparing JSON and XPT format datasets. She recommended including sample code in the ADRG for reading JSON format datasets in R.
+* Hye Soo also suggested modifying the code such that only the relevant "final" data sets created in R scripts are kept in the workspace after scripts are executed. To be consistent with Pilot 3 (which only kept final data frames in the workspace), the team agreed that intermediate datasets should be removed from the working environment/console to avoid confusion for reviewers.
+* The team discussed inconsistencies in R script outputs, specifically regarding the Kaplan-Meier figure displays across different reviewer machines. While the same code and R version (4.4.3) were used, some reviewers experienced smaller figure outputs with overlapping tables compared to others. The team identified potential system-specific differences as a possible cause and agreed to investigate further, with Sydney taking action to check the issue within Pfizer's environment. Sam suggested that the `ggsave` function in the R script (currently running without parameters to define size attributes) could be the issue.
+* Hye Soo inquired about what appeared to be a broken hyperlink for the CDISC protocol document in [section 2.1](https://rpodcast.quarto.pub/pilot-5-aanalysis-data-reviewers-guide/#protocol-number-and-title) of the ADRG. She noted that the link was not working within her company's network, but it was unclear if this was due to a proxy issue or an actual broken link. Hye will follow up with her management/IT team to investigate and update the group if needed.
+* Another inquiry was raised on the current status of [CDISC differences](https://rpodcast.quarto.pub/pilot-5-aanalysis-data-reviewers-guide/#pilot-3-and-cdisc-pilot-differences) between Pilot 3 and Pilot 5, as highlighted in the ADRG. The team agreed that it would be helpful to check with the DatasetJSON development team on these differences and provide feedback. Nick offered to review the documentation and follow up with the dev team on this issue.
+
+## R Version Compatibility and Pharmaceutical Release Cycle Standardization
+
+* Hye Soo raised concerns about version comparability issues, explaining that the FDA doesn't have a set R version policy and that this could lead to challenges in ensuring consistent environments for reviewers. She proposed testing across all minor versions within the same major release as the application's development version (e.g., testing across all 4.4.x releases if the application is developed using R 4.4). The team agreed to perform this testing in the re-submission of Pilot 5, and for future pilots involving R environments.
+* The team discussed progress on establishing a unified release cycle and versioning approach across pharmaceutical companies for regulatory submissions. Ning reported that BI and GSK have provided their release cycles, with outreach to other companies including Novartis, Merck, and Lilly. The next step will be to draft a blog post summarizing the current state of company-specific release cycles and aiming for a consensus where 4-5 major pharmaceutical companies would release older versions (around 4.4.x) in October, which would be recommended for FDA reviewers and other pharmaceutical companies to install. Eric and Eli discussed implementing a testing matrix similar to CRAN requirements, testing across different point releases of R versions, and potentially using Posit's package manager to define package snapshot dates.
+
+## Pilot 6 Update
+
+* Sam provided updates on Pilot 6, including the implementation of [DVC](https://dvc.org) as a version control system for data sets stored in AWS S3 buckets. The team is working on pull requests to update the GitHub repository with DVC configuration and documentation. Ben will create and share a video on using DVC with the GitHub repo for Pilot 6, to be posted on Slack. Eli and Sam will work with the R Consortium to move the DVC data storage from Eli's AWS account to a dedicated R Consortium AWS account.
+
+## Pilot 7 Update
+
+* Ning shared significant developments on Pilot 7, including an additional focus towards creating and open-sourcing AI skills, particularly for trial design simulations, with funding secured from BBSW for shared infrastructure. The team is working on setting up a shared account for AI tooling infrastructure to support Pilot 6 and Pilot 7. Ning welcomed and solicited feedback and contributions (test cases) for the open-sourced [pharma_skills](https://github.com/RConsortium/pharma_skills) repository for Pilot 7.
+
+## PHUSE Connect Update
+
+* Sam shared a recap of the successful PHUSE Connect conference, where the R Consortium's work on Pilot 5 received a "Best in Stream" award. The conference featured great open source talks and a block party where the R Consortium was represented. For those interested in viewing the presentations, they are available in the [PHUSE archive](https://phuse.global/Communications/PHUSE_Archive?Region=US&Year=2026).
+
