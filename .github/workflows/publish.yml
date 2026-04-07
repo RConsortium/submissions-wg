@@ -27,21 +27,12 @@ jobs:
         with:
           use-public-rspm: true
 
-      - name: Set CRAN repo
+      - name: Install R packages
         run: |
-          cat('options(repos = c(CRAN = "https://cloud.r-project.org"))\n', file = Sys.getenv("R_PROFILE_USER"))
-        shell: Rscript {0}
-          
-      - name: Install dplyr
-        run: install.packages("dplyr")
-        shell: Rscript {0}
-        
-      - name: Install openxlsx2
-        run: install.packages("openxlsx2")
-        shell: Rscript {0}
-
-      - name: Install rmarkdown
-        run: install.packages("rmarkdown")
+          install.packages(
+            c("dplyr", "openxlsx2", "rmarkdown"),
+            repos = c(CRAN = "https://cloud.r-project.org")
+          )
         shell: Rscript {0}
 
       - name: Render and Publish
