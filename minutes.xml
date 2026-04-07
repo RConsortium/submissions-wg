@@ -9,8 +9,113 @@
 <link>https://rconsortium.github.io/submissions-wg/minutes.html</link>
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.8.27</generator>
-<lastBuildDate>Fri, 06 Mar 2026 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.9.36</generator>
+<lastBuildDate>Fri, 03 Apr 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2026-04-03</title>
+  <dc:creator>Eric Nantz</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2026-04-03/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Note: If you attended the meeting but do not see your name here, please let us know on the R Consortium Slack channel.</p>
+<ul>
+<li>Eli Miller (Atorus)</li>
+<li>Eric Nantz (Eli Lilly)</li>
+<li>Hye Soo Cho (FDA)</li>
+<li>Jared Woolfolk (Cytel)</li>
+<li>Nicholas Masel (Johnson &amp; Johnson)</li>
+<li>Ning Leng (AbbVie)</li>
+<li>Paul Schuette (FDA)</li>
+<li>Phanikumar Tata (Syneos Health)</li>
+<li>Phil Bowsher (Posit)</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Sam Parmar (Pfizer)</li>
+<li>Yilong Zhang (Meta)</li>
+<li>Yogesh Gupta (Pfizer)</li>
+<li>Youn Kyeong Chang (FDA)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The creation of these meeting minutes was supported by the use of Zoom AI for meeting summaries.</p>
+</div>
+</div>
+<section id="website-updates" class="level2">
+<h2 class="anchored" data-anchor-id="website-updates">Website Updates</h2>
+<ul>
+<li>The meeting began with Eric welcoming attendees and noting good turnout.</li>
+<li>Eric highlighted recent website updates, including a new <a href="https://rconsortium.github.io/submissions-wg/#timeline">timeline</a> and <a href="https://rconsortium.github.io/submissions-wg/#hex-stickers">hex stickers</a> linking to individual Pilot pages, which were credited to Ben Straub’s work through GitHub Copilot.</li>
+</ul>
+</section>
+<section id="pilot-5-feedback" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-5-feedback">Pilot 5 Feedback</h2>
+<ul>
+<li>Hye Soo Hye presented updates on Pilot 5 and R version incompatibility issues. She reported successfully using <code>{renv}</code> to install the package environment when using R version 4.4.3 and identified several issues in comparing JSON and XPT format datasets. She recommended including sample code in the ADRG for reading JSON format datasets in R.</li>
+<li>Hye Soo also suggested modifying the code such that only the relevant “final” data sets created in R scripts are kept in the workspace after scripts are executed. To be consistent with Pilot 3 (which only kept final data frames in the workspace), the team agreed that intermediate datasets should be removed from the working environment/console to avoid confusion for reviewers.</li>
+<li>The team discussed inconsistencies in R script outputs, specifically regarding the Kaplan-Meier figure displays across different reviewer machines. While the same code and R version (4.4.3) were used, some reviewers experienced smaller figure outputs with overlapping tables compared to others. The team identified potential system-specific differences as a possible cause and agreed to investigate further, with Sydney taking action to check the issue within Pfizer’s environment. Sam suggested that the <code>ggsave</code> function in the R script (currently running without parameters to define size attributes) could be the issue.</li>
+<li>Hye Soo inquired about what appeared to be a broken hyperlink for the CDISC protocol document in <a href="https://rpodcast.quarto.pub/pilot-5-aanalysis-data-reviewers-guide/#protocol-number-and-title">section 2.1</a> of the ADRG. She noted that the link was not working within her company’s network, but it was unclear if this was due to a proxy issue or an actual broken link. Hye will follow up with her management/IT team to investigate and update the group if needed.</li>
+<li>Another inquiry was raised on the current status of <a href="https://rpodcast.quarto.pub/pilot-5-aanalysis-data-reviewers-guide/#pilot-3-and-cdisc-pilot-differences">CDISC differences</a> between Pilot 3 and Pilot 5, as highlighted in the ADRG. The team agreed that it would be helpful to check with the DatasetJSON development team on these differences and provide feedback. Nick offered to review the documentation and follow up with the dev team on this issue.</li>
+</ul>
+</section>
+<section id="r-version-compatibility-and-pharmaceutical-release-cycle-standardization" class="level2">
+<h2 class="anchored" data-anchor-id="r-version-compatibility-and-pharmaceutical-release-cycle-standardization">R Version Compatibility and Pharmaceutical Release Cycle Standardization</h2>
+<ul>
+<li>Hye Soo raised concerns about version comparability issues, explaining that the FDA doesn’t have a set R version policy and that this could lead to challenges in ensuring consistent environments for reviewers. She proposed testing across all minor versions within the same major release as the application’s development version (e.g., testing across all 4.4.x releases if the application is developed using R 4.4). The team agreed to perform this testing in the re-submission of Pilot 5, and for future pilots involving R environments.</li>
+<li>The team discussed progress on establishing a unified release cycle and versioning approach across pharmaceutical companies for regulatory submissions. Ning reported that BI and GSK have provided their release cycles, with outreach to other companies including Novartis, Merck, and Lilly. The next step will be to draft a blog post summarizing the current state of company-specific release cycles and aiming for a consensus where 4-5 major pharmaceutical companies would release older versions (around 4.4.x) in October, which would be recommended for FDA reviewers and other pharmaceutical companies to install. Eric and Eli discussed implementing a testing matrix similar to CRAN requirements, testing across different point releases of R versions, and potentially using Posit’s package manager to define package snapshot dates.</li>
+</ul>
+</section>
+<section id="pilot-6-update" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-6-update">Pilot 6 Update</h2>
+<ul>
+<li>Sam provided updates on Pilot 6, including the implementation of <a href="https://dvc.org">DVC</a> as a version control system for data sets stored in AWS S3 buckets. The team is working on pull requests to update the GitHub repository with DVC configuration and documentation. Ben will create and share a video on using DVC with the GitHub repo for Pilot 6, to be posted on Slack. Eli and Sam will work with the R Consortium to move the DVC data storage from Eli’s AWS account to a dedicated R Consortium AWS account.</li>
+</ul>
+</section>
+<section id="pilot-7-update" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-7-update">Pilot 7 Update</h2>
+<ul>
+<li>Ning shared significant developments on Pilot 7, including an additional focus towards creating and open-sourcing AI skills, particularly for trial design simulations, with funding secured from BBSW for shared infrastructure. The team is working on setting up a shared account for AI tooling infrastructure to support Pilot 6 and Pilot 7. Ning welcomed and solicited feedback and contributions (test cases) for the open-sourced <a href="https://github.com/RConsortium/pharma_skills">pharma_skills</a> repository for Pilot 7.</li>
+</ul>
+</section>
+<section id="phuse-connect-update" class="level2">
+<h2 class="anchored" data-anchor-id="phuse-connect-update">PHUSE Connect Update</h2>
+<ul>
+<li>Sam shared a recap of the successful PHUSE Connect conference, where the R Consortium’s work on Pilot 5 received a “Best in Stream” award. The conference featured great open source talks and a block party where the R Consortium was represented. For those interested in viewing the presentations, they are available in the <a href="https://phuse.global/Communications/PHUSE_Archive?Region=US&amp;Year=2026">PHUSE archive</a>.</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2026-04-03/</guid>
+  <pubDate>Fri, 03 Apr 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2026-03-06</title>
   <dc:creator>Eric Nantz</dc:creator>
@@ -1987,123 +2092,6 @@ Caution
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-09-06/</guid>
   <pubDate>Fri, 06 Sep 2024 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2024-08-02</title>
-  <dc:creator>Joseph Rickert</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2024-08-02/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Andre Couturier (Sanofi)</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>Heidi Curinckx (Johnson &amp; Johnson)</li>
-<li>HyeSoo Cho (FDA)</li>
-<li>Jizu Zhi (FDA)</li>
-<li>Joseph Rickert (R Consortium)</li>
-<li>Michael Kane</li>
-<li>Nan Xiao (Merck)</li>
-<li>Ning Leng (Roche/Genentech)</li>
-<li>Paul Schuette (FDA)</li>
-<li>rzhang (J&amp;J)</li>
-<li>Robert Devine (Johnson &amp; Johnson)</li>
-<li>Sam Parmar (Pfizer)</li>
-</ul>
-</div>
-</div>
-</div>
-<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/q1OxNGNb9yLXC8l5xAPyAdiIz9qBc5GG45Br9dVPvJAVrfpuiKWQSuNIY0QQpGSR.1wBN0XjiXC3BIVeb?startTime=1722614682000">video</a> is available.</p>
-<section id="pilot-3" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-3">Pilot 3</h2>
-<p>Hye Soo reported that the Pilot 3 review has not yet been completed by he FDA authorities. There are no known problems. The delay is most likely due to a summer slowdown.</p>
-<p>Before the meeting Joel Laxamana shared a list of recent and upcoming Pilot 3 related talks.</p>
-<ol type="1">
-<li>[Pilot 3 Demo : R/Medicine 2024](https://rconsortium.github.io/RMedicine_2024/Program.html)</li>
-<li><a href="https://www.youtube.com/watch?v=vPmNdHTVYm8&amp;list=PL77T87Q0eoJhsC203plZ1H4p21AGrM9rl&amp;index=12">Pilot 3 Demo : useR! 2024 On-line talk</a></li>
-<li><a href="https://pharmaverse.github.io/blog/posts/2024-07-03_introducing_a_ne.../introducing_a_new_coursera_course_for_hands_on_clinical_data_science_using__r..html">Roche-Genentech Coursera training on ‘Hands on Clinical Reporting using R’</a></li>
-<li>Joel will also be a part of a PHUSE WG project coming up. Yet to be started, but will share more details soon.</li>
-</ol>
-<p><strong>Acton</strong>: Ning will begin a draft blog post for Pilot 3 to be posted after the FDA review is complete. The post should provide context for the achievement that is helpful for making newcomers to the use of R in FDA submissions comfortable. For example, multiple R packages were deliberately used in the Pilots in order to signal that there is no one correct way to do things.</p>
-</section>
-<section id="pilot-4" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-4">Pilot 4</h2>
-<section id="webassembly" class="level3">
-<h3 class="anchored" data-anchor-id="webassembly">WebAssembly</h3>
-<p>Eric Nantz reported on a number of updates to the Pilot 4 WebAssembly submission package.</p>
-<ul>
-<li>To take advantage of the new behavior of v0.2.0 of the Shinylive package: “…when exporting an app with the Shinylive R package, or using the Quarto extension, R packages dependencies will be frozen and bundled with your app as a private #wasm package library.”</li>
-<li>We have been using R v4.2.3 in the Pilot 4 submission, however because WebAssembly defaults to R v4.2.1 we have switched to this version to maintain consistency. (This will be documented in the ADRG.)</li>
-<li>Making the change above also means that both version of running Pilot 4, i.e either as a traditional Shiny app or a precompiled wasm bundle, will use the same versions of R packages.</li>
-<li>The new version of the Shinylive app with WebAssembly has reduced the start up time for the Pilot 4 submissions package from over a minute to 15 seconds.</li>
-<li>We will schedule Pilot 4 submission for a short time after the Pilot 3 clearance is complete.</li>
-<li>Because of its large size, submitting the precompiled version of the WebAssembly transfer through the FDA gateway will require an extra step of downloading a zip archive into the transfer repo.</li>
-<li>Eric is now testing on Windows 10.</li>
-<li>Eric will debut the app in his talk a posit::conf.</li>
-</ul>
-<p>When asked about how he WebAssembly will be perceived within in FDA, Paul replied that it will depend on the use case and who gets involved.</p>
-</section>
-<section id="docker" class="level3">
-<h3 class="anchored" data-anchor-id="docker">Docker</h3>
-<p>Hye Soo has docker installed on her workstation, and will be able work with the Docker version of the Pilot 4 submission when it is ready.</p>
-</section>
-</section>
-<section id="expanding-the-reach-of-the-r-working-group" class="level2">
-<h2 class="anchored" data-anchor-id="expanding-the-reach-of-the-r-working-group">Expanding the Reach of the R Working Group</h2>
-<ul>
-<li>Ning Leng proposed that it is time to expand the reach of the R Submissions working group to include clinicians and non data scientists.</li>
-<li>She proposed blog posts and perhaps writing an academic paper noting the nature papers on
-<ul>
-<li><a href="https://www.nature.com/articles/s41586-020-2649-2">Array programming with NumPy</a> and</li>
-<li><a href="https://www.nature.com/articles/d41586-024-00725-1">WebAssembly</a>.</li>
-</ul></li>
-</ul>
-<p><strong>Action</strong>: The group will pursue writing a paper.</p>
-</section>
-<section id="r-licenses" class="level2">
-<h2 class="anchored" data-anchor-id="r-licenses">R Licenses</h2>
-<p>There was a robust discussion about the impediment that the GPL licenses pose to the use of R that begins about 40 minutes into the video.</p>
-<ul>
-<li>JBR noted that company lawyers invariably seem to want to impose worst case measures when first encountering first encountering GPL licenses, and that if they do form an opinion about the limits of the license they are reticent to share their arguments publicly.</li>
-<li>It was suggested that companies avoid using GPL packages</li>
-<li>It was also noted that R ecosystem is mostly GPL based. An effort to track down the use of GPL licenses in packages and their dependencies included 72% of he CRAN ecosystem.</li>
-<li>One apparent solution is to avoid bundling their code with GPL licensed packages, but to advise users that they should load the required GPL packages themselves.</li>
-<li>The conversation settled on the notion of what is being shared, distinguishing between the code that produces tables and statistical results and code that modifies R in some way to profit from it.</li>
-<li>Several members described how licensing seems to work within their companies.</li>
-<li>An opinion that was offered that GPL 3 IS very “viral” but unless code was linking directly GPL2 is permissive.</li>
-<li>This <a href="https://www.tibco.com/blog/2015/06/15/what-does-microsofts-acquisition-of-revolution-analytics-mean-for-the-r-language/">Tibco Blog post</a> from 2015 mentions how Microsoft was able to stay on the right side of GPL with its integration of Revolution Analytics code.</li>
-<li>Also see this <a href="https://www.infoworld.com/article/2240474/sql-server-2016-gets-an-r-language-rating.html">InfoWorld Article</a> by Sedar Yegulap from 2016 which states:</li>
-</ul>
-<blockquote class="blockquote">
-<p>The easy way to do so and still respect the terms of the GPL is via an “arm’s length” provision. Instead of integrating the R binaries directly into SQL Server, Microsoft could invoke the R software from its own executable as needed, then return results to the host application through a file or a data stream.</p>
-</blockquote>
-<section id="next-meeting" class="level3">
-<h3 class="anchored" data-anchor-id="next-meeting">Next Meeting</h3>
-<p>The next meeting of the R Submissions working group will be on Friday, September 6, 2024 at 9 AM Pacific Time.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-08-02/</guid>
-  <pubDate>Fri, 02 Aug 2024 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
