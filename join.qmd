@@ -2,9 +2,30 @@
 title: How to Join
 ---
 
-The Submissions Working Group welcomes all contributors who are passionate about bringing innovation to the clinical submission process! Here are the ways you can join the group's communication platforms and keep up-to-date with additional information:
+The Submissions Working Group welcomes everyone who is passionate about bringing innovation to the clinical submission process! Here are the ways to get involved:
 
-* Register for future Submissions Working Group meetings by visiting the [public calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/rcons?view=week). Our working group meetings typically occur on the first Friday of each month.
-* Send a note to our contact email: `operations[at]r-consortium.org`.
-* Join the Slack Group using the link [slack.r-consortium.org](https://slack.r-consortium.org) at the channel `#wg-submissions`.
-* Review the mailing list at [lists.r-consortium.org/g/Rconsortium-wg-submissions](https://lists.r-consortium.org/g/Rconsortium-wg-submissions)
+## Slack
+
+Join our Slack workspace to connect with the community and follow ongoing discussions in the `#wg-submissions` channel. There are two ways to join:
+
+* Email `director[at]r-consortium.org` to request an invite.
+* Ask any existing member to send you an invite directly.
+
+Once you're in, you can find all discussions at [slack.r-consortium.org](https://slack.r-consortium.org).
+
+## Meetings
+
+**Working Group meetings** are held once a month, typically on the first Friday of each month.
+
+**Pilot subgroup standups** are held more frequently. Currently, Pilot 6 and Pilot 7 each hold three standup meetings per month (weekly cadence, skipping one Friday per month).
+
+All meetings are open to everyone. There are two ways to get on the calendar:
+
+* Visit the [public calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/rcons?view=week) and add any meeting invite directly to your calendar. Click on a meeting to see its details and register.
+* Ask R Consortium operations to add you to the distribution list — you will then receive calendar invites automatically. Send a note to `operations[at]r-consortium.org` to request this.
+
+![Click on any meeting in the public calendar to view details and register.](images/calendar-register.png){fig-alt="Screenshot of the R Consortium public calendar showing the Submissions WG monthly meeting details popup with a Register button."}
+
+## Mailing List
+
+* Review and subscribe to the mailing list at [lists.r-consortium.org/g/Rconsortium-wg-submissions](https://lists.r-consortium.org/g/Rconsortium-wg-submissions).

@@ -2,40 +2,40 @@
 title: "R Submission Pilot 7"
 ---
 
-## Pilot 7 - Synthetic Clinical Trial Data
+## Pilot 7 - Benchmark Data and Test Cases
 
-**Goal**: Develop and curate modern, realistic, and reusable synthetic clinical trial datasets that can serve as a high-quality public benchmark for evaluating R tools, AI-assisted analysis workflows, and end-to-end regulatory submissions.
+**Goal**: Develop and curate modern, realistic, and reusable synthetic clinical trial datasets that can serve as a high-quality public benchmark for evaluating R tools, AI-skills, to serve regulatory purposes.
 
-**Key evaluation aspects**:
+The pharmaceutical ecosystem is seeing rapid growth of open-source R tools and AI-enabled applications across clinical development, analysis, and regulatory submissions. However, objective benchmarking and evaluation of these tools is currently constrained by the lack of high-quality, publicly available clinical trial datasets. Existing public datasets, such as CDISC Pilot 1, are outdated, limited in scale and complexity, and insufficient for evaluating modern workflows. This project addresses that gap by providing modern, realistic, and reusable synthetic clinical trial data to support tool demonstration, method evaluation, and community education.
 
-- For the Development Team
-  - Evaluate publicly available synthetic EDC data (e.g., from OpenClinica) as a foundation for realistic submission datasets
-  - Leverage AI tools to convert and transform raw synthetic data (e.g., XML) into tidy, analysis-ready datasets aligned with CDISC standards
-  - Develop skills and workflows tailored to clinical data simulation that will be open-sourced
-- For the Broader Community
-  - Provide modern, publicly available synthetic clinical trial data that addresses limitations of the existing CDISC Pilot 1 dataset (outdated standards, limited scale, insufficient complexity)
-  - Support tool demonstration, method evaluation, and community education across the pharmaceutical ecosystem
+**Current Activities**:
 
-**Data and analysis scope**:
+The project now includes two complementary parts:
 
-- Targets Phase 3 clinical trial scale and complexity
-- Initial dataset sourced from OpenClinica (8 MB XML synthetic EDC data with no identifying information)
-- Data will be organized into separate directories by type within the repository
-- Designed to benchmark R tools, AI-assisted analysis, automation, and end-to-end submission workflows
+- **Part A:** Benchmark datasets and test cases for evaluating open-source tools
+- **Part B:** Benchmark test cases for evaluating pharma open-source skills, starting with **group sequential design (GSD)**
+
+Part B is being developed in collaboration with [**BBSW**](https://www.bbsw.org), which is supporting the work by sponsoring shared tokens for the automated evaluation pipeline. The first skill in this effort is available at the [pharma_skills repository](https://github.com/RConsortium/pharma_skills/tree/main).
+
+
 
 **Links**:
 
 [R Submission Pilot 7 Development Repository](https://github.com/RConsortium/submissions-pilot7-synthetic-data)
 
+[Pilot 7 Meeting Minutes](https://github.com/RConsortium/submissions-pilot7-synthetic-data/wiki/Meeting-Minutes)
+
+[Pilot 7 Part B - open source skills and test cases](https://github.com/RConsortium/pharma-skills/tree/main)
+
 **Key team members**:
 
 Developer team:
 
-- Brandon Theodorou (Keiji AI)
-- Eric Nantz (Eli Lilly)
-- J Sun (Keiji AI)
+- Yilong Zhang (meta)
+- Eric Zhang (Eikon)
 - Ning Leng (AbbVie)
-- Robert Devine 
-- Yilong Zhang
-- Zifeng Wang
+- Erick Scott (Keiji AI)
+- Eric Nantz (Eli Lilly)
+- Jimeng Sun (Keiji AI)
+
 
