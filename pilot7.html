@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -40,14 +40,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-baf333abd407eb98d8b56c64a19f8930.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-c9d21391a4140639dac49c26faef9edc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-baf333abd407eb98d8b56c64a19f8930.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f7919f14b89ae9a431cba0b331f0b52b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-e6ec55d50a8571276e9da61ff62941ed.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-f7919f14b89ae9a431cba0b331f0b52b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -353,7 +353,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#pilot-7---synthetic-clinical-trial-data" id="toc-pilot-7---synthetic-clinical-trial-data" class="nav-link active" data-scroll-target="#pilot-7---synthetic-clinical-trial-data">Pilot 7 - Synthetic Clinical Trial Data</a></li>
+  <li><a href="#pilot-7---benchmark-data-and-test-cases" id="toc-pilot-7---benchmark-data-and-test-cases" class="nav-link active" data-scroll-target="#pilot-7---benchmark-data-and-test-cases">Pilot 7 - Benchmark Data and Test Cases</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/pilot7.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -380,42 +380,30 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="pilot-7---synthetic-clinical-trial-data" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-7---synthetic-clinical-trial-data">Pilot 7 - Synthetic Clinical Trial Data</h2>
-<p><strong>Goal</strong>: Develop and curate modern, realistic, and reusable synthetic clinical trial datasets that can serve as a high-quality public benchmark for evaluating R tools, AI-assisted analysis workflows, and end-to-end regulatory submissions.</p>
-<p><strong>Key evaluation aspects</strong>:</p>
+<section id="pilot-7---benchmark-data-and-test-cases" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-7---benchmark-data-and-test-cases">Pilot 7 - Benchmark Data and Test Cases</h2>
+<p><strong>Goal</strong>: Develop and curate modern, realistic, and reusable synthetic clinical trial datasets that can serve as a high-quality public benchmark for evaluating R tools, AI-skills, to serve regulatory purposes.</p>
+<p>The pharmaceutical ecosystem is seeing rapid growth of open-source R tools and AI-enabled applications across clinical development, analysis, and regulatory submissions. However, objective benchmarking and evaluation of these tools is currently constrained by the lack of high-quality, publicly available clinical trial datasets. Existing public datasets, such as CDISC Pilot 1, are outdated, limited in scale and complexity, and insufficient for evaluating modern workflows. This project addresses that gap by providing modern, realistic, and reusable synthetic clinical trial data to support tool demonstration, method evaluation, and community education.</p>
+<p><strong>Current Activities</strong>:</p>
+<p>The project now includes two complementary parts:</p>
 <ul>
-<li>For the Development Team
-<ul>
-<li>Evaluate publicly available synthetic EDC data (e.g., from OpenClinica) as a foundation for realistic submission datasets</li>
-<li>Leverage AI tools to convert and transform raw synthetic data (e.g., XML) into tidy, analysis-ready datasets aligned with CDISC standards</li>
-<li>Develop skills and workflows tailored to clinical data simulation that will be open-sourced</li>
-</ul></li>
-<li>For the Broader Community
-<ul>
-<li>Provide modern, publicly available synthetic clinical trial data that addresses limitations of the existing CDISC Pilot 1 dataset (outdated standards, limited scale, insufficient complexity)</li>
-<li>Support tool demonstration, method evaluation, and community education across the pharmaceutical ecosystem</li>
-</ul></li>
+<li><strong>Part A:</strong> Benchmark datasets and test cases for evaluating open-source tools</li>
+<li><strong>Part B:</strong> Benchmark test cases for evaluating pharma open-source skills, starting with <strong>group sequential design (GSD)</strong></li>
 </ul>
-<p><strong>Data and analysis scope</strong>:</p>
-<ul>
-<li>Targets Phase 3 clinical trial scale and complexity</li>
-<li>Initial dataset sourced from OpenClinica (8 MB XML synthetic EDC data with no identifying information)</li>
-<li>Data will be organized into separate directories by type within the repository</li>
-<li>Designed to benchmark R tools, AI-assisted analysis, automation, and end-to-end submission workflows</li>
-</ul>
+<p>Part B is being developed in collaboration with <a href="https://www.bbsw.org"><strong>BBSW</strong></a>, which is supporting the work by sponsoring shared tokens for the automated evaluation pipeline. The first skill in this effort is available at the <a href="https://github.com/RConsortium/pharma_skills/tree/main">pharma_skills repository</a>.</p>
 <p><strong>Links</strong>:</p>
 <p><a href="https://github.com/RConsortium/submissions-pilot7-synthetic-data">R Submission Pilot 7 Development Repository</a></p>
+<p><a href="https://github.com/RConsortium/submissions-pilot7-synthetic-data/wiki/Meeting-Minutes">Pilot 7 Meeting Minutes</a></p>
+<p><a href="https://github.com/RConsortium/pharma-skills/tree/main">Pilot 7 Part B - open source skills and test cases</a></p>
 <p><strong>Key team members</strong>:</p>
 <p>Developer team:</p>
 <ul>
-<li>Brandon Theodorou (Keiji AI)</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>J Sun (Keiji AI)</li>
+<li>Yilong Zhang (meta)</li>
+<li>Eric Zhang (Eikon)</li>
 <li>Ning Leng (AbbVie)</li>
-<li>Robert Devine</li>
-<li>Yilong Zhang</li>
-<li>Zifeng Wang</li>
+<li>Erick Scott (Keiji AI)</li>
+<li>Eric Nantz (Eli Lilly)</li>
+<li>Jimeng Sun (Keiji AI)</li>
 </ul>
 
 
