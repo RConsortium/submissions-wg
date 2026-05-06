@@ -21,3 +21,18 @@ You can view more details about each of the current pilots by visiting their ded
 - [Pilot 5](https://rconsortium.github.io/submissions-pilot5-website/): DatasetJSON
 - [Pilot 6](pilot6.qmd): AI-assisted ADaM and TLF generation
 - [Pilot 7](pilot7.qmd): Synthetic clinical trial data
+
+## NEWS
+
+| Date | Post Title |
+|------|-----------|
+| Upcoming | [Beyond Feasibility: Learning from FDA's Response to WebAssembly and Container-Based Submissions](https://r-consortium.org/posts/beyond-feasibility-learning-from-fdas-response-to-webassembly-and-container-based-submissions/) |
+| 02/13/2026 | [R Submissions Working Group: 2026 Plans and 2025 Success](https://r-consortium.org/posts/submissions-wg-2026/) |
+| 12/15/2025 | [Johnson & Johnson's Success Story: A Hybrid R/SAS Strategy for FDA Submission](https://r-consortium.org/posts/johnson-and-johnsons-success-story-a-hybrid-r-sas-strategy-for-fda-submission) |
+| 12/08/2025 | [Expanded FDA eCTD File Format Support for R Packages — A Milestone Achieved Through Industry–FDA Collaboration](https://r-consortium.org/posts/expanded-fda-ectd-file-format-support-for-r-packages) |
+| 02/28/2025 | [R Submissions Working Group: Pilot 5 Launch and more!](https://r-consortium.org/posts/submissions-wg-pilot5-pilot6-and-more/) |
+| 10/09/2024 | [Using R to Submit Research to the FDA: Pilot 4 Successfully Submitted to FDA CDER](https://r-consortium.org/posts/using-r-to-submit-research-to-the-fda-pilot-4-successfully-submitted/) |
+| 08/26/2024 | [News from R Submissions Working Group – Pilot 3 Successfully Reviewed by FDA](https://r-consortium.org/posts/news-from-r-submissions-working-group-pilot-3/) |
+| 07/02/2024 | [R Consortium's Submission Working Group: Advancing R for Regulatory Success at PharmaSUG 2024](https://r-consortium.org/posts/r-consortiums-submission-working-group-advancing-r-for-regulatory-success-at-pharmasug-2024/) |
+| 05/29/2024 | [Enhancing Clinical Trial Data Sharing with R Consortium's R Submissions Working Group](https://r-consortium.org/posts/enhancing-clinical-trial-data-sharing-with-r-consortiums-r-submissions-working-group/) |
+| 05/29/2024 | [One More Step Forward: Presentation to Swissmedic on Regulatory Submission using R and Shiny](https://r-consortium.org/posts/one-more-step-forward-the-r-consortium-submission-working-group-presentation-to-swissmedic-on-regulator-submission-using-r-and-shiny/) |
