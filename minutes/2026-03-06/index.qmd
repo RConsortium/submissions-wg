@@ -1,4 +1,4 @@
- ---
+---
 title: "Minutes 2026-03-06"
 date: 2026-03-06
 ---
@@ -54,7 +54,6 @@ Resources mentioned in the discussion:
 * R Consortium blog post: [The Crucial Role of Release Control in R for Healthcare Organizations](https://r-consortium.org/posts/the-crucial-role-of-release-control-in-r-for-healthcare-organizations/)
 * [Developers, Reinvented](https://ashtom.github.io/developers-reinvented) (Thomas Dohmke)
 * R/Pharma GenAI Day 2025 recordings [playlist](https://www.youtube.com/playlist?list=PLMtxz1fUYA5CrQehBULN5lHlnz-uVLOxy)
-
 
 ## Next Steps
 
