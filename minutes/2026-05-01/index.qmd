@@ -1,0 +1,33 @@
+---
+title: "Minutes 2026-05-01"
+date: 2026-05-01
+---
+
+::: {.callout-note}
+The creation of these meeting minutes was supported by the use of Zoom AI for meeting summaries.
+:::
+
+
+## Pilot 4 Update
+
+The Submissions Working Group met for their May session with a focus on updates from FDA colleagues. Hye Soo reported that she was awaiting information from her division director regarding Pilot 4 and could not provide updates at this time, though she hoped to have information by the next meeting. Regarding Pilot 5, Hye inquired about moving forward with a resubmission based on previous feedback provided.
+
+## ADRG and SDTM Dataset Updates
+
+Ben reported that Nick Mazel, the developer of the dataset JSON R package, provided feedback on ADRG notes and helper code for working with SDTM datasets. Hye agreed to review the updated ADRG before official resubmission, and Ben offered to share it for review ahead of time. The discussion focused on differences between pilot 3 and pilot 5 data representations in XPT versus JSON formats, particularly regarding how integer and numeric values are stored, with Nick Mazel having provided some clarification on these technical differences.
+
+## Pilot Compatibility and Release Planning
+
+The team discussed including summary information about no issues between Pilot 3 and Pilot 5 in the ADRG, highlighting JSON's compression strengths. They addressed a PDF rendering issue that was blocked on FDA colleagues' laptops, with Hye agreeing to double-check the problem. The group also discussed plans to test the pilot across different minor versions of their 4.4.x release, from 4.4.0 to 4.4.3, to ensure compatibility. Ning mentioned an additional action item about aligning on version release strategies between pharma and FDA teams, noting that pharma companies typically release only one major version annually.
+
+## Pilot 5 Updates and R Release
+
+The team discussed updates for Pilot 5, deciding to test minor versions 4.4.0 to 4.4.3 with the lock file based on version 4.4.3 and testing on other versions as well. Hye confirmed that hyperlinks are now working properly. The group then shifted focus to Pilot 6, where Ning presented a draft proposal for synchronizing R version releases across industry, suggesting two annual release points: summer releases aligned with R Core's X.Y.1 version (approximately two weeks after mid-June), and winter releases using the R Core version available in January. The proposal aims to align internal company releases with FDA's internal releases to address version availability issues on FDA servers.
+
+## R Version 4.6.1 Release Planning
+
+The team discussed release timing for R version 4.6.1, with Ning explaining that companies typically release second updates around January or February, following a 6-month window between minor versions. Eric noted that some companies wait for Bioconductor releases to be fully integrated, which can extend the timeline by 2-3 weeks. Ning proposed planning for an R 4.6.1 release in July, followed by a blog post in late July or August to align on this approach and start broader conversations about release strategies.
+
+## Pilots 6 and 7 Updates
+
+The meeting focused on R version management and updates on Pilot 6 and 7 projects. Hye discussed challenges with managing R versions across different reviewers and mentioned plans to consult with the internal team. The group discussed contingency plans for potential bugs in R releases, with Eric explaining the soaking period and testing processes. Ben provided updates on Pilot 6, highlighting progress on recreating atoms in R and experimenting with AI tools like Copilot. Eli shared updates on moving data storage from a personal AWS account to an official R Consortium account, which will also support future model evaluations in AWS Bedrock. Ning and Yilong presented Pilot 7's efforts in developing benchmarking data and crowdsourcing test cases for AI skills, particularly through the Pharma Skills repository. The conversation ended with a brief discussion about recent news regarding real-time clinical trial monitoring leveraging AI.
