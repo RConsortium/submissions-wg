@@ -9,8 +9,63 @@
 <link>https://rconsortium.github.io/submissions-wg/minutes.html</link>
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.9.37</generator>
-<lastBuildDate>Fri, 03 Apr 2026 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.9.38</generator>
+<lastBuildDate>Fri, 01 May 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2026-05-01</title>
+  <dc:creator>Eric Nantz</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2026-05-01/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The creation of these meeting minutes was supported by the use of Zoom AI for meeting summaries.</p>
+</div>
+</div>
+<section id="pilot-4-update" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-4-update">Pilot 4 Update</h2>
+<p>The Submissions Working Group met for their May session with a focus on updates from FDA colleagues. Hye Soo reported that she was awaiting information from her division director regarding Pilot 4 and could not provide updates at this time, though she hoped to have information by the next meeting.</p>
+</section>
+<section id="adrg-and-sdtm-dataset-updates" class="level2">
+<h2 class="anchored" data-anchor-id="adrg-and-sdtm-dataset-updates">ADRG and SDTM Dataset Updates</h2>
+<p>Ben reported that Nick Mazel, the developer of the dataset JSON R package, provided feedback on ADRG notes and helper code for working with SDTM datasets. Hye Soo agreed to review the updated ADRG before official resubmission, and Ben offered to share it for review ahead of time. The discussion focused on differences between pilot 3 and pilot 5 data representations in XPT versus JSON formats, particularly regarding how integer and numeric values are stored, with Nick Mazel having provided some clarification on these technical differences.</p>
+</section>
+<section id="pilot-compatibility-and-release-planning" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-compatibility-and-release-planning">Pilot Compatibility and Release Planning</h2>
+<p>The team discussed including summary information about no issues between Pilot 3 and Pilot 5 in the ADRG, highlighting JSON’s compression strengths. They addressed a PDF rendering issue that was blocked on FDA colleagues’ laptops, with Hye Soo agreeing to double-check the problem. The group also discussed plans to test the pilot across different minor versions of their 4.4.x release, from 4.4.0 to 4.4.3, to ensure compatibility. Ning mentioned an additional action item about aligning on version release strategies between pharma and FDA teams, noting that pharma companies typically release only one major version annually.</p>
+</section>
+<section id="pilot-5-updates-and-r-release" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-5-updates-and-r-release">Pilot 5 Updates and R Release</h2>
+<p>The team discussed updates for Pilot 5, deciding to test minor versions 4.4.0 to 4.4.3 with the lock file based on version 4.4.3 and testing on other versions as well. Hye Soo confirmed that hyperlinks are now working properly. The group then shifted focus to Pilot 6, where Ning presented a draft proposal for synchronizing R version releases across industry, suggesting two annual release points: summer releases aligned with R Core’s X.Y.1 version (approximately two weeks after mid-June), and winter releases using the R Core version available in January. The proposal aims to align internal company releases with FDA’s internal releases to address version availability issues on FDA servers.</p>
+</section>
+<section id="r-version-4.6.1-release-planning" class="level2">
+<h2 class="anchored" data-anchor-id="r-version-4.6.1-release-planning">R Version 4.6.1 Release Planning</h2>
+<p>The team discussed release timing for R version 4.6.1, with Ning explaining that companies typically release second updates around January or February, following a 6-month window between minor versions. Eric noted that some companies wait for Bioconductor releases to be fully integrated, which can extend the timeline by 2-3 weeks. Ning proposed planning for an R 4.6.1 release in July, followed by a blog post in late July or August to align on this approach and start broader conversations about release strategies.</p>
+</section>
+<section id="pilots-6-and-7-updates" class="level2">
+<h2 class="anchored" data-anchor-id="pilots-6-and-7-updates">Pilots 6 and 7 Updates</h2>
+<p>The meeting focused on R version management and updates on Pilot 6 and 7 projects. Hye Soo discussed challenges with managing R versions across different reviewers and mentioned plans to consult with the internal team. The group discussed contingency plans for potential bugs in R releases, with Eric explaining the soaking period and testing processes. Ben provided updates on Pilot 6, highlighting progress on recreating atoms in R and experimenting with AI tools like Copilot. Eli shared updates on moving data storage from a personal AWS account to an official R Consortium account, which will also support future model evaluations in AWS Bedrock. Ning and Yilong presented Pilot 7’s efforts in developing benchmarking data and crowdsourcing test cases for AI skills, particularly through the Pharma Skills repository. The conversation ended with a brief discussion about recent news regarding real-time clinical trial monitoring leveraging AI.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2026-05-01/</guid>
+  <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2026-04-03</title>
   <dc:creator>Eric Nantz</dc:creator>
@@ -1968,130 +2023,6 @@ Note
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-10-04/</guid>
   <pubDate>Fri, 04 Oct 2024 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2024-09-06</title>
-  <dc:creator>Eric Nantz</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2024-09-06/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Ben Straub (GSK)</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>HyeSoo Cho (FDA)</li>
-<li>Joel Laxamana (Roche/Genentech)</li>
-<li>Michael Kane (MD Anderson Cancer Institute)</li>
-<li>Ning Leng (Roche/Genentech)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Renping Zhang (Johnson &amp; Johnson)</li>
-<li>Robert Devine (Johnson &amp; Johnson)</li>
-<li>Saghir Bashir (Argenx)</li>
-<li>Sam Parmar (Pfizer)</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Caution
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Due to technical issues, we were not able to record this session. Also, the attendees list above may not be complete. If you attended the call and your name is not listed above, please contact Eric Nantz.</p>
-</div>
-</div>
-<section id="analysis-data-reviewers-guide-adrg" class="level2">
-<h2 class="anchored" data-anchor-id="analysis-data-reviewers-guide-adrg">Analysis Data Reviewers Guide (ADRG)</h2>
-<ul>
-<li>Joel Laxamana is co-leading a new PHUSE working group on updating a template ADRG to account for open-source software such as R. A preliminary site for that working group is available at <a href="https://phuse-org.github.io/OSDocuMeta/" class="uri">https://phuse-org.github.io/OSDocuMeta/</a>. Note that it is in the early stages of development, but it will be updated as progress is made.</li>
-<li>Attendees from the meeting interested in learning more and joining that working group are encouraged to contact Joel.</li>
-<li>With the success of our previous pilots, attendees expressed interested in using a similar workflow to provide support for the PHUSE working group. For instance, Sam Parmar has already created a template ADRG in Quarto that could serve as inspiration: <a href="https://github.com/parmsam/quarto-adrg" class="uri">https://github.com/parmsam/quarto-adrg</a></li>
-</ul>
-</section>
-<section id="pilot-4-web-assembly" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-4-web-assembly">Pilot 4 (Web-Assembly)</h2>
-<ul>
-<li>Eric shared that the repository is just about ready for transfer. The tentative date for the transfer of the Pilot 4 bundle through the eCTD gateway is set for September 20, 2024.</li>
-<li>Paul and HyeSoo asked if there is a desire for a small test before the transfer. Eric mentioned that from his perspective a possible issue could be access to the WebR binary package repository, which is a different repository than the CRAN repository and its mirrors around the world. Eric mentioned that there will be two different ways the web-assembly bundle can be executed:
-<ul>
-<li>Method 1: Utilize the pre-compiled bundle that contains the R packages as well as the application itself. In this way, the WebR binary package repository CDN should not need to be contacted from the reviewer’s machine</li>
-<li>Method 2: Compile the web-assembly bundle upon first launch of the application, which will need to access the WebR binary package repository CDN to install the packages.</li>
-</ul></li>
-<li>Eric will arrange a dedicated testing meeting for the Docker container setup and testing to see if a Docker container can be built on the reviewers’ machines.</li>
-</ul>
-</section>
-<section id="potential-manuscript-on-web-assembly-in-life-sciences" class="level2">
-<h2 class="anchored" data-anchor-id="potential-manuscript-on-web-assembly-in-life-sciences">Potential Manuscript on Web-Assembly in Life Sciences</h2>
-<ul>
-<li>Paul requested a change in the proposed title of the paper to remove any references to “timelines.” Having any hint of that terminology could introduce additional policy issues during the disclosure process on their side.</li>
-<li>The plan is to propose the manuscript for publication in Nature. It was noted that the fee for open-access manuscripts is $11,000, and we would need to explore sponsorship from the Consortium or other avenues to address that cost.</li>
-<li>Eric will follow up with the editor he collaborated with on the recent Nature article <a href="https://www.nature.com/articles/d41586-024-00725-1">No installation required: how WebAssembly is changing scientific computing</a> to inquiry on interest from the editors at Nature to pursue this manuscript</li>
-<li>Michael Kane mentioned that he is an editor of the <a href="https://www.jstatsoft.org/index">Journal of Statistical Software</a> and there could be an opportunity to publish a similar manuscript on this topic in that journal.</li>
-</ul>
-</section>
-<section id="upcoming-conferences" class="level2">
-<h2 class="anchored" data-anchor-id="upcoming-conferences">Upcoming Conferences</h2>
-<ul>
-<li>Eric asked the Pilot 3 team if anyone from that group would like to join a presentation at the upcoming R/Pharma virtual conference focusing on clinical submissions. Both Joel and Ben expressed interest in joining that session. Eric will provide more details on timing and expectations once the R/Pharma program is completed.</li>
-<li>Michael noted that the R-Medicine conference next year would also be a potential venue for an additional presentation.</li>
-</ul>
-</section>
-<section id="future-pilot-ideas-for-2025" class="level2">
-<h2 class="anchored" data-anchor-id="future-pilot-ideas-for-2025">Future Pilot Ideas for 2025</h2>
-<p>A key focus of the meeting was to brainstorm on potential topics for future pilots in the next year:</p>
-<ul>
-<li>Focused pilot on the ADRG template (more background in the ADRG section above)</li>
-<li>Working with the repositories working group on a robust container image for a reproducible computing environment</li>
-<li>A more comprehensive submission that closely resembles a “real” submission (e.g.&nbsp;a large number of deliverables and outputs)
-<ul>
-<li>A consistent piece of feedback received at previous conference talks is that the current pilots only have sparse content (only 4 tables and a figure).</li>
-<li>At the time the previous pilots launched, the publically-available CDISC data was the best avenue for data</li>
-</ul></li>
-<li>Explore creating a large-scale mock clinical trial data via simulation methods.
-<ul>
-<li>On top of providing a rich source to generate many submission deliverables, this set could also be used as a robust source to test how statistical methods perform, enabling these assessments to be done truly in the open instead of behind company doors.</li>
-</ul></li>
-</ul>
-</section>
-<section id="additional-topics" class="level2">
-<h2 class="anchored" data-anchor-id="additional-topics">Additional Topics</h2>
-<ul>
-<li>Ben asked the FDA reviewers if the approaches used in the Pilot submissions could inform a future guidance document by FDA on using open-source software for submissions. Paul mentioned that they officially will not likely make any suggestions on the use of open-source software, as current guidances are meant to be high-level and will stay software-agnostic.</li>
-<li>It is possible FDA could share that sponsors should follow best practices, whatever they happen to be.</li>
-<li>Paul recommended our group work closely with PHUSE who have provided best practices in the past. One potential avenue to explore is the use of the JSON format instead of XPT. Atorus Research has open-sourced a package called <a href="https://github.com/atorus-research/datasetjson"><code>{datasetjson}</code></a> to address the viewing/importing of this format.</li>
-</ul>
-<section id="next-meeting" class="level3">
-<h3 class="anchored" data-anchor-id="next-meeting">Next Meeting</h3>
-<p>The next meeting of the R Submissions working group will be on Friday, October 6, 2024 at 9 AM Pacific Time.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-09-06/</guid>
-  <pubDate>Fri, 06 Sep 2024 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

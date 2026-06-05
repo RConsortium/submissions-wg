@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Joseph Rickert">
-<meta name="dcterms.date" content="2022-02-04">
+<meta name="author" content="Eric Nantz">
+<meta name="dcterms.date" content="2026-05-01">
 
-<title>Minutes 2022-02-04 – R Submissions Working Group</title>
+<title>Minutes 2026-05-01 – R Submissions Working Group</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -350,7 +350,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Minutes 2022-02-04</h1>
+      <h1 class="title">Minutes 2026-05-01</h1>
                       </div>
   </div>
     
@@ -360,14 +360,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Joseph Rickert </p>
+               <p>Eric Nantz </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">February 4, 2022</p>
+        <p class="date">May 1, 2026</p>
       </div>
     </div>
     
@@ -383,9 +383,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#some-useful-links-from-the-chat-box" id="toc-some-useful-links-from-the-chat-box" class="nav-link active" data-scroll-target="#some-useful-links-from-the-chat-box">Some useful links from the chat box</a></li>
+  <li><a href="#pilot-4-update" id="toc-pilot-4-update" class="nav-link active" data-scroll-target="#pilot-4-update">Pilot 4 Update</a></li>
+  <li><a href="#adrg-and-sdtm-dataset-updates" id="toc-adrg-and-sdtm-dataset-updates" class="nav-link" data-scroll-target="#adrg-and-sdtm-dataset-updates">ADRG and SDTM Dataset Updates</a></li>
+  <li><a href="#pilot-compatibility-and-release-planning" id="toc-pilot-compatibility-and-release-planning" class="nav-link" data-scroll-target="#pilot-compatibility-and-release-planning">Pilot Compatibility and Release Planning</a></li>
+  <li><a href="#pilot-5-updates-and-r-release" id="toc-pilot-5-updates-and-r-release" class="nav-link" data-scroll-target="#pilot-5-updates-and-r-release">Pilot 5 Updates and R Release</a></li>
+  <li><a href="#r-version-4.6.1-release-planning" id="toc-r-version-4.6.1-release-planning" class="nav-link" data-scroll-target="#r-version-4.6.1-release-planning">R Version 4.6.1 Release Planning</a></li>
+  <li><a href="#pilots-6-and-7-updates" id="toc-pilots-6-and-7-updates" class="nav-link" data-scroll-target="#pilots-6-and-7-updates">Pilots 6 and 7 Updates</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2022-02-04/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2026-05-01/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -395,98 +400,42 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>View Attendee List
+Note
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<ul>
-<li>“Phil Bowsher - RStudio”</li>
-<li>“Heidi Curinckx - Johnson &amp; Johnson”</li>
-<li>“Graeme Hickey - BD”</li>
-<li>“Ellis Hughes - GSK”</li>
-<li>“Emily Nguyen - FDA”</li>
-<li>“Jiang Xu - FDA”</li>
-<li>“Steven Hassendinckx”</li>
-<li>“Ning Leng - Genentech”</li>
-<li>“Joseph Rickert - R Consortium”</li>
-<li>“Paul Schuette - FDA”</li>
-<li>“Nan Xiao - Merck”</li>
-<li>“Renping Zhang - FDA”</li>
-<li>“Yilong Zhang - Merck”</li>
-<li>“Tadeusz Lewandowski - Roche”</li>
-<li>“Michael Mayer - RStudio”</li>
-<li>“Eric Nantz - Lilly”</li>
-<li>“Xin Qiu - Johnson &amp; Johnson”</li>
-<li>“CG Wang”</li>
-<li>“Michael Blanks - Beigene”</li>
-<li>“Gregory Chem - MSD”</li>
-<li>“Hey Soo Choo - FDA”</li>
-<li>“Bob Engle - Biogen”</li>
-<li>“Bella Feng - EQRx”</li>
-<li>“Miram Fossati - Merck”</li>
-<li>“Ryan Johnson - RStudio”</li>
-<li>“Christopher Kania - Biogen”</li>
-<li>“Shannon Lewis - Beigene”</li>
-<li>“Eli Miller - Atorus”</li>
-<li>“Jonathan Tisack - Beigene”</li>
-<li>“Shiva Kalyan Voruganti”</li>
-<li>“Hong Yan - Regeneron”</li>
-<li>“Patruchi”</li>
-</ul>
+<p>The creation of these meeting minutes was supported by the use of Zoom AI for meeting summaries.</p>
 </div>
 </div>
-</div>
-<p>The meeting was recorded and the <a href="https://rstudio.zoom.us/rec/share/szar9nFQH0BF-BOn134TSLzfGH6n4VOJP8iibLdHnqgluDC7PAPn6C3sg0TiyLHg.b97ETbrhnfYgr3Wb?startTime=1643994263000">video</a> (Passcode: &amp;nET4J?I) is available.</p>
-<p>JR began the meeting and asked NL to give an overview of the GitHub repositories for the Submissions WG. Every submission will have two repositories: a development repo and a repo that follows the FDA ECTD structure that contains the files that will go through the gateway.</p>
-<ul>
-<li><a href="https://github.com/RConsortium/submissions-wg">submissions-wg</a> is he umbrella repo that contains the <a href="https://github.com/RConsortium/submissions-wg/projects/2">kanban board</a> for the project.</li>
-<li><a href="https://github.com/RConsortium/submissions-pilot1">submissions-pilot1</a> is the development repository for the Pilot 1 submission</li>
-<li><a href="https://github.com/RConsortium/submissions-pilot1-to-fda">submission-pilot1-to-fda</a> contains the only the files that will go to the FDA</li>
-<li><a href="https://github.com/RConsortium/submissions-pilot2">submissions-pilot2</a> is the development repo for Pilot 2</li>
-<li>[https://github.com/RConsortium/submissions-pilot2]</li>
-</ul>
-<p>The group then summarized the present status of the project. The Pilot 1 submission of last year was mostly successful but the FDA response flagged a couple of problem areas: * An apparent but the resulted in column labels being switched * An unexplained rounding discrepancy in a p-value may be due to different operating systems. * Several good practice issues to address</p>
-<p>HSC who helped to conduct the FDA review of the Pilot 1 submission offered to share the code that flagged the rounding error. She will enter it as an issue on the submissions repo.</p>
-<p>The Pilot 1 team has been working on the Pilot 1 resubmission. The team will will review the FDA code and test it on multiple operating systems. They expect to be able to resubmit in a couple of weeks. NL asked if HSC could look over the new code before they do so. Assuming that the resubmission goes well the group will prepare a blog for posting on the RC blog.</p>
-<p>NL then reviewed plans of the Pilot 2 shiny submission. It is envisioned as a simple four tab Shiny app that contains the same analyses as the previous submission. The plan is to use the Roche teal framework because of its filtering structure.</p>
-<p>YZ then outlined work required to complete the Pilot 2 work and identified three dependencies:</p>
-<ol type="1">
-<li>teal must become open source</li>
-<li>The scope of Pilot 2 needs to be clarified</li>
-<li>A template needs to be developed for submission documentation that includes a Shiny app.</li>
-</ol>
-<p>YZ recommended that a separate Pilot 2 documentation team be formed to work on the Shiny documentation in parallel with the code development for Pilot 2.</p>
-<p>EN said that he had experience preparing this sort of documentation and agreed to lead the documentation task.</p>
-<p>JR asked when teal would become open source and whether the fact that it is not now open source prohibiting other companies from contributing to the project. TL responded that project to open source teal is currently with the Roche lawyers and that he expects it will be complete within three months. No one present believed that not currently having teal as open source code was prohibiting participation. Everyone will be able to run the Shiny app from a public website. EN noted that work on infrastructure can proceed in parallel.</p>
-<p>The team working on Pilot 2 said that a submission in Q2 is feasible.</p>
-<p>Currently there are not plans for multiple Pilot 2 submissions. However, it is likely that we would want to have a submission in the future that includes a more complicated Shiny app. JR noted that it would be optimal if the FDA could provide guidance on what features they would like to see in a more robust Shiny app.</p>
-<p>Moving beyond Shiny JR asked if by the end of the year we would be looking a submission based on container technology. EN remarked that that is the direction the group would like to see but since Docker is not suitable (because of licensing issues) it will be necessary to research alternative container technology.</p>
-<p>JR noted that having 29 people in the meeting indicated that there was considerable industry interest in the work being done and whether it would be possible to recruit a team to do the research for long range projects. He asked group members who are not involved in immediate work to get involved in long term planning. EN noted that we definitely need to help from the regulatory side to help effect any changes that would have to be made to make use of container technology.</p>
-<p>The discussion then turned to the possibility of making a submission to <a href="https://credevo.com/articles/2021/02/25/china-drug-registration-process/">CDE</a> the Chinese health authority. (See issue <a href="https://github.com/RConsortium/submissions-wg/issues/62">#62</a> ) They are trying their own submissions gateway. They have shared validation software with Roche that could check a submission. NL suggested that we undertake an effort to see if we could validate a test submission using the Chinese supplied software. If that worked the only additional work to be done to make a viable submission to the CDE would be to translate the documentation into Chinese.</p>
-<p>NL asked if anyone has contacts with the CDE that could review a test submission from the Submissions WG. JR asked EN if she could check with PS about possible FDA contacts with the CDE.</p>
-<p>BF noted that her company, EQRx, has the opposite problem. They have had a compound approved by the CEA and now want to submit it to the FDA. She noted that there are high level regulations about the transfer of data between China and the FDA. The CDE has an HGR application that must be approved by the Human Genetic Resources Agency for China. HY offered that she has some experience dealing with the CDE, having done two or three submissions to the CED in the past when she worked for Novartis. At that time the CDE accepted the FDA package.</p>
-<p>The discussion they turned to other countries HY noted that she is working on a submission to the Japanese <a href="https://www.pmda.go.jp/english/about-pmda/index.html">PMDA</a> which the group aggreed is more strict than the CDE an offered to look for a contact there.</p>
-<p>YL noted that the German authorities have strict requirements about the table formats.</p>
-<p>JR asked if there is there is a European authority that we should have on our radar. Apparently, the EMA does not presently require a data submission, but that may be changing. TL noted that they have had a proof of concept sharing data with the EMA.</p>
-<p>YL also raised the possibility of following the <a href="https://advance.phuse.global/display/WEL/Analysis+Data+Reviewer%27s+Guide+%28ADRG%29+Package">PHUSE ADGR</a> template. He suggested that we contact PHUSE and ask if they would be willing to update the template so that it does not specify SAS data sets. JR agreed to look for a contact within PHUSE. We would want a language agnostic template.</p>
-<p>NL noted that this would be a good time to revisit our effort to develop suggested language for section 14 (<a href="https://github.com/RConsortium/submissions-wg/issues/38">issue #38</a>).</p>
-<p>JR suggested that we need some high level planning document to capture all of the ideas presented.</p>
-<p>At 47:10 in the video NL explains the contents of the Submission WG GI Hub sites.</p>
-<section id="some-useful-links-from-the-chat-box" class="level3">
-<h3 class="anchored" data-anchor-id="some-useful-links-from-the-chat-box">Some useful links from the chat box</h3>
-<p>R Consortium GitHub sites: https://github.com/RConsortium/</p>
-<p>WG web page: https://rconsortium.github.io/submissions-wg/</p>
-<p>Tracker for the pilot1 submission: https://github.com/RConsortium/submissions-pilot1-to-fda/issues</p>
-<p>https://github.com/RConsortium/submissions-wg/issues/38</p>
-<p>Issue filed for pilot 2 documentation : https://github.com/RConsortium/submissions-wg/issues/63</p>
+<section id="pilot-4-update" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-4-update">Pilot 4 Update</h2>
+<p>The Submissions Working Group met for their May session with a focus on updates from FDA colleagues. Hye Soo reported that she was awaiting information from her division director regarding Pilot 4 and could not provide updates at this time, though she hoped to have information by the next meeting.</p>
+</section>
+<section id="adrg-and-sdtm-dataset-updates" class="level2">
+<h2 class="anchored" data-anchor-id="adrg-and-sdtm-dataset-updates">ADRG and SDTM Dataset Updates</h2>
+<p>Ben reported that Nick Mazel, the developer of the dataset JSON R package, provided feedback on ADRG notes and helper code for working with SDTM datasets. Hye Soo agreed to review the updated ADRG before official resubmission, and Ben offered to share it for review ahead of time. The discussion focused on differences between pilot 3 and pilot 5 data representations in XPT versus JSON formats, particularly regarding how integer and numeric values are stored, with Nick Mazel having provided some clarification on these technical differences.</p>
+</section>
+<section id="pilot-compatibility-and-release-planning" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-compatibility-and-release-planning">Pilot Compatibility and Release Planning</h2>
+<p>The team discussed including summary information about no issues between Pilot 3 and Pilot 5 in the ADRG, highlighting JSON’s compression strengths. They addressed a PDF rendering issue that was blocked on FDA colleagues’ laptops, with Hye Soo agreeing to double-check the problem. The group also discussed plans to test the pilot across different minor versions of their 4.4.x release, from 4.4.0 to 4.4.3, to ensure compatibility. Ning mentioned an additional action item about aligning on version release strategies between pharma and FDA teams, noting that pharma companies typically release only one major version annually.</p>
+</section>
+<section id="pilot-5-updates-and-r-release" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-5-updates-and-r-release">Pilot 5 Updates and R Release</h2>
+<p>The team discussed updates for Pilot 5, deciding to test minor versions 4.4.0 to 4.4.3 with the lock file based on version 4.4.3 and testing on other versions as well. Hye Soo confirmed that hyperlinks are now working properly. The group then shifted focus to Pilot 6, where Ning presented a draft proposal for synchronizing R version releases across industry, suggesting two annual release points: summer releases aligned with R Core’s X.Y.1 version (approximately two weeks after mid-June), and winter releases using the R Core version available in January. The proposal aims to align internal company releases with FDA’s internal releases to address version availability issues on FDA servers.</p>
+</section>
+<section id="r-version-4.6.1-release-planning" class="level2">
+<h2 class="anchored" data-anchor-id="r-version-4.6.1-release-planning">R Version 4.6.1 Release Planning</h2>
+<p>The team discussed release timing for R version 4.6.1, with Ning explaining that companies typically release second updates around January or February, following a 6-month window between minor versions. Eric noted that some companies wait for Bioconductor releases to be fully integrated, which can extend the timeline by 2-3 weeks. Ning proposed planning for an R 4.6.1 release in July, followed by a blog post in late July or August to align on this approach and start broader conversations about release strategies.</p>
+</section>
+<section id="pilots-6-and-7-updates" class="level2">
+<h2 class="anchored" data-anchor-id="pilots-6-and-7-updates">Pilots 6 and 7 Updates</h2>
+<p>The meeting focused on R version management and updates on Pilot 6 and 7 projects. Hye Soo discussed challenges with managing R versions across different reviewers and mentioned plans to consult with the internal team. The group discussed contingency plans for potential bugs in R releases, with Eric explaining the soaking period and testing processes. Ben provided updates on Pilot 6, highlighting progress on recreating atoms in R and experimenting with AI tools like Copilot. Eli shared updates on moving data storage from a personal AWS account to an official R Consortium account, which will also support future model evaluations in AWS Bedrock. Ning and Yilong presented Pilot 7’s efforts in developing benchmarking data and crowdsourcing test cases for AI skills, particularly through the Pharma Skills repository. The conversation ended with a brief discussion about recent news regarding real-time clinical trial monitoring leveraging AI.</p>
 
 
 </section>
@@ -947,4 +896,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2022-02-04/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2026-05-01/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
