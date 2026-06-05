@@ -1,0 +1,64 @@
+---
+title: "Minutes 2026-06-05"
+date: 2026-06-05
+---
+
+::: {.callout-tip collapse="true"}
+## View Attendee List
+
+- Brandon Sucher (Moderna)
+- Eli Miller (Atorus)
+- Ellis Hughes (GSK)
+- Gabriel Krotkov (FDA)
+- Hong Zheng (Bayer)
+- Hye Soo Cho (FDA)
+- Jared Woolfolk (Cytel)
+- Lovemore Gakava (Novo Nordisk)
+- Ning Leng (AbbVie)
+- Paul Schuette (FDA)
+- Phanikumar Tata (Syneos Health)
+- Robert Devine (Johnson & Johnson)
+- Sam Parmar (Pfizer)
+- Sara Zanzoul (Pfizer)
+- Stephanie Lussier (Moderna)
+- Tilo (Unknown)
+- Vital Jaggavarapu (Boehringer Ingelheim)
+- Youn Kyeong Chang (FDA)
+:::
+
+::: {.callout-note}
+The creation of these meeting minutes was supported by the use of Zoom AI for meeting summaries.
+:::
+
+## Challenges with R-based Submissions
+
+* The Submissions Working Group met to discuss challenges with R code submissions to the FDA, where reviewers are increasingly requesting SAS equivalents of analyses. Eric identified three potential causes:
+    + Technical difficulties with running R code
+    + Differences in statistical methodology between SAS and R
+    + Reviewer familiarity with SAS over R.
+* The group discussed the need to address these issues systematically, with plans to consult with the FDA and explore potential solutions that would benefit all parties involved.
+* Ning suggested providing additional training or demos to FDA reviewers through the R Consortium and leveraging open forums to emphasize early communication about R code submissions.
+* Eric noted that earlier communication with FDA about R usage in submissions has been effective.
+* Paul highlighted issues with replicating sponsor environments within FDA settings (even with `{renv}` utilized to manage package dependencies) and suggested using a bare skeleton approach to focus on key results rather than formatting details.
+* Ellis suggested the use of ARDs (analysis results data sets) as a potential solution that would contain analytical results in a tidy format without any extra table / output formatting code.
+* Eric proposed organizing shared learning webinars to address reviewer training gaps, though Paul noted he lacks authority to approve such initiatives and suggested discussing it with the appropriate FDA group.
+* Paul and Eric highlighted issues with automated pipelines and the importance of submitting runnable code, noting advantages of R's open source environment in making errors more visible.
+* Hye Soo expressed concerns about applicants not discussing their plans for submitting R code during the planning stages, which creates challenges during review.
+* Submissions involving proprietary R packages have also proved challenging due to recent cases where the package could not be installed on the reviewer's environment (specific examples include using Linux-specific paths or deprecated code)
+* Hye Soo mentioned in her experience that only about 10 percent of the submissions involving R code that she has reviewed were able to replicate the R environment and run the associated R code.
+* Another key source of recent frustration was how in recent submissions the sponsors cited the previous Pilot submissions as their justification for including R in their submissions. However, the previous Pilots are using the smaller CDISC open data with a much smaller scope of R packages, hence they do not represent a typical submission.
+* Paul noted a key statement in the [Statistical Software Clarifying Statement](https://www.fda.gov/media/161196/download) regarding the timing of consultation:
+
+> Sponsors are encouraged to consult with FDA review teams and especially with FDA statisticians regarding the choice and suitability of statistical software packages at an early stage in the product development process.
+
+* Eric expressed concern over the apparent lack of adequate testing done by sponsors to ensure R code is indeed runnable in an environment that closely mimics an FDA statistician's computing environment (mainly a laptop/workstation running Windows). In the ideal case, a sponsor would be able to launch a virtual environment and utilized a form of a CI/CD approach to verify R installation and code can be executed without errors.
+* The group agreed there is potential for a future pilot focused on developing automated workflows (e.g. GitHub Actions) to test R code across different environments.
+* Ellis expressed support to developing high-level guidance or checklist for sponsors to ensure R code submissions are runnable in standard Windows environments.
+* Youn Kyeong shared recent experiences with difficult to run highly complex R scripts that often contain functions nested in other functions.
+* Eric and Ning shared that in the current landscape of LLMs assisting with code development that it is critically important for the outputted code to have code structure that more resembles a human-written program.
+* For the next WG meeting, Hye Soo mentioned she will try to assemble a set of anonymized examples where R package installation or code execution produced errors.
+
+## Action Items and Next Steps
+
+* The team agreed to pursue a panel discussion at the upcoming R/Pharma virtual conference, with a potential dedicated training/webinar session with FDA reviewers.
+* In preparation for these discussions, the team will author resources and guidance, including a future blog post outlining best practices. Ning will start developing a skeleton/outline for FDA training sessions and seek approval from the R Consortium before reaching out to key divisions in the FDA to gauge interest and feasibility.
