@@ -1,1 +1,196 @@
 /* css styles */
+
+/* ============================================================
+   Hex Wall & Pilot Timeline
+   ============================================================ */
+
+/* ---- Timeline ---- */
+.timeline-wrapper {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  padding-bottom: 0.5rem;
+}
+
+.timeline-chart {
+  min-width: 660px;
+}
+
+.timeline-years {
+  display: flex;
+  padding-left: 150px;
+  margin-bottom: 4px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--bs-secondary-color, #6c757d);
+}
+
+.timeline-years span {
+  flex: 1;
+  text-align: left;
+}
+
+.timeline-rows {
+  border-top: 1px solid var(--bs-border-color, #dee2e6);
+  border-bottom: 1px solid var(--bs-border-color, #dee2e6);
+  padding: 4px 0;
+}
+
+.pilot-row {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  margin: 3px 0;
+}
+
+.pilot-row-label {
+  width: 140px;
+  min-width: 140px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-align: right;
+  padding-right: 12px;
+  color: var(--bs-body-color, #212529);
+}
+
+.pilot-row-track {
+  flex: 1;
+  position: relative;
+  height: 30px;
+  background: var(--bs-secondary-bg, #e9ecef);
+  border-radius: 4px;
+  overflow: visible;
+}
+
+.pilot-row-bar {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: white;
+  white-space: nowrap;
+  padding: 0 6px;
+  overflow: visible;
+}
+
+/* Arrow cap for ongoing pilots */
+.pilot-row-bar.ongoing {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  overflow: visible;
+}
+
+.pilot-row-bar.ongoing::after {
+  content: '';
+  position: absolute;
+  right: -14px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left-width: 14px;
+  border-left-style: solid;
+}
+
+/* Per-pilot bar colors */
+.bar-p1 { background-color: #2c7bb6; }
+.bar-p1.ongoing::after { border-left-color: #2c7bb6; }
+
+.bar-p2 { background-color: #1a9641; }
+.bar-p2.ongoing::after { border-left-color: #1a9641; }
+
+.bar-p3 { background-color: #d7191c; }
+.bar-p3.ongoing::after { border-left-color: #d7191c; }
+
+.bar-p4 { background-color: #e07b12; }
+.bar-p4.ongoing::after { border-left-color: #e07b12; }
+
+.bar-p5 { background-color: #7b2d8b; }
+.bar-p5.ongoing::after { border-left-color: #7b2d8b; }
+
+.bar-p6 { background-color: #4a7fa5; }
+.bar-p6.ongoing::after { border-left-color: #4a7fa5; }
+
+.bar-p7 { background-color: #3a6b82; }
+.bar-p7.ongoing::after { border-left-color: #3a6b82; }
+
+/* ---- Hex Grid ---- */
+.hex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1.75rem 0 1rem;
+}
+
+.hex-item {
+  text-align: center;
+  width: 130px;
+  text-decoration: none !important;
+  color: inherit;
+  display: block;
+}
+
+.hex-item img {
+  width: 115px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.hex-item:hover img {
+  transform: scale(1.08) translateY(-4px);
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.25));
+}
+
+.hex-item .hex-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-top: 0.45rem;
+  color: var(--bs-body-color, #212529);
+}
+
+.hex-item .hex-dates {
+  font-size: 0.73rem;
+  color: var(--bs-secondary-color, #6c757d);
+  margin-top: 0.15rem;
+}
+
+/* ── SWG Featured Sticker ────────────────────────────────────────────────── */
+.swg-featured {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--bs-secondary-bg, #f8f9fa);
+  border: 2px solid #2b50a2;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 560px;
+}
+
+.swg-hex {
+  width: 100px;
+  height: auto;
+  flex-shrink: 0;
+  filter: drop-shadow(0 4px 8px rgba(43, 80, 162, 0.25));
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.swg-hex:hover {
+  transform: scale(1.06) translateY(-3px);
+  filter: drop-shadow(0 8px 14px rgba(43, 80, 162, 0.35));
+}
+
+.swg-featured-text {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--bs-body-color, #212529);
+}

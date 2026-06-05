@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="R Submissions Working Group" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 419.9">
+  <defs>
+    <style>
+      .swg-bg { stroke-width: 0px; fill: #f0f6ff; }
+      .swg-border {
+        stroke: #2b50a2;
+        stroke-miterlimit: 10;
+        stroke-width: 8px;
+        fill: #f0f6ff;
+      }
+      .swg-banner { fill: #0047ba; stroke-width: 0px; }
+      .swg-banner-dark { fill: #003399; stroke-width: 0px; }
+      .swg-white { fill: #fff; stroke-width: 0px; }
+      /* 7 pilot mini-hex colors */
+      .swg-p1 { fill: #1976D2; stroke: #fff; stroke-width: 1.5px; }
+      .swg-p2 { fill: #2E7D32; stroke: #fff; stroke-width: 1.5px; }
+      .swg-p3 { fill: #C62828; stroke: #fff; stroke-width: 1.5px; }
+      .swg-p4 { fill: #6A1B9A; stroke: #fff; stroke-width: 1.5px; }
+      .swg-p5 { fill: #0047ba; stroke: #fff; stroke-width: 1.5px; }
+      .swg-p6 { fill: #00695C; stroke: #fff; stroke-width: 1.5px; }
+      .swg-p7 { fill: #1565C0; stroke: #fff; stroke-width: 1.5px; }
+      .swg-hex-num {
+        font-family: Cousine-Bold, Cousine;
+        font-weight: 700;
+        font-size: 15px;
+        fill: #fff;
+        text-anchor: middle;
+        dominant-baseline: central;
+        isolation: isolate;
+      }
+      .swg-title {
+        font-family: Cousine-Bold, Cousine;
+        font-weight: 700;
+        font-size: 20px;
+        fill: #fff;
+        isolation: isolate;
+      }
+      .swg-subtitle {
+        font-family: Cousine-Bold, Cousine;
+        font-weight: 700;
+        font-size: 12px;
+        fill: rgba(255,255,255,0.85);
+        isolation: isolate;
+      }
+      .swg-bottom-text {
+        font-family: Hack-Regular, Hack;
+        font-size: 14px;
+        fill: #fff;
+        isolation: isolate;
+      }
+      .swg-label {
+        font-family: Cousine-Bold, Cousine;
+        font-weight: 700;
+        font-size: 21px;
+        fill: #0047ba;
+        isolation: isolate;
+      }
+      .swg-r-bg {
+        font-family: Cousine-Bold, Cousine;
+        font-weight: 700;
+        font-size: 110px;
+        fill: #dbeafe;
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <g id="a">
+    <!-- Hex background -->
+    <path class="swg-border" d="m356,99.7L195,6.7c-6.2-3.6-13.8-3.6-20,0L14,99.7c-6.2,3.6-10,10.2-10,17.3v185.9c0,7.1,3.8,13.7,10,17.3l161,93c6.2,3.6,13.8,3.6,20,0l161-93c6.2-3.6,10-10.2,10-17.3V117c0-7.1-3.8-13.7-10-17.3Z"/>
+
+    <!-- Large watermark "R" in the background -->
+    <text class="swg-r-bg" transform="translate(95 285)"><tspan x="0" y="0">R</tspan></text>
+
+    <!-- Blue header banner -->
+    <rect class="swg-banner" x="22" y="100" width="326" height="54" rx="4"/>
+    <rect class="swg-banner-dark" x="22" y="140" width="326" height="14" rx="0"/>
+
+    <!-- Banner title text -->
+    <text class="swg-title" transform="translate(50 128)"><tspan x="0" y="0">R Submissions</tspan></text>
+    <text class="swg-subtitle" transform="translate(50 149)"><tspan x="0" y="0">Working Group</tspan></text>
+
+    <!-- 7-hex honeycomb (2+3+2, r=28, centered at x=185) -->
+    <!-- Row 1 (y=185): P1 at (160.75,185), P2 at (209.25,185) -->
+    <!-- Row 2 (y=227): P3 at (136.5,227), P4 at (185,227), P5 at (233.5,227) -->
+    <!-- Row 3 (y=269): P6 at (160.75,269), P7 at (209.25,269) -->
+
+    <!-- P1: Pilot 1 – TLFs -->
+    <polygon class="swg-p1" points="160.75,157 185,171 185,199 160.75,213 136.5,199 136.5,171"/>
+    <text class="swg-hex-num" x="160.75" y="186">1</text>
+
+    <!-- P2: Pilot 2 – ADaMs -->
+    <polygon class="swg-p2" points="209.25,157 233.5,171 233.5,199 209.25,213 185,199 185,171"/>
+    <text class="swg-hex-num" x="209.25" y="186">2</text>
+
+    <!-- P3: Pilot 3 – ADaMs+TLFs -->
+    <polygon class="swg-p3" points="136.5,199 160.75,213 160.75,241 136.5,255 112.25,241 112.25,213"/>
+    <text class="swg-hex-num" x="136.5" y="228">3</text>
+
+    <!-- P4: Pilot 4 – WebAssembly (center) -->
+    <polygon class="swg-p4" points="185,199 209.25,213 209.25,241 185,255 160.75,241 160.75,213"/>
+    <text class="swg-hex-num" x="185" y="228">4</text>
+
+    <!-- P5: Pilot 5 – Dataset JSON -->
+    <polygon class="swg-p5" points="233.5,199 257.75,213 257.75,241 233.5,255 209.25,241 209.25,213"/>
+    <text class="swg-hex-num" x="233.5" y="228">5</text>
+
+    <!-- P6: Pilot 6 – ADaMs AI -->
+    <polygon class="swg-p6" points="160.75,241 185,255 185,283 160.75,297 136.5,283 136.5,255"/>
+    <text class="swg-hex-num" x="160.75" y="269">6</text>
+
+    <!-- P7: Pilot 7 – Synthetic Data -->
+    <polygon class="swg-p7" points="209.25,241 233.5,255 233.5,283 209.25,297 185,283 185,255"/>
+    <text class="swg-hex-num" x="209.25" y="269">7</text>
+
+    <!-- Bottom dark bar with description -->
+    <rect class="swg-banner" x="22" y="300" width="326" height="34" rx="0"/>
+    <text class="swg-bottom-text" transform="translate(50 322)"><tspan x="0" y="0">for R Submissions</tspan></text>
+
+    <!-- Bottom-left rotated label (same style as other pilot hexes) -->
+    <text class="swg-label" transform="translate(66.1 337.26) rotate(30.49) scale(.98 1)"><tspan x="0" y="0">RConsortium</tspan></text>
+  </g>
+</svg>

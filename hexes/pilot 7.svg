@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Pilot 7 - Synthetic Clinical Data Simulation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 419.9">
+  <defs>
+    <style>
+      .p7-bg        { fill: #EEF4FF; stroke-width: 0px; }
+      .p7-border    { stroke: #2b50a2; stroke-miterlimit: 10; stroke-width: 8px; fill: #EEF4FF; }
+      .p7-banner    { fill: #1565C0; stroke-width: 0px; }
+      .p7-banner-dk { fill: #0D47A1; stroke-width: 0px; }
+      .p7-white     { fill: #fff; stroke-width: 0px; }
+      .p7-grid      { stroke: #c0cfe8; stroke-width: 1px; fill: none; }
+      .p7-axis      { stroke: #2b50a2; stroke-width: 1.5px; fill: none; stroke-linecap: round; }
+      .p7-curve     { stroke: #1565C0; stroke-width: 2.5px; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .p7-area      { fill: #90CAF9; opacity: 0.45; stroke-width: 0px; }
+      .p7-dot-obs   { fill: #1565C0; stroke-width: 0px; }
+      .p7-dot-sim   { fill: #42A5F5; opacity: 0.7; stroke-width: 0px; }
+      .p7-leg-dash  { stroke: #42A5F5; stroke-width: 2px; fill: none; stroke-dasharray: 5,3; }
+      .p7-title {
+        font-family: Cousine-Bold, Cousine;
+        font-weight: 700;
+        font-size: 20px;
+        fill: #fff;
+        isolation: isolate;
+      }
+      .p7-subtitle {
+        font-family: Cousine-Bold, Cousine;
+        font-weight: 700;
+        font-size: 14px;
+        fill: rgba(255,255,255,0.88);
+        isolation: isolate;
+      }
+      .p7-label {
+        font-family: Cousine-Bold, Cousine;
+        font-weight: 700;
+        font-size: 21px;
+        fill: #1565C0;
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <g id="a">
+    <!-- Hex outline -->
+    <path class="p7-border" d="m356,99.7L195,6.7c-6.2-3.6-13.8-3.6-20,0L14,99.7c-6.2,3.6-10,10.2-10,17.3v185.9c0,7.1,3.8,13.7,10,17.3l161,93c6.2,3.6,13.8,3.6,20,0l161-93c6.2-3.6,10-10.2,10-17.3V117c0-7.1-3.8-13.7-10-17.3Z"/>
+
+    <!-- ── Blue header banner ───────────────────────────────── -->
+    <rect class="p7-banner" x="22" y="100" width="326" height="54" rx="4"/>
+    <rect class="p7-banner-dk" x="22" y="140" width="326" height="14"/>
+    <text class="p7-title" transform="translate(50 128)"><tspan x="0" y="0">Synthetic</tspan></text>
+    <text class="p7-subtitle" transform="translate(50 150)"><tspan x="0" y="0">Clinical Data</tspan></text>
+
+    <!-- ── Plot area (white card) — scaled to y=168..288 ───── -->
+    <rect class="p7-white" x="55" y="168" width="260" height="120" rx="4"/>
+
+    <!-- Grid lines (vertical) -->
+    <line class="p7-grid" x1="107" y1="172" x2="107" y2="284"/>
+    <line class="p7-grid" x1="159" y1="172" x2="159" y2="284"/>
+    <line class="p7-grid" x1="211" y1="172" x2="211" y2="284"/>
+    <line class="p7-grid" x1="263" y1="172" x2="263" y2="284"/>
+
+    <!-- Grid lines (horizontal) -->
+    <line class="p7-grid" x1="59" y1="202" x2="311" y2="202"/>
+    <line class="p7-grid" x1="59" y1="233" x2="311" y2="233"/>
+    <line class="p7-grid" x1="59" y1="263" x2="311" y2="263"/>
+
+    <!-- Axes -->
+    <line class="p7-axis" x1="70" y1="282" x2="308" y2="282"/>
+    <line class="p7-axis" x1="70" y1="172" x2="70" y2="284"/>
+    <!-- x-axis arrow -->
+    <polyline class="p7-axis" points="303,278 308,282 303,286"/>
+    <!-- y-axis arrow -->
+    <polyline class="p7-axis" points="66,176 70,172 74,176"/>
+
+    <!-- Bell curve fill area (normal distribution — scaled) -->
+    <path class="p7-area" d="
+      M 80,280
+      C 90,280  98,278  108,270
+      C 118,259  125,241  138,222
+      C 148,207  158,185  185,181
+      C 212,185  222,207  232,222
+      C 245,241  252,259  262,270
+      C 272,278  280,280  290,280
+      Z
+    "/>
+
+    <!-- Bell curve stroke -->
+    <path class="p7-curve" d="
+      M 80,280
+      C 90,280  98,278  108,270
+      C 118,259  125,241  138,222
+      C 148,207  158,185  185,181
+      C 212,185  222,207  232,222
+      C 245,241  252,259  262,270
+      C 272,278  280,280  290,280
+    "/>
+
+    <!-- Dashed simulated curve -->
+    <path class="p7-leg-dash" d="
+      M 80,280
+      C 92,280  100,276  112,267
+      C 122,257  129,236  142,218
+      C 152,204  162,182  185,178
+      C 208,182  218,204  228,218
+      C 241,236  248,257  258,267
+      C 270,276  278,280  290,280
+    "/>
+
+    <!-- Simulated scatter dots (Monte Carlo draws — scaled) -->
+    <circle class="p7-dot-sim" cx="97"  cy="276" r="3.2"/>
+    <circle class="p7-dot-sim" cx="112" cy="268" r="3.2"/>
+    <circle class="p7-dot-sim" cx="122" cy="257" r="3.2"/>
+    <circle class="p7-dot-sim" cx="134" cy="243" r="3.2"/>
+    <circle class="p7-dot-sim" cx="143" cy="226" r="3.2"/>
+    <circle class="p7-dot-sim" cx="155" cy="209" r="3.2"/>
+    <circle class="p7-dot-sim" cx="168" cy="194" r="3.2"/>
+    <circle class="p7-dot-sim" cx="181" cy="184" r="3.2"/>
+    <circle class="p7-dot-sim" cx="194" cy="182" r="3.2"/>
+    <circle class="p7-dot-sim" cx="207" cy="186" r="3.2"/>
+    <circle class="p7-dot-sim" cx="219" cy="197" r="3.2"/>
+    <circle class="p7-dot-sim" cx="232" cy="213" r="3.2"/>
+    <circle class="p7-dot-sim" cx="243" cy="232" r="3.2"/>
+    <circle class="p7-dot-sim" cx="252" cy="251" r="3.2"/>
+    <circle class="p7-dot-sim" cx="261" cy="267" r="3.2"/>
+    <circle class="p7-dot-sim" cx="271" cy="277" r="3.2"/>
+    <!-- off-curve scattered simulation points -->
+    <circle class="p7-dot-sim" cx="104" cy="272" r="2.5"/>
+    <circle class="p7-dot-sim" cx="128" cy="238" r="2.5"/>
+    <circle class="p7-dot-sim" cx="150" cy="204" r="2.5"/>
+    <circle class="p7-dot-sim" cx="175" cy="189" r="2.5"/>
+    <circle class="p7-dot-sim" cx="198" cy="179" r="2.5"/>
+    <circle class="p7-dot-sim" cx="220" cy="192" r="2.5"/>
+    <circle class="p7-dot-sim" cx="248" cy="245" r="2.5"/>
+    <circle class="p7-dot-sim" cx="278" cy="273" r="2.5"/>
+
+    <!-- Observed real data dots (scaled) -->
+    <circle class="p7-dot-obs" cx="99"  cy="278" r="2.5"/>
+    <circle class="p7-dot-obs" cx="120" cy="262" r="2.5"/>
+    <circle class="p7-dot-obs" cx="140" cy="234" r="2.5"/>
+    <circle class="p7-dot-obs" cx="163" cy="200" r="2.5"/>
+    <circle class="p7-dot-obs" cx="184" cy="183" r="2.5"/>
+    <circle class="p7-dot-obs" cx="206" cy="189" r="2.5"/>
+    <circle class="p7-dot-obs" cx="227" cy="210" r="2.5"/>
+    <circle class="p7-dot-obs" cx="249" cy="242" r="2.5"/>
+    <circle class="p7-dot-obs" cx="267" cy="268" r="2.5"/>
+
+    <!-- Legend text (within plot card) -->
+    <text font-family="Cousine-Bold, Cousine" font-weight="700" font-size="8" fill="#1565C0" transform="translate(74 178)">Simulated</text>
+    <text font-family="Cousine-Bold, Cousine" font-weight="700" font-size="8" fill="#1565C0" transform="translate(74 186)">vs Observed</text>
+
+    <!-- ── Rotated "Pilot 7" corner label ────────────────── -->
+    <text class="p7-label" transform="translate(66.1 337.26) rotate(30.49) scale(.98 1)"><tspan x="0" y="0">Pilot 7</tspan></text>
+
+    <!-- ── Full R Consortium logo (rconsortium text + R mark + constellation, matching Pilot 1–5 layout) ── -->
+    <g>
+      <path fill="#0D47A1" d="m229.9,368.6c-1.5-.3-2.6-1.1-3.3-2.4l-.6-1c-.8-1.3-.9-2.7-.3-4.1.5-1.4,1.5-2.5,2.9-3.2,1.6-.9,3.3-1.1,5-.5l-1.2,2.6c-.9-.3-1.8-.2-2.6.2-.7.4-1.1,1-1.3,1.8-.2.8-.1,1.6.3,2.3s1,1.3,1.8,1.5c.8.3,1.5.2,2.3-.2s1.2-1.1,1.5-2.1l2.8.4c-.4,1.8-1.5,3.1-3.1,4-1.3.7-2.7,1-4.2.7Z"/>
+      <path fill="#0D47A1" d="m240.3,362.7c-1.5-.4-2.7-1.4-3.5-2.9s-1-3-.6-4.5,1.4-2.7,2.9-3.5,3-1,4.5-.6,2.7,1.4,3.5,2.9,1,3,.6,4.5-1.4,2.7-2.9,3.5c-1.4.8-2.9,1-4.5.6Zm3.2-3.1c.8-.4,1.2-1,1.4-1.8.2-.8.1-1.6-.4-2.3-.4-.8-1-1.3-1.8-1.5-.8-.3-1.6-.2-2.3.3-.8.4-1.2,1-1.4,1.8-.2.8-.1,1.6.4,2.3.4.8,1,1.3,1.8,1.5.7.2,1.5.1,2.3-.3Z"/>
+      <path fill="#0D47A1" d="m251.1,350l3.6,6.4-2.8,1.6-5.5-9.8,2.7-1.9.5.9c.4-1,1-1.7,1.9-2.3,1.3-.7,2.5-.9,3.6-.5s2,1.1,2.5,2.1l3.5,6.3-2.8,1.6-3.1-5.6c-.4-.7-.8-1.1-1.4-1.3-.5-.2-1.2-.1-1.8.3-.7.4-.9,1.2-.9,2.2Z"/>
+      <path fill="#0D47A1" d="m263.7,338.6c.7-.1,1.3,0,2,.2l-.6,2.7c-.8-.3-1.5-.3-2.2.1s-1.1.8-1.2,1.2c-.1.4,0,.6.4.7s.9,0,1.7-.2c1.1-.5,2.1-.6,2.9-.5.9.1,1.7.8,2.3,2,.5,1,.6,1.9.1,2.9-.5.9-1.2,1.7-2.2,2.3-1,.5-1.8.8-2.6.9-.8.1-1.5,0-2.2-.2l.6-2.7c.8.3,1.7.2,2.7-.2.8-.4,1.2-.8,1.3-1.2.1-.4,0-.6-.3-.8-.3-.2-.9,0-1.9.4-.9.4-1.8.5-2.7.5s-1.7-.6-2.3-1.8c-.6-1.1-.6-2.1-.2-3.1.5-1,1.1-1.7,1.9-2.2,1-.7,1.8-1,2.5-1Z"/>
+      <path fill="#0D47A1" d="m272.9,344.5c-1.5-.4-2.7-1.4-3.5-2.9s-1-3-.6-4.5,1.4-2.7,2.9-3.5,3-1,4.5-.6,2.7,1.4,3.5,2.9,1,3,.6,4.5-1.4,2.7-2.9,3.5c-1.4.8-2.9,1-4.5.6Zm3.2-3.1c.8-.4,1.2-1,1.4-1.8.2-.8.1-1.6-.4-2.3-.4-.8-1-1.3-1.8-1.5-.8-.3-1.6-.2-2.3.3-.8.4-1.2,1-1.4,1.8-.2.8-.1,1.6.4,2.3.4.8,1,1.3,1.8,1.5.7.3,1.5.2,2.3-.3Z"/>
+      <path fill="#0D47A1" d="m282.1,329.4c.3-1.2,1-2,2-2.6.3-.2.7-.3,1-.5l1.1,3.1c-.5-.1-1,0-1.7.3-.7.4-.9,1.3-.9,2.5l3.5,6.2-2.8,1.6-5.5-9.8,2.7-1.9.6,1.1Z"/>
+      <path fill="#0D47A1" d="m297.1,332.8c-1.2.6-2.3.8-3.3.6s-1.8-.9-2.4-1.9l-2.4-4.4-1.5.9-1.3-2.3,1.5-.8-1.5-2.7,2.7-1.9,1.7,3.1,1.5-.8,1.3,2.3-1.5.8,2.2,4c.3.5.6.9,1,1s.7,0,1.1-.2c.1-.1.3-.2.7-.6l1.7,1.7c-.4.4-.9.9-1.5,1.2Z"/>
+      <path fill="#0D47A1" d="m293.2,317.2c.1-.4.4-.7.9-1s.9-.3,1.3-.2c.4.1.7.4,1,.8s.3.8.2,1.2c-.1.4-.4.7-.9,1s-.9.3-1.3.2c-.4-.1-.7-.4-1-.8-.3-.3-.3-.7-.2-1.2Zm10.1,12.2l-5.6-10.1-2.8,1.6,5.6,10.1,2.8-1.6Z"/>
+      <path fill="#0D47A1" d="m309.9,321l-3.6-6.5,2.8-1.6,5.6,10.1-2.8,1.6-.5-.9c-.4,1-1,1.7-1.9,2.3-1.3.7-2.5.9-3.6.5s-2-1.1-2.5-2.1l-3.6-6.4,2.8-1.6,3.1,5.6c.4.7.8,1.1,1.4,1.3.5.2,1.2.1,1.8-.3.7-.3.9-1,1-2Z"/>
+      <path fill="#0D47A1" d="m316.3,313.6l3.6,6.5-2.8,1.6-5.5-9.8,2.7-1.9.5.9c.3-.9,1-1.7,1.9-2.2,1.3-.7,2.5-.9,3.6-.5.3-1.2,1.2-2.2,2.7-3,1.3-.7,2.5-.9,3.6-.5s2,1.1,2.5,2.1l3.5,6.3-2.8,1.6-3.1-5.5c-.4-.7-.8-1.1-1.3-1.3s-1.1-.1-1.8.2c-.5.3-.8,1-.8,1.9.1.2.2.5.3.7l3.3,5.9-3,1.6-3.1-5.5c-.4-.7-.8-1.1-1.3-1.3s-1.1-.1-1.8.2c-.6.4-.9,1.1-.9,2.1Z"/>
+      <path fill="#0047ba" d="m210.5,370.2c1.2,2.2,1.1,4-.2,5.6l6.1,2.9-3.7,2.1-5.4-2.6-2.1,1.2,2.4,4.3-3,1.7-7.5-13.4,5.1-2.8c2.1-1.2,3.8-1.6,5.1-1.4,1.3-.1,2.3.8,3.2,2.4Zm-2.7,3.6c.2-.5.1-1.2-.3-1.9s-.9-1.1-1.4-1.1-1.3.2-2.2.7l-2.2,1.2,2.2,3.9,2.2-1.2c.9-.5,1.5-1.1,1.7-1.6Z"/>
+      <path fill="#0047ba" d="m205.2,393.2h0c-1,0-1.9-.9-1.9-2h0c0-1,.9-1.9,2-1.9h0c1,0,1.9.9,1.9,2h0c0,.7-.4,1.3-1,1.6h0c-.3.2-.6.3-1,.3Zm13-8.1c-.9-.5-1.2-1.7-.7-2.6h0c.5-.9,1.7-1.2,2.6-.6h0c.9.5,1.2,1.7.7,2.6h0c-.2.3-.4.5-.7.7h0c-.5.3-1.3.3-1.9-.1Zm-21.9,5.6c-.9-.5-1.2-1.7-.7-2.6h0c.5-.9,1.7-1.2,2.6-.7h0c.9.5,1.2,1.7.7,2.6h0c-.2.3-.4.5-.7.7h0c-.6.4-1.3.4-1.9,0Zm21.5-22.2q0-.1,0,0h0c-.5-1-.2-2.2.7-2.7h0c.9-.5,2.1-.2,2.6.7h0c.5.9.2,2.1-.7,2.6h0c-1,.6-2.1.3-2.6-.6Zm-28.4,8.5c-1,0-1.9-.9-1.9-2h0c0-1,.9-1.9,2-1.9h0c1,0,1.9.9,1.9,1.9h0c0,.7-.4,1.3-1,1.7h0c-.3.2-.6.3-1,.3Zm16.2-15.8c-1,0-1.9-.9-1.9-2h0c0-1,.9-1.9,2-1.9h0c1,0,1.9.9,1.9,2h0c0,.7-.4,1.3-1,1.6h0c-.3.2-.6.3-1,.3Zm-7,1.8c-.9.5-2.1.2-2.6-.7h0c-.5-.9-.2-2.1.7-2.6h0c.9-.5,2.1-.2,2.6.7h0c.5.9.2,2.1-.7,2.6Z"/>
+      <path fill="#42A5F5" d="m211.6,390.2c-.5-.9-.2-2.1.7-2.6h0c.9-.5,2.1-.2,2.6.7h0c.5.9.2,2.1-.7,2.6h0c-.9.6-2.1.2-2.6-.7Z"/>
+      <path fill="#42A5F5" d="m221.4,377.4c-1,0-1.9-.9-1.9-2h0c0-1,.9-1.9,2-1.9h0c1,0,1.9.9,1.9,2h0c0,.7-.4,1.3-1,1.6h0c-.3.3-.6.4-1,.3Z"/>
+      <path fill="#42A5F5" d="m189.8,384.1c-.5-.9-.2-2.1.7-2.6h0c.9-.5,2.1-.2,2.6.7h0c.5.9.2,2.1-.7,2.6h0c-.9.5-2,.2-2.6-.7Z"/>
+      <path fill="#42A5F5" d="m212.6,363.2c-.9-.5-1.2-1.7-.7-2.6h0c.5-.9,1.7-1.2,2.6-.7h0c.9.5,1.2,1.7.7,2.6h0c-.2.3-.4.5-.7.7h0c-.5.3-1.2.3-1.9,0Z"/>
+      <path fill="#42A5F5" d="m190.7,368.8c-.9-.5-1.2-1.7-.7-2.6h0c.5-.9,1.7-1.2,2.6-.7h0c.9.5,1.2,1.7.7,2.6h0c-.2.3-.4.5-.7.7h0c-.5.3-1.2.3-1.9,0Z"/>
+    </g>
+  </g>
+</svg>
