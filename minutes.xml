@@ -10,7 +10,114 @@
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.9.38</generator>
-<lastBuildDate>Fri, 01 May 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 05 Jun 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2026-06-05</title>
+  <dc:creator>Eric Nantz</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2026-06-05/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>View Attendee List
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Brandon Sucher (Moderna)</li>
+<li>Eli Miller (Atorus)</li>
+<li>Ellis Hughes (GSK)</li>
+<li>Gabriel Krotkov (FDA)</li>
+<li>Hong Zheng (Bayer)</li>
+<li>Hye Soo Cho (FDA)</li>
+<li>Jared Woolfolk (Cytel)</li>
+<li>Lovemore Gakava (Novo Nordisk)</li>
+<li>Ning Leng (AbbVie)</li>
+<li>Paul Schuette (FDA)</li>
+<li>Phanikumar Tata (Syneos Health)</li>
+<li>Robert Devine (Johnson &amp; Johnson)</li>
+<li>Sam Parmar (Pfizer)</li>
+<li>Sara Zanzoul (Pfizer)</li>
+<li>Stephanie Lussier (Moderna)</li>
+<li>Tilo (Unknown)</li>
+<li>Vital Jaggavarapu (Boehringer Ingelheim)</li>
+<li>Youn Kyeong Chang (FDA)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The creation of these meeting minutes was supported by the use of Zoom AI for meeting summaries.</p>
+</div>
+</div>
+<section id="challenges-with-r-based-submissions" class="level2">
+<h2 class="anchored" data-anchor-id="challenges-with-r-based-submissions">Challenges with R-based Submissions</h2>
+<ul>
+<li>The Submissions Working Group met to discuss challenges with R code submissions to the FDA, where reviewers are increasingly requesting SAS equivalents of analyses. Eric identified three potential causes:
+<ul>
+<li>Technical difficulties with running R code</li>
+<li>Differences in statistical methodology between SAS and R</li>
+<li>Reviewer familiarity with SAS over R.</li>
+</ul></li>
+<li>The group discussed the need to address these issues systematically, with plans to consult with the FDA and explore potential solutions that would benefit all parties involved.</li>
+<li>Ning suggested providing additional training or demos to FDA reviewers through the R Consortium and leveraging open forums to emphasize early communication about R code submissions.</li>
+<li>Eric noted that earlier communication with FDA about R usage in submissions has been effective.</li>
+<li>Paul highlighted issues with replicating sponsor environments within FDA settings (even with <code>{renv}</code> utilized to manage package dependencies) and suggested using a bare skeleton approach to focus on key results rather than formatting details.</li>
+<li>Ellis suggested the use of ARDs (analysis results data sets) as a potential solution that would contain analytical results in a tidy format without any extra table / output formatting code.</li>
+<li>Eric proposed organizing shared learning webinars to address reviewer training gaps, though Paul noted he lacks authority to approve such initiatives and suggested discussing it with the appropriate FDA group.</li>
+<li>Paul and Eric highlighted issues with automated pipelines and the importance of submitting runnable code, noting advantages of R’s open source environment in making errors more visible.</li>
+<li>Hye Soo expressed concerns about applicants not discussing their plans for submitting R code during the planning stages, which creates challenges during review.</li>
+<li>Submissions involving proprietary R packages have also proved challenging due to recent cases where the package could not be installed on the reviewer’s environment (specific examples include using Linux-specific paths or deprecated code)</li>
+<li>Hye Soo mentioned in her experience that only about 10 percent of the submissions involving R code that she has reviewed were able to replicate the R environment and run the associated R code.</li>
+<li>Another key source of recent frustration was how in recent submissions the sponsors cited the previous Pilot submissions as their justification for including R in their submissions. However, the previous Pilots are using the smaller CDISC open data with a much smaller scope of R packages, hence they do not represent a typical submission.</li>
+<li>Paul noted a key statement in the <a href="https://www.fda.gov/media/161196/download">Statistical Software Clarifying Statement</a> regarding the timing of consultation:</li>
+</ul>
+<blockquote class="blockquote">
+<p>Sponsors are encouraged to consult with FDA review teams and especially with FDA statisticians regarding the choice and suitability of statistical software packages at an early stage in the product development process.</p>
+</blockquote>
+<ul>
+<li>Eric expressed concern over the apparent lack of adequate testing done by sponsors to ensure R code is indeed runnable in an environment that closely mimics an FDA statistician’s computing environment (mainly a laptop/workstation running Windows). In the ideal case, a sponsor would be able to launch a virtual environment and utilized a form of a CI/CD approach to verify R installation and code can be executed without errors.</li>
+<li>The group agreed there is potential for a future pilot focused on developing automated workflows (e.g.&nbsp;GitHub Actions) to test R code across different environments.</li>
+<li>Ellis expressed support to developing high-level guidance or checklist for sponsors to ensure R code submissions are runnable in standard Windows environments.</li>
+<li>Youn Kyeong shared recent experiences with difficult to run highly complex R scripts that often contain functions nested in other functions.</li>
+<li>Eric and Ning shared that in the current landscape of LLMs assisting with code development that it is critically important for the outputted code to have code structure that more resembles a human-written program.</li>
+<li>For the next WG meeting, Hye Soo mentioned she will try to assemble a set of anonymized examples where R package installation or code execution produced errors.</li>
+</ul>
+</section>
+<section id="action-items-and-next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="action-items-and-next-steps">Action Items and Next Steps</h2>
+<ul>
+<li>The team agreed to pursue a panel discussion at the upcoming R/Pharma virtual conference, with a potential dedicated training/webinar session with FDA reviewers.</li>
+<li>In preparation for these discussions, the team will author resources and guidance, including a future blog post outlining best practices. Ning will start developing a skeleton/outline for FDA training sessions and seek approval from the R Consortium before reaching out to key divisions in the FDA to gauge interest and feasibility.</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2026-06-05/</guid>
+  <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2026-05-01</title>
   <dc:creator>Eric Nantz</dc:creator>
@@ -1919,110 +2026,6 @@ Note
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-11-01/</guid>
   <pubDate>Fri, 01 Nov 2024 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2024-10-04</title>
-  <dc:creator>Eric Nantz &amp; Terry Christiani</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2024-10-04/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Amanda Martin (R Consortium)</li>
-<li>Andre Couturier (Sanofi)</li>
-<li>Ben Straub (GSK)</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>HyeSoo Cho (FDA)</li>
-<li>Joel Laxamana (Roche/Genentech)</li>
-<li>Lovemore Gakava (Novo Nordisk)</li>
-<li>Michael Kane (MD Anderson Cancer Institute)</li>
-<li>Mike Stackhouse (Atorus)</li>
-<li>Nicholas Masel (Johnson &amp; Johnson)</li>
-<li>Ning Leng (Roche/Genentech)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Robert Devine (Johnson &amp; Johnson)</li>
-<li>Saghir Bashir (Argenx)</li>
-<li>Terry Christiani (R Consortium)</li>
-</ul>
-</div>
-</div>
-</div>
-<section id="administrative-updates" class="level2">
-<h2 class="anchored" data-anchor-id="administrative-updates">Administrative Updates</h2>
-<ul>
-<li>The working group welcomed Terry Christiani, the new executive director for the R Consortium. We are greatly appreciate the important leadership provided by Joseph Rickert, the previous director. More information can be found on this <a href="https://r-consortium.org/posts/thank-you-joseph-rickert-a-legacy-of-leadership/">R Consortium Blog post</a>.</li>
-</ul>
-</section>
-<section id="submissions-pilot-4" class="level2">
-<h2 class="anchored" data-anchor-id="submissions-pilot-4">Submissions Pilot 4</h2>
-<ul>
-<li>The submissins pilot 4 (web-assembly version) was transferred on September 20, 2024 successfully and received by the FDA reviewers through the eCTD gateway transfer. The news was also shared in this <a href="https://r-consortium.org/posts/using-r-to-submit-research-to-the-fda-pilot-4-successfully-submitted/">announcement post</a> on the R Consortium blog.</li>
-<li>Hye Soo informed that their internal reviewer computers required an update to R version 4.4.1 to match the version used in the pilot submission. She also verified that there were no issues in rendering the Shiny application with the web-assembly method of execution.</li>
-<li>A small issue with column labels being switched on Primary Table was identified (a legacy issue that unfortunately was carried forward from an earlier version of the Pilot 1 output). While this is not a critical issue for the scope of pilot 4, Ben Straub shared how leveraging continuous integration / continuous deployment (CI/CD) for verifying the integrity of the data and outputs could be helpful.</li>
-<li>The full review of the submission is ongoing.</li>
-<li>Eric Nantz shared that the Docker container version of Pilot 4 is undergoing additional testing with the working group, and the goal is to have a transfer to the FDA reviewers in November (exact timing TBD).</li>
-<li>Communication with the Nature journal on a potential manuscript is ongoing. Michael Kane noted that additional journals such as the <a href="https://www.jstatsoft.org/index">Journal of Statistical Software</a> are another possibility for sharing the concepts of web-assembly in clinical submissions.</li>
-</ul>
-</section>
-<section id="analysis-data-reviewers-guide-adrg" class="level2">
-<h2 class="anchored" data-anchor-id="analysis-data-reviewers-guide-adrg">Analysis Data Reviewers Guide (ADRG)</h2>
-<ul>
-<li>Joel Laxamana shared the ADRG Phuse working group established quarterly meetings starting on October 16.</li>
-<li>Initial steps involve identifying all of the pieces required for an ADRG, and how can templates be enhanced using the learnings from previous open-source efforts such as the Pilot submissions.</li>
-<li>Additional members from the submmissions working group will be invited to future discussions after the initial brainstorming of high-level ideas.</li>
-</ul>
-</section>
-<section id="repositories-working-group-notes" class="level2">
-<h2 class="anchored" data-anchor-id="repositories-working-group-notes">Repositories Working Group Notes</h2>
-<ul>
-<li>The Repositories Working Group is continuing their efforts to deliver a reproducible environment structure in which each organization can adopt to fit their needs.</li>
-<li>It was recommended to invite Doug Kelkoff to a future submissions WG meeting to stay updated with their efforts</li>
-</ul>
-</section>
-<section id="future-pilot-ideas" class="level2">
-<h2 class="anchored" data-anchor-id="future-pilot-ideas">Future Pilot Ideas</h2>
-<section id="realistic-pilot-submissions" class="level3">
-<h3 class="anchored" data-anchor-id="realistic-pilot-submissions">Realistic Pilot Submissions</h3>
-<ul>
-<li>The previous pilot submissions have been successful with the higher-level goals of demonstrating open-source software including R is a viable method for producing the typical submission deliverables.</li>
-<li>However, the mock clinical data sets and collection of outputs are a much smaller scale than a typical clinical submission which routinely involve many data sets and clinical TFLs.</li>
-<li>Bringing members outside of this core group to lead a realistic pilot submission grouup could be valuable in many fronts.</li>
-<li>Paul Schutte shared that there isn’t a cononical data set applicable to the life sciences space in the way that widely-known data sets such as iris and more recently <a href="https://allisonhorst.github.io/palmerpenguins/articles/intro.html">Palmer Penguins</a>.</li>
-<li>With the lack of public de-identified clinical data sets on the scale of the typical submission, creating these realistic sets via robust simulation could be a path forward.</li>
-<li>Action item: Create a subgroup of those interested in this effort.</li>
-<li>Sources such as <a href="https://data.projectdatasphere.org/projectdatasphere/html/home">Project Datasphere</a> are a way to obtain ADAM data sets involving treatment and standard of care data sets (with many oncology studies). One must request access before data are shared.</li>
-</ul>
-</section>
-</section>
-<section id="json-data-format" class="level2">
-<h2 class="anchored" data-anchor-id="json-data-format">JSON Data Format</h2>
-<ul>
-<li>The group is interested in learning more on the current progress of the <a href="https://www.cdisc.org/dataset-json">Dataset-JSON</a> effort.</li>
-<li>Mike Stakhouse will share more information on the <a href="https://atorus-research.github.io/datasetjson/"><code>{datasetjson}</code></a> package in the next submissions working group meeting.</li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-10-04/</guid>
-  <pubDate>Fri, 04 Oct 2024 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
