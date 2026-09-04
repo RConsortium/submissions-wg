@@ -1,0 +1,44 @@
+---
+title: "Minutes 2026-06-05"
+date: 2026-06-05
+---
+
+::: {.callout-note}
+This session was a focused discussion on R-based submission feedback with a reduced number of invitees.
+:::
+
+::: {.callout-note}
+The creation of these meeting minutes was supported by the use of Zoom AI for meeting summaries.
+:::
+
+## R Package Validation for Regulation
+
+Hye Soo provided an update on pilot submission 5, which has been resubmitted and is awaiting FDA confirmation. She raised two key questions about validating open-source R packages without relying on SAS, and how to demonstrate validation of proprietary R packages for regulatory submissions. The discussion focused on exploring alternative validation methods and leveraging existing tools like the validation hub to establish confidence in regulatory submissions.
+
+## R Package Validation Approaches
+
+The team discussed validation approaches for R packages used in regulatory submissions, particularly addressing FDA reviewer concerns about relying solely on SAS for validation. Eric clarified that the Validation Hub focuses on risk assessment across different types of packages rather than specific statistical methodologies, while the [CAMIS](https://psiaims.github.io/CAMIS/) working group's approach of comparing R results to SAS serves as a potential direction. The group agreed to consider a focused approach of identifying 5-10 specific methods or packages that reviewers frequently question, then creating evaluation reports using simulated data to demonstrate the credibility of these packages independently of SAS.
+
+## Analytical Method Evaluation Techniques
+
+Ning proposed using simulated data with known ground truth to evaluate analytical methods in R, comparing estimated coefficients to predefined truth values. Eric supported this approach, noting it's a common technique for benchmarking methodologies in pharmaceutical submissions. The group discussed the importance of using open-source packages rather than proprietary ones, with Eric emphasizing that robust documentation is essential if proprietary packages must be used in regulatory submissions.
+
+## R Package Validation for Regulations
+
+The group discussed trust and validation of R packages for regulatory submissions, particularly focusing on MMRM (Mixed-Effects Model Repeated Measures) packages. Eric suggested using a Validation Hub to assess package trustworthiness for FDA reviewers, while Keaven recommended starting with specific, well-established packages like [`{mmrm}`](https://openpharma.github.io/mmrm/latest-tag/) rather than trying to address all R packages broadly. Couturier from Sanofi expressed skepticism about the lack of trust in R packages, arguing that many biostatistics methods are first developed in R before moving to SAS, and that well-maintained R packages are frequently validated and updated more quickly than SAS implementations.
+
+## R Package Regulatory Submission Guidelines
+
+The group discussed challenges and best practices around submitting R packages and code for regulatory submissions. Stephen and Ning explained that proprietary packages are acceptable but may require more review time from sponsors, similar to SAS macros. Paul emphasized the importance of transparent, readable code that can be easily inspected by reviewers, particularly for primary endpoints. The team agreed to compile a list of top R packages and analytical methods that reviewers commonly scrutinize, and discussed potential solutions including container approaches and Nix as an alternative to current methods. Next steps include developing examples of acceptable vs. unacceptable code practices and exploring opportunities to present these findings to pharmaceutical company leaders. 
+
+## Analytical Packages / Methods for Evaluation
+
+Hye Soo communicated the high-priority statistical analyses and methods that FDA reviewers are evaluating more carefully in R-based submissions:
+
+* Summary statistics
+* Analysis of Covariance (ANCOVA)
+* Logistic regression
+* Mixed Models for Repeated Measures (MMRM)
+* Cochran-Mantel-Haenszel (CMH) test
+* Survival models – Kaplan-Meier / Cox proportional hazards / Tobit regression
+* Multiple imputation – Linear regression / Markov Chain Monte Carlo (MCMC) if time permits
