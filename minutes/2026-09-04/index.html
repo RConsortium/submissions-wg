@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Eric Nantz &amp; Theresa Christiani">
-<meta name="dcterms.date" content="2024-12-06">
+<meta name="author" content="Eric Nantz">
+<meta name="dcterms.date" content="2026-09-04">
 
-<title>Minutes 2024-12-06 – R Submissions Working Group</title>
+<title>Minutes 2026-09-04 – R Submissions Working Group</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -353,7 +353,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Minutes 2024-12-06</h1>
+      <h1 class="title">Minutes 2026-09-04</h1>
                       </div>
   </div>
     
@@ -363,14 +363,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Eric Nantz &amp; Theresa Christiani </p>
+               <p>Eric Nantz </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">December 6, 2024</p>
+        <p class="date">September 4, 2026</p>
       </div>
     </div>
     
@@ -386,12 +386,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#adrg-formats" id="toc-adrg-formats" class="nav-link active" data-scroll-target="#adrg-formats">ADRG Formats</a></li>
-  <li><a href="#ectd-and-zip-archives" id="toc-ectd-and-zip-archives" class="nav-link" data-scroll-target="#ectd-and-zip-archives">eCTD and Zip Archives</a></li>
-  <li><a href="#dataset-json-overview" id="toc-dataset-json-overview" class="nav-link" data-scroll-target="#dataset-json-overview">Dataset-JSON Overview</a></li>
-  <li><a href="#admin-housekeeping" id="toc-admin-housekeeping" class="nav-link" data-scroll-target="#admin-housekeeping">Admin &amp; Housekeeping</a></li>
+  <li><a href="#pilot-5-updates-and-platform-discussion" id="toc-pilot-5-updates-and-platform-discussion" class="nav-link active" data-scroll-target="#pilot-5-updates-and-platform-discussion">Pilot 5 Updates and Platform Discussion</a></li>
+  <li><a href="#fda-r-package-resource-plan" id="toc-fda-r-package-resource-plan" class="nav-link" data-scroll-target="#fda-r-package-resource-plan">FDA R Package Resource Plan</a></li>
+  <li><a href="#package-evaluation-criteria-discussion" id="toc-package-evaluation-criteria-discussion" class="nav-link" data-scroll-target="#package-evaluation-criteria-discussion">Package Evaluation Criteria Discussion</a></li>
+  <li><a href="#statistical-software-comparison-method" id="toc-statistical-software-comparison-method" class="nav-link" data-scroll-target="#statistical-software-comparison-method">Statistical Software Comparison Method</a></li>
+  <li><a href="#fda-submission-review-process-improvements" id="toc-fda-submission-review-process-improvements" class="nav-link" data-scroll-target="#fda-submission-review-process-improvements">FDA Submission Review Process Improvements</a></li>
+  <li><a href="#fda-rba-consensus-planning" id="toc-fda-rba-consensus-planning" class="nav-link" data-scroll-target="#fda-rba-consensus-planning">FDA RBA Consensus Planning:</a></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next Steps</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2024-12-06/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2026-09-04/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -401,82 +404,56 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>View Attendee List
+Note
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<ul>
-<li>Amanda Martin (R Consortium)</li>
-<li>Ben Straub (GSK)</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>HyeSoo Cho (FDA)</li>
-<li>Joel Laxamana (Roche/Genentech)</li>
-<li>Joseph Rickert</li>
-<li>Mike Stackhouse (Atorus)</li>
-<li>Nicholas Masel (Johnson &amp; Johnson)</li>
-<li>Ning Leng (Roche/Genentech)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Robert Devine (Johnson &amp; Johnson)</li>
-<li>Sam Hume (CDISC)</li>
-<li>Sam Parmar (Pfizer)</li>
-<li>Terry Christiani (R Consortium)</li>
-</ul>
+<p>The creation of these meeting minutes was supported by the use of Zoom AI for meeting summaries.</p>
 </div>
 </div>
-</div>
-<section id="adrg-formats" class="level2">
-<h2 class="anchored" data-anchor-id="adrg-formats">ADRG Formats</h2>
-<ul>
-<li>HyeSoo shared additional feedback from FDA on the file formats used for sending the Analysis Data Reviewers Guide (ADRG) in clinical submissions:
-<ul>
-<li>For an FDA submission, a final ADRG document should be submitted for review. It is not recommended for reviewers to take additional steps such as rendering the ADRG using Quarto or another technical publishing system/package.</li>
-<li>The PDF format is required for submitting an ADRG. However there is a possibility of conducting a pilot test with submitting the ADRG in alternative formats such as the source Quarto file <code>.qmd</code> as well as the HTML output format <code>.html</code>.</li>
-</ul></li>
-<li>The rational for submitting an ADRG in HTML format was discussed. Eric and Joel shared that having the HTML format brings the possibility of interactive displays (such as tables) which could be beneficial, especially for a submission including a large amount of programs and TLG outputs.</li>
-<li>The group agreed that sending the ADRG source file in <code>.qmd</code> format would not be as beneficial in the current stage, as the rendered document itself is the main focus.</li>
-<li>Future pilots such as Pilot 5 could be the first project to test submitting the ADRG in HTML format</li>
-<li>While Pilot 4 (WebAssembly Shiny app) formally submitted the ADRG in PDF format, Eric created a separate version of the ADRG in HTML format as a technical preview, which can be viewed at <a href="https://rpodcast.quarto.pub/pilot4-webassembly-adrg/">this link</a>.</li>
-</ul>
+<section id="pilot-5-updates-and-platform-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-5-updates-and-platform-discussion">Pilot 5 Updates and Platform Discussion</h2>
+<p>The team discussed updates on Pilot 5, including ongoing work on addressing feedback and potential use of the Dataset JSON package across different platforms. They explored the possibility of using Precision FDA as a cloud-based solution for testing R-based submissions, acknowledging the need for further discussions on legal and governance aspects. The group also considered the potential for Shiny apps as reviewer aids, while recognizing the challenges of security and infrastructure limitations. Next steps include continuing to explore Precision FDA as a viable platform and addressing legal and governance considerations for future collaboration.</p>
 </section>
-<section id="ectd-and-zip-archives" class="level2">
-<h2 class="anchored" data-anchor-id="ectd-and-zip-archives">eCTD and Zip Archives</h2>
-<ul>
-<li>HyeSoo shared clarifications on the current eCTD specifications for including a ZIP archive file in a submission package. The accepted location is M5.3, with the permissible uses of grouping large sets of aECG XML files.</li>
-<li>The method of including both the data sets and programs in the ZIP archive (utilized by the Pilot 4 WebAssembly submission) is not permissible.</li>
-<li>Eric will set up a targeted discussion with Paul and HyeSoo in January 2025 on how to best utilized the ZIP format in the future Pilot 4 Docker Container submission.</li>
-<li>Questions were raised on the possible inclusion of additional archive formats such as compressed Tar archives <code>.tar.gz</code> in the eCTD specifications. Currently that format is not supported, but it could be explored for discussion with FDA next year.</li>
-</ul>
+<section id="fda-r-package-resource-plan" class="level2">
+<h2 class="anchored" data-anchor-id="fda-r-package-resource-plan">FDA R Package Resource Plan</h2>
+<p>Ning presented a plan to create a “one stop shop” resource for FDA reviewers who are familiar with SAS but not R, building on previous feedback from Paul and Hye Soo about submission review challenges. The proposed approach involves identifying trustworthy and credible R packages from CRAN, locating simulation results from package manuals or papers, and establishing a CICD pipeline to reproduce those results regularly. The team discussed using the CAMIS site’s package comparisons as a foundation for their curation efforts, with Eric suggesting they could potentially involve CAMIS members in future working group sessions to discuss package selection criteria.</p>
 </section>
-<section id="dataset-json-overview" class="level2">
-<h2 class="anchored" data-anchor-id="dataset-json-overview">Dataset-JSON Overview</h2>
-<ul>
-<li>Sam Hume from CDISC joined the meeting to share CDISC’s efforts in creating JSON datasets for clinical submissions, and feedback from previous pilots with FDA. You can view slides from Sam’s previous presentation on Dataset-JSON from the 2024 CDISC &amp; TMF Europe Interchange conference at <a href="https://www.cdisc.org/sites/default/files/2024-04/2024-EU-Interchange-Session-6B-SamHume-final.pdf">this link</a>, as well as the slides from a Public Review webinar held by CDISC at <a href="https://www.cdisc.org/sites/default/files/pdf/Dataset-JSON-v1-1-Public-Review.pdf">this link</a>.</li>
-<li>Many of the standards in data exchanges are now using the JSON format as default.</li>
-<li>There is increasing interest in additional structures besides the traditional rectangular/tabular approach, such as in the Electronic Study Protocol Template M11 module.</li>
-<li>CDISC ran a pilot within CDER at FDA to verify the Dataset-JSON format could be successfull transferred and viewed by reviewers. The testing was deemed successful.</li>
-<li>A mix of tools were utilized in the pilot. One of the over-arching goals is to ensure that the Dataset-JSON format is agonostic to the tools/languages used to ingest the format. For example, multiple languages like SAS, R, and Python should be able to import and analyze the data in this format.</li>
-<li>Recently the Dataset-JSON version 1.1 was released, addressing feedback generated from the earlier pilot. You can view the updated user guide for v1.1 at <a href="https://wiki.cdisc.org/plugins/servlet/mobile?contentId=230658980#content/view/230658980">this link</a>.</li>
-<li>Mike Stackhouse shared that the <a href="https://atorus-research.github.io/datasetjson/">`{datasetjson}</a> package, tasked with reading and writing CDISC Dataset JSON files, is in active development to accomodate v1.1 of the Dataset-JSON format.</li>
-<li>Nick and Mike would welcome collaboration from others on the package updates.</li>
-<li>Another important fix ongoing for the package is switching to a more performant JSON processing backend, as detailed in <a href="https://github.com/atorus-research/datasetjson/issues/32">issue 32</a> of the package’s GitHub repository.</li>
-<li>In light of learning about the successful pilot, questions were asked on whether our submissions group should still initiate a new Pilot that leverages JSON format instead of XPT. Sam and others in the call concurred that the pilot would still be worthwhile to conduct, as it could be the first test of the new Dataset-JSON v1.1 specification in a realistic setting.</li>
-<li>Ben shared that this could be a great opportunity for others in the working group to take the lead on this new Pilot, now being called Pilot 5. Ben will take on the task of creating a new channel in Slack dedicated to Pilot 5 within the R Consortium Slack Channel.</li>
-</ul>
+<section id="package-evaluation-criteria-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="package-evaluation-criteria-discussion">Package Evaluation Criteria Discussion</h2>
+<p>The team discussed package evaluation criteria for statistical software, with Hye Soo noting that they currently lack internal guidance for evaluating packages. Eric suggested using the validation hub as a starting point and proposed exploring risk metrics dimensions with weighting for different components in future meetings. The discussion also covered the integration of package validation into pilot 7, which includes building simulated data, and Gabriel provided feedback on challenges with WSL and Docker setup in Precision FDA, noting significant spin-up times compared to typical TTYD instances.</p>
 </section>
-<section id="admin-housekeeping" class="level2">
-<h2 class="anchored" data-anchor-id="admin-housekeeping">Admin &amp; Housekeeping</h2>
+<section id="statistical-software-comparison-method" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-software-comparison-method">Statistical Software Comparison Method</h2>
+<p>Keaven discussed his work with the broom concept for comparing results across different statistical software packages, particularly SAS and R. The group aligned on pursuing this approach, with Hye Soo confirming it matches previous discussions and requesting updates in September. Phani raised concerns about accessing SAS software for comparisons, to which Eric responded that while SAS might be necessary for some niche methods, they should aim for a solution that’s self-contained and easily runnable by anyone, potentially using Python for fundamental concepts.</p>
+</section>
+<section id="fda-submission-review-process-improvements" class="level2">
+<h2 class="anchored" data-anchor-id="fda-submission-review-process-improvements">FDA Submission Review Process Improvements</h2>
+<p>The group discussed a blog post about FDA reviewer challenges with R-based submissions, with Joe Cheng suggesting it should serve as a checklist for ensuring submissions are reviewer-friendly. Ning identified this as an organizational issue in large pharmaceutical companies where tasks are divided among many people without considering reviewer needs. Sam proposed adding a “Submission reviewability check” pilot to assess alignment with the blog post recommendations, which Eric supported as potentially being connected to automated routines. Hye Soo clarified that the blog post reflects challenges encountered by only a few FDA reviewers and should not be considered an official FDA position.</p>
+</section>
+<section id="fda-rba-consensus-planning" class="level2">
+<h2 class="anchored" data-anchor-id="fda-rba-consensus-planning">FDA RBA Consensus Planning:</h2>
+<p>The group discussed the process of gaining consensus among FDA reviewers regarding RBA submissions, with Hye Soo mentioning plans for an internal meeting in October or November involving the Office of Biostatistics. Paul explained that while there isn’t yet unanimity internally, they are in early stages of planning discussions across the FDA’s approximately 250 staff members, along with additional statisticians in CDRH and CBER. The team agreed to proceed with blog posts and a sponsor checklist as a starting point, with Joe planning to contact individuals for additional guidance before presenting to the pharmaceutical community.</p>
+</section>
+<section id="next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps">Next Steps</h2>
 <ul>
-<li>The group agreed to keep the current cadence of having the Submissions WG meetings on the first Friday of every month, with adjustments as needed.</li>
-<li>A few members on the call were not clear on how to get invitations properly on their calendar. Theresa shared the ways anyone can add the working group meetings on their calendar. However the group agreed that having a dedicated page on the Working Group site for how to join the group and the various communication platforms would be a beneficial.</li>
-<li>Eric will create a new page on the site to hold this information. In fact that page is now live! Visit the <a href="../../join.html">How to Join</a> page for complete details.</li>
+<li>Sam: Address outstanding issues for Pilot 5 resubmission after Ben completes his workshop for Posit Conf, aiming to prioritize this in the next few weeks.</li>
+<li>Nick: Reach out to Mary from SAS and Sam Hume for the Python side to form a team to check interoperability of Dataset JSON across SAS, Python, and R, prioritizing the SAS side initially.</li>
+<li>Hye Soo: Provide updates on the exploration of using a cloud computing solution, particularly Precision FDA, as they become available.</li>
+<li>Ning: Share the draft collaboration agreement with Hye Soo for internal discussions within the FDA.</li>
+<li>Paul: Look into the details of existing CRADAs (like Precision Prism) to explore if the working group can fall under an existing agreement for the Precision FDA pilot.</li>
+<li>Ning: Share the blog post on R-based submission challenges with organizations and promote the upcoming RE Pharma panel discussion.</li>
+<li>Ning: Continue developing the Pilot 7 effort to create a “one stop shop” for comparing R packages with SAS and simulation results, leveraging CAMIS efforts and potentially the Validation Hub metrics.</li>
+<li>Eric: Explore the feasibility of adding a “Submission reviewability check” to Pilot 7, informed by the blog post, to automate assessment of code and environment.</li>
+<li>Joe Cheng: Contact meeting participants individually to ensure his upcoming talk at the R Pharma Summit stays on message regarding R-based submission challenges.</li>
+<li>Eric: Ensure the meeting minutes are updated and shared before leaving for the conference.</li>
 </ul>
 
 
@@ -938,4 +915,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2024-12-06/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2026-09-04/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
