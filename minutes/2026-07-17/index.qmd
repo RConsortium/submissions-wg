@@ -1,6 +1,6 @@
 ---
-title: "Minutes 2026-06-05"
-date: 2026-06-05
+title: "Minutes 2026-07-17"
+date: 2026-07-17
 ---
 
 ::: {.callout-note}
