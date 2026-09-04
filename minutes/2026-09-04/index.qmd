@@ -25,7 +25,7 @@ Keaven discussed his work with the broom concept for comparing results across di
 
 ## FDA Submission Review Process Improvements
 
-The group discussed a blog post about FDA reviewer challenges with R-based submissions, with Joe suggesting it should serve as a checklist for ensuring submissions are reviewer-friendly. Ning identified this as an organizational issue in large pharmaceutical companies where tasks are divided among many people without considering reviewer needs. Sam proposed adding a "Submission reviewability check" pilot to assess alignment with the blog post recommendations, which Eric supported as potentially being connected to automated routines. Hye Soo clarified that the blog post reflects challenges encountered by only a few FDA reviewers and should not be considered an official FDA position.
+The group discussed a blog post about FDA reviewer challenges with R-based submissions, with Joe Cheng suggesting it should serve as a checklist for ensuring submissions are reviewer-friendly. Ning identified this as an organizational issue in large pharmaceutical companies where tasks are divided among many people without considering reviewer needs. Sam proposed adding a "Submission reviewability check" pilot to assess alignment with the blog post recommendations, which Eric supported as potentially being connected to automated routines. Hye Soo clarified that the blog post reflects challenges encountered by only a few FDA reviewers and should not be considered an official FDA position.
 
 ## FDA RBA Consensus Planning:
 
@@ -41,5 +41,5 @@ The group discussed the process of gaining consensus among FDA reviewers regardi
 * Ning: Share the blog post on R-based submission challenges with organizations and promote the upcoming RE Pharma panel discussion.
 * Ning: Continue developing the Pilot 7 effort to create a "one stop shop" for comparing R packages with SAS and simulation results, leveraging CHEMIS efforts and potentially the Validation Hub metrics.
 * Eric: Explore the feasibility of adding a "Submission reviewability check" to Pilot 7, informed by the blog post, to automate assessment of code and environment.
-* Joe: Contact meeting participants individually to ensure his upcoming talk at the R Pharma Summit stays on message regarding R-based submission challenges.
+* Joe Cheng: Contact meeting participants individually to ensure his upcoming talk at the R Pharma Summit stays on message regarding R-based submission challenges.
 * Eric: Ensure the meeting minutes are updated and shared before leaving for the conference.
