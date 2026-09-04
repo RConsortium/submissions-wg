@@ -58,4 +58,4 @@ author: Eric Nantz & Theresa Christiani
 
 * The group agreed to keep the current cadence of having the Submissions WG meetings on the first Friday of every month, with adjustments as needed.
 * A few members on the call were not clear on how to get invitations properly on their calendar. Theresa shared the ways anyone can add the working group meetings on their calendar. However the group agreed that having a dedicated page on the Working Group site for how to join the group and the various communication platforms would be a beneficial.
-* Eric will create a new page on the site to hold this information. In fact that page is now live! Visit the [How to Join](join.qmd) page for complete details.
+* Eric will create a new page on the site to hold this information. In fact that page is now live! Visit the [How to Join](../../join.qmd) page for complete details.
