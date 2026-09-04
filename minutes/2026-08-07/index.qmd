@@ -1,0 +1,56 @@
+---
+title: "Minutes 2026-08-07"
+date: 2026-08-07
+---
+
+::: {.callout-note}
+The creation of these meeting minutes was supported by the use of Zoom AI for meeting summaries.
+:::
+
+## Pilot 5 Resubmission Review Update
+
+Hye Soo presented an update on the Pilot 5 resubmission review, reporting that the overall process went smoothly with no major issues in setting up the R environment or generating final outputs. She identified a minor code error where data names were referenced incorrectly, which was resolved by switching to the correct dataset. Hye Soo raised questions about discrepancies found in variable data types between different datasets, particularly noting that some variables appeared as character values in the submitted Pilot 5 dataset while the original XPT files had them as numeric, though she noted this integer versus numeric difference was already addressed in ADRG Appendix 2.
+
+## Data Type Assignment Issues Discussion
+
+The team discussed issues with data type assignments in their system, where Ben raised concerns about how values are stored and potentially misclassified. Nick explained that an automated metadata creation function might be causing incorrect type assignments and agreed to investigate further. The discussion then shifted to format.SAS attributes, where Hye Soo noted that pilot five was missing this attribute compared to other pilots, with the team observing that their package doesn't preserve SAS format metadata from XPT files like the Haven package does.
+
+## Package Implementation Updates Discussion
+
+The team discussed updates needed for `{datasetjson}` that hasn't been implemented in recent sprint cycles. Hye Soo raised concerns about using the dataset JSON format in SAS, noting a discrepancy in the order of dataset and variable names in the ADRG. The team also discussed the next steps for Pilot 5, with Hye Soo asking whether these issues could be addressed as part of ongoing pilot work rather than being treated as separate submissions.
+
+## SAS Formatting Issues in ECTD
+
+The team discussed issues with character numeric discrepancies and SAS attribute formatting in dataset JSON submissions to the ECTD portal. Ben and Eric agreed that fixing these formatting problems should be addressed before moving forward with Pilot 5, rather than trying to implement future updates like supporting dataset JSON for data type submissions. The group decided to document the SAS issues in the ADRG and potentially resubmit with appropriate caveats about the date format attribute problem.
+
+## Programming Language Interoperability Discussion
+
+Nick and Eric discussed the need to address interoperability issues between different programming languages (SAS, R, and Python) using Dataset-JSON format. Nick proposed organizing a collaborative session with Mike to work on upstream fixes and create a paper or readout for the industry demonstrating the interoperability between the three systems. The team agreed to update each other on Slack regarding the timeline for these fixes, with the goal of submitting a clean resubmission for Pi 5 that addresses both the formatting and interoperability issues.
+
+## Pilot Five Submission Data Issues
+
+The team discussed ongoing issues with the Pilot Five submission, particularly regarding data formatting changes from XPT to new storage formats. Sam was commended for adding issues to the issue board and taking screenshots of shared content. The group addressed concerns about R-based submissions and FDA biostatistician reviews, with Sue sharing feedback about common analysis methods and packages that were receiving additional scrutiny. Phani raised a question about potential data value changes due to class value modifications, which Hye Soo confirmed did not affect actual data values.
+
+## Statistical Methods for Simulation Project
+
+Hye Soo shared an email listing statistical methods of interest for the simulation project, including summary statistics, ANCOVA, logistic regression, mixed models, survival models, and multiple imputation. The team discussed concerns about differences between R and SAS results, with Hye Soo indicating both methodological questions and reviewer uncertainty about the results needed investigation. Eric noted this would be relevant input for an upcoming RISW panel about analytical method equivalence in the campus project.
+
+## R vs SAS Methodology Challenges
+
+The team discussed challenges in demonstrating confidence in R's statistical methodology compared to SAS, particularly regarding reviewer concerns about algorithm accuracy. Eric explained that while the MMRM package was developed to align with SAS methods, there are limitations when R uses different underlying methods. Hye Soo clarified that reviewers often request equivalent SAS code because SAS has historical dominance at FDA and R packages only check technical compliance rather than statistical accuracy. The discussion focused on finding ways to confidently trust R outputs beyond what Canvas has documented, with simulation being suggested as a potential approach.
+
+## R Package Validation Method Development
+
+The team discussed developing a statistical method to validate R packages without relying on SAS cross-validation, as current FDA requirements often request equivalent SAS code. Hye Soo proposed using simulated data with known ground truth to demonstrate confidence in R packages, particularly for statistical methods. Ben raised concerns about creating materials to help convince FDA reviewers of R's reliability and rigor, while Eric noted that existing validation tools focus more on development practices rather than statistical accuracy. The discussion highlighted the need for a more robust approach to demonstrate statistical correctness of R packages for regulatory submissions.
+
+## SAS Reference Standard Discussion
+
+The group discussed challenges with using SAS as a reference standard for statistical analysis, with Ellis agreeing that relying solely on SAS sends the wrong message and creates unrealistic baselines. Ellis proposed that study sponsors and teams should evaluate R packages by checking for seminal papers, reproducing results, and verifying proper statistical method implementation rather than simply comparing against SAS. The discussion highlighted both technical and cultural challenges, with Eric noting that while technical solutions like creating a public test suite are possible, addressing the historical preference for SAS will require more significant changes over time.
+
+## Analytical Methods Test Suite Development
+
+Adrian and Eric discussed creating a test suite to validate analytical methods across different environments, starting with defined gold standard results that could be used by reviewers and sponsors to assess their environments. Eric highlighted the importance of early communication between sponsors and reviewers about package versions and environments, noting that sponsors often spring environment requirements on reviewers at the last minute. The discussion touched on the challenge of environment consistency across different sponsors and the potential for public sharing of test suites, though specific implementation details were not fully resolved.
+
+## Statistical Analysis Review Framework
+
+The team discussed challenges with reviewing statistical analyses submitted in R versus SAS, particularly when reviewers prefer to use SAS for validation. Eric proposed creating a new GitHub repository with simulated datasets and verification testing to address this issue, starting with summary statistics and potentially expanding to other methods. The group agreed to form a new working group or pilot project to develop this framework, with Eric offering to start the repository and continue discussions on Slack
