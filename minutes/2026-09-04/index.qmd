@@ -13,7 +13,7 @@ The team discussed updates on Pilot 5, including ongoing work on addressing feed
 
 ## FDA R Package Resource Plan
 
-Ning presented a plan to create a "one stop shop" resource for FDA reviewers who are familiar with SAS but not R, building on previous feedback from Paul and Hisu about submission review challenges. The proposed approach involves identifying trustworthy and credible R packages from CRAN, locating simulation results from package manuals or papers, and establishing a CICD pipeline to reproduce those results regularly. The team discussed using the Canvas site's package comparisons as a foundation for their curation efforts, with Eric suggesting they could potentially involve Canvas members in future working group sessions to discuss package selection criteria.
+Ning presented a plan to create a "one stop shop" resource for FDA reviewers who are familiar with SAS but not R, building on previous feedback from Paul and Hye Soo about submission review challenges. The proposed approach involves identifying trustworthy and credible R packages from CRAN, locating simulation results from package manuals or papers, and establishing a CICD pipeline to reproduce those results regularly. The team discussed using the Canvas site's package comparisons as a foundation for their curation efforts, with Eric suggesting they could potentially involve Canvas members in future working group sessions to discuss package selection criteria.
 
 ## Package Evaluation Criteria Discussion
 
@@ -36,10 +36,10 @@ The group discussed the process of gaining consensus among FDA reviewers regardi
 * Sam: Address outstanding issues for Pilot 5 resubmission after Ben completes his workshop for Posit Conf, aiming to prioritize this in the next few weeks.
 * Nick: Reach out to Mary from SAS and Sam Hume for the Python side to form a team to check interoperability of Dataset JSON across SAS, Python, and R, prioritizing the SAS side initially.
 * Hye Soo: Provide updates on the exploration of using a cloud computing solution, particularly Precision FDA, as they become available.
-* Ning: Share the draft collaboration agreement with Hye for internal discussions within the FDA.
+* Ning: Share the draft collaboration agreement with Hye Soo for internal discussions within the FDA.
 * Paul: Look into the details of existing CRADAs (like Precision Prism) to explore if the working group can fall under an existing agreement for the Precision FDA pilot.
 * Ning: Share the blog post on R-based submission challenges with organizations and promote the upcoming RE Pharma panel discussion.
-* Ning: Continue developing the Pilot 7 effort to create a "one stop shop" for comparing R packages with SAS and simulation results, leveraging CHEMIS efforts and potentially the Validation Hub metrics.
+* Ning: Continue developing the Pilot 7 effort to create a "one stop shop" for comparing R packages with SAS and simulation results, leveraging CAMIS efforts and potentially the Validation Hub metrics.
 * Eric: Explore the feasibility of adding a "Submission reviewability check" to Pilot 7, informed by the blog post, to automate assessment of code and environment.
 * Joe Cheng: Contact meeting participants individually to ensure his upcoming talk at the R Pharma Summit stays on message regarding R-based submission challenges.
 * Eric: Ensure the meeting minutes are updated and shared before leaving for the conference.
