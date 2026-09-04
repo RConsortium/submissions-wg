@@ -9,8 +9,164 @@
 <link>https://rconsortium.github.io/submissions-wg/minutes.html</link>
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.9.38</generator>
-<lastBuildDate>Fri, 05 Jun 2026 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Fri, 07 Aug 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2026-08-07</title>
+  <dc:creator>Eric Nantz</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2026-08-07/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The creation of these meeting minutes was supported by the use of Zoom AI for meeting summaries.</p>
+</div>
+</div>
+<section id="pilot-5-resubmission-review-update" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-5-resubmission-review-update">Pilot 5 Resubmission Review Update</h2>
+<p>Hye Soo presented an update on the Pilot 5 resubmission review, reporting that the overall process went smoothly with no major issues in setting up the R environment or generating final outputs. She identified a minor code error where data names were referenced incorrectly, which was resolved by switching to the correct dataset. Hye Soo raised questions about discrepancies found in variable data types between different datasets, particularly noting that some variables appeared as character values in the submitted Pilot 5 dataset while the original XPT files had them as numeric, though she noted this integer versus numeric difference was already addressed in ADRG Appendix 2.</p>
+</section>
+<section id="data-type-assignment-issues-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="data-type-assignment-issues-discussion">Data Type Assignment Issues Discussion</h2>
+<p>The team discussed issues with data type assignments in their system, where Ben raised concerns about how values are stored and potentially misclassified. Nick explained that an automated metadata creation function might be causing incorrect type assignments and agreed to investigate further. The discussion then shifted to format.SAS attributes, where Hye Soo noted that pilot five was missing this attribute compared to other pilots, with the team observing that their package doesn’t preserve SAS format metadata from XPT files like the Haven package does.</p>
+</section>
+<section id="package-implementation-updates-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="package-implementation-updates-discussion">Package Implementation Updates Discussion</h2>
+<p>The team discussed updates needed for <code>{datasetjson}</code> that hasn’t been implemented in recent sprint cycles. Hye Soo raised concerns about using the dataset JSON format in SAS, noting a discrepancy in the order of dataset and variable names in the ADRG. The team also discussed the next steps for Pilot 5, with Hye Soo asking whether these issues could be addressed as part of ongoing pilot work rather than being treated as separate submissions.</p>
+</section>
+<section id="sas-formatting-issues-in-ectd" class="level2">
+<h2 class="anchored" data-anchor-id="sas-formatting-issues-in-ectd">SAS Formatting Issues in ECTD</h2>
+<p>The team discussed issues with character numeric discrepancies and SAS attribute formatting in dataset JSON submissions to the ECTD portal. Ben and Eric agreed that fixing these formatting problems should be addressed before moving forward with Pilot 5, rather than trying to implement future updates like supporting dataset JSON for data type submissions. The group decided to document the SAS issues in the ADRG and potentially resubmit with appropriate caveats about the date format attribute problem.</p>
+</section>
+<section id="programming-language-interoperability-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="programming-language-interoperability-discussion">Programming Language Interoperability Discussion</h2>
+<p>Nick and Eric discussed the need to address interoperability issues between different programming languages (SAS, R, and Python) using Dataset-JSON format. Nick proposed organizing a collaborative session with Mike to work on upstream fixes and create a paper or readout for the industry demonstrating the interoperability between the three systems. The team agreed to update each other on Slack regarding the timeline for these fixes, with the goal of submitting a clean resubmission for Pi 5 that addresses both the formatting and interoperability issues.</p>
+</section>
+<section id="pilot-five-submission-data-issues" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-five-submission-data-issues">Pilot Five Submission Data Issues</h2>
+<p>The team discussed ongoing issues with the Pilot Five submission, particularly regarding data formatting changes from XPT to new storage formats. Sam was commended for adding issues to the issue board and taking screenshots of shared content. The group addressed concerns about R-based submissions and FDA biostatistician reviews, with Sue sharing feedback about common analysis methods and packages that were receiving additional scrutiny. Phani raised a question about potential data value changes due to class value modifications, which Hye Soo confirmed did not affect actual data values.</p>
+</section>
+<section id="statistical-methods-for-simulation-project" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-methods-for-simulation-project">Statistical Methods for Simulation Project</h2>
+<p>Hye Soo shared an email listing statistical methods of interest for the simulation project, including summary statistics, ANCOVA, logistic regression, mixed models, survival models, and multiple imputation. The team discussed concerns about differences between R and SAS results, with Hye Soo indicating both methodological questions and reviewer uncertainty about the results needed investigation. Eric noted this would be relevant input for an upcoming RISW panel about analytical method equivalence in the campus project.</p>
+</section>
+<section id="r-vs-sas-methodology-challenges" class="level2">
+<h2 class="anchored" data-anchor-id="r-vs-sas-methodology-challenges">R vs SAS Methodology Challenges</h2>
+<p>The team discussed challenges in demonstrating confidence in R’s statistical methodology compared to SAS, particularly regarding reviewer concerns about algorithm accuracy. Eric explained that while the MMRM package was developed to align with SAS methods, there are limitations when R uses different underlying methods. Hye Soo clarified that reviewers often request equivalent SAS code because SAS has historical dominance at FDA and R packages only check technical compliance rather than statistical accuracy. The discussion focused on finding ways to confidently trust R outputs beyond what Canvas has documented, with simulation being suggested as a potential approach.</p>
+</section>
+<section id="r-package-validation-method-development" class="level2">
+<h2 class="anchored" data-anchor-id="r-package-validation-method-development">R Package Validation Method Development</h2>
+<p>The team discussed developing a statistical method to validate R packages without relying on SAS cross-validation, as current FDA requirements often request equivalent SAS code. Hye Soo proposed using simulated data with known ground truth to demonstrate confidence in R packages, particularly for statistical methods. Ben raised concerns about creating materials to help convince FDA reviewers of R’s reliability and rigor, while Eric noted that existing validation tools focus more on development practices rather than statistical accuracy. The discussion highlighted the need for a more robust approach to demonstrate statistical correctness of R packages for regulatory submissions.</p>
+</section>
+<section id="sas-reference-standard-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="sas-reference-standard-discussion">SAS Reference Standard Discussion</h2>
+<p>The group discussed challenges with using SAS as a reference standard for statistical analysis, with Ellis agreeing that relying solely on SAS sends the wrong message and creates unrealistic baselines. Ellis proposed that study sponsors and teams should evaluate R packages by checking for seminal papers, reproducing results, and verifying proper statistical method implementation rather than simply comparing against SAS. The discussion highlighted both technical and cultural challenges, with Eric noting that while technical solutions like creating a public test suite are possible, addressing the historical preference for SAS will require more significant changes over time.</p>
+</section>
+<section id="analytical-methods-test-suite-development" class="level2">
+<h2 class="anchored" data-anchor-id="analytical-methods-test-suite-development">Analytical Methods Test Suite Development</h2>
+<p>Adrian and Eric discussed creating a test suite to validate analytical methods across different environments, starting with defined gold standard results that could be used by reviewers and sponsors to assess their environments. Eric highlighted the importance of early communication between sponsors and reviewers about package versions and environments, noting that sponsors often spring environment requirements on reviewers at the last minute. The discussion touched on the challenge of environment consistency across different sponsors and the potential for public sharing of test suites, though specific implementation details were not fully resolved.</p>
+</section>
+<section id="statistical-analysis-review-framework" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-analysis-review-framework">Statistical Analysis Review Framework</h2>
+<p>The team discussed challenges with reviewing statistical analyses submitted in R versus SAS, particularly when reviewers prefer to use SAS for validation. Eric proposed creating a new GitHub repository with simulated datasets and verification testing to address this issue, starting with summary statistics and potentially expanding to other methods. The group agreed to form a new working group or pilot project to develop this framework, with Eric offering to start the repository and continue discussions on Slack</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2026-08-07/</guid>
+  <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Minutes 2026-07-17</title>
+  <dc:creator>Eric Nantz</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2026-07-17/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This session was a focused discussion on R-based submission feedback with a reduced number of invitees.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The creation of these meeting minutes was supported by the use of Zoom AI for meeting summaries.</p>
+</div>
+</div>
+<section id="r-package-validation-for-regulation" class="level2">
+<h2 class="anchored" data-anchor-id="r-package-validation-for-regulation">R Package Validation for Regulation</h2>
+<p>Hye Soo provided an update on pilot submission 5, which has been resubmitted and is awaiting FDA confirmation. She raised two key questions about validating open-source R packages without relying on SAS, and how to demonstrate validation of proprietary R packages for regulatory submissions. The discussion focused on exploring alternative validation methods and leveraging existing tools like the validation hub to establish confidence in regulatory submissions.</p>
+</section>
+<section id="r-package-validation-approaches" class="level2">
+<h2 class="anchored" data-anchor-id="r-package-validation-approaches">R Package Validation Approaches</h2>
+<p>The team discussed validation approaches for R packages used in regulatory submissions, particularly addressing FDA reviewer concerns about relying solely on SAS for validation. Eric clarified that the Validation Hub focuses on risk assessment across different types of packages rather than specific statistical methodologies, while the <a href="https://psiaims.github.io/CAMIS/">CAMIS</a> working group’s approach of comparing R results to SAS serves as a potential direction. The group agreed to consider a focused approach of identifying 5-10 specific methods or packages that reviewers frequently question, then creating evaluation reports using simulated data to demonstrate the credibility of these packages independently of SAS.</p>
+</section>
+<section id="analytical-method-evaluation-techniques" class="level2">
+<h2 class="anchored" data-anchor-id="analytical-method-evaluation-techniques">Analytical Method Evaluation Techniques</h2>
+<p>Ning proposed using simulated data with known ground truth to evaluate analytical methods in R, comparing estimated coefficients to predefined truth values. Eric supported this approach, noting it’s a common technique for benchmarking methodologies in pharmaceutical submissions. The group discussed the importance of using open-source packages rather than proprietary ones, with Eric emphasizing that robust documentation is essential if proprietary packages must be used in regulatory submissions.</p>
+</section>
+<section id="r-package-validation-for-regulations" class="level2">
+<h2 class="anchored" data-anchor-id="r-package-validation-for-regulations">R Package Validation for Regulations</h2>
+<p>The group discussed trust and validation of R packages for regulatory submissions, particularly focusing on MMRM (Mixed-Effects Model Repeated Measures) packages. Eric suggested using a Validation Hub to assess package trustworthiness for FDA reviewers, while Keaven recommended starting with specific, well-established packages like <a href="https://openpharma.github.io/mmrm/latest-tag/"><code>{mmrm}</code></a> rather than trying to address all R packages broadly. Couturier from Sanofi expressed skepticism about the lack of trust in R packages, arguing that many biostatistics methods are first developed in R before moving to SAS, and that well-maintained R packages are frequently validated and updated more quickly than SAS implementations.</p>
+</section>
+<section id="r-package-regulatory-submission-guidelines" class="level2">
+<h2 class="anchored" data-anchor-id="r-package-regulatory-submission-guidelines">R Package Regulatory Submission Guidelines</h2>
+<p>The group discussed challenges and best practices around submitting R packages and code for regulatory submissions. Stephen and Ning explained that proprietary packages are acceptable but may require more review time from sponsors, similar to SAS macros. Paul emphasized the importance of transparent, readable code that can be easily inspected by reviewers, particularly for primary endpoints. The team agreed to compile a list of top R packages and analytical methods that reviewers commonly scrutinize, and discussed potential solutions including container approaches and Nix as an alternative to current methods. Next steps include developing examples of acceptable vs.&nbsp;unacceptable code practices and exploring opportunities to present these findings to pharmaceutical company leaders.</p>
+</section>
+<section id="analytical-packages-methods-for-evaluation" class="level2">
+<h2 class="anchored" data-anchor-id="analytical-packages-methods-for-evaluation">Analytical Packages / Methods for Evaluation</h2>
+<p>Hye Soo communicated the high-priority statistical analyses and methods that FDA reviewers are evaluating more carefully in R-based submissions:</p>
+<ul>
+<li>Summary statistics</li>
+<li>Analysis of Covariance (ANCOVA)</li>
+<li>Logistic regression</li>
+<li>Mixed Models for Repeated Measures (MMRM)</li>
+<li>Cochran-Mantel-Haenszel (CMH) test</li>
+<li>Survival models – Kaplan-Meier / Cox proportional hazards / Tobit regression</li>
+<li>Multiple imputation – Linear regression / Markov Chain Monte Carlo (MCMC) if time permits</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2026-07-17/</guid>
+  <pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2026-06-05</title>
   <dc:creator>Eric Nantz</dc:creator>
@@ -1836,196 +1992,6 @@ Note
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2025-01-10/</guid>
   <pubDate>Fri, 10 Jan 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2024-12-06</title>
-  <dc:creator>Eric Nantz &amp; Theresa Christiani</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2024-12-06/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Amanda Martin (R Consortium)</li>
-<li>Ben Straub (GSK)</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>HyeSoo Cho (FDA)</li>
-<li>Joel Laxamana (Roche/Genentech)</li>
-<li>Joseph Rickert</li>
-<li>Mike Stackhouse (Atorus)</li>
-<li>Nicholas Masel (Johnson &amp; Johnson)</li>
-<li>Ning Leng (Roche/Genentech)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Robert Devine (Johnson &amp; Johnson)</li>
-<li>Sam Hume (CDISC)</li>
-<li>Sam Parmar (Pfizer)</li>
-<li>Terry Christiani (R Consortium)</li>
-</ul>
-</div>
-</div>
-</div>
-<section id="adrg-formats" class="level2">
-<h2 class="anchored" data-anchor-id="adrg-formats">ADRG Formats</h2>
-<ul>
-<li>HyeSoo shared additional feedback from FDA on the file formats used for sending the Analysis Data Reviewers Guide (ADRG) in clinical submissions:
-<ul>
-<li>For an FDA submission, a final ADRG document should be submitted for review. It is not recommended for reviewers to take additional steps such as rendering the ADRG using Quarto or another technical publishing system/package.</li>
-<li>The PDF format is required for submitting an ADRG. However there is a possibility of conducting a pilot test with submitting the ADRG in alternative formats such as the source Quarto file <code>.qmd</code> as well as the HTML output format <code>.html</code>.</li>
-</ul></li>
-<li>The rational for submitting an ADRG in HTML format was discussed. Eric and Joel shared that having the HTML format brings the possibility of interactive displays (such as tables) which could be beneficial, especially for a submission including a large amount of programs and TLG outputs.</li>
-<li>The group agreed that sending the ADRG source file in <code>.qmd</code> format would not be as beneficial in the current stage, as the rendered document itself is the main focus.</li>
-<li>Future pilots such as Pilot 5 could be the first project to test submitting the ADRG in HTML format</li>
-<li>While Pilot 4 (WebAssembly Shiny app) formally submitted the ADRG in PDF format, Eric created a separate version of the ADRG in HTML format as a technical preview, which can be viewed at <a href="https://rpodcast.quarto.pub/pilot4-webassembly-adrg/">this link</a>.</li>
-</ul>
-</section>
-<section id="ectd-and-zip-archives" class="level2">
-<h2 class="anchored" data-anchor-id="ectd-and-zip-archives">eCTD and Zip Archives</h2>
-<ul>
-<li>HyeSoo shared clarifications on the current eCTD specifications for including a ZIP archive file in a submission package. The accepted location is M5.3, with the permissible uses of grouping large sets of aECG XML files.</li>
-<li>The method of including both the data sets and programs in the ZIP archive (utilized by the Pilot 4 WebAssembly submission) is not permissible.</li>
-<li>Eric will set up a targeted discussion with Paul and HyeSoo in January 2025 on how to best utilized the ZIP format in the future Pilot 4 Docker Container submission.</li>
-<li>Questions were raised on the possible inclusion of additional archive formats such as compressed Tar archives <code>.tar.gz</code> in the eCTD specifications. Currently that format is not supported, but it could be explored for discussion with FDA next year.</li>
-</ul>
-</section>
-<section id="dataset-json-overview" class="level2">
-<h2 class="anchored" data-anchor-id="dataset-json-overview">Dataset-JSON Overview</h2>
-<ul>
-<li>Sam Hume from CDISC joined the meeting to share CDISC’s efforts in creating JSON datasets for clinical submissions, and feedback from previous pilots with FDA. You can view slides from Sam’s previous presentation on Dataset-JSON from the 2024 CDISC &amp; TMF Europe Interchange conference at <a href="https://www.cdisc.org/sites/default/files/2024-04/2024-EU-Interchange-Session-6B-SamHume-final.pdf">this link</a>, as well as the slides from a Public Review webinar held by CDISC at <a href="https://www.cdisc.org/sites/default/files/pdf/Dataset-JSON-v1-1-Public-Review.pdf">this link</a>.</li>
-<li>Many of the standards in data exchanges are now using the JSON format as default.</li>
-<li>There is increasing interest in additional structures besides the traditional rectangular/tabular approach, such as in the Electronic Study Protocol Template M11 module.</li>
-<li>CDISC ran a pilot within CDER at FDA to verify the Dataset-JSON format could be successfull transferred and viewed by reviewers. The testing was deemed successful.</li>
-<li>A mix of tools were utilized in the pilot. One of the over-arching goals is to ensure that the Dataset-JSON format is agonostic to the tools/languages used to ingest the format. For example, multiple languages like SAS, R, and Python should be able to import and analyze the data in this format.</li>
-<li>Recently the Dataset-JSON version 1.1 was released, addressing feedback generated from the earlier pilot. You can view the updated user guide for v1.1 at <a href="https://wiki.cdisc.org/plugins/servlet/mobile?contentId=230658980#content/view/230658980">this link</a>.</li>
-<li>Mike Stackhouse shared that the <a href="https://atorus-research.github.io/datasetjson/">`{datasetjson}</a> package, tasked with reading and writing CDISC Dataset JSON files, is in active development to accomodate v1.1 of the Dataset-JSON format.</li>
-<li>Nick and Mike would welcome collaboration from others on the package updates.</li>
-<li>Another important fix ongoing for the package is switching to a more performant JSON processing backend, as detailed in <a href="https://github.com/atorus-research/datasetjson/issues/32">issue 32</a> of the package’s GitHub repository.</li>
-<li>In light of learning about the successful pilot, questions were asked on whether our submissions group should still initiate a new Pilot that leverages JSON format instead of XPT. Sam and others in the call concurred that the pilot would still be worthwhile to conduct, as it could be the first test of the new Dataset-JSON v1.1 specification in a realistic setting.</li>
-<li>Ben shared that this could be a great opportunity for others in the working group to take the lead on this new Pilot, now being called Pilot 5. Ben will take on the task of creating a new channel in Slack dedicated to Pilot 5 within the R Consortium Slack Channel.</li>
-</ul>
-</section>
-<section id="admin-housekeeping" class="level2">
-<h2 class="anchored" data-anchor-id="admin-housekeeping">Admin &amp; Housekeeping</h2>
-<ul>
-<li>The group agreed to keep the current cadence of having the Submissions WG meetings on the first Friday of every month, with adjustments as needed.</li>
-<li>A few members on the call were not clear on how to get invitations properly on their calendar. Theresa shared the ways anyone can add the working group meetings on their calendar. However the group agreed that having a dedicated page on the Working Group site for how to join the group and the various communication platforms would be a beneficial.</li>
-<li>Eric will create a new page on the site to hold this information. In fact that page is now live! Visit the <a href="join.qmd">How to Join</a> page for complete details.</li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-12-06/</guid>
-  <pubDate>Fri, 06 Dec 2024 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2024-11-01</title>
-  <dc:creator>Eric Nantz &amp; Theresa Christiani</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2024-11-01/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Ben Straub (GSK)</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>HyeSoo Cho (FDA)</li>
-<li>Joel Laxamana (Roche/Genentech)</li>
-<li>Katie Harding (Freemore)</li>
-<li>Lovemore Gakava (Novo Nordisk)</li>
-<li>Nicholas Masel (Johnson &amp; Johnson)</li>
-<li>Ning Leng (Roche/Genentech)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Robert Devine (Johnson &amp; Johnson)</li>
-<li>Theresa Christiani (R Consortium)</li>
-<li>Youn Kyeong Chang (FDA)</li>
-</ul>
-</div>
-</div>
-</div>
-<section id="pilot-4-updates" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-4-updates">Pilot 4 Updates</h2>
-<ul>
-<li>HyeSoo shared concerns regarding the appropriateness of zip file formats for program delivery under FDA specifications. Suggestions to explore new architectures or formats for future submissions were raised, particularly for web-based applications.</li>
-<li>Testing for the Docker container component of Pilot 4 is ongoing, thus far no issues but Eric will share more updates in the next meeting.</li>
-</ul>
-</section>
-<section id="working-group-coordination" class="level2">
-<h2 class="anchored" data-anchor-id="working-group-coordination">Working Group Coordination</h2>
-<ul>
-<li>Theresa Christiani introduced an inter-organization coordination committee to streamline overlapping efforts across working groups (R Consortium, PhUSE, Pharmaverse). This committee will promote efficient use of resources and avoid redundant work. Robert Devine volunteered to present at the next coordination meeting.</li>
-<li>Robert will present at the R Consortium’s inter-organization coordination committee to share the group’s current projects and align efforts across R Consortium, PhUSE, and Pharmaverse.</li>
-<li>Those interested in attending that coordinating meeting can contact Theresa for getting on the invitation to those meetings</li>
-</ul>
-</section>
-<section id="analysis-data-reviewers-guide-adrg-updates" class="level2">
-<h2 class="anchored" data-anchor-id="analysis-data-reviewers-guide-adrg-updates">Analysis Data Reviewer’s Guide (ADRG) Updates</h2>
-<ul>
-<li>The PhUSE working group on open-source metadata documentation is working to update the ADRG template to better support open-source submissions, with feedback from FDA and industry representatives.</li>
-<li>Lovemore gave a recap of a presentation about the ADRG workstream at the PHUSE FDA quarterly meeting</li>
-<li>The team discussed the potential use of Quarto (QMD) and HTML formats for more accessible, navigable submissions, as well as potential supplementary documents for open-source submissions. Paul confirmed that R Markdown (<code>.rmd</code>) format has already been approved as a file type.</li>
-<li>Joel and Lovemore will set up a future meeting to gather additional industry feedback as a first step to developing a new prototype of the ADRG using enhanced metadata and the Quarto format.</li>
-<li>While Quarto is an approved software package at the FDA, and Quarto file format (<code>.qmd</code>) is part of the approved file types within the <strong>Modeling and Simulation</strong> section of the <a href="https://www.fda.gov/media/85816/download">eCTD Format Specifications</a> document.</li>
-<li>Paul and HyeSoo will touch base with Helena Spiglin (part of the FDA committee currently assessing the <code>.json</code> formats as an alternative to SAS Transport <code>.xpt</code>) for confirming the Quarto and HTML formats can be added as supported formats for ADRG submissions.</li>
-</ul>
-</section>
-<section id="data-set-json-format-and-alternative-data-formats" class="level2">
-<h2 class="anchored" data-anchor-id="data-set-json-format-and-alternative-data-formats">Data Set JSON Format and Alternative Data Formats</h2>
-<ul>
-<li>The team discussed exploring JSON and alternative data formats like <a href="https://parquet.apache.org/">Parquet</a>, given the large data sizes in modern studies.</li>
-<li>Although the industry largely uses JSON, there are concerns about its efficiency for high-volume data. Parquet, used internally by several team members, offers a promising alternative, particularly for big data applications.</li>
-<li>For a comprehensive overview of the benefits and tradeoffs between JSON, Parquet, and other formats, see the recent R/Pharma 2024 presentation <strong>An arrow towards the future: A critical look at data formats for clinical reporting</strong> by Craig Gower-Page (<a href="https://www.youtube.com/watch?v=ipvcRPr0eig">recording link</a>).</li>
-<li>The FDA has primarily used JSON but is open to considering alternatives like Parquet with further testing and demonstrations.</li>
-<li>Paul mentioned he is not aware of previous efforts to convert the publically available CDISC data sets utilized in the previous pilot submissions to JSON format and then perform statistical analyses.</li>
-<li><strong>Opportunity for Pilot 5</strong>: Using the structure of Pilot 3 as a template, leverage JSON as the format to assess performance. Ben Straub will draft a proposal for an initial review at the next Submissions Working Group meeting in December.</li>
-<li>Nicholas Masel shared that the <a href="https://atorus-research.github.io/datasetjson/">{datasetjson}</a> R package will need updates to align with the latest schema (1.1) to ensure compatability with the future Pilot 5.</li>
-<li>In addition, Nick and Ben will gather input from industry colleagues and the FDA to determine if Parquet is a viable alternative to JSON for high-volume data in future pilots, and discuss any potential technical or bureaucratic limitations with FDA.</li>
-</ul>
-</section>
-<section id="future-pilot-projects" class="level2">
-<h2 class="anchored" data-anchor-id="future-pilot-projects">Future Pilot Projects</h2>
-<p>The team plans to prioritize two future pilot projects:</p>
-<ul>
-<li>Pilot 5: A repeat of Pilot 3 but using JSON format to assess package performance and ADRG requirements.</li>
-<li>Comprehensive Benchmark Pilot: A longer-term pilot for H2 2025 using a large, realistic simulated data set to evaluate JSON vs.&nbsp;Parquet for performance, usability, and compatibility.</li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2024-11-01/</guid>
-  <pubDate>Fri, 01 Nov 2024 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

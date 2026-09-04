@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Joseph Rickert">
-<meta name="dcterms.date" content="2023-09-01">
+<meta name="author" content="Eric Nantz">
+<meta name="dcterms.date" content="2026-07-17">
 
-<title>Minutes 2023-09-01 – R Submissions Working Group</title>
+<title>Minutes 2026-07-17 – R Submissions Working Group</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -353,7 +353,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Minutes 2023-09-01</h1>
+      <h1 class="title">Minutes 2026-07-17</h1>
                       </div>
   </div>
     
@@ -363,14 +363,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Joseph Rickert </p>
+               <p>Eric Nantz </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 1, 2023</p>
+        <p class="date">July 17, 2026</p>
       </div>
     </div>
     
@@ -386,13 +386,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#pilot-2" id="toc-pilot-2" class="nav-link active" data-scroll-target="#pilot-2">Pilot 2</a></li>
-  <li><a href="#pilot-3" id="toc-pilot-3" class="nav-link" data-scroll-target="#pilot-3">Pilot 3</a></li>
-  <li><a href="#pilot-4" id="toc-pilot-4" class="nav-link" data-scroll-target="#pilot-4">Pilot 4</a></li>
-  <li><a href="#promotion" id="toc-promotion" class="nav-link" data-scroll-target="#promotion">Promotion</a></li>
-  <li><a href="#novo-nordisk-submission" id="toc-novo-nordisk-submission" class="nav-link" data-scroll-target="#novo-nordisk-submission">Novo Nordisk Submission</a></li>
+  <li><a href="#r-package-validation-for-regulation" id="toc-r-package-validation-for-regulation" class="nav-link active" data-scroll-target="#r-package-validation-for-regulation">R Package Validation for Regulation</a></li>
+  <li><a href="#r-package-validation-approaches" id="toc-r-package-validation-approaches" class="nav-link" data-scroll-target="#r-package-validation-approaches">R Package Validation Approaches</a></li>
+  <li><a href="#analytical-method-evaluation-techniques" id="toc-analytical-method-evaluation-techniques" class="nav-link" data-scroll-target="#analytical-method-evaluation-techniques">Analytical Method Evaluation Techniques</a></li>
+  <li><a href="#r-package-validation-for-regulations" id="toc-r-package-validation-for-regulations" class="nav-link" data-scroll-target="#r-package-validation-for-regulations">R Package Validation for Regulations</a></li>
+  <li><a href="#r-package-regulatory-submission-guidelines" id="toc-r-package-regulatory-submission-guidelines" class="nav-link" data-scroll-target="#r-package-regulatory-submission-guidelines">R Package Regulatory Submission Guidelines</a></li>
+  <li><a href="#analytical-packages-methods-for-evaluation" id="toc-analytical-packages-methods-for-evaluation" class="nav-link" data-scroll-target="#analytical-packages-methods-for-evaluation">Analytical Packages / Methods for Evaluation</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2023-09-01/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2026-07-17/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -402,121 +403,64 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>View Attendee List
+Note
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<ul>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>Heidi Curinckx (Johnson &amp; Johnson)</li>
-<li>HyeSoo Cho (FDA)</li>
-<li>Jizu Zhi (FDA)</li>
-<li>Joel Laxamana (Roche/Genentech)</li>
-<li>Joseph Rickert (R Consortium)</li>
-<li>Nan Xiao (Merck)</li>
-<li>Ning Leng (Roche/Genentech)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Robert Devine (Johnson &amp; Johnson)</li>
-<li>Saghir Bashir (Argenx)</li>
-<li>Sam Parmar (Pfizer)</li>
-</ul>
+<p>This session was a focused discussion on R-based submission feedback with a reduced number of invitees.</p>
 </div>
 </div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/nG5RS852RTgvfz3wYmQzX-Wfei82ZlkfvaNd3UpqbeMHbvVqdYKHEwjc3VinIQ.7-hyNhzzPESRq00r?startTime=1693584254000">video</a> is available.</p>
-<section id="pilot-2" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-2">Pilot 2</h3>
-<p>Paul Schuette provided and update on the Agency’s review of Pilot 2</p>
-<ul>
-<li>HyeSoo Cho completed her review and passed it on to FDA authorities for additional review.</li>
-<li>Paul feels that he and HyeSoo anticipate they will be able to answer any questions from the reviewers</li>
-<li>Paul does not anticipate problems</li>
-<li>It may take two weeks or longer to close things out</li>
-<li>Paul will include some material about Pilot 1 in his up coming ASA data set</li>
-</ul>
-<p><strong>Actions:</strong></p>
-<ul>
-<li>Joel will send Paul the data set link used for Pilot 1</li>
-<li>Joel will review the draft announcement for Pilot 3, Ning will approve and pass it to Paul for his review.</li>
-</ul>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The creation of these meeting minutes was supported by the use of Zoom AI for meeting summaries.</p>
+</div>
+</div>
+<section id="r-package-validation-for-regulation" class="level2">
+<h2 class="anchored" data-anchor-id="r-package-validation-for-regulation">R Package Validation for Regulation</h2>
+<p>Hye Soo provided an update on pilot submission 5, which has been resubmitted and is awaiting FDA confirmation. She raised two key questions about validating open-source R packages without relying on SAS, and how to demonstrate validation of proprietary R packages for regulatory submissions. The discussion focused on exploring alternative validation methods and leveraging existing tools like the validation hub to establish confidence in regulatory submissions.</p>
 </section>
-<section id="pilot-3" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-3">Pilot 3</h3>
-<p>Joel Laxamana provided the status update.</p>
-<ul>
-<li>Did not use <a href="https://cran.r-project.org/package=pkglite">pkglite</a></li>
-<li>submitted the .r file</li>
-<li>Installed proprietary package from its own repo</li>
-<li>Had to change .lock file to renv-lock.txt and provide instructions how to change it back.</li>
-<li>Team members tested on Linux, Mac, and Windows</li>
-<li>Submitted the Pilot through the FDA gateway</li>
-<li>HyeSoo Cho, the FDA Pilot 3 reviewer, contacted the FDA gateway team to request access and expects to receive access next week</li>
-<li>HyeSoo believes she will be able to report on Pilot 3 by the October meeting.</li>
-</ul>
+<section id="r-package-validation-approaches" class="level2">
+<h2 class="anchored" data-anchor-id="r-package-validation-approaches">R Package Validation Approaches</h2>
+<p>The team discussed validation approaches for R packages used in regulatory submissions, particularly addressing FDA reviewer concerns about relying solely on SAS for validation. Eric clarified that the Validation Hub focuses on risk assessment across different types of packages rather than specific statistical methodologies, while the <a href="https://psiaims.github.io/CAMIS/">CAMIS</a> working group’s approach of comparing R results to SAS serves as a potential direction. The group agreed to consider a focused approach of identifying 5-10 specific methods or packages that reviewers frequently question, then creating evaluation reports using simulated data to demonstrate the credibility of these packages independently of SAS.</p>
 </section>
-<section id="pilot-4" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-4">Pilot 4</h3>
-<p>Eric Nantz provided a status up date on Pilot 4 describing the significant progress that has been made with developing prototypes for both the WebAssemply and Container approaches.</p>
-<section id="webassembly" class="level4">
-<h4 class="anchored" data-anchor-id="webassembly">WebAssembly</h4>
-<ul>
-<li>At 19:48 minutes in to the video Eric displays the Pilot 4 teams minutes for their recent meeting, <a href="https://rconsortium.github.io/submissions-pilot4/minutes/2023-08-18/">Minutes 2023-08-18</a>, and talks through the activities.</li>
-<li>George Stagg and Winston Chang from Posit attended the Pilot 4 meeting</li>
-<li>The <a href="https://cran.r-project.org/package=httpuv">httpuv</a> R package will be necessary to start up a mini web server in the user’s local environment. There will be a script to accomplish this.</li>
-<li>There will be no traces of the Shiny app interacting with the host system</li>
-<li>Binaries of the packages used will be included in the transfer. These will not be executable binaries. They will be similar to .tar or .zip files.</li>
-<li>The end user will have to install the version of R used in Pilot 1</li>
-<li><a href="https://shiny.posit.co/py/docs/shinylive.html">Shinylive</a> is another rapidly developing technology that may per pertinent to Pilot 4. Currently Shinylive is only available for Python. However, Winston Chang expects the R based version will be available soon.</li>
-<li>Eric demos Shinylive from the posit website at 28:00 minutes into the video</li>
-<li>See the Posit post <a href="https://www.tidyverse.org/blog/2023/08/webr-0-2-0/">webR 0.2.0</a> for additional information.</li>
-<li>A Pilot 4 submission based on WebAssembly technology looks feasible by the end of the year.</li>
-</ul>
+<section id="analytical-method-evaluation-techniques" class="level2">
+<h2 class="anchored" data-anchor-id="analytical-method-evaluation-techniques">Analytical Method Evaluation Techniques</h2>
+<p>Ning proposed using simulated data with known ground truth to evaluate analytical methods in R, comparing estimated coefficients to predefined truth values. Eric supported this approach, noting it’s a common technique for benchmarking methodologies in pharmaceutical submissions. The group discussed the importance of using open-source packages rather than proprietary ones, with Eric emphasizing that robust documentation is essential if proprietary packages must be used in regulatory submissions.</p>
 </section>
-<section id="containers" class="level4">
-<h4 class="anchored" data-anchor-id="containers">Containers</h4>
-<ul>
-<li>Eric’s team already has a Podman container with Pilot 2 running</li>
-<li>The team is waiting for Paul to clarify what is required by the FDA IT team for them be able to receive containers.</li>
-</ul>
+<section id="r-package-validation-for-regulations" class="level2">
+<h2 class="anchored" data-anchor-id="r-package-validation-for-regulations">R Package Validation for Regulations</h2>
+<p>The group discussed trust and validation of R packages for regulatory submissions, particularly focusing on MMRM (Mixed-Effects Model Repeated Measures) packages. Eric suggested using a Validation Hub to assess package trustworthiness for FDA reviewers, while Keaven recommended starting with specific, well-established packages like <a href="https://openpharma.github.io/mmrm/latest-tag/"><code>{mmrm}</code></a> rather than trying to address all R packages broadly. Couturier from Sanofi expressed skepticism about the lack of trust in R packages, arguing that many biostatistics methods are first developed in R before moving to SAS, and that well-maintained R packages are frequently validated and updated more quickly than SAS implementations.</p>
 </section>
-<section id="preferred-technology" class="level4">
-<h4 class="anchored" data-anchor-id="preferred-technology">Preferred technology</h4>
-<ul>
-<li>Since the WebAssembly version does not require the involvement of FDA technology, it looks like it is the preferred method for a first Pilot 4 submission</li>
-<li>At 37:43 minutes into the video, Eric shows the “Hello World” version of a WebAssembly submission created by Appsilon engineers.</li>
-</ul>
+<section id="r-package-regulatory-submission-guidelines" class="level2">
+<h2 class="anchored" data-anchor-id="r-package-regulatory-submission-guidelines">R Package Regulatory Submission Guidelines</h2>
+<p>The group discussed challenges and best practices around submitting R packages and code for regulatory submissions. Stephen and Ning explained that proprietary packages are acceptable but may require more review time from sponsors, similar to SAS macros. Paul emphasized the importance of transparent, readable code that can be easily inspected by reviewers, particularly for primary endpoints. The team agreed to compile a list of top R packages and analytical methods that reviewers commonly scrutinize, and discussed potential solutions including container approaches and Nix as an alternative to current methods. Next steps include developing examples of acceptable vs.&nbsp;unacceptable code practices and exploring opportunities to present these findings to pharmaceutical company leaders.</p>
 </section>
-</section>
-<section id="promotion" class="level3">
-<h3 class="anchored" data-anchor-id="promotion">Promotion</h3>
+<section id="analytical-packages-methods-for-evaluation" class="level2">
+<h2 class="anchored" data-anchor-id="analytical-packages-methods-for-evaluation">Analytical Packages / Methods for Evaluation</h2>
+<p>Hye Soo communicated the high-priority statistical analyses and methods that FDA reviewers are evaluating more carefully in R-based submissions:</p>
 <ul>
-<li>Joseph Rickert suggests that the story of the Submissions group cooperative effort is as important as the story of the technology.</li>
-<li>The story of the overall submission group should be written up, However, Joe proposed that since the Pilot 4 effort is moving so quickly and involves contributions not only from working group members, but also from vendors we should tell this story first while the details are fresh.</li>
-<li>Eric agrees that the participation of the two development teams from Posit and Appsilon is unique.</li>
-<li>Eric notes that he has submitted a talk about Pilot 4 for the R/Pharma conference</li>
+<li>Summary statistics</li>
+<li>Analysis of Covariance (ANCOVA)</li>
+<li>Logistic regression</li>
+<li>Mixed Models for Repeated Measures (MMRM)</li>
+<li>Cochran-Mantel-Haenszel (CMH) test</li>
+<li>Survival models – Kaplan-Meier / Cox proportional hazards / Tobit regression</li>
+<li>Multiple imputation – Linear regression / Markov Chain Monte Carlo (MCMC) if time permits</li>
 </ul>
-<p><strong>Action:</strong></p>
-<ul>
-<li>Eric and Ning will update the GitHub sites for the Pilot teams to make sure the information is up to date and all the contributors are recognized.</li>
-<li>Eric, Joe, Eric agree to work on an end of year thank you / celebration post.</li>
-<li>Joe will make sure the R Consortium promotes Eric’s talk</li>
-</ul>
-</section>
-<section id="novo-nordisk-submission" class="level3">
-<h3 class="anchored" data-anchor-id="novo-nordisk-submission">Novo Nordisk Submission</h3>
-<ul>
-<li>Joe asked the group if anyone has information about the Novo Nordisk all R submission.</li>
-<li>See the upcoming <a href="https://posit.co/blog/novo-nordisks-journey-to-an-r-based-fda-submission/">webinar</a></li>
-</ul>
-<p>The next meeting of the working group will be at 9AM PST on Friday October 6, 2023.</p>
 
 
 </section>
@@ -977,4 +921,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2023-09-01/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2026-07-17/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

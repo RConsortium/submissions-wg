@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Joseph Rickert">
-<meta name="dcterms.date" content="2023-09-01">
+<meta name="author" content="Eric Nantz">
+<meta name="dcterms.date" content="2026-08-07">
 
-<title>Minutes 2023-09-01 – R Submissions Working Group</title>
+<title>Minutes 2026-08-07 – R Submissions Working Group</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -353,7 +353,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Minutes 2023-09-01</h1>
+      <h1 class="title">Minutes 2026-08-07</h1>
                       </div>
   </div>
     
@@ -363,14 +363,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Joseph Rickert </p>
+               <p>Eric Nantz </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 1, 2023</p>
+        <p class="date">August 7, 2026</p>
       </div>
     </div>
     
@@ -386,13 +386,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#pilot-2" id="toc-pilot-2" class="nav-link active" data-scroll-target="#pilot-2">Pilot 2</a></li>
-  <li><a href="#pilot-3" id="toc-pilot-3" class="nav-link" data-scroll-target="#pilot-3">Pilot 3</a></li>
-  <li><a href="#pilot-4" id="toc-pilot-4" class="nav-link" data-scroll-target="#pilot-4">Pilot 4</a></li>
-  <li><a href="#promotion" id="toc-promotion" class="nav-link" data-scroll-target="#promotion">Promotion</a></li>
-  <li><a href="#novo-nordisk-submission" id="toc-novo-nordisk-submission" class="nav-link" data-scroll-target="#novo-nordisk-submission">Novo Nordisk Submission</a></li>
+  <li><a href="#pilot-5-resubmission-review-update" id="toc-pilot-5-resubmission-review-update" class="nav-link active" data-scroll-target="#pilot-5-resubmission-review-update">Pilot 5 Resubmission Review Update</a></li>
+  <li><a href="#data-type-assignment-issues-discussion" id="toc-data-type-assignment-issues-discussion" class="nav-link" data-scroll-target="#data-type-assignment-issues-discussion">Data Type Assignment Issues Discussion</a></li>
+  <li><a href="#package-implementation-updates-discussion" id="toc-package-implementation-updates-discussion" class="nav-link" data-scroll-target="#package-implementation-updates-discussion">Package Implementation Updates Discussion</a></li>
+  <li><a href="#sas-formatting-issues-in-ectd" id="toc-sas-formatting-issues-in-ectd" class="nav-link" data-scroll-target="#sas-formatting-issues-in-ectd">SAS Formatting Issues in ECTD</a></li>
+  <li><a href="#programming-language-interoperability-discussion" id="toc-programming-language-interoperability-discussion" class="nav-link" data-scroll-target="#programming-language-interoperability-discussion">Programming Language Interoperability Discussion</a></li>
+  <li><a href="#pilot-five-submission-data-issues" id="toc-pilot-five-submission-data-issues" class="nav-link" data-scroll-target="#pilot-five-submission-data-issues">Pilot Five Submission Data Issues</a></li>
+  <li><a href="#statistical-methods-for-simulation-project" id="toc-statistical-methods-for-simulation-project" class="nav-link" data-scroll-target="#statistical-methods-for-simulation-project">Statistical Methods for Simulation Project</a></li>
+  <li><a href="#r-vs-sas-methodology-challenges" id="toc-r-vs-sas-methodology-challenges" class="nav-link" data-scroll-target="#r-vs-sas-methodology-challenges">R vs SAS Methodology Challenges</a></li>
+  <li><a href="#r-package-validation-method-development" id="toc-r-package-validation-method-development" class="nav-link" data-scroll-target="#r-package-validation-method-development">R Package Validation Method Development</a></li>
+  <li><a href="#sas-reference-standard-discussion" id="toc-sas-reference-standard-discussion" class="nav-link" data-scroll-target="#sas-reference-standard-discussion">SAS Reference Standard Discussion</a></li>
+  <li><a href="#analytical-methods-test-suite-development" id="toc-analytical-methods-test-suite-development" class="nav-link" data-scroll-target="#analytical-methods-test-suite-development">Analytical Methods Test Suite Development</a></li>
+  <li><a href="#statistical-analysis-review-framework" id="toc-statistical-analysis-review-framework" class="nav-link" data-scroll-target="#statistical-analysis-review-framework">Statistical Analysis Review Framework</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2023-09-01/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2026-08-07/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -402,121 +409,66 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>View Attendee List
+Note
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<ul>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>Heidi Curinckx (Johnson &amp; Johnson)</li>
-<li>HyeSoo Cho (FDA)</li>
-<li>Jizu Zhi (FDA)</li>
-<li>Joel Laxamana (Roche/Genentech)</li>
-<li>Joseph Rickert (R Consortium)</li>
-<li>Nan Xiao (Merck)</li>
-<li>Ning Leng (Roche/Genentech)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Robert Devine (Johnson &amp; Johnson)</li>
-<li>Saghir Bashir (Argenx)</li>
-<li>Sam Parmar (Pfizer)</li>
-</ul>
+<p>The creation of these meeting minutes was supported by the use of Zoom AI for meeting summaries.</p>
 </div>
 </div>
-</div>
-<p>The meeting was recorded and the <a href="https://zoom.us/rec/share/nG5RS852RTgvfz3wYmQzX-Wfei82ZlkfvaNd3UpqbeMHbvVqdYKHEwjc3VinIQ.7-hyNhzzPESRq00r?startTime=1693584254000">video</a> is available.</p>
-<section id="pilot-2" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-2">Pilot 2</h3>
-<p>Paul Schuette provided and update on the Agency’s review of Pilot 2</p>
-<ul>
-<li>HyeSoo Cho completed her review and passed it on to FDA authorities for additional review.</li>
-<li>Paul feels that he and HyeSoo anticipate they will be able to answer any questions from the reviewers</li>
-<li>Paul does not anticipate problems</li>
-<li>It may take two weeks or longer to close things out</li>
-<li>Paul will include some material about Pilot 1 in his up coming ASA data set</li>
-</ul>
-<p><strong>Actions:</strong></p>
-<ul>
-<li>Joel will send Paul the data set link used for Pilot 1</li>
-<li>Joel will review the draft announcement for Pilot 3, Ning will approve and pass it to Paul for his review.</li>
-</ul>
+<section id="pilot-5-resubmission-review-update" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-5-resubmission-review-update">Pilot 5 Resubmission Review Update</h2>
+<p>Hye Soo presented an update on the Pilot 5 resubmission review, reporting that the overall process went smoothly with no major issues in setting up the R environment or generating final outputs. She identified a minor code error where data names were referenced incorrectly, which was resolved by switching to the correct dataset. Hye Soo raised questions about discrepancies found in variable data types between different datasets, particularly noting that some variables appeared as character values in the submitted Pilot 5 dataset while the original XPT files had them as numeric, though she noted this integer versus numeric difference was already addressed in ADRG Appendix 2.</p>
 </section>
-<section id="pilot-3" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-3">Pilot 3</h3>
-<p>Joel Laxamana provided the status update.</p>
-<ul>
-<li>Did not use <a href="https://cran.r-project.org/package=pkglite">pkglite</a></li>
-<li>submitted the .r file</li>
-<li>Installed proprietary package from its own repo</li>
-<li>Had to change .lock file to renv-lock.txt and provide instructions how to change it back.</li>
-<li>Team members tested on Linux, Mac, and Windows</li>
-<li>Submitted the Pilot through the FDA gateway</li>
-<li>HyeSoo Cho, the FDA Pilot 3 reviewer, contacted the FDA gateway team to request access and expects to receive access next week</li>
-<li>HyeSoo believes she will be able to report on Pilot 3 by the October meeting.</li>
-</ul>
+<section id="data-type-assignment-issues-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="data-type-assignment-issues-discussion">Data Type Assignment Issues Discussion</h2>
+<p>The team discussed issues with data type assignments in their system, where Ben raised concerns about how values are stored and potentially misclassified. Nick explained that an automated metadata creation function might be causing incorrect type assignments and agreed to investigate further. The discussion then shifted to format.SAS attributes, where Hye Soo noted that pilot five was missing this attribute compared to other pilots, with the team observing that their package doesn’t preserve SAS format metadata from XPT files like the Haven package does.</p>
 </section>
-<section id="pilot-4" class="level3">
-<h3 class="anchored" data-anchor-id="pilot-4">Pilot 4</h3>
-<p>Eric Nantz provided a status up date on Pilot 4 describing the significant progress that has been made with developing prototypes for both the WebAssemply and Container approaches.</p>
-<section id="webassembly" class="level4">
-<h4 class="anchored" data-anchor-id="webassembly">WebAssembly</h4>
-<ul>
-<li>At 19:48 minutes in to the video Eric displays the Pilot 4 teams minutes for their recent meeting, <a href="https://rconsortium.github.io/submissions-pilot4/minutes/2023-08-18/">Minutes 2023-08-18</a>, and talks through the activities.</li>
-<li>George Stagg and Winston Chang from Posit attended the Pilot 4 meeting</li>
-<li>The <a href="https://cran.r-project.org/package=httpuv">httpuv</a> R package will be necessary to start up a mini web server in the user’s local environment. There will be a script to accomplish this.</li>
-<li>There will be no traces of the Shiny app interacting with the host system</li>
-<li>Binaries of the packages used will be included in the transfer. These will not be executable binaries. They will be similar to .tar or .zip files.</li>
-<li>The end user will have to install the version of R used in Pilot 1</li>
-<li><a href="https://shiny.posit.co/py/docs/shinylive.html">Shinylive</a> is another rapidly developing technology that may per pertinent to Pilot 4. Currently Shinylive is only available for Python. However, Winston Chang expects the R based version will be available soon.</li>
-<li>Eric demos Shinylive from the posit website at 28:00 minutes into the video</li>
-<li>See the Posit post <a href="https://www.tidyverse.org/blog/2023/08/webr-0-2-0/">webR 0.2.0</a> for additional information.</li>
-<li>A Pilot 4 submission based on WebAssembly technology looks feasible by the end of the year.</li>
-</ul>
+<section id="package-implementation-updates-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="package-implementation-updates-discussion">Package Implementation Updates Discussion</h2>
+<p>The team discussed updates needed for <code>{datasetjson}</code> that hasn’t been implemented in recent sprint cycles. Hye Soo raised concerns about using the dataset JSON format in SAS, noting a discrepancy in the order of dataset and variable names in the ADRG. The team also discussed the next steps for Pilot 5, with Hye Soo asking whether these issues could be addressed as part of ongoing pilot work rather than being treated as separate submissions.</p>
 </section>
-<section id="containers" class="level4">
-<h4 class="anchored" data-anchor-id="containers">Containers</h4>
-<ul>
-<li>Eric’s team already has a Podman container with Pilot 2 running</li>
-<li>The team is waiting for Paul to clarify what is required by the FDA IT team for them be able to receive containers.</li>
-</ul>
+<section id="sas-formatting-issues-in-ectd" class="level2">
+<h2 class="anchored" data-anchor-id="sas-formatting-issues-in-ectd">SAS Formatting Issues in ECTD</h2>
+<p>The team discussed issues with character numeric discrepancies and SAS attribute formatting in dataset JSON submissions to the ECTD portal. Ben and Eric agreed that fixing these formatting problems should be addressed before moving forward with Pilot 5, rather than trying to implement future updates like supporting dataset JSON for data type submissions. The group decided to document the SAS issues in the ADRG and potentially resubmit with appropriate caveats about the date format attribute problem.</p>
 </section>
-<section id="preferred-technology" class="level4">
-<h4 class="anchored" data-anchor-id="preferred-technology">Preferred technology</h4>
-<ul>
-<li>Since the WebAssembly version does not require the involvement of FDA technology, it looks like it is the preferred method for a first Pilot 4 submission</li>
-<li>At 37:43 minutes into the video, Eric shows the “Hello World” version of a WebAssembly submission created by Appsilon engineers.</li>
-</ul>
+<section id="programming-language-interoperability-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="programming-language-interoperability-discussion">Programming Language Interoperability Discussion</h2>
+<p>Nick and Eric discussed the need to address interoperability issues between different programming languages (SAS, R, and Python) using Dataset-JSON format. Nick proposed organizing a collaborative session with Mike to work on upstream fixes and create a paper or readout for the industry demonstrating the interoperability between the three systems. The team agreed to update each other on Slack regarding the timeline for these fixes, with the goal of submitting a clean resubmission for Pi 5 that addresses both the formatting and interoperability issues.</p>
 </section>
+<section id="pilot-five-submission-data-issues" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-five-submission-data-issues">Pilot Five Submission Data Issues</h2>
+<p>The team discussed ongoing issues with the Pilot Five submission, particularly regarding data formatting changes from XPT to new storage formats. Sam was commended for adding issues to the issue board and taking screenshots of shared content. The group addressed concerns about R-based submissions and FDA biostatistician reviews, with Sue sharing feedback about common analysis methods and packages that were receiving additional scrutiny. Phani raised a question about potential data value changes due to class value modifications, which Hye Soo confirmed did not affect actual data values.</p>
 </section>
-<section id="promotion" class="level3">
-<h3 class="anchored" data-anchor-id="promotion">Promotion</h3>
-<ul>
-<li>Joseph Rickert suggests that the story of the Submissions group cooperative effort is as important as the story of the technology.</li>
-<li>The story of the overall submission group should be written up, However, Joe proposed that since the Pilot 4 effort is moving so quickly and involves contributions not only from working group members, but also from vendors we should tell this story first while the details are fresh.</li>
-<li>Eric agrees that the participation of the two development teams from Posit and Appsilon is unique.</li>
-<li>Eric notes that he has submitted a talk about Pilot 4 for the R/Pharma conference</li>
-</ul>
-<p><strong>Action:</strong></p>
-<ul>
-<li>Eric and Ning will update the GitHub sites for the Pilot teams to make sure the information is up to date and all the contributors are recognized.</li>
-<li>Eric, Joe, Eric agree to work on an end of year thank you / celebration post.</li>
-<li>Joe will make sure the R Consortium promotes Eric’s talk</li>
-</ul>
+<section id="statistical-methods-for-simulation-project" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-methods-for-simulation-project">Statistical Methods for Simulation Project</h2>
+<p>Hye Soo shared an email listing statistical methods of interest for the simulation project, including summary statistics, ANCOVA, logistic regression, mixed models, survival models, and multiple imputation. The team discussed concerns about differences between R and SAS results, with Hye Soo indicating both methodological questions and reviewer uncertainty about the results needed investigation. Eric noted this would be relevant input for an upcoming RISW panel about analytical method equivalence in the campus project.</p>
 </section>
-<section id="novo-nordisk-submission" class="level3">
-<h3 class="anchored" data-anchor-id="novo-nordisk-submission">Novo Nordisk Submission</h3>
-<ul>
-<li>Joe asked the group if anyone has information about the Novo Nordisk all R submission.</li>
-<li>See the upcoming <a href="https://posit.co/blog/novo-nordisks-journey-to-an-r-based-fda-submission/">webinar</a></li>
-</ul>
-<p>The next meeting of the working group will be at 9AM PST on Friday October 6, 2023.</p>
+<section id="r-vs-sas-methodology-challenges" class="level2">
+<h2 class="anchored" data-anchor-id="r-vs-sas-methodology-challenges">R vs SAS Methodology Challenges</h2>
+<p>The team discussed challenges in demonstrating confidence in R’s statistical methodology compared to SAS, particularly regarding reviewer concerns about algorithm accuracy. Eric explained that while the MMRM package was developed to align with SAS methods, there are limitations when R uses different underlying methods. Hye Soo clarified that reviewers often request equivalent SAS code because SAS has historical dominance at FDA and R packages only check technical compliance rather than statistical accuracy. The discussion focused on finding ways to confidently trust R outputs beyond what Canvas has documented, with simulation being suggested as a potential approach.</p>
+</section>
+<section id="r-package-validation-method-development" class="level2">
+<h2 class="anchored" data-anchor-id="r-package-validation-method-development">R Package Validation Method Development</h2>
+<p>The team discussed developing a statistical method to validate R packages without relying on SAS cross-validation, as current FDA requirements often request equivalent SAS code. Hye Soo proposed using simulated data with known ground truth to demonstrate confidence in R packages, particularly for statistical methods. Ben raised concerns about creating materials to help convince FDA reviewers of R’s reliability and rigor, while Eric noted that existing validation tools focus more on development practices rather than statistical accuracy. The discussion highlighted the need for a more robust approach to demonstrate statistical correctness of R packages for regulatory submissions.</p>
+</section>
+<section id="sas-reference-standard-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="sas-reference-standard-discussion">SAS Reference Standard Discussion</h2>
+<p>The group discussed challenges with using SAS as a reference standard for statistical analysis, with Ellis agreeing that relying solely on SAS sends the wrong message and creates unrealistic baselines. Ellis proposed that study sponsors and teams should evaluate R packages by checking for seminal papers, reproducing results, and verifying proper statistical method implementation rather than simply comparing against SAS. The discussion highlighted both technical and cultural challenges, with Eric noting that while technical solutions like creating a public test suite are possible, addressing the historical preference for SAS will require more significant changes over time.</p>
+</section>
+<section id="analytical-methods-test-suite-development" class="level2">
+<h2 class="anchored" data-anchor-id="analytical-methods-test-suite-development">Analytical Methods Test Suite Development</h2>
+<p>Adrian and Eric discussed creating a test suite to validate analytical methods across different environments, starting with defined gold standard results that could be used by reviewers and sponsors to assess their environments. Eric highlighted the importance of early communication between sponsors and reviewers about package versions and environments, noting that sponsors often spring environment requirements on reviewers at the last minute. The discussion touched on the challenge of environment consistency across different sponsors and the potential for public sharing of test suites, though specific implementation details were not fully resolved.</p>
+</section>
+<section id="statistical-analysis-review-framework" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-analysis-review-framework">Statistical Analysis Review Framework</h2>
+<p>The team discussed challenges with reviewing statistical analyses submitted in R versus SAS, particularly when reviewers prefer to use SAS for validation. Eric proposed creating a new GitHub repository with simulated datasets and verification testing to address this issue, starting with summary statistics and potentially expanding to other methods. The group agreed to form a new working group or pilot project to develop this framework, with Eric offering to start the repository and continue discussions on Slack</p>
 
 
 </section>
@@ -977,4 +929,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2023-09-01/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/RConsortium/submissions-wg/edit/main/minutes/2026-08-07/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/RConsortium/submissions-wg/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
