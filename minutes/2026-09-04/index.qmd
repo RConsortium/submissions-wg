@@ -1,0 +1,45 @@
+---
+title: "Minutes 2026-09-04"
+date: 2026-09-04
+---
+
+::: {.callout-note}
+The creation of these meeting minutes was supported by the use of Zoom AI for meeting summaries.
+:::
+
+## Pilot 5 Updates and Platform Discussion
+
+The team discussed updates on Pilot 5, including ongoing work on addressing feedback and potential use of the Dataset JSON package across different platforms. They explored the possibility of using Precision FDA as a cloud-based solution for testing R-based submissions, acknowledging the need for further discussions on legal and governance aspects. The group also considered the potential for Shiny apps as reviewer aids, while recognizing the challenges of security and infrastructure limitations. Next steps include continuing to explore Precision FDA as a viable platform and addressing legal and governance considerations for future collaboration.
+
+## FDA R Package Resource Plan
+
+Ning presented a plan to create a "one stop shop" resource for FDA reviewers who are familiar with SAS but not R, building on previous feedback from Paul and Hye Soo about submission review challenges. The proposed approach involves identifying trustworthy and credible R packages from CRAN, locating simulation results from package manuals or papers, and establishing a CICD pipeline to reproduce those results regularly. The team discussed using the CAMIS site's package comparisons as a foundation for their curation efforts, with Eric suggesting they could potentially involve CAMIS members in future working group sessions to discuss package selection criteria.
+
+## Package Evaluation Criteria Discussion
+
+The team discussed package evaluation criteria for statistical software, with Hye Soo noting that they currently lack internal guidance for evaluating packages. Eric suggested using the validation hub as a starting point and proposed exploring risk metrics dimensions with weighting for different components in future meetings. The discussion also covered the integration of package validation into pilot 7, which includes building simulated data, and Gabriel provided feedback on challenges with WSL and Docker setup in Precision FDA, noting significant spin-up times compared to typical TTYD instances.
+
+## Statistical Software Comparison Method
+
+Keaven discussed his work with the broom concept for comparing results across different statistical software packages, particularly SAS and R. The group aligned on pursuing this approach, with Hye Soo confirming it matches previous discussions and requesting updates in September. Phani raised concerns about accessing SAS software for comparisons, to which Eric responded that while SAS might be necessary for some niche methods, they should aim for a solution that's self-contained and easily runnable by anyone, potentially using Python for fundamental concepts.
+
+## FDA Submission Review Process Improvements
+
+The group discussed a blog post about FDA reviewer challenges with R-based submissions, with Joe Cheng suggesting it should serve as a checklist for ensuring submissions are reviewer-friendly. Ning identified this as an organizational issue in large pharmaceutical companies where tasks are divided among many people without considering reviewer needs. Sam proposed adding a "Submission reviewability check" pilot to assess alignment with the blog post recommendations, which Eric supported as potentially being connected to automated routines. Hye Soo clarified that the blog post reflects challenges encountered by only a few FDA reviewers and should not be considered an official FDA position.
+
+## FDA RBA Consensus Planning:
+
+The group discussed the process of gaining consensus among FDA reviewers regarding RBA submissions, with Hye Soo mentioning plans for an internal meeting in October or November involving the Office of Biostatistics. Paul explained that while there isn't yet unanimity internally, they are in early stages of planning discussions across the FDA's approximately 250 staff members, along with additional statisticians in CDRH and CBER. The team agreed to proceed with blog posts and a sponsor checklist as a starting point, with Joe planning to contact individuals for additional guidance before presenting to the pharmaceutical community. 
+
+## Next Steps
+
+* Sam: Address outstanding issues for Pilot 5 resubmission after Ben completes his workshop for Posit Conf, aiming to prioritize this in the next few weeks.
+* Nick: Reach out to Mary from SAS and Sam Hume for the Python side to form a team to check interoperability of Dataset JSON across SAS, Python, and R, prioritizing the SAS side initially.
+* Hye Soo: Provide updates on the exploration of using a cloud computing solution, particularly Precision FDA, as they become available.
+* Ning: Share the draft collaboration agreement with Hye Soo for internal discussions within the FDA.
+* Paul: Look into the details of existing CRADAs (like Precision Prism) to explore if the working group can fall under an existing agreement for the Precision FDA pilot.
+* Ning: Share the blog post on R-based submission challenges with organizations and promote the upcoming RE Pharma panel discussion.
+* Ning: Continue developing the Pilot 7 effort to create a "one stop shop" for comparing R packages with SAS and simulation results, leveraging CAMIS efforts and potentially the Validation Hub metrics.
+* Eric: Explore the feasibility of adding a "Submission reviewability check" to Pilot 7, informed by the blog post, to automate assessment of code and environment.
+* Joe Cheng: Contact meeting participants individually to ensure his upcoming talk at the R Pharma Summit stays on message regarding R-based submission challenges.
+* Eric: Ensure the meeting minutes are updated and shared before leaving for the conference.
