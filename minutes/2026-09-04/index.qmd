@@ -13,7 +13,7 @@ The team discussed updates on Pilot 5, including ongoing work on addressing feed
 
 ## FDA R Package Resource Plan
 
-Ning presented a plan to create a "one stop shop" resource for FDA reviewers who are familiar with SAS but not R, building on previous feedback from Paul and Hye Soo about submission review challenges. The proposed approach involves identifying trustworthy and credible R packages from CRAN, locating simulation results from package manuals or papers, and establishing a CICD pipeline to reproduce those results regularly. The team discussed using the Canvas site's package comparisons as a foundation for their curation efforts, with Eric suggesting they could potentially involve Canvas members in future working group sessions to discuss package selection criteria.
+Ning presented a plan to create a "one stop shop" resource for FDA reviewers who are familiar with SAS but not R, building on previous feedback from Paul and Hye Soo about submission review challenges. The proposed approach involves identifying trustworthy and credible R packages from CRAN, locating simulation results from package manuals or papers, and establishing a CICD pipeline to reproduce those results regularly. The team discussed using the CAMIS site's package comparisons as a foundation for their curation efforts, with Eric suggesting they could potentially involve CAMIS members in future working group sessions to discuss package selection criteria.
 
 ## Package Evaluation Criteria Discussion
 
