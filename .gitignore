@@ -12,3 +12,6 @@ _prototyping/*
 
 # nix files
 result
+
+# misc
+snowflake.log
