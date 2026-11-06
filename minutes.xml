@@ -9,8 +9,85 @@
 <link>https://rconsortium.github.io/submissions-wg/minutes.html</link>
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.10.19</generator>
-<lastBuildDate>Fri, 04 Sep 2026 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.11.9</generator>
+<lastBuildDate>Fri, 02 Oct 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2026-10-02</title>
+  <dc:creator>Eric Nantz</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2026-10-02/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The creation of these meeting minutes was supported by the use of the Zoom meeting transcript.</p>
+</div>
+</div>
+<section id="conference-recap-rpharma-summit" class="level2">
+<h2 class="anchored" data-anchor-id="conference-recap-rpharma-summit">Conference Recap: R/Pharma Summit</h2>
+<p>Eric opened the meeting with a recap of the September conference circuit (R/Pharma Summit, Posit Conf, and RISW). The <a href="https://rinpharma.com/docs/summit/">R/Pharma Summit</a> roundtable summaries are now available and cover six broad topics, including two dedicated to AI (best practices as well as trust and safeguards), reproducible environments, and leveraging open source in regulatory submissions. Key themes echoed Joe Cheng’s morning presentation: clear examples, proactive and early communication with reviewers, and the reminder that FDA is agnostic to the programming language used. Nicole from Denali shared a successful R-based submission story, with early communication being the major factor. Joe Cheng shared that Kevin Ushey (maintainer of <code>{renv}</code>) is motivated to address issues with restoring <code>{renv}</code> environments and is asking for specific, reproducible examples (such as lock files that fail to restore). Issues can be filed directly or sent to Joe. Adrian asked about NDAs for proprietary environments, and Joe confirmed Posit is willing to handle any necessary paperwork. Eric asked Hye Soo, Youn Kyeong, and Gabriel to share any specific <code>{renv}</code> restoration issues encountered in previous pilots (such as packages requiring compilation from source) so they can be triaged.</p>
+</section>
+<section id="conference-recap-risw-and-camis-panel" class="level2">
+<h2 class="anchored" data-anchor-id="conference-recap-risw-and-camis-panel">Conference Recap: RISW and CAMIS Panel</h2>
+<p>Eric and Hye Soo participated in a panel at RISW focused on raising awareness of the <a href="https://psiaims.github.io/CAMIS/">CAMIS project</a>. The session was not recorded, but Eric offered to share his slides. Hye Soo presented the working group’s blog post on best practices for R-based submissions, which was well received and generally agreed upon by attendees, including a number of FDA colleagues in the audience.</p>
+</section>
+<section id="r-package-validation-r-validation-hub-and-openval" class="level2">
+<h2 class="anchored" data-anchor-id="r-package-validation-r-validation-hub-and-openval">R Package Validation: R Validation Hub and OpenVal</h2>
+<p>Hye Soo asked whether OpenVal from Atorus could be leveraged for validating R packages. Eric shared that Lilly has used OpenVal for about a year, but noted that it is a commercial (not open source) product that validates snapshots of CRAN packages, so there is a lag between new CRAN releases and their availability in OpenVal. Because the Pilot 7 statistical verification effort aims to be fully transparent and developed in the open, OpenVal is not a good fit for that framework. Adrian suggested the group could build its own open test suite comparing SAS and R results (potentially in collaboration with CAMIS) that could be run against any environment, giving both FDA reviewers and sponsor quality/IT departments a way to trust an assembled environment.</p>
+<p>In response to a question from Youn Kyeong, Ellis explained that the <a href="https://pharmar.org/">R Validation Hub</a> provides a centralized set of ideas, guidance, and tools around validation, whereas OpenVal is one vendor’s implementation of a risk-based approach that writes tests based on identified risks. Validation is ultimately organization-dependent, driven by company SOPs and QA expectations. Ning summarized that the Validation Hub is a playbook with tools for companies who have the resources to implement it in-house, while OpenVal is one of several commercial options for companies who prefer to outsource. Joe noted in the chat that OpenVal is more focused on validating container images to ensure specific package versions work together. Eric pointed out that proprietary solutions do not solve the end-to-end distribution problem, since FDA reviewers still install packages from CRAN rather than a sponsor’s internal validated repository. Phil shared two PHUSE presentations on how organizations implement this internally (<a href="https://phuse.s3.eu-central-1.amazonaws.com/Archive/2024/Connect/EU/Strasbourg/PRE_OS14.pdf">2024</a>, <a href="https://phuse.s3.eu-central-1.amazonaws.com/Archive/2025/Connect/US/Orlando/PAP_OS22.pdf">2025</a>).</p>
+</section>
+<section id="pilot-7-updates-ai-skills-collaboration-with-fda" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-7-updates-ai-skills-collaboration-with-fda">Pilot 7 Updates: AI Skills Collaboration with FDA</h2>
+<p>Following a talk at RISW, Laura Thompson from FDA joined the most recent Pilot 7 meeting. Laura has been developing AI skills internally, including agents for reviewing study design and submission packages, and for independently recreating analyses (similar to double programming / QC review). She was impressed with the rigor of the Pilot 7 <a href="https://github.com/RConsortium/pharma-skills">pharma-skills</a> repository and benchmarking process, and is receptive to contributing some of her skills to the repository. Eric emphasized that early-stage skills are welcome since the goal is to iterate as a community. Adrian and Ning highlighted the value of testing both sponsor-side and agency-side skills against the same suite of community-contributed benchmarks. Michael Kane expressed interest in joining the effort, as he is doing similar work with registry data at MD Anderson, and Eric shared the <a href="https://rconsortium.github.io/submissions-wg/join.html">working group joining information</a>.</p>
+</section>
+<section id="pilot-7-updates-skill-evaluation-and-benchmarking" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-7-updates-skill-evaluation-and-benchmarking">Pilot 7 Updates: Skill Evaluation and Benchmarking</h2>
+<p>In response to Gabriel’s question about how skills are evaluated, Eric walked through the process documented in the <a href="https://github.com/RConsortium/pharma-skills/blob/main/LIFECYCLE.md">skill lifecycle</a>. Community members contribute benchmark test cases through GitHub issues, and a GitHub Actions pipeline runs an LLM against each test case both with and without the skill loaded, comparing the output to the expected results. Results vary by case; in some instances (such as a non-inferiority example) the model performed better without the skill, which is valuable feedback for improving the skill. Keaven raised a concern that protocols are often inadequately specified to reproduce a design; Eric noted that benchmark quality depends on the information provided in the intake template, though the IPD skill retrieves the protocol and analysis plan using the trial’s NCT ID.</p>
+<p>Gabriel raised the challenge of validating LLM agents and the circularity of using an LLM to evaluate an LLM. Eric clarified that the exercise assumes an LLM will be used, and the question is whether a skill adds enough value to recommend it over the base model. Ellis asked what “validation” means for a skill, given that a skill is ultimately a set of markdown files and resources. Adrian emphasized that skills help get closer to the right answer faster, but a qualified human reviewer is still required to judge the output. Michael noted that standardized CDISC data appearing earlier in the analysis pipeline also strengthens the reproducibility and automation case. Eric also highlighted Yilong’s update on the <a href="https://elong0527.github.io/yamaa/slides/yamaa-pilot7-2026-09-25/index.html#/title-slide">YAMAA framework</a> for benchmarking EDC to SDTM and ADaM data conversion, which now includes over 150 benchmarks (<a href="https://elong0527.github.io/yamaa/benchmark/adam-adsl-age-group.html">example</a>), and the team is seeking additional test case contributions.</p>
+</section>
+<section id="r-release-schedule-alignment-proposal" class="level2">
+<h2 class="anchored" data-anchor-id="r-release-schedule-alignment-proposal">R Release Schedule Alignment Proposal</h2>
+<p>Ning revisited a proposal for a non-binding community agreement among sponsors on a time window for adopting new major R releases (typically anchored to the summer release of R in the June/July timeframe, with an optional winter release). The motivation stems from Pilot 3, where the R version used by the working group was not yet installed on FDA workstations, and installation required a lengthy process. Gabriel, who helps maintain the Office of Biostatistics scientific workstations, stated that a predictable industry schedule would make maintaining a large number of distributed workstations easier, while acknowledging that FDA will continue to work with whatever versions applicants use.</p>
+<p>Ellis questioned whether a formal agreement is the right solution, noting that the R version rarely impacts an analysis, long-running studies often use older versions, and a published agreement could become a perceived requirement that sponsors feel they must follow. He suggested simply sharing what sponsors generally do might suffice. Adrian agreed with the concerns and suggested the ideal solution is for reviewers to have a ready-to-use environment for each submission, which is easiest when sponsors pin all packages to a specific CRAN/Bioconductor snapshot date so binaries can be installed from a public package manager. Internal, non-open-source packages complicate this considerably. Adrian also suggested tools such as Lmod, EasyBuild, and Spack for managing environments on shared servers, and noted that installing on Windows laptops would require either a binary build machine or full build tools for each reviewer.</p>
+<p>Paul noted that proprietary software such as SAS changes very slowly (version 9.2 to 9.4 over about 18 years), while R and especially R packages change much more rapidly. A key pain point for reviewers is undisclosed breaking changes in package updates, which can break internal review scripts. Keaven emphasized that package maintainers should avoid breaking changes and document them when they occur. Adrian added that packages change daily, and proposed that health authorities could maintain a regular cadence of shared environments (for example, monthly snapshots of a curated set of CRAN and Bioconductor packages), allowing sponsors to target the closest available environment, with any mismatches resolved through reviewer-sponsor discussion.</p>
+</section>
+<section id="nix-for-reproducible-environments" class="level2">
+<h2 class="anchored" data-anchor-id="nix-for-reproducible-environments">Nix for Reproducible Environments</h2>
+<p>Eric shared that he and Bruno Rodrigues gave a workshop at R/Pharma on using Nix for reproducible environments (<a href="https://b-rodrigues.github.io/r_pharma_26/#/title-slide">slides</a>). As part of this, Eric created a <a href="https://github.com/RConsortium/submissions-pilot2-nixversion">version of the Pilot 2 Shiny application powered by Nix</a> instead of <code>{renv}</code>. With WSL and Nix available on a Windows machine, the environment can be reproduced and the app launched with only three commands, which is considerably simpler than the Docker and standard approaches used in previous pilots. Eric noted this would require adoption by both sponsors and reviewers to avoid mismatches. Adrian also shared his <a href="https://github.com/waddella/administering-r">Administering R workshop materials</a> from R/Pharma.</p>
+</section>
+<section id="next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps">Next Steps</h2>
+<ul>
+<li>All: Share specific, reproducible examples of <code>{renv}</code> environment restoration failures (e.g., lock files) with Joe Cheng or via issues so they can be triaged with Kevin Ushey.</li>
+<li>Hye Soo, Youn Kyeong, Gabriel: Review notes from previous pilots for specific <code>{renv}</code> restoration issues encountered at FDA.</li>
+<li>Eric: Share slides from the RISW CAMIS panel.</li>
+<li>Eric, Ning: Continue collaborating with Laura Thompson on contributing FDA-developed AI skills to the Pilot 7 pharma-skills repository.</li>
+<li>Michael Kane: Join the R Consortium Slack and Pilot 7 efforts to share learnings from MD Anderson’s work with registry data.</li>
+<li>Ning: Continue refining the R release schedule alignment proposal, taking into account the feedback from Ellis and Adrian.</li>
+<li>Gabriel: Follow up asynchronously on the tools and infrastructure available for managing FDA workstation environments, so the group can identify how best to help.</li>
+<li>Adrian: Discuss with Gabriel and Eric potential approaches for front-loading environment provisioning on shared servers, and potentially develop a demonstration repository.</li>
+<li>Hye Soo: Send an email update on the Precision FDA exploration.</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2026-10-02/</guid>
+  <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2026-09-04</title>
   <dc:creator>Eric Nantz</dc:creator>
@@ -1878,88 +1955,6 @@ Note
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2025-03-07/</guid>
   <pubDate>Fri, 07 Mar 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2025-02-07</title>
-  <dc:creator>Eric Nantz</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2025-02-07/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Ben Straub (GSK)</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>Katie Harding (Freenome)</li>
-<li>Lovemore Gakava (Novo Nordisk)</li>
-<li>Phanikumar Tata (Syneos Health)</li>
-<li>Robert Devine (Johnson &amp; Johnson)</li>
-<li>Sam Parmar (Pfizer)</li>
-<li>Terry Christiani (R Consortium)</li>
-<li>Vedha Viyash (Appsilon)</li>
-</ul>
-</div>
-</div>
-</div>
-<section id="adrg-metadata-group-updates" class="level2">
-<h2 class="anchored" data-anchor-id="adrg-metadata-group-updates">ADRG metadata group updates</h2>
-<ul>
-<li>Lovemore and Sam shared the group’s recent updates progress. They recently invited Christine Rossin (from the Phuse ADRG working group) to their meetings for discussion on the proposed template.</li>
-<li>Christine’s recommendations include moving the instructions for executing the R code and setting up the execution environment to a supporting document and not part of the ADRG itself, ensuring the ADRG remains software-agnostic, and separate guidelines be developed for specific software.</li>
-<li>The metadata group will be taking the lead on authoring guidelines for the R exection and environment language</li>
-<li>The group will also establish dialogs with other sub-teams addressing additional sections of ADRG such as such as estimands team to ensure everyone is on the same page for updating the ADRG sections</li>
-<li>Next steps include authoring R scripts to help automate population of certain sections in the ADRG template.</li>
-</ul>
-</section>
-<section id="pilot-4-container-submission-updates" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-4-container-submission-updates">Pilot 4 Container Submission updates</h2>
-<ul>
-<li>Eric shared recent progress on assembling a proposed submission structure for the container portion of Pilot 4.</li>
-<li>Substantial updates have been made to the development repository available at <a href="https://github.com/RConsortium/submissions-pilot4-container" class="uri">https://github.com/RConsortium/submissions-pilot4-container</a> as well as the proposed submission structure at <a href="https://github.com/RConsortium/submissions-pilot4-container-to-fda" class="uri">https://github.com/RConsortium/submissions-pilot4-container-to-fda</a>.</li>
-<li>Eric will share the proposed structure with our FDA colleagues to ensure this is aligned with the eCTD guidelines.</li>
-<li>Robert inquired about the specific version of the Windows Subsystem for Linux (WSL) used in the testing environment. Eric believes it is WSL2 but that will be confirmed and the appropriate sections of the ADRG will be updated accordingly.</li>
-<li>Vedha shared that running the command <code>wsl --version</code> in the testing environment should output the key metadata on the WSL installation.</li>
-</ul>
-</section>
-<section id="pilot-5-dataset-json-updates" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-5-dataset-json-updates">Pilot 5 DataSet-JSON updates</h2>
-<ul>
-<li>Sam and Ben shared the recent progress from the Pilot 5 working group</li>
-<li>The team has created GitHub repositories for key portions of the pilot:
-<ul>
-<li>Development repository: <a href="https://github.com/RConsortium/submissions-pilot5-datasetjson" class="uri">https://github.com/RConsortium/submissions-pilot5-datasetjson</a></li>
-<li>R package repository: <a href="https://github.com/RConsortium/submissions-pilot5-utilities" class="uri">https://github.com/RConsortium/submissions-pilot5-utilities</a></li>
-<li>Website: https://rconsortium.github.io/submissions-pilot5-website/</li>
-<li>Submission package structure: <a href="https://github.com/RConsortium/submissions-pilot5-datasetjson-to-fda" class="uri">https://github.com/RConsortium/submissions-pilot5-datasetjson-to-fda</a></li>
-</ul></li>
-<li>The data sets and R code used in Pilot 3 will be ported over to the Pilot 5 repositories</li>
-<li>The team is very interested in utilizing GitHub actions to perform quality checks of the data set</li>
-<li><code>{datasetjson}</code> was recently updated to version 1.1 and the new update is available on CRAN. You can view the changelog at <a href="https://atorus-research.github.io/datasetjson/news/index.html" class="uri">https://atorus-research.github.io/datasetjson/news/index.html</a>.</li>
-<li>As development begins for the quality checks and other testing, they will use the Pilot 3 code as a starting point.</li>
-<li>Robert shared that CDISC will hold a general meeting on February 18, 2025. Members of the working group are encouraged to attend. Additional details and registration are available at the pharma-oversight Slack channel in the February 14, 2025 post.</li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2025-02-07/</guid>
-  <pubDate>Fri, 07 Feb 2025 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
