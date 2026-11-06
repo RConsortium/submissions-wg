@@ -130,17 +130,17 @@ The R Submissions Working Group has conducted a series of pilot projects to demo
   <div class="hex-dates">2025 – 2026</div>
 </a>
 
-<span class="hex-item">
+<a class="hex-item" href="pilot6.html">
   <img src="hexes/pilot 6.svg" alt="Pilot 6 placeholder"/>
   <div class="hex-label">Pilot 6</div>
   <div class="hex-dates">2026 – ongoing</div>
-</span>
+</a>
 
-<span class="hex-item">
+<a class="hex-item" href="pilot7.html">
   <img src="hexes/pilot 7.svg" alt="Pilot 7 placeholder"/>
   <div class="hex-label">Pilot 7</div>
   <div class="hex-dates">2026 – ongoing</div>
-</span>
+</a>
 
 </div>
 ```
