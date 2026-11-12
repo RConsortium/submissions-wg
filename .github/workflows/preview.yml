@@ -64,7 +64,8 @@ jobs:
           step: start
           token: ${{ secrets.GITHUB_TOKEN }}
           env: ${{ env.RELEASE_NAME }}
-          ref: ${{ github.head_ref }}
+          # The head branch may be deleted if the PR is merged during the build.
+          ref: ${{ github.event.pull_request.head.sha }}
           logs: 'https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
 
       - name: Deploy to Netlify
@@ -84,7 +85,7 @@ jobs:
 
       - name: Update Github "view deployment" button in PR
         uses: bobheadxi/deployments@v1
-        if: ${{ always() && github.event_name == 'pull_request'}}
+        if: ${{ always() && github.event_name == 'pull_request' && steps.deployment.outputs.deployment_id != '' }}
         with:
           step: finish
           token: ${{ secrets.GITHUB_TOKEN }}
