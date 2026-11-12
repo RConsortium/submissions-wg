@@ -10,7 +10,73 @@
 <atom:link href="https://rconsortium.github.io/submissions-wg/minutes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.11.9</generator>
-<lastBuildDate>Fri, 02 Oct 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 06 Nov 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Minutes 2026-11-06</title>
+  <dc:creator>Eric Nantz</dc:creator>
+  <link>https://rconsortium.github.io/submissions-wg/minutes/2026-11-06/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The creation of these meeting minutes was supported by the use of the Zoom meeting transcript.</p>
+</div>
+</div>
+<section id="quick-recap" class="level2">
+<h2 class="anchored" data-anchor-id="quick-recap">Quick Recap</h2>
+<p>The November edition of the Submissions Working Group meeting focused on package validation and environment issues, particularly discussing RIG (R Installation Guide) as a potential solution to challenges reviewers face with R package environments at the FDA. Michael raised concerns about bottlenecks in the biotech AI drug discovery pipeline and emphasized the need to make the FDA review process easier and more efficient. The group discussed RIG as a tool that could help resolve package version compatibility issues and admin access problems that reviewers encounter when trying to reproduce sponsor submissions. Gabriel from the FDA’s Office of Biostatistics in CDER explained the current challenges with package traceability and maintainability, particularly around WSL (Windows Subsystem for Linux) access limitations on reviewer laptops. The conversation explored how RIG could integrate with RStudio to provide seamless R version management and package installation without requiring admin rights, which would be particularly beneficial for Windows-based reviewer environments. The conversation ended with agreement to explore a formal RIG training session and potential integration with RStudio, with plans to involve both FDA colleagues and Posit team members in future discussions.</p>
+</section>
+<section id="pilot-7-fda-collaboration-updates" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-7-fda-collaboration-updates">Pilot 7 FDA Collaboration Updates</h2>
+<p>Eric provided an update on ongoing work related to Pilot 7 efforts, including collaboration with FDA colleagues on <a href="https://github.com/RConsortium/submission-transparency">statistical evaluation methods</a> for statistical functions and methods. Michael discussed the success of pilots in biotech, particularly in AI and drug discovery, and highlighted current bottlenecks in recruitment and review processes. He raised a question about coordinating with the FDA review process and potential ways to facilitate it further.</p>
+</section>
+<section id="fda-review-process-improvement-initiatives" class="level2">
+<h2 class="anchored" data-anchor-id="fda-review-process-improvement-initiatives">FDA Review Process Improvement Initiatives</h2>
+<p>The team discussed efforts to improve the FDA review process, including a statistical reviewer skill repository and an AI Review platform called <a href="https://github.com/elong0527/yamaa">yamaa</a> developed by Yilong from Meta. Eric mentioned that Laura Thompson from FDA has been helping with internal skills for submission deliverable integrity from an operational perspective. Joe requested input from FDA colleagues about what review team struggles could be addressed through training or infrastructure support that Posit could provide under their contract.</p>
+</section>
+<section id="fda-training-contract-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="fda-training-contract-discussion">FDA Training Contract Discussion</h2>
+<p>Joe and Eric discussed a contract with broad scope to provide training to FDA review teams, including AI and reproducibility topics. Gabriel, a statistician in the Office of Biostatistics in CDER, expressed interest in understanding more about the contract’s specifics and potential areas for improvement. The conversation focused on package traceability and maintainability challenges, particularly regarding virtualization and computing environments at FDA, with Gabriel suggesting that Docker could be a potential solution and proposing to create a concrete list of requirements for using <a href="https://rstudio.github.io/renv/index.html"><code>{renv}</code></a> more reliably.</p>
+</section>
+<section id="joint-training-session-for-fda-biostatisticians" class="level2">
+<h2 class="anchored" data-anchor-id="joint-training-session-for-fda-biostatisticians">Joint Training Session for FDA Biostatisticians</h2>
+<p>The group discussed organizing an in-person workshop/training session to address challenges with FDA submissions and reviews involving open-source software such as R. Joe proposed that this session could focus on the specific issues encountered by reviewers when managing package installation, how RStudio itself could be used directly with new features for tighter integration with package solutions such as <code>{renv}</code> and the rig utility. Eric expressed interest in participating and suggested involving the Submissions Working Group in planning the session as well as representation during the session. Youn Kyeong mentioned an upcoming internal presentation about open-source software, in which she will gather reviewer concerns about recent open-source submissions. She will provide updates to the group after the internal presentation.</p>
+</section>
+<section id="rig-demonstrationdiscussion-meeting" class="level2">
+<h2 class="anchored" data-anchor-id="rig-demonstrationdiscussion-meeting">Rig Demonstration/Discussion Meeting</h2>
+<p>Joe and Eric discussed <a href="https://rig.r-lib.org/">rig</a> (R Installation Manager) as a potential solution for managing different R versions at the FDA, explaining that it could handle version compatibility and installation seamlessly without admin access. Gabriel agreed to review documentation and provide feedback on next steps, including the possibility of a demo session and formal training with Posit and the ARC Consortium. The group also addressed the status of Pilot 5 resubmission and discussed the importance of creating solutions that work across different environments while being mindful of other health authorities’ needs beyond FDA.</p>
+</section>
+<section id="next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps">Next Steps</h2>
+<ul>
+<li>Eric: Draft an initial communication to explore a RIG demo/tech session and a more formal training session, looping in Paul and Hye Soo.</li>
+<li>Joe: Have the engineer working on rig post a message to the Submissions Working Group Slack or Google Doc with more information.</li>
+<li>Gabriel: Discuss internally with Paul and Hye Soo whether a RIG demo/training session can be arranged and provide feedback.</li>
+<li>Youn Kyeong: Share the results of the internal presentation on open-source software and reviewer concerns with the group.</li>
+<li>Eric: Follow up with the Pilot 5 team to check the status of the resubmission.</li>
+<li>Joe: Follow up with Ellis offline to get input on how to make environment management less burdensome for sponsors.</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://rconsortium.github.io/submissions-wg/minutes/2026-11-06/</guid>
+  <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Minutes 2026-10-02</title>
   <dc:creator>Eric Nantz</dc:creator>
@@ -1861,100 +1927,6 @@ Note
  ]]></description>
   <guid>https://rconsortium.github.io/submissions-wg/minutes/2025-04-04/</guid>
   <pubDate>Fri, 04 Apr 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minutes 2025-03-07</title>
-  <dc:creator>Eric Nantz</dc:creator>
-  <link>https://rconsortium.github.io/submissions-wg/minutes/2025-03-07/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>View Attendee List
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>Ben Straub (GSK)</li>
-<li>Eric Nantz (Eli Lilly)</li>
-<li>HyeSoo Cho (FDA)</li>
-<li>Joel Laxamana (Roche/Genentech)</li>
-<li>Katie Harding (Freenome)</li>
-<li>Lovemore Gakava (Novo Nordisk)</li>
-<li>Nabil Baugher (Baseline AI)</li>
-<li>Nan Xiao (Merck)</li>
-<li>Nicholas Masel (Johnson &amp; Johnson)</li>
-<li>Ning Leng (Roche/Genentech)</li>
-<li>Paul Schuette (FDA)</li>
-<li>Sam Parmar (Pfizer)</li>
-<li>Youn Kyeong Chang (FDA)</li>
-</ul>
-</div>
-</div>
-</div>
-<section id="pilot-4-file-structures" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-4-file-structures">Pilot 4: File Structures</h2>
-<ul>
-<li>Discussions internally are taking place at FDA on whether the Zip file can include the file types that may not be on the approved software list</li>
-<li>In light of the evolving discussions, Paul recommends to explore the use of <code>{pkglite}</code> for bunlding the applicaiton files in a similar fashion as Submissions Pilot 2 (traditional shiny application)</li>
-<li>Eric will examine both the web assembly and Docker container versions of Pilot 4 and provide FDA reviewers a list of the essenstial file types necessary to review each submission bundle</li>
-<li>Nan Xiao recommends we examine his recent releaes of <a href="https://nanx.me/blog/post/pkglite-python/">pkglite for Python</a> in case that could help streamline the process, especially for the web-assembly version</li>
-</ul>
-</section>
-<section id="pilot-5-datasetjson" class="level2">
-<h2 class="anchored" data-anchor-id="pilot-5-datasetjson">Pilot 5: DatasetJSON</h2>
-<ul>
-<li>The pilot 5 team is aiming to have dataset programming completed by the end of March, and TLF programming completed by end of April.</li>
-<li>Questions remain on whether the JSON format can be included as a submission format, Paul mentioned that they are waiting to confirm with the E-sub group internally</li>
-<li>The R-Consortium Blog recently featured a <a href="https://r-consortium.org/posts/submissions-wg-pilot5-pilot6-and-more/">fantastic post</a> announcing the launch of Pilot 5:</li>
-<li>Minutes from the Pilot 5 working group meetings are available on the Pilot 5 datasetJSON GitHub repository: <a href="https://github.com/RConsortium/submissions-pilot5-datasetjson/discussions/3" class="uri">https://github.com/RConsortium/submissions-pilot5-datasetjson/discussions/3</a></li>
-<li>One potential benefit for education and awareness: Embed an example Shiny application inside the Pilot 5 Quarto website for users to explore contents of dataset JSON files.
-<ul>
-<li>After Robert shared a list of apps created in a recent DatasetJSON Hackathon, the team saw an apportunity with the <a href="https://github.com/sbarcelo777/Dataset-JSON-hackathon">Dataset-JSON Viewer</a> Shiny application</li>
-<li>Sam Parmer quickly created a novel way to compile the application as a web-assembly Shiny app and dynamically deploy the app on Posit’s shinylive-R hosting platform to embed insde the Pilot 5 Quarto website as an iframe! You can view the page at <a href="https://rconsortium.github.io/submissions-pilot5-website/viewer.html" class="uri">https://rconsortium.github.io/submissions-pilot5-website/viewer.html</a></li>
-<li>In parallel, Eric also experimented with compiling the same Shiny application into web-assembly, and has a prototype automatically deployed on GitHub Pages via GitHub Actions: <a href="https://rpodcast.github.io/Dataset-JSON-hackathon/" class="uri">https://rpodcast.github.io/Dataset-JSON-hackathon/</a></li>
-<li>Eric will reach out to the developers of the Dataset-JSON viewer to see if they are receptive to Eric sending a pull request to have the application hosted from their GitHub repository (thus their GitHub Pages account). In addition, Eric will ask the maintainers if they would support having a slightly streamlined version of the application that pre-loads JSON data files created for this pilot.</li>
-</ul></li>
-<li>Eric and other team members are currently updating GitHub actions for repository maintenance and automation</li>
-</ul>
-</section>
-<section id="phuse-metadata-adrg-working-group" class="level2">
-<h2 class="anchored" data-anchor-id="phuse-metadata-adrg-working-group">Phuse Metadata / ADRG Working Group</h2>
-<ul>
-<li>Joel Laxana shared the latest updates: They group is trying to hash out the information to be added in the ADRG for future open source submissions</li>
-<li>During recent discussions, the team is going forward with creating a separate supplement document to go along with the traditional ADRG submission document in the case of an R-based submission</li>
-<li>The group is reviewing feedback provided by FDA reviewers from the past couple of pilots submitted</li>
-<li>The open source metadata working group will continue to leverage metadata from a particular project to populate sections of the document, using R functions that can help fill in manual steps</li>
-<li>The group ponders if generative AI help to populate these templates?</li>
-<li>While AI is not in the scope of the Phuse project, the team is open for exploration</li>
-<li>Indeed there could be an opportunity to spin off a separate pilot on exploring generative AI in a clinical submission documentation preparation such as the ADRG.</li>
-<li>A new channel will be created in the R Consortium Submissions Working Group Slack channel. For details on obtaining access to group, please visit the <a href="https://rconsortium.github.io/submissions-wg/join.html">How to Join</a> page.</li>
-</ul>
-</section>
-<section id="other-topics" class="level2">
-<h2 class="anchored" data-anchor-id="other-topics">Other Topics</h2>
-<ul>
-<li>Members of the wroking group (Ben, Sam, and Eric) will join Appsilon for the April 29th edition of <a href="https://events.ringcentral.com/events/shiny-gathering-fda-pilots-key-insights-lessons-learned-and-what-s-next-for-2025-820c22c5-9f84-4bb1-a9ba-9341ecaf791d">Shiny Gatherings</a> discussing the insights, lessons learned, and what’s next for 2025.</li>
-<li>The group assured colleagues from FDA that there would not be any direct quotes shared from FDA colleagues inside of this webinar, and any issues from the regulatory side would be discussed in general terms.</li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <guid>https://rconsortium.github.io/submissions-wg/minutes/2025-03-07/</guid>
-  <pubDate>Fri, 07 Mar 2025 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
