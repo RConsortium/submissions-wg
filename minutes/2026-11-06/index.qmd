@@ -1,0 +1,41 @@
+---
+title: "Minutes 2026-11-06"
+date: 2026-11-06
+---
+
+::: {.callout-note}
+The creation of these meeting minutes was supported by the use of the Zoom meeting transcript.
+:::
+
+## Quick Recap
+
+The November edition of the Submissions Working Group meeting focused on package validation and environment issues, particularly discussing RIG (R Installation Guide) as a potential solution to challenges reviewers face with R package environments at the FDA. Michael raised concerns about bottlenecks in the biotech AI drug discovery pipeline and emphasized the need to make the FDA review process easier and more efficient. The group discussed RIG as a tool that could help resolve package version compatibility issues and admin access problems that reviewers encounter when trying to reproduce sponsor submissions. Gabriel from the FDA's Office of Biostatistics in CDER explained the current challenges with package traceability and maintainability, particularly around WSL (Windows Subsystem for Linux) access limitations on reviewer laptops. The conversation explored how RIG could integrate with RStudio to provide seamless R version management and package installation without requiring admin rights, which would be particularly beneficial for Windows-based reviewer environments. The conversation ended with agreement to explore a formal RIG training session and potential integration with RStudio, with plans to involve both FDA colleagues and Posit team members in future discussions.
+
+## Pilot 7 FDA Collaboration Updates
+
+Eric provided an update on ongoing work related to Pilot 7 efforts, including collaboration with FDA colleagues on [statistical evaluation methods](https://github.com/RConsortium/submission-transparency) for statistical functions and methods. Michael discussed the success of pilots in biotech, particularly in AI and drug discovery, and highlighted current bottlenecks in recruitment and review processes. He raised a question about coordinating with the FDA review process and potential ways to facilitate it further.
+
+## FDA Review Process Improvement Initiatives
+
+The team discussed efforts to improve the FDA review process, including a statistical reviewer skill repository and an AI Review platform called [yamaa](https://github.com/elong0527/yamaa) developed by Yilong from Meta. Eric mentioned that Laura Thompson from FDA has been helping with internal skills for submission deliverable integrity from an operational perspective. Joe requested input from FDA colleagues about what review team struggles could be addressed through training or infrastructure support that Posit could provide under their contract.
+
+## FDA Training Contract Discussion
+
+Joe and Eric discussed a contract with broad scope to provide training to FDA review teams, including AI and reproducibility topics. Gabriel, a statistician in the Office of Biostatistics in CDER, expressed interest in understanding more about the contract's specifics and potential areas for improvement. The conversation focused on package traceability and maintainability challenges, particularly regarding virtualization and computing environments at FDA, with Gabriel suggesting that Docker could be a potential solution and proposing to create a concrete list of requirements for using [`{renv}`](https://rstudio.github.io/renv/index.html) more reliably.
+
+## Joint Training Session for FDA Biostatisticians
+
+The group discussed organizing an in-person workshop/training session to address challenges with FDA submissions and reviews involving open-source software such as R. Joe proposed that this session could focus on the specific issues encountered by reviewers when managing package installation, how RStudio itself could be used directly with new features for tighter integration with package solutions such as `{renv}` and the rig utility. Eric expressed interest in participating and suggested involving the Submissions Working Group in planning the session as well as representation during the session. Youn Kyeong mentioned an upcoming internal presentation about open-source software, in which she will gather reviewer concerns about recent open-source submissions. She will provide updates to the group after the internal presentation.
+
+## Rig Demonstration/Discussion Meeting
+
+Joe and Eric discussed [rig](https://rig.r-lib.org/) (R Installation Manager) as a potential solution for managing different R versions at the FDA, explaining that it could handle version compatibility and installation seamlessly without admin access. Gabriel agreed to review documentation and provide feedback on next steps, including the possibility of a demo session and formal training with Posit and the ARC Consortium. The group also addressed the status of Pilot 5 resubmission and discussed the importance of creating solutions that work across different environments while being mindful of other health authorities' needs beyond FDA. 
+
+## Next Steps
+
+* Eric: Draft an initial communication to explore a RIG demo/tech session and a more formal training session, looping in Paul and Hye Soo.
+* Joe: Have the engineer working on rig post a message to the Submissions Working Group Slack or Google Doc with more information.
+* Gabriel: Discuss internally with Paul and Hye Soo whether a RIG demo/training session can be arranged and provide feedback.
+* Youn Kyeong: Share the results of the internal presentation on open-source software and reviewer concerns with the group.
+* Eric: Follow up with the Pilot 5 team to check the status of the resubmission.
+* Joe: Follow up with Ellis offline to get input on how to make environment management less burdensome for sponsors.
